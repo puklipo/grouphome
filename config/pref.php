@@ -13,6 +13,9 @@ return [
     'miyagi'   => [
         'name' => '宮城県',
     ],
+    'akita'   => [
+        'name' => '秋田県',
+    ],
     'tokyo'    => [
         'name' => '東京都',
     ],
