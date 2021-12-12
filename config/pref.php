@@ -1,10 +1,13 @@
 <?php
 
 return [
-    'tokyo'   => [
+    'hokkaido' => [
+        'name' => '北海道',
+    ],
+    'tokyo'    => [
         'name' => '東京都',
     ],
-    'fukuoka' => [
+    'fukuoka'  => [
         'name' => '福岡県',
     ],
 ];
