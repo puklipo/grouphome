@@ -5,6 +5,10 @@
 
 Excelファイルを読み込みやすいように加工してCSVファイルで出力。加工する方法はExcelでもGoogleスプレッドシートでもいい。実際に読み込むのはCSVファイル。
 
+### 北海道
+
+- https://www.pref.hokkaido.lg.jp/hf/shf/jigyousyosisetuichiran.html
+
 ### 東京
 「共同生活援助」以外を削除。1行目を削除。「事業所－住所」のセルの結合を解除して「事業所－地域」と「事業所－住所」に分割。
 - https://www.shougaifukushi.metro.tokyo.lg.jp/Lib/LibDspList.php?catid=100-001
