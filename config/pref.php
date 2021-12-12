@@ -10,6 +10,9 @@ return [
     'iwate'   => [
         'name' => '岩手県',
     ],
+    'miyagi'   => [
+        'name' => '宮城県',
+    ],
     'tokyo'    => [
         'name' => '東京都',
     ],
