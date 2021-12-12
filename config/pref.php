@@ -7,6 +7,9 @@ return [
     'aomori'   => [
         'name' => '青森県',
     ],
+    'iwate'   => [
+        'name' => '岩手県',
+    ],
     'tokyo'    => [
         'name' => '東京都',
     ],
