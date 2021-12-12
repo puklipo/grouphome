@@ -4,6 +4,9 @@ return [
     'hokkaido' => [
         'name' => '北海道',
     ],
+    'aomori'   => [
+        'name' => '青森県',
+    ],
     'tokyo'    => [
         'name' => '東京都',
     ],

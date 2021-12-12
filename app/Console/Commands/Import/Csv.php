@@ -43,7 +43,12 @@ class Csv extends Command
 
         collect(config('pref'))->keys()->each(function ($item) {
             $this->info($item);
-            app('App\\Imports\\'.Str::studly($item).'Import')->import(resource_path("csv/$item.csv"));
+            try {
+                app('App\\Imports\\'.Str::studly($item).'Import')
+                    ->import(resource_path("csv/$item.csv"));
+            } catch (\Exception $e) {
+                $this->error($e->getMessage());
+            }
         });
 
         return Command::SUCCESS;
