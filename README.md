@@ -27,7 +27,7 @@ Excelファイルを読み込みやすいように加工してCSVファイルで
 - https://www.pref.aomori.lg.jp/soshiki/kenko/syofuku/syougai_jigyousya_ichiran.html
 
 ### 岩手
-- https://www.pref.aomori.lg.jp/soshiki/kenko/syofuku/syougai_jigyousya_ichiran.html
+- https://www.pref.iwate.jp/kurashikankyou/fukushi/shougai/jigyousha/1004057/1004058.html
 
 ### 宮城
 - https://www.pref.miyagi.jp/site/syoufuku-top/ksb22.html
