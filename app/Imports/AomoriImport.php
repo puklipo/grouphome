@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use App\Imports\Concerns\WithImport;
 use App\Models\Home;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
@@ -12,6 +13,7 @@ use Maatwebsite\Excel\Concerns\WithUpserts;
 class AomoriImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
+    use WithImport;
 
     /**
      * @param  array  $row
@@ -27,10 +29,5 @@ class AomoriImport implements ToModel, WithHeadingRow, WithUpserts
             'address'     => '青森県'.$row['事業所住所'],
             'released_at' => $row['指定年月日'],
         ]);
-    }
-
-    public function uniqueBy()
-    {
-        return 'id';
     }
 }

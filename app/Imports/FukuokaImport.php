@@ -2,6 +2,7 @@
 
 namespace App\Imports;
 
+use App\Imports\Concerns\WithImport;
 use App\Models\Home;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
@@ -11,6 +12,7 @@ use Maatwebsite\Excel\Concerns\WithUpserts;
 class FukuokaImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
+    use WithImport;
 
     /**
      * @param  array  $row
@@ -26,10 +28,5 @@ class FukuokaImport implements ToModel, WithHeadingRow, WithUpserts
             'address'     => $row['事業所－住所'],
             'released_at' => $row['指定年月日'],
         ]);
-    }
-
-    public function uniqueBy()
-    {
-        return 'id';
     }
 }

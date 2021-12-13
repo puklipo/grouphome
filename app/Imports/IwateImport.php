@@ -7,10 +7,12 @@ use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithUpserts;
+use App\Imports\Concerns\WithImport;
 
 class IwateImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
+    use WithImport;
 
     /**
      * @param  array  $row
@@ -20,16 +22,11 @@ class IwateImport implements ToModel, WithHeadingRow, WithUpserts
     public function model(array $row)
     {
         return new Home([
-            'id'          => $row['事業所番号'],
-            'name'        => $row['住居名'],
-            'company'     => $row['法人名'],
-            'address'     => $row['住所'] ?? '',
+            'id' => $row['事業所番号'],
+            'name' => $row['住居名'],
+            'company' => $row['法人名'],
+            'address' => $row['住所'] ?? '',
             'released_at' => $row['事業所指定日'],
         ]);
-    }
-
-    public function uniqueBy()
-    {
-        return 'id';
     }
 }
