@@ -1,5 +1,18 @@
 # グループホーム
 
+## 開発
+```
+git clone
+composer install
+cp .env.example .env
+php artisan key:generate
+
+sail up -d
+sail art migrate
+
+```
+
+
 ## Excelファイル
 グループホームの一覧情報は各都道府県サイトのExcelファイルで取得できる。[障害福祉サービス等情報検索](https://www.wam.go.jp/sfkohyoout/) からも取得できるけどグループホームはExcelファイルからの方が良さそう。
 
