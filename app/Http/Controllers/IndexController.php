@@ -15,7 +15,7 @@ class IndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $homes = Home::latest('released_at')->cursorPaginate();
+        $homes = Home::latest()->paginate();
 
         return view('home')->with(compact('homes'));
     }

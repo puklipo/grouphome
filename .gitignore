@@ -16,3 +16,6 @@ yarn-error.log
 .vapor/
 .env.production
 .env.staging
+.phpstorm.meta.php
+_ide_helper.php
+_ide_helper_models.php

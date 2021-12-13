@@ -19,6 +19,9 @@ return [
     'tokyo'    => [
         'name' => '東京都',
     ],
+    'osaka'    => [
+        'name' => '大阪府',
+    ],
     'fukuoka'  => [
         'name' => '福岡県',
     ],
