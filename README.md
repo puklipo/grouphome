@@ -18,6 +18,8 @@ sail art migrate
 
 Excelファイルを読み込みやすいように加工してCSVファイルで出力。加工する方法はExcelでもGoogleスプレッドシートでもいい。実際に読み込むのはCSVファイル。
 
+運用段階では[resources/csv/](./resources/csv/)のcsvファイルに直接プルリクでもいい。
+
 ### 北海道
 - https://www.pref.hokkaido.lg.jp/hf/shf/jigyousyosisetuichiran.html
 
