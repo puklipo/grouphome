@@ -5,6 +5,14 @@
         </a>
     </h2>
 
+    <div class="my-6">
+        <form action="{{ route('index') }}" method="get" class="flex">
+            <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
+            <x-jet-input name="q" type="search" class="flex-auto sm:w-1/2 rounded-r-none" value="{{ request('q') }}"/>
+            <x-jet-button class="rounded-l-none" title="検索">検索</x-jet-button>
+        </form>
+    </div>
+
     @if (isset($side))
         {{ $side }}
     @endif

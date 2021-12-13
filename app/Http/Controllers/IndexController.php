@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Home;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
@@ -15,7 +16,14 @@ class IndexController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $homes = Home::latest()->paginate();
+        $homes = Home::latest('released_at')
+            ->when($request->query('q'), function (Builder $query, $search) {
+                $query->where(function (Builder $query) use ($search) {
+                    $query->where('name', 'like', "%$search%")
+                        ->orWhere('address', 'like', "%$search%")
+                        ->orWhere('company', 'like', "%$search%");
+                });
+            })->paginate();
 
         return view('home')->with(compact('homes'));
     }
