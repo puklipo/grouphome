@@ -1,0 +1,26 @@
+name: tests
+
+on:
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: tests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup PHP, with composer and extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring
+          coverage: xdebug
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-progress  --optimize-autoloader
+      - name: env
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+      - name: Test
+        run: vendor/bin/phpunit

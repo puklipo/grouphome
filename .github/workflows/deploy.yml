@@ -1,0 +1,33 @@
+name: deploy
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup PHP, with composer and extensions
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+          extensions: mbstring
+          coverage: xdebug
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-progress  --optimize-autoloader
+      - name: env
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+      - name: Test
+        run: vendor/bin/phpunit
+      - name: Deploy Environment
+        if: success() && (github.event_name != 'pull_request')
+        run: ./vendor/bin/vapor deploy production
+        env:
+          VAPOR_API_TOKEN: ${{ secrets.VAPOR }}
