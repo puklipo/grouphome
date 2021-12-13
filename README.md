@@ -33,12 +33,12 @@ Excelファイルを読み込みやすいように加工してCSVファイルで
 ### 秋田
 - https://www.pref.akita.lg.jp/pages/archive/18864
 
-### 大阪
-- https://www.city.osaka.lg.jp/fukushi/page/0000257854.html
-
 ### 東京
 「共同生活援助」以外を削除。1行目を削除。「事業所－住所」のセルの結合を解除して「事業所－地域」と「事業所－住所」に分割。
 - https://www.shougaifukushi.metro.tokyo.lg.jp/Lib/LibDspList.php?catid=100-001
+
+### 大阪
+- https://www.city.osaka.lg.jp/fukushi/page/0000257854.html
 
 ### 福岡
 1行目を削除（`一覧情報は毎月更新しています。情報を利用する場合は必ず最新の情報をご確認ください。`を削除）して2行目をヘッダーに。
