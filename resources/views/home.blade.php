@@ -29,7 +29,7 @@
 
                     <a href="{{ route('home.show', $home) }}">
                         <div
-                            class="text-5xl text-indigo-500 font-bold tracking-widest hover:text-indigo-600">{{ $home->name }}</div>
+                            class="text-5xl text-indigo-500 font-extrabold tracking-widest hover:text-indigo-600">{{ $home->name }}</div>
                     </a>
 
                     <div class="text-md my-3">{{ $home->address }}</div>

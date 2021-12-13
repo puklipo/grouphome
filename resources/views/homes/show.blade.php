@@ -20,7 +20,7 @@
             <h1 class="text-4xl hidden">{{ $home->name }}</h1>
 
             <div class="bg-white w-full m-6">
-                <div class="text-7xl text-indigo-500 font-bold tracking-widest">
+                <div class="text-7xl text-indigo-500 font-extrabold tracking-widest">
                     {{ $home->name }}
                 </div>
 
