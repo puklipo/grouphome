@@ -19,8 +19,22 @@ sail art migrate
 Excelファイルを読み込みやすいように加工してCSVファイルで出力。加工する方法はExcelでもGoogleスプレッドシートでもいい。実際に読み込むのはCSVファイル。
 
 ### 北海道
-
 - https://www.pref.hokkaido.lg.jp/hf/shf/jigyousyosisetuichiran.html
+
+### 青森
+- https://www.pref.aomori.lg.jp/soshiki/kenko/syofuku/syougai_jigyousya_ichiran.html
+
+### 岩手
+- https://www.pref.aomori.lg.jp/soshiki/kenko/syofuku/syougai_jigyousya_ichiran.html
+
+### 宮城
+- https://www.pref.miyagi.jp/site/syoufuku-top/ksb22.html
+
+### 秋田
+- https://www.pref.akita.lg.jp/pages/archive/18864
+
+### 大阪
+- https://www.city.osaka.lg.jp/fukushi/page/0000257854.html
 
 ### 東京
 「共同生活援助」以外を削除。1行目を削除。「事業所－住所」のセルの結合を解除して「事業所－地域」と「事業所－住所」に分割。
