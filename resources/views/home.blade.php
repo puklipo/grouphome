@@ -19,12 +19,14 @@
         <div class="sm:px-6 lg:px-8">
             <h1 class="text-4xl hidden">{{ config('app.name', 'Laravel') }}</h1>
 
+            {{ $homes->links() }}
+
             @foreach($homes as $home)
                 <div class="bg-white w-full m-6">
                     <a href="{{ route('home.show', $home) }}">
-                        <div class="text-4xl text-indigo-500 font-bold tracking-widest hover:text-indigo-600">{{ $home->name }}</div>
+                        <div class="text-5xl text-indigo-500 font-bold tracking-widest hover:text-indigo-600">{{ $home->name }}</div>
                     </a>
-                    <div class="text-md">{{ $home->address }}</div>
+                    <div class="text-md my-3">{{ $home->address }}</div>
 
                 </div>
             @endforeach
