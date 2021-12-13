@@ -16,6 +16,8 @@ class CreateHomesTable extends Migration
         Schema::create('homes', function (Blueprint $table) {
             $table->unsignedBigInteger('id')->unique();
 
+            $table->foreignId('pref_id')->constrained();
+
             $table->string('company')->index();
             $table->string('name')->index();
             $table->string('address')->index();

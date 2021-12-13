@@ -12,6 +12,11 @@ class Home extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'id', 'name', 'company', 'address', 'released_at',
+        'id', 'pref_id', 'name', 'company', 'address', 'released_at',
     ];
+
+    public function pref()
+    {
+        return $this->belongsTo(Pref::class);
+    }
 }

@@ -4,6 +4,7 @@ namespace App\Imports;
 
 use App\Imports\Concerns\WithImport;
 use App\Models\Home;
+use App\Models\Pref;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
@@ -23,6 +24,7 @@ class AkitaImport implements ToModel, WithHeadingRow, WithUpserts
     {
         return new Home([
             'id' => $row['事業所番号'],
+            'pref_id' => Pref::where('key', 'akita')->first()->id,
             'name' => $row['事業所名'],
             'company' => $row['事業者名'],
             'address' => $row['事業所住所'],

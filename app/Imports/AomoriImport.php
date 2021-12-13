@@ -4,6 +4,7 @@ namespace App\Imports;
 
 use App\Imports\Concerns\WithImport;
 use App\Models\Home;
+use App\Models\Pref;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
@@ -24,6 +25,7 @@ class AomoriImport implements ToModel, WithHeadingRow, WithUpserts
     {
         return new Home([
             'id'          => Str::replace('-', '', $row['事業所番号']),
+            'pref_id' => Pref::where('key', 'aomori')->first()->id,
             'name'        => $row['事業所名'],
             'company'     => $row['設置者'],
             'address'     => '青森県'.$row['事業所住所'],
