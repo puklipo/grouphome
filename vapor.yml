@@ -12,6 +12,7 @@ environments:
             - 'npm ci && npm run prod && rm -rf node_modules'
         deploy:
           - 'php artisan migrate --force'
+          - 'php artisan db:seed --force'
           - 'php artisan import:csv'
 
     staging:
@@ -25,4 +26,5 @@ environments:
             - 'npm ci && npm run dev && rm -rf node_modules'
         deploy:
             - 'php artisan migrate --force'
+            - 'php artisan db:seed --force'
             - 'php artisan import:csv'
