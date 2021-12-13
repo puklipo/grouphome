@@ -47,7 +47,7 @@ class HomeController extends Controller
      */
     public function show(Home $home)
     {
-        //
+        return view('homes.show')->with(compact('home'));
     }
 
     /**
