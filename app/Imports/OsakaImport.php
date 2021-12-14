@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Imports\Concerns\WithImport;
+use App\Imports\Concerns\WithKana;
 use App\Models\Home;
 use App\Models\Pref;
 use Maatwebsite\Excel\Concerns\Importable;
@@ -14,6 +15,7 @@ class OsakaImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
     use WithImport;
+    use WithKana;
 
     /**
      * @param  array  $row
@@ -23,11 +25,11 @@ class OsakaImport implements ToModel, WithHeadingRow, WithUpserts
     public function model(array $row)
     {
         return new Home([
-            'id' => $row['事業所番号'],
-            'pref_id' =>Pref::where('key', 'osaka')->first()->id,
-            'name' => $row['事業所名称'],
-            'company' => $row['法人名称'],
-            'address' => $row['事業所所在地'],
+            'id'          => $row['事業所番号'],
+            'pref_id'     => Pref::where('key', 'osaka')->first()->id,
+            'name'        => $this->kana($row['事業所名称']),
+            'company'     => $this->kana($row['法人名称']),
+            'address'     => $this->kana($row['事業所所在地']),
             'released_at' => $row['指定日'],
         ]);
     }

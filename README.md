@@ -8,8 +8,8 @@ cp .env.example .env
 php artisan key:generate
 
 sail up -d
-sail art migrate
-
+sail art migrate:fresh --seed
+sail art import:csv
 ```
 
 

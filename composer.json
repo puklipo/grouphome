@@ -16,7 +16,8 @@
         "laravel/vapor-core": "^2.16",
         "laravel/vapor-ui": "^1.4",
         "livewire/livewire": "^2.5",
-        "maatwebsite/excel": "^3.1"
+        "maatwebsite/excel": "^3.1",
+        "revolution/laravel-str-mixins": "^2.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",

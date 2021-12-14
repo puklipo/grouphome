@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "03a9773b9aee0fd0e5c1c45cfd1454c7",
+    "content-hash": "ae21aec781328bda8474dc86cc9fbe08",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4574,6 +4574,63 @@
                 }
             ],
             "time": "2021-09-25T23:10:38+00:00"
+        },
+        {
+            "name": "revolution/laravel-str-mixins",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kawax/laravel-str-mixins.git",
+                "reference": "49fc1100215862d30393dbf4861896339e389b67"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kawax/laravel-str-mixins/zipball/49fc1100215862d30393dbf4861896339e389b67",
+                "reference": "49fc1100215862d30393dbf4861896339e389b67",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "illuminate/support": "^7.0||^8.0",
+                "php": "^7.3||^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^5.0||^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Revolution\\Laravel\\Mixins\\StrMixinsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Revolution\\Laravel\\Mixins\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kawax",
+                    "email": "kawaxbiz@gmail.com"
+                }
+            ],
+            "description": "Laravel Str mixins",
+            "keywords": [
+                "laravel",
+                "mixins",
+                "str"
+            ],
+            "support": {
+                "issues": "https://github.com/kawax/laravel-str-mixins/issues",
+                "source": "https://github.com/kawax/laravel-str-mixins/tree/2.1.0"
+            },
+            "time": "2021-01-01T09:07:37+00:00"
         },
         {
             "name": "riverline/multipart-parser",
