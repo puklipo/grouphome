@@ -14,6 +14,7 @@ class PrefSeeder extends Seeder
      */
     public function run()
     {
+        //都道府県のデータ
         collect(config('pref'))->each(function ($pref, $key) {
             Pref::updateOrCreate([
                 'key' => $key,
