@@ -114,16 +114,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.208.4",
+            "version": "3.208.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "46376c60570103b55d9440142356995bd6d37c39"
+                "reference": "58fa9d8b522b0afa260299179ff950c783ff0ee1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/46376c60570103b55d9440142356995bd6d37c39",
-                "reference": "46376c60570103b55d9440142356995bd6d37c39",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/58fa9d8b522b0afa260299179ff950c783ff0ee1",
+                "reference": "58fa9d8b522b0afa260299179ff950c783ff0ee1",
                 "shasum": ""
             },
             "require": {
@@ -199,9 +199,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.208.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.208.5"
             },
-            "time": "2021-12-09T19:19:02+00:00"
+            "time": "2021-12-13T20:17:56+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2001,16 +2001,16 @@
         },
         {
             "name": "laravel/vapor-core",
-            "version": "v2.16.0",
+            "version": "v2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-core.git",
-                "reference": "ce1e96abd777343d7ba05c55559510fb13d2e338"
+                "reference": "553d21063e8a940e07ba54d0e2f4846b614219d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/ce1e96abd777343d7ba05c55559510fb13d2e338",
-                "reference": "ce1e96abd777343d7ba05c55559510fb13d2e338",
+                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/553d21063e8a940e07ba54d0e2f4846b614219d5",
+                "reference": "553d21063e8a940e07ba54d0e2f4846b614219d5",
                 "shasum": ""
             },
             "require": {
@@ -2066,9 +2066,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-core/tree/v2.16.0"
+                "source": "https://github.com/laravel/vapor-core/tree/v2.17.0"
             },
-            "time": "2021-11-09T14:30:12+00:00"
+            "time": "2021-12-13T14:55:26+00:00"
         },
         {
             "name": "laravel/vapor-ui",
