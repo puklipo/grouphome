@@ -35,6 +35,27 @@ Excelファイルを読み込みやすいように加工してCSVファイルで
 ### 秋田
 - https://www.pref.akita.lg.jp/pages/archive/18864
 
+### 山形
+不明
+
+### 福島
+https://www.pref.fukushima.lg.jp/sec/21035c/jigyousyojouhou.html
+
+### 茨城
+https://www.pref.ibaraki.jp/hokenfukushi/shofuku/seishin/shofuku/c/c-6.html
+
+### 栃木
+https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/shogai_jigyosha.html
+
+### 群馬
+https://www.pref.gunma.jp/02/d4200334.html
+
+### 埼玉
+https://www.pref.saitama.lg.jp/a0605/s107/index.html
+
+### 千葉
+https://www.pref.chiba.lg.jp/kenshidou/fukushishisetsu/mokuji.html
+
 ### 東京
 「共同生活援助」以外を削除。1行目を削除。「事業所－住所」のセルの結合を解除して「事業所－地域」と「事業所－住所」に分割。
 - https://www.shougaifukushi.metro.tokyo.lg.jp/Lib/LibDspList.php?catid=100-001
