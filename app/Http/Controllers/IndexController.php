@@ -23,7 +23,7 @@ class IndexController extends Controller
                         ->orWhere('address', 'like', "%$search%")
                         ->orWhere('company', 'like', "%$search%");
                 });
-            })->paginate()->withQueryString();
+            })->paginate()->withQueryString()->onEachSide(1);
 
         return view('home')->with(compact('homes'));
     }
