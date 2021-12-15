@@ -126,6 +126,17 @@ https://www.pref.hiroshima.lg.jp/soshiki/62/shiteikokuji.html
 ### 山口
 https://www.pref.yamaguchi.lg.jp/cms/a14100/jiritsu00/jyohokohyo3006.html
 
+### 徳島
+https://ouropendata.jp/dataset/1719.html
+
+### 香川
+https://www.pref.kagawa.lg.jp/shogaifukushi/shisetsu/jigyosho_ichiran.html
+
+### 愛媛
+https://www.pref.ehime.jp/h20700/fukushi/syougai/ken_shi/index.html
+
+### 高知
+https://www.pref.kochi.lg.jp/soshiki/060301/kouji.html
 
 ### 福岡
 1行目を削除（`一覧情報は毎月更新しています。情報を利用する場合は必ず最新の情報をご確認ください。`を削除）して2行目をヘッダーに。
