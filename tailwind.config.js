@@ -1,4 +1,5 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
+const colors = require('tailwindcss/colors')
 
 module.exports = {
     content: [
@@ -13,6 +14,9 @@ module.exports = {
             fontFamily: {
                 sans: ['"M PLUS 2"', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                indigo: colors.orange,
+            }
         },
     },
 
