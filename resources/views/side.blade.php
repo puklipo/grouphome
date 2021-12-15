@@ -18,17 +18,7 @@
     </div>
 
     <div class="my-6">
-        <ul>
-        @foreach(\App\Models\Pref::withCount('homes')->get() as $pref)
-            <li class="my-1">
-                <a href="{{ route('pref', $pref) }}" class="block bg-white shadow-md rounded-md font-bold text-lg text-indigo-500 hover:underline p-2 my-3 @if(request()->pref?->is($pref)) border-2 border-indigo-500 @endif">
-                    {{ $pref->name }}
-                    [{{ $pref->homes_count }}]
-                </a>
-            </li>
-
-        @endforeach
-        </ul>
+        @include('side.prefs')
     </div>
 
     @if (isset($side))
