@@ -100,8 +100,31 @@ https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/syougaifukushi/303429.html
 https://www.pref.kyoto.jp/shogaishien/syogaifukushi.html
 
 ### 大阪
-- https://www.city.osaka.lg.jp/fukushi/page/0000257854.html
+https://www.pref.osaka.lg.jp/chiikiseikatsu/syougaijisien/itiran.html
 
+### 兵庫
+https://web.pref.hyogo.lg.jp/kf08/hw19_000000221.html
+
+### 奈良
+https://www.pref.nara.jp/52403.htm
+
+### 和歌山
+https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index.html
+
+### 鳥取
+？
+
+### 島根
+https://www.pref.shimane.lg.jp/medical/fukushi/syougai/ichiran/
+
+### 岡山
+https://www.pref.okayama.jp/page/639934.html
+
+### 広島
+https://www.pref.hiroshima.lg.jp/soshiki/62/shiteikokuji.html
+
+### 山口
+https://www.pref.yamaguchi.lg.jp/cms/a14100/jiritsu00/jyohokohyo3006.html
 
 
 ### 福岡
