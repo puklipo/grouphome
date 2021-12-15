@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Home;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\Request;
 
 class IndexController extends Controller
