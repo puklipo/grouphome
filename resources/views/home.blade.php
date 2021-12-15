@@ -19,6 +19,8 @@
         <div class="sm:px-6 lg:px-8">
             <h1 class="text-4xl hidden">{{ config('app.name', 'Laravel') }}</h1>
 
+            <x-breadcrumbs-back />
+
             {{ $homes->links() }}
 
             @foreach($homes as $home)
