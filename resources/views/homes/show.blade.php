@@ -42,7 +42,7 @@
                     <div class="text-md my-3">{{ $home->address }}</div>
                     @isset($home->area)
                         <div class="text-md my-3">
-                            <a href="{{ route('area', [$pref, $home->area]) }}">
+                            <a href="{{ route('area', [$home->pref, $home->area]) }}">
                                 {{ $home->area }}
                             </a>
                         </div>

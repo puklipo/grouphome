@@ -21,8 +21,8 @@ Route::get('/', IndexController::class)->name('index');
 
 Route::resource('home', HomeController::class);
 
-Route::get('pref/{pref}', PrefController::class)->name('pref');
 Route::get('pref/{pref}/area/{area}', AreaController::class)->name('area');
+Route::get('pref/{pref}', PrefController::class)->name('pref');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
