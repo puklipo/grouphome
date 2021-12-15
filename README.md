@@ -150,6 +150,7 @@ https://www.pref.kochi.lg.jp/soshiki/060301/kouji.html
 https://www.pref.saga.lg.jp/kiji0033428/index.html
 
 ### 長崎
+PDF  
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
 ### 熊本
