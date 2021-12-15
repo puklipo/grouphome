@@ -64,7 +64,7 @@ https://www.pref.chiba.lg.jp/kenshidou/fukushishisetsu/mokuji.html
 ？
 
 ### 新潟
-https://www.city.niigata.lg.jp/smph/iryo/shofuku/syogaiservice/shisetsuannai.html
+https://www.pref.niigata.lg.jp/sec/shougaifukushi/1356826760234.html
 
 ### 富山
 https://www.pref.toyama.jp/1209/kurashi/kenkou/shougaisha/jigyousha/kj00008459.html
