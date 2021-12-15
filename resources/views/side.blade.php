@@ -6,7 +6,8 @@
     </h2>
 
     <div class="my-6">
-        <form action="{{ route('index') }}" method="get" class="flex">
+        <form action="{{ request()->routeIs(['pref']) ? url()->current() : route('index') }}" method="get"
+              class="flex">
             <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
             <x-jet-input name="q" type="search" class="flex-auto sm:w-1/2 rounded-r-none" value="{{ request('q') }}"/>
             <x-jet-button class="rounded-l-none min-w-max" title="検索">検索</x-jet-button>
@@ -17,6 +18,9 @@
         {{ $side }}
     @endif
 
-    <div class="text-sm mt-10 p-1 border-t">Copyright&copy; <a href="https://sds.fukuoka.jp/" class="font-bold text-indigo-500 hover:underline"
-            target="_blank" rel="noopener">ポップカルチャースタジオ未来図</a> All Rights Reserved.</div>
+    <div class="text-sm mt-10 p-1 border-t">Copyright&copy; <a href="https://sds.fukuoka.jp/"
+                                                               class="font-bold text-indigo-500 hover:underline"
+                                                               target="_blank" rel="noopener">ポップカルチャースタジオ未来図</a> All
+        Rights Reserved.
+    </div>
 </aside>

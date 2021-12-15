@@ -24,7 +24,11 @@
             @foreach($homes as $home)
                 <div class="bg-white w-full m-6">
                     <div class="my-3">
-                        <span class="bg-indigo-500 text-white px-6 py-1">{{ $home->pref->name }}</span>
+                        <span class="bg-indigo-500 text-white px-6 py-1">
+                            <a href="{{ route('pref', $home->pref) }}">
+                            {{ $home->pref->name }}
+                            </a>
+                        </span>
                     </div>
 
                     <a href="{{ route('home.show', $home) }}">

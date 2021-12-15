@@ -23,7 +23,11 @@
         <div class="sm:px-6 lg:px-8">
             <div class="bg-white w-full m-6">
                 <div class="mt-3">
-                    <span class="bg-indigo-500 text-white px-6 py-1">{{ $home->pref->name }}</span>
+                    <span class="bg-indigo-500 text-white px-6 py-1">
+                        <a href="{{ route('pref', $home->pref) }}">
+                            {{ $home->pref->name }}
+                        </a>
+                    </span>
                 </div>
 
                 <div class="border-4 border-indigo-500 p-3">
@@ -37,13 +41,18 @@
                 </div>
 
                 <div class="mt-6">
-                    <span class="bg-indigo-500 text-white px-6 py-1">{{ $home->pref->name }}のグループホーム</span>
+                    <span class="bg-indigo-500 text-white px-6 py-1">
+                          <a href="{{ route('pref', $home->pref) }}">
+                            {{ $home->pref->name }}のグループホーム
+                        </a>
+                    </span>
                 </div>
                 <div class="border-4 border-indigo-500 p-3">
                     <ul>
                         @foreach($home->pref->homes()->inRandomOrder()->limit(10)->get() as $h)
                             <li class="my-1 flex justify-between">
-                                <a href="{{ route('home.show', $h) }}" class="text-xl text-indigo-500 font-bold hover:underline">
+                                <a href="{{ route('home.show', $h) }}"
+                                   class="text-xl text-indigo-500 font-bold hover:underline">
                                     {{ $h->name }}
                                 </a>
                                 <span class="text-md text-gray-500 ml-6">{{ Str::limit($h->address, 30) }}</span>
