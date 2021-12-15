@@ -154,6 +154,7 @@ PDF
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
 ### 熊本
+ヘッダーの加工がかなり必要。  
 https://www.pref.kumamoto.jp/soshiki/39/50669.html
 
 ### 大分
