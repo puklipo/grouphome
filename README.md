@@ -93,9 +93,16 @@ https://www.pref.aichi.jp/soshiki/shogai/30shitei.html
 ### 三重
 https://www.pref.mie.lg.jp/SHOHO/HP/60549032672_00077.htm
 
+### 滋賀
+https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/syougaifukushi/303429.html
+
+### 京都
+https://www.pref.kyoto.jp/shogaishien/syogaifukushi.html
 
 ### 大阪
 - https://www.city.osaka.lg.jp/fukushi/page/0000257854.html
+
+
 
 ### 福岡
 1行目を削除（`一覧情報は毎月更新しています。情報を利用する場合は必ず最新の情報をご確認ください。`を削除）して2行目をヘッダーに。
