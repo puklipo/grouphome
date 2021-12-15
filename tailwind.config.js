@@ -15,7 +15,7 @@ module.exports = {
                 sans: ['"M PLUS 2"', ...defaultTheme.fontFamily.sans],
             },
             colors: {
-                indigo: colors.orange,
+                indigo: colors.blue,
             }
         },
     },
