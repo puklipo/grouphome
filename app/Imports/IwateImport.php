@@ -24,12 +24,16 @@ class IwateImport implements ToModel, WithHeadingRow, WithUpserts
      */
     public function model(array $row)
     {
+        if (empty($row['事業所番号'])) {
+            return null;
+        }
+
         return new Home([
-            'id'          => $row['事業所番号'],
-            'pref_id'     => Pref::where('key', 'iwate')->first()->id,
-            'name'        => $this->kana($row['住居名']),
-            'company'     => $this->kana($row['法人名']),
-            'address'     => $this->kana($row['住所'] ?? ''),
+            'id' => $row['事業所番号'],
+            'pref_id' => Pref::where('key', 'iwate')->first()->id,
+            'name' => $this->kana($row['住居名']),
+            'company' => $this->kana($row['法人名']),
+            'address' => $this->kana($row['住所'] ?? ''),
             'released_at' => $row['事業所指定日'],
         ]);
     }

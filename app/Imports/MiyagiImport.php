@@ -24,6 +24,10 @@ class MiyagiImport implements ToModel, WithHeadingRow, WithUpserts
      */
     public function model(array $row)
     {
+        if (empty($row['事業所番号'])) {
+            return null;
+        }
+
         return new Home([
             'id' => (string) $row['事業所番号'].(string) $row['枝番／連番'],
             'pref_id' => Pref::where('key', 'miyagi')->first()->id,
