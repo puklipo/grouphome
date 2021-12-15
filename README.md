@@ -139,5 +139,5 @@ https://www.pref.ehime.jp/h20700/fukushi/syougai/ken_shi/index.html
 https://www.pref.kochi.lg.jp/soshiki/060301/kouji.html
 
 ### 福岡
-1行目を削除（`一覧情報は毎月更新しています。情報を利用する場合は必ず最新の情報をご確認ください。`を削除）して2行目をヘッダーに。
+1行目を削除して2行目をヘッダーに。
 - https://www.pref.fukuoka.lg.jp/contents/shougaishashiteijigyousyo.html
