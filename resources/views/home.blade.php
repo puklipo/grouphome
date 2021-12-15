@@ -28,9 +28,9 @@
                     </div>
 
                     <a href="{{ route('home.show', $home) }}">
-                        <span class="text-5xl text-indigo-500 font-extrabold tracking-widest hover:text-indigo-600">
+                        <h2 class="text-5xl text-indigo-500 font-extrabold tracking-widest hover:text-indigo-600">
                             {{ $home->name }}
-                        </span>
+                        </h2>
                     </a>
 
                     <div class="text-md my-3">{{ $home->address }}</div>
