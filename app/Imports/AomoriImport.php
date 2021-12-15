@@ -25,12 +25,16 @@ class AomoriImport implements ToModel, WithHeadingRow, WithUpserts
      */
     public function model(array $row)
     {
+        if (empty($row['事業所番号'])) {
+            return null;
+        }
+
         return new Home([
-            'id'          => Str::replace('-', '', $row['事業所番号']),
-            'pref_id'     => Pref::where('key', 'aomori')->first()->id,
-            'name'        => $this->kana($row['事業所名']),
-            'company'     => $this->kana($row['設置者']),
-            'address'     => $this->kana('青森県'.$row['事業所住所']),
+            'id' => Str::replace('-', '', $row['事業所番号']),
+            'pref_id' => Pref::where('key', 'aomori')->first()->id,
+            'name' => $this->kana($row['事業所名']),
+            'company' => $this->kana($row['設置者']),
+            'address' => $this->kana('青森県'.$row['事業所住所']),
             'released_at' => $row['指定年月日'],
         ]);
     }
