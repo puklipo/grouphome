@@ -26,12 +26,19 @@
 
             <div class="bg-white m-6">
 
-                <div class="mt-3">
+                <div class="mt-3 flex justify-between">
                     <span class="bg-indigo-500 text-white px-6 py-1">
                         <a href="{{ route('pref', $home->pref) }}">
                             {{ $home->pref->name }}
                         </a>
                     </span>
+                    @isset($home->area)
+                        <span class="bg-indigo-400 text-white px-6 py-1">
+                            <a href="{{ route('area', [$home->pref, $home->area]) }}">
+                                {{ $home->area }}
+                            </a>
+                        </span>
+                    @endisset
                 </div>
 
                 <div class="border-4 border-indigo-500 p-3">
@@ -40,13 +47,6 @@
                     </h1>
 
                     <div class="text-md my-3">{{ $home->address }}</div>
-                    @isset($home->area)
-                        <div class="text-md my-3">
-                            <a href="{{ route('area', [$home->pref, $home->area]) }}">
-                                {{ $home->area }}
-                            </a>
-                        </div>
-                    @endisset
 
                     <div class="text-md my-3">{{ $home->company }}</div>
                     <div class="text-md my-3">指定年月日 {{ $home->released_at }}</div>
