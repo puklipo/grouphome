@@ -22,6 +22,6 @@ class PrefController extends Controller
             ->withQueryString()
             ->onEachSide(1);
 
-        return view('home')->with(compact('homes'));
+        return view('pref.show')->with(compact('pref', 'homes'));
     }
 }
