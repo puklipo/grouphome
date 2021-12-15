@@ -60,6 +60,40 @@ https://www.pref.chiba.lg.jp/kenshidou/fukushishisetsu/mokuji.html
 「共同生活援助」以外を削除。1行目を削除。「事業所－住所」のセルの結合を解除して「事業所－地域」と「事業所－住所」に分割。
 - https://www.shougaifukushi.metro.tokyo.lg.jp/Lib/LibDspList.php?catid=100-001
 
+### 神奈川
+？
+
+### 新潟
+https://www.city.niigata.lg.jp/smph/iryo/shofuku/syogaiservice/shisetsuannai.html
+
+### 富山
+https://www.pref.toyama.jp/1209/kurashi/kenkou/shougaisha/jigyousha/kj00008459.html
+
+### 石川
+https://www.pref.ishikawa.lg.jp/fukusi/jiritsushienfukushi/jigyousyashiteiichiran.html
+
+### 福井
+https://www.pref.fukui.lg.jp/doc/shougai/syogaishisetu.html
+
+### 山梨
+https://www.pref.yamanashi.jp/shogai-fks/shogai-sisetsu.html
+
+### 長野
+https://www.pref.nagano.lg.jp/shogai-shien/kenko/shogai/shogai/joho/jigyosha/ichiranhyo.html
+
+### 岐阜
+https://www.pref.gifu.lg.jp/page/26315.html
+
+### 静岡
+http://www.pref.shizuoka.jp/kousei/ko-240/kaigo/shougai-shidou/jigyousyo.html
+
+### 愛知
+https://www.pref.aichi.jp/soshiki/shogai/30shitei.html
+
+### 三重
+https://www.pref.mie.lg.jp/SHOHO/HP/60549032672_00077.htm
+
+
 ### 大阪
 - https://www.city.osaka.lg.jp/fukushi/page/0000257854.html
 
