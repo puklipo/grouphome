@@ -36,7 +36,9 @@ Excelファイルを読み込みやすいように加工してCSVファイルで
 - https://www.pref.akita.lg.jp/pages/archive/18864
 
 ### 山形
-不明
+？  
+
+https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008376/1004625.html
 
 ### 福島
 https://www.pref.fukushima.lg.jp/sec/21035c/jigyousyojouhou.html
@@ -61,7 +63,8 @@ https://www.pref.chiba.lg.jp/kenshidou/fukushishisetsu/mokuji.html
 - https://www.shougaifukushi.metro.tokyo.lg.jp/Lib/LibDspList.php?catid=100-001
 
 ### 神奈川
-？
+？  
+https://www.rakuraku.or.jp/shienhi/
 
 ### 新潟
 https://www.pref.niigata.lg.jp/sec/shougaifukushi/1356826760234.html
@@ -112,7 +115,8 @@ https://www.pref.nara.jp/52403.htm
 https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index.html
 
 ### 鳥取
-？
+？  
+https://www.pref.tottori.lg.jp/254597.htm
 
 ### 島根
 https://www.pref.shimane.lg.jp/medical/fukushi/syougai/ichiran/
@@ -141,3 +145,30 @@ https://www.pref.kochi.lg.jp/soshiki/060301/kouji.html
 ### 福岡
 1行目を削除して2行目をヘッダーに。
 - https://www.pref.fukuoka.lg.jp/contents/shougaishashiteijigyousyo.html
+
+### 佐賀
+https://www.pref.saga.lg.jp/kiji0033428/index.html
+
+### 長崎
+https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
+
+### 熊本
+https://www.pref.kumamoto.jp/soshiki/39/50669.html
+
+### 大分
+？
+
+大分市  
+http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
+
+### 宮崎
+？
+
+宮崎市  
+https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/other_services/272423.html
+
+### 鹿児島
+http://www.pref.kagoshima.jp/ae04/kenko-fukushi/syogai-syakai/syakaifukushi/hokenfukushishisetu-list.html
+
+### 沖縄
+https://www.pref.okinawa.lg.jp/site/kodomo/shogaifukushi/old/20738.html
