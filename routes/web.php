@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AreaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PrefController;
@@ -21,6 +22,7 @@ Route::get('/', IndexController::class)->name('index');
 Route::resource('home', HomeController::class);
 
 Route::get('pref/{pref}', PrefController::class)->name('pref');
+Route::get('pref/{pref}/area/{area}', AreaController::class)->name('area');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

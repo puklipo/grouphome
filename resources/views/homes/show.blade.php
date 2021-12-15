@@ -40,6 +40,14 @@
                     </h1>
 
                     <div class="text-md my-3">{{ $home->address }}</div>
+                    @isset($home->area)
+                        <div class="text-md my-3">
+                            <a href="{{ route('area', $pref, $home->area) }}">
+                                {{ $home->area }}
+                            </a>
+                        </div>
+                    @endisset
+
                     <div class="text-md my-3">{{ $home->company }}</div>
                     <div class="text-md my-3">指定年月日 {{ $home->released_at }}</div>
                 </div>
