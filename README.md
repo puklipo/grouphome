@@ -166,10 +166,11 @@ http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
 ### 宮崎
 ？
 
-宮崎市  
+宮崎市。使いにくいExcelファイル。  
 https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/other_services/272423.html
 
 ### 鹿児島
+表6。事業者番号なし。  
 http://www.pref.kagoshima.jp/ae04/kenko-fukushi/syogai-syakai/syakaifukushi/hokenfukushishisetu-list.html
 
 ### 沖縄
