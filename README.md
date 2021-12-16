@@ -16,9 +16,9 @@ sail art import:csv
 ## Excelファイル
 グループホームの一覧情報は各都道府県サイトのExcelファイルで取得できる。[障害福祉サービス等情報検索](https://www.wam.go.jp/sfkohyoout/) からも取得できるけどグループホームはExcelファイルからの方が良さそう。
 
-Excelファイルを読み込みやすいように加工してCSVファイルで出力。加工する方法はExcelでもGoogleスプレッドシートでもいい。実際に読み込むのはCSVファイル。
-
-運用段階では[resources/csv/](./resources/csv/)のcsvファイルに直接プルリクでもいい。
+元のExcelファイルが使いにくいことが多いので現実的にはGoogleスプレッドシートをマスターデータにする。  
+都道府県サイトのExcelファイルや障害福祉サービス等情報検索などを見てGoogleスプレッドシートに入力していく。  
+Googleスプレッドシートから出力したCSVファイルをインポート。
 
 ### 北海道
 - https://www.pref.hokkaido.lg.jp/hf/shf/jigyousyosisetuichiran.html
