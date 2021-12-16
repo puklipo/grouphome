@@ -5,7 +5,6 @@ namespace App\Imports;
 use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
-use App\Models\Pref;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
@@ -33,7 +32,7 @@ class OsakaImport implements ToModel, WithHeadingRow, WithUpserts
             'name' => $this->kana($row['事業所名称']),
             'company' => $this->kana($row['法人名称']),
             'tel' => $this->kana($row['事業所電話番号']),
-            'address' => $this->kana($row['事業所所在地']),
+            'address' => '大阪府'.$this->kana($row['事業所所在地']),
             'released_at' => $row['指定日'],
         ]);
     }
