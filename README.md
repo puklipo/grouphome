@@ -173,7 +173,7 @@ http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
 https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/other_services/272423.html
 
 ### 鹿児島
-表6。事業者番号なし。  
+表6。事業者番号なし。障害福祉サービス等情報検索で番号を調べてGoogleスプレッドシートに入力すればインポート可能。手間大。  
 http://www.pref.kagoshima.jp/ae04/kenko-fukushi/syogai-syakai/syakaifukushi/hokenfukushishisetu-list.html
 
 ### 沖縄
