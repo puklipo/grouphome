@@ -1,16 +1,16 @@
 <x-main-layout>
     <x-slot name="title">
-        {{ $pref->name }}
+        {{ $pref->name }}{{ request('area') }}
     </x-slot>
 
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
-                {{ $pref->name }} | {{ config('app.name') }}
+                {{ $pref->name }}{{ request('area') }} | {{ config('app.name') }}
             </x-slot>
 
             <x-slot name="description">
-                {{ $pref->name.'の障害者グループホーム' }}
+                {{ $pref->name.request('area').'の障害者グループホーム' }}
             </x-slot>
         </x-ogp>
     </x-slot>

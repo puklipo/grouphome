@@ -6,6 +6,7 @@ use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
 use App\Models\Pref;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
@@ -35,7 +36,7 @@ class HokkaidoImport implements ToModel, WithHeadingRow, WithUpserts
             'company' => $this->kana($row['法人(設置者)名']),
             'tel' => $this->kana($row['事業所電話']),
             'address' => $this->kana($row['事業所所在地1'].$row['事業所所在地2'].$row['事業所所在地3']),
-            'area' => $this->kana($row['事業所所在地1']),
+            'area' => $this->kana(Str::replace('北海道', '', $row['事業所所在地1'])),
             'released_at' => $row['指定年月日'],
         ]);
     }

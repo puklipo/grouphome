@@ -6,6 +6,7 @@ use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
 use App\Models\Pref;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
@@ -35,7 +36,7 @@ class TokyoImport implements ToModel, WithHeadingRow, WithUpserts
             'company' => $this->kana($row['申請者－名称']),
             'tel' => $this->kana($row['事業所－電話番号']),
             'address' => $this->kana($row['事業所－地域'].$row['事業所－住所']),
-            'area' => $this->kana($row['事業所－地域']),
+            'area' => $this->kana(Str::replace('東京都', '', $row['事業所－地域'])),
             'released_at' => $row['指定年月日'],
         ]);
     }

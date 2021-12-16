@@ -35,7 +35,7 @@ class SagaImport implements ToModel, WithHeadingRow, WithUpserts
             'company' => $this->kana($row['法人(設置者)名']),
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('佐賀県'.$row['所在市町'].$row['所在地']),
-            'area' => $this->kana('佐賀県'.$row['所在市町']),
+            'area' => $this->kana($row['所在市町']),
             'released_at' => $row['指定年月日'],
         ]);
     }
