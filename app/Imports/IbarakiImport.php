@@ -10,7 +10,7 @@ use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithUpserts;
 
-class FukuokaImport implements ToModel, WithHeadingRow, WithUpserts
+class IbarakiImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
     use WithImport;
@@ -30,10 +30,10 @@ class FukuokaImport implements ToModel, WithHeadingRow, WithUpserts
         return new Home([
             'id' => $row['事業所番号'],
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['事業所－名称']),
-            'company' => $this->kana($row['申請者－名称']),
-            'tel' => $this->kana($row['事業所－電話番号']),
-            'address' => $this->kana($row['事業所－住所']),
+            'name' => $this->kana($row['事業所名']),
+            'company' => $this->kana($row['法人名']),
+            'tel' => $this->kana($row['事業所電話']),
+            'address' => $this->kana($row['事業所所在地']),
             'area' => $row['市区町村'] ?? null,
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,

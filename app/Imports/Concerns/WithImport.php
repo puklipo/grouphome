@@ -2,6 +2,9 @@
 
 namespace App\Imports\Concerns;
 
+use App\Models\Pref;
+use Illuminate\Support\Str;
+
 trait WithImport
 {
     /**
@@ -10,5 +13,15 @@ trait WithImport
     public function uniqueBy()
     {
         return 'id';
+    }
+
+    /**
+     * @return int
+     */
+    private function prefId(): int
+    {
+        $key = (string) Str::of(class_basename(__CLASS__))->remove('Import')->lower();
+
+        return Pref::where('key', $key)->first()->id;
     }
 }
