@@ -30,7 +30,7 @@ class SagaImport implements ToModel, WithHeadingRow, WithUpserts
 
         return new Home([
             'id' => trim($row['事業所番号']),
-            'pref_id' => Pref::where('key', 'saga')->first()->id,
+            'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['法人(設置者)名']),
             'tel' => $this->kana($row['電話番号']),

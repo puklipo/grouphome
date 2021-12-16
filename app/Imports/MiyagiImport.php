@@ -29,8 +29,8 @@ class MiyagiImport implements ToModel, WithHeadingRow, WithUpserts
         }
 
         return new Home([
-            'id' => (string) $row['事業所番号'].(string) $row['枝番／連番'],
-            'pref_id' => Pref::where('key', 'miyagi')->first()->id,
+            'id' => $row['事業所番号']. $row['枝番／連番'],
+            'pref_id' => $this->prefId(),
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['申請者名称']),
             'address' => $this->kana($row['事業所所在地']),

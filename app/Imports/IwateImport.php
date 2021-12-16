@@ -30,7 +30,7 @@ class IwateImport implements ToModel, WithHeadingRow, WithUpserts
 
         return new Home([
             'id' => $row['事業所番号'],
-            'pref_id' => Pref::where('key', 'iwate')->first()->id,
+            'pref_id' => $this->prefId(),
             'name' => $this->kana($row['住居名']),
             'company' => $this->kana($row['法人名']),
             'tel' => $this->kana($row['電話番号']),

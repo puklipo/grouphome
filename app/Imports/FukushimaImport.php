@@ -31,7 +31,7 @@ class FukushimaImport implements ToModel, WithHeadingRow, WithUpserts
 
         return new Home([
             'id' => $row['事業所番号'],
-            'pref_id' => Pref::where('key', 'fukushima')->first()->id,
+            'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => '',
             'tel' => $this->kana($row['事業所電話']),

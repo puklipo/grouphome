@@ -31,7 +31,7 @@ class AomoriImport implements ToModel, WithHeadingRow, WithUpserts
 
         return new Home([
             'id' => Str::replace('-', '', $row['事業所番号']),
-            'pref_id' => Pref::where('key', 'aomori')->first()->id,
+            'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['設置者']),
             'tel' => $this->kana($row['電話番号']),

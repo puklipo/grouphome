@@ -30,7 +30,7 @@ class OkinawaImport implements ToModel, WithHeadingRow, WithUpserts
 
         return new Home([
             'id' => trim($row['事業所番号']),
-            'pref_id' => Pref::where('key', 'okinawa')->first()->id,
+            'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所－名称']),
             'company' => $this->kana($row['申請者－名称']),
             'tel' => $this->kana($row['事業所－電話番号']),
