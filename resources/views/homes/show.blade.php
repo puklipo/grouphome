@@ -55,7 +55,7 @@
                           マップ
                     </span>
                     </div>
-                    <div class="border-4 border-indigo-500 p-3">
+                    <div class="border-4 border-indigo-500 p-3 flex justify-center">
                         {!! $home->map !!}
                     </div>
                 @endisset
