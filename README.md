@@ -146,6 +146,7 @@ https://www.pref.kagawa.lg.jp/shogaifukushi/shisetsu/jigyosho_ichiran.html
 https://www.pref.ehime.jp/h20700/fukushi/syougai/ken_shi/index.html
 
 ### 高知
+事業所番号・住所なし。  
 https://www.pref.kochi.lg.jp/soshiki/060301/kouji.html
 
 ### 福岡
