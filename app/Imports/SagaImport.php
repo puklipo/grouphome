@@ -19,7 +19,6 @@ class SagaImport implements ToModel, WithHeadingRow, WithUpserts
 
     /**
      * @param  array  $row
-     *
      * @return \Illuminate\Database\Eloquent\Model|null
      */
     public function model(array $row)

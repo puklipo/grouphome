@@ -19,7 +19,6 @@ class MiyagiImport implements ToModel, WithHeadingRow, WithUpserts
 
     /**
      * @param  array  $row
-     *
      * @return \Illuminate\Database\Eloquent\Model|null
      */
     public function model(array $row)
@@ -29,7 +28,7 @@ class MiyagiImport implements ToModel, WithHeadingRow, WithUpserts
         }
 
         return new Home([
-            'id' => $row['事業所番号']. $row['枝番／連番'],
+            'id' => $row['事業所番号'].$row['枝番／連番'],
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['申請者名称']),

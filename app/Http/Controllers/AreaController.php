@@ -19,7 +19,7 @@ class AreaController extends Controller
     {
         $homes = $pref->homes()->with('pref')
             ->latest('released_at')
-            ->where(fn($query) => $query->where('address', 'like', "%$area%")
+            ->where(fn ($query) => $query->where('address', 'like', "%$area%")
                 ->orWhere('area', $area))
             ->paginate(50)
             ->withQueryString()

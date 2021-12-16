@@ -19,7 +19,7 @@ class PrefSeeder extends Seeder
             Pref::updateOrCreate([
                 'key' => $key,
             ], [
-                'name' => $pref['name']
+                'name' => $pref['name'],
             ]);
         });
     }
