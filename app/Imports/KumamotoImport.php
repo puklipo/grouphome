@@ -34,6 +34,7 @@ class KumamotoImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'kumamoto')->first()->id,
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['事業者名称']),
+            'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('熊本県'.$row['住　所']),
             'area' => $this->kana($row['所在地']),
             'released_at' => Carbon::createFromFormat('Y年m月d日',$row['指定年月日']),

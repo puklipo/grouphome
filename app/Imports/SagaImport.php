@@ -33,6 +33,7 @@ class SagaImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'saga')->first()->id,
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['法人(設置者)名']),
+            'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('佐賀県'.$row['所在市町'].$row['所在地']),
             'area' => $this->kana('佐賀県'.$row['所在市町']),
             'released_at' => $row['指定年月日'],

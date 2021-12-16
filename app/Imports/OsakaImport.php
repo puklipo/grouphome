@@ -33,6 +33,7 @@ class OsakaImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'osaka')->first()->id,
             'name' => $this->kana($row['事業所名称']),
             'company' => $this->kana($row['法人名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所所在地']),
             'released_at' => $row['指定日'],
         ]);

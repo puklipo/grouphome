@@ -33,6 +33,7 @@ class IwateImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'iwate')->first()->id,
             'name' => $this->kana($row['住居名']),
             'company' => $this->kana($row['法人名']),
+            'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana($row['住所'] ?? ''),
             'released_at' => $row['事業所指定日'],
         ]);

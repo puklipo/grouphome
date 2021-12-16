@@ -33,6 +33,7 @@ class AkitaImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'akita')->first()->id,
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['事業者名']),
+            'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所住所']),
             'released_at' => $row['指定年月日'],
         ]);

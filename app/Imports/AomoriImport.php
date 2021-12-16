@@ -34,6 +34,7 @@ class AomoriImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'aomori')->first()->id,
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['設置者']),
+            'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('青森県'.$row['事業所住所']),
             'released_at' => $row['指定年月日'],
         ]);
