@@ -34,6 +34,7 @@ class HokkaidoImport implements ToModel, WithHeadingRow, WithUpserts
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['法人(設置者)名']),
             'address' => $this->kana($row['事業所所在地1'].$row['事業所所在地2'].$row['事業所所在地3']),
+            'area' => $this->kana($row['事業所所在地1']),
             'released_at' => $row['指定年月日'],
         ]);
     }

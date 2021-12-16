@@ -34,6 +34,7 @@ class MiyagiImport implements ToModel, WithHeadingRow, WithUpserts
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['申請者名称']),
             'address' => $this->kana($row['事業所所在地']),
+            'area' => $this->kana($row['事業所市町村名']),
             'released_at' => $row['指定年月日'],
         ]);
     }
