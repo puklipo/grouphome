@@ -1,4 +1,4 @@
-<div class="bg-white w-full m-6">
+<div class="bg-white m-6">
     @include('homes.header')
 
     <a href="{{ route('home.show', $home) }}">
