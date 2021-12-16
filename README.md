@@ -152,6 +152,8 @@ https://www.pref.ehime.jp/h20700/fukushi/syougai/ken_shi/index.html
 https://www.pref.kochi.lg.jp/soshiki/060301/kouji.html
 
 ### 福岡
+更新頻度：毎月。  
+手間：低。  
 https://www.pref.fukuoka.lg.jp/contents/shougaishashiteijigyousyo.html
 
 https://docs.google.com/spreadsheets/d/1OoyzFwfJfijb9cY_shjbt6fLK0RgnSPsPL4c24uJWOI/edit?usp=sharing
