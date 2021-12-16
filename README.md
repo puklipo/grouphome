@@ -41,6 +41,7 @@ Googleスプレッドシートから出力したCSVファイルをインポー�
 https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008376/1004625.html
 
 ### 福島
+（中核市除く）  
 https://www.pref.fukushima.lg.jp/sec/21035c/jigyousyojouhou.html
 
 ### 茨城
