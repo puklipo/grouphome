@@ -134,6 +134,7 @@ https://www.pref.hiroshima.lg.jp/soshiki/62/shiteikokuji.html
 https://www.pref.yamaguchi.lg.jp/cms/a14100/jiritsu00/jyohokohyo3006.html
 
 ### 徳島
+事業所番号なし。  
 https://ouropendata.jp/dataset/1719.html
 
 ### 香川
