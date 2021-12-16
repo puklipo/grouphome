@@ -37,6 +37,15 @@
 
                     <div class="text-md my-3">{{ $home->company }}</div>
                     <div class="text-md my-3">{{ $home->tel }}</div>
+
+                    @isset($home->url)
+                        <div class="text-md my-3">
+                            <a href="{{ $home->url }}" target="_blank" class="text-indigo-500 font-bold hover:underline">
+                                URL
+                            </a>
+                        </div>
+                    @endisset
+
                     <div class="text-md my-3">指定年月日 {{ $home->released_at }}</div>
                 </div>
 

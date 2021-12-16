@@ -37,6 +37,7 @@ class FukuokaImport implements ToModel, WithHeadingRow, WithUpserts
             'address' => $this->kana($row['事業所－住所']),
             'area' => $row['市区町村'],
             'map' => $row['Googleマップ'],
+            'url' => $row['URL'],
             'released_at' => $row['指定年月日'],
         ]);
     }

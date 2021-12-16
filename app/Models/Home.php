@@ -13,7 +13,16 @@ class Home extends Model
     public $incrementing = false;
 
     protected $fillable = [
-        'id', 'pref_id', 'name', 'company', 'tel', 'address', 'area', 'map', 'released_at',
+        'id',
+        'pref_id',
+        'name',
+        'company',
+        'tel',
+        'address',
+        'area',
+        'map',
+        'url',
+        'released_at',
     ];
 
     public function pref()
