@@ -45,6 +45,7 @@ https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008376/1004625
 https://www.pref.fukushima.lg.jp/sec/21035c/jigyousyojouhou.html
 
 ### 茨城
+扱いやすいExcelファイル。  
 https://www.pref.ibaraki.jp/hokenfukushi/shofuku/seishin/shofuku/c/c-6.html
 
 ### 栃木
