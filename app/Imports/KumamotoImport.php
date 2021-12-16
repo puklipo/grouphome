@@ -20,7 +20,6 @@ class KumamotoImport implements ToModel, WithHeadingRow, WithUpserts
 
     /**
      * @param  array  $row
-     *
      * @return \Illuminate\Database\Eloquent\Model|null
      */
     public function model(array $row)
@@ -37,7 +36,7 @@ class KumamotoImport implements ToModel, WithHeadingRow, WithUpserts
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('熊本県'.$row['住　所']),
             'area' => $this->kana($row['所在地']),
-            'released_at' => Carbon::createFromFormat('Y年m月d日',$row['指定年月日']),
+            'released_at' => Carbon::createFromFormat('Y年m月d日', $row['指定年月日']),
         ]);
     }
 }
