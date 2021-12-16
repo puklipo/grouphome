@@ -10,7 +10,7 @@
             </x-slot>
 
             <x-slot name="description">
-                {{ $home->name }}
+                {{ $home->name }} {{ $home->address }}
             </x-slot>
         </x-ogp>
     </x-slot>
