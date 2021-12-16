@@ -91,7 +91,10 @@ https://www.pref.gifu.lg.jp/page/26315.html
 http://www.pref.shizuoka.jp/kousei/ko-240/kaigo/shougai-shidou/jigyousyo.html
 
 ### 愛知
-https://www.pref.aichi.jp/soshiki/shogai/30shitei.html
+？
+
+名古屋市はここから検索後CSVでダウンロード可能。  
+https://www.kaigo-wel.city.nagoya.jp/view/wel/jigyosho/
 
 ### 三重
 https://www.pref.mie.lg.jp/SHOHO/HP/60549032672_00077.htm
