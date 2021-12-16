@@ -39,6 +39,17 @@
                     <div class="text-md my-3">指定年月日 {{ $home->released_at }}</div>
                 </div>
 
+                @isset($home->map)
+                    <div class="mt-6">
+                    <span class="bg-indigo-500 text-white px-6 py-1">
+                          マップ
+                    </span>
+                    </div>
+                    <div class="border-4 border-indigo-500 p-3">
+                        {!! $home->map !!}
+                    </div>
+                @endisset
+
                 <div class="mt-6">
                     <span class="bg-indigo-500 text-white px-6 py-1">
                           <a href="{{ route('pref', $home->pref) }}">
