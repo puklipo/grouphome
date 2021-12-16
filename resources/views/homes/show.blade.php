@@ -26,20 +26,7 @@
 
             <div class="bg-white m-6">
 
-                <div class="mt-3 flex justify-between">
-                    <span class="bg-indigo-500 text-white px-6 py-1">
-                        <a href="{{ route('pref', $home->pref) }}">
-                            {{ $home->pref->name }}
-                        </a>
-                    </span>
-                    @isset($home->area)
-                        <span class="bg-indigo-400 text-white px-6 py-1">
-                            <a href="{{ route('area', [$home->pref, $home->area]) }}">
-                                {{ $home->area }}
-                            </a>
-                        </span>
-                    @endisset
-                </div>
+                @include('homes.header')
 
                 <div class="border-4 border-indigo-500 p-3">
                     <h1 class="text-7xl text-indigo-500 font-extrabold tracking-widest">
