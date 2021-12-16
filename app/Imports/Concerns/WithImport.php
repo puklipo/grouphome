@@ -22,6 +22,6 @@ trait WithImport
     {
         $key = (string) Str::of(class_basename(__CLASS__))->remove('Import')->lower();
 
-        return Pref::where('key', $key)->first()->id;
+        return Pref::where('key', $key)->value('id');
     }
 }
