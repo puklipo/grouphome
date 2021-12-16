@@ -13,9 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('types', function (Blueprint $table) {
-            $table->id();
-            $table->string('type');
+        Schema::table('homes', function (Blueprint $table) {
+            $table->string('tel')->nullable()->after('company');
         });
     }
 
@@ -26,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('types');
+        Schema::table('homes', function (Blueprint $table) {
+            $table->dropColumn('tel');
+        });
     }
 };

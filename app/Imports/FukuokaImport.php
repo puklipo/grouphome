@@ -33,6 +33,7 @@ class FukuokaImport implements ToModel, WithHeadingRow, WithUpserts
             'pref_id' => Pref::where('key', 'fukuoka')->first()->id,
             'name' => $this->kana($row['事業所－名称']),
             'company' => $this->kana($row['申請者－名称']),
+            'tel' => $this->kana($row['事業所－電話番号']),
             'address' => $this->kana($row['事業所－住所']),
             'area' => $row['市区町村'],
             'map' => $row['Googleマップ'],
