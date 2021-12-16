@@ -138,9 +138,11 @@ https://www.pref.yamaguchi.lg.jp/cms/a14100/jiritsu00/jyohokohyo3006.html
 https://ouropendata.jp/dataset/1719.html
 
 ### 香川
+PDF  
 https://www.pref.kagawa.lg.jp/shogaifukushi/shisetsu/jigyosho_ichiran.html
 
 ### 愛媛
+事業所番号なし。  
 https://www.pref.ehime.jp/h20700/fukushi/syougai/ken_shi/index.html
 
 ### 高知
