@@ -8,7 +8,7 @@
     </div>
 
     <a href="{{ route('home.show', $home) }}">
-        <h2 class="inline-flex text-5xl text-indigo-500 font-extrabold tracking-widest hover:text-indigo-600">
+        <h2 class="text-5xl text-indigo-500 font-extrabold tracking-widest hover:text-indigo-600">
             {{ $home->name }}
         </h2>
     </a>
