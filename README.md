@@ -72,7 +72,11 @@ https://www.rakuraku.or.jp/shienhi/
 https://www.pref.niigata.lg.jp/sec/shougaifukushi/1356826760234.html
 
 ### 富山
-https://www.pref.toyama.jp/1209/kurashi/kenkou/shougaisha/jigyousha/kj00008459.html
+富山市以外  
+https://www.pref.toyama.jp/1209/kurashi/kenkou/shougaisha/jigyousha/kj00008459.html  
+
+富山市  
+https://www.city.toyama.toyama.jp/fukushihokenbu/shogaifukushika/jigyousyojouhou.html
 
 ### 石川
 https://www.pref.ishikawa.lg.jp/fukusi/jiritsushienfukushi/jigyousyashiteiichiran.html
