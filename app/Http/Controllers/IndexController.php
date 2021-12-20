@@ -16,7 +16,7 @@ class IndexController extends Controller
     public function __invoke(Request $request)
     {
         $homes = Home::with('pref')
-            ->latest('released_at')
+            ->latest()
             ->keywordSearch($request->query('q'))
             ->paginate(50)
             ->withQueryString()

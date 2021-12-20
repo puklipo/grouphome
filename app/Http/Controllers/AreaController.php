@@ -18,7 +18,7 @@ class AreaController extends Controller
     public function __invoke(Request $request, Pref $pref, string $area)
     {
         $homes = $pref->homes()->with('pref')
-            ->latest('released_at')
+            ->latest()
             ->where(fn ($query) => $query->where('address', 'like', "%$area%")
                 ->orWhere('area', $area))
             ->paginate(50)

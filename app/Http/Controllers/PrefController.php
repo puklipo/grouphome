@@ -16,7 +16,7 @@ class PrefController extends Controller
     public function __invoke(Request $request, Pref $pref)
     {
         $homes = $pref->homes()->with('pref')
-            ->latest('released_at')
+            ->latest()
             ->keywordSearch($request->query('q'))
             ->paginate(50)
             ->withQueryString()
