@@ -15,6 +15,11 @@ trait WithImport
         return 'id';
     }
 
+    public function chunkSize(): int
+    {
+        return 1000;
+    }
+
     /**
      * @return int
      */
