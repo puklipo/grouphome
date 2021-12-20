@@ -45,7 +45,7 @@ class Csv extends Command
             $this->info($item);
             try {
                 app('App\\Imports\\'.Str::studly($item).'Import')
-                    ->import(resource_path("csv/$item.csv"));
+                    ->queue(resource_path("csv/$item.csv"));
             } catch (\Exception $e) {
                 $this->error($e->getMessage());
             }
