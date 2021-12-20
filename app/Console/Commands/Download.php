@@ -4,10 +4,6 @@ namespace App\Console\Commands;
 
 use App\Jobs\DownloadJob;
 use Illuminate\Console\Command;
-use Illuminate\Http\Client\Pool;
-use Illuminate\Http\Client\Response;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Storage;
 
 class Download extends Command
 {

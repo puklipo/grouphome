@@ -4,8 +4,6 @@ namespace App\Console\Commands;
 
 use App\Jobs\ImportJob;
 use Illuminate\Console\Command;
-use Illuminate\Support\Str;
-use Maatwebsite\Excel\Imports\HeadingRowFormatter;
 
 class Import extends Command
 {
