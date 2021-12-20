@@ -6,12 +6,13 @@ use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
 use App\Models\Pref;
+use Illuminate\Contracts\Queue\ShouldQueue;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithUpserts;
 
-class IwateImport implements ToModel, WithHeadingRow, WithUpserts
+class IwateImport implements ToModel, WithHeadingRow, WithUpserts, ShouldQueue
 {
     use Importable;
     use WithImport;
