@@ -289,7 +289,7 @@ return [
         | storing reading or downloading. Here you can customize that path.
         |
         */
-        'local_path'          => storage_path('framework/cache/laravel-excel'),
+        'local_path'          => isset($_ENV['LAMBDA_TASK_ROOT']) ? sys_get_temp_dir() : storage_path('framework/cache/laravel-excel'),
 
         /*
         |--------------------------------------------------------------------------
