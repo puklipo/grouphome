@@ -5,8 +5,8 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Http\Client\Pool;
 use Illuminate\Http\Client\Response;
-use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 
 class Download extends Command
 {
@@ -42,19 +42,19 @@ class Download extends Command
     public function handle()
     {
         $responses = Http::pool(function (Pool $pool) {
-            collect(config('pref'))->map(function ($pref, $key) use ($pool) {
-                $this->info($key);
-                if (empty($pref['sheets'])) {
-                    return false;
-                }
-
-                return $pool->as($key)->get('https://docs.google.com/spreadsheets/d/'.$pref['sheets'].'/export?format=csv');
-            })->toArray();
+            collect(config('pref'))->map(fn (
+                $pref,
+                $key
+            ) => empty($pref['sheets'])
+                ? false
+                : $pool->as($key)->get('https://docs.google.com/spreadsheets/d/'.$pref['sheets'].'/export?format=csv'))->toArray();
         });
 
         collect($responses)->each(function (Response $response, $key) {
             if ($response->ok()) {
-                File::put(resource_path('csv/'.$key.'.csv'), $response->body());
+                $this->info($key);
+
+                Storage::put("csv/$key.csv", $response->body());
             }
         });
 
