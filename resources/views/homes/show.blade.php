@@ -64,7 +64,7 @@
                             class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
 
                         <div>
-                            <a href="https://www.google.com/maps/search/{{ urlencode($home->address.' '.$home->name) }}"
+                            <a href="https://www.google.com/maps/search/{{ rawurlencode($home->address.' '.$home->name) }}"
                                target="_blank"
                                class="text-xl text-indigo-500 font-bold hover:underline">
                                 Googleマップで検索
