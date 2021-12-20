@@ -24,6 +24,7 @@ Googleスプレッドシートから出力したCSVファイルをインポー�
 - 英数字は半角で入力。
 - 「事業所番号」は必須。グループホームごとに重複しない番号を指定。「事業所番号」と「枝番」に分かれてる時はそのまま残す。
 - 「指定年月日」も必須。元のExcelファイルに和暦で入力されてる時は西暦に変換。
+- 事業所名、住所、事業者などの基本情報はすべて必須。
 - 元のExcelファイルにないデータは障害福祉サービス等情報検索で検索してGoogleスプレッドシートに入力。
 - 「Googleマップ」は住所で検索してGoogleマップの共有→地図を埋め込む→「HTMLをコピー」のhtmlをそのまま入力。
 - 「URL」は公式サイトのURLを検索して入力。
@@ -178,9 +179,13 @@ https://web.pref.hyogo.lg.jp/kf08/hw19_000000221.html
 https://docs.google.com/spreadsheets/d/1gTimBD7eaDQvbYXmjzIACFY5kC-tODPVNONRqPKKSr8/edit?usp=sharing
 
 ### 奈良
-https://www.pref.nara.jp/52403.htm
+左のメニューにExcel  
+https://www.pref.nara.jp/module/35104.htm#moduleid35104
+
+https://docs.google.com/spreadsheets/d/1RTcgRLhglrAo-2M7ce064-pU0yVetAen1pB20rOf4OM/edit?usp=sharing
 
 ### 和歌山
+PDF  
 https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index.html
 
 ### 鳥取
