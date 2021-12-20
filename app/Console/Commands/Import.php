@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Console\Commands\Import;
+namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Imports\HeadingRowFormatter;
 
-class Csv extends Command
+class Import extends Command
 {
     /**
      * The name and signature of the console command.
@@ -51,6 +51,6 @@ class Csv extends Command
             }
         });
 
-        return Command::SUCCESS;
+        return 0;
     }
 }
