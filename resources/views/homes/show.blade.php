@@ -59,8 +59,9 @@
                     @isset($home->map)
                         {!! $home->map !!}
                     @else
-                        <iframe src="https://maps.google.co.jp/maps?output=embed&q={{ $home->address }}&z=16&t=h"
-                                class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe
+                            src="https://maps.google.co.jp/maps?output=embed&q={{ urlencode($home->address) }}&z=16&t=h"
+                            class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
                     @endisset
                 </div>
 
