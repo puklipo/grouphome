@@ -5,15 +5,13 @@ namespace App\Imports;
 use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
-use App\Models\Pref;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithUpserts;
 
-class HokkaidoImport implements ToModel, WithHeadingRow, WithUpserts, ShouldQueue
+class HokkaidoImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
     use WithImport;

@@ -5,13 +5,12 @@ namespace App\Imports;
 use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithUpserts;
 
-class IbarakiImport implements ToModel, WithHeadingRow, WithUpserts, ShouldQueue
+class IbarakiImport implements ToModel, WithHeadingRow, WithUpserts
 {
     use Importable;
     use WithImport;
