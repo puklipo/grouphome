@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\DownloadJob;
 use Illuminate\Console\Command;
 use Illuminate\Http\Client\Pool;
 use Illuminate\Http\Client\Response;
@@ -41,22 +42,7 @@ class Download extends Command
      */
     public function handle()
     {
-        $responses = Http::pool(function (Pool $pool) {
-            collect(config('pref'))->map(fn (
-                $pref,
-                $key
-            ) => empty($pref['sheets'])
-                ? false
-                : $pool->as($key)->get('https://docs.google.com/spreadsheets/d/'.$pref['sheets'].'/export?format=csv'))->toArray();
-        });
-
-        collect($responses)->each(function (Response $response, $key) {
-            if ($response->ok()) {
-                $this->info($key);
-
-                Storage::put("csv/$key.csv", $response->body());
-            }
-        });
+        DownloadJob::dispatch();
 
         return 0;
     }

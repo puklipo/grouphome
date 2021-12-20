@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\ImportJob;
 use Illuminate\Console\Command;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Imports\HeadingRowFormatter;
@@ -39,17 +40,7 @@ class Import extends Command
      */
     public function handle()
     {
-        HeadingRowFormatter::default('none');
-
-        collect(config('pref'))->keys()->each(function ($item) {
-            $this->info($item);
-            try {
-                app('App\\Imports\\'.Str::studly($item).'Import')
-                    ->import("csv/$item.csv");
-            } catch (\Exception $e) {
-                $this->error($e->getMessage());
-            }
-        });
+        ImportJob::dispatch();
 
         return 0;
     }
