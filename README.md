@@ -195,14 +195,18 @@ https://www.pref.tottori.lg.jp/254597.htm
 ### 島根
 https://www.pref.shimane.lg.jp/medical/fukushi/syougai/ichiran/
 
+https://docs.google.com/spreadsheets/d/1OH0iwMb_Tt8rHSoqsQXd_XWCNoKIBgTMP9WiULkcKxY/edit?usp=sharing
+
 ### 岡山
+PDF  
 https://www.pref.okayama.jp/page/639934.html
 
 ### 広島
+新規のみ？。  
 https://www.pref.hiroshima.lg.jp/soshiki/62/shiteikokuji.html
 
 ### 山口
-https://www.pref.yamaguchi.lg.jp/cms/a14100/jiritsu00/jyohokohyo3006.html
+？
 
 ### 徳島
 事業所番号なし。  
@@ -251,7 +255,7 @@ https://docs.google.com/spreadsheets/d/10Wm6aJNLVkdZl_8GToNdyrypMg6M_JkE4D7bqo89
 ### 大分
 ？
 
-大分市  
+大分市。PDF  
 http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
 
 ### 宮崎
