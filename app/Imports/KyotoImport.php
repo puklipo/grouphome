@@ -2,21 +2,11 @@
 
 namespace App\Imports;
 
-use App\Imports\Concerns\WithImport;
-use App\Imports\Concerns\WithKana;
 use App\Models\Home;
 use Illuminate\Support\Str;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use Maatwebsite\Excel\Concerns\WithUpserts;
 
-class KyotoImport implements ToModel, WithHeadingRow, WithUpserts
+class KyotoImport extends AbstractImport
 {
-    use Importable;
-    use WithImport;
-    use WithKana;
-
     /**
      * @param  array  $row
      * @return \Illuminate\Database\Eloquent\Model|null

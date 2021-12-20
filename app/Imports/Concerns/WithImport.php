@@ -18,9 +18,9 @@ trait WithImport
     /**
      * @return int
      */
-    private function prefId(): int
+    protected function prefId(): int
     {
-        $key = (string) Str::of(class_basename(__CLASS__))->remove('Import')->lower();
+        $key = (string) Str::of(class_basename(static::class))->remove('Import')->lower();
 
         return Pref::where('key', $key)->value('id');
     }
