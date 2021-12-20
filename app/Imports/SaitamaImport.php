@@ -5,11 +5,11 @@ namespace App\Imports;
 use App\Imports\Concerns\WithImport;
 use App\Imports\Concerns\WithKana;
 use App\Models\Home;
+use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithUpserts;
-use Illuminate\Support\Str;
 
 class SaitamaImport implements ToModel, WithHeadingRow, WithUpserts
 {
