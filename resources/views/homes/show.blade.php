@@ -55,13 +55,21 @@
                           マップ
                     </span>
                 </div>
-                <div class="border-4 border-indigo-500 p-3 flex justify-center">
+                <div class="border-4 border-indigo-500 p-3">
                     @isset($home->map)
                         {!! $home->map !!}
                     @else
                         <iframe
                             src="https://maps.google.co.jp/maps?output=embed&q={{ urlencode($home->address) }}&z=16&t=h"
                             class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
+
+                        <div>
+                            <a href="https://www.google.com/maps/search/{{ urlencode($home->address.' '.$home->name) }}"
+                               target="_blank"
+                               class="text-xl text-indigo-500 font-bold hover:underline">
+                                Googleマップで検索
+                            </a>
+                        </div>
                     @endisset
                 </div>
 
