@@ -137,8 +137,12 @@ https://docs.google.com/spreadsheets/d/1NU4O_V7DrrKj6Phjt6r3QVnPJt1ekH2d3nxRguEu
 ### 岐阜
 https://www.pref.gifu.lg.jp/page/26315.html
 
+https://docs.google.com/spreadsheets/d/1VIBdE8iM4NI7i7v3xQSQ8Kr5YsDwO6aY9KDM-PnggxY/edit?usp=sharing
+
 ### 静岡
 http://www.pref.shizuoka.jp/kousei/ko-240/kaigo/shougai-shidou/jigyousyo.html
+
+https://docs.google.com/spreadsheets/d/1kGV4DLo4bHiSlUsUHFqfxZ91SH8nnOpZCOOYf7sklH4/edit?usp=sharing
 
 ### 愛知
 ？
@@ -151,11 +155,17 @@ https://docs.google.com/spreadsheets/d/1HWFU_1PYNC-E844oM0Yq8_5nm-dO6dyDccO8N27_
 ### 三重
 https://www.pref.mie.lg.jp/SHOHO/HP/60549032672_00077.htm
 
+https://docs.google.com/spreadsheets/d/14M6EDPrDPAiPkoJdOKgo9EwUCrlGBlosIAyalwWOaoY/edit?usp=sharing
+
 ### 滋賀
 https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/syougaifukushi/303429.html
 
+https://docs.google.com/spreadsheets/d/179cE-R44e1umpRQeMJY_lp7K0VC5DpK4kIhwH5tT-4k/edit?usp=sharing
+
 ### 京都
 https://www.pref.kyoto.jp/shogaishien/syogaifukushi.html
+
+https://docs.google.com/spreadsheets/d/1rYtKR3RRmHmWVrZw6gRNjsRkxRzZvx94Doo_wHI8g_Y/edit?usp=sharing
 
 ### 大阪
 https://www.pref.osaka.lg.jp/chiikiseikatsu/syougaijisien/itiran.html
