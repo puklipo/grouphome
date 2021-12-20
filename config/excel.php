@@ -306,7 +306,7 @@ return [
         |
         */
         'remote_disk'         => 's3',
-        'remote_prefix'       => 'laravel-excel',
+        'remote_prefix'       => 'tmp/storage/framework/cache/laravel-excel/',
 
         /*
         |--------------------------------------------------------------------------
@@ -323,6 +323,6 @@ return [
         | processed it.
         |
         */
-        'force_resync_remote' => null,
+        'force_resync_remote' => true,
     ],
 ];

@@ -21,7 +21,7 @@ environments:
         cli-memory: 512
         runtime: 'php-8.1:al2'
         database: grouphome
-        storage: dev-pcs-grouphome
+        storage: staging-pcs-grouphome
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
             - 'php artisan event:cache'
