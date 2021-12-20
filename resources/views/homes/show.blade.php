@@ -40,7 +40,8 @@
 
                     @isset($home->url)
                         <div class="text-md my-3">
-                            <a href="{{ $home->url }}" target="_blank" class="text-indigo-500 font-bold hover:underline">
+                            <a href="{{ $home->url }}" target="_blank"
+                               class="text-indigo-500 font-bold hover:underline">
                                 URL
                             </a>
                         </div>
@@ -49,16 +50,19 @@
                     <div class="text-md my-3">指定年月日 {{ $home->released_at }}</div>
                 </div>
 
-                @isset($home->map)
-                    <div class="mt-6">
+                <div class="mt-6">
                     <span class="bg-indigo-500 text-white px-6 py-1">
                           マップ
                     </span>
-                    </div>
-                    <div class="border-4 border-indigo-500 p-3 flex justify-center">
+                </div>
+                <div class="border-4 border-indigo-500 p-3 flex justify-center">
+                    @isset($home->map)
                         {!! $home->map !!}
-                    </div>
-                @endisset
+                    @else
+                        <iframe src="https://maps.google.co.jp/maps?output=embed&q={{ $home->address }}&z=16&t=h"
+                                class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
+                    @endisset
+                </div>
 
                 <div class="mt-6">
                     <span class="bg-indigo-500 text-white px-6 py-1">
