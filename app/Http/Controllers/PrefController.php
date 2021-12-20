@@ -18,7 +18,7 @@ class PrefController extends Controller
         $homes = $pref->homes()->with('pref')
             ->latest()
             ->keywordSearch($request->query('q'))
-            ->paginate(50)
+            ->paginate()
             ->withQueryString()
             ->onEachSide(1);
 

@@ -10,6 +10,13 @@ class Home extends Model
 {
     use HasFactory;
 
+    /**
+     * The number of models to return for pagination.
+     *
+     * @var int
+     */
+    protected $perPage = 25;
+
     public $incrementing = false;
 
     protected $fillable = [

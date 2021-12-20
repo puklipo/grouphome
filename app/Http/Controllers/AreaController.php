@@ -21,7 +21,7 @@ class AreaController extends Controller
             ->latest()
             ->where(fn ($query) => $query->where('address', 'like', "%$area%")
                 ->orWhere('area', $area))
-            ->paginate(50)
+            ->paginate()
             ->withQueryString()
             ->onEachSide(1);
 

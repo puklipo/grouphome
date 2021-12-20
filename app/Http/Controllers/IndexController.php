@@ -18,7 +18,7 @@ class IndexController extends Controller
         $homes = Home::with('pref')
             ->latest()
             ->keywordSearch($request->query('q'))
-            ->paginate(50)
+            ->paginate()
             ->withQueryString()
             ->onEachSide(1);
 
