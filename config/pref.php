@@ -2,105 +2,121 @@
 
 /**
  * 都道府県コード順.
+ *
+ * sheets : GoogleスプレッドシートID。
  */
 return [
-    'hokkaido'  => [
+    'hokkaido' => [
         'name' => '北海道',
+        'sheets' => '13C84NExZCNd0c2foLAwaZsI9lOLlgwhuHQNGLsiqRi0',
     ],
-    'aomori'    => [
+    'aomori' => [
         'name' => '青森県',
+        'sheets' => '10LbhcdW_gInjOoZzdSXhoty-TjTg48U52_UD3t2tdr4',
     ],
-    'iwate'     => [
+    'iwate' => [
         'name' => '岩手県',
+        'sheets' => '1CUJ8ITOWyV-D01RgSjYGvBbwPXrk7mqLnf_6NEMfh6Q',
     ],
-    'miyagi'    => [
+    'miyagi' => [
         'name' => '宮城県',
+        'sheets' => '1XMks9yAp_-diUb2ryxpBvAJLx-aUksjiuKXNaeBRwGo',
     ],
-    'akita'     => [
+    'akita' => [
         'name' => '秋田県',
+        'sheets' => '1EW8i9LBYnrYz8PAXoQTP06I9FjX-07x2vClXAaNNE4s',
     ],
-    'yamagata'  => [
+    'yamagata' => [
         'name' => '山形県',
     ],
     'fukushima' => [
         'name' => '福島県',
+        'sheets' => '1iCgbn_e6s_ictGDTe7bZ5xgsVHRnOL1WXkSqOjJJqj0',
     ],
-    'ibaraki'   => [
+    'ibaraki' => [
         'name' => '茨城県',
+        'sheets' => '1JGUBYqdIFHYUqKxRBNt_4Ohlzfw3GfafAIu8mQiqF-8',
     ],
-    'tochigi'   => [
+    'tochigi' => [
         'name' => '栃木県',
     ],
-    'gunma'     => [
+    'gunma' => [
         'name' => '群馬県',
     ],
-    'saitama'   => [
+    'saitama' => [
         'name' => '埼玉県',
+        'sheets' => '17sQJ2O3iLgbx4zFdgpo76sjioVuWUvovjQOzTmdYfL0',
     ],
-    'chiba'     => [
+    'chiba' => [
         'name' => '千葉県',
     ],
-    'tokyo'     => [
+    'tokyo' => [
         'name' => '東京都',
+        'sheets' => '1_6xmk71Tao0R7w68jFp70amB3Nq56BmzFF3GWyGw0Yc',
     ],
-    'kanagawa'  => [
+    'kanagawa' => [
         'name' => '神奈川県',
     ],
-    'niigata'   => [
+    'niigata' => [
         'name' => '新潟県',
     ],
-    'toyama'    => [
+    'toyama' => [
         'name' => '富山県',
     ],
-    'ishikawa'  => [
+    'ishikawa' => [
         'name' => '石川県',
     ],
-    'fukui'     => [
+    'fukui' => [
         'name' => '福井県',
     ],
     'yamanashi' => [
         'name' => '山梨県',
     ],
-    'nagano'    => [
+    'nagano' => [
         'name' => '長野県',
     ],
-    'gifu'      => [
+    'gifu' => [
         'name' => '岐阜県',
+        'sheets' => '1VIBdE8iM4NI7i7v3xQSQ8Kr5YsDwO6aY9KDM-PnggxY',
     ],
-    'shizuoka'  => [
+    'shizuoka' => [
         'name' => '静岡県',
     ],
-    'aichi'     => [
+    'aichi' => [
         'name' => '愛知県',
+        'sheets' => '1HWFU_1PYNC-E844oM0Yq8_5nm-dO6dyDccO8N27_52cs',
     ],
-    'mie'       => [
+    'mie' => [
         'name' => '三重県',
     ],
-    'shiga'     => [
+    'shiga' => [
         'name' => '滋賀県',
     ],
-    'kyoto'     => [
+    'kyoto' => [
         'name' => '京都府',
+        'sheets' => '1rYtKR3RRmHmWVrZw6gRNjsRkxRzZvx94Doo_wHI8g_Y',
     ],
-    'osaka'     => [
+    'osaka' => [
         'name' => '大阪府',
+        'sheets' => '1welDEERrdvvMPCY6a9lDQ09Xs90eYkPYLmBeAQwGMkk',
     ],
-    'hyogo'     => [
+    'hyogo' => [
         'name' => '兵庫県',
+        'sheets' => '1gTimBD7eaDQvbYXmjzIACFY5kC-tODPVNONRqPKKSr8',
     ],
-    'nara'      => [
+    'nara' => [
         'name' => '奈良県',
     ],
-    'wakayama'  => [
+    'wakayama' => [
         'name' => '和歌山県',
     ],
-    'tottori'   => [
+    'tottori' => [
         'name' => '鳥取県',
     ],
-    'shimane'   => [
+    'shimane' => [
         'name' => '島根県',
     ],
-    'okayama'   => [
+    'okayama' => [
         'name' => '岡山県',
     ],
     'hiroshima' => [
@@ -112,37 +128,41 @@ return [
     'tokushima' => [
         'name' => '徳島県',
     ],
-    'kagawa'    => [
+    'kagawa' => [
         'name' => '香川県',
     ],
-    'ehime'     => [
+    'ehime' => [
         'name' => '愛媛県',
     ],
-    'kouchi'    => [
+    'kouchi' => [
         'name' => '高知県',
     ],
-    'fukuoka'   => [
+    'fukuoka' => [
         'name' => '福岡県',
+        'sheets' => '1OoyzFwfJfijb9cY_shjbt6fLK0RgnSPsPL4c24uJWOI',
     ],
-    'saga'      => [
+    'saga' => [
         'name' => '佐賀県',
+        'sheets' => '1_KXGT9aLM8G35DvJT8rHrpWo32G-4gIJ7CIzRI6u-CY',
     ],
-    'nagasaki'  => [
+    'nagasaki' => [
         'name' => '長崎県',
     ],
-    'kumamoto'  => [
+    'kumamoto' => [
         'name' => '熊本県',
+        'sheets' => '10Wm6aJNLVkdZl_8GToNdyrypMg6M_JkE4D7bqo89jEc',
     ],
-    'oita'      => [
+    'oita' => [
         'name' => '大分県',
     ],
-    'miyazaki'  => [
+    'miyazaki' => [
         'name' => '宮崎県',
     ],
     'kagoshima' => [
         'name' => '鹿児島県',
     ],
-    'okinawa'   => [
+    'okinawa' => [
         'name' => '沖縄県',
+        'sheets' => '1T7z1aABewPy18J0hAgjco5ySwjyPnGQUV9kga51pP5o',
     ],
 ];
