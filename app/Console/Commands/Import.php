@@ -45,7 +45,7 @@ class Import extends Command
             $this->info($item);
             try {
                 app('App\\Imports\\'.Str::studly($item).'Import')
-                    ->import("csv/$item.csv");
+                    ->queue("csv/$item.csv");
             } catch (\Exception $e) {
                 $this->error($e->getMessage());
             }
