@@ -14,8 +14,6 @@ environments:
         deploy:
           - 'php artisan migrate --force'
           - 'php artisan db:seed --force'
-          - 'php artisan download:csv'
-          - 'php artisan import:csv'
 
     staging:
         memory: 1024
@@ -30,5 +28,4 @@ environments:
         deploy:
             - 'php artisan migrate --force'
             - 'php artisan db:seed --force'
-            - 'php artisan download:csv'
-            - 'php artisan import:csv'
+
