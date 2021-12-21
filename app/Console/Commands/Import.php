@@ -12,7 +12,7 @@ class Import extends Command
      *
      * @var string
      */
-    protected $signature = 'import:csv';
+    protected $signature = 'import';
 
     /**
      * The console command description.

@@ -12,7 +12,7 @@ class Download extends Command
      *
      * @var string
      */
-    protected $signature = 'download:csv';
+    protected $signature = 'download';
 
     /**
      * The console command description.

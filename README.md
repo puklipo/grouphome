@@ -9,8 +9,8 @@ php artisan key:generate
 
 sail up -d
 sail art migrate:fresh --seed
-sail art download:csv
-sail art import:csv
+sail art download
+sail art import
 ```
 
 ## Excelファイル
