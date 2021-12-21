@@ -44,7 +44,7 @@ class DownloadJob implements ShouldQueue
 
         collect($responses)->each(function (Response $response, $key) {
             if ($response->ok()) {
-                info($key);
+                info('Download : '.$key);
 
                 Storage::put("csv/$key.csv", $response->body());
             }
