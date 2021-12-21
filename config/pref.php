@@ -63,6 +63,7 @@ return [
     ],
     'toyama' => [
         'name' => '富山県',
+        'sheets' => '1AvwCEkhTcZI9EFkOWfBUnLzdL1-4ZF9FszG2q-AMrBQ',
     ],
     'ishikawa' => [
         'name' => '石川県',
