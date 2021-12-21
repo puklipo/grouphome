@@ -37,16 +37,21 @@ class DownloadJob implements ShouldQueue
     {
         $responses = Http::pool(function (Pool $pool) {
             return collect(config('pref'))
-                ->map(fn ($pref, $key) => empty($pref['sheets'])
-                    ? false
-                    : $pool->as($key)->get('https://docs.google.com/spreadsheets/d/'.$pref['sheets'].'/export?format=csv'))->toArray();
+                ->reject(fn ($pref) => empty($pref['sheets']))
+                ->map(fn (
+                    $pref,
+                    $key
+                ) => $pool->as($key)->get('https://docs.google.com/spreadsheets/d/'.$pref['sheets'].'/export?format=csv'))
+                ->toArray();
         });
 
         collect($responses)->each(function (Response $response, $key) {
-            if ($response->ok()) {
+            if ($response->successful()) {
                 info('Download : '.$key);
 
                 Storage::put("csv/$key.csv", $response->body());
+            } else {
+                logger()->error($response->reason());
             }
         });
     }

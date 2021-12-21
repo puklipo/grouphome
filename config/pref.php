@@ -85,7 +85,7 @@ return [
     ],
     'aichi' => [
         'name' => '愛知県',
-        'sheets' => '1HWFU_1PYNC-E844oM0Yq8_5nm-dO6dyDccO8N27_52cs',
+        'sheets' => '1HWFU_1PYNC-E844oM0Yq8_5nm-dO6dyDccO8N27_52c',
     ],
     'mie' => [
         'name' => '三重県',
