@@ -66,6 +66,7 @@ return [
     ],
     'ishikawa' => [
         'name' => '石川県',
+        'sheets' => '1BuHzQAxBbGE7EbvH1nEvGJ4FM2LU5BZQEwU0XEx-y_8',
     ],
     'fukui' => [
         'name' => '福井県',

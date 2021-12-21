@@ -106,6 +106,9 @@ https://docs.google.com/spreadsheets/d/1AvwCEkhTcZI9EFkOWfBUnLzdL1-4ZF9FszG2q-AM
 ### 石川
 https://www.pref.ishikawa.lg.jp/fukusi/jiritsushienfukushi/jigyousyashiteiichiran.html
 
+- 事業者番号が重複してるので後からインポートされた方だけ残る。
+- 住所情報が足りない。「所在地[1]」が町の所に郡がないので追加作業が必要。  
+
 https://docs.google.com/spreadsheets/d/1BuHzQAxBbGE7EbvH1nEvGJ4FM2LU5BZQEwU0XEx-y_8/edit?usp=sharing
 
 ### 福井
