@@ -159,6 +159,7 @@ https://www.pref.mie.lg.jp/SHOHO/HP/60549032672_00077.htm
 https://docs.google.com/spreadsheets/d/14M6EDPrDPAiPkoJdOKgo9EwUCrlGBlosIAyalwWOaoY/edit?usp=sharing
 
 ### 滋賀
+事業所番号、指定年月日なし。  
 https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/syougaifukushi/303429.html
 
 https://docs.google.com/spreadsheets/d/179cE-R44e1umpRQeMJY_lp7K0VC5DpK4kIhwH5tT-4k/edit?usp=sharing
@@ -179,7 +180,7 @@ https://web.pref.hyogo.lg.jp/kf08/hw19_000000221.html
 https://docs.google.com/spreadsheets/d/1gTimBD7eaDQvbYXmjzIACFY5kC-tODPVNONRqPKKSr8/edit?usp=sharing
 
 ### 奈良
-左のメニューにExcel  
+左のメニューにExcel。指定年月日なし。  
 https://www.pref.nara.jp/module/35104.htm#moduleid35104
 
 https://docs.google.com/spreadsheets/d/1RTcgRLhglrAo-2M7ce064-pU0yVetAen1pB20rOf4OM/edit?usp=sharing
