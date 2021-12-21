@@ -11,7 +11,7 @@ class ArtisanImportCommandTest extends TestCase
 
     public function test_download_csv()
     {
-        $this->artisan('download:csv')
+        $this->artisan('download')
              ->assertSuccessful();
     }
 
@@ -19,7 +19,7 @@ class ArtisanImportCommandTest extends TestCase
     {
         $this->seed();
 
-        $this->artisan('import:csv')
+        $this->artisan('import')
              ->assertSuccessful();
 
         $this->assertDatabaseCount('prefs', 47);

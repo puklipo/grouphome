@@ -19,9 +19,9 @@ class ImportJob implements ShouldQueue
     /**
      * Create a new job instance.
      *
-     * @return void
+     * @param  string  $pref
      */
-    public function __construct()
+    public function __construct(public string $pref)
     {
         //
     }
@@ -35,14 +35,11 @@ class ImportJob implements ShouldQueue
     {
         HeadingRowFormatter::default('none');
 
-        collect(config('pref'))->keys()->each(function ($item) {
-            info($item);
-            try {
-                app('App\\Imports\\'.Str::studly($item).'Import')
-                    ->import("csv/$item.csv");
-            } catch (\Exception $e) {
-                logger()->error($e->getMessage());
-            }
-        });
+        try {
+            app('App\\Imports\\'.Str::studly($this->pref).'Import')
+                ->import("csv/$this->pref.csv");
+        } catch (\Exception $e) {
+            logger()->error($e->getMessage());
+        }
     }
 }

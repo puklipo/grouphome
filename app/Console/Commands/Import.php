@@ -38,7 +38,11 @@ class Import extends Command
      */
     public function handle()
     {
-        ImportJob::dispatch();
+        collect(config('pref'))->keys()->each(function ($pref) {
+            $this->info($pref);
+
+            ImportJob::dispatch($pref);
+        });
 
         return 0;
     }
