@@ -9,9 +9,9 @@ php artisan key:generate
 
 sail up -d
 sail art migrate:fresh --seed
+sail art download:csv
 sail art import:csv
 ```
-
 
 ## Excelファイル
 グループホームの一覧情報は各都道府県サイトのExcelファイルで取得できる。[障害福祉サービス等情報検索](https://www.wam.go.jp/sfkohyoout/) からも取得できるけどグループホームはExcelファイルからの方が良さそう。
@@ -193,6 +193,7 @@ https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index.html
 https://www.pref.tottori.lg.jp/254597.htm
 
 ### 島根
+事業所番号なし。  
 https://www.pref.shimane.lg.jp/medical/fukushi/syougai/ichiran/
 
 https://docs.google.com/spreadsheets/d/1OH0iwMb_Tt8rHSoqsQXd_XWCNoKIBgTMP9WiULkcKxY/edit?usp=sharing
@@ -247,7 +248,6 @@ PDF
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
 ### 熊本
-ヘッダーの加工がかなり必要。  
 https://www.pref.kumamoto.jp/soshiki/39/50669.html
 
 https://docs.google.com/spreadsheets/d/10Wm6aJNLVkdZl_8GToNdyrypMg6M_JkE4D7bqo89jEc/edit?usp=sharing
