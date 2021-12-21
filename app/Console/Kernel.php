@@ -2,10 +2,9 @@
 
 namespace App\Console;
 
-use App\Jobs\DownloadJob;
-use App\Jobs\ImportJob;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
+use Illuminate\Support\Facades\Artisan;
 
 class Kernel extends ConsoleKernel
 {
@@ -19,8 +18,10 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->job(DownloadJob::class)->dailyAt('00:00');
-        $schedule->job(ImportJob::class)->dailyAt('06:00');
+        $schedule->call(function () {
+            Artisan::call('download');
+            Artisan::call('import');
+        })->dailyAt('03:00');
     }
 
     /**
