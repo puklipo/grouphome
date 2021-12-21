@@ -74,7 +74,6 @@ https://www.pref.ibaraki.jp/hokenfukushi/shofuku/seishin/shofuku/c/c-6.html
 https://docs.google.com/spreadsheets/d/1JGUBYqdIFHYUqKxRBNt_4Ohlzfw3GfafAIu8mQiqF-8/edit?usp=sharing
 
 ### 栃木
-かなり修正が必要。  
 https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/shogai_jigyosha.html
 
 https://docs.google.com/spreadsheets/d/1_WboRoTQGUwlGcy9sJFT161_j4EP4qsTHYrp8WtQnT4/edit?usp=sharing
@@ -88,7 +87,7 @@ https://www.pref.saitama.lg.jp/a0605/s107/index.html
 https://docs.google.com/spreadsheets/d/17sQJ2O3iLgbx4zFdgpo76sjioVuWUvovjQOzTmdYfL0/edit?usp=sharing
 
 ### 千葉
-障害福祉サービス等情報検索で検索  
+事業者番号も指定年月日もないので障害福祉サービス等情報検索で検索  
 https://www.pref.chiba.lg.jp/kenshidou/fukushishisetsu/mokuji.html
 
 https://docs.google.com/spreadsheets/d/1DfsmxrYaJT_j3NG0QyQ9J3xbfgvYgfFk0x-dTHrskm8/edit?usp=sharing

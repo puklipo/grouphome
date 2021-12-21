@@ -39,6 +39,7 @@ return [
     ],
     'tochigi' => [
         'name' => '栃木県',
+        'sheets' => '1_WboRoTQGUwlGcy9sJFT161_j4EP4qsTHYrp8WtQnT4',
     ],
     'gunma' => [
         'name' => '群馬県',
