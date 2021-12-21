@@ -17,7 +17,7 @@ class GifuImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業者番号'],
+            'id' => $this->kana($row['事業者番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['法人名']),
@@ -25,7 +25,7 @@ class GifuImport extends AbstractImport
             'address' => '岐阜県'.$this->kana($row['事業所所在地']),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

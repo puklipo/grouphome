@@ -17,7 +17,7 @@ class HyogoImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所－名称']),
             'company' => $this->kana($row['申請者－名称']),
@@ -25,7 +25,7 @@ class HyogoImport extends AbstractImport
             'address' => $this->kana($row['事業所－住所']),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

@@ -18,14 +18,14 @@ class KumamotoImport extends AbstractImport
         }
 
         return new Home([
-            'id' => trim($row['事業所番号']).$row['枝番'],
+            'id' => $this->kana(trim($row['事業所番号']).$row['枝番']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['事業者名称']),
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('熊本県'.$row['住　所']),
             'area' => $this->kana($row['所在地']),
-            'released_at' => Carbon::createFromFormat('Y年m月d日', $row['指定年月日']),
+            'released_at' => Carbon::createFromFormat('Y年m月d日', $this->kana($row['指定年月日'])),
         ]);
     }
 }

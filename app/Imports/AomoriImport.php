@@ -18,13 +18,13 @@ class AomoriImport extends AbstractImport
         }
 
         return new Home([
-            'id' => Str::replace('-', '', $row['事業所番号']),
+            'id' => Str::replace('-', '', $this->kana($row['事業所番号'])),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['設置者']),
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('青森県'.$row['事業所住所']),
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

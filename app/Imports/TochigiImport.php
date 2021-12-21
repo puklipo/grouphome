@@ -22,7 +22,7 @@ class TochigiImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['共同生活住居名']),
             'company' => $this->kana($row['申請者名称']),
@@ -30,7 +30,7 @@ class TochigiImport extends AbstractImport
             'address' => '栃木県'.$this->kana($row['共同生活住居住所']),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

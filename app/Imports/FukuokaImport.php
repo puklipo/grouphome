@@ -17,16 +17,16 @@ class FukuokaImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所－名称']),
             'company' => $this->kana($row['申請者－名称']),
             'tel' => $this->kana($row['事業所－電話番号']),
             'address' => $this->kana($row['事業所－住所']),
-            'area' => $row['市区町村'] ?? null,
+            'area' => $this->kana($row['市区町村'] ?? null),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

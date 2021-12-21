@@ -17,13 +17,13 @@ class IwateImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['住居名']),
             'company' => $this->kana($row['法人名']),
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana($row['住所'] ?? ''),
-            'released_at' => $row['事業所指定日'],
+            'released_at' => $this->kana($row['事業所指定日']),
         ]);
     }
 }

@@ -18,16 +18,16 @@ class KyotoImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['法人(設置者)名']),
             'tel' => $this->kana($row['事業所電話']),
             'address' => $this->kana($row['事業所所在地1'].$row['事業所所在地2'].$row['事業所所在地3']),
-            'area' => Str::remove('京都府', $row['事業所所在地1']) ?? null,
+            'area' => Str::remove('京都府', $this->kana($row['事業所所在地1'])) ?? null,
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

@@ -17,16 +17,16 @@ class IbarakiImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['法人名']),
             'tel' => $this->kana($row['事業所電話']),
             'address' => $this->kana($row['事業所所在地']),
-            'area' => $row['市区町村'] ?? null,
+            'area' => $this->kana($row['市区町村'] ?? null),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

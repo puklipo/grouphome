@@ -17,13 +17,13 @@ class AkitaImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => $this->kana($row['事業者名']),
             'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所住所']),
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

@@ -18,7 +18,7 @@ class FukushimaImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'],
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['事業所名']),
             'company' => '',
@@ -27,7 +27,7 @@ class FukushimaImport extends AbstractImport
             'area' => $this->kana(Str::replace('福島県', '', $row['事業所所在地1'])),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
-            'released_at' => $row['指定年月日'],
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }

@@ -17,13 +17,15 @@ class MiyagiImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $row['事業所番号'].$row['枝番／連番'],
+            'id' => $this->kana($row['事業所番号'].$row['枝番／連番']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['申請者名称']),
             'address' => $this->kana($row['事業所所在地']),
             'area' => $this->kana($row['事業所市町村名']),
-            'released_at' => $row['指定年月日'],
+            'map' => $row['Googleマップ'] ?? null,
+            'url' => $row['URL'] ?? null,
+            'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
 }
