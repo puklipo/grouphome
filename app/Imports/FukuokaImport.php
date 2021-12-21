@@ -23,7 +23,7 @@ class FukuokaImport extends AbstractImport
             'company' => $this->kana($row['申請者－名称']),
             'tel' => $this->kana($row['事業所－電話番号']),
             'address' => $this->kana($row['事業所－住所']),
-            'area' => $this->kana($row['市区町村'] ?? null),
+            'area' => $this->kana($row['市区町村']),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
             'released_at' => $this->kana($row['指定年月日']),

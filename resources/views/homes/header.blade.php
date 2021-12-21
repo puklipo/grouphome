@@ -4,11 +4,11 @@
                 {{ $home->pref->name }}
             </a>
         </span>
-    @isset($home->area)
+    @if(filled($home->area))
         <span class="bg-indigo-400 text-white px-6 py-1">
                 <a href="{{ route('area', [$home->pref, $home->area]) }}">
                     {{ $home->area }}
                 </a>
             </span>
-    @endisset
+    @endif
 </div>
