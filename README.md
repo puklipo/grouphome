@@ -1,18 +1,5 @@
 # グループホーム
 
-## 開発
-```
-git clone
-composer install
-cp .env.example .env
-php artisan key:generate
-
-sail up -d
-sail art migrate:fresh --seed
-sail art download
-sail art import
-```
-
 ## Excelファイル
 グループホームの一覧情報は各都道府県サイトのExcelファイルで取得できる。[障害福祉サービス等情報検索](https://www.wam.go.jp/sfkohyoout/) からも取得できるけどグループホームはExcelファイルからの方が良さそう。
 
@@ -277,3 +264,17 @@ https://docs.google.com/spreadsheets/d/14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGV
 https://www.pref.okinawa.lg.jp/site/kodomo/shogaifukushi/old/20738.html
 
 https://docs.google.com/spreadsheets/d/1T7z1aABewPy18J0hAgjco5ySwjyPnGQUV9kga51pP5o/edit?usp=sharing
+
+
+## 開発
+```
+git clone
+composer install
+cp .env.example .env
+php artisan key:generate
+
+sail up -d
+sail art migrate:fresh --seed
+sail art download
+sail art import
+```
