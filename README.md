@@ -225,6 +225,7 @@ https://www.pref.hiroshima.lg.jp/soshiki/62/shiteikokuji.html
 https://docs.google.com/spreadsheets/d/12WOCiL7PyMLOvXO_FsU6oTp5WT7tg3l57T9fnEOCbyM/
 
 ### 山口
+事業所番号なし。  
 https://www.pref.yamaguchi.lg.jp/cms/a13200/s-meibo/202106010001.html
 
 https://docs.google.com/spreadsheets/d/1aQ6nw-3o4QQ0zgaTyeC1DnUMZLk3951p0KVZb0qGUnk/
