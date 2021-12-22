@@ -48,6 +48,9 @@ https://docs.google.com/spreadsheets/d/1EW8i9LBYnrYz8PAXoQTP06I9FjX-07x2vClXAaNN
 
 https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008376/1004625.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1eXT6fG7Jpzh2GBKw-0iXAcT5EnrMHdghPDdS3LlWPMI/
+
 ### 福島
 （中核市除く）  
 https://www.pref.fukushima.lg.jp/sec/21035c/jigyousyojouhou.html
@@ -69,6 +72,9 @@ https://docs.google.com/spreadsheets/d/1_WboRoTQGUwlGcy9sJFT161_j4EP4qsTHYrp8WtQ
 ### 群馬
 https://www.pref.gunma.jp/02/d4200334.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/14Una1eJObEnN3yQfNxYUdafBnt5uRGoz67mU39rIuUY/
+
 ### 埼玉
 https://www.pref.saitama.lg.jp/a0605/s107/index.html
 
@@ -88,6 +94,9 @@ https://docs.google.com/spreadsheets/d/1_6xmk71Tao0R7w68jFp70amB3Nq56BmzFF3GWyGw
 ### 神奈川
 ？  
 https://www.rakuraku.or.jp/shienhi/
+
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1dYbvVcBtGAMefoi1mkVVuOnu8WkAAMCCfzCiR55cdM0/
 
 ### 新潟
 https://www.pref.niigata.lg.jp/sec/shougaifukushi/1356826760234.html
@@ -115,9 +124,15 @@ https://docs.google.com/spreadsheets/d/1BuHzQAxBbGE7EbvH1nEvGJ4FM2LU5BZQEwU0XEx-
 PDF  
 https://www.pref.fukui.lg.jp/doc/shougai/syogaishisetu.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1NIFFXgDSricLHxE2jZD1IoTlNAmaShdNl_9CgsRqN6Y/
+
 ### 山梨
 PDF  
 https://www.pref.yamanashi.jp/shogai-fks/shogai-sisetsu.html
+
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1aBWDI7LY2qsfFIl-A__OfXcPGrRu3aPN7pBiO0aBcoA/
 
 ### 長野
 事業所番号なし。障害福祉サービス等情報検索で検索
@@ -179,9 +194,15 @@ https://docs.google.com/spreadsheets/d/1RTcgRLhglrAo-2M7ce064-pU0yVetAen1pB20rOf
 PDF  
 https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1vWrU9ppk_WrmkC_W1WUWnGpMBgDziIraeJ7xQTnhGoM/
+
 ### 鳥取
 ？  
 https://www.pref.tottori.lg.jp/254597.htm
+
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1-Y88JEhm4Mpzyc1HwZp5OQhEceJldB2s522v5TRRcCE/
 
 ### 島根
 事業所番号なし。  
@@ -193,12 +214,20 @@ https://docs.google.com/spreadsheets/d/1OH0iwMb_Tt8rHSoqsQXd_XWCNoKIBgTMP9WiULkc
 PDF  
 https://www.pref.okayama.jp/page/639934.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1gQN6NhQHdyAtGxMh8LtMrSI1jW7rd-uUuDanmq5pVTU/
+
 ### 広島
 新規のみ？。  
 https://www.pref.hiroshima.lg.jp/soshiki/62/shiteikokuji.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/12WOCiL7PyMLOvXO_FsU6oTp5WT7tg3l57T9fnEOCbyM/
+
 ### 山口
-？
+https://www.pref.yamaguchi.lg.jp/cms/a13200/s-meibo/202106010001.html
+
+https://docs.google.com/spreadsheets/d/1aQ6nw-3o4QQ0zgaTyeC1DnUMZLk3951p0KVZb0qGUnk/
 
 ### 徳島
 事業所番号なし。  
@@ -209,6 +238,9 @@ https://docs.google.com/spreadsheets/d/1lULcB1bel7MIdTtoFPBlnVMqmz5yFwwE4usnYTpq
 ### 香川
 PDF  
 https://www.pref.kagawa.lg.jp/shogaifukushi/shisetsu/jigyosho_ichiran.html
+
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1hFeyVQ533JbUaFsbu_dGcJGyqa_FPY8GnV7v8TKiOpA/
 
 ### 愛媛
 事業所番号なし。  
@@ -238,6 +270,9 @@ https://docs.google.com/spreadsheets/d/1_KXGT9aLM8G35DvJT8rHrpWo32G-4gIJ7CIzRI6u
 PDF  
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1O4-ZDZOyv5oir0CXNbvskPRcOdKEFMKu7WwtrMFSpEI/
+
 ### 熊本
 https://www.pref.kumamoto.jp/soshiki/39/50669.html
 
@@ -248,6 +283,9 @@ https://docs.google.com/spreadsheets/d/10Wm6aJNLVkdZl_8GToNdyrypMg6M_JkE4D7bqo89
 
 大分市。PDF  
 http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
+
+空のスプレッドシートに入力していく。  
+https://docs.google.com/spreadsheets/d/1erwZMpNX7jAvCB3gUhv0RPbPq3DX_PCi7iibTCy_bBk/
 
 ### 宮崎
 ？
