@@ -15,7 +15,7 @@ Googleスプレッドシートから出力したCSVファイルをインポー�
 - 元のExcelファイルにないデータは障害福祉サービス等情報検索で検索してGoogleスプレッドシートに入力。
 - 「Googleマップ」は住所で検索してGoogleマップの共有→地図を埋め込む→「HTMLをコピー」のhtmlをそのまま入力。空なら住所から自動でマップ表示（自動では正しく表示されない時にGoogleスプレッドシートに埋め込み用htmlを入力する）
 - 「URL」は公式サイトのURLを検索して入力。
-
+- 元ファイルがPDFしかない場合、PDFをGoogleドキュメントで読み込んだ後コピペでスプレッドシートに入力できることがある。これで読み込めるのは初回だけなので更新時はPDFを見て一つずつコピペで入力。
 
 ### 北海道
 https://www.pref.hokkaido.lg.jp/hf/shf/jigyousyosisetuichiran.html
@@ -124,14 +124,12 @@ https://docs.google.com/spreadsheets/d/1BuHzQAxBbGE7EbvH1nEvGJ4FM2LU5BZQEwU0XEx-
 PDF  
 https://www.pref.fukui.lg.jp/doc/shougai/syogaishisetu.html
 
-空のスプレッドシートに入力していく。  
 https://docs.google.com/spreadsheets/d/1NIFFXgDSricLHxE2jZD1IoTlNAmaShdNl_9CgsRqN6Y/
 
 ### 山梨
 PDF  
 https://www.pref.yamanashi.jp/shogai-fks/shogai-sisetsu.html
 
-空のスプレッドシートに入力していく。  
 https://docs.google.com/spreadsheets/d/1aBWDI7LY2qsfFIl-A__OfXcPGrRu3aPN7pBiO0aBcoA/
 
 ### 長野
@@ -194,7 +192,6 @@ https://docs.google.com/spreadsheets/d/1RTcgRLhglrAo-2M7ce064-pU0yVetAen1pB20rOf
 PDF  
 https://www.pref.wakayama.lg.jp/prefg/040100/shisetsu/index.html
 
-空のスプレッドシートに入力していく。  
 https://docs.google.com/spreadsheets/d/1vWrU9ppk_WrmkC_W1WUWnGpMBgDziIraeJ7xQTnhGoM/
 
 ### 鳥取
@@ -214,7 +211,7 @@ https://docs.google.com/spreadsheets/d/1OH0iwMb_Tt8rHSoqsQXd_XWCNoKIBgTMP9WiULkc
 PDF  
 https://www.pref.okayama.jp/page/639934.html
 
-空のスプレッドシートに入力していく。  
+PDFから変換したけど郵便番号・所在地・電話番号・運営主体が繋がってるので修正作業が必要。  
 https://docs.google.com/spreadsheets/d/1gQN6NhQHdyAtGxMh8LtMrSI1jW7rd-uUuDanmq5pVTU/
 
 ### 広島
@@ -240,7 +237,7 @@ https://docs.google.com/spreadsheets/d/1lULcB1bel7MIdTtoFPBlnVMqmz5yFwwE4usnYTpq
 PDF  
 https://www.pref.kagawa.lg.jp/shogaifukushi/shisetsu/jigyosho_ichiran.html
 
-空のスプレッドシートに入力していく。  
+指定年月日は元号さえ省略してるので西暦に変換が必要。  
 https://docs.google.com/spreadsheets/d/1hFeyVQ533JbUaFsbu_dGcJGyqa_FPY8GnV7v8TKiOpA/
 
 ### 愛媛
@@ -271,7 +268,7 @@ https://docs.google.com/spreadsheets/d/1_KXGT9aLM8G35DvJT8rHrpWo32G-4gIJ7CIzRI6u
 PDF  
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
-空のスプレッドシートに入力していく。  
+PDFから変換したけど色々修正作業が必要。  
 https://docs.google.com/spreadsheets/d/1O4-ZDZOyv5oir0CXNbvskPRcOdKEFMKu7WwtrMFSpEI/
 
 ### 熊本
@@ -285,7 +282,6 @@ https://docs.google.com/spreadsheets/d/10Wm6aJNLVkdZl_8GToNdyrypMg6M_JkE4D7bqo89
 大分市。PDF  
 http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
 
-空のスプレッドシートに入力していく。  
 https://docs.google.com/spreadsheets/d/1erwZMpNX7jAvCB3gUhv0RPbPq3DX_PCi7iibTCy_bBk/
 
 ### 宮崎
