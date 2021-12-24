@@ -165,6 +165,7 @@ return [
     ],
     'kagoshima' => [
         'name' => '鹿児島県',
+        'sheets' =>'14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGVuv8',
     ],
     'okinawa' => [
         'name' => '沖縄県',

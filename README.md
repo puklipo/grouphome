@@ -296,7 +296,7 @@ https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/other_services
 https://docs.google.com/spreadsheets/d/1k_45z5dqCXYH2gcs8DJu4qrgIl0DMSezwpFHa0vRg3I/edit?usp=sharing
 
 ### 鹿児島
-表6。事業者番号なし。障害福祉サービス等情報検索で番号を調べてGoogleスプレッドシートに入力すればインポート可能。手間大。  
+表6。事業者番号なし。  
 http://www.pref.kagoshima.jp/ae04/kenko-fukushi/syogai-syakai/syakaifukushi/hokenfukushishisetu-list.html
 
 https://docs.google.com/spreadsheets/d/14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGVuv8/edit?usp=sharing
