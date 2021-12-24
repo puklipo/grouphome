@@ -17,7 +17,7 @@ class NagasakiImport extends AbstractImport
          * @var Carbon $date
          */
         $date = rescue(
-            callback: fn() => Carbon::parse($row['指定（更新）年月日']),
+            callback: fn () => Carbon::parse($row['指定（更新）年月日']),
             report: false
         );
 
