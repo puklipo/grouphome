@@ -17,8 +17,8 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->command('download')->dailyAt('03:00');
-        $schedule->command('import')->dailyAt('04:00');
+        $schedule->command('download')->hourly();
+        $schedule->command('import')->hourlyAt(30);
     }
 
     /**
