@@ -23,7 +23,7 @@ class OitaImport extends AbstractImport
             'company' => $this->kana($row['申請者名称']),
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana($row['事業所所在地']),
-            'area' => null,
+            'area' => $this->kana($row['市区町村'] ?? null),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
             'released_at' => $this->kana($row['指定年月日']),
