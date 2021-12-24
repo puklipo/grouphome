@@ -162,6 +162,7 @@ return [
     ],
     'miyazaki' => [
         'name' => '宮崎県',
+        'sheets' => '1k_45z5dqCXYH2gcs8DJu4qrgIl0DMSezwpFHa0vRg3I',
     ],
     'kagoshima' => [
         'name' => '鹿児島県',

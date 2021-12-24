@@ -293,6 +293,7 @@ https://docs.google.com/spreadsheets/d/1erwZMpNX7jAvCB3gUhv0RPbPq3DX_PCi7iibTCy_
 宮崎市。使いにくいExcelファイル。  
 https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/other_services/272423.html
 
+事業者番号なし。  
 https://docs.google.com/spreadsheets/d/1k_45z5dqCXYH2gcs8DJu4qrgIl0DMSezwpFHa0vRg3I/edit?usp=sharing
 
 ### 鹿児島
