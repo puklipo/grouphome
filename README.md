@@ -290,7 +290,7 @@ https://docs.google.com/spreadsheets/d/1erwZMpNX7jAvCB3gUhv0RPbPq3DX_PCi7iibTCy_
 ### 宮崎
 ？
 
-宮崎市。使いにくいExcelファイル。  
+宮崎市。  
 https://www.city.miyazaki.miyazaki.jp/health/disabilities_welfare/other_services/272423.html
 
 事業者番号なし。  
