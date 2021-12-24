@@ -265,11 +265,13 @@ https://www.pref.saga.lg.jp/kiji0033428/index.html
 https://docs.google.com/spreadsheets/d/1_KXGT9aLM8G35DvJT8rHrpWo32G-4gIJ7CIzRI6u-CY/edit?usp=sharing
 
 ### 長崎
-PDF  
+https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/shogaisha/shisetsu-shogai/ichiran-shisetsu-shogaisha/
+
+長崎市。PDF  
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
-PDFから変換したけど色々修正作業が必要。  
-https://docs.google.com/spreadsheets/d/1O4-ZDZOyv5oir0CXNbvskPRcOdKEFMKu7WwtrMFSpEI/
+事業者番号検索、郵便番号と住所の分離、電話番号とFAXの分離、指定年月日の西暦化などの作業が必要。  
+https://docs.google.com/spreadsheets/d/1nipjOhVF1e4YL6IJren8IBhGxpvdhFT_SFikaD7s1UE/
 
 ### 熊本
 https://www.pref.kumamoto.jp/soshiki/39/50669.html

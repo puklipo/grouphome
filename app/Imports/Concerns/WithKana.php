@@ -12,6 +12,6 @@ trait WithKana
      */
     protected function kana(?string $string = null)
     {
-        return Str::kana($string, 'a');
+        return Str::of($string)->kana('a')->trim()->__toString();
     }
 }
