@@ -157,6 +157,7 @@ return [
     ],
     'oita' => [
         'name' => '大分県',
+        'sheets' => '1erwZMpNX7jAvCB3gUhv0RPbPq3DX_PCi7iibTCy_bBk',
     ],
     'miyazaki' => [
         'name' => '宮崎県',
