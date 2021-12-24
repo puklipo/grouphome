@@ -25,7 +25,7 @@
 <body>
     <div class="font-sans text-gray-900 antialiased dark:bg-black dark:text-white">
 
-        <div class="flex flex-col sm:flex-row bg-white dark:bg-black dark:text-white max-w-full mx-auto">
+        <div class="flex flex-col sm:flex-row max-w-full mx-auto">
 
             <main class="flex-initial flex-grow">
                 {{ $slot }}

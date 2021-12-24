@@ -19,15 +19,19 @@
         <div class="sm:px-6 lg:px-8">
             <h1 class="text-4xl hidden">{{ config('app.name', 'Laravel') }}</h1>
 
-            <x-breadcrumbs-back />
+            <x-breadcrumbs-back/>
 
-            {{ $homes->links() }}
+            <div class="px-3">
+                {{ $homes->links() }}
+            </div>
 
             @foreach($homes as $home)
                 @include('homes.item')
             @endforeach
 
-            {{ $homes->links() }}
+            <div class="px-3">
+                {{ $homes->links() }}
+            </div>
 
         </div>
     </div>

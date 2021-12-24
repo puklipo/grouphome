@@ -9,7 +9,7 @@
         <form action="{{ request()->routeIs(['pref']) ? url()->current() : route('index') }}" method="get"
               class="flex">
             <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
-            <x-jet-input name="q" type="search" class="flex-auto sm:w-1/2 rounded-r-none"
+            <x-jet-input name="q" type="search" class="flex-auto sm:w-1/2 rounded-r-none dark:bg-gray-800"
                          value="{{ request('q') }}"
                          placeholder="{{ request()->routeIs(['pref']) ? request()->pref->name.'から検索' : 'キーワード検索' }}"
             />
