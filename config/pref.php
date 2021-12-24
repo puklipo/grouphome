@@ -150,6 +150,7 @@ return [
     ],
     'nagasaki' => [
         'name' => '長崎県',
+        'sheets' => '1nipjOhVF1e4YL6IJren8IBhGxpvdhFT_SFikaD7s1UE',
     ],
     'kumamoto' => [
         'name' => '熊本県',

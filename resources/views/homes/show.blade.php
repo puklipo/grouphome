@@ -47,7 +47,7 @@
                         </div>
                     @endisset
 
-                    <div class="text-md my-3">指定年月日 {{ $home->released_at }}</div>
+                    <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
                 </div>
 
                 <div class="mt-6">

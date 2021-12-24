@@ -17,6 +17,10 @@ class Home extends Model
      */
     protected $perPage = 25;
 
+    protected $casts = [
+        'released_at' => 'date:Y-m-d',
+    ];
+
     public $incrementing = false;
 
     protected $fillable = [
