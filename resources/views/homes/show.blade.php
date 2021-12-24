@@ -24,12 +24,12 @@
 
             <x-breadcrumbs-back/>
 
-            <div class="bg-white m-6">
+            <div class="bg-white m-6 dark:bg-black dark:text-white">
 
                 @include('homes.header')
 
-                <div class="border-4 border-indigo-500 p-3">
-                    <h1 class="text-7xl text-indigo-500 font-extrabold tracking-widest">
+                <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+                    <h1 class="text-7xl text-indigo-500 dark:text-white font-extrabold tracking-widest">
                         {{ $home->name }}
                     </h1>
 
@@ -41,7 +41,7 @@
                     @isset($home->url)
                         <div class="text-md my-3">
                             <a href="{{ $home->url }}" target="_blank"
-                               class="text-indigo-500 font-bold hover:underline">
+                               class="text-indigo-500 dark:text-white font-bold hover:underline">
                                 URL
                             </a>
                         </div>
@@ -51,11 +51,11 @@
                 </div>
 
                 <div class="mt-6">
-                    <span class="bg-indigo-500 text-white px-6 py-1">
+                    <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
                           マップ
                     </span>
                 </div>
-                <div class="border-4 border-indigo-500 p-3">
+                <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
                     @isset($home->map)
                         {!! $home->map !!}
                     @else
@@ -66,7 +66,7 @@
                         <div>
                             <a href="https://www.google.com/maps/search/{{ rawurlencode($home->address.' '.$home->name) }}"
                                target="_blank"
-                               class="text-xl text-indigo-500 font-bold hover:underline">
+                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                 Googleマップで検索
                             </a>
                         </div>
@@ -74,18 +74,18 @@
                 </div>
 
                 <div class="mt-6">
-                    <span class="bg-indigo-500 text-white px-6 py-1">
+                    <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
                           <a href="{{ route('pref', $home->pref) }}">
                             {{ $home->pref->name }}のグループホーム
                         </a>
                     </span>
                 </div>
-                <div class="border-4 border-indigo-500 p-3">
+                <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
                     <ul>
                         @foreach($home->pref->homes()->inRandomOrder()->limit(10)->get() as $h)
                             <li class="my-1 flex justify-between">
                                 <a href="{{ route('home.show', $h) }}"
-                                   class="text-xl text-indigo-500 font-bold hover:underline">
+                                   class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                     {{ $h->name }}
                                 </a>
                                 <span class="text-md text-gray-500 ml-6">{{ Str::limit($h->address, 30) }}</span>
