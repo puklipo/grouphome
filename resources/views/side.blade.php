@@ -28,10 +28,10 @@
     <div class="my-6">
         <ul>
             <li>
-                <a href="{{ route('contact') }}" class="font-bold text-indigo-500 hover:underline">{{ __('お問い合わせ') }}</a>
+                <a href="{{ route('contact') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
             </li>
             <li>
-                <a href="{{ route('license') }}" class="font-bold text-indigo-500 hover:underline">{{ __('利用規約・ライセンス') }}</a>
+                <a href="{{ route('license') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
             </li>
         </ul>
     </div>
