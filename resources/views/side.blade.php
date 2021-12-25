@@ -25,6 +25,17 @@
         {{ $side }}
     @endif
 
+    <div class="my-6">
+        <ul>
+            <li>
+                <a href="{{ route('contact') }}" class="font-bold text-indigo-500 hover:underline">{{ __('お問い合わせ') }}</a>
+            </li>
+            <li>
+                <a href="{{ route('license') }}" class="font-bold text-indigo-500 hover:underline">{{ __('利用規約・ライセンス') }}</a>
+            </li>
+        </ul>
+    </div>
+
     <div class="text-sm mt-10 p-1 border-t">Copyright&copy; <a href="https://sds.fukuoka.jp/"
                                                                class="font-bold text-indigo-500 dark:text-white hover:underline"
                                                                target="_blank" rel="noopener">ポップカルチャースタジオ未来図</a> All

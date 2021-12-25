@@ -27,3 +27,6 @@ Route::get('pref/{pref}', PrefController::class)->name('pref');
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
+Route::view('contact', 'contact')->name('contact');
+Route::view('license', 'license')->name('license');
