@@ -37,6 +37,9 @@
 
                     <div class="text-md my-3">{{ $home->company }}</div>
                     <div class="text-md my-3">{{ $home->tel }}</div>
+                    @if($home->level > 0)
+                        <div class="text-md my-3">対象区分 {{ $home->level }} 以上</div>
+                    @endif
 
                     @isset($home->url)
                         <div class="text-md my-3">
