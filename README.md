@@ -323,3 +323,6 @@ sail art migrate:fresh --seed
 sail art download
 sail art import
 ```
+
+## LICENSE
+AGPL  
