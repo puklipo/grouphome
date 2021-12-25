@@ -33,6 +33,7 @@ class Home extends Model
         'area',
         'map',
         'url',
+        'wam',
         'level',
         'released_at',
     ];

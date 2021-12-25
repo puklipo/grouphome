@@ -37,15 +37,30 @@
 
                     <div class="text-md my-3">{{ $home->company }}</div>
                     <div class="text-md my-3">{{ $home->tel }}</div>
-                    @if($home->level > 0)
-                        <div class="text-md my-3">対象区分 {{ $home->level }} 以上</div>
-                    @endif
+
+                    <div class="text-md my-3">対象区分
+                        @if($home->level > 0)
+                            {{ $home->level }} 以上
+                        @else
+                            区分なし以上、もしくは情報なし（事業所に問い合わせてください）。
+                        @endif
+                    </div>
+
 
                     @isset($home->url)
                         <div class="text-md my-3">
                             <a href="{{ $home->url }}" target="_blank"
                                class="text-indigo-500 dark:text-white font-bold hover:underline">
                                 URL
+                            </a>
+                        </div>
+                    @endisset
+
+                    @isset($home->wam)
+                        <div class="text-md my-3">
+                            <a href="{{ $home->wam }}" target="_blank"
+                               class="text-indigo-500 dark:text-white font-bold hover:underline">
+                                WAM URL
                             </a>
                         </div>
                     @endisset
