@@ -167,6 +167,7 @@ https://docs.google.com/spreadsheets/d/14M6EDPrDPAiPkoJdOKgo9EwUCrlGBlosIAyalwWO
 事業所番号、指定年月日なし。  
 https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/syougaifukushi/303429.html
 
+事業所で障害福祉サービス等情報検索で検索→事業所番号、事業者、指定年月日を調べてスプレッドシートに入力。  
 https://docs.google.com/spreadsheets/d/179cE-R44e1umpRQeMJY_lp7K0VC5DpK4kIhwH5tT-4k/edit?usp=sharing
 
 ### 京都

@@ -94,6 +94,7 @@ return [
     ],
     'shiga' => [
         'name' => '滋賀県',
+        'sheets' => '179cE-R44e1umpRQeMJY_lp7K0VC5DpK4kIhwH5tT-4k',
     ],
     'kyoto' => [
         'name' => '京都府',
@@ -166,7 +167,7 @@ return [
     ],
     'kagoshima' => [
         'name' => '鹿児島県',
-        'sheets' =>'14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGVuv8',
+        'sheets' => '14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGVuv8',
     ],
     'okinawa' => [
         'name' => '沖縄県',
