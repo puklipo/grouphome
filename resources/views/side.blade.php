@@ -6,15 +6,7 @@
     </h2>
 
     <div class="my-6">
-        <form action="{{ request()->routeIs(['pref']) ? url()->current() : route('index') }}" method="get"
-              class="flex">
-            <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
-            <x-jet-input name="q" type="search" class="flex-auto sm:w-1/2 rounded-r-none dark:bg-gray-800"
-                         value="{{ request('q') }}"
-                         placeholder="{{ request()->routeIs(['pref']) ? request()->pref->name.'から検索' : 'キーワード検索' }}"
-            />
-            <x-jet-button class="rounded-l-none min-w-max" title="検索">検索</x-jet-button>
-        </form>
+        @include('search')
     </div>
 
     <div class="my-6">

@@ -16,11 +16,12 @@ class IndexController extends Controller
     public function __invoke(Request $request)
     {
         $homes = Home::with('pref')
-            ->latest()
-            ->keywordSearch($request->query('q'))
-            ->paginate()
-            ->withQueryString()
-            ->onEachSide(1);
+                     ->latest()
+                     ->keywordSearch($request->query('q'))
+                     ->levelSearch($request->input('level'))
+                     ->paginate()
+                     ->withQueryString()
+                     ->onEachSide(1);
 
         return view('home')->with(compact('homes'));
     }

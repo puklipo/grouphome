@@ -48,9 +48,16 @@ class Home extends Model
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
-                    ->orWhere('address', 'like', "%$search%")
-                    ->orWhere('company', 'like', "%$search%");
+                      ->orWhere('address', 'like', "%$search%")
+                      ->orWhere('company', 'like', "%$search%");
             });
+        });
+    }
+
+    public function scopeLevelSearch($query, $level)
+    {
+        return $query->when(filled($level), function (Builder $query, $b) use ($level) {
+            $query->where('level', '=', $level);
         });
     }
 }
