@@ -1,6 +1,5 @@
-<form action="{{ request()->routeIs(['pref']) ? url()->current() : route('index') }}"
-      method="get"
-      class="">
+<form action="{{ request()->routeIs(['pref', 'area']) ? url()->current() : route('index') }}"
+      method="get">
     <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
     <x-jet-input name="q" type="search" class="block flex-auto dark:bg-gray-800"
                  value="{{ request('q') }}"
