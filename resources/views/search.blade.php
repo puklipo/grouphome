@@ -6,7 +6,7 @@
                  placeholder="{{ request()->routeIs(['pref', 'area']) ? request()->pref->name.'から検索' : 'キーワード検索' }}"
     />
 
-    <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3"/>
+    <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
 
     <select name="level"
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
