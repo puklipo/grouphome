@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use App\Models\Type;
 use Illuminate\Support\Str;
 
 class SaitamaImport extends AbstractImport
@@ -30,6 +31,7 @@ class SaitamaImport extends AbstractImport
             'address' => $this->kana($row['共同生活住居所在地']),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
+            'type_id' => Type::firstWhere('type', $this->kana(Str::after($row['施設等の区分'] ?? null, ':')))?->id,
             'released_at' => $this->kana($row['異動年月日']),
         ]);
     }
