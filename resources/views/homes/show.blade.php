@@ -46,6 +46,9 @@
                         @endif
                     </div>
 
+                    @isset($home->type)
+                        <div class="text-md my-3">{{ $home->type->type }}</div>
+                    @endisset
 
                     @isset($home->url)
                         <div class="text-md my-3">
