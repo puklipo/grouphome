@@ -18,8 +18,6 @@ class HokkaidoImport extends AbstractImport
             return null;
         }
 
-        $type = $this->kana($row['施設等の区分']);
-
         return new Home([
             'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
@@ -27,8 +25,8 @@ class HokkaidoImport extends AbstractImport
             'company' => $this->kana($row['法人(設置者)名']),
             'tel' => $this->kana($row['事業所電話']),
             'address' => $this->kana($row['事業所所在地1'].$row['事業所所在地2'].$row['事業所所在地3']),
-            'area' => $this->kana(Str::replace('北海道', '', $row['事業所所在地1'])),
-            'type_id' => Type::firstWhere('type', $type)->id,
+            'area' => $this->kana(Str::remove('北海道',  $row['事業所所在地1'])),
+            'type_id' => Type::firstWhere('type', $this->kana($row['施設等の区分'] ?? null))?->id,
             'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
