@@ -16,6 +16,13 @@ class ToyamaImport extends AbstractImport
             return null;
         }
 
+        $type = match (true) {
+            filled($row['介護サービス包括型']) => 1,
+            filled($row['外部サービス利用型']) => 2,
+            filled($row['日中サービス支援型']) => 3,
+            default => null,
+        };
+
         return new Home([
             'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
@@ -26,6 +33,7 @@ class ToyamaImport extends AbstractImport
             'area' => null,
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
+            'type_id' => $type,
             'released_at' => $this->kana($row['事業開始年月日']),
         ]);
     }
