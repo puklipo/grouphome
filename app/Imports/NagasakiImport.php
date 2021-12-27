@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use App\Models\Type;
 use Carbon\Carbon;
 
 class NagasakiImport extends AbstractImport
@@ -35,6 +36,7 @@ class NagasakiImport extends AbstractImport
             'area' => $this->kana($row['市区町村'] ?? null),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
+            'type_id' => Type::firstWhere('type', $this->kana($row['形態（みなし含む）'] ?? null))?->id,
             'released_at' => $date,
         ]);
     }
