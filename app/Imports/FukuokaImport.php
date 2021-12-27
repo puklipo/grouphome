@@ -16,6 +16,8 @@ class FukuokaImport extends AbstractImport
             return null;
         }
 
+        info($row['類型']);
+
         return new Home([
             'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
@@ -27,7 +29,8 @@ class FukuokaImport extends AbstractImport
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
             'wam' => $row['WAM'] ?? null,
-            'level' => $row['対象区分'] ?? 0,
+            'level' => $this->kana($row['対象区分'] ?? 0),
+            'type_id' => $row['類型'] ?? null,
             'released_at' => $this->kana($row['指定年月日']),
         ]);
     }

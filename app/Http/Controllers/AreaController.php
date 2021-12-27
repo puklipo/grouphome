@@ -17,14 +17,15 @@ class AreaController extends Controller
      */
     public function __invoke(Request $request, Pref $pref, string $area)
     {
-        $homes = $pref->homes()->with('pref')
-                      ->latest()
-                      ->where(fn ($query) => $query->where('area', $area))
-                      ->keywordSearch($request->query('q'))
-                      ->levelSearch($request->input('level'))
-                      ->paginate()
-                      ->withQueryString()
-                      ->onEachSide(1);
+        $homes = $pref->homes()->with(['pref', 'type'])
+            ->latest()
+            ->where(fn ($query) => $query->where('area', $area))
+            ->keywordSearch($request->query('q'))
+            ->levelSearch($request->input('level'))
+            ->typeSearch($request->input('type'))
+            ->paginate()
+            ->withQueryString()
+            ->onEachSide(1);
 
         return view('pref.show')->with(compact('pref', 'homes'));
     }

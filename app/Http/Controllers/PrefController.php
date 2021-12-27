@@ -15,10 +15,11 @@ class PrefController extends Controller
      */
     public function __invoke(Request $request, Pref $pref)
     {
-        $homes = $pref->homes()->with('pref')
+        $homes = $pref->homes()->with(['pref', 'type'])
             ->latest()
             ->keywordSearch($request->query('q'))
             ->levelSearch($request->input('level'))
+            ->typeSearch($request->input('type'))
             ->paginate()
             ->withQueryString()
             ->onEachSide(1);

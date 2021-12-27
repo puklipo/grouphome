@@ -35,6 +35,7 @@ class Home extends Model
         'url',
         'wam',
         'level',
+        'type_id',
         'released_at',
     ];
 
@@ -43,13 +44,18 @@ class Home extends Model
         return $this->belongsTo(Pref::class);
     }
 
+    public function type()
+    {
+        return $this->belongsTo(Type::class);
+    }
+
     public function scopeKeywordSearch($query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
-                      ->orWhere('address', 'like', "%$search%")
-                      ->orWhere('company', 'like', "%$search%");
+                    ->orWhere('address', 'like', "%$search%")
+                    ->orWhere('company', 'like', "%$search%");
             });
         });
     }
@@ -58,6 +64,17 @@ class Home extends Model
     {
         return $query->when(filled($level), function (Builder $query, $b) use ($level) {
             $query->where('level', '=', $level);
+        });
+    }
+
+    public function scopeTypeSearch($query, $type)
+    {
+        return $query->when(filled($type), function (Builder $query, $b) use ($type) {
+            $query->where(function (Builder $query) use ($type) {
+                $query->whereHas('type', function (Builder $query) use ($type) {
+                    $query->where('id', $type);
+                });
+            });
         });
     }
 }
