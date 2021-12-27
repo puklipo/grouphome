@@ -16,8 +16,6 @@ class FukuokaImport extends AbstractImport
             return null;
         }
 
-        info($row['類型']);
-
         return new Home([
             'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
