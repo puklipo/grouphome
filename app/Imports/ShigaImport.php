@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use App\Models\Type;
 use Carbon\Carbon;
 
 class ShigaImport extends AbstractImport
@@ -27,6 +28,7 @@ class ShigaImport extends AbstractImport
             'area' => $this->kana($row['市区町村'] ?? null),
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
+            'type_id' => Type::firstWhere('type', $this->kana($row['サービス種類'] ?? null))?->id,
             'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
