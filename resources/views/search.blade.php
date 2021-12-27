@@ -3,7 +3,7 @@
     <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
     <x-jet-input name="q" type="search" class="block max-w-full dark:bg-gray-800"
                  value="{{ request('q') }}"
-                 placeholder="{{ request()->routeIs(['pref', 'area']) ? request()->pref->name.'から検索' : 'キーワード検索' }}"
+                 placeholder="{{ request()->routeIs(['pref', 'area']) ? (request()->area ?? request()->pref->name).'から検索' : 'キーワード検索' }}"
     />
 
     <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
