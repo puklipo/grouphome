@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use App\Models\Type;
 use Carbon\Carbon;
 
 class KumamotoImport extends AbstractImport
@@ -25,6 +26,7 @@ class KumamotoImport extends AbstractImport
             'tel' => $this->kana($row['電話番号']),
             'address' => $this->kana('熊本県'.$row['住　所']),
             'area' => $this->kana($row['所在地']),
+            'type_id' => Type::firstWhere('type', $this->kana($row['施設等の区分'] ?? null))?->id,
             'released_at' => Carbon::createFromFormat('Y年m月d日', $this->kana($row['指定年月日'])),
         ]);
     }
