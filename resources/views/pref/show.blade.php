@@ -21,10 +21,9 @@
 
     <div class="py-6">
         <div class="sm:px-6 lg:px-8">
+            <h1 class="text-4xl p-3">{{ request()->pref?->name . request()->area }}</h1>
 
             <x-breadcrumbs-back />
-
-            <h1 class="text-4xl hidden">{{ config('app.name', 'Laravel') }}</h1>
 
             {{ $homes->links() }}
 
