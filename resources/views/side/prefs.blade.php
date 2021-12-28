@@ -1,4 +1,6 @@
 <ul>
+    <li><a href="{{ route('area.index') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">自治体一覧</a></li>
+
     @foreach(\App\Models\Pref::withCount('homes')->latest('homes_count')->get() as $pref)
         <li>
             <a href="{{ route('pref', $pref) }}"

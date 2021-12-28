@@ -6,7 +6,7 @@
     </h2>
 
     <div class="my-6">
-        @include('search')
+        @include('side.search')
     </div>
 
     <div class="my-6">

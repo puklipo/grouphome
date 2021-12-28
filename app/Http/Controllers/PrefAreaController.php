@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Pref;
 use Illuminate\Http\Request;
 
-class AreaController extends Controller
+class PrefAreaController extends Controller
 {
     /**
      * Handle the incoming request.
