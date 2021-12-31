@@ -36,6 +36,7 @@ class Home extends Model
         'wam',
         'level',
         'type_id',
+        'trial',
         'released_at',
     ];
 

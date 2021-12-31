@@ -42,13 +42,17 @@
                         @if($home->level > 0)
                             {{ $home->level }} 以上
                         @else
-                            区分なし以上、もしくは情報なし（事業所に問い合わせてください）。
+                            区分なし以上、もしくは情報なし。
                         @endif
                     </div>
 
                     @isset($home->type)
                         <div class="text-md my-3">{{ $home->type->type }}</div>
                     @endisset
+
+                    @if($home->trial)
+                        <div class="text-md my-3">体験利用必須</div>
+                    @endif
 
                     @isset($home->url)
                         <div class="text-md my-3">
