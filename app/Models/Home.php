@@ -37,6 +37,7 @@ class Home extends Model
         'level',
         'type_id',
         'trial',
+        'furniture',
         'released_at',
     ];
 

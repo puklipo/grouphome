@@ -54,6 +54,10 @@
                         <div class="text-md my-3">体験利用必須</div>
                     @endif
 
+                    @if($home->furniture)
+                        <div class="text-md my-3">家具付き</div>
+                    @endif
+
                     @isset($home->url)
                         <div class="text-md my-3">
                             <a href="{{ $home->url }}" target="_blank"
