@@ -26,10 +26,21 @@
             <x-breadcrumbs-back/>
 
             <div class="p-3">
-                @foreach($areas as $pref => $homes)
-                    <h2 class="text-2xl my-3 font-bold">{{ $pref }}</h2>
 
-                    <ul>
+                <div id="index">
+                    @foreach($areas as $pref => $homes)
+                        <a href="#{{ $pref }}" class="text-indigo-500 dark:text-white hover:underline">{{ $pref }}</a>
+                    @endforeach
+                </div>
+
+                @foreach($areas as $pref => $homes)
+                    <h2 class="text-2xl my-3 font-bold">
+                        <a id="{{ $pref }}"></a>
+                        {{ $pref }}
+                        <a href="#index" class="text-indigo-500 dark:text-white hover:underline">⤴️</a>
+                    </h2>
+
+                    <ul class="ml-6">
                         @foreach($homes as $home)
                             <li>
                                 <a href="{{ route('pref.area', [$home->pref, $home->area]) }}"
