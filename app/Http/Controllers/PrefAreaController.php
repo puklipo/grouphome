@@ -18,9 +18,9 @@ class PrefAreaController extends Controller
     public function __invoke(Request $request, Pref $pref, string $area)
     {
         $homes = $pref->homes()->with(['pref', 'type'])
-            ->latest()
-            ->where(fn ($query) => $query->where('area', $area))
+            ->where('area', $area)
             ->keywordSearch($request->input('q'))
+            ->sortBy($request->input('sort'))
             ->levelSearch($request->input('level'))
             ->typeSearch($request->input('type'))
             ->paginate()

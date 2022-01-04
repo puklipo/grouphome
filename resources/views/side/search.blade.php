@@ -1,10 +1,21 @@
-<form action="{{ request()->routeIs(['pref', 'area']) ? url()->current() : route('index') }}"
+<form action="{{ request()->routeIs(['pref', 'pref.area']) ? url()->current() : route('index') }}"
       method="get">
     <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
     <x-jet-input name="q" type="search" class="block max-w-full dark:bg-gray-800"
                  value="{{ request('q') }}"
-                 placeholder="{{ request()->routeIs(['pref', 'area']) ? (request()->area ?? request()->pref->name).'から検索' : 'キーワード検索' }}"
+                 placeholder="{{ request()->routeIs(['pref', 'pref.area']) ? (request()->area ?? request()->pref->name).'から検索' : 'キーワード検索' }}"
     />
+
+    <x-jet-label for="sort" value="{{ __('並べ替え') }}" class="mt-3 dark:text-white"/>
+
+    <select name="sort"
+            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
+        <option value="" @if(request()->missing('sort')) selected @endif>なし</option>
+        <option value="release" @if(request('sort') === 'release') selected @endif>指定年月日(新着順)</option>
+        <option value="name" @if(request('sort') === 'name') selected @endif>グループホーム名</option>
+
+        <option value="pref" @if(request('sort') === 'pref') selected @endif>都道府県(北から)</option>
+    </select>
 
     <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
 

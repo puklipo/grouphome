@@ -51,7 +51,7 @@ class Home extends Model
         return $this->belongsTo(Type::class);
     }
 
-    public function scopeKeywordSearch($query, $search)
+    public function scopeKeywordSearch(Builder $query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
@@ -62,14 +62,24 @@ class Home extends Model
         });
     }
 
-    public function scopeLevelSearch($query, $level)
+    public function scopeSortBy(Builder $query, $sort)
+    {
+        return match ($sort) {
+            'release' => $query->latest('released_at'),
+            'name' => $query->oldest('name'),
+            'pref' => $query->oldest('pref_id'),
+            default => $query->latest()
+        };
+    }
+
+    public function scopeLevelSearch(Builder $query, $level)
     {
         return $query->when(filled($level), function (Builder $query, $b) use ($level) {
             $query->where('level', '=', $level);
         });
     }
 
-    public function scopeTypeSearch($query, $type)
+    public function scopeTypeSearch(Builder $query, $type)
     {
         return $query->when(filled($type), function (Builder $query, $b) use ($type) {
             $query->where(function (Builder $query) use ($type) {
