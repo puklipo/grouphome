@@ -20,7 +20,7 @@ class PrefAreaController extends Controller
         $homes = $pref->homes()->with(['pref', 'type'])
             ->latest()
             ->where(fn ($query) => $query->where('area', $area))
-            ->keywordSearch($request->query('q'))
+            ->keywordSearch($request->input('q'))
             ->levelSearch($request->input('level'))
             ->typeSearch($request->input('type'))
             ->paginate()

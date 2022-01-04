@@ -17,7 +17,7 @@ class IndexController extends Controller
     {
         $homes = Home::with(['pref', 'type'])
             ->latest()
-            ->keywordSearch($request->query('q'))
+            ->keywordSearch($request->input('q'))
             ->levelSearch($request->input('level'))
             ->typeSearch($request->input('type'))
             ->paginate()
