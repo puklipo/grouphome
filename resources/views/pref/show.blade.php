@@ -28,7 +28,7 @@
             {{ $homes->links() }}
 
             @foreach($homes as $home)
-                @include('homes.item')
+                @include('homes.index-item')
             @endforeach
 
             {{ $homes->links() }}

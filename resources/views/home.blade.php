@@ -26,7 +26,7 @@
             </div>
 
             @foreach($homes as $home)
-                @include('homes.item')
+                @include('homes.index-item')
             @endforeach
 
             <div class="px-3">
