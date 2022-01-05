@@ -25,6 +25,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+//        Gate::before(function ($user, $ability) {
+//            return in_array(optional($user)->id, [
+//                1,
+//            ]);
+//        });
     }
 }

@@ -4,6 +4,7 @@ use App\Http\Controllers\AreaIndexController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefAreaController;
 use App\Http\Controllers\PrefController;
 use Illuminate\Support\Facades\Route;
@@ -31,6 +32,10 @@ Route::get('area', AreaIndexController::class)->name('area.index');
 Route::middleware(['auth:sanctum', 'verified'])
     ->get('/dashboard', DashboardController::class)
     ->name('dashboard');
+
+Route::prefix('operator')->middleware(['auth:sanctum'])->group(function () {
+    Route::post('request/{home}', RequestController::class)->name('operator.request');
+});
 
 Route::view('contact', 'contact')->name('contact');
 Route::view('license', 'license')->name('license');

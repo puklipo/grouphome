@@ -7,7 +7,7 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
+            <div class="bg-white overflow-hidden shadow-md sm:rounded-lg">
                 <h2 class="text-4xl p-3">管理グループホーム一覧</h2>
                 <ul>
                     @foreach($homes as $home)
