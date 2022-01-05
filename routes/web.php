@@ -39,6 +39,7 @@ Route::prefix('operator')->middleware(['auth:sanctum'])->group(function () {
 });
 
 Route::prefix('admin')->middleware(['auth:sanctum', 'can:admin'])->group(function () {
+    Route::view('/', 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
 });
 

@@ -13,19 +13,25 @@
                     @foreach($requests as $request)
                         <li class="p-3 flex justify-start">
                             <a href="{{ route('home.show', $request->home) }}"
-                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
+                               class="text-xl text-indigo-500 font-bold hover:underline">
                                 {{ $request->home->name }}
                             </a>
-                            <span class="text-md text-gray-500 ml-6">{{ $request->user->name }}</span>
-                            <span class="text-md text-gray-500 ml-6">
+
+                            <span class="text-lg text-gray-800 font-bold ml-6">
+                                {{ $request->user->name }}
+                            </span>
+
+                            <span class="text-lg text-gray-500 ml-6">
+                                {{ $request->created_at }}
+                            </span>
+
                             <form action="{{ route('operator-requests.update', $request) }}" method="post">
                                 @csrf
                                 @method('PUT')
-                                 <x-jet-button class="ml-4">
-                                     {{ __('承認') }}
-                                 </x-jet-button>
+                                <x-jet-button class="ml-4">
+                                    {{ __('承認') }}
+                                </x-jet-button>
                             </form>
-                            </span>
 
                         </li>
                     @endforeach
