@@ -16,9 +16,9 @@ class HomePolicy
      * @param  \App\Models\User  $user
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function viewAny(User $user)
+    public function viewAny(?User $user)
     {
-        //
+        return true;
     }
 
     /**
@@ -28,9 +28,9 @@ class HomePolicy
      * @param  \App\Models\Home  $home
      * @return \Illuminate\Auth\Access\Response|bool
      */
-    public function view(User $user, Home $home)
+    public function view(?User $user, Home $home)
     {
-        //
+        return true;
     }
 
     /**
@@ -53,7 +53,7 @@ class HomePolicy
      */
     public function update(User $user, Home $home)
     {
-        //
+        return $user->homes->contains($home);
     }
 
     /**

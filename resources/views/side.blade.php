@@ -20,6 +20,9 @@
     <div class="my-6">
         <ul>
             <li>
+                <a href="{{ route('login') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者用ログイン') }}</a>
+            </li>
+            <li>
                 <a href="{{ route('contact') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
             </li>
             <li>

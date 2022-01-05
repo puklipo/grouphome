@@ -8,6 +8,11 @@ use App\Models\Home;
 
 class HomeController extends Controller
 {
+    public function __construct()
+    {
+        $this->authorizeResource(Home::class, 'home');
+    }
+
     /**
      * Display a listing of the resource.
      *

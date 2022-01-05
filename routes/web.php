@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AreaIndexController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\PrefAreaController;
@@ -27,9 +28,9 @@ Route::get('pref/{pref}', PrefController::class)->name('pref');
 
 Route::get('area', AreaIndexController::class)->name('area.index');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+Route::middleware(['auth:sanctum', 'verified'])
+    ->get('/dashboard', DashboardController::class)
+    ->name('dashboard');
 
 Route::view('contact', 'contact')->name('contact');
 Route::view('license', 'license')->name('license');
