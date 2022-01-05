@@ -75,7 +75,7 @@ class Home extends Model
     public function scopeLevelSearch(Builder $query, $level)
     {
         return $query->when(filled($level), function (Builder $query, $b) use ($level) {
-            $query->where('level', '=', $level);
+            $query->where('level', $level);
         });
     }
 

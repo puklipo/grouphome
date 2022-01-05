@@ -261,7 +261,8 @@ https://docs.google.com/spreadsheets/d/1wJ1BUbIXQyk0xZo0R3MEiz6tYkuWsV674pixId79
 ### 福岡
 更新頻度：毎月。  
 手間：低。  
-https://www.pref.fukuoka.lg.jp/contents/shougaishashiteijigyousyo.html
+https://www.pref.fukuoka.lg.jp/contents/shougaishashiteijigyousyo.html  
+https://www.pref.fukuoka.lg.jp/contents/shinkishitei-haishi.html
 
 https://docs.google.com/spreadsheets/d/1OoyzFwfJfijb9cY_shjbt6fLK0RgnSPsPL4c24uJWOI/edit?usp=sharing
 
