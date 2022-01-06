@@ -28,4 +28,11 @@ class OperatorRequestController extends Controller
 
         return back()->banner($home->name.'を承認しました。');
     }
+
+    public function destroy(OperatorRequest $operatorRequest)
+    {
+        $operatorRequest->delete();
+
+        return back()->dangerBanner('却下しました。');
+    }
 }

@@ -33,6 +33,14 @@
                                 </x-jet-button>
                             </form>
 
+                            <form action="{{ route('operator-requests.destroy', $request) }}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <x-jet-danger-button type="submit" class="ml-4">
+                                    {{ __('却下') }}
+                                </x-jet-danger-button>
+                            </form>
+
                         </li>
                     @endforeach
                 </ul>
