@@ -9,22 +9,21 @@ use Illuminate\Http\Request;
 
 class RequestController extends Controller
 {
-    /**
-     * Handle the incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  Home  $home
-     * @return \Illuminate\Http\Response
-     */
     public function __invoke(Request $request, Home $home)
     {
-        if ($request->user()->homes->doesntContain($home)) {
-            OperatorRequest::firstOrCreate([
-                'user_id' => $request->user()->id,
-                'home_id' => $home->id,
-            ]);
+        if ($request->user()->homes->contains($home)) {
+            return back();
         }
 
-        return back();
+        $o = OperatorRequest::firstOrCreate([
+            'user_id' => $request->user()->id,
+            'home_id' => $home->id,
+        ]);
+
+        if ($o->wasRecentlyCreated) {
+            return back()->banner($home->name.'の事業者として申請しました。');
+        }
+
+        return back()->dangerBanner('すでに申請しています。');
     }
 }

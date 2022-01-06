@@ -18,6 +18,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
+    @livewireStyles
+
     <!-- Scripts -->
     <script src="{{ mix('js/app.js') }}" defer></script>
 </head>
@@ -26,14 +28,17 @@
     <div class="font-sans text-gray-900 antialiased dark:bg-black dark:text-white">
 
         <div class="flex flex-col sm:flex-row max-w-full mx-auto">
-
             <main class="flex-initial flex-grow">
+                <x-jet-banner />
+
                 {{ $slot }}
             </main>
 
             @include('side')
         </div>
     </div>
+
+    @livewireScripts
 </body>
 
 </html>

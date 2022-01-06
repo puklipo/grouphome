@@ -8,10 +8,6 @@ use Illuminate\Http\Request;
 
 class OperatorRequestController extends Controller
 {
-    /**
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function index(Request $request)
     {
         $requests = OperatorRequest::with(['user', 'home'])->latest()->get();
