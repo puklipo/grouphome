@@ -27,6 +27,6 @@ class OperatorHomeController extends Controller
 
         $user->homes()->detach($home);
 
-        return back()->banner($home->name.'を解除しました。');
+        return back()->dangerBanner($home->name.'を解除しました。');
     }
 }
