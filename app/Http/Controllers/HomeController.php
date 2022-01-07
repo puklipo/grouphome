@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
 use App\Models\Home;
-use Illuminate\Support\Arr;
 
 class HomeController extends Controller
 {
@@ -55,7 +54,8 @@ class HomeController extends Controller
     {
         $history = collect(session('history', []))
             ->prepend($home->id)
-            ->unique();
+            ->unique()
+            ->take(50);
 
         session(['history' => $history->toArray()]);
 
