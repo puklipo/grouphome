@@ -33,6 +33,14 @@
 
                 @livewire('navigation-menu')
 
+                @if (isset($header))
+                    <header class="bg-white dark:bg-black text-gray-800 dark:text-white shadow">
+                        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 sm:ml-3 text-center sm:text-left">
+                            {{ $header }}
+                        </div>
+                    </header>
+                @endif
+
                 {{ $slot }}
             </main>
 

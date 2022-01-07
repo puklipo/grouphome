@@ -1,16 +1,22 @@
 <x-main-layout>
     <x-slot name="title">
-        自治体一覧
+        {{ __('自治体一覧') }}
+    </x-slot>
+
+    <x-slot name="header">
+        <h1 class="font-semibold text-xl leading-tight">
+            {{ __('自治体一覧') }}
+        </h1>
     </x-slot>
 
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
-                自治体一覧 | {{ config('app.name') }}
+                {{ __('自治体一覧') }} | {{ config('app.name') }}
             </x-slot>
 
             <x-slot name="description">
-                自治体一覧
+                {{ __('自治体一覧') }}
             </x-slot>
         </x-ogp>
     </x-slot>
@@ -21,8 +27,6 @@
 
     <div class="py-6">
         <div class="sm:px-6 lg:px-8">
-            <h1 class="text-4xl p-3">自治体一覧</h1>
-
             <x-breadcrumbs-back/>
 
             <div class="p-3">
