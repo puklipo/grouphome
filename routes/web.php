@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
 use App\Http\Controllers\DashboardController;
@@ -41,6 +42,9 @@ Route::prefix('operator')->middleware(['auth:sanctum', 'verified'])->group(funct
 Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->group(function () {
     Route::view('/', 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
+    Route::get('operator-home', [OperatorHomeController::class, 'index'])->name('operator-home.index');
+    Route::delete('operator-home/{user}/{home}',
+        [OperatorHomeController::class, 'destroy'])->name('operator-home.destroy');
 });
 
 Route::view('contact', 'contact')->name('contact');

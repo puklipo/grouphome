@@ -5,7 +5,7 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
                 <h2 class="text-4xl p-3">管理グループホーム一覧 [{{ $homes->count() }}]</h2>
