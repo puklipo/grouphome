@@ -8,14 +8,14 @@ use Livewire\Component;
 
 class ContactForm extends Component
 {
-    public string $name  = '';
+    public string $name = '';
     public string $email = '';
-    public string $body  = '';
+    public string $body = '';
 
     public array $rules = [
-        'name' => 'required',
+        'name'  => 'required',
         'email' => ['required', 'email'],
-        'body' => 'required',
+        'body'  => 'required',
     ];
 
     public function sendmail()
