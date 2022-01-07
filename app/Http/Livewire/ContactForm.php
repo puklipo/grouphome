@@ -22,7 +22,7 @@ class ContactForm extends Component
     {
         $this->validate();
 
-        Mail::to(config('mail.from.address'))
+        Mail::to(config('mail.contact.to'))
             ->send(new ContactMail($this->name, $this->email, $this->body));
 
         $this->reset();

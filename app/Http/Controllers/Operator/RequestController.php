@@ -23,7 +23,7 @@ class RequestController extends Controller
         ]);
 
         if ($ope->wasRecentlyCreated) {
-            Notification::route('mail', config('mail.from.address'))
+            Notification::route('mail', config('mail.contact.to'))
                 ->notify(new OperatorRequestCreated($ope));
 
             return back()->banner($home->name.'の事業者として申請しました。');
