@@ -31,6 +31,8 @@
             <main class="flex-initial flex-grow">
                 <x-jet-banner />
 
+                @livewire('navigation-menu')
+
                 {{ $slot }}
             </main>
 
