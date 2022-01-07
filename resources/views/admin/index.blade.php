@@ -7,11 +7,11 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-md sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
                 <ul>
                     <li class="p-3">
                         <a href="{{ route('operator-requests.index') }}"
-                           class="text-xl text-indigo-500 font-bold hover:underline">
+                           class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                             {{ __('事業者申請') }} [{{ \App\Models\OperatorRequest::count() }}]
                         </a>
                     </li>

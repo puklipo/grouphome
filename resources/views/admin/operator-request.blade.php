@@ -7,17 +7,17 @@
 
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-md sm:rounded-lg">
+            <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
                 <h2 class="text-4xl p-3">{{ __('事業者申請') }}</h2>
                 <ul>
                     @foreach($requests as $request)
                         <li class="p-3 flex justify-start">
                             <a href="{{ route('home.show', $request->home) }}"
-                               class="text-xl text-indigo-500 font-bold hover:underline">
+                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                 {{ $request->home->name }}
                             </a>
 
-                            <span class="text-lg text-gray-800 font-bold ml-6">
+                            <span class="text-lg text-gray-800 dark:text-gray-300 font-bold ml-6">
                                 {{ $request->user->name }}
                             </span>
 
