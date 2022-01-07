@@ -18,6 +18,9 @@
                     <x-jet-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')">
                         {{ __('自治体一覧') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                        {{ __('お問い合わせ') }}
+                    </x-jet-nav-link>
                     @auth
                         <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                             {{ __('ダッシュボード') }}
@@ -179,6 +182,9 @@
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')">
                 {{ __('自治体一覧') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                {{ __('お問い合わせ') }}
             </x-jet-responsive-nav-link>
             @auth
                 <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
