@@ -34,11 +34,11 @@ Route::middleware(['auth:sanctum', 'verified'])
     ->get('/dashboard', DashboardController::class)
     ->name('dashboard');
 
-Route::prefix('operator')->middleware(['auth:sanctum'])->group(function () {
+Route::prefix('operator')->middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::post('request/{home}', RequestController::class)->name('operator.request');
 });
 
-Route::prefix('admin')->middleware(['auth:sanctum', 'can:admin'])->group(function () {
+Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->group(function () {
     Route::view('/', 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
 });
