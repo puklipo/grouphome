@@ -34,7 +34,6 @@ Route::get('area', AreaIndexController::class)->name('area.index');
 
 Route::get('history', HistoryController::class)->name('history');
 
-
 Route::middleware(['auth:sanctum', 'verified'])
     ->get('/dashboard', DashboardController::class)
     ->name('dashboard');
