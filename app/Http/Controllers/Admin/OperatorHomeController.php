@@ -19,8 +19,12 @@ class OperatorHomeController extends Controller
         return view('admin.operator-home')->with(compact('users'));
     }
 
-    public function destroy(User $user, Home $home)
+    public function destroy(Request $request, User $user, Home $home)
     {
+        $request->validate([
+            'confirm' => ['required', 'accepted']
+        ]);
+
         $user->homes()->detach($home);
 
         return back()->banner($home->name.'を解除しました。');

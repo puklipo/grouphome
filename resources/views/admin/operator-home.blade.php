@@ -21,10 +21,15 @@
                                         {{ $home->name }}
 
                                         <form action="{{ route('operator-home.destroy',[$user, $home]) }}"
-                                              method="post">
+                                              method="post"
+                                              class="flex justify-start align-text-bottom">
                                             @csrf
                                             @method('DELETE')
-                                            <x-jet-danger-button type="submit" class="ml-4">
+
+                                            <x-jet-checkbox name="confirm" value="1" class="ml-3 checked:text-red-500"/>
+                                            <x-jet-label for="confirm" value="確認" class="leading-tight"/>
+
+                                            <x-jet-danger-button type="submit" class="ml-3">
                                                 {{ __('解除') }}
                                             </x-jet-danger-button>
                                         </form>
