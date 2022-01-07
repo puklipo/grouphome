@@ -1,4 +1,5 @@
-<aside class="w-full sm:w-64 flex-none sm:min-h-screen sm:order-first order-last p-5 sm:border-r bg-indigo-50 dark:bg-black dark:text-white">
+<aside
+    class="w-full sm:w-64 flex-none sm:min-h-screen sm:order-first order-last p-5 sm:border-r bg-indigo-50 dark:bg-black dark:text-white">
     <h2 class="font-semibold text-xl text-gray-800 leading-tight mb-5 dark:text-white">
         <a href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
@@ -19,14 +20,19 @@
 
     <div class="my-6">
         <ul>
+            @guest()
+                <li>
+                    <a href="{{ route('login') }}"
+                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者用ログイン') }}</a>
+                </li>
+            @endguest
             <li>
-                <a href="{{ route('login') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者用ログイン') }}</a>
+                <a href="{{ route('contact') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
             </li>
             <li>
-                <a href="{{ route('contact') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
-            </li>
-            <li>
-                <a href="{{ route('license') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
+                <a href="{{ route('license') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
             </li>
         </ul>
     </div>
