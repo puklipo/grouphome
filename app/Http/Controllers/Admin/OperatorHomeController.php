@@ -22,7 +22,7 @@ class OperatorHomeController extends Controller
     public function destroy(Request $request, User $user, Home $home)
     {
         $request->validate([
-            'confirm' => ['required', 'accepted']
+            'confirm' => ['required', 'accepted'],
         ]);
 
         $user->homes()->detach($home);
