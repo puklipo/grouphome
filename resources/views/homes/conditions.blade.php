@@ -3,20 +3,21 @@
         利用条件
     </span>
 </div>
-<div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
-    <div class="text-md my-3">対象区分
+<div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
+    <x-equipment-tag>
+        対象区分
         @if($home->level > 0)
             {{ $home->level }} 以上
         @else
-            区分なし以上、もしくは情報なし。
+            区分なし以上(もしくは情報なし)
         @endif
-    </div>
+    </x-equipment-tag>
 
     @isset($home->type)
-        <div class="text-md my-3">{{ $home->type->type }}</div>
+        <x-equipment-tag>{{ $home->type->type }}</x-equipment-tag>
     @endisset
 
     @if($home->trial)
-        <div class="text-md my-3">体験利用必須</div>
+        <x-equipment-tag>{{ __('体験利用必須') }}</x-equipment-tag>
     @endif
 </div>

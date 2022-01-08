@@ -9,7 +9,13 @@ return [
     'shower'        => 'シャワールーム',
     'wash'          => '洗濯機',
     'tv'            => 'テレビ',
+    'dining'        => '食堂',
+    'living'        => 'リビング室',
     'internet'      => 'インターネット（有料）',
     'internet_free' => 'インターネット（無料）',
     'wifi'          => 'Wi-Fi',
+    'pet'           => 'ペット可',
+    'barrier_free'  => 'バリアフリー',
+    'apartment'     => 'マンション・アパートタイプ',
+    'house'         => '戸建てタイプ',
 ];
