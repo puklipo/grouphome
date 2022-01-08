@@ -1,7 +1,7 @@
 <div>
     <div class="mt-6">
     <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
-        居室の専有設備
+        居室設備
     </span>
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
