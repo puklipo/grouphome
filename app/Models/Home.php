@@ -56,6 +56,11 @@ class Home extends Model
         return $this->belongsToMany(User::class);
     }
 
+    public function equipment()
+    {
+        return $this->hasOne(Equipment::class)->withDefault();
+    }
+
     public function scopeKeywordSearch(Builder $query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {

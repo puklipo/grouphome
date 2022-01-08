@@ -61,7 +61,7 @@
 
                 @include('homes.conditions')
 
-                @include('homes.facility')
+                <livewire:equipment-editor :home="$home"></livewire:equipment-editor>
 
                 @include('homes.map')
 
