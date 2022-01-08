@@ -6,7 +6,7 @@
     </div>
     <div class="border-4 border-red-500 p-3">
         @can('update', $home)
-            管理中のグループホームなので空室状況などを直接編集できます。
+            管理中のグループホームなので設備情報、空室状況などを直接変更できます。変更することが少ない基本情報は直接は変更できないので行政に変更届を出してください。
         @else
             <form action="{{ route('operator.request', $home) }}" method="post">
                 @csrf

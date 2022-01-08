@@ -6,7 +6,7 @@
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
         @foreach(config('equipment') as $key => $name)
-            <x-equipment-tag :enabled="$home->equipment->$key">{{ $name }}</x-equipment-tag>
+            <x-rounded-tag :enabled="$home->equipment->$key">{{ $name }}</x-rounded-tag>
         @endforeach
     </div>
 
