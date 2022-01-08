@@ -61,6 +61,11 @@ class Home extends Model
         return $this->hasOne(Equipment::class)->withDefault();
     }
 
+    public function facility()
+    {
+        return $this->hasOne(Facility::class)->withDefault();
+    }
+
     public function scopeKeywordSearch(Builder $query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {

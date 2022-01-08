@@ -63,6 +63,8 @@
 
                 <livewire:equipment-editor :home="$home"></livewire:equipment-editor>
 
+                <livewire:facility-editor :home="$home"></livewire:facility-editor>
+
                 @include('homes.map')
 
                 @include('homes.related')
