@@ -20,6 +20,7 @@
                     <x-jet-label for="facility_{{ $key }}" class="mr-3 cursor-pointer">
                         <x-jet-checkbox name="facility_{{ $key }}"
                                         id="facility_{{ $key }}"
+                                        class="checked:text-red-500"
                                         wire:model="home.facility.{{ $key }}"/>
                         {{ $name }}
                     </x-jet-label>

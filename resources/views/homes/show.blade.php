@@ -59,7 +59,7 @@
                     <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
                 </div>
 
-                @include('homes.conditions')
+                <livewire:condition-editor :home="$home"></livewire:condition-editor>
 
                 <livewire:facility-editor :home="$home"></livewire:facility-editor>
 
