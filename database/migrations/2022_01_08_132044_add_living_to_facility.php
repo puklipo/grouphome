@@ -14,14 +14,14 @@ return new class extends Migration
     public function up()
     {
         Schema::table('facilities', function (Blueprint $table) {
-            $table->boolean('house')->comment('戸建てタイプ')->default(false)->after('tv');
-            $table->boolean('apartment')->comment('マンション・アパートタイプ')->default(false)->after('tv');
+            $table->boolean('house')->comment('戸建てタイプ')->default(false);
+            $table->boolean('apartment')->comment('マンション・アパートタイプ')->default(false);
 
-            $table->boolean('dining')->comment('食堂')->default(false)->after('tv');
-            $table->boolean('living')->comment('リビング室')->default(false)->after('tv');
+            $table->boolean('dining')->comment('食堂')->default(false);
+            $table->boolean('living')->comment('リビング室')->default(false);
 
-            $table->boolean('barrier_free')->comment('バリアフリー')->default(false)->after('tv');
-            $table->boolean('pet')->comment('ペット可')->default(false)->after('tv');
+            $table->boolean('barrier_free')->comment('バリアフリー')->default(false);
+            $table->boolean('pet')->comment('ペット可')->default(false);
         });
     }
 

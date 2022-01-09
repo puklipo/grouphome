@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('facilities', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
 
             $table->foreignId('home_id')->constrained();
 
@@ -28,8 +29,6 @@ return new class extends Migration
             $table->boolean('shower')->comment('シャワールーム')->default(false);
             $table->boolean('wash')->comment('洗濯機')->default(false);
             $table->boolean('tv')->comment('テレビ')->default(false);
-
-            $table->timestamps();
         });
     }
 

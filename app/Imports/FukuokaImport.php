@@ -29,7 +29,6 @@ class FukuokaImport extends AbstractImport
             'wam' => $row['WAM'] ?? null,
             'level' => $this->kana($row['対象区分'] ?? 0),
             'type_id' => $row['類型'] ?? null,
-            'trial' => $row['体験利用必須'] ?? false,
             'released_at' => $this->kana($row['指定年月日']),
         ]);
     }

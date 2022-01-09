@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('equipment', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
 
             $table->foreignId('home_id')->constrained();
 
@@ -27,8 +28,6 @@ return new class extends Migration
             $table->boolean('wash')->comment('洗濯機')->default(false);
             $table->boolean('tv')->comment('テレビ')->default(false);
             $table->boolean('furniture')->comment('家具付き')->default(false);
-
-            $table->timestamps();
         });
     }
 

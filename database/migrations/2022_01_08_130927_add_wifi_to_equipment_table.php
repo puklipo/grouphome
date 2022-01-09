@@ -14,9 +14,9 @@ return new class extends Migration
     public function up()
     {
         Schema::table('equipment', function (Blueprint $table) {
-            $table->boolean('wifi')->comment('WiFi')->default(false)->after('home_id');
-            $table->boolean('internet_free')->comment('インターネット無料')->default(false)->after('home_id');
-            $table->boolean('internet')->comment('インターネット有料')->default(false)->after('home_id');
+            $table->boolean('internet')->comment('インターネット有料')->default(false);
+            $table->boolean('internet_free')->comment('インターネット無料')->default(false);
+            $table->boolean('wifi')->comment('WiFi')->default(false);
         });
     }
 
