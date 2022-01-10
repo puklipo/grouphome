@@ -59,6 +59,8 @@
                     <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
                 </div>
 
+                <livewire:vacancy-editor :home="$home"></livewire:vacancy-editor>
+
                 <livewire:condition-editor :home="$home"></livewire:condition-editor>
 
                 <livewire:facility-editor :home="$home"></livewire:facility-editor>

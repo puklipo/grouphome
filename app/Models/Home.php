@@ -71,6 +71,11 @@ class Home extends Model
         return $this->hasOne(Condition::class)->withDefault();
     }
 
+    public function vacancy()
+    {
+        return $this->hasOne(Vacancy::class)->withDefault();
+    }
+
     public function scopeKeywordSearch(Builder $query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {
