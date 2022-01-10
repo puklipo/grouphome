@@ -38,6 +38,16 @@
         @endforeach
     </select>
 
+
+    <x-jet-label for="vacancy" value="{{ __('空室') }}" class="mt-3 dark:text-white"/>
+
+    <select name="vacancy"
+            class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
+        <option value="" @if(request()->missing('vacancy')) selected @endif>指定しない</option>
+        <option value="0" @if(request('vacancy') === '0') selected @endif>{{ __('空室あり') }}</option>
+        <option value="1" @if(request('vacancy') === '1') selected @endif>{{ __('満室') }}</option>
+    </select>
+
     <button type="submit"
             class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition min-w-max w-full mt-3"
             title="検索">検索

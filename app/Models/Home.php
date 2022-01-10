@@ -81,8 +81,8 @@ class Home extends Model
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
-                    ->orWhere('address', 'like', "%$search%")
-                    ->orWhere('company', 'like', "%$search%");
+                      ->orWhere('address', 'like', "%$search%")
+                      ->orWhere('company', 'like', "%$search%");
             });
         });
     }
@@ -110,6 +110,17 @@ class Home extends Model
             $query->where(function (Builder $query) use ($type) {
                 $query->whereHas('type', function (Builder $query) use ($type) {
                     $query->where('id', $type);
+                });
+            });
+        });
+    }
+
+    public function scopeVacancySearch(Builder $query, $vacancy)
+    {
+        return $query->when(filled($vacancy), function (Builder $query, $b) use ($vacancy) {
+            $query->where(function (Builder $query) use ($vacancy) {
+                $query->whereHas('vacancy', function (Builder $query) use ($vacancy) {
+                    $query->where('filled', $vacancy);
                 });
             });
         });

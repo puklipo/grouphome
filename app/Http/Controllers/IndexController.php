@@ -20,6 +20,7 @@ class IndexController extends Controller
             ->sortBy($request->input('sort'))
             ->levelSearch($request->input('level'))
             ->typeSearch($request->input('type'))
+            ->vacancySearch($request->input('vacancy'))
             ->paginate()
             ->withQueryString()
             ->onEachSide(1);
