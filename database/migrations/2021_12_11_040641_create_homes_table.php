@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('homes', function (Blueprint $table) {
             $table->unsignedBigInteger('id')->unique();
+            $table->timestamps();
 
             $table->foreignId('pref_id')->constrained();
 
@@ -22,8 +23,6 @@ return new class extends Migration
             $table->string('name')->index();
             $table->string('address')->index();
             $table->date('released_at');
-
-            $table->timestamps();
         });
     }
 
