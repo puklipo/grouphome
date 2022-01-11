@@ -3,10 +3,10 @@
         <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
             最新の空室情報
         </span>
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white dark:hover:text-gray-500">
-            <time datetime="{{ $home->vacancy->updated_at }}">
+        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white">
+            <time datetime="{{ $home->vacancy->updated_at }}" title="{{ $home->vacancy->updated_at->toDateString() }}">
                 {{ $home->vacancy->updated_at->diffForHumans() }}
-            </time>
+            </time>更新
         </span>
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">

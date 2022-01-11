@@ -1,7 +1,7 @@
 <form action="{{ request()->routeIs(['pref', 'pref.area']) ? url()->current() : route('index') }}"
       method="get">
     <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
-    <x-jet-input name="q" type="search" class="block max-w-full dark:bg-gray-800"
+    <x-jet-input name="q" type="search" class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
                  value="{{ request('q') }}"
                  placeholder="{{ request()->routeIs(['pref', 'pref.area']) ? (request()->area ?? request()->pref->name).'から検索' : 'キーワード検索' }}"
     />
