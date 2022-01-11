@@ -18,15 +18,16 @@ class PrefAreaController extends Controller
     public function __invoke(Request $request, Pref $pref, string $area)
     {
         $homes = $pref->homes()->with(['pref', 'type'])
-            ->where('area', $area)
-            ->keywordSearch($request->input('q'))
-            ->sortBy($request->input('sort'))
-            ->levelSearch($request->input('level'))
-            ->typeSearch($request->input('type'))
-            ->vacancySearch($request->input('vacancy'))
-            ->paginate()
-            ->withQueryString()
-            ->onEachSide(1);
+                      ->select(['id', 'name', 'address', 'area', 'level', 'pref_id', 'type_id'])
+                      ->where('area', $area)
+                      ->keywordSearch($request->input('q'))
+                      ->sortBy($request->input('sort'))
+                      ->levelSearch($request->input('level'))
+                      ->typeSearch($request->input('type'))
+                      ->vacancySearch($request->input('vacancy'))
+                      ->paginate()
+                      ->withQueryString()
+                      ->onEachSide(1);
 
         return view('pref.show')->with(compact('pref', 'homes'));
     }
