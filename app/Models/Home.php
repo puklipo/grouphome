@@ -82,7 +82,9 @@ class Home extends Model
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
                       ->orWhere('address', 'like', "%$search%")
-                      ->orWhere('company', 'like', "%$search%");
+                      ->orWhere('company', 'like', "%$search%")
+                      ->orWhere('introduction', 'like', "%$search%")
+                      ->orWhere('houserule', 'like', "%$search%");
             });
         });
     }
