@@ -13,7 +13,7 @@
         <x-rounded-tag :enabled="true">{{ $home->vacancy->filled ? __('満室') : __('空室あり') }}</x-rounded-tag>
 
         @if(filled($home->vacancy->message))
-            <div class="p-3 text-lg">{!! nl2br(e($home->vacancy->message)) !!}</div>
+            <div class="mt-3 text-md">{!! nl2br(e($home->vacancy->message)) !!}</div>
         @endif
     </div>
 
