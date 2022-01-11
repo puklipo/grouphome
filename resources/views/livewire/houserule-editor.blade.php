@@ -19,8 +19,7 @@
                 <form wire:submit.prevent="save">
 
                     <x-jet-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
-                    <textarea name="houserule" rows="4" cols="40" wire:model.defer="home.houserule"
-                              class="mt-1 block w-full bg-white text-black border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"></textarea>
+                    <x-textarea name="houserule" wire:model.defer="home.houserule"></x-textarea>
 
                     <div class="text-sm text-gray-500 dark:text-white">「日中は必ず外出」や門限など入居者向けの細かいルールを入力してください。</div>
 

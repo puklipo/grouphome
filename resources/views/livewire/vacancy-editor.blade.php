@@ -34,8 +34,7 @@
                     </x-jet-label>
 
                     <x-jet-label for="vacancy_message" value="{{ __('メッセージ') }}"/>
-                    <textarea name="vacancy_message" rows="4" cols="40" wire:model.defer="home.vacancy.message"
-                              class="mt-1 block w-full bg-white text-black border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"></textarea>
+                    <x-textarea name="vacancy_message" rows="2" wire:model.defer="home.vacancy.message"></x-textarea>
                     <x-jet-input-error for="vacancy_message" class="mt-3"/>
 
                     <x-jet-button class="mt-3">
