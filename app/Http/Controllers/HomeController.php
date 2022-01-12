@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\History;
 use App\Http\Requests\StoreHomeRequest;
 use App\Http\Requests\UpdateHomeRequest;
 use App\Models\Home;
@@ -52,12 +53,7 @@ class HomeController extends Controller
      */
     public function show(Home $home)
     {
-        $history = collect(session('history', []))
-            ->prepend($home->id)
-            ->unique()
-            ->take(50);
-
-        session(['history' => $history->toArray()]);
+        app(History::class)->add($home);
 
         return view('homes.show')->with(compact('home'));
     }

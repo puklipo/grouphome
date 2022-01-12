@@ -3,10 +3,10 @@
 use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefAreaController;
 use App\Http\Controllers\PrefController;
