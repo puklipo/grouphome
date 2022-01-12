@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Mail\ContactMail;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
@@ -17,6 +18,12 @@ class ContactForm extends Component
         'email' => ['required', 'email'],
         'body'  => 'required',
     ];
+
+    public function mount(Request $request)
+    {
+        $this->name = $request->user()->name ?? '';
+        $this->email = $request->user()->email ?? '';
+    }
 
     public function sendmail()
     {
