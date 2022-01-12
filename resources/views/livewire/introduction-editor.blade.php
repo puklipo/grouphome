@@ -1,7 +1,7 @@
 <div>
     <div class="mt-6 flex justify-between">
         <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
-            {{ __('紹介・特徴・説明') }}
+            {{ __('紹介') }}
         </span>
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
@@ -18,7 +18,7 @@
             <div class="border-4 border-red-500 p-3">
                 <form wire:submit.prevent="save">
 
-                    <x-jet-label for="introduction" value="{{ __('紹介・特徴・説明') }}"/>
+                    <x-jet-label for="introduction" value="{{ __('紹介') }}"/>
 
                     <x-textarea name="introduction" wire:model.defer="home.introduction"></x-textarea>
 
