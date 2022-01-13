@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $homes = $request->user()->homes()->latest('name')->get();
+        $homes = $request->user()->homes()->oldest('name')->get();
 
         return view('dashboard')->with(compact('homes'));
     }
