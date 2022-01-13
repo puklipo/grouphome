@@ -30,9 +30,7 @@
 
             <x-breadcrumbs-back/>
 
-            @foreach($homes as $home)
-                @include('homes.index-item')
-            @endforeach
+            <livewire:history-list/>
 
         </div>
     </div>
