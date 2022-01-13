@@ -14,12 +14,12 @@ class ContactForm extends Component
     public string $body = '';
 
     public array $rules = [
-        'name'  => 'required',
+        'name' => 'required',
         'email' => ['required', 'email'],
-        'body'  => 'required',
+        'body' => 'required',
     ];
 
-    public function mount(Request $request)
+    public function ready(Request $request)
     {
         $this->name = $request->user()->name ?? '';
         $this->email = $request->user()->email ?? '';
