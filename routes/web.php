@@ -3,7 +3,6 @@
 use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
-use App\Http\Controllers\HistoryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\Operator\DashboardController;
@@ -33,7 +32,7 @@ Route::get('pref/{pref}', PrefController::class)->name('pref');
 
 Route::get('area', AreaIndexController::class)->name('area.index');
 
-Route::get('history', HistoryController::class)->name('history');
+Route::view('history', 'history')->name('history');
 
 Route::middleware(['auth:sanctum', 'verified'])
      ->get('/dashboard', DashboardController::class)
