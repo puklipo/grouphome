@@ -21,7 +21,7 @@
 
             <x-breadcrumbs-back/>
 
-            <div class="px-3">
+            <div class="p-3">
                 {{ $homes->links() }}
             </div>
 
@@ -29,7 +29,7 @@
                 @include('homes.index-item')
             @endforeach
 
-            <div class="px-3">
+            <div class="p-3">
                 {{ $homes->links() }}
             </div>
 

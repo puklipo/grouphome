@@ -1,4 +1,4 @@
-<div class="m-6">
+<div class="m-3">
     @include('homes.header')
 
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">

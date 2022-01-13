@@ -7,17 +7,17 @@ use Livewire\Component;
 
 class HistoryList extends Component
 {
-    public bool $readyToLoad = false;
+    public bool $ready = false;
 
     public function ready()
     {
-        $this->readyToLoad = true;
+        $this->ready = true;
     }
 
     public function render()
     {
         return view('livewire.history-list', [
-            'homes' => $this->readyToLoad ? app(History::class)->get() : [],
+            'homes' => $this->ready ? app(History::class)->get() : [],
         ]);
     }
 }

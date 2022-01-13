@@ -24,7 +24,7 @@
 
             <x-breadcrumbs-back/>
 
-            <div class="m-6">
+            <div class="m-3">
 
                 @include('homes.header')
 
