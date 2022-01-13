@@ -3,7 +3,7 @@
 
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
         <a href="{{ route('home.show', $home) }}">
-            <h2 class="inline-flex text-5xl text-indigo-500 dark:text-white font-extrabold tracking-widest hover:text-indigo-600 dark:hover:text-white dark:hover:underline">
+            <h2 class="inline-flex text-5xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all hover:text-indigo-600 dark:hover:text-white dark:hover:underline">
                 {{ $home->name }}
             </h2>
         </a>
