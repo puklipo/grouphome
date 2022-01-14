@@ -33,7 +33,7 @@
     <select name="type"
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
         <option value="" @if(request()->missing('type')) selected @endif>指定しない</option>
-        @foreach(\App\Models\Type::all() as $type)
+        @foreach($types as $type)
             <option value="{{ $type->id }}" @if(request('type') == $type->id) selected @endif>{{ $type->type }}</option>
         @endforeach
     </select>
