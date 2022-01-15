@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
 use Livewire\WithFileUploads;
 
@@ -13,11 +14,12 @@ class PhotoEditor extends Component
     use AuthorizesRequests;
     use WithFileUploads;
 
-    public Home $home;
-    public $origin;
-    public $photo;
-    public $column;
-    public $name;
+    public Home    $home;
+    public ?string $origin;
+    public         $photo;
+    public string  $column;
+    public string  $name;
+    public bool    $showModal = false;
 
     public function mount()
     {
@@ -41,13 +43,22 @@ class PhotoEditor extends Component
         ])->save();
 
         $this->origin = $path;
+        $this->reset('photo');
     }
 
     public function delete()
     {
+        if (Gate::denies('admin')) {
+            $this->authorize('update', $this->home);
+        }
+
         $this->home->photo->fill([
-            $this->column => '',
+            $this->column => null,
         ])->save();
+
+        if (Storage::exists($this->origin)) {
+            Storage::delete($this->origin);
+        }
 
         $this->origin = '';
     }

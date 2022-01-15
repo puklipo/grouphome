@@ -36,7 +36,6 @@ return new class extends Migration
             $table->string('etc3')->comment('その他3')->nullable();
             $table->string('etc4')->comment('その他4')->nullable();
             $table->string('etc5')->comment('その他5')->nullable();
-
         });
     }
 
