@@ -76,6 +76,11 @@ class Home extends Model
         return $this->hasOne(Vacancy::class)->withDefault();
     }
 
+    public function photo()
+    {
+        return $this->hasOne(Photo::class)->withDefault();
+    }
+
     public function scopeKeywordSearch(Builder $query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {

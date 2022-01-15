@@ -71,6 +71,8 @@
 
                 <livewire:houserule-editor :home="$home"></livewire:houserule-editor>
 
+                @include('homes.photo')
+
                 @include('homes.map')
 
                 @include('homes.related')
