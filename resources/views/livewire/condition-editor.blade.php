@@ -6,9 +6,8 @@
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
         <x-rounded-tag>
-            対象区分
             @if($home->level > 0)
-                {{ $home->level }} 以上
+                区分 {{ $home->level }} 以上
             @else
                 区分なし以上(もしくは情報なし)
             @endif
