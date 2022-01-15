@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Facades\Storage;
 use Livewire\Component;
@@ -14,12 +15,12 @@ class PhotoEditor extends Component
     use AuthorizesRequests;
     use WithFileUploads;
 
-    public Home    $home;
-    public ?string $origin;
-    public         $photo;
-    public string  $column;
-    public string  $name;
-    public bool    $showModal = false;
+    public Home                     $home;
+    public ?string                  $origin;
+    public null|UploadedFile|string $photo     = null;
+    public string                   $column;
+    public string                   $name;
+    public bool                     $showModal = false;
 
     public function mount()
     {
