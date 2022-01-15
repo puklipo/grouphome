@@ -17,7 +17,7 @@ class PrefAreaController extends Controller
      */
     public function __invoke(Request $request, Pref $pref, string $area)
     {
-        $homes = $pref->homes()->with(['pref', 'type'])
+        $homes = $pref->homes()->with(['pref', 'type', 'photo'])
                       ->select(['id', 'name', 'address', 'area', 'level', 'pref_id', 'type_id'])
                       ->where('area', $area)
                       ->keywordSearch($request->input('q'))
