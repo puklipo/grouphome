@@ -9,17 +9,13 @@ class AreaIndexController extends Controller
 {
     public function __invoke(Request $request)
     {
-        $areas = cache()->remember(
-            'area.index',
-            now()->addHour(),
-            fn () => Home::with('pref')
-                         ->select(['pref_id', 'area'])
-                         ->whereNotNull('area')
-                         ->distinct()
-                         ->oldest('pref_id')
-                         ->get()
-                         ->groupBy('pref.name')
-        );
+        $areas = Home::with('pref')
+            ->select(['pref_id', 'area'])
+            ->whereNotNull('area')
+            ->distinct()
+            ->oldest('pref_id')
+            ->get()
+            ->groupBy('pref.name');
 
         return view('area.index')->with(compact('areas'));
     }
