@@ -114,16 +114,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.209.5",
+            "version": "3.209.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9e833ab2b98ab004e0a98ad473212bdfdd7dbc43"
+                "reference": "fc4ac03c6ec4acea81c01e8b785c8606943d1fd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e833ab2b98ab004e0a98ad473212bdfdd7dbc43",
-                "reference": "9e833ab2b98ab004e0a98ad473212bdfdd7dbc43",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fc4ac03c6ec4acea81c01e8b785c8606943d1fd6",
+                "reference": "fc4ac03c6ec4acea81c01e8b785c8606943d1fd6",
                 "shasum": ""
             },
             "require": {
@@ -199,9 +199,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.209.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.209.6"
             },
-            "time": "2022-01-13T19:22:21+00:00"
+            "time": "2022-01-14T19:29:33+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -607,29 +607,29 @@
         },
         {
             "name": "dragonmantank/cron-expression",
-            "version": "v3.2.4",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dragonmantank/cron-expression.git",
-                "reference": "9545dea2a1d92b60c8b3d06f02025c83e999bde0"
+                "reference": "63f2a76a045bac6ec93cc2daf2b534b412aa0313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/9545dea2a1d92b60c8b3d06f02025c83e999bde0",
-                "reference": "9545dea2a1d92b60c8b3d06f02025c83e999bde0",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/63f2a76a045bac6ec93cc2daf2b534b412aa0313",
+                "reference": "63f2a76a045bac6ec93cc2daf2b534b412aa0313",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.2|^8.0",
-                "webmozart/assert": "^1.7.0"
+                "webmozart/assert": "^1.0"
             },
             "replace": {
                 "mtdowling/cron-expression": "^1.0"
             },
             "require-dev": {
                 "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-webmozart-assert": "^0.12.7",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-webmozart-assert": "^1.0",
                 "phpunit/phpunit": "^7.0|^8.0|^9.0"
             },
             "type": "library",
@@ -656,7 +656,7 @@
             ],
             "support": {
                 "issues": "https://github.com/dragonmantank/cron-expression/issues",
-                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.2.4"
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.3.0"
             },
             "funding": [
                 {
@@ -664,7 +664,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-13T04:09:37+00:00"
+            "time": "2022-01-14T16:02:05+00:00"
         },
         {
             "name": "egulias/email-validator",
@@ -1931,16 +1931,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.35.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "a3d868d1c2a0ce178a3229757b6e6988b2ad2a60"
+                "reference": "87a12df48051d287c525ff133c7ccfa28bdbcfc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/a3d868d1c2a0ce178a3229757b6e6988b2ad2a60",
-                "reference": "a3d868d1c2a0ce178a3229757b6e6988b2ad2a60",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/87a12df48051d287c525ff133c7ccfa28bdbcfc9",
+                "reference": "87a12df48051d287c525ff133c7ccfa28bdbcfc9",
                 "shasum": ""
             },
             "require": {
@@ -1949,8 +1949,8 @@
                 "illuminate/container": "^6.0|^7.0|^8.0|^9.0",
                 "illuminate/filesystem": "^6.0|^7.0|^8.0|^9.0",
                 "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-                "league/flysystem": "^1.0|^2.0",
-                "league/flysystem-aws-s3-v3": "^1.0|^2.0",
+                "league/flysystem": "^1.0|^3.0",
+                "league/flysystem-aws-s3-v3": "^1.0|^3.0",
                 "php": "^7.2|^8.0",
                 "ramsey/uuid": "^3.8|^4.0",
                 "symfony/console": "^4.2|^5.0|^6.0",
@@ -1993,9 +1993,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.35.0"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.36.0"
             },
-            "time": "2022-01-13T11:59:18+00:00"
+            "time": "2022-01-14T20:29:26+00:00"
         },
         {
             "name": "laravel/vapor-core",
@@ -4575,25 +4575,25 @@
         },
         {
             "name": "revolution/laravel-str-mixins",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-str-mixins.git",
-                "reference": "49fc1100215862d30393dbf4861896339e389b67"
+                "reference": "dd5a52c8aa05bc704c5421a6036e2fb5b02c5937"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-str-mixins/zipball/49fc1100215862d30393dbf4861896339e389b67",
-                "reference": "49fc1100215862d30393dbf4861896339e389b67",
+                "url": "https://api.github.com/repos/kawax/laravel-str-mixins/zipball/dd5a52c8aa05bc704c5421a6036e2fb5b02c5937",
+                "reference": "dd5a52c8aa05bc704c5421a6036e2fb5b02c5937",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "illuminate/support": "^7.0||^8.0",
-                "php": "^7.3||^8.0"
+                "illuminate/support": "^8.0||^9.0",
+                "php": "^7.4||^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^5.0||^6.0"
+                "orchestra/testbench": "^6.0||^7.0"
             },
             "type": "library",
             "extra": {
@@ -4626,9 +4626,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-str-mixins/issues",
-                "source": "https://github.com/kawax/laravel-str-mixins/tree/2.1.0"
+                "source": "https://github.com/kawax/laravel-str-mixins/tree/2.2.1"
             },
-            "time": "2021-01-01T09:07:37+00:00"
+            "time": "2022-01-14T07:21:45+00:00"
         },
         {
             "name": "riverline/multipart-parser",
