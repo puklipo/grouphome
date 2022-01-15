@@ -5,7 +5,8 @@
 
         @if(Storage::exists($home->photo->cover))
             <img src="{{ Storage::url($home->photo->cover) }}"
-                 class="m-0 w-full max-h-20 sm:max-h-36 object-cover object-center overflow-hidden">
+                 class="m-0 w-full max-h-20 sm:max-h-36 object-cover object-center overflow-hidden"
+                 alt="{{ $home->name }}">
         @endif
 
         <div class="p-3">
