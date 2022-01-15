@@ -37,7 +37,7 @@ class PhotoEditor extends Component
             'photo' => 'image|max:1024',
         ]);
 
-        $path = $this->photo->storePublicly('photos');
+        $path = $this->photo->storePublicly('photos/'.$this->home->id);
 
         $this->home->photo->fill([
             $this->column => $path,
