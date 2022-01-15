@@ -31,11 +31,13 @@
                     </x-jet-button>
                 </form>
 
-                <div class="text-right">
-                    <x-jet-danger-button class="mt-3" wire:click="delete" wire:loading.attr="disabled">
-                        {{ __('写真を削除') }}
-                    </x-jet-danger-button>
-                </div>
+                @if(Storage::exists($origin))
+                    <div class="text-right">
+                        <x-jet-danger-button class="mt-3" wire:click="delete" wire:loading.attr="disabled">
+                            {{ __('写真を削除') }}
+                        </x-jet-danger-button>
+                    </div>
+                @endif
             </div>
         </div>
     @endcanany
