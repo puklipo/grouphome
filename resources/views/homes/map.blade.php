@@ -8,7 +8,7 @@
         {!! $home->map !!}
     @else
         <iframe
-            src="https://maps.google.co.jp/maps?output=embed&q={{ urlencode($home->address) }}&z=16&t=h"
+            src="https://maps.google.co.jp/maps?output=embed&q={{ rawurlencode($home->address) }}&z=16&t=h"
             class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
 
         <div>
