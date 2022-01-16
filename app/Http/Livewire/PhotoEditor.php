@@ -34,7 +34,7 @@ class PhotoEditor extends Component
         }
 
         $this->validate([
-            'photo' => 'image|max:1024',
+            'photo' => ['image', 'max:'. 1024 * 3],
         ]);
 
         $path = $this->photo->storePublicly('photos/'.$this->home->id);

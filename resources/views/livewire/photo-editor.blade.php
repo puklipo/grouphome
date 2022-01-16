@@ -12,9 +12,8 @@
         <div class="p-3">
             <h3 class="text-black text-center">{{ $name }}</h3>
 
-            <img
-                src="{{ Storage::exists($origin) ? Storage::url($origin): 'https://placehold.jp/707070/ffffff/250x150.png?text=NO%20PHOTO' }}"
-                class="mx-auto">
+            <img class="mx-auto drop-shadow-lg m-3"
+                 src="{{ Storage::exists($origin) ? Storage::url($origin): 'https://placehold.jp/707070/ffffff/250x150.png?text=NO%20PHOTO' }}" alt="{{ $name }}">
         </div>
     </x-jet-modal>
 
@@ -23,7 +22,8 @@
             <div class="border-2 border-red-500 p-3">
                 <form wire:submit.prevent="save">
                     <div>
-                        <x-jet-input type="file" wire:model="photo"/>
+                        <x-jet-input type="file" id="photo" wire:model="photo"/>
+                        <x-jet-input-error for="photo" class="mt-2"/>
                     </div>
 
                     <x-jet-button class="mt-3" wire:loading.attr="disabled">
