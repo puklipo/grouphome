@@ -1,8 +1,14 @@
 <div>
-    <div class="mt-6">
+    <div class="mt-6 flex justify-between">
     <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
         利用条件
     </span>
+        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white">
+            <time datetime="{{ $home->condition->updated_at }}"
+                  title="{{ $home->condition->updated_at->toDateString() }}">
+                {{ $home->condition->updated_at->diffForHumans() }}
+            </time>更新
+        </span>
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
         <x-rounded-tag>

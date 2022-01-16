@@ -1,8 +1,14 @@
 <div>
-    <div class="mt-6">
+    <div class="mt-6 flex justify-between">
     <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
         共有設備
     </span>
+        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white">
+            <time datetime="{{ $home->facility->updated_at }}"
+                  title="{{ $home->facility->updated_at->toDateString() }}">
+                {{ $home->facility->updated_at->diffForHumans() }}
+            </time>更新
+        </span>
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
         @foreach(config('facility') as $key => $name)
