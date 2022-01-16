@@ -1,6 +1,6 @@
 <div class="m-3">
     <a wire:click="$set('showModal', true)">
-        <div class="relative w-64 h-40 bg-contain bg-no-repeat bg-center cursor-pointer"
+        <div class="relative w-64 h-40 bg-contain bg-no-repeat bg-center cursor-pointer hover:opacity-80"
              style="background-image: url({{ Storage::exists($origin) ? Storage::url($origin): 'https://placehold.jp/707070/ffffff/250x150.png?text=NO%20PHOTO' }})">
 
             <div class="w-full mt-0 font-bold bg-white/80 dark:bg-black/50 p-2">

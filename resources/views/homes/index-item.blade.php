@@ -4,9 +4,11 @@
     <div class="border-4 border-indigo-500 dark:border-gray-800">
 
         @if(Storage::exists($home->photo->cover))
-            <img src="{{ Storage::url($home->photo->cover) }}"
-                 class="m-0 dark:grayscale w-full max-h-20 sm:max-h-36 object-cover object-center overflow-hidden"
-                 alt="{{ $home->name }}">
+            <a href="{{ route('home.show', $home) }}">
+                <img src="{{ Storage::url($home->photo->cover) }}"
+                     class="m-0 dark:grayscale w-full max-h-20 sm:max-h-36 object-cover object-center overflow-hidden hover:opacity-80"
+                     alt="{{ $home->name }}">
+            </a>
         @endif
 
         <div class="p-3">
