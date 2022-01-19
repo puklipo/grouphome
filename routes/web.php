@@ -45,9 +45,14 @@ Route::prefix('operator')->middleware(['auth:sanctum', 'verified'])->group(funct
 Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->group(function () {
     Route::view('/', 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
-    Route::get('operator-home', [OperatorHomeController::class, 'index'])->name('operator-home.index');
-    Route::delete('operator-home/{user}/{home}',
-        [OperatorHomeController::class, 'destroy'])->name('operator-home.destroy');
+
+    Route::controller(OperatorHomeController::class)
+         ->prefix('operator-home')
+         ->as('operator-home.')
+         ->group(function () {
+             Route::get('/', 'index')->name('index');
+             Route::delete('/{user}/{home}', 'destroy')->name('destroy');
+         });
 });
 
 Route::view('contact', 'contact')->name('contact');
