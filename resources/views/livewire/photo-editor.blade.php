@@ -1,7 +1,7 @@
 <div class="m-3">
     <a wire:click="$set('showModal', true)">
         <div class="relative w-64 h-40 bg-contain bg-no-repeat bg-center cursor-pointer hover:opacity-80"
-             style="background-image: url({{ filled($origin) && Storage::exists($origin) ? Storage::url($origin): 'https://placehold.jp/707070/ffffff/250x150.png?text=NO%20PHOTO' }})">
+             style="background-image: url({{ filled($origin) && Storage::exists($origin) ? Storage::url($origin): config('grouphome.no_photo') }})">
 
             <div class="w-full mt-0 font-bold bg-white/80 dark:bg-black/50 p-2">
                 {{ $name }}
@@ -13,7 +13,8 @@
             <h3 class="text-black text-center">{{ $name }}</h3>
 
             <img class="mx-auto drop-shadow-lg m-3"
-                 src="{{ filled($origin) && Storage::exists($origin) ? Storage::url($origin): 'https://placehold.jp/707070/ffffff/250x150.png?text=NO%20PHOTO' }}" alt="{{ $name }}">
+                 src="{{ filled($origin) && Storage::exists($origin) ? Storage::url($origin): config('grouphome.no_photo') }}"
+                 alt="{{ $name }}">
         </div>
     </x-jet-modal>
 

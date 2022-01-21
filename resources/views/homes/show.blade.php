@@ -12,6 +12,12 @@
             <x-slot name="description">
                 {{ $home->name }} {{ $home->address }}
             </x-slot>
+
+            @if(filled($home->photo->cover) && Storage::exists($home->photo->cover))
+                <x-slot name="image">
+                    {{ Storage::url($home->photo->cover) }}
+                </x-slot>
+            @endif
         </x-ogp>
     </x-slot>
 
