@@ -23,16 +23,18 @@
         <div class="sm:px-6 lg:px-8">
             <h1 class="text-4xl p-3">{{ request()->pref?->name . request()->area }} [{{ $homes->total() }}]</h1>
 
-            <x-breadcrumbs-back />
+            <x-breadcrumbs-back/>
 
-            {{ $homes->links() }}
-
+            <div class="p-3">
+                {{ $homes->links() }}
+            </div>
             @foreach($homes as $home)
                 @include('homes.index-item')
             @endforeach
 
-            {{ $homes->links() }}
-
+            <div class="p-3">
+                {{ $homes->links() }}
+            </div>
         </div>
     </div>
 </x-main-layout>
