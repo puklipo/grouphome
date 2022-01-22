@@ -48,7 +48,7 @@
                         <div class="text-md my-3">
                             <a href="{{ $home->url }}" target="_blank"
                                class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                URL
+                                公式URL
                             </a>
                         </div>
                     @endisset
