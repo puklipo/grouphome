@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "080fcdcab91d82f1a3a6628d1324c204",
+    "content-hash": "83598a1198e91f512299b50fc42dc8c9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2309,16 +2309,16 @@
         },
         {
             "name": "league/commonmark",
-            "version": "2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/commonmark.git",
-                "reference": "17d2b9cb5161a2ea1a8dd30e6991d668e503fb9d"
+                "reference": "c5aadcc15548629787d02b86a7afef03b46271b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/17d2b9cb5161a2ea1a8dd30e6991d668e503fb9d",
-                "reference": "17d2b9cb5161a2ea1a8dd30e6991d668e503fb9d",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/c5aadcc15548629787d02b86a7afef03b46271b5",
+                "reference": "c5aadcc15548629787d02b86a7afef03b46271b5",
                 "shasum": ""
             },
             "require": {
@@ -2326,6 +2326,7 @@
                 "league/config": "^1.1.1",
                 "php": "^7.4 || ^8.0",
                 "psr/event-dispatcher": "^1.0",
+                "symfony/deprecation-contracts": "^v2.1 || ^3.0",
                 "symfony/polyfill-php80": "^1.15"
             },
             "require-dev": {
@@ -2351,7 +2352,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.2-dev"
+                    "dev-main": "2.3-dev"
                 }
             },
             "autoload": {
@@ -2408,7 +2409,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T18:25:06+00:00"
+            "time": "2022-01-22T14:06:22+00:00"
         },
         {
             "name": "league/config",
@@ -2695,16 +2696,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v2.10.0",
+            "version": "v2.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "744a7415d824f7c940b91f3b8873c04872623d06"
+                "reference": "0d417b27791af09c79108eafd1344842f83a26ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/744a7415d824f7c940b91f3b8873c04872623d06",
-                "reference": "744a7415d824f7c940b91f3b8873c04872623d06",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/0d417b27791af09c79108eafd1344842f83a26ee",
+                "reference": "0d417b27791af09c79108eafd1344842f83a26ee",
                 "shasum": ""
             },
             "require": {
@@ -2756,7 +2757,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v2.10.0"
+                "source": "https://github.com/livewire/livewire/tree/v2.10.1"
             },
             "funding": [
                 {
@@ -2764,7 +2765,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-21T01:29:51+00:00"
+            "time": "2022-01-21T13:39:10+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -10319,22 +10320,22 @@
         },
         {
             "name": "revolution/sail-db-backup",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/sail-db-backup.git",
-                "reference": "60357877e77c505596168404b2c3001ca1dd6299"
+                "reference": "11b9eaa11359d2a5965b439cd08e4f38706ac39f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/60357877e77c505596168404b2c3001ca1dd6299",
-                "reference": "60357877e77c505596168404b2c3001ca1dd6299",
+                "url": "https://api.github.com/repos/kawax/sail-db-backup/zipball/11b9eaa11359d2a5965b439cd08e4f38706ac39f",
+                "reference": "11b9eaa11359d2a5965b439cd08e4f38706ac39f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^8.0",
-                "illuminate/filesystem": "^8.0",
-                "illuminate/support": "^8.0",
+                "illuminate/console": "^8.0||^9.0",
+                "illuminate/filesystem": "^8.0||^9.0",
+                "illuminate/support": "^8.0||^9.0",
                 "php": "^7.4||^8.0"
             },
             "type": "library",
@@ -10369,9 +10370,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/sail-db-backup/issues",
-                "source": "https://github.com/kawax/sail-db-backup/tree/1.0.3"
+                "source": "https://github.com/kawax/sail-db-backup/tree/1.1.0"
             },
-            "time": "2021-07-04T13:24:58+00:00"
+            "time": "2022-01-22T02:45:08+00:00"
         },
         {
             "name": "sebastian/cli-parser",
@@ -11571,5 +11572,8 @@
         "php": "^8.1"
     },
     "platform-dev": [],
+    "platform-overrides": {
+        "ext-sockets": "1.0.0"
+    },
     "plugin-api-version": "2.2.0"
 }
