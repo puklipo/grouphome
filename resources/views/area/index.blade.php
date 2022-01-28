@@ -42,7 +42,7 @@
 
                 @foreach($areas as $pref => $homes)
                     <h2 class="text-2xl my-3 font-bold">
-                        <a href="{{ route('pref',\App\Models\Pref::find($pref)) }}"
+                        <a href="{{ route('pref', \App\Models\Pref::find($pref)) }}"
                            id="{{ \App\Models\Pref::find($pref)->name }}"
                            class="text-indigo-500 dark:text-white hover:underline">
                             {{ \App\Models\Pref::find($pref)->name }}
