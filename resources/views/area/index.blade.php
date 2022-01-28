@@ -33,14 +33,21 @@
 
                 <div id="index">
                     @foreach($areas as $pref => $homes)
-                        <a href="#{{ $pref }}" class="text-indigo-500 dark:text-white hover:underline">{{ $pref }}</a>
+                        <a href="#{{ \App\Models\Pref::find($pref)->name }}"
+                           class="text-indigo-500 dark:text-white hover:underline">
+                            {{ \App\Models\Pref::find($pref)->name }}
+                        </a>
                     @endforeach
                 </div>
 
                 @foreach($areas as $pref => $homes)
                     <h2 class="text-2xl my-3 font-bold">
-                        <a id="{{ $pref }}"></a>
-                        {{ $pref }}
+                        <a href="{{ route('pref',\App\Models\Pref::find($pref)) }}"
+                           id="{{ \App\Models\Pref::find($pref)->name }}"
+                           class="text-indigo-500 dark:text-white hover:underline">
+                            {{ \App\Models\Pref::find($pref)->name }}
+                        </a>
+
                         <a href="#index" class="text-indigo-500 dark:text-white hover:underline">⤴️</a>
                     </h2>
 

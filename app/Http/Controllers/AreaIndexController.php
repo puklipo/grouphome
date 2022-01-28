@@ -15,7 +15,7 @@ class AreaIndexController extends Controller
             ->distinct()
             ->oldest('pref_id')
             ->get()
-            ->groupBy('pref.name');
+            ->groupBy('pref.id');
 
         return view('area.index')->with(compact('areas'));
     }
