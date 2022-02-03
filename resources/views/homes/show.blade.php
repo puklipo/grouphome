@@ -62,7 +62,9 @@
                         </div>
                     @endisset
 
-                    <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
+                    @isset($home->released_at))
+                        <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
+                    @endisset
                 </div>
 
                 <livewire:introduction-editor :home="$home"></livewire:introduction-editor>

@@ -28,6 +28,7 @@ return [
     ],
     'yamagata' => [
         'name' => '山形県',
+        'sheets' => '1eXT6fG7Jpzh2GBKw-0iXAcT5EnrMHdghPDdS3LlWPMI',
     ],
     'fukushima' => [
         'name' => '福島県',

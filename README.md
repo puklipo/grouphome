@@ -13,7 +13,6 @@ https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/
 ### Googleスプレッドシートへのデータ入力の注意点・共通版
 - 英数字は半角で入力。
 - 「事業所番号」は必須。グループホームごとに重複しない番号を指定。「事業所番号」と「枝番」に分かれてる時はそのまま残す。
-- 「指定年月日」も必須。元のExcelファイルに和暦で入力されてる時は西暦に変換。
 - 事業所名、住所、事業者などの基本情報はすべて必須。
 - 「住所」は都道府県も含めて入力。
 - 元のExcelファイルにないデータは障害福祉サービス等情報検索で検索してGoogleスプレッドシートに入力。
@@ -56,7 +55,7 @@ https://docs.google.com/spreadsheets/d/1EW8i9LBYnrYz8PAXoQTP06I9FjX-07x2vClXAaNN
 
 https://www.city.yamagata-yamagata.lg.jp/kenkofukushi/syougaisha/1008376/1004625.html
 
-空のスプレッドシートに入力していく。  
+初期データはWAMのCSVから入力済み。  
 https://docs.google.com/spreadsheets/d/1eXT6fG7Jpzh2GBKw-0iXAcT5EnrMHdghPDdS3LlWPMI/
 
 ### 福島
