@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('home_id')->constrained();
+            $table->foreignId('home_id')->constrained()->cascadeOnDelete();
 
             $table->boolean('filled')->comment('満室')->default(false);
             $table->text('message')->comment('メッセージ')->nullable();

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('home_id')->constrained();
+            $table->foreignId('home_id')->constrained()->cascadeOnDelete();
 
             $table->boolean('closet')->comment('クローゼット')->default(false);
             $table->boolean('aircon')->comment('エアコン')->default(false);

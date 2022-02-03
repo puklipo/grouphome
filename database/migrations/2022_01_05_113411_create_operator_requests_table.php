@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('operator_requests', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('home_id')->constrained();
-            $table->foreignId('user_id')->constrained();
+            $table->foreignId('home_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

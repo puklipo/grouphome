@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('home_id')->constrained();
+            $table->foreignId('home_id')->constrained()->cascadeOnDelete();
 
             $table->boolean('internet')->comment('インターネット有料')->default(false);
             $table->boolean('internet_free')->comment('インターネット無料')->default(false);

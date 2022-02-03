@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
 
-            $table->foreignId('home_id')->constrained();
+            $table->foreignId('home_id')->constrained()->cascadeOnDelete();
 
             $table->string('cover')->comment('カバー')->nullable();
             $table->string('building')->comment('建物')->nullable();

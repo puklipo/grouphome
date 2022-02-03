@@ -28,6 +28,7 @@ class KagoshimaImport extends AbstractImport
             'url' => $row['事業所URL'],
             'level' => $this->kana($row['対象区分'] ?? 0),
             'type_id' => $row['類型'] ?? null,
+            'released_at' => $row['指定年月日'] ?? null,
         ]);
     }
 }
