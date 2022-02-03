@@ -319,7 +319,7 @@ https://docs.google.com/spreadsheets/d/1T7z1aABewPy18J0hAgjco5ySwjyPnGQUV9kga51p
 
 
 ## 開発
-```
+```shell
 git clone ...
 
 docker run --rm \
