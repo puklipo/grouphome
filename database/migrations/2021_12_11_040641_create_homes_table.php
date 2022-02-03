@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('company')->index();
             $table->string('name')->index();
             $table->string('address')->index();
-            $table->date('released_at');
+            $table->date('released_at')->nullable();
         });
     }
 
