@@ -320,15 +320,23 @@ https://docs.google.com/spreadsheets/d/1T7z1aABewPy18J0hAgjco5ySwjyPnGQUV9kga51p
 
 ## 開発
 ```
-git clone
-composer install
-cp .env.example .env
-php artisan key:generate
+git clone ...
 
-sail up -d
-sail art migrate:fresh --seed
-sail art download
-sail art import
+docker run --rm \
+    -u "$(id -u):$(id -g)" \
+    -v $(pwd):/var/www/html \
+    -w /var/www/html \
+    laravelsail/php81-composer:latest \
+    composer install --ignore-platform-reqs
+
+./vendor/bin/sail up -d
+
+cp .env.example .env
+./vendor/bin/sail art key:generate
+
+./vendor/bin/sail art migrate:fresh --seed
+./vendor/bin/sail art download
+./vendor/bin/sail art import
 ```
 
 ## LICENSE
