@@ -100,6 +100,7 @@ class Home extends Model
             'release' => $query->latest('released_at'),
             'name' => $query->oldest('name'),
             'pref' => $query->oldest('pref_id'),
+            'id' => $query->oldest('id'),
             default => $query->latest()
         };
     }
