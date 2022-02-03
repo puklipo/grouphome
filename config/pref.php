@@ -160,7 +160,7 @@ return [
     ],
     'kouchi' => [
         'name' => '高知県',
-        'sheets' => '',
+        'sheets' => '1wJ1BUbIXQyk0xZo0R3MEiz6tYkuWsV674pixId79Muk',
     ],
     'fukuoka' => [
         'name' => '福岡県',
