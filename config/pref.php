@@ -80,6 +80,7 @@ return [
     ],
     'yamanashi' => [
         'name' => '山梨県',
+        'sheets' => '1aBWDI7LY2qsfFIl-A__OfXcPGrRu3aPN7pBiO0aBcoA',
     ],
     'nagano' => [
         'name' => '長野県',
