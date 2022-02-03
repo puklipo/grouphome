@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use Illuminate\Support\Str;
 
 class OkinawaImport extends AbstractImport
 {
@@ -19,11 +20,14 @@ class OkinawaImport extends AbstractImport
         return new Home([
             'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['事業所－名称']),
-            'company' => $this->kana($row['申請者－名称']),
-            'tel' => $this->kana($row['事業所－電話番号']),
-            'address' => $this->kana($row['事業所－住所']),
-            'released_at' => $this->kana($row['指定年月日']),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('沖縄県', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
+            'level' => $this->kana($row['対象区分'] ?? 0),
+            'type_id' => $row['類型'] ?? null,
         ]);
     }
 }

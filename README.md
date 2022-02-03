@@ -318,6 +318,7 @@ https://docs.google.com/spreadsheets/d/14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGV
 ### 沖縄
 https://www.pref.okinawa.lg.jp/site/kodomo/shogaifukushi/old/20738.html
 
+WAMのCSVで入力し直し。  
 https://docs.google.com/spreadsheets/d/1T7z1aABewPy18J0hAgjco5ySwjyPnGQUV9kga51pP5o/edit?usp=sharing
 
 

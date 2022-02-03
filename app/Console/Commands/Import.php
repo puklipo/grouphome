@@ -38,6 +38,8 @@ class Import extends Command
      */
     public function handle()
     {
+        cache()->forget('side.prefs');
+
         collect(config('pref'))->keys()->each(function ($pref) {
             $this->info($pref);
 
