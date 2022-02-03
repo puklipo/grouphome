@@ -128,7 +128,7 @@ return [
     ],
     'tottori' => [
         'name' => '鳥取県',
-        'sheets' => '',
+        'sheets' => '1-Y88JEhm4Mpzyc1HwZp5OQhEceJldB2s522v5TRRcCE',
     ],
     'shimane' => [
         'name' => '島根県',
