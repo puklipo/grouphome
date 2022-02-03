@@ -120,6 +120,7 @@ return [
     ],
     'nara' => [
         'name' => '奈良県',
+        'sheets' => '1RTcgRLhglrAo-2M7ce064-pU0yVetAen1pB20rOf4OM',
     ],
     'wakayama' => [
         'name' => '和歌山県',
