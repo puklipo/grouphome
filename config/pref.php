@@ -124,33 +124,43 @@ return [
     ],
     'wakayama' => [
         'name' => '和歌山県',
+        'sheets' => '1vWrU9ppk_WrmkC_W1WUWnGpMBgDziIraeJ7xQTnhGoM',
     ],
     'tottori' => [
         'name' => '鳥取県',
+        'sheets' => '',
     ],
     'shimane' => [
         'name' => '島根県',
+        'sheets' => '',
     ],
     'okayama' => [
         'name' => '岡山県',
+        'sheets' => '',
     ],
     'hiroshima' => [
         'name' => '広島県',
+        'sheets' => '',
     ],
     'yamaguchi' => [
         'name' => '山口県',
+        'sheets' => '',
     ],
     'tokushima' => [
         'name' => '徳島県',
+        'sheets' => '',
     ],
     'kagawa' => [
         'name' => '香川県',
+        'sheets' => '',
     ],
     'ehime' => [
         'name' => '愛媛県',
+        'sheets' => '',
     ],
     'kouchi' => [
         'name' => '高知県',
+        'sheets' => '',
     ],
     'fukuoka' => [
         'name' => '福岡県',
