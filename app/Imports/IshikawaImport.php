@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use Illuminate\Support\Str;
 
 class IshikawaImport extends AbstractImport
 {
@@ -17,16 +18,17 @@ class IshikawaImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $this->kana($row['事業所番号']),
+            'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['共同生活住居名称']),
-            'company' => $this->kana($row['法人名称']),
-            'tel' => $this->kana($row['運営法人電話番号']),
-            'address' => '石川県'.$this->kana($row['所在地[1]'].$row['所在地[2]']),
-            'area' => $this->kana($row['所在地[1]'] ?? null),
-            'map' => $row['Googleマップ'] ?? null,
-            'url' => $row['URL'] ?? null,
-            'released_at' => $this->kana($row['設置年月日']),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('石川県', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
+            'level' => $this->kana($row['対象区分'] ?? 0),
+            'type_id' => $row['類型'] ?? null,
+            'released_at' => $row['指定年月日'] ?? null,
         ]);
     }
 }
