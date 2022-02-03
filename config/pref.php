@@ -84,6 +84,7 @@ return [
     ],
     'nagano' => [
         'name' => '長野県',
+        'sheets' => '1NU4O_V7DrrKj6Phjt6r3QVnPJt1ekH2d3nxRguEueos',
     ],
     'gifu' => [
         'name' => '岐阜県',

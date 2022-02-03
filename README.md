@@ -138,7 +138,6 @@ https://www.pref.yamanashi.jp/shogai-fks/shogai-sisetsu.html
 https://docs.google.com/spreadsheets/d/1aBWDI7LY2qsfFIl-A__OfXcPGrRu3aPN7pBiO0aBcoA/
 
 ### 長野
-事業所番号なし。障害福祉サービス等情報検索で検索
 https://www.pref.nagano.lg.jp/shogai-shien/kenko/shogai/shogai/joho/jigyosha/ichiranhyo.html
 
 https://docs.google.com/spreadsheets/d/1NU4O_V7DrrKj6Phjt6r3QVnPJt1ekH2d3nxRguEueos/edit?usp=sharing
