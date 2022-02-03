@@ -5,7 +5,7 @@ namespace App\Imports;
 use App\Models\Home;
 use Illuminate\Support\Str;
 
-class NagasakiImport extends AbstractImport
+class NiigataImport extends AbstractImport
 {
     /**
      * @param  array  $row
@@ -24,7 +24,7 @@ class NagasakiImport extends AbstractImport
             'company' => $this->kana($row['法人の名称']),
             'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
-            'area' => $this->kana(Str::remove('長崎県', $row['事業所住所（市区町村）'])),
+            'area' => $this->kana(Str::remove('新潟県', $row['事業所住所（市区町村）'])),
             'url' => $row['事業所URL'],
             'level' => $this->kana($row['対象区分'] ?? 0),
             'type_id' => $row['類型'] ?? null,

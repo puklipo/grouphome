@@ -64,6 +64,7 @@ return [
     ],
     'niigata' => [
         'name' => '新潟県',
+        'sheets' => '10110oUaKkaTVm2Jb5XSwbDSwmqcvMOCyqnfEgNhJ9Bo',
     ],
     'toyama' => [
         'name' => '富山県',
