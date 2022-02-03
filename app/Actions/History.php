@@ -20,6 +20,7 @@ class History
     public function get(): Collection
     {
         return collect(session('history', []))
-            ->map(fn ($history) => Home::with(['pref', 'type'])->find($history));
+            ->map(fn ($history) => Home::with(['pref', 'type'])->find($history))
+            ->reject(fn ($history) => is_null($history));
     }
 }
