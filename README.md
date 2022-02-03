@@ -79,7 +79,7 @@ https://docs.google.com/spreadsheets/d/1_WboRoTQGUwlGcy9sJFT161_j4EP4qsTHYrp8WtQ
 ### 群馬
 https://www.pref.gunma.jp/02/d4200334.html
 
-空のスプレッドシートに入力していく。  
+初期データはWAMのCSVから入力済み。  
 https://docs.google.com/spreadsheets/d/14Una1eJObEnN3yQfNxYUdafBnt5uRGoz67mU39rIuUY/
 
 ### 埼玉

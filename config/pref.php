@@ -44,6 +44,7 @@ return [
     ],
     'gunma' => [
         'name' => '群馬県',
+        'sheets' => '14Una1eJObEnN3yQfNxYUdafBnt5uRGoz67mU39rIuUY',
     ],
     'saitama' => [
         'name' => '埼玉県',
