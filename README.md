@@ -102,7 +102,7 @@ https://docs.google.com/spreadsheets/d/1_6xmk71Tao0R7w68jFp70amB3Nq56BmzFF3GWyGw
 ？  
 https://www.rakuraku.or.jp/shienhi/
 
-空のスプレッドシートに入力していく。  
+初期データはWAMのCSVから入力済み。  
 https://docs.google.com/spreadsheets/d/1dYbvVcBtGAMefoi1mkVVuOnu8WkAAMCCfzCiR55cdM0/
 
 ### 新潟

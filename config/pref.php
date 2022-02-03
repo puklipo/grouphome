@@ -60,6 +60,7 @@ return [
     ],
     'kanagawa' => [
         'name' => '神奈川県',
+        'sheets' => '1dYbvVcBtGAMefoi1mkVVuOnu8WkAAMCCfzCiR55cdM0',
     ],
     'niigata' => [
         'name' => '新潟県',
