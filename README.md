@@ -312,6 +312,7 @@ https://docs.google.com/spreadsheets/d/1k_45z5dqCXYH2gcs8DJu4qrgIl0DMSezwpFHa0vR
 表6。事業者番号なし。  
 http://www.pref.kagoshima.jp/ae04/kenko-fukushi/syogai-syakai/syakaifukushi/hokenfukushishisetu-list.html
 
+WAMのCSVで入力し直し。  
 https://docs.google.com/spreadsheets/d/14IbqvtnepP1dGRQzVjk55mO3W1JPa0co7M27toGVuv8/edit?usp=sharing
 
 ### 沖縄

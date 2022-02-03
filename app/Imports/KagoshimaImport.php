@@ -3,7 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
-use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 class KagoshimaImport extends AbstractImport
 {
@@ -18,16 +18,16 @@ class KagoshimaImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $this->kana($row['事業所番号']),
+            'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['名称']),
-            'company' => $this->kana($row['設置主体']),
-            'tel' => $this->kana($row['電話番号']),
-            'address' => '鹿児島県'.$this->kana($row['所在地']),
-            'area' => $this->kana($row['市区町村'] ?? null),
-            'map' => $row['Googleマップ'] ?? null,
-            'url' => $row['URL'] ?? null,
-            'released_at' => $this->kana($row['開設年月日']),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('鹿児島県', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
+            'level' => $this->kana($row['対象区分'] ?? 0),
+            'type_id' => $row['類型'] ?? null,
         ]);
     }
 }
