@@ -132,7 +132,7 @@ return [
     ],
     'shimane' => [
         'name' => '島根県',
-        'sheets' => '',
+        'sheets' => '1OH0iwMb_Tt8rHSoqsQXd_XWCNoKIBgTMP9WiULkcKxY',
     ],
     'okayama' => [
         'name' => '岡山県',
