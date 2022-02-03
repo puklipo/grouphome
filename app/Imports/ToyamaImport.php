@@ -3,6 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
+use Illuminate\Support\Str;
 
 class ToyamaImport extends AbstractImport
 {
@@ -16,25 +17,18 @@ class ToyamaImport extends AbstractImport
             return null;
         }
 
-        $type = match (true) {
-            filled($row['介護サービス包括型']) => 1,
-            filled($row['外部サービス利用型']) => 2,
-            filled($row['日中サービス支援型']) => 3,
-            default => null,
-        };
-
         return new Home([
-            'id' => $this->kana($row['事業所番号']),
+            'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['事業所名称']),
-            'company' => $this->kana($row['運営主体']),
-            'tel' => $this->kana($row['電話番号']),
-            'address' => '富山県'.$this->kana($row['事業所所在地']),
-            'area' => null,
-            'map' => $row['Googleマップ'] ?? null,
-            'url' => $row['URL'] ?? null,
-            'type_id' => $type,
-            'released_at' => $this->kana($row['事業開始年月日']),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('富山県', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
+            'level' => $this->kana($row['対象区分'] ?? 0),
+            //'type_id' => $row['類型'] ?? null,
+            'released_at' => $row['指定年月日'] ?? null,
         ]);
     }
 }
