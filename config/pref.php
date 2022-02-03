@@ -76,6 +76,7 @@ return [
     ],
     'fukui' => [
         'name' => '福井県',
+        'sheets' => '1NIFFXgDSricLHxE2jZD1IoTlNAmaShdNl_9CgsRqN6Y',
     ],
     'yamanashi' => [
         'name' => '山梨県',
