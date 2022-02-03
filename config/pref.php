@@ -136,7 +136,7 @@ return [
     ],
     'okayama' => [
         'name' => '岡山県',
-        'sheets' => '',
+        'sheets' => '1gQN6NhQHdyAtGxMh8LtMrSI1jW7rd-uUuDanmq5pVTU',
     ],
     'hiroshima' => [
         'name' => '広島県',
