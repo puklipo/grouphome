@@ -92,6 +92,7 @@ return [
     ],
     'shizuoka' => [
         'name' => '静岡県',
+        'sheets' => '1kGV4DLo4bHiSlUsUHFqfxZ91SH8nnOpZCOOYf7sklH4',
     ],
     'aichi' => [
         'name' => '愛知県',
