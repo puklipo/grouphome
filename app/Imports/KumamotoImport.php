@@ -3,8 +3,7 @@
 namespace App\Imports;
 
 use App\Models\Home;
-use App\Models\Type;
-use Carbon\Carbon;
+use Illuminate\Support\Str;
 
 class KumamotoImport extends AbstractImport
 {
@@ -19,15 +18,16 @@ class KumamotoImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $this->kana(trim($row['事業所番号']).$row['枝番']),
+            'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['共同生活住居名称']),
-            'company' => $this->kana($row['事業者名称']),
-            'tel' => $this->kana($row['電話番号']),
-            'address' => $this->kana('熊本県'.$row['住　所']),
-            'area' => $this->kana($row['所在地']),
-            'type_id' => Type::firstWhere('type', $this->kana($row['施設等の区分'] ?? null))?->id,
-            'released_at' => Carbon::createFromFormat('Y年m月d日', $this->kana($row['指定年月日'])),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('熊本県', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
+            'level' => $this->kana($row['対象区分'] ?? 0),
+            'type_id' => $row['類型'] ?? null,
         ]);
     }
 }
