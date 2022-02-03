@@ -140,7 +140,7 @@ return [
     ],
     'hiroshima' => [
         'name' => '広島県',
-        'sheets' => '',
+        'sheets' => '12WOCiL7PyMLOvXO_FsU6oTp5WT7tg3l57T9fnEOCbyM',
     ],
     'yamaguchi' => [
         'name' => '山口県',
