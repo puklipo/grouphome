@@ -279,7 +279,8 @@ https://www.pref.nagasaki.jp/bunrui/hukushi-hoken/shogaisha/shisetsu-shogai/ichi
 長崎市。PDF  
 https://www.city.nagasaki.lg.jp/fukushi/440000/449006/p027150.html
 
-郵便番号と住所の分離、電話番号とFAXの分離、指定年月日の西暦化などの作業が必要。  
+~~郵便番号と住所の分離、電話番号とFAXの分離、指定年月日の西暦化などの作業が必要。~~  
+WAMのCSVで入力し直し。  
 https://docs.google.com/spreadsheets/d/1nipjOhVF1e4YL6IJren8IBhGxpvdhFT_SFikaD7s1UE/
 
 ### 熊本
