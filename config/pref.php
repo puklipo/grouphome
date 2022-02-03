@@ -148,7 +148,7 @@ return [
     ],
     'tokushima' => [
         'name' => '徳島県',
-        'sheets' => '',
+        'sheets' => '1lULcB1bel7MIdTtoFPBlnVMqmz5yFwwE4usnYTpq7_0',
     ],
     'kagawa' => [
         'name' => '香川県',
