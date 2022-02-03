@@ -23,7 +23,7 @@ class SaitamaImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $this->kana($row['事業所番号'].$row['枝番／ 連番']),
+            'id' => $this->kana($row['事業所番号']),
             'pref_id' => $this->prefId(),
             'name' => $this->kana($row['共同生活住居名称']),
             'company' => $this->kana($row['申請者名称']),
