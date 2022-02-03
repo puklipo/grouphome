@@ -152,7 +152,7 @@ return [
     ],
     'kagawa' => [
         'name' => '香川県',
-        'sheets' => '',
+        'sheets' => '1hFeyVQ533JbUaFsbu_dGcJGyqa_FPY8GnV7v8TKiOpA',
     ],
     'ehime' => [
         'name' => '愛媛県',
