@@ -24,7 +24,7 @@ return [
     ],
     'akita' => [
         'name' => '秋田県',
-        'sheets' => '1EW8i9LBYnrYz8PAXoQTP06I9FjX-07x2vClXAaNNE4s',
+        'sheets' => '1Rg7Ds3EAirtgkDahSpcSPu66kwWyVLEVVC9LuGaMnpw',
     ],
     'yamagata' => [
         'name' => '山形県',
