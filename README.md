@@ -294,7 +294,8 @@ https://docs.google.com/spreadsheets/d/10Wm6aJNLVkdZl_8GToNdyrypMg6M_JkE4D7bqo89
 大分市。PDF  
 http://www.city.oita.oita.jp/o089/kenko/fukushi/1323838778549.html
 
-郵便番号と住所の分離、指定年月日の検索作業が必要。  
+~~郵便番号と住所の分離、指定年月日の検索作業が必要。~~  
+WAMのCSVで入力し直し。
 https://docs.google.com/spreadsheets/d/1erwZMpNX7jAvCB3gUhv0RPbPq3DX_PCi7iibTCy_bBk/
 
 ### 宮崎
