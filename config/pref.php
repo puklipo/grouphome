@@ -48,7 +48,7 @@ return [
     ],
     'saitama' => [
         'name' => '埼玉県',
-       'sheets' => '17sQJ2O3iLgbx4zFdgpo76sjioVuWUvovjQOzTmdYfL0',
+        'sheets' => '17sQJ2O3iLgbx4zFdgpo76sjioVuWUvovjQOzTmdYfL0',
     ],
     'chiba' => [
         'name' => '千葉県',
