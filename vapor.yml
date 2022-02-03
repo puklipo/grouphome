@@ -5,6 +5,7 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.1:al2'
+        domain: grouphome.guide
         database: grouphome
         storage: pcs-grouphome
         queue-timeout: 300
