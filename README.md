@@ -71,9 +71,10 @@ https://www.pref.ibaraki.jp/hokenfukushi/shofuku/seishin/shofuku/c/c-6.html
 https://docs.google.com/spreadsheets/d/1JGUBYqdIFHYUqKxRBNt_4Ohlzfw3GfafAIu8mQiqF-8/edit?usp=sharing
 
 ### 栃木
-かなり修正が必要だったので1事業者ごとに1事業所のみ残して他は削除。  
+~~かなり修正が必要だったので1事業者ごとに1事業所のみ残して他は削除。~~  
 https://www.pref.tochigi.lg.jp/e05/welfare/shougaisha/fukushi/shogai_jigyosha.html
 
+WAMのCSVで入力し直し。  
 https://docs.google.com/spreadsheets/d/1_WboRoTQGUwlGcy9sJFT161_j4EP4qsTHYrp8WtQnT4/edit?usp=sharing
 
 ### 群馬
