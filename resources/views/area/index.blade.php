@@ -32,31 +32,31 @@
             <div class="p-3">
 
                 <div id="index">
-                    @foreach($areas as $pref => $homes)
-                        <a href="#{{ \App\Models\Pref::find($pref)->name }}"
+                    @foreach($prefs as $pref)
+                        <a href="#{{ $pref->name }}"
                            class="text-indigo-500 dark:text-white hover:underline">
-                            {{ \App\Models\Pref::find($pref)->name }}
+                            {{ $pref->name }}
                         </a>
                     @endforeach
                 </div>
 
                 @foreach($areas as $pref => $homes)
                     <h2 class="text-2xl my-3 font-bold">
-                        <a href="{{ route('pref', \App\Models\Pref::find($pref)) }}"
-                           id="{{ \App\Models\Pref::find($pref)->name }}"
+                        <a href="{{ route('pref', $prefs->find($pref)) }}"
+                           id="{{ $prefs->find($pref)->name }}"
                            class="text-indigo-500 dark:text-white hover:underline">
-                            {{ \App\Models\Pref::find($pref)->name }}
+                            {{ $prefs->find($pref)->name }}
                         </a>
 
                         <a href="#index" class="text-indigo-500 dark:text-white hover:underline">⤴️</a>
                     </h2>
 
                     <ul class="ml-6">
-                        @foreach($homes as $home)
+                        @foreach($homes->sortByDesc('area_count') as $home)
                             <li>
                                 <a href="{{ route('pref.area', [$home->pref, $home->area]) }}"
                                    class="text-xl text-indigo-500 dark:text-white hover:underline">
-                                    {{ $home->area }}
+                                    {{ $home->area }} [{{ $home->area_count }}]
                                 </a>
                             </li>
                         @endforeach
