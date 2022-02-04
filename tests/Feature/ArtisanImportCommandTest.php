@@ -23,6 +23,6 @@ class ArtisanImportCommandTest extends TestCase
              ->assertSuccessful();
 
         $this->assertDatabaseCount('prefs', 47);
-        $this->assertDatabaseCount('types', 3);
+        $this->assertDatabaseCount('types', 4);
     }
 }
