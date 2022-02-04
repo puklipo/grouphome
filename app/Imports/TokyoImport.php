@@ -18,14 +18,15 @@ class TokyoImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $this->kana($row['事業所番号']),
+            'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['事業所－名称']),
-            'company' => $this->kana($row['申請者－名称']),
-            'tel' => $this->kana($row['事業所－電話番号']),
-            'address' => $this->kana($row['事業所－地域'].$row['事業所－住所']),
-            'area' => $this->kana(Str::replace('東京都', '', $row['事業所－地域'])),
-            'released_at' => $this->kana($row['指定年月日']),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('東京都', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
+            'released_at' => $row['指定年月日'] ?? null,
         ]);
     }
 }
