@@ -3,6 +3,12 @@
         {{ $pref->name }}{{ request('area') }}
     </x-slot>
 
+    <x-slot name="header">
+        <h1 class="font-semibold text-xl leading-tight">
+            {{ request()->pref?->name . request()->area }} [{{ $homes->total() }}]
+        </h1>
+    </x-slot>
+
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
@@ -21,7 +27,6 @@
 
     <div class="py-6">
         <div class="sm:px-6 lg:px-8">
-            <h1 class="text-4xl p-3">{{ request()->pref?->name . request()->area }} [{{ $homes->total() }}]</h1>
 
             <x-breadcrumbs-back/>
 
