@@ -3,4 +3,4 @@
 
 
 ## ライセンス
-グループホームの情報は[障害福祉サービス等情報検索ウェブサイト](https://www.wam.go.jp/sfkohyoout/)や各都道府県の行政サイトから取得して編集・加工しています。
+グループホームの情報は[障害福祉サービス等情報検索ウェブサイト](https://www.wam.go.jp/sfkohyoout/) （ [オープンデータ](https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/) ）や各都道府県の行政サイトから取得して編集・加工しています。
