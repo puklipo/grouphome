@@ -27,8 +27,6 @@ class FukuokaImport extends AbstractImport
             'map' => $row['Googleマップ'] ?? null,
             'url' => $row['URL'] ?? null,
             'wam' => $row['WAM'] ?? null,
-            'level' => $this->kana($row['対象区分'] ?? 0),
-            'type_id' => $row['類型'] ?? null,
             'released_at' => $this->kana($row['指定年月日']),
         ]);
     }

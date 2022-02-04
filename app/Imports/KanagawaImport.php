@@ -26,8 +26,6 @@ class KanagawaImport extends AbstractImport
             'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
             'area' => $this->kana(Str::remove('神奈川県', $row['事業所住所（市区町村）'])),
             'url' => $row['事業所URL'],
-            'level' => $this->kana($row['対象区分'] ?? 0),
-            'type_id' => $row['類型'] ?? null,
             'released_at' => $row['指定年月日'] ?? null,
         ]);
     }

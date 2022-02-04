@@ -26,7 +26,6 @@ class HokkaidoImport extends AbstractImport
             'tel' => $this->kana($row['事業所電話']),
             'address' => $this->kana($row['事業所所在地1'].$row['事業所所在地2'].$row['事業所所在地3']),
             'area' => $this->kana(Str::remove('北海道', $row['事業所所在地1'])),
-            'type_id' => Type::firstWhere('type', $this->kana($row['施設等の区分'] ?? null))?->id,
             'released_at' => $this->kana($row['指定年月日']),
         ]);
     }
