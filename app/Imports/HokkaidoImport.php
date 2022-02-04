@@ -19,14 +19,14 @@ class HokkaidoImport extends AbstractImport
         }
 
         return new Home([
-            'id' => $this->kana($row['事業所番号']),
+            'id' => $this->kana(trim($row['事業所番号'])),
             'pref_id' => $this->prefId(),
-            'name' => $this->kana($row['事業所名']),
-            'company' => $this->kana($row['法人(設置者)名']),
-            'tel' => $this->kana($row['事業所電話']),
-            'address' => $this->kana($row['事業所所在地1'].$row['事業所所在地2'].$row['事業所所在地3']),
-            'area' => $this->kana(Str::remove('北海道', $row['事業所所在地1'])),
-            'released_at' => $this->kana($row['指定年月日']),
+            'name' => $this->kana($row['事業所の名称']),
+            'company' => $this->kana($row['法人の名称']),
+            'tel' => $this->kana($row['事業所電話番号']),
+            'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
+            'area' => $this->kana(Str::remove('北海道', $row['事業所住所（市区町村）'])),
+            'url' => $row['事業所URL'],
         ]);
     }
 }
