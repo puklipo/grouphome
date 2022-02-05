@@ -36,7 +36,7 @@ class ConditionEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        if (Str::contains($name, 'home.condition')) {
+        if (Str::startsWith($name, 'home.condition.')) {
             $this->home->condition->save();
 
             return;
