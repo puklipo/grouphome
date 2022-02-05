@@ -33,6 +33,7 @@
             <div class="p-3">
                 {{ $homes->links() }}
             </div>
+
             @forelse($homes as $home)
                 @include('homes.index-item')
             @empty
