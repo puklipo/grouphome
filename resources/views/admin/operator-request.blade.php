@@ -17,7 +17,7 @@
                             </a>
 
                             <span class="text-lg text-gray-800 dark:text-gray-300 font-bold ml-6">
-                                {{ $request->user->name }}
+                                {{ $request->user->name }} [{{ $request->user->email }}]
                             </span>
 
                             <span class="text-lg text-gray-500 ml-6">
