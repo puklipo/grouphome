@@ -26,6 +26,10 @@
                        class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者用ログイン') }}</a>
                 </li>
             @endguest
+                <li>
+                    <a href="{{ route('help.operator') }}"
+                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+                </li>
             <li>
                 <a href="{{ route('contact') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
