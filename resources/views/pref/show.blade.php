@@ -33,9 +33,11 @@
             <div class="p-3">
                 {{ $homes->links() }}
             </div>
-            @foreach($homes as $home)
+            @forelse($homes as $home)
                 @include('homes.index-item')
-            @endforeach
+            @empty
+                <div class="p-3 font-bold">見つかりませんでした。</div>
+            @endforelse
 
             <div class="p-3">
                 {{ $homes->links() }}
