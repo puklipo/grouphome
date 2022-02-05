@@ -1,4 +1,8 @@
-# グループホーム
+# グループホームガイド
+
+[![deploy](https://github.com/pop-culture-studio/grouphome/actions/workflows/deploy.yml/badge.svg)](https://github.com/pop-culture-studio/grouphome/actions/workflows/deploy.yml)
+
+https://grouphome.guide/
 
 ## Googleスプレッドシート
 グループホームの一覧情報は各都道府県サイトのExcelファイルで取得できる。[障害福祉サービス等情報検索](https://www.wam.go.jp/sfkohyoout/) からも取得できるけどグループホームはExcelファイルからの方が良さそう。
@@ -317,6 +321,9 @@ https://www.pref.okinawa.lg.jp/site/kodomo/shogaifukushi/old/20738.html
 WAMのCSVで入力し直し。  
 https://docs.google.com/spreadsheets/d/1T7z1aABewPy18J0hAgjco5ySwjyPnGQUV9kga51pP5o/edit?usp=sharing
 
+## サーバー
+- AWS
+- Laravel Vapor https://vapor.laravel.com/
 
 ## 開発
 ```shell
