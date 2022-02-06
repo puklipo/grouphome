@@ -67,6 +67,8 @@
                     @endisset
                 </div>
 
+                <livewire:basic-editor :home="$home"></livewire:basic-editor>
+
                 <livewire:introduction-editor :home="$home"></livewire:introduction-editor>
 
                 <livewire:vacancy-editor :home="$home"></livewire:vacancy-editor>

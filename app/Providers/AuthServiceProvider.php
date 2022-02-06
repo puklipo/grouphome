@@ -31,11 +31,5 @@ class AuthServiceProvider extends ServiceProvider
                 1,
             ]);
         });
-
-//        Gate::before(function ($user, $ability) {
-//            return in_array(optional($user)->id, [
-//                1,
-//            ]);
-//        });
     }
 }
