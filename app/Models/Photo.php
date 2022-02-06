@@ -10,6 +10,7 @@ class Photo extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+    protected $touches = ['home'];
 
     public function home()
     {

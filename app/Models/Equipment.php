@@ -9,6 +9,8 @@ class Equipment extends Model
 {
     use HasFactory;
 
+    protected $touches = ['home'];
+
     public function home()
     {
         return $this->belongsTo(Home::class);

@@ -98,6 +98,7 @@ class Home extends Model
     public function scopeSortBy(Builder $query, $sort)
     {
         return match ($sort) {
+            'updated' => $query->latest('updated_at'),
             'address' => $query->oldest('address'),
             'release' => $query->latest('released_at'),
             'name' => $query->oldest('name'),
