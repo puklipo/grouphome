@@ -3,20 +3,17 @@
 namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Bus;
 use Tests\TestCase;
 
 class ArtisanImportCommandTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_download_csv()
-    {
-        $this->artisan('download')
-             ->assertSuccessful();
-    }
-
     public function test_import_csv()
     {
+        Bus::fake();
+
         $this->seed();
 
         $this->artisan('import')
