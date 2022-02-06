@@ -6,7 +6,8 @@
     </div>
     <div class="border-4 border-red-500 p-3">
         @can('update', $home)
-            管理中のグループホームなので設備情報、空室状況などを直接変更できます。変更することが少ない基本情報はここでは変更できないので自治体に変更届を出してください。
+            管理中のグループホームなので設備情報、空室状況などを直接変更できます。変更することが少ない基本情報はここでは変更できないので<a href="https://www.wam.go.jp/sfkohyoout/" target="_blank"
+            class="text-indigo-500 underline">WAM</a>の登録情報を変更してください。
         @else
             <form action="{{ route('operator.request', $home) }}" method="post">
                 @csrf
