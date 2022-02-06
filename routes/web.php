@@ -6,7 +6,6 @@ use App\Http\Controllers\AreaIndexController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
-use App\Http\Controllers\PrefAreaController;
 use App\Http\Controllers\PrefController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,8 +25,7 @@ Route::view('/', 'home')->name('index');
 Route::resource('home', HomeController::class)
      ->only(['index', 'show']);
 
-Route::get('pref/{pref}/area/{area}', PrefAreaController::class)->name('pref.area');
-Route::get('pref/{pref}', PrefController::class)->name('pref');
+Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 
 Route::get('area', AreaIndexController::class)->name('area.index');
 
