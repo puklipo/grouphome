@@ -5,7 +5,7 @@
 
     <x-slot name="header">
         <h1 class="font-semibold text-xl leading-tight">
-            {{ __('履歴') }}
+            {{ __('履歴') }} [{{ collect(session('history', []))->count() }}]
         </h1>
     </x-slot>
 
