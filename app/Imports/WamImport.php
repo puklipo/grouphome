@@ -23,13 +23,11 @@ class WamImport implements OnEachRow, WithHeadingRow
 
         $pref_id = (int) Str::substr($row['都道府県コード又は市区町村コード'], 0, -3);
 
-        if ($pref_id < 1 || $pref_id > 47) {
-            info($pref_id, $row);
+        $pref = Pref::find($pref_id);
 
+        if (! $pref->exists) {
             return;
         }
-
-        $pref = Pref::find($pref_id);
 
         Home::updateOrCreate([
             'id' => $row['事業所番号'],

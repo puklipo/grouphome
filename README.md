@@ -342,7 +342,6 @@ cp .env.example .env
 ./vendor/bin/sail art key:generate
 
 ./vendor/bin/sail art migrate:fresh --seed
-./vendor/bin/sail art download
 ./vendor/bin/sail art import
 ```
 
