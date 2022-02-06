@@ -2,9 +2,8 @@
 
 namespace App\Console\Commands;
 
-use App\Imports\WamImport;
+use App\Jobs\ImportJob;
 use Illuminate\Console\Command;
-use Maatwebsite\Excel\Imports\HeadingRowFormatter;
 
 class Import extends Command
 {
@@ -41,13 +40,7 @@ class Import extends Command
     {
         cache()->forget('side.prefs');
 
-        HeadingRowFormatter::default('none');
-
-        try {
-            app(WamImport::class)->import(base_path('storage/wam.csv'));
-        } catch (\Exception $e) {
-            $this->error($e->getMessage());
-        }
+        ImportJob::dispatch();
 
         return 0;
     }
