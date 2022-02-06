@@ -40,11 +40,7 @@ class Import extends Command
     {
         cache()->forget('side.prefs');
 
-        collect(config('pref'))->keys()->each(function ($pref) {
-            $this->info($pref);
-
-            ImportJob::dispatch($pref);
-        });
+        ImportJob::dispatch();
 
         return 0;
     }
