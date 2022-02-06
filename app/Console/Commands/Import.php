@@ -44,7 +44,7 @@ class Import extends Command
         HeadingRowFormatter::default('none');
 
         try {
-            app(WamImport::class)->import(storage_path('wam.csv'));
+            app(WamImport::class)->import(base_path('storage/wam.csv'));
         } catch (\Exception $e) {
             $this->error($e->getMessage());
         }
