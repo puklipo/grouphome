@@ -15,7 +15,7 @@ class Home extends Model
      *
      * @var int
      */
-    protected $perPage = 25;
+    protected $perPage = 20;
 
     protected $casts = [
         'released_at' => 'date:Y-m-d',
