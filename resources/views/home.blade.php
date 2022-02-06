@@ -21,19 +21,7 @@
 
             <x-breadcrumbs-back/>
 
-            <div class="p-3">
-                {{ $homes->links() }}
-            </div>
-
-            @forelse($homes as $home)
-                @include('homes.index-item')
-            @empty
-                <div class="p-3 font-bold">見つかりませんでした。</div>
-            @endforelse
-
-            <div class="p-3">
-                {{ $homes->links() }}
-            </div>
+            <livewire:home-index></livewire:home-index>
 
         </div>
     </div>

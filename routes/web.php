@@ -4,7 +4,6 @@ use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\IndexController;
 use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefAreaController;
@@ -22,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', IndexController::class)->name('index');
+Route::view('/', 'home')->name('index');
 
 Route::resource('home', HomeController::class)
      ->only(['index', 'show']);
