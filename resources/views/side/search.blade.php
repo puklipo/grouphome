@@ -13,8 +13,8 @@
         <option value="" @if(request()->missing('sort')) selected @endif>なし</option>
         <option value="release" @if(request('sort') === 'release') selected @endif>指定年月日(新着順)</option>
         <option value="name" @if(request('sort') === 'name') selected @endif>グループホーム名</option>
-        <option value="id" @if(request('sort') === 'id') selected @endif>事業者番号</option>
         <option value="pref" @if(request('sort') === 'pref') selected @endif>都道府県(北から)</option>
+        <option value="id" @if(request('sort') === 'id') selected @endif>事業者番号(降順)</option>
     </select>
 
     <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>

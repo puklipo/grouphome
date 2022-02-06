@@ -24,7 +24,7 @@
 
             <x-breadcrumbs-back/>
 
-            <livewire:pref-index :pref="$pref" :area="$area"></livewire:pref-index>
+            <livewire:home-index :pref="$pref" :area="$area"></livewire:home-index>
         </div>
     </div>
 </x-main-layout>
