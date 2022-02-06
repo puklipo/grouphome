@@ -18,9 +18,10 @@ class WamImport implements OnEachRow, WithHeadingRow
 
     public function onRow(Row $row)
     {
-        $rowIndex = $row->getIndex();
+        //$rowIndex = $row->getIndex();
         $row = $row->toArray();
 
+        //都道府県コード(1-47)+3桁の市区町村コードの形式。後ろ3文字を削除して都道府県コードを得る。
         $pref_id = (int) Str::substr($row['都道府県コード又は市区町村コード'], 0, -3);
 
         $pref = Pref::find($pref_id);
@@ -29,6 +30,7 @@ class WamImport implements OnEachRow, WithHeadingRow
             return;
         }
 
+        //事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
         Home::updateOrCreate([
             'id' => $row['事業所番号'],
         ], [
