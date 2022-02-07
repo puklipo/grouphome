@@ -19,6 +19,13 @@ class BasicEditor extends Component
             ->toArray();
     }
 
+    public function updated($name, $value)
+    {
+        if ($name === 'home.released_at' && blank($value)) {
+            $this->home->released_at = null;
+        }
+    }
+
     public function save()
     {
         $this->authorize('admin');
