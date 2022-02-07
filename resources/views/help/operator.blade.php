@@ -23,7 +23,7 @@
                     <li>管理するグループホームを検索。</li>
                     <li>
                         グループホームのページの一番下に「管理事業者として申請」ボタンがあるので申請。
-                        <img src="{{ asset('images/help/ope1.png') }}" class="w-1/2 shadow rounded-md">
+                        <img src="{{ asset('images/help/ope1.png') }}" class="w-auto shadow rounded-md" alt="申請ボタン">
                     </li>
                     <li>承認後管理できるようになりますのでしばらくお待ちください。</li>
                     <li>一つのグループホームに対して複数のユーザーが管理事業者になることもできます。事業者内でユーザーアカウントを共有したくない場合は複数のユーザーを作成してください。</li>
@@ -32,7 +32,7 @@
                 <h2>ダッシュボード</h2>
                 <ol>
                     <li>管理事業者として承認されたグループホームはダッシュボードの管理グループホーム一覧に表示されます。
-                        <img src="{{ asset('images/help/ope2.png') }}" class="w-auto shadow rounded-md">
+                        <img src="{{ asset('images/help/ope2.png') }}" class="w-auto shadow rounded-md" alt="ダッシュボード">
                     </li>
                 </ol>
 
@@ -44,6 +44,7 @@
                             <source src="{{ asset('images/help/ope3.mov') }}" type="video/mp4">
                         </video>
                     </li>
+                    <li>公式サイトなどで公開済みの情報は当サイトのスタッフが更新していることもあります。</li>
                 </ol>
 
             </div>
