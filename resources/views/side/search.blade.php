@@ -12,6 +12,8 @@
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
         <option value="" @if(request()->missing('sort')) selected @endif>なし</option>
         <option value="updated" @if(request('sort') === 'updated') selected @endif>更新が新しい順</option>
+        <option value="low" @if(request('sort') === 'low') selected @endif>費用が安い順</option>
+        <option value="high" @if(request('sort') === 'high') selected @endif>費用が高い順</option>
         <option value="address" @if(request('sort') === 'address') selected @endif>住所</option>
         <option value="release" @if(request('sort') === 'release') selected @endif>指定年月日(新着順)</option>
         <option value="name" @if(request('sort') === 'name') selected @endif>グループホーム名</option>

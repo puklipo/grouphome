@@ -2,6 +2,7 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Cost;
 use App\Models\Home;
 use App\Models\Pref;
 use Illuminate\Http\Request;
@@ -42,7 +43,11 @@ class HomeIndex extends Component
 
         return view('livewire.home-index')->with([
             'homes' => $query->with(['pref', 'type', 'photo', 'cost'])
-                             ->select(['id', 'name', 'address', 'area', 'level', 'pref_id', 'type_id'])
+                             ->addSelect([
+                                 'total' => Cost::select('total')
+                                                ->whereColumn('home_id', 'homes.id')
+                                                ->where('total', '>', 0),
+                             ])
                              ->when(filled($this->area), fn ($query) => $query->where('area', $this->area))
                              ->keywordSearch($this->q)
                              ->sortBy($this->sort)
