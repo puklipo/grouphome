@@ -107,7 +107,8 @@ class Home extends Model
             })->oldest('total'),
             'high' => $query->whereHas('cost', function (Builder $query) {
                 $query->where('total', '>', 0);
-            })->latest('total'),
+            }
+            )->latest('total'),
             'address' => $query->oldest('address'),
             'release' => $query->latest('released_at'),
             'name' => $query->oldest('name'),

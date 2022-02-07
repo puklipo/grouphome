@@ -29,7 +29,6 @@ return new class extends Migration
             $table->unsignedMediumInteger('support')->default(10000)->comment('家賃補助');
 
             $table->text('message')->nullable()->comment('補足');
-
         });
     }
 
