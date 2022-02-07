@@ -17,6 +17,7 @@ return [
     'wifi' => 'Wi-Fi',
     'pet' => 'ペット可',
     'barrier_free' => 'バリアフリー',
+    'car' => '送迎車両',
     'apartment' => 'マンション・アパートタイプ',
     'house' => '戸建てタイプ',
 ];
