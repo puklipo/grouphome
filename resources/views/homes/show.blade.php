@@ -75,6 +75,8 @@
 
                 <livewire:condition-editor :home="$home"></livewire:condition-editor>
 
+                <livewire:cost-editor :home="$home"></livewire:cost-editor>
+
                 <livewire:facility-editor :home="$home"></livewire:facility-editor>
 
                 <livewire:equipment-editor :home="$home"></livewire:equipment-editor>

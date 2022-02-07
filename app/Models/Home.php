@@ -81,6 +81,11 @@ class Home extends Model
         return $this->hasOne(Photo::class)->withDefault();
     }
 
+    public function cost()
+    {
+        return $this->hasOne(Cost::class)->withDefault();
+    }
+
     public function scopeKeywordSearch(Builder $query, $search)
     {
         return $query->when($search, function (Builder $query, $search) {
