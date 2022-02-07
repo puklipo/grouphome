@@ -25,6 +25,17 @@ class CostEditor extends Component
         $this->home->cost()->firstOrCreate();
     }
 
+    public function calcTotal()
+    {
+        $this->fill([
+            'home.cost.total' => $this->home->cost->rent
+                + $this->home->cost->food
+                + $this->home->cost->utilities
+                + $this->home->cost->daily
+                + $this->home->cost->etc,
+        ]);
+    }
+
     public function save()
     {
         if (Gate::denies('admin')) {

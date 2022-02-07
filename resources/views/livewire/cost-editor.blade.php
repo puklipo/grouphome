@@ -16,7 +16,8 @@
             <div class="text-lg">
                 @if($home->cost->total > 0)
                     <span class="text-red-500 font-extrabold">{{ $home->cost->total }}円</span>
-                    (家賃補助適用後 <span class="text-red-500 font-extrabold">{{ $home->cost->total - $home->cost->support }}円</span>)
+                    (家賃補助適用後 <span
+                        class="text-red-500 font-extrabold">{{ $home->cost->total - $home->cost->support }}円</span>)
                 @else
                     不明
                 @endif
@@ -72,7 +73,8 @@
                     <x-jet-label for="total" value="{{ __('費用合計') }}"/>
                     <x-jet-input type="number" name="total" wire:model.defer="home.cost.total"></x-jet-input>
                     <div class="text-sm text-gray-500 dark:text-white mb-3">
-                        月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力。自動で合計はされません。
+                        月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力。
+                        <x-jet-button wire:click="calcTotal">{{ __('他の項目から合計を自動計算') }}</x-jet-button>
                     </div>
 
                     <x-jet-label for="rent" value="{{ __('家賃') }}"/>
@@ -103,7 +105,9 @@
                     <x-jet-label for="message" value="{{ __('補足説明') }}"/>
                     <x-jet-input type="text" name="message" class="w-full"
                                  wire:model.defer="home.cost.message"></x-jet-input>
-                    <div class="text-sm text-gray-500 dark:text-white mb-3">食費の詳細（朝食、昼食、夕食ごとの費用）や光熱費の実費精算など説明が必要なことがあれば入力。</div>
+                    <div class="text-sm text-gray-500 dark:text-white mb-3">
+                        食費の詳細（朝食、昼食、夕食ごとの費用）や光熱費の実費精算など説明が必要なことがあれば入力。
+                    </div>
 
 
                     <x-jet-button class="mt-3">
