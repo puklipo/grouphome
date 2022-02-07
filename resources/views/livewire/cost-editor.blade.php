@@ -40,7 +40,7 @@
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">日用品・雑費</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">日用品・雑費・共益費</div>
             <div class="text-lg">{{ $home->cost->daily }}円</div>
         </div>
 
@@ -89,7 +89,7 @@
                     <x-jet-input type="number" name="utilities" wire:model.defer="home.cost.utilities"></x-jet-input>
                     <div class="text-sm text-gray-500 dark:text-white mb-3">使用した分だけ実費精算でも平均値を入力して補足で説明。（目安がない時は10000）</div>
 
-                    <x-jet-label for="daily" value="{{ __('日用品・雑費') }}"/>
+                    <x-jet-label for="daily" value="{{ __('日用品・雑費・共益費') }}"/>
                     <x-jet-input type="number" name="daily" wire:model.defer="home.cost.daily"></x-jet-input>
                     <div class="text-sm text-gray-500 dark:text-white mb-3">日用品・雑費・共益費など。</div>
 
