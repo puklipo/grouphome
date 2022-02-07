@@ -1,7 +1,7 @@
 <div>
     <div class="mt-6 flex justify-between">
         <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
-            ハウスルール
+            入居者向けのルール
         </span>
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
