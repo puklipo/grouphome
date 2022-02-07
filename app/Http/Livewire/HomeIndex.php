@@ -41,7 +41,7 @@ class HomeIndex extends Component
         $query = is_null($this->pref) ? Home::query() : $this->pref->homes();
 
         return view('livewire.home-index')->with([
-            'homes' => $query->with(['pref', 'type', 'photo'])
+            'homes' => $query->with(['pref', 'type', 'photo', 'cost'])
                              ->select(['id', 'name', 'address', 'area', 'level', 'pref_id', 'type_id'])
                              ->when(filled($this->area), fn ($query) => $query->where('area', $this->area))
                              ->keywordSearch($this->q)
