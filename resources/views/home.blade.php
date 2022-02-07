@@ -17,9 +17,11 @@
 
     <div class="py-6">
         <div class="sm:px-6 lg:px-8">
-            <h1 class="text-4xl hidden">{{ config('app.name', 'Laravel') }}</h1>
-
             <x-breadcrumbs-back/>
+
+            <div class="p-3 bg-indigo-50 dark:bg-black sm:hidden">
+                @include('search')
+            </div>
 
             <livewire:home-index></livewire:home-index>
 

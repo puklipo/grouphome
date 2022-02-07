@@ -1,13 +1,13 @@
 <aside
     class="w-full sm:w-64 flex-none sm:min-h-screen sm:order-first order-last p-5 sm:border-r bg-indigo-50 dark:bg-black dark:text-white">
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight mb-5 dark:text-white">
+    <h1 class="font-semibold text-xl text-gray-800 leading-tight mb-5 dark:text-white">
         <a href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}
         </a>
-    </h2>
+    </h1>
 
     <div class="my-6">
-        @include('side.search')
+        @include('search')
     </div>
 
     <div class="my-6">
