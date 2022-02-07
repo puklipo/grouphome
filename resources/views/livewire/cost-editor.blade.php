@@ -83,7 +83,7 @@
 
                     <x-jet-label for="food" value="{{ __('食費') }}"/>
                     <x-jet-input type="number" name="food" wire:model.defer="home.cost.food"></x-jet-input>
-                    <div class="text-sm text-gray-500 dark:text-white mb-3">1ヶ月30日の場合の合計。（実費で目安がない時は30000）</div>
+                    <div class="text-sm text-gray-500 dark:text-white mb-3">1ヶ月30日の場合の合計。（実費で目安がない時は仮で30000を入力）</div>
 
                     <x-jet-label for="utilities" value="{{ __('水道・光熱費') }}"/>
                     <x-jet-input type="number" name="utilities" wire:model.defer="home.cost.utilities"></x-jet-input>
