@@ -44,7 +44,7 @@ class ConditionEditor extends Component
 
         //類型を「不明」に設定する時はここでnullに。$valueが''なのでDBでエラー。
         if ($name === 'home.type_id' && blank($value)) {
-            $this->home->type_id = null;
+            $this->fill(['home.type_id' => null]);
         }
 
         $this->home->save();

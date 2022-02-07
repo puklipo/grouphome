@@ -22,7 +22,7 @@ class BasicEditor extends Component
     public function updated($name, $value)
     {
         if ($name === 'home.released_at' && blank($value)) {
-            $this->home->released_at = null;
+            $this->fill(['home.released_at' => null]);
         }
     }
 
