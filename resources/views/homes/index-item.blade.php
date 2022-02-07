@@ -24,10 +24,10 @@
                     <th>月額費用</th>
                     <td>
                         @if($home->cost->total > 0)
-                            <span class="font-extrabold">
+                            <span class="text-red-500 font-extrabold">
                             {{ $home->cost->total }}円
                             </span>
-                            (家賃補助後 <span class="font-extrabold">{{ $home->cost->total - $home->cost->support }}円</span>)
+                            (家賃補助後 <span class="text-red-500 font-extrabold">{{ $home->cost->total - $home->cost->support }}円</span>)
                         @else
                             不明
                         @endif

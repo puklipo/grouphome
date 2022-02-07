@@ -12,11 +12,11 @@
     </div>
     <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">月額費用合計</div>
-            <div class="text-lg font-bold">
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">月額費用合計</div>
+            <div class="text-lg">
                 @if($home->cost->total > 0)
-                    {{ $home->cost->total }}円
-                    (家賃補助適用後 {{ $home->cost->total - $home->cost->support }}円)
+                    <span class="text-red-500 font-extrabold">{{ $home->cost->total }}円</span>
+                    (家賃補助適用後 <span class="text-red-500 font-extrabold">{{ $home->cost->total - $home->cost->support }}円</span>)
                 @else
                     不明
                 @endif
@@ -24,37 +24,37 @@
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">家賃</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">家賃</div>
             <div class="text-lg">{{ $home->cost->rent }}円</div>
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">食費(30日分)</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">食費(30日分)</div>
             <div class="text-lg">{{ $home->cost->food }}円</div>
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">水道・光熱費</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">水道・光熱費</div>
             <div class="text-lg">{{ $home->cost->utilities }}円</div>
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">日用品・雑費</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">日用品・雑費</div>
             <div class="text-lg">{{ $home->cost->daily }}円</div>
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">その他</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">その他</div>
             <div class="text-lg">{{ $home->cost->etc }}円</div>
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">家賃補助</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">家賃補助</div>
             <div class="text-lg">{{ $home->cost->support }}円</div>
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 text-sm">補足説明</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">補足説明</div>
             <div class="text-lg">{{ $home->cost->message }}</div>
         </div>
 
