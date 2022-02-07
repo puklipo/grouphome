@@ -72,7 +72,7 @@
                     <x-jet-label for="total" value="{{ __('費用合計') }}"/>
                     <x-jet-input type="number" name="total" wire:model.defer="home.cost.total"></x-jet-input>
                     <div class="text-sm text-gray-500 dark:text-white mb-3">
-                        月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力s。
+                        月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力。自動で合計はされません。
                     </div>
 
                     <x-jet-label for="rent" value="{{ __('家賃') }}"/>
