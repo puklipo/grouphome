@@ -18,7 +18,7 @@
                     {{ $home->cost->total }}円
                     (家賃補助適用後 {{ $home->cost->total - $home->cost->support }}円)
                 @else
-                    情報がありません
+                    不明
                 @endif
             </div>
         </div>
