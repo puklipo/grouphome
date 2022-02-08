@@ -17,6 +17,13 @@ class HouseruleEditor extends Component
         'home.houserule' => 'string|nullable',
     ];
 
+    public function updated($name, $value)
+    {
+        if ($name === 'home.houserule' && blank($value)) {
+            $this->fill(['home.houserule' => null]);
+        }
+    }
+
     public function save()
     {
         if (Gate::denies('admin')) {

@@ -17,6 +17,13 @@ class IntroductionEditor extends Component
         'home.introduction' => 'string|nullable',
     ];
 
+    public function updated($name, $value)
+    {
+        if ($name === 'home.introduction' && blank($value)) {
+            $this->fill(['home.introduction' => null]);
+        }
+    }
+
     public function save()
     {
         if (Gate::denies('admin')) {
