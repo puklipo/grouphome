@@ -93,6 +93,7 @@ class Home extends Model
                       ->orWhere('company', 'like', "%$search%")
                       ->orWhere('introduction', 'like', "%$search%")
                       ->orWhere('houserule', 'like', "%$search%")
+                      ->orWhere('url', 'like', "%$search%")
                       ->orWhere('id', $search);
             });
         });
