@@ -39,7 +39,7 @@
                         @if($home->level > 0)
                             区分{{ $home->level }}以上
                         @else
-                            区分なし
+                            区分なし以上
                         @endif
                     </td>
                 </tr>
