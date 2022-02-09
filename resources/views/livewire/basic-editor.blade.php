@@ -15,7 +15,7 @@
 
                     <x-jet-label for="wam" value="{{ __('WAM URL') }}"/>
                     <x-jet-input type="text" name="wam" wire:model.defer="home.wam" class="w-full"></x-jet-input>
-                    <div class="text-sm text-gray-500 dark:text-white mb-3">WAM URLもしくは公式とは別のURLを入力したい時に使用。</div>
+                    <div class="text-sm text-gray-500 dark:text-white mb-3">WAM URLもしくは公式とは別のURLを入力。CSVインポートで上書きされないURLとして利用。</div>
 
 
                     <x-jet-label for="map" value="{{ __('Googleマップ') }}"/>
