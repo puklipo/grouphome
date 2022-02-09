@@ -32,7 +32,7 @@
                     </x-jet-button>
                 </form>
 
-                @if(Storage::exists($origin))
+                @if(filled($origin) && Storage::exists($origin))
                     <div class="text-right">
                         <x-jet-danger-button class="mt-3" wire:click="delete" wire:loading.attr="disabled">
                             {{ __('写真を削除') }}

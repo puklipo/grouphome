@@ -13,6 +13,6 @@
 </div>
 <div class="border-4 border-indigo-500 dark:border-gray-800 flex flex-wrap">
     @foreach(config('photo') as $column => $name)
-        <livewire:photo-editor :home="$home" :origin="$home->photo->$column" :column="$column" :name="$name"/>
+        <livewire:photo-editor :home="$home" :origin="$home->photo->$column ?? ''" :column="$column" :name="$name"/>
     @endforeach
 </div>
