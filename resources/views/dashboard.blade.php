@@ -7,6 +7,12 @@
 
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+
+            <div class="mb-3">
+                <a href="{{ route('help.operator') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+            </div>
+
             <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
                 <h2 class="text-4xl p-3">管理グループホーム一覧 [{{ $homes->count() }}]</h2>
                 <ul>

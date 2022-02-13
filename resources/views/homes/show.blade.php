@@ -48,7 +48,7 @@
                         <div class="text-md my-3">
                             <a href="{{ $home->url }}" target="_blank"
                                class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                公式URL
+                                {{ Str::limit($home->url) }}
                             </a>
                         </div>
                     @endisset
@@ -57,7 +57,7 @@
                         <div class="text-md my-3">
                             <a href="{{ $home->wam }}" target="_blank"
                                class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                WAM URL
+                                {{ Str::limit($home->wam) }}
                             </a>
                         </div>
                     @endisset

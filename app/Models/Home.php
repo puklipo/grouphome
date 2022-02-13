@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -94,6 +94,7 @@ class Home extends Model
                       ->orWhere('introduction', 'like', "%$search%")
                       ->orWhere('houserule', 'like', "%$search%")
                       ->orWhere('url', 'like', "%$search%")
+                      ->orWhere('wam', 'like', "%$search%")
                       ->orWhere('id', $search);
             });
         });

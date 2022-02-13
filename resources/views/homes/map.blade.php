@@ -4,7 +4,7 @@
     </span>
 </div>
 <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
-    @if(str_contains($home->map, '<iframe'))
+    @if( Str::contains($home->map ?? '', '<iframe'))
         {!! $home->map !!}
     @else
         <iframe
