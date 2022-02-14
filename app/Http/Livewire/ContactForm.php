@@ -33,7 +33,7 @@ class ContactForm extends Component
         Contact::forceCreate([
             'name'  => $this->name,
             'email' => $this->email,
-            'body'  => $this->body,
+            'body'  => trim($this->body),
         ]);
 
         Mail::to(config('mail.contact.to'))
