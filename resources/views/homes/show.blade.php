@@ -34,37 +34,42 @@
 
                 @include('homes.header')
 
-                <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
-                    <h1 class="text-7xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all">
-                        {{ $home->name }}
-                    </h1>
+                <div class="border-4 border-indigo-500 dark:border-gray-800">
+                    @include('homes.cover')
 
-                    <div class="text-md my-3">{{ $home->address }}</div>
+                    <div class="p-3">
+                        <h1 class="text-7xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all">
+                            {{ $home->name }}
+                        </h1>
 
-                    <div class="text-md my-3">{{ $home->company }}</div>
-                    <div class="text-md my-3">{{ $home->tel }}</div>
+                        <div class="text-md my-3">{{ $home->address }}</div>
 
-                    @isset($home->url)
-                        <div class="text-md my-3">
-                            <a href="{{ $home->url }}" target="_blank"
-                               class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                {{ Str::limit($home->url) }}
-                            </a>
-                        </div>
-                    @endisset
+                        <div class="text-md my-3">{{ $home->company }}</div>
+                        <div class="text-md my-3">{{ $home->tel }}</div>
 
-                    @isset($home->wam)
-                        <div class="text-md my-3">
-                            <a href="{{ $home->wam }}" target="_blank"
-                               class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                {{ Str::limit($home->wam) }}
-                            </a>
-                        </div>
-                    @endisset
+                        @isset($home->url)
+                            <div class="text-md my-3">
+                                <a href="{{ $home->url }}" target="_blank"
+                                   class="text-indigo-500 dark:text-white font-bold hover:underline">
+                                    {{ Str::limit($home->url) }}
+                                </a>
+                            </div>
+                        @endisset
 
-                    @isset($home->released_at)
-                        <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
-                    @endisset
+                        @isset($home->wam)
+                            <div class="text-md my-3">
+                                <a href="{{ $home->wam }}" target="_blank"
+                                   class="text-indigo-500 dark:text-white font-bold hover:underline">
+                                    {{ Str::limit($home->wam) }}
+                                </a>
+                            </div>
+                        @endisset
+
+                        @isset($home->released_at)
+                            <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
+                        @endisset
+
+                    </div>
                 </div>
 
                 <livewire:basic-editor :home="$home"></livewire:basic-editor>
