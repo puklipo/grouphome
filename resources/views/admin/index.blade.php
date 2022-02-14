@@ -22,6 +22,12 @@
                         </a>
                         <span class="text-gray-500 ml-3">事業者とグループホームの紐付けを解除。</span>
                     </li>
+                    <li class="p-3">
+                        <a href="{{ route('admin.contacts') }}"
+                           class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
+                            {{ __('お問い合わせ一覧') }} [{{ \App\Models\Contact::count() }}]
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
