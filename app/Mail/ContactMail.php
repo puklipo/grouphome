@@ -29,7 +29,7 @@ class ContactMail extends Mailable implements ShouldQueue
      *
      * @return $this
      */
-    public function build()
+    public function build(): static
     {
         return $this->from($this->email, $this->name)
                     ->subject('【'.config('app.name').'】お問い合わせ')
