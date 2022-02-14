@@ -8,10 +8,10 @@ trait WithKana
 {
     /**
      * @param  string|null  $string
-     * @return mixed
+     * @return string|null
      */
-    protected function kana(?string $string = null)
+    protected function kana(?string $string = null): ?string
     {
-        return Str::of($string)->kana('KVa')->trim()->__toString();
+        return Str::of($string)->kana('KVa')->trim()->value();
     }
 }
