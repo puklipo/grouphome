@@ -3,8 +3,10 @@
 namespace App\Models;
 
 use Illuminate\Contracts\Database\Query\Builder;
+use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Home extends Model
 {
@@ -89,13 +91,13 @@ class Home extends Model
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
-                      ->orWhere('address', 'like', "%$search%")
-                      ->orWhere('company', 'like', "%$search%")
-                      ->orWhere('introduction', 'like', "%$search%")
-                      ->orWhere('houserule', 'like', "%$search%")
-                      ->orWhere('url', 'like', "%$search%")
-                      ->orWhere('wam', 'like', "%$search%")
-                      ->orWhere('id', $search);
+                    ->orWhere('address', 'like', "%$search%")
+                    ->orWhere('company', 'like', "%$search%")
+                    ->orWhere('introduction', 'like', "%$search%")
+                    ->orWhere('houserule', 'like', "%$search%")
+                    ->orWhere('url', 'like', "%$search%")
+                    ->orWhere('wam', 'like', "%$search%")
+                    ->orWhere('id', $search);
             });
         });
     }
@@ -147,5 +149,13 @@ class Home extends Model
                 });
             });
         });
+    }
+
+    protected function description(): Attribute
+    {
+        return new Attribute(
+            get: fn($value) => Str::of($this->introduction ?? $this->address)->replace(PHP_EOL,
+                ' ')->limit(200)->trim()->value()
+        );
     }
 }

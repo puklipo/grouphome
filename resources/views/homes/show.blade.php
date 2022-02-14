@@ -10,7 +10,7 @@
             </x-slot>
 
             <x-slot name="description">
-                {{ \Illuminate\Support\Str::of($home->introduction ?? $home->address)->replace(PHP_EOL, ' ')->limit(200)->trim() }}
+                {{ $home->description }}
             </x-slot>
 
             @if(filled($home->photo->cover) && Storage::exists($home->photo->cover))
