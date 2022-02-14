@@ -10,25 +10,25 @@
 
     <select name="sort"
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
-        <option value="" @if(request()->missing('sort')) selected @endif>なし</option>
-        <option value="updated" @if(request('sort') === 'updated') selected @endif>更新が新しい順</option>
-        <option value="low" @if(request('sort') === 'low') selected @endif>費用が安い順</option>
-        <option value="high" @if(request('sort') === 'high') selected @endif>費用が高い順</option>
-        <option value="address" @if(request('sort') === 'address') selected @endif>住所</option>
-        <option value="release" @if(request('sort') === 'release') selected @endif>指定年月日(新着順)</option>
-        <option value="name" @if(request('sort') === 'name') selected @endif>グループホーム名</option>
-        <option value="pref" @if(request('sort') === 'pref') selected @endif>都道府県(北から)</option>
-        <option value="id" @if(request('sort') === 'id') selected @endif>事業者番号(降順)</option>
+        <option value="" @selected(request()->missing('sort'))>なし</option>
+        <option value="updated" @selected(request('sort') === 'updated')>更新が新しい順</option>
+        <option value="low" @selected(request('sort') === 'low')>費用が安い順</option>
+        <option value="high" @selected(request('sort') === 'high')>費用が高い順</option>
+        <option value="address" @selected(request('sort') === 'address')>住所</option>
+        <option value="release" @selected(request('sort') === 'release')>指定年月日(新着順)</option>
+        <option value="name" @selected(request('sort') === 'name')>グループホーム名</option>
+        <option value="pref" @selected(request('sort') === 'pref')>都道府県(北から)</option>
+        <option value="id" @selected(request('sort') === 'id')>事業者番号(降順)</option>
     </select>
 
     <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
 
     <select name="level"
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
-        <option value="" @if(request()->missing('level')) selected @endif>指定しない</option>
-        <option value="0" @if(request('level') === '0') selected @endif>区分なし</option>
+        <option value="" @selected(request()->missing('level'))>指定しない</option>
+        <option value="0" @selected(request('level') === '0')>区分なし</option>
         @foreach(range(1, 6) as $level)
-            <option value="{{ $level }}" @if(request('level') == $level) selected @endif>{{ $level }}以上</option>
+            <option value="{{ $level }}" @selected(request('level') == $level)>{{ $level }}以上</option>
         @endforeach
     </select>
 
@@ -36,9 +36,9 @@
 
     <select name="type"
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
-        <option value="" @if(request()->missing('type')) selected @endif>指定しない</option>
+        <option value="" @selected(request()->missing('type'))>指定しない</option>
         @foreach($types as $type)
-            <option value="{{ $type->id }}" @if(request('type') == $type->id) selected @endif>{{ $type->type }}</option>
+            <option value="{{ $type->id }}" @selected(request('type') == $type->id)>{{ $type->type }}</option>
         @endforeach
     </select>
 
@@ -47,9 +47,9 @@
 
     <select name="vacancy"
             class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
-        <option value="" @if(request()->missing('vacancy')) selected @endif>指定しない</option>
-        <option value="0" @if(request('vacancy') === '0') selected @endif>{{ __('空室あり') }}</option>
-        <option value="1" @if(request('vacancy') === '1') selected @endif>{{ __('満室') }}</option>
+        <option value="" @selected(request()->missing('vacancy'))>指定しない</option>
+        <option value="0" @selected(request('vacancy') === '0')>{{ __('空室あり') }}</option>
+        <option value="1" @selected(request('vacancy') === '1')>{{ __('満室') }}</option>
     </select>
 
     <button type="submit"
