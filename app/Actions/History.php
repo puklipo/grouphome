@@ -12,15 +12,17 @@ class History
         $history = collect(session('history', []))
             ->prepend($home->id)
             ->unique()
-            ->take(50);
+            ->take(50)
+            ->values()
+            ->toArray();
 
-        session(['history' => $history->toArray()]);
+        session(compact('history'));
     }
 
     public function get(): Collection
     {
         return collect(session('history', []))
-            ->map(fn ($history) => Home::with(['pref', 'type'])->find($history))
+            ->map(fn ($history) => Home::find($history))
             ->reject(fn ($history) => is_null($history));
     }
 }
