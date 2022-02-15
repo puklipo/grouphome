@@ -40,6 +40,7 @@ class HomeIndex extends Component
 
     public function updatedPage($page)
     {
+        //ページが変わった時に一番上にスクロール。
         $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
     }
 
