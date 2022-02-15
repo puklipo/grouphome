@@ -70,13 +70,6 @@
                 <form wire:submit.prevent="save">
                     <div class="mb-3">数字はすべて半角で入力してください。</div>
 
-                    <x-jet-label for="total" value="{{ __('費用合計') }}"/>
-                    <x-jet-input type="number" name="total" wire:model.defer="home.cost.total"></x-jet-input>
-                    <div class="text-sm text-gray-500 dark:text-white mb-3">
-                        月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力。
-                        <x-jet-button wire:click="calcTotal">{{ __('他の項目から合計を自動計算') }}</x-jet-button>
-                    </div>
-
                     <x-jet-label for="rent" value="{{ __('家賃') }}"/>
                     <x-jet-input type="number" name="rent" wire:model.defer="home.cost.rent"></x-jet-input>
                     <div class="text-sm text-gray-500 dark:text-white mb-3">家賃補助は含めない。</div>
@@ -87,7 +80,8 @@
 
                     <x-jet-label for="utilities" value="{{ __('水道・光熱費') }}"/>
                     <x-jet-input type="number" name="utilities" wire:model.defer="home.cost.utilities"></x-jet-input>
-                    <div class="text-sm text-gray-500 dark:text-white mb-3">使用した分だけ実費精算でも平均値を入力して補足で説明。（目安がない時は10000）</div>
+                    <div class="text-sm text-gray-500 dark:text-white mb-3">使用した分だけ実費精算でも平均値を入力して補足で説明。（目安がない時は10000）
+                    </div>
 
                     <x-jet-label for="daily" value="{{ __('日用品・雑費・共益費') }}"/>
                     <x-jet-input type="number" name="daily" wire:model.defer="home.cost.daily"></x-jet-input>
@@ -109,6 +103,12 @@
                         食費の詳細（朝食、昼食、夕食ごとの費用）や光熱費の実費精算など説明が必要なことがあれば入力。
                     </div>
 
+                    <x-jet-label for="total" value="{{ __('費用合計') }}"/>
+                    <x-jet-input type="number" name="total" wire:model.defer="home.cost.total"></x-jet-input>
+                    <div class="text-sm text-gray-500 dark:text-white mb-3">
+                        月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力。
+                        <x-jet-button wire:click="calcTotal">{{ __('他の項目から合計を自動計算') }}</x-jet-button>
+                    </div>
 
                     <x-jet-button class="mt-3">
                         {{ __('更新') }}
