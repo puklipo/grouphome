@@ -18,7 +18,7 @@
         <option value="release" @selected(request('sort') === 'release')>指定年月日(新着順)</option>
         <option value="name" @selected(request('sort') === 'name')>グループホーム名</option>
         <option value="pref" @selected(request('sort') === 'pref')>都道府県(北から)</option>
-        <option value="id" @selected(request('sort') === 'id')>事業者番号(降順)</option>
+        <option value="id" @selected(request('sort') === 'id')>事業所番号(降順)</option>
     </select>
 
     <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
