@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Cost;
 use App\Models\Home;
 use App\Models\Pref;
+use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -37,6 +38,11 @@ class HomeIndex extends Component
         }
     }
 
+    public function updatedPage($page)
+    {
+        $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
+    }
+
     public function render()
     {
         $query = is_null($this->pref) ? Home::query() : $this->pref->homes();
@@ -48,7 +54,7 @@ class HomeIndex extends Component
                                                 ->whereColumn('home_id', 'homes.id')
                                                 ->where('total', '>', 0),
                              ])
-                             ->when(filled($this->area), fn ($query) => $query->where('area', $this->area))
+                             ->when(filled($this->area), fn (Builder $query) => $query->where('area', $this->area))
                              ->keywordSearch($this->q)
                              ->sortBy($this->sort)
                              ->levelSearch($this->level)
