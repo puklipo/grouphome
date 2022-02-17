@@ -36,9 +36,6 @@ class ContactForm extends Component
             'body'  => trim($this->body),
         ]);
 
-        Mail::to(config('mail.contact.to'))
-            ->send(new ContactMail($this->name, $this->email, $this->body));
-
         $this->reset();
 
         session()->flash('mail_success', true);
