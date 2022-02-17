@@ -91,13 +91,13 @@ class Home extends Model
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
-                    ->orWhere('address', 'like', "%$search%")
-                    ->orWhere('company', 'like', "%$search%")
-                    ->orWhere('introduction', 'like', "%$search%")
-                    ->orWhere('houserule', 'like', "%$search%")
-                    ->orWhere('url', 'like', "%$search%")
-                    ->orWhere('wam', 'like', "%$search%")
-                    ->orWhere('id', $search);
+                      ->orWhere('address', 'like', "%$search%")
+                      ->orWhere('company', 'like', "%$search%")
+                      ->orWhere('introduction', 'like', "%$search%")
+                      ->orWhere('houserule', 'like', "%$search%")
+                      ->orWhere('url', 'like', "%$search%")
+                      ->orWhere('wam', 'like', "%$search%")
+                      ->orWhere('id', $search);
             });
         });
     }
@@ -154,8 +154,11 @@ class Home extends Model
     protected function description(): Attribute
     {
         return new Attribute(
-            get: fn ($value) => Str::of($this->introduction ?? $this->address)->replace(PHP_EOL,
-                ' ')->limit(200)->trim()->value()
+            get: fn ($value) => Str::of($this->introduction ?? $this->address)
+                                   ->replace(PHP_EOL, ' ')
+                                   ->limit(200)
+                                   ->trim()
+                                   ->value()
         );
     }
 }
