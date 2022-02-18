@@ -6,6 +6,9 @@ use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Str;
 
 class Home extends Model
@@ -41,52 +44,52 @@ class Home extends Model
         'released_at',
     ];
 
-    public function pref()
+    public function pref(): BelongsTo
     {
         return $this->belongsTo(Pref::class);
     }
 
-    public function type()
+    public function type(): BelongsTo
     {
         return $this->belongsTo(Type::class);
     }
 
-    public function users()
+    public function users(): BelongsToMany
     {
         return $this->belongsToMany(User::class);
     }
 
-    public function equipment()
+    public function equipment(): HasOne
     {
         return $this->hasOne(Equipment::class)->withDefault();
     }
 
-    public function facility()
+    public function facility(): HasOne
     {
         return $this->hasOne(Facility::class)->withDefault();
     }
 
-    public function condition()
+    public function condition(): HasOne
     {
         return $this->hasOne(Condition::class)->withDefault();
     }
 
-    public function vacancy()
+    public function vacancy(): HasOne
     {
         return $this->hasOne(Vacancy::class)->withDefault();
     }
 
-    public function photo()
+    public function photo(): HasOne
     {
         return $this->hasOne(Photo::class)->withDefault();
     }
 
-    public function cost()
+    public function cost(): HasOne
     {
         return $this->hasOne(Cost::class)->withDefault();
     }
 
-    public function scopeKeywordSearch(Builder $query, $search)
+    public function scopeKeywordSearch(Builder $query, ?string $search): Builder
     {
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
@@ -102,7 +105,7 @@ class Home extends Model
         });
     }
 
-    public function scopeSortBy(Builder $query, $sort)
+    public function scopeSortBy(Builder $query, ?string $sort): Builder
     {
         return match ($sort) {
             'updated' => $query->latest('updated_at'),
@@ -122,14 +125,14 @@ class Home extends Model
         };
     }
 
-    public function scopeLevelSearch(Builder $query, $level)
+    public function scopeLevelSearch(Builder $query, ?string $level): Builder
     {
         return $query->when(filled($level), function (Builder $query, $b) use ($level) {
             $query->where('level', $level);
         });
     }
 
-    public function scopeTypeSearch(Builder $query, $type)
+    public function scopeTypeSearch(Builder $query, ?string $type): Builder
     {
         return $query->when(filled($type), function (Builder $query, $b) use ($type) {
             $query->where(function (Builder $query) use ($type) {
@@ -140,7 +143,7 @@ class Home extends Model
         });
     }
 
-    public function scopeVacancySearch(Builder $query, $vacancy)
+    public function scopeVacancySearch(Builder $query, ?string $vacancy): Builder
     {
         return $query->when(filled($vacancy), function (Builder $query, $b) use ($vacancy) {
             $query->where(function (Builder $query) use ($vacancy) {
