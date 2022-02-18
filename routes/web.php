@@ -57,3 +57,4 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->g
 Route::view('contact', 'contact')->name('contact');
 Route::view('license', 'license')->name('license');
 Route::view('help/operator', 'help.operator')->name('help.operator');
+Route::view('help/user', 'help.user')->name('help.user');

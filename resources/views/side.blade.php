@@ -20,16 +20,20 @@
 
     <div class="my-6">
         <ul>
+            <li>
+                <a href="{{ route('help.user') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用者向け使い方') }}</a>
+            </li>
             @guest()
                 <li>
                     <a href="{{ route('login') }}"
                        class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者用ログイン') }}</a>
                 </li>
             @endguest
-                <li>
-                    <a href="{{ route('help.operator') }}"
-                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
-                </li>
+            <li>
+                <a href="{{ route('help.operator') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+            </li>
             <li>
                 <a href="{{ route('contact') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
