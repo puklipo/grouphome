@@ -40,7 +40,11 @@ class Import extends Command
     {
         cache()->forget('side.prefs');
 
+        $time = hrtime(true);
+
         ImportJob::dispatch();
+
+        $this->info(hrtime(true) - $time);
 
         return 0;
     }
