@@ -16,8 +16,13 @@ use Maatwebsite\Excel\Concerns\WithValidation;
 use Maatwebsite\Excel\Row;
 use Maatwebsite\Excel\Validators\Failure;
 
-class WamImport implements OnEachRow, WithHeadingRow, WithBatchInserts, WithChunkReading, SkipsEmptyRows,
-                           WithValidation, SkipsOnFailure
+class WamImport implements OnEachRow,
+                           WithHeadingRow,
+                           WithBatchInserts,
+                           WithChunkReading,
+                           SkipsEmptyRows,
+                           WithValidation,
+                           SkipsOnFailure
 {
     use Importable;
     use WithKana;
