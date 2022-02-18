@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::view('/', 'home')->name('index');
+Route::view(uri: '/', view: 'home')->name('index');
 
 Route::resource('home', HomeController::class)
      ->only(['index', 'show']);
@@ -30,7 +30,7 @@ Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 
 Route::get('area', AreaIndexController::class)->name('area.index');
 
-Route::view('history', 'history')->name('history');
+Route::view(uri: 'history', view: 'history')->name('history');
 
 Route::middleware(['auth:sanctum', 'verified'])
      ->get('/dashboard', DashboardController::class)
@@ -41,7 +41,7 @@ Route::prefix('operator')->middleware(['auth:sanctum', 'verified'])->group(funct
 });
 
 Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->group(function () {
-    Route::view('/', 'admin.index')->name('admin');
+    Route::view(uri: '/', view: 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
     Route::get('contacts', ContactController::class)->name('admin.contacts');
 
@@ -54,7 +54,7 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->g
          });
 });
 
-Route::view('contact', 'contact')->name('contact');
-Route::view('license', 'license')->name('license');
-Route::view('help/operator', 'help.operator')->name('help.operator');
-Route::view('help/user', 'help.user')->name('help.user');
+Route::view(uri: 'contact', view: 'contact')->name('contact');
+Route::view(uri: 'license', view: 'license')->name('license');
+Route::view(uri: 'help/operator', view: 'help.operator')->name('help.operator');
+Route::view(uri: 'help/user', view: 'help.user')->name('help.user');
