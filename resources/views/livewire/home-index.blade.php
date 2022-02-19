@@ -1,4 +1,4 @@
-<div x-data @page-updated.window="document.getElementById('home_index').scrollIntoView({behavior: 'smooth'})" id="home_index">
+<div x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
     @isset($pref)
         <h1 class="p-3 font-semibold text-2xl leading-tight">
             {{ $pref->name . $area }} [{{ $homes->total() }}]
