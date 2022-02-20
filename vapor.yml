@@ -9,9 +9,9 @@ environments:
         database: grouphome
         storage: pcs-grouphome
         queue-timeout: 300
-        octane: true
-        octane-database-session-persist: true
-        octane-database-session-ttl: 10
+#        octane: true
+#        octane-database-session-persist: true
+#        octane-database-session-ttl: 10
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
@@ -30,9 +30,9 @@ environments:
         database: grouphome
         storage: staging-pcs-grouphome
         queue-timeout: 300
-        octane: true
-        octane-database-session-persist: true
-        octane-database-session-ttl: 10
+#        octane: true
+#        octane-database-session-persist: true
+#        octane-database-session-ttl: 10
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install'
             - 'php artisan event:cache'
