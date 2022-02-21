@@ -57,3 +57,4 @@ Route::view(uri: 'contact', view: 'contact')->name('contact');
 Route::view(uri: 'license', view: 'license')->name('license');
 Route::view(uri: 'help/operator', view: 'help.operator')->name('help.operator');
 Route::view(uri: 'help/user', view: 'help.user')->name('help.user');
+Route::view(uri: 'matching', view: 'matching.matching')->name('matching');

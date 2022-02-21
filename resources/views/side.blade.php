@@ -39,6 +39,10 @@
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
             </li>
             <li>
+                <a href="{{ route('matching') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('土地マッチング') }}</a>
+            </li>
+            <li>
                 <a href="{{ route('license') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
             </li>
