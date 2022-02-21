@@ -1,4 +1,8 @@
 <x-main-layout>
+    <x-slot name="title">
+        {{ __('事業者管理') }}
+    </x-slot>
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl leading-tight">
             {{ __('事業者管理') }}

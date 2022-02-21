@@ -1,4 +1,8 @@
 <x-main-layout>
+    <x-slot name="title">
+        {{ __('管理者メニュー') }}
+    </x-slot>
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl leading-tight">
             {{ __('管理者メニュー') }}
