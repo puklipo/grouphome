@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
@@ -43,7 +42,7 @@ Route::prefix('operator')->middleware(['auth:sanctum', 'verified'])->group(funct
 Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->group(function () {
     Route::view(uri: '/', view: 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
-    Route::get('contacts', ContactController::class)->name('admin.contacts');
+    Route::view('contacts', 'admin.contacts')->name('admin.contacts');
 
     Route::controller(OperatorHomeController::class)
          ->prefix('operator-home')
