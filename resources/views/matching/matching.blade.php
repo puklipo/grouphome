@@ -25,7 +25,8 @@
 
                 {{-- 手動で追加なので大量に掲載する予定はない --}}
                 {{-- 掲載終了したら個別にitemを削除 --}}
-                @include('matching.item1')
+                @includeIf('matching.item1')
+                @includeIf('matching.item1')
             </div>
         </div>
     </div>
