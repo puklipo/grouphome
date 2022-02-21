@@ -8,9 +8,11 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
 
-            <div class="mb-3">
+            <div class="mb-3 space-x-2">
                 <a href="{{ route('help.operator') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+                <a href="{{ route('matching') }}"
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('土地マッチング') }}</a>
             </div>
 
             <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">

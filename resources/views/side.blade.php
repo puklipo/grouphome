@@ -19,7 +19,7 @@
     @endif
 
     <div class="my-6">
-        <ul>
+        <ul class="space-y-1">
             <li>
                 <a href="{{ route('help.user') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用者向け使い方') }}</a>
