@@ -1,6 +1,6 @@
 <div class="font-bold mb-3">掲載終了しました。</div>
 
-<table class="table-auto m-0 blur-sm">
+<table class="table-auto m-0 blur-sm select-none">
     <tr>
         <th>住所</th>
         <td>〇〇県〇〇市...（マップ）</td>
