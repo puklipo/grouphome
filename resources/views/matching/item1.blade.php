@@ -14,7 +14,7 @@
                 〇〇県〇〇市
             </h2>
 
-            @unless($disabled)
+            @if($active)
                 <table class="table-auto m-0">
                     <tr>
                         <th>住所</th>
@@ -43,7 +43,7 @@
                     <tr>
                         <th>周辺環境</th>
                         <td>
-                            店などは少ない。西側はすぐに海。
+                            店などはほとんどない。海の近く。
                         </td>
                     </tr>
                     <tr>
@@ -54,7 +54,7 @@
                     </tr>
                     <tr>
                         <th>所有者コメント</th>
-                        <td>...<!--元々は実家だった場所なのでグループホームとして利用してもらいつついずれ自分でも住みたい。--></td>
+                        <td>...{{-- 元々は実家だった場所なのでグループホームとして利用してもらいつついずれ自分でも住みたい。--}}</td>
                     </tr>
                     <tr>
                         <th>連絡先</th>
@@ -63,7 +63,7 @@
                 </table>
             @else
                 @includeIf('matching.disabled')
-            @endunless
+            @endif
         </div>
     </div>
 </div>
