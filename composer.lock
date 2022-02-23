@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.209.27",
+            "version": "3.209.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4a0ded3a5f380f7654da5dc194161588a87d9d3b"
+                "reference": "dfc4fdee991cdf764241125490a0b22875af6afe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4a0ded3a5f380f7654da5dc194161588a87d9d3b",
-                "reference": "4a0ded3a5f380f7654da5dc194161588a87d9d3b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dfc4fdee991cdf764241125490a0b22875af6afe",
+                "reference": "dfc4fdee991cdf764241125490a0b22875af6afe",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.209.27"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.209.28"
             },
-            "time": "2022-02-18T19:19:17+00:00"
+            "time": "2022-02-21T19:14:33+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1858,16 +1858,16 @@
         },
         {
             "name": "laravel/octane",
-            "version": "v1.2.2",
+            "version": "v1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/octane.git",
-                "reference": "9d5c8bbe7ca763e6779de0e6b715333f7fe9c7d8"
+                "reference": "e3bb9ba391b680357b1b58a964406a685cdec994"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/octane/zipball/9d5c8bbe7ca763e6779de0e6b715333f7fe9c7d8",
-                "reference": "9d5c8bbe7ca763e6779de0e6b715333f7fe9c7d8",
+                "url": "https://api.github.com/repos/laravel/octane/zipball/e3bb9ba391b680357b1b58a964406a685cdec994",
+                "reference": "e3bb9ba391b680357b1b58a964406a685cdec994",
                 "shasum": ""
             },
             "require": {
@@ -1883,7 +1883,7 @@
                 "nunomaduro/collision": "^5.10|^6.0",
                 "orchestra/testbench": "^6.16|^7.0",
                 "phpunit/phpunit": "^9.3",
-                "spiral/roadrunner": "^2.0"
+                "spiral/roadrunner": "^2.8.2"
             },
             "bin": [
                 "bin/roadrunner-worker",
@@ -1929,7 +1929,7 @@
                 "issues": "https://github.com/laravel/octane/issues",
                 "source": "https://github.com/laravel/octane"
             },
-            "time": "2022-02-14T17:09:52+00:00"
+            "time": "2022-02-21T17:27:43+00:00"
         },
         {
             "name": "laravel/sanctum",
