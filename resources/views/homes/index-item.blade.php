@@ -11,7 +11,16 @@
                     {{ $home->name }}
                 </h2>
             </a>
-            <div class="text-md my-3">{{ $home->address }}</div>
+            <div class="my-1">{{ $home->address }}</div>
+
+            @isset($home->url)
+                <div class="my-1">
+                    <a href="{{ $home->url }}" target="_blank"
+                       class="text-indigo-500 dark:text-white font-bold hover:underline">
+                        {{ Str::limit($home->url) }}
+                    </a>
+                </div>
+            @endisset
 
             <table class="table-auto">
                 <tr>
@@ -21,7 +30,9 @@
                             <span class="text-red-500 font-extrabold">
                             {{ $home->cost->total }}円
                             </span>
-                            (家賃補助後 <span class="text-red-500 font-extrabold">{{ $home->cost->total - $home->cost->support }}円</span>)
+                            (家賃補助後
+                            <span class="text-red-500 font-extrabold">
+                                {{ $home->cost->total - $home->cost->support }}円</span>)
                         @else
                             不明
                         @endif
