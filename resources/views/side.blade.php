@@ -49,7 +49,7 @@
         </ul>
     </div>
 
-    <div class="text-sm mt-10 p-1 border-t">Copyright&copy; <a href="https://sds.fukuoka.jp/"
+    <div class="text-sm mt-10 p-1 border-t">Copyright&copy; <a href="https://pcs-works.vercel.app/"
                                                                class="font-bold text-indigo-500 dark:text-white hover:underline"
                                                                target="_blank" rel="noopener">ポップカルチャースタジオ未来図</a> All
         Rights Reserved.
