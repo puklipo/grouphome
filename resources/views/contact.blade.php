@@ -11,6 +11,21 @@
 
     <div class="py-3">
         <div class="sm:px-6 lg:px-8">
+            <ul class="flex flex-row space-x-2">
+                <li>
+                    <a href="{{ route('help.user') }}"
+                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用者向け使い方') }}</a>
+                </li>
+                <li>
+                    <a href="{{ route('help.operator') }}"
+                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+                </li>
+                <li>
+                    <a href="{{ route('license') }}"
+                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
+                </li>
+            </ul>
+
             <livewire:contact-form/>
         </div>
     </div>
