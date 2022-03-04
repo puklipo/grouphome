@@ -32,6 +32,8 @@
 
             <div class="m-3">
 
+                @includeIf('homes.cta')
+
                 @include('homes.header')
 
                 <div class="border-4 border-indigo-500 dark:border-gray-800">
