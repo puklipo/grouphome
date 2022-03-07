@@ -29,5 +29,9 @@
         <env name="TELESCOPE_ENABLED" value="false"/>
         <env name="FILESYSTEM_DRIVER" value="local"/>
         <env name="MAIL_FROM_ADDRESS" value="test@example.com"/>
+
+        <!--テスト用キー-->
+        <env name="RECAPTCHA_SITE_KEY" value="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"/>
+        <env name="RECAPTCHA_SECRET_KEY" value="6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe"/>
     </php>
 </phpunit>
