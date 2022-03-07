@@ -54,6 +54,8 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->g
          });
 });
 
+Route::get('sitemap', SitemapController::class)->name('sitemap');
+
 Route::view(uri: 'contact', view: 'contact')->name('contact');
 Route::view(uri: 'license', view: 'license')->name('license');
 Route::view(uri: 'help/operator', view: 'help.operator')->name('help.operator');
