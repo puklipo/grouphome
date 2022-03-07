@@ -27,7 +27,7 @@ class SitemapController extends Controller
         });
 
         return response($xml, 200, [
-            'Content-Type' => 'text/xml'
+            'Content-Type' => 'text/xml',
         ]);
     }
 }
