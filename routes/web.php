@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefController;
+use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -52,6 +53,8 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->g
              Route::delete('/{user}/{home}', 'destroy')->name('destroy');
          });
 });
+
+Route::get('sitemap', SitemapController::class)->name('sitemap');
 
 Route::view(uri: 'contact', view: 'contact')->name('contact');
 Route::view(uri: 'license', view: 'license')->name('license');
