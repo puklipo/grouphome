@@ -2,8 +2,8 @@
 
 namespace App\Console;
 
-use App\Console\Commands\Import;
-use App\Jobs\SitemapJob;
+use App\Console\Commands\ImportCommand;
+use App\Console\Commands\SitemapCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -19,9 +19,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->job(SitemapJob::class)->dailyAt('05:00');
+        $schedule->command(SitemapCommand::class)->dailyAt('04:00');
 
-        $schedule->command(Import::class)->monthly();
+        $schedule->command(ImportCommand::class)->monthly();
     }
 
     /**

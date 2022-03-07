@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use App\Jobs\SitemapJob;
 use Illuminate\Console\Command;
 
-class Sitemap extends Command
+class SitemapCommand extends Command
 {
     /**
      * The name and signature of the console command.

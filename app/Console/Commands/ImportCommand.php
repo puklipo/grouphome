@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use App\Jobs\ImportJob;
 use Illuminate\Console\Command;
 
-class Import extends Command
+class ImportCommand extends Command
 {
     /**
      * The name and signature of the console command.
