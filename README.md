@@ -17,6 +17,12 @@ WAMに全グループホームの情報が載ってるとは限らない。事�
 ## サーバー
 - AWS
 - Laravel Vapor https://vapor.laravel.com/
+- ドメイン：お名前に移管予定。
+
+## 引継ぎ用
+LINE NotifyやGoogle reCAPTCHAのキーは引継ぎ時には取得し直し。
+- https://notify-bot.line.me/ja/
+- https://www.google.com/recaptcha/
 
 ## 開発
 ```shell
