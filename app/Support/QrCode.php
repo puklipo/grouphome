@@ -18,7 +18,10 @@ class QrCode
      */
     public static function svg(string $url): HtmlString
     {
-        $fill = Fill::uniformColor(new Rgb(255, 255, 255), new Rgb(45, 55, 72));
+        $fill = Fill::uniformColor(
+            new Rgb(red: 255, green: 255, blue: 255),
+            new Rgb(red: 45, green: 55, blue: 72)
+        );
 
         $svg = (new Writer(new ImageRenderer(
             new RendererStyle(size: 192, margin: 0, fill: $fill),
