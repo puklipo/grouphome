@@ -37,7 +37,7 @@ class SitemapJob implements ShouldQueue
                           ->add(Url::create('/'))
                           ->add(Url::create(route('area.index')));
 
-        Home::latest()->lazy()->each(function (Home $home) use ($sitemap) {
+        Home::latest('updated_at')->lazy()->each(function (Home $home) use ($sitemap) {
             $sitemap->add(
                 Url::create(route('home.show', $home))
                    ->setLastModificationDate($home->updated_at)
