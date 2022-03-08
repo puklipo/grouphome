@@ -24,7 +24,7 @@ class QrCode
         );
 
         $svg = (new Writer(new ImageRenderer(
-            new RendererStyle(size: 192, margin: 0, fill: $fill),
+            new RendererStyle(size: 192, margin: 1, fill: $fill),
             new SvgImageBackEnd()))
         )->writeString($url);
 
