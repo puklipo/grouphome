@@ -11796,5 +11796,5 @@
         "ext-sockets": "1.0.0",
         "ext-exif": "1.0.0"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
