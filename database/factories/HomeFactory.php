@@ -14,7 +14,12 @@ class HomeFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'id'      => 1,
+            'pref_id' => 1,
+            'name'    => $this->faker->name,
+            'company' => $this->faker->company,
+            'tel'     => $this->faker->phoneNumber,
+            'address' => $this->faker->address,
         ];
     }
 }
