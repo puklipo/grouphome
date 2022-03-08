@@ -74,7 +74,7 @@
         "sort-packages": true,
         "platform": {
             "ext-sockets": "1.0.0",
-            "ext-exif ": "1.0.0"
+            "ext-exif": "1.0.0"
         },
         "allow-plugins": {
             "composer/package-versions-deprecated": true
