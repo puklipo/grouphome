@@ -156,7 +156,7 @@ class Home extends Model
 
     protected function description(): Attribute
     {
-        return new Attribute(
+        return Attribute::make(
             get: fn ($value) => Str::of($this->introduction ?? $this->address)
                                    ->replace(PHP_EOL, ' ')
                                    ->limit(200)
