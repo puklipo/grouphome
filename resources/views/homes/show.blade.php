@@ -3,6 +3,10 @@
         {{ $home->name }} | {{ $home->pref->name }}
     </x-slot>
 
+    <x-slot name="description">
+        {{ $home->description }}
+    </x-slot>
+
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
