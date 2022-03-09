@@ -3,6 +3,10 @@
         {{ $pref->name }}{{ $area }}
     </x-slot>
 
+    <x-slot name="description">
+        {{ $pref->name.$area.'の障害者グループホーム' }}
+    </x-slot>
+
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
