@@ -6,7 +6,7 @@
 
         <x-jet-validation-errors class="mb-4"/>
 
-        <form method="POST" action="{{ route('register') }}">
+        <form method="POST" action="{{ route('register') }}" id="{{ getFormId() }}">
             @csrf
 
             <div>
@@ -50,17 +50,15 @@
                 </div>
             @endif
 
-            <div class="mt-4">
-                {!! htmlFormSnippet() !!}
-            </div>
-
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 dark:text-gray-500 hover:text-gray-900 dark:hover:text-gray-100"
                    href="{{ route('login') }}">
                     {{ __('Already registered?') }}
                 </a>
 
-                <x-jet-button class="ml-4">
+                <x-jet-button class="ml-4 g-recaptcha"
+                              data-callback="biscolabLaravelReCaptcha"
+                              data-sitekey="{{ config('recaptcha.api_site_key') }}">
                     {{ __('Register') }}
                 </x-jet-button>
             </div>
