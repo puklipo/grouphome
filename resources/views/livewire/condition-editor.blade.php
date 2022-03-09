@@ -33,7 +33,7 @@
             </span>
             <div class="border-4 border-red-500 p-3">
                 <div class="mb-6">
-                    <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3"/>
+                    <x-jet-label for="level" value="{{ __('対象区分の下限') }}" class="mt-3"/>
 
                     <select name="level"
                             wire:model="home.level"
