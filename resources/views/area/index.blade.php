@@ -51,7 +51,7 @@
                         <a href="#index" class="text-indigo-500 dark:text-white hover:underline">⤴️</a>
                     </h2>
 
-                    <ul class="ml-6">
+                    <ul class="ml-6 list-disc">
                         @foreach($homes->sortByDesc('area_count') as $home)
                             <li>
                                 <a href="{{ route('pref', [$home->pref, $home->area]) }}"
