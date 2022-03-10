@@ -36,6 +36,7 @@ class SitemapJob implements ShouldQueue
         $sitemap = Sitemap::create()
                           ->add(Url::create('/'))
                           ->add(Url::create(route('area.index')))
+                          ->add(Url::create(route('detail-search')))
                           ->add(Url::create(route('matching')))
                           ->add(Url::create(route('help.user')))
                           ->add(Url::create(route('help.operator')))
