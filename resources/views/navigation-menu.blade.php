@@ -15,6 +15,9 @@
                     <x-jet-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')">
                         {{ __('ホーム') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('detail-search') }}" :active="request()->routeIs('detail-search')">
+                        {{ __('詳細検索') }}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
                         {{ __('履歴') }}
                     </x-jet-nav-link>
@@ -185,6 +188,9 @@
         <div class="pt-2 pb-3 space-y-1">
             <x-jet-responsive-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')">
                 {{ __('ホーム') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('detail-search') }}" :active="request()->routeIs('detail-search')">
+                {{ __('詳細検索') }}
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
                 {{ __('履歴') }}

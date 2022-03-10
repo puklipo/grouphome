@@ -89,6 +89,15 @@ class Home extends Model
         return $this->hasOne(Cost::class)->withDefault();
     }
 
+    public function scopeAddTotalCost(Builder $query): Builder
+    {
+        return $query->addSelect([
+            'total' => Cost::select('total')
+                           ->whereColumn('home_id', 'homes.id')
+                           ->where('total', '>', 0),
+        ]);
+    }
+
     public function scopeKeywordSearch(Builder $query, ?string $search): Builder
     {
         return $query->when($search, function (Builder $query, $search) {
