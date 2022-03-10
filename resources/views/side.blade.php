@@ -7,7 +7,7 @@
     </h1>
 
     <div class="my-6">
-        @include('search')
+        @include('search.easy')
     </div>
 
     <div class="my-6">
