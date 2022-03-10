@@ -21,7 +21,7 @@
                                     id="level_{{ $index }}"
                                     class="checked:text-indigo-500"
                                     wire:model="levels.{{ $index }}"/>
-                    区分{{ $index === 0 ? 'なし(または情報なし)' : $index }}以上
+                    区分{{ $index === 0 ? 'なし' : $index }}以上
                 </x-jet-label>
             </div>
         @endforeach
