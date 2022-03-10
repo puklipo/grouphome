@@ -14,8 +14,8 @@ class HomeFactory extends Factory
     public function definition()
     {
         return [
-            'id'      => 1,
-            'pref_id' => 1,
+            'id'      => $this->faker->numberBetween(100000),
+            'pref_id' => $this->faker->numberBetween(1, 47),
             'name'    => $this->faker->name,
             'company' => $this->faker->company,
             'tel'     => $this->faker->phoneNumber,
