@@ -37,6 +37,11 @@ class DetailSearch extends Component
         4 => true,
     ];
 
+    protected $queryString = [
+        'q',
+        'sort' => ['except' => 'updated'],
+    ];
+
     public function updatedPrefId($pref_id)
     {
         $this->reset('area');
