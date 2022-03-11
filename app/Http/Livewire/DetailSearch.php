@@ -36,21 +36,21 @@ class DetailSearch extends Component
 
     public function mount()
     {
-        $this->levels = collect(range(0, 6))->mapWithKeys(function ($level) {
-            return [$level => true];
-        })->toArray();
+        $this->levels = collect(range(start: 0, end: 6))
+            ->mapWithKeys(fn ($level) => [$level => true])
+            ->toArray();
 
-        $this->types = collect(range(0, 4))->mapWithKeys(function ($type) {
-            return [$type => true];
-        })->toArray();
+        $this->types = collect(range(start: 0, end: 4))
+            ->mapWithKeys(fn ($type) => [$type => true])
+            ->toArray();
 
-        $this->facilities = collect(config('facility'))->mapWithKeys(function ($item, $key) {
-            return [$key => false];
-        })->toArray();
+        $this->facilities = collect(config('facility'))
+            ->mapWithKeys(fn ($item, $key) => [$key => false])
+            ->toArray();
 
-        $this->equipments = collect(config('equipment'))->mapWithKeys(function ($item, $key) {
-            return [$key => false];
-        })->toArray();
+        $this->equipments = collect(config('equipment'))
+            ->mapWithKeys(fn ($item, $key) => [$key => false])
+            ->toArray();
     }
 
     public function updatedPrefId($pref_id)
