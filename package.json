@@ -1,5 +1,6 @@
 {
     "private": true,
+    "name": "laravel",
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
