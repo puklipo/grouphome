@@ -53,11 +53,6 @@ class DetailSearch extends Component
             ->toArray();
     }
 
-    public function updating()
-    {
-        $this->resetPage();
-    }
-
     public function updatedPrefId($pref_id)
     {
         $this->reset('area');
