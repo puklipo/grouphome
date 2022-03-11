@@ -56,6 +56,21 @@
             </div>
         @endforeach
 
+        <h3 class="text-lg font-bold my-3">{{ __('居室設備') }}</h3>
+        <p class="text-sm text-gray-500 mb-2"></p>
+
+        @foreach($equipments as $index => $equipment)
+            <div class="inline-block mb-2">
+                <x-jet-label for="equipment_{{ $index }}" class="mr-3 cursor-pointer">
+                    <x-jet-checkbox name="equipment_{{ $index }}"
+                                    id="equipment_{{ $index }}"
+                                    class="checked:text-indigo-500"
+                                    wire:model="equipments.{{ $index }}"/>
+                    {{ config('equipment.'.$index) }}
+                </x-jet-label>
+            </div>
+        @endforeach
+
         <h3 class="text-lg font-bold my-3">{{ __('空室') }}</h3>
 
         <select name="vacancy"

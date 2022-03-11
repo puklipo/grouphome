@@ -39,6 +39,7 @@ class DetailSearch extends Component
     ];
 
     public array $facilities = [];
+    public array $equipments = [];
 
     protected $queryString = [
         'q',
@@ -49,7 +50,11 @@ class DetailSearch extends Component
     {
         $this->facilities = collect(config('facility'))->mapWithKeys(function ($item, $key) {
             return [$key => false];
-        })->toArray();;
+        })->toArray();
+
+        $this->equipments = collect(config('equipment'))->mapWithKeys(function ($item, $key) {
+            return [$key => false];
+        })->toArray();
     }
 
     public function updatedPrefId($pref_id)
@@ -85,6 +90,7 @@ class DetailSearch extends Component
                            ->where($this->levels(...))
                            ->where($this->types(...))
                            ->where($this->facility(...))
+                           ->where($this->equipment(...))
                            ->keywordSearch($this->q)
                            ->vacancySearch($this->vacancy)
                            ->paginate()
@@ -141,6 +147,23 @@ class DetailSearch extends Component
             if ($enable && Arr::exists(config('facility'), $facility)) {
                 $query->whereHas('facility', function (Builder $query) use ($facility) {
                     $query->where($facility, true);
+                });
+            }
+        }
+    }
+
+    /**
+     * 居室設備
+     *
+     * @param  Builder  $query
+     * @return void
+     */
+    public function equipment(Builder $query)
+    {
+        foreach ($this->equipments as $equipment => $enable) {
+            if ($enable && Arr::exists(config('equipment'), $equipment)) {
+                $query->whereHas('equipment', function (Builder $query) use ($equipment) {
+                    $query->where($equipment, true);
                 });
             }
         }
