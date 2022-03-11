@@ -21,11 +21,11 @@ class GzipResponse
         $response = $next($request);
 
         if (in_array('gzip', $request->getEncodings()) && function_exists('gzencode')) {
-            $response->setContent(gzencode($response->content(), 9));
-            $response->headers->add([
-                'Content-Encoding'      => 'gzip',
-                'X-Vapor-Base64-Encode' => 'True',
-            ]);
+            $response->setContent(gzencode($response->content(), 9))
+                     ->withHeaders([
+                         'Content-Encoding'      => 'gzip',
+                         'X-Vapor-Base64-Encode' => 'True',
+                     ]);
         }
 
         return $response;
