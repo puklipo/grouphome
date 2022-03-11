@@ -3,7 +3,7 @@
         <h2 class="text-4xl font-bold my-3">詳細検索</h2>
         <p class="text-sm text-gray-700 mb-2">検索条件を変更するとすぐに表示が変わります。</p>
 
-        <h3 class="text-lg font-bold my-3">{{ __('キーワード検索') }}</h3>
+        <x-search.title>{{ __('キーワード検索') }}</x-search.title>
 
         <x-jet-input name="q" type="search"
                      class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
@@ -11,7 +11,7 @@
                      placeholder="{{ 'キーワード検索' }}"
         />
 
-        <h3 class="text-lg font-bold my-3">{{ __('対象区分') }}</h3>
+        <x-search.title>{{ __('対象区分') }}</x-search.title>
         <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($levels as $index => $level)
@@ -26,7 +26,7 @@
             </div>
         @endforeach
 
-        <h3 class="text-lg font-bold my-3">{{ __('サービス類型') }}</h3>
+        <x-search.title>{{ __('サービス類型') }}</x-search.title>
         <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($types as $index => $type)
@@ -41,7 +41,8 @@
             </div>
         @endforeach
 
-        <h3 class="text-lg font-bold my-3">{{ __('共有設備') }}</h3>
+        <x-search.title>{{ __('共有設備') }}</x-search.title>
+
         <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($facilities as $index => $facility)
@@ -56,7 +57,8 @@
             </div>
         @endforeach
 
-        <h3 class="text-lg font-bold my-3">{{ __('居室設備') }}</h3>
+        <x-search.title>{{ __('居室設備') }}</x-search.title>
+
         <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($equipments as $index => $equipment)
@@ -71,7 +73,7 @@
             </div>
         @endforeach
 
-        <h3 class="text-lg font-bold my-3">{{ __('空室') }}</h3>
+        <x-search.title>{{ __('空室') }}</x-search.title>
 
         <select name="vacancy"
                 wire:model="vacancy"
@@ -81,7 +83,7 @@
             <option value="1">{{ __('満室') }}</option>
         </select>
 
-        <h3 class="text-lg font-bold my-3">{{ __('都道府県') }}</h3>
+        <x-search.title>{{ __('都道府県') }}</x-search.title>
 
         <select name="pref_id"
                 wire:model="pref_id"
@@ -103,7 +105,7 @@
             </select>
         @endif
 
-        <h3 class="text-lg font-bold my-3">{{ __('並べ替え') }}</h3>
+        <x-search.title>{{ __('並べ替え') }}</x-search.title>
 
         <select name="sort"
                 wire:model="sort"
