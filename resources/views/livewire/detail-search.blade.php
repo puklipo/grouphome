@@ -11,7 +11,7 @@
                      placeholder="{{ 'キーワード検索' }}"
         />
 
-        <h3 class="text-lg font-bold my-3">対象区分</h3>
+        <h3 class="text-lg font-bold my-3">{{ __('対象区分') }}</h3>
         <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($levels as $index => $level)
@@ -26,7 +26,7 @@
             </div>
         @endforeach
 
-        <h3 class="text-lg font-bold my-3">サービス類型</h3>
+        <h3 class="text-lg font-bold my-3">{{ __('サービス類型') }}</h3>
         <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($types as $index => $type)
@@ -37,6 +37,21 @@
                                     class="checked:text-indigo-500"
                                     wire:model="types.{{ $index }}"/>
                     {{ Arr::get(config('type'), $index-1, '不明') }}
+                </x-jet-label>
+            </div>
+        @endforeach
+
+        <h3 class="text-lg font-bold my-3">{{ __('共有設備') }}</h3>
+        <p class="text-sm text-gray-500 mb-2"></p>
+
+        @foreach($facilities as $index => $facility)
+            <div class="inline-block mb-2">
+                <x-jet-label for="facility_{{ $index }}" class="mr-3 cursor-pointer">
+                    <x-jet-checkbox name="facility_{{ $index }}"
+                                    id="facility_{{ $index }}"
+                                    class="checked:text-indigo-500"
+                                    wire:model="facilities.{{ $index }}"/>
+                    {{ config('facility.'.$index) }}
                 </x-jet-label>
             </div>
         @endforeach

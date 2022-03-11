@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Home;
 use Illuminate\Contracts\Database\Query\Builder;
+use Illuminate\Support\Arr;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -37,10 +38,19 @@ class DetailSearch extends Component
         4 => true,
     ];
 
+    public array $facilities = [];
+
     protected $queryString = [
         'q',
         'sort' => ['except' => 'updated'],
     ];
+
+    public function mount()
+    {
+        $this->facilities = collect(config('facility'))->mapWithKeys(function ($item, $key) {
+            return [$key => false];
+        })->toArray();;
+    }
 
     public function updatedPrefId($pref_id)
     {
@@ -72,32 +82,67 @@ class DetailSearch extends Component
                                $query->where('area', $this->area);
                            })
                            ->sortBy($this->sort)
-                           ->where(function (Builder $query) {
-                               //対象区分
-                               foreach ($this->levels as $level => $enable) {
-                                   if ($enable) {
-                                       $query->orWhere('level', $level);
-                                   }
-                               }
-                           })
-                           ->where(function (Builder $query) {
-                               //サービス類型
-                               foreach ($this->types as $type => $enable) {
-                                   if (! $enable) {
-                                       continue;
-                                   }
-                                   if ($type === 0) {
-                                       $query->orWhereNull('type_id');
-                                   } else {
-                                       $query->orWhere('type_id', $type);
-                                   }
-                               }
-                           })
+                           ->where($this->levels(...))
+                           ->where($this->types(...))
+                           ->where($this->facility(...))
                            ->keywordSearch($this->q)
                            ->vacancySearch($this->vacancy)
                            ->paginate()
                            ->withQueryString()
                            ->onEachSide(1),
         ]);
+    }
+
+    /**
+     * 対象区分
+     *
+     * @param  Builder  $query
+     * @return void
+     */
+    public function levels(Builder $query)
+    {
+        foreach ($this->levels as $level => $enable) {
+            if ($enable) {
+                $query->orWhere('level', $level);
+            }
+        }
+    }
+
+    /**
+     * サービス類型
+     *
+     * @param  Builder  $query
+     * @return void
+     */
+    public function types(Builder $query)
+    {
+        foreach ($this->types as $type => $enable) {
+            if (! $enable) {
+                continue;
+            }
+
+            if ($type === 0) {
+                $query->orWhereNull('type_id');
+            } else {
+                $query->orWhere('type_id', $type);
+            }
+        }
+    }
+
+    /**
+     * 共有設備
+     *
+     * @param  Builder  $query
+     * @return void
+     */
+    public function facility(Builder $query)
+    {
+        foreach ($this->facilities as $facility => $enable) {
+            if ($enable && Arr::exists(config('facility'), $facility)) {
+                $query->whereHas('facility', function (Builder $query) use ($facility) {
+                    $query->where($facility, true);
+                });
+            }
+        }
     }
 }
