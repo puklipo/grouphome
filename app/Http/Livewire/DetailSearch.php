@@ -20,25 +20,13 @@ class DetailSearch extends Component
     public ?string $sort = 'updated';
     public int|string|null $vacancy = null;
 
-    public array $levels = [
-        0 => true,
-        1 => true,
-        2 => true,
-        3 => true,
-        4 => true,
-        5 => true,
-        6 => true,
-    ];
-
-    public array $types = [
-        0 => true,
-        1 => true,
-        2 => true,
-        3 => true,
-        4 => true,
-    ];
-
+    /** @var array<int, bool> 対象区分 */
+    public array $levels = [];
+    /** @var array<int, bool> サービス類型 */
+    public array $types = [];
+    /** @var array<string, bool> 共有設備 */
     public array $facilities = [];
+    /** @var array<string, bool> 居室設備 */
     public array $equipments = [];
 
     protected $queryString = [
@@ -48,6 +36,14 @@ class DetailSearch extends Component
 
     public function mount()
     {
+        $this->levels = collect(range(0, 6))->mapWithKeys(function ($level) {
+            return [$level => true];
+        })->toArray();
+
+        $this->types = collect(range(0, 4))->mapWithKeys(function ($type) {
+            return [$type => true];
+        })->toArray();
+
         $this->facilities = collect(config('facility'))->mapWithKeys(function ($item, $key) {
             return [$key => false];
         })->toArray();
