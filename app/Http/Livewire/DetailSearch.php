@@ -100,7 +100,7 @@ class DetailSearch extends Component
     }
 
     /**
-     * 対象区分
+     * 対象区分.
      *
      * @param  Builder  $query
      * @return void
@@ -115,7 +115,7 @@ class DetailSearch extends Component
     }
 
     /**
-     * サービス類型
+     * サービス類型.
      *
      * @param  Builder  $query
      * @return void
@@ -136,7 +136,7 @@ class DetailSearch extends Component
     }
 
     /**
-     * 共有設備
+     * 共有設備.
      *
      * @param  Builder  $query
      * @return void
@@ -153,7 +153,7 @@ class DetailSearch extends Component
     }
 
     /**
-     * 居室設備
+     * 居室設備.
      *
      * @param  Builder  $query
      * @return void
