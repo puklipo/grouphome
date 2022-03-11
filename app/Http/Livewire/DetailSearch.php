@@ -79,20 +79,20 @@ class DetailSearch extends Component
     {
         return view('livewire.detail-search')->with([
             'homes' => Home::with(['pref', 'type', 'photo', 'cost'])
-                           ->addTotalCost()
                            ->when(filled($this->pref_id), function (Builder $query) {
                                $query->where('pref_id', $this->pref_id);
                            })
                            ->when(filled($this->area), function (Builder $query) {
                                $query->where('area', $this->area);
                            })
-                           ->sortBy($this->sort)
                            ->where($this->levels(...))
                            ->where($this->types(...))
                            ->where($this->facility(...))
                            ->where($this->equipment(...))
                            ->keywordSearch($this->q)
                            ->vacancySearch($this->vacancy)
+                           ->addTotalCost()
+                           ->sortBy($this->sort)
                            ->paginate()
                            ->withQueryString()
                            ->onEachSide(1),
