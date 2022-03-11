@@ -4,3 +4,4 @@ disabled:
 finder:
   not-name:
     - index.php
+version: 8.1
