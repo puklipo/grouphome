@@ -12,7 +12,6 @@
         />
 
         <x-search.title>{{ __('対象区分') }}</x-search.title>
-        <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($levels as $index => $level)
             <div class="inline-block mb-2">
@@ -27,7 +26,6 @@
         @endforeach
 
         <x-search.title>{{ __('サービス類型') }}</x-search.title>
-        <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($types as $index => $type)
             <div class="inline-block mb-2">
@@ -43,8 +41,6 @@
 
         <x-search.title>{{ __('共有設備') }}</x-search.title>
 
-        <p class="text-sm text-gray-500 mb-2"></p>
-
         @foreach($facilities as $index => $facility)
             <div class="inline-block mb-2">
                 <x-jet-label for="facility_{{ $index }}" class="mr-3 cursor-pointer">
@@ -58,8 +54,6 @@
         @endforeach
 
         <x-search.title>{{ __('居室設備') }}</x-search.title>
-
-        <p class="text-sm text-gray-500 mb-2"></p>
 
         @foreach($equipments as $index => $equipment)
             <div class="inline-block mb-2">
@@ -75,41 +69,33 @@
 
         <x-search.title>{{ __('空室') }}</x-search.title>
 
-        <select name="vacancy"
-                wire:model="vacancy"
-                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
+        <x-select name="vacancy" wire:model="vacancy">
             <option value="">指定しない</option>
             <option value="0">{{ __('空室あり') }}</option>
             <option value="1">{{ __('満室') }}</option>
-        </select>
+        </x-select>
 
         <x-search.title>{{ __('都道府県') }}</x-search.title>
 
-        <select name="pref_id"
-                wire:model="pref_id"
-                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
+        <x-select name="pref_id" wire:model="pref_id">
             <option value="">指定しない</option>
             @foreach(\App\Models\Pref::oldest('id')->get() as $pre)
                 <option value="{{ $pre->id }}">{{ $pre->name }}</option>
             @endforeach
-        </select>
+        </x-select>
 
         @if(count($areas ?? []) > 0)
-            <select name="area"
-                    wire:model="area"
-                    class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
+            <x-select name="area" wire:model="area">
                 <option value="">指定しない</option>
                 @foreach($areas as $area_name)
                     <option value="{{ $area_name }}">{{ $area_name }}</option>
                 @endforeach
-            </select>
+            </x-select>
         @endif
 
         <x-search.title>{{ __('並べ替え') }}</x-search.title>
 
-        <select name="sort"
-                wire:model="sort"
-                class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm block flex-auto dark:bg-gray-800">
+        <x-select name="sort" wire:model="sort">
             <option value="">なし</option>
             <option value="updated">更新が新しい順</option>
             <option value="low">費用が安い順</option>
@@ -119,7 +105,7 @@
             <option value="name">グループホーム名</option>
             <option value="pref">都道府県(北から)</option>
             <option value="id">事業所番号(降順)</option>
-        </select>
+        </x-select>
     </div>
 
     <div wire:loading.class="opacity-50">
