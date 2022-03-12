@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class GzipResponse
 {
@@ -20,14 +21,26 @@ class GzipResponse
         /** @var Response $response */
         $response = $next($request);
 
-        if (in_array('gzip', $request->getEncodings()) && function_exists('gzencode')) {
-            $response->setContent(gzencode($response->content(), 9))
+        if ($this->isEncodable($request, $response)) {
+            $response->setContent(gzencode($response->getContent(), 9))
                      ->withHeaders([
-                         'Content-Encoding'      => 'gzip',
+                         'Content-Encoding' => 'gzip',
                          'X-Vapor-Base64-Encode' => 'True',
                      ]);
         }
 
         return $response;
+    }
+
+    /**
+     * @param  Request  $request
+     * @param  mixed  $response
+     * @return bool
+     */
+    protected function isEncodable(Request $request, mixed $response): bool
+    {
+        return in_array('gzip', $request->getEncodings())
+            && function_exists('gzencode')
+            && ! $response instanceof BinaryFileResponse;
     }
 }
