@@ -1,4 +1,4 @@
-<div class="m-3">
+<div class="my-3">
     <div class="mt-3 mb-0 flex justify-between">
         <span class="bg-gray-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white dark:hover:text-gray-500">
             土地を貸したい
