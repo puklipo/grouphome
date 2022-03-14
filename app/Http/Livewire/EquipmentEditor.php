@@ -13,7 +13,7 @@ class EquipmentEditor extends Component
 
     public Home $home;
 
-    protected function rules()
+    protected function rules(): array
     {
         return collect(config('equipment'))
             ->mapWithKeys(fn ($item, $key) => ['home.equipment.'.$key => 'boolean'])

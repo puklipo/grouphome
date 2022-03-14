@@ -13,7 +13,7 @@ class HouseruleEditor extends Component
 
     public Home $home;
 
-    protected $rules = [
+    protected array $rules = [
         'home.houserule' => 'string|nullable',
     ];
 

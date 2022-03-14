@@ -13,7 +13,7 @@ class VacancyEditor extends Component
 
     public Home $home;
 
-    protected $rules = [
+    protected array $rules = [
         'home.vacancy.filled' => 'boolean',
         'home.vacancy.message' => 'string|nullable',
     ];

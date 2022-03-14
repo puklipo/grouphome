@@ -12,7 +12,7 @@ class BasicEditor extends Component
 
     public Home $home;
 
-    protected function rules()
+    protected function rules(): array
     {
         return collect(config('basic'))
             ->mapWithKeys(fn ($item, $key) => ['home.'.$key => 'nullable'])

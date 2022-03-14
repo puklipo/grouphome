@@ -13,7 +13,7 @@ class CostEditor extends Component
 
     public Home $home;
 
-    protected function rules()
+    protected function rules(): array
     {
         return collect(config('cost'))
             ->mapWithKeys(fn ($item, $key) => ['home.cost.'.$key => 'nullable'])

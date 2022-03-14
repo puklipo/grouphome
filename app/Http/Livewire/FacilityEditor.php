@@ -13,7 +13,7 @@ class FacilityEditor extends Component
 
     public Home $home;
 
-    protected function rules()
+    protected function rules(): array
     {
         return collect(config('facility'))
             ->mapWithKeys(fn ($item, $key) => ['home.facility.'.$key => 'boolean'])
