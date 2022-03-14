@@ -20,7 +20,7 @@
             <x-breadcrumbs-back/>
 
             <div class="p-3 bg-indigo-50 dark:bg-black sm:hidden">
-                @include('search.easy')
+                @include('search.simple')
             </div>
 
             <livewire:home-index></livewire:home-index>
