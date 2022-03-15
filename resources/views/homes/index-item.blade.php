@@ -1,7 +1,7 @@
 <div class="m-3">
     @include('homes.header')
 
-    <div class="border-4 border-indigo-500 dark:border-gray-800">
+    <x-box>
 
         @include('homes.cover')
 
@@ -54,6 +54,6 @@
                 </tr>
             </table>
         </div>
-    </div>
+    </x-box>
 
 </div>

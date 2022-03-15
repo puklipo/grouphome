@@ -3,7 +3,7 @@
         マップ
     </span>
 </div>
-<div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+<x-box class="p-3">
     @if( Str::contains($home->map ?? '', '<iframe'))
         {!! $home->map !!}
     @else
@@ -19,4 +19,4 @@
             </a>
         </div>
     @endif
-</div>
+</x-box>

@@ -4,11 +4,11 @@
             {{ __('紹介') }}
         </span>
     </div>
-    <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+    <x-box class="p-3">
         @if(filled($home->introduction))
             <div class="text-lg">{!! nl2br(e($home->introduction)) !!}</div>
         @endif
-    </div>
+    </x-box>
 
     @canany(['update', 'admin'], $home)
         <div class="mt-0">

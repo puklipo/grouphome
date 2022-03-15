@@ -10,7 +10,7 @@
             </time>更新
         </span>
     </div>
-    <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+    <x-box class="p-3">
         <div class="mb-3">
             <div class="border-b text-gray-500 dark:text-gray-200 text-sm">月額費用合計</div>
             <div class="text-lg">
@@ -59,7 +59,7 @@
             <div class="text-lg">{{ $home->cost->message }}</div>
         </div>
 
-    </div>
+    </x-box>
 
     @canany(['update', 'admin'], $home)
         <div class="mt-0">

@@ -40,7 +40,7 @@
 
                 @include('homes.header')
 
-                <div class="border-4 border-indigo-500 dark:border-gray-800">
+                <x-box>
                     @include('homes.cover')
 
                     <div class="p-3">
@@ -76,7 +76,7 @@
                         @endisset
 
                     </div>
-                </div>
+                </x-box>
 
                 <livewire:basic-editor :home="$home"></livewire:basic-editor>
 

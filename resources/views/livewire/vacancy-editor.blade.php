@@ -9,13 +9,13 @@
             </time>更新
         </span>
     </div>
-    <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+    <x-box class="p-3">
         <x-rounded-tag :enabled="true">{{ $home->vacancy->filled ? __('満室') : __('空室あり') }}</x-rounded-tag>
 
         @if(filled($home->vacancy->message))
             <div class="mt-3 text-md">{!! nl2br(e($home->vacancy->message)) !!}</div>
         @endif
-    </div>
+    </x-box>
 
     @canany(['update', 'admin'], $home)
         <div class="mt-0">

@@ -5,7 +5,7 @@
         </a>
     </span>
 </div>
-<div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+<x-box class="p-3">
     <ul>
         @foreach($home->pref->homes()->inRandomOrder()->limit(10)->get() as $h)
             <li class="my-1 flex justify-between">
@@ -17,4 +17,4 @@
             </li>
         @endforeach
     </ul>
-</div>
+</x-box>

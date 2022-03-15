@@ -10,11 +10,11 @@
             </time>更新
         </span>
     </div>
-    <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
+    <x-box class="p-3 flex flex-wrap">
         @foreach(config('facility') as $key => $name)
             <x-rounded-tag :enabled="$home->facility->$key">{{ $name }}</x-rounded-tag>
         @endforeach
-    </div>
+    </x-box>
 
     @canany(['update', 'admin'], $home)
         <div class="mt-0">

@@ -10,7 +10,7 @@
             </time>更新
         </span>
     </div>
-    <div class="border-4 border-indigo-500 p-3 dark:border-gray-800 flex flex-wrap">
+    <x-box class="p-3 flex flex-wrap">
         <x-rounded-tag>
             @if($home->level > 0)
                 区分 {{ $home->level }} 以上
@@ -24,7 +24,7 @@
         @foreach(config('condition') as $key => $name)
             <x-rounded-tag :enabled="$home->condition->$key">{{ $name }}</x-rounded-tag>
         @endforeach
-    </div>
+    </x-box>
 
     @canany(['update', 'admin'], $home)
         <div class="mt-0">

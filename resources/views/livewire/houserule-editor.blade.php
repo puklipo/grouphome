@@ -4,11 +4,11 @@
             入居者向けのルール
         </span>
     </div>
-    <div class="border-4 border-indigo-500 p-3 dark:border-gray-800">
+    <x-box class="p-3">
         @if(filled($home->houserule))
             <div class="text-md">{!! nl2br(e($home->houserule)) !!}</div>
         @endif
-    </div>
+    </x-box>
 
     @canany(['update', 'admin'], $home)
         <div class="mt-0">
