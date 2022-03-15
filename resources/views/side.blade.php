@@ -51,6 +51,15 @@
 
     @includeIf('side.qr')
 
+    @can('admin')
+        <div class="my-6">
+            <a href="{{ route('admin') }}"
+               class="font-bold text-indigo-500 dark:text-white hover:underline">
+                {{ __('管理画面') }}
+            </a>
+        </div>
+    @endcan
+
     <div class="text-sm mt-10 p-1 border-t">
         Copyright&copy; <a href="https://pcs-works.vercel.app/"
                            class="font-bold text-indigo-500 dark:text-white hover:underline"

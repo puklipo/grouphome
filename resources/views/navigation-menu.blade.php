@@ -39,11 +39,6 @@
                             {{ __('事業者ログイン') }}
                         </x-jet-nav-link>
                     @endauth
-                    @can('admin')
-                        <x-jet-nav-link href="{{ route('admin') }}" :active="request()->routeIs('admin')">
-                            {{ __('管理画面') }}
-                        </x-jet-nav-link>
-                    @endcan
                 </div>
             </div>
 
