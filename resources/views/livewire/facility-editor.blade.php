@@ -17,21 +17,19 @@
     </x-box>
 
     @canany(['update', 'admin'], $home)
-        <div class="mt-0">
-            <span class="bg-red-500 text-white px-6 pb-1">
+        <x-box-edit class="flex flex-wrap">
+            <x-slot name="title">
                 変更
-            </span>
-            <div class="border-4 border-red-500 p-3 flex flex-wrap">
-                @foreach(config('facility') as $key => $name)
-                    <x-jet-label for="facility_{{ $key }}" class="mr-3 cursor-pointer">
-                        <x-jet-checkbox name="facility_{{ $key }}"
-                                        id="facility_{{ $key }}"
-                                        class="checked:text-red-500"
-                                        wire:model="home.facility.{{ $key }}"/>
-                        {{ $name }}
-                    </x-jet-label>
-                @endforeach
-            </div>
-        </div>
+            </x-slot>
+            @foreach(config('facility') as $key => $name)
+                <x-jet-label for="facility_{{ $key }}" class="mr-3 cursor-pointer">
+                    <x-jet-checkbox name="facility_{{ $key }}"
+                                    id="facility_{{ $key }}"
+                                    class="checked:text-red-500"
+                                    wire:model="home.facility.{{ $key }}"/>
+                    {{ $name }}
+                </x-jet-label>
+            @endforeach
+        </x-box-edit>
     @endcanany
 </div>

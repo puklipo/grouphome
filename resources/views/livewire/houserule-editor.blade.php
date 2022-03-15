@@ -11,23 +11,20 @@
     </x-box>
 
     @canany(['update', 'admin'], $home)
-        <div class="mt-0">
-            <span class="bg-red-500 text-white px-6 pb-1">
+        <x-box-edit>
+            <x-slot name="title">
                 変更
-            </span>
-            <div class="border-4 border-red-500 p-3">
-                <form wire:submit.prevent="save">
+            </x-slot>
+            <form wire:submit.prevent="save">
+                <x-jet-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
+                <x-textarea name="houserule" wire:model.defer="home.houserule"></x-textarea>
 
-                    <x-jet-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
-                    <x-textarea name="houserule" wire:model.defer="home.houserule"></x-textarea>
+                <div class="text-sm text-gray-500 dark:text-white">「日中は必ず外出」や門限など入居者向けの細かいルールを入力してください。</div>
 
-                    <div class="text-sm text-gray-500 dark:text-white">「日中は必ず外出」や門限など入居者向けの細かいルールを入力してください。</div>
-
-                    <x-jet-button class="mt-3">
-                        {{ __('更新') }}
-                    </x-jet-button>
-                </form>
-            </div>
-        </div>
+                <x-jet-button class="mt-3">
+                    {{ __('更新') }}
+                </x-jet-button>
+            </form>
+        </x-box-edit>
     @endcanany
 </div>

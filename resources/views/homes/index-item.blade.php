@@ -55,5 +55,4 @@
             </table>
         </div>
     </x-box>
-
 </div>
