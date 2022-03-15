@@ -1,8 +1,9 @@
-<div class="mt-6">
-    <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
+<x-box-header class="mt-6">
+    <x-slot name="left">
         マップ
-    </span>
-</div>
+    </x-slot>
+</x-box-header>
+
 <x-box class="p-3">
     @if( Str::contains($home->map ?? '', '<iframe'))
         {!! $home->map !!}

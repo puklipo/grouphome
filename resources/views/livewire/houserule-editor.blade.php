@@ -1,9 +1,10 @@
 <div>
-    <div class="mt-6 flex justify-between">
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
+    <x-box-header class="mt-6">
+        <x-slot name="left">
             入居者向けのルール
-        </span>
-    </div>
+        </x-slot>
+    </x-box-header>
+
     <x-box class="p-3">
         @if(filled($home->houserule))
             <div class="text-md">{!! nl2br(e($home->houserule)) !!}</div>

@@ -1,14 +1,16 @@
 <div>
-    <div class="mt-6 flex justify-between">
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
+    <x-box-header class="mt-6">
+        <x-slot name="left">
             最新の空室情報
-        </span>
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white">
-            <time datetime="{{ $home->vacancy->updated_at }}" title="{{ $home->vacancy->updated_at->toDateString() }}">
+        </x-slot>
+        <x-slot name="right">
+            <time datetime="{{ $home->vacancy->updated_at }}"
+                  title="{{ $home->vacancy->updated_at->toDateString() }}">
                 {{ $home->vacancy->updated_at->diffForHumans() }}
             </time>更新
-        </span>
-    </div>
+        </x-slot>
+    </x-box-header>
+
     <x-box class="p-3">
         <x-rounded-tag :enabled="true">{{ $home->vacancy->filled ? __('満室') : __('空室あり') }}</x-rounded-tag>
 

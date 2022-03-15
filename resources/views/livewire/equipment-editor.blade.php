@@ -1,15 +1,16 @@
 <div>
-    <div class="mt-6 flex justify-between">
-    <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
-        居室設備
-    </span>
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white">
+    <x-box-header class="mt-6">
+        <x-slot name="left">
+            居室設備
+        </x-slot>
+        <x-slot name="right">
             <time datetime="{{ $home->equipment->updated_at }}"
                   title="{{ $home->equipment->updated_at->toDateString() }}">
                 {{ $home->equipment->updated_at->diffForHumans() }}
             </time>更新
-        </span>
-    </div>
+        </x-slot>
+    </x-box-header>
+
     <x-box class="p-3 flex flex-wrap">
         @foreach(config('equipment') as $key => $name)
             <x-rounded-tag :enabled="$home->equipment->$key">{{ $name }}</x-rounded-tag>

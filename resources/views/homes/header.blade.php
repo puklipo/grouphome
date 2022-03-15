@@ -1,14 +1,14 @@
-<div class="mt-3 mb-0 flex justify-between">
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white dark:hover:text-gray-500">
-            <a href="{{ route('pref', $home->pref) }}">
-                {{ $home->pref->name }}
-            </a>
-        </span>
+<x-box-header class="mt-3 mb-0">
+    <x-slot name="left">
+        <a href="{{ route('pref', $home->pref) }}" class="dark:hover:text-gray-300">
+            {{ $home->pref->name }}
+        </a>
+    </x-slot>
     @if(filled($home->area))
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white dark:hover:text-gray-500">
-                <a href="{{ route('pref', [$home->pref, $home->area]) }}">
-                    {{ $home->area }}
-                </a>
-            </span>
+        <x-slot name="right">
+            <a href="{{ route('pref', [$home->pref, $home->area]) }}" class="dark:hover:text-gray-300">
+                {{ $home->area }}
+            </a>
+        </x-slot>
     @endif
-</div>
+</x-box-header>

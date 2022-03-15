@@ -1,15 +1,16 @@
 <div>
-    <div class="mt-6 flex justify-between">
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
+    <x-box-header class="mt-6">
+        <x-slot name="left">
             費用
-        </span>
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white">
+        </x-slot>
+        <x-slot name="right">
             <time datetime="{{ $home->cost->updated_at }}"
                   title="{{ $home->cost->updated_at->toDateString() }}">
                 {{ $home->cost->updated_at->diffForHumans() }}
             </time>更新
-        </span>
-    </div>
+        </x-slot>
+    </x-box-header>
+
     <x-box class="p-3">
         <div class="mb-3">
             <div class="border-b text-gray-500 dark:text-gray-200 text-sm">月額費用合計</div>

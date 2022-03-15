@@ -1,9 +1,10 @@
 <div>
-    <div class="mt-6 flex justify-between">
-        <span class="bg-indigo-500 text-white px-6 py-1 dark:bg-gray-800">
+    <x-box-header class="mt-6">
+        <x-slot name="left">
             {{ __('紹介') }}
-        </span>
-    </div>
+        </x-slot>
+    </x-box-header>
+
     <x-box class="p-3">
         @if(filled($home->introduction))
             <div class="text-lg">{!! nl2br(e($home->introduction)) !!}</div>
