@@ -1,6 +1,6 @@
 <x-box-header class="mt-6">
     <x-slot name="left">
-        <a href="{{ route('pref', $home->pref) }}">
+        <a href="{{ route('pref', $home->pref) }}" class="dark:hover:text-gray-300">
             {{ $home->pref->name }}のグループホーム
         </a>
     </x-slot>
