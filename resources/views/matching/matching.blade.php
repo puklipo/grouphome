@@ -21,7 +21,7 @@
 
             <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none">
 
-                <p class="p-3 font-bold">ここでは情報を掲載しているだけなので直接問い合わせてください。</p>
+                <p class="font-bold">ここでは情報を掲載しているだけなので直接問い合わせてください。</p>
 
                 {{-- 手動で追加なので大量に掲載する予定はない --}}
                 {{-- 掲載終了したら個別にitemを削除 --}}
