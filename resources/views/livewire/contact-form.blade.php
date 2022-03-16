@@ -1,5 +1,5 @@
 <div class="w-full sm:max-w-xl mt-6 px-6 py-4 bg-white dark:bg-gray-900 shadow-md overflow-hidden sm:rounded-lg"
-     wire:init="ready">
+     wire:init="onReady">
     @if(session()->missing('mail_success'))
 
         <x-jet-validation-errors class="mb-4"/>

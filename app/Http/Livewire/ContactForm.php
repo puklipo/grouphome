@@ -20,7 +20,7 @@ class ContactForm extends Component
         'body'  => 'required',
     ];
 
-    public function ready(Request $request)
+    public function onReady(Request $request)
     {
         $this->name = $request->user()->name ?? '';
         $this->email = $request->user()->email ?? '';
