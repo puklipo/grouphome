@@ -14,7 +14,7 @@ class ConditionEditor extends Component
 
     public Home $home;
 
-    protected function rules()
+    protected function rules(): array
     {
         return collect(config('condition'))
             ->mapWithKeys(fn ($item, $key) => ['home.condition.'.$key => 'boolean'])
