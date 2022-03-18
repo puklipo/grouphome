@@ -3,6 +3,8 @@
 namespace Tests\Feature;
 
 use App\Actions\History;
+use App\Http\Livewire\ContactForm;
+use App\Http\Livewire\HistoryList;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -37,6 +39,15 @@ class ExampleTest extends TestCase
 
         $response = $this->get(route('history'));
 
-        $response->assertStatus(200);
+        $response->assertStatus(200)
+                 ->assertSeeLivewire(HistoryList::class);
+    }
+
+    public function test_contact()
+    {
+        $response = $this->get(route('contact'));
+
+        $response->assertStatus(200)
+                 ->assertSeeLivewire(ContactForm::class);
     }
 }
