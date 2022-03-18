@@ -2,10 +2,8 @@
 
 namespace App\Http\Livewire;
 
-use App\Mail\ContactMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 /**
