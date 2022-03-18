@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
 /**
- * 問い合わせフォーム
+ * 問い合わせフォーム.
  */
 class ContactForm extends Component
 {

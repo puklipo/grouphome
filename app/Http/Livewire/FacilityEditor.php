@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
 /**
- * 共有設備
+ * 共有設備.
  */
 class FacilityEditor extends Component
 {
