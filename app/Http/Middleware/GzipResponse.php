@@ -21,10 +21,10 @@ class GzipResponse
         /** @var Response $response */
         $response = $next($request);
 
-        if ($this->isEncodable($request, $response)) {
-            $response->setContent(gzencode($response->getContent(), 9))
+        if ($this->shouldEncode($request, $response)) {
+            $response->setContent(gzencode($response->content(), 9))
                      ->withHeaders([
-                         'Content-Encoding' => 'gzip',
+                         'Content-Encoding'      => 'gzip',
                          'X-Vapor-Base64-Encode' => 'True',
                      ]);
         }
@@ -37,9 +37,10 @@ class GzipResponse
      * @param  mixed  $response
      * @return bool
      */
-    protected function isEncodable(Request $request, mixed $response): bool
+    protected function shouldEncode(Request $request, mixed $response): bool
     {
         return in_array('gzip', $request->getEncodings())
+            && ! $response->headers->contains('Content-Encoding', 'gzip')
             && function_exists('gzencode')
             && ! $response instanceof BinaryFileResponse;
     }
