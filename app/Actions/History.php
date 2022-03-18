@@ -7,7 +7,7 @@ use Illuminate\Support\Collection;
 
 class History
 {
-    public function add(Home $home)
+    public function add(Home $home): void
     {
         $history = collect(session('history', []))
             ->prepend($home->id)
