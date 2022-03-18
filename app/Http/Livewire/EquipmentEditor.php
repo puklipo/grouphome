@@ -7,6 +7,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
+/**
+ * 居室設備
+ */
 class EquipmentEditor extends Component
 {
     use AuthorizesRequests;

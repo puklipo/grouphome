@@ -6,6 +6,9 @@ use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Component;
 
+/**
+ * 基本情報
+ */
 class BasicEditor extends Component
 {
     use AuthorizesRequests;

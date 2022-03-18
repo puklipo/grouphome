@@ -8,6 +8,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 
+/**
+ * 問い合わせフォーム
+ */
 class ContactForm extends Component
 {
     public string $name = '';

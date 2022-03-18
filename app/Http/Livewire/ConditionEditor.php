@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\Str;
 use Livewire\Component;
 
+/**
+ * 利用条件
+ */
 class ConditionEditor extends Component
 {
     use AuthorizesRequests;

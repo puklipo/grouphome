@@ -8,6 +8,9 @@ use Illuminate\Support\Arr;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+/**
+ * 詳細検索
+ */
 class DetailSearch extends Component
 {
     use WithPagination;

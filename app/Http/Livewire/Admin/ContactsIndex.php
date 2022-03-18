@@ -6,6 +6,9 @@ use App\Models\Contact;
 use Livewire\Component;
 use Livewire\WithPagination;
 
+/**
+ * 問い合わせ一覧
+ */
 class ContactsIndex extends Component
 {
     use WithPagination;

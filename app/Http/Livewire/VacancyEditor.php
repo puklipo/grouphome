@@ -7,6 +7,9 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
 use Livewire\Component;
 
+/**
+ * 空室情報
+ */
 class VacancyEditor extends Component
 {
     use AuthorizesRequests;
