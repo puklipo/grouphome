@@ -54,7 +54,7 @@
     @can('admin')
         <div class="my-6">
             <a href="{{ route('admin') }}"
-               class="font-bold text-indigo-500 dark:text-white hover:underline">
+               class="font-bold text-red-500 hover:underline">
                 {{ __('管理画面') }}
             </a>
         </div>
