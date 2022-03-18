@@ -7,7 +7,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 /**
- * 問い合わせ一覧
+ * 問い合わせ一覧.
  */
 class ContactsIndex extends Component
 {

@@ -9,7 +9,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 /**
- * 詳細検索
+ * 詳細検索.
  */
 class DetailSearch extends Component
 {

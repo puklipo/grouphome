@@ -7,7 +7,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Component;
 
 /**
- * 基本情報
+ * 基本情報.
  */
 class BasicEditor extends Component
 {
