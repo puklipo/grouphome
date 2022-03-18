@@ -109,7 +109,7 @@
         </x-select>
     </div>
 
-    <div wire:loading.class="opacity-50">
+    <div wire:loading.class="opacity-80">
         @includeIf('livewire.home-index')
     </div>
 </div>
