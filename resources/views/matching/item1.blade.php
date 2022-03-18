@@ -4,7 +4,7 @@
             土地を貸したい
         </span>
         <span class="bg-gray-500 text-white px-6 py-1 dark:bg-gray-800 dark:text-white dark:hover:text-gray-500">
-            掲載日 2022年2月21日
+            掲載日 20XX年X月XX日
         </span>
     </div>
 
