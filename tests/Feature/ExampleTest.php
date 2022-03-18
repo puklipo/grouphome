@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Actions\History;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -23,7 +24,18 @@ class ExampleTest extends TestCase
 
     public function test_area()
     {
-        $response = $this->get('/area');
+        $response = $this->get(route('area.index'));
+
+        $response->assertStatus(200);
+    }
+
+    public function test_history()
+    {
+        $history = app(History::class)->get();
+
+        $this->assertTrue($history->isEmpty());
+
+        $response = $this->get(route('history'));
 
         $response->assertStatus(200);
     }
