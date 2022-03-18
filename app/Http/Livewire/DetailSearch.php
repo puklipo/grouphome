@@ -19,8 +19,11 @@ class DetailSearch extends Component
     public string $area = '';
     public ?array $areas = null;
 
+    /** @var string|null キーワード */
     public ?string $q = null;
+    /** @var string|null 並べ替え */
     public ?string $sort = 'updated';
+    /** @var int|string|null 空室 */
     public int|string|null $vacancy = null;
 
     /** @var array<int, bool> 対象区分 */
