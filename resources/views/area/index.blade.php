@@ -44,7 +44,7 @@
                     <h2 class="text-2xl my-3 font-bold">
                         <a href="{{ route('pref', $prefs->find($pref)) }}"
                            id="{{ $prefs->find($pref)->name }}"
-                           class="text-indigo-500 dark:text-white hover:underline">
+                           class="dark:text-white hover:underline">
                             {{ $prefs->find($pref)->name }}
                         </a>
 
