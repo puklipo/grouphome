@@ -12,7 +12,7 @@
     <div class="py-6">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
-                {{ $requests->links() }}
+                {{ $requests->links('pagination::tailwind') }}
                 <ul>
                     @forelse($requests as $request)
                         <li class="p-3 flex justify-start">
