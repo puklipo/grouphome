@@ -79,6 +79,7 @@ return [
 
         RequestTerminated::class => [
             //
+            \App\Listeners\PaginationFlush::class,
         ],
 
         TaskReceived::class => [

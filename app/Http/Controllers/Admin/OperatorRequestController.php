@@ -5,14 +5,11 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\OperatorRequest;
 use Illuminate\Http\Request;
-use Illuminate\Pagination\PaginationState;
 
 class OperatorRequestController extends Controller
 {
     public function index(Request $request)
     {
-        PaginationState::resolveUsing(app());
-
         $requests = OperatorRequest::with(['user', 'home'])->latest()->paginate(2);
 
         return view('admin.operator-request')->with(compact('requests'));
