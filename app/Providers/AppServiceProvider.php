@@ -19,7 +19,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        PaginationState::resolveUsing($this->app);
     }
 
     /**
@@ -31,8 +30,5 @@ class AppServiceProvider extends ServiceProvider
     {
         View::composer('side', SideComposer::class);
         View::composer('search.*', SearchComposer::class);
-
-        Paginator::defaultView('pagination::tailwind');
-        Paginator::defaultSimpleView('pagination::simple-tailwind');
     }
 }
