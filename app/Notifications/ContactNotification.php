@@ -2,9 +2,9 @@
 
 namespace App\Notifications;
 
-use App\Mail\ContactMail;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Collection;
 use Revolution\Line\Notifications\LineNotifyChannel;
@@ -46,12 +46,18 @@ class ContactNotification extends Notification implements ShouldQueue
      * Get the mail representation of the notification.
      *
      * @param  mixed  $notifiable
-     * @return ContactMail
+     * @return MailMessage
      */
     public function toMail($notifiable)
     {
-        return (new ContactMail($this->name, $this->email, $this->body))
-            ->to($notifiable->routeNotificationFor('mail'));
+        return (new MailMessage)
+            ->subject('【'.config('app.name').'】お問い合わせ')
+            ->from($this->email, $this->name)
+            ->greeting(__('名前：').$this->name)
+            ->line($this->body)
+            ->action('問い合わせを確認', route('admin.contacts'))
+            ->line($this->email)
+            ->salutation('このメールに返信はできないので問い合わせへの対応は新規メールを送信してください。');
     }
 
     /**
