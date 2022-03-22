@@ -10,7 +10,7 @@ class OperatorRequestController extends Controller
 {
     public function index(Request $request)
     {
-        $requests = OperatorRequest::with(['user', 'home'])->latest()->paginate(1);
+        $requests = OperatorRequest::with(['user', 'home'])->latest()->paginate(2);
 
         return view('admin.operator-request')->with(compact('requests'));
     }
