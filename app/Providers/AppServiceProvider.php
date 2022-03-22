@@ -4,7 +4,6 @@ namespace App\Providers;
 
 use App\View\Composers\SearchComposer;
 use App\View\Composers\SideComposer;
-use Illuminate\Pagination\PaginationState;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -19,7 +18,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        PaginationState::resolveUsing($this->app);
     }
 
     /**
