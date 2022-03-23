@@ -42,7 +42,8 @@ class OperatorRequestCreated extends Notification implements ShouldQueue
     public function toMail(mixed $notifiable): MailMessage
     {
         return (new MailMessage)
-            ->subject('【管理事業者申請】'.$this->request->home->name)
+            ->subject('【管理事業者申請】'.$name = $this->request->home->name)
+            ->greeting($name)
             ->line('事業者から申請されました。')
             ->action('事業者申請一覧', route('operator-requests.index'))
             ->line('承認か却下してください。');

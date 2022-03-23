@@ -5,9 +5,7 @@ namespace App\Http\Controllers\Operator;
 use App\Http\Controllers\Controller;
 use App\Models\Home;
 use App\Models\OperatorRequest;
-use App\Notifications\OperatorRequestCreated;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Notification;
 
 class RequestController extends Controller
 {
@@ -23,9 +21,6 @@ class RequestController extends Controller
         ]);
 
         if ($ope->wasRecentlyCreated) {
-            Notification::route('mail', config('mail.contact.to'))
-                ->notify(new OperatorRequestCreated($ope));
-
             return back()->banner($home->name.'の事業者として申請しました。');
         }
 
