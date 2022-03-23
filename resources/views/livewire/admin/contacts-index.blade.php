@@ -16,7 +16,8 @@
                 </tr>
                 <tr>
                     <th>メール</th>
-                    <td>{{ $contact->email }}</td>
+                    <td><a href="mailto:{{ $contact->email }}"
+                           class="text-indigo-500 dark:text-white hover:underline">{{ $contact->email }}</a></td>
                 </tr>
                 <tr>
                     <th>本文</th>
