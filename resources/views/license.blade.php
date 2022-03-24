@@ -11,6 +11,5 @@
                 {!! Str::markdown(File::get(resource_path('markdown/license.md'))) !!}
             </div>
         </div>
-
     </div>
 </x-main-layout>

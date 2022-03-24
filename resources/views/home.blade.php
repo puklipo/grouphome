@@ -11,10 +11,6 @@
         </x-ogp>
     </x-slot>
 
-    <x-slot name="side">
-
-    </x-slot>
-
     <div class="py-6">
         <div class="sm:px-6 lg:px-8">
             <x-breadcrumbs-back/>
