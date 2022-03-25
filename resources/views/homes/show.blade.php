@@ -97,6 +97,8 @@
                 @include('homes.related')
 
                 @include('homes.operator')
+
+                @include('homes.mail')
             </div>
 
         </div>
