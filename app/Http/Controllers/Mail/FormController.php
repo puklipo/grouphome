@@ -6,12 +6,16 @@ use App\Http\Controllers\Controller;
 use App\Models\Home;
 use Illuminate\Http\Request;
 
-class PrepareController extends Controller
+class FormController extends Controller
 {
     public function __invoke(Request $request, Home $home)
     {
+        abort_if($request->missing('mail'), 403);
+
         abort_if($home->users()->doesntExist(), 403, $home->name.__('はグループホーム事業者が登録してないので問い合わせできません。'));
 
-        return view('homes.mail.prepare')->with(compact('home'));
+        $mail = $request->input('mail');
+
+        return view('homes.mail.form')->with(compact('home', 'mail'));
     }
 }

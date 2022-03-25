@@ -2,15 +2,17 @@
     <div
         class="flex flex-row space-x-4 fixed bottom-5 right-5 bg-gray-500 p-6 bg-opacity-40 shadow-lg rounded-md print:hidden">
 
-        <div class="text-lg bg-red-500 text-white p-3 font-bold shadow-lg rounded-lg hidden">
-            <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
-                     stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-                </svg>
-                メールで問い合わせる</a>
-        </div>
+        @if($home->users()->exists())
+            <div class="text-lg bg-emerald-500 text-white p-3 font-bold shadow-lg rounded-lg hidde">
+                <a href="{{ route('home.mail.prepare', $home) }}">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                    </svg>
+                    メールで問い合わせる</a>
+            </div>
+        @endif
 
         @isset($home->tel)
             <div class="text-lg bg-orange-500 text-white p-3 font-bold shadow-lg rounded-lg">
