@@ -1,5 +1,5 @@
 @auth
-    <div class="mt-6">
+    <div class="mt-6 print:hidden">
         <x-box-edit>
             <x-slot name="title">
                 事業者用
