@@ -1,5 +1,5 @@
 @guest
-    @if($home->users()->count() === 0)
+    @if($home->users()->doesntExist())
         <div class="print:hidden">
             <div class="mt-6">
             <span class="bg-red-500 text-white px-3 py-1 font-bold">
