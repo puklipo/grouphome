@@ -60,7 +60,7 @@
                     日中サービス支援型なら日中もグループホームに滞在が可能なはずです。例えばA型・B型が在宅ワーク可能でも「介護サービス包括型」では外出を強制されて在宅ワークができないかもしれない。在宅ワークしたい場合は「日中サービス支援型」を探しましょう。</p>
 
                 <h2>グループホームに問い合わせる</h2>
-                <div><img src="{{ asset('images/help/mail1.png') }}" class="w-1/2 shadow rounded-md" alt="問い合わせる">
+                <div><img src="{{ asset('images/help/mail1.png') }}" class="w-auto sm:w-1/2 shadow rounded-md" alt="問い合わせる">
                 </div>
 
                 <h3>メールで問い合わせ</h3>
@@ -68,12 +68,12 @@
                 <ol>
                     <li>グループホームのページから「メールで問い合わせる」を選択。</li>
                     <li>メールアドレスの入力ミスを防ぐため、最初に自分のメールアドレスを入力します。入力したメール宛に問い合わせフォームのURLが送られるので正しいメールアドレスを入力したことが確認されます。
-                        <img src="{{ asset('images/help/mail2.png') }}" class="w-1/2 shadow rounded-md"
+                        <img src="{{ asset('images/help/mail2.png') }}" class="w-auto sm:w-1/2 shadow rounded-md"
                              alt="メールアドレスを入力">
-                        <img src="{{ asset('images/help/mail3.png') }}" class="w-1/2 shadow rounded-md" alt="メール">
+                        <img src="{{ asset('images/help/mail3.png') }}" class="w-auto sm:w-1/2 shadow rounded-md" alt="メール">
                     </li>
                     <li>届いた問い合わせフォームから送信してください。
-                        <img src="{{ asset('images/help/mail4.png') }}" class="w-1/2 shadow rounded-md"
+                        <img src="{{ asset('images/help/mail4.png') }}" class="w-auto sm:w-1/2 shadow rounded-md"
                              alt="お問い合わせフォーム"></li>
                 </ol>
 
