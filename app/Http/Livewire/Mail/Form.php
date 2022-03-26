@@ -30,7 +30,14 @@ class Form extends Component
 
         Notification::send(
             $this->home->users,
-            new HomeMailNotification($this->name, $this->email, $this->tel, $this->subject, $this->body)
+            new HomeMailNotification(
+                home: $this->home,
+                name: $this->name,
+                email: $this->email,
+                tel: $this->tel,
+                subject: $this->subject,
+                body: $this->body
+            )
         );
 
         session()->flash('mail_success', true);

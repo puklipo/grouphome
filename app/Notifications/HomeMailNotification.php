@@ -2,6 +2,7 @@
 
 namespace App\Notifications;
 
+use App\Models\Home;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -17,6 +18,7 @@ class HomeMailNotification extends Notification implements ShouldQueue
      * @return void
      */
     public function __construct(
+        public Home $home,
         public string $name = '',
         public string $email = '',
         public string $tel = '',
@@ -46,7 +48,7 @@ class HomeMailNotification extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject('【'.config('app.name').'】'.$this->name.__('さんからのお問い合わせ'))
+            ->subject('【'.$this->home->name.'】'.$this->name.__('さんからのお問い合わせ'))
             ->from($this->email, $this->name)
             ->greeting('【'.$this->subject.'】'.$this->name.__('さんからのお問い合わせ'))
             ->line($this->body)
