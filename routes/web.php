@@ -29,10 +29,11 @@ Route::resource('home', HomeController::class)
      ->only(['index', 'show']);
 
 Route::get('home/{home}/prepare', PrepareController::class)
-    ->name('home.mail.prepare');
+     ->name('home.mail.prepare');
 
 Route::get('home/{home}/mail', FormController::class)
-     ->name('home.mail.form');
+     ->name('home.mail.form')
+     ->middleware('signed');
 
 Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 

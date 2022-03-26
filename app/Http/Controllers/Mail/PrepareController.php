@@ -10,7 +10,10 @@ class PrepareController extends Controller
 {
     public function __invoke(Request $request, Home $home)
     {
-        abort_if($home->users()->doesntExist(), 403, $home->name.__('はグループホーム事業者が登録してないので問い合わせできません。'));
+        if ($home->users()->doesntExist()) {
+            return to_route('home.show', $home)
+                ->dangerBanner($home->name.__('はグループホーム事業者が登録してないので問い合わせできません。'));
+        }
 
         return view('homes.mail.prepare')->with(compact('home'));
     }
