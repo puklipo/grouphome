@@ -50,7 +50,7 @@ class HomeMailNotification extends Notification implements ShouldQueue
             ->from($this->email, $this->name)
             ->greeting('【'.$this->subject.'】'.$this->name.__('さんからのお問い合わせ'))
             ->line($this->body)
-            ->line(__('メール：').$this->email.' '.__('電話番号：').$this->tel)
+            ->line(__('【メール】').$this->email.' '.__('【電話番号】').$this->tel)
             ->salutation(__('このメールに返信はできないのでお問い合わせへの対応は新規メールを送信してください。'));
     }
 
