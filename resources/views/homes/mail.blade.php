@@ -4,7 +4,7 @@
 
         @if($home->users()->exists())
             <div class="text-lg bg-emerald-500 text-white p-3 font-bold shadow-lg rounded-lg hidde">
-                <a href="{{ route('home.mail.prepare', $home) }}">
+                <a href="{{ route('home.mail.prepare', $home) }}" rel="nofollow">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round"
