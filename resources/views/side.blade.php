@@ -1,5 +1,5 @@
 <aside
-    class="w-full sm:w-64 flex-none sm:min-h-screen sm:order-first order-last p-5 sm:border-r bg-indigo-50 dark:bg-black dark:text-white">
+    class="w-full sm:w-64 flex-none sm:min-h-screen sm:order-first order-last p-5 sm:border-r bg-indigo-50 dark:bg-black dark:text-white print:hidden">
     <h1 class="font-semibold text-xl text-gray-800 leading-tight mb-5 dark:text-white">
         <a href="{{ url('/') }}">
             {{ config('app.name', 'Laravel') }}

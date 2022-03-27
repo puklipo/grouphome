@@ -1,4 +1,4 @@
-<div>
+<div class="print:hidden">
     @can('admin')
         <x-box-edit>
             <x-slot name="title">

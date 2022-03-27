@@ -23,16 +23,17 @@
                     <li>管理するグループホームを検索。</li>
                     <li>
                         グループホームのページの一番下に「管理事業者として申請」ボタンがあるので申請。
-                        <img src="{{ asset('images/help/ope1.png') }}" class="w-auto shadow rounded-md" alt="申請ボタン">
+                        <img src="{{ asset('images/help/ope1.png') }}" class="w-auto sm:w-1/2 shadow rounded-md" alt="申請ボタン">
                     </li>
                     <li>承認後管理できるようになりますのでしばらくお待ちください。</li>
                     <li>一つのグループホームに対して複数のユーザーが管理事業者になることもできます。事業者内でユーザーアカウントを共有したくない場合は複数のユーザーを作成してください。</li>
+                    <li>管理事業者として承認されたら利用者からの「メールで問い合わせ」機能が使用可能になります。登録したメールアドレスがお問い合わせの送信先です。複数ユーザーの場合はすべてのユーザーにメールが送信されます。メールアドレスを変更するには<a href="{{ route('profile.show') }}">プロフィールページ</a>から変更してください。</li>
                 </ol>
 
                 <h2>ダッシュボード</h2>
                 <ol>
                     <li>管理事業者として承認されたグループホームはダッシュボードの管理グループホーム一覧に表示されます。
-                        <img src="{{ asset('images/help/ope2.png') }}" class="w-auto shadow rounded-md" alt="ダッシュボード">
+                        <img src="{{ asset('images/help/ope2.png') }}" class="w-auto sm:w-1/2 shadow rounded-md" alt="ダッシュボード">
                     </li>
                 </ol>
 

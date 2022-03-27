@@ -4,6 +4,8 @@ use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Mail\FormController;
+use App\Http\Controllers\Mail\PrepareController;
 use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefController;
@@ -25,6 +27,13 @@ Route::view(uri: '/', view: 'home')->name('index');
 
 Route::resource('home', HomeController::class)
      ->only(['index', 'show']);
+
+Route::get('home/{home}/prepare', PrepareController::class)
+     ->name('home.mail.prepare');
+
+Route::get('home/{home}/mail', FormController::class)
+     ->name('home.mail.form')
+     ->middleware('signed');
 
 Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 

@@ -71,6 +71,7 @@ return [
             ...Octane::prepareApplicationForNextOperation(),
             ...Octane::prepareApplicationForNextRequest(),
             //
+            \App\Listeners\FlushPagination::class,
         ],
 
         RequestHandled::class => [
