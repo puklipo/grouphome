@@ -1,0 +1,34 @@
+.map
+{
+  width: 600px;
+  max-width: 95%;
+  height: auto;
+  margin: 16px auto;
+  border: 1px solid #555555;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.geolonia-svg-map
+{
+  width: 100%;
+}
+
+.geolonia-svg-map .prefecture
+{
+  fill: #f7f7f7;
+  stroke: #666666;
+  cursor: pointer;
+}
+
+.geolonia-svg-map .boundary-line
+{
+  stroke: #999999;
+}
+
+.forkme
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
