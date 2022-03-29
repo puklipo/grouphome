@@ -7,11 +7,11 @@
     </h1>
 
     <div class="my-6">
-        @include('search.simple')
+        @includeIf('search.simple')
     </div>
 
     <div class="my-6">
-        @include('side.prefs')
+        @includeIf('side.prefs')
     </div>
 
     @if (isset($side))
