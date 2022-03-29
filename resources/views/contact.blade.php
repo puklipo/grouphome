@@ -32,6 +32,8 @@
                 @endcan
             </ul>
 
+            <div class="my-3 text-red-500 font-bold">ここは当サイトへの問い合わせ用フォームです。グループホームへの問い合わせは各グループホームのページから電話かメールで問い合わせてください。</div>
+
             <livewire:contact-form/>
         </div>
     </div>
