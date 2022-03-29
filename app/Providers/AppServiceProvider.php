@@ -27,6 +27,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         View::composer('side', SideComposer::class);
-        View::composer('search.*', SearchComposer::class);
+        View::composer('search.simple', SearchComposer::class);
     }
 }

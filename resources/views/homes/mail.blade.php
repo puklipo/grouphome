@@ -1,9 +1,9 @@
 <div class="relative">
     <div
-        class="flex flex-row space-x-4 fixed bottom-5 right-1 sm:right-5 bg-gray-500 p-6 bg-opacity-40 shadow-lg rounded-md print:hidden">
+        class="flex flex-row space-x-4 fixed bottom-5 right-1 sm:right-5 bg-gray-500 p-6 bg-opacity-30 shadow-lg rounded-md print:hidden">
 
         @if($home->users()->exists())
-            <div class="text-lg bg-emerald-500 text-white p-3 font-bold shadow-lg rounded-lg hidde">
+            <div class="text-lg bg-emerald-500 text-white p-3 font-bold shadow-lg rounded-lg">
                 <a href="{{ route('home.mail.prepare', $home) }}" rel="nofollow">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
                          stroke="currentColor" stroke-width="2">

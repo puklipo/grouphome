@@ -81,12 +81,10 @@ class DetailSearch extends Component
     {
         return view('livewire.detail-search')->with([
             'homes' => Home::with(['pref', 'type', 'photo', 'cost'])
-                           ->when(filled($this->pref_id), function (Builder $query) {
-                               $query->where('pref_id', $this->pref_id);
-                           })
-                           ->when(filled($this->area), function (Builder $query) {
-                               $query->where('area', $this->area);
-                           })
+                           ->when(filled($this->pref_id),
+                               fn (Builder $query) => $query->where('pref_id', $this->pref_id))
+                           ->when(filled($this->area),
+                               fn (Builder $query) => $query->where('area', $this->area))
                            ->where($this->levels(...))
                            ->where($this->types(...))
                            ->where($this->facility(...))
@@ -147,9 +145,7 @@ class DetailSearch extends Component
     {
         foreach ($this->facilities as $facility => $enable) {
             if ($enable && Arr::exists(config('facility'), $facility)) {
-                $query->whereHas('facility', function (Builder $query) use ($facility) {
-                    $query->where($facility, true);
-                });
+                $query->whereHas('facility', fn (Builder $query) => $query->where($facility, true));
             }
         }
     }
@@ -164,9 +160,7 @@ class DetailSearch extends Component
     {
         foreach ($this->equipments as $equipment => $enable) {
             if ($enable && Arr::exists(config('equipment'), $equipment)) {
-                $query->whereHas('equipment', function (Builder $query) use ($equipment) {
-                    $query->where($equipment, true);
-                });
+                $query->whereHas('equipment', fn (Builder $query) => $query->where($equipment, true));
             }
         }
     }
