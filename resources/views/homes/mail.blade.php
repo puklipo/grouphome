@@ -5,7 +5,7 @@
         @if($home->users()->exists())
             <div class="text-lg bg-emerald-500 text-white p-3 font-bold shadow-lg rounded-lg">
                 <a href="{{ route('home.mail.prepare', $home) }}" rel="nofollow">
-                    <x-icon.mail/>
+                    <x-icon.mail class="inline"/>
                     メールで問い合わせる</a>
             </div>
         @endif
@@ -13,7 +13,7 @@
         @isset($home->tel)
             <div class="text-lg bg-orange-500 text-white p-3 font-bold shadow-lg rounded-lg">
                 <a href="tel:{{ $home->tel }}">
-                    <x-icon.phone/>
+                    <x-icon.phone class="inline"/>
                     電話で問い合わせる</a>
             </div>
         @endisset
