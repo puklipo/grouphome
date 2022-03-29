@@ -15,6 +15,8 @@
         <div class="sm:px-6 lg:px-8">
             <x-breadcrumbs-back/>
 
+            @includeIf('map')
+
             <div class="p-3 bg-indigo-50 dark:bg-black sm:hidden print:hidden">
                 @include('search.simple')
             </div>
