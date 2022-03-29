@@ -1,20 +1,9 @@
-//https://github.com/geolonia/japanese-prefectures
+require('svg-japan')
 
-const prefs = document.querySelectorAll('.geolonia-svg-map .prefecture')
-
-prefs.forEach((pref) => {
-    // マウスオーバーで色を変える
-    pref.addEventListener('mouseover', (event) => {
-        event.currentTarget.style.fill = "#3b82f6"
+document.addEventListener( 'DOMContentLoaded', function() {
+    svgJapan({
+        element: "#map",
+        type: "deform",
+        regionality: true,
     })
-
-    // マウスが離れたら色をもとに戻す
-    pref.addEventListener('mouseleave', (event) => {
-        event.currentTarget.style.fill = ""
-    })
-
-    // マウスクリック時のイベント
-    pref.addEventListener('click', (event) => {
-        location.href = `/pref/${event.currentTarget.dataset.code}`
-    })
-})
+}, false)
