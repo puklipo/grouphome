@@ -14,9 +14,9 @@
         @includeIf('side.prefs')
     </div>
 
-    @if (isset($side))
+    @isset($side)
         {{ $side }}
-    @endif
+    @endisset
 
     <div class="my-6">
         <ul class="space-y-1">
