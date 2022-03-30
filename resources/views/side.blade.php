@@ -6,6 +6,15 @@
         </a>
     </h1>
 
+    @can('admin')
+        <div class="my-3">
+            <a href="{{ route('admin') }}"
+               class="font-bold text-red-500 hover:underline">
+                {{ __('管理画面') }}
+            </a>
+        </div>
+    @endcan
+
     <div class="my-6">
         @includeIf('search.simple')
     </div>
@@ -50,15 +59,6 @@
     </div>
 
     @includeIf('side.qr')
-
-    @can('admin')
-        <div class="my-6">
-            <a href="{{ route('admin') }}"
-               class="font-bold text-red-500 hover:underline">
-                {{ __('管理画面') }}
-            </a>
-        </div>
-    @endcan
 
     <footer class="mt-10 p-1 border-t">
         <small class="text-sm">
