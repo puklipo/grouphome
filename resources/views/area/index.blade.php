@@ -47,7 +47,9 @@
                             {{ $prefs->find($pref)->name }}
                         </a>
 
-                        <a href="#index" class="text-indigo-500 dark:text-white hover:underline">⤴️</a>
+                        <a href="#index" class="text-gray-500">
+                            <x-icon.arrow-up class="inline"/>
+                        </a>
                     </h2>
 
                     <ul class="ml-6 list-disc">
