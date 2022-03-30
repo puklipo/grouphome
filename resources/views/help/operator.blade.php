@@ -5,12 +5,13 @@
 
     <div class="py-6">
 
-        <x-breadcrumbs-back/>
-
         <div class="px-6 lg:px-8">
-            <h1 class="text-4xl my-10">{{ __('グループホーム事業者向けの使い方') }}</h1>
 
-            <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none">
+            <x-breadcrumbs-back/>
+
+            <h1 class="text-4xl my-10 px-3">{{ __('グループホーム事業者向けの使い方') }}</h1>
+
+            <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none px-3">
 
                 <h2>事業者向け有料サービス</h2>
                 <div>事業者向けのグループホームの詳細情報を入力する機能は有料で提供しています。事前に運営会社まで<a href="{{ route('contact') }}">連絡</a>してください。</div>
