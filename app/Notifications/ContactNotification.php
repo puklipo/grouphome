@@ -7,6 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\URL;
 use Revolution\Line\Notifications\LineNotifyChannel;
 use Revolution\Line\Notifications\LineNotifyMessage;
 
@@ -20,6 +21,7 @@ class ContactNotification extends Notification implements ShouldQueue
      * @return void
      */
     public function __construct(
+        public int $contact,
         public string $name = '',
         public string $email = '',
         public string $body = ''
@@ -66,7 +68,8 @@ class ContactNotification extends Notification implements ShouldQueue
      */
     public function toLineNotify($notifiable)
     {
-        return LineNotifyMessage::create('問い合わせがありました。');
+        return LineNotifyMessage::create('問い合わせがありました。'.PHP_EOL.
+            URL::temporarySignedRoute('contact.preview', now()->addDay(), $this->contact));
     }
 
     /**

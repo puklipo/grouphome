@@ -19,7 +19,7 @@ class Contact extends Model
         static::created(function ($contact) {
             Notification::route('mail', config('mail.contact.to'))
                         ->route('line-notify', config('line.notify.personal_access_token'))
-                        ->notify(new ContactNotification($contact->name, $contact->email, $contact->body));
+                        ->notify(new ContactNotification($contact->id, $contact->name, $contact->email, $contact->body));
         });
     }
 }
