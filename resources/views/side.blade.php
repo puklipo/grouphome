@@ -10,7 +10,7 @@
         <div class="my-3">
             <a href="{{ route('admin') }}"
                class="font-bold text-red-500 hover:underline">
-                {{ __('管理画面') }}
+                <x-icon.lock class="inline"></x-icon.lock>{{ __('管理画面') }}
             </a>
         </div>
     @endcan

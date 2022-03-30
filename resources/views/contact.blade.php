@@ -27,7 +27,7 @@
                 @can('admin')
                     <li>
                         <a href="{{ route('admin.contacts') }}"
-                           class="font-bold text-red-500 hover:underline">{{ __('お問い合わせ一覧') }}</a>
+                           class="font-bold text-red-500 hover:underline"><x-icon.lock class="inline"></x-icon.lock>{{ __('お問い合わせ一覧') }}</a>
                     </li>
                 @endcan
             </ul>
