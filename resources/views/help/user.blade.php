@@ -4,6 +4,9 @@
     </x-slot>
 
     <div class="py-6">
+
+        <x-breadcrumbs-back/>
+
         <div class="px-6 lg:px-8">
             <h1 class="text-4xl my-10">{{ __('利用者向けの使い方') }}</h1>
 
