@@ -12,7 +12,3 @@ document.addEventListener( 'DOMContentLoaded', function() {
         height: '100%'
     })
 }, false)
-
-document.addEventListener('svgmap.click', function(event) {
-    location.href = event.target.id.replace('-', '/')
-}, false)

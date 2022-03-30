@@ -28,6 +28,9 @@
             <div class="p-3">
 
                 <div id="index">
+
+                    @includeIf('map')
+
                     @foreach($prefs as $pref)
                         <a href="#{{ $pref->name }}"
                            class="text-indigo-500 dark:text-white hover:underline">
@@ -62,4 +65,13 @@
 
         </div>
     </div>
+
+    @pushOnce('scripts')
+    <script>
+        document.addEventListener('svgmap.click', function (event) {
+            location.hash = event.target.getAttribute('data-name')
+        }, false)
+    </script>
+    @endPushOnce
+
 </x-main-layout>
