@@ -2,6 +2,7 @@
 
 namespace App\Notifications;
 
+use App\Models\Contact;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
@@ -21,10 +22,7 @@ class ContactNotification extends Notification implements ShouldQueue
      * @return void
      */
     public function __construct(
-        public int $contact,
-        public string $name = '',
-        public string $email = '',
-        public string $body = ''
+        protected Contact $contact
     ) {
         //
     }
@@ -54,11 +52,11 @@ class ContactNotification extends Notification implements ShouldQueue
     {
         return (new MailMessage)
             ->subject('【'.config('app.name').'】お問い合わせ')
-            ->from($this->email, $this->name)
-            ->greeting(__('名前：').$this->name)
-            ->line($this->body)
+            ->from($this->contact->email, $this->contact->name)
+            ->greeting(__('名前：').$this->contact->name)
+            ->line($this->contact->body)
             ->action(__('問い合わせを確認'), route('admin.contacts'))
-            ->line($this->email)
+            ->line($this->contact->email)
             ->salutation(__('このメールに返信はできないので問い合わせへの対応は新規メールを送信してください。'));
     }
 
