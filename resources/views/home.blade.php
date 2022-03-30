@@ -24,9 +24,9 @@
             </script>
             @endPushOnce
 
-{{--            <div class="p-3 bg-indigo-50 dark:bg-black sm:hidden print:hidden">--}}
-{{--                @include('search.simple')--}}
-{{--            </div>--}}
+            <div class="p-3 sm:hidden print:hidden">
+                @includeIf('mobile-menu')
+            </div>
 
             <livewire:home-index></livewire:home-index>
 
