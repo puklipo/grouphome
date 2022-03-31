@@ -40,7 +40,7 @@
                 </div>
 
                 @foreach($areas as $pref => $homes)
-                    <h2 class="text-2xl my-3 font-bold">
+                    <h2 class="text-2xl my-3">
                         <a href="{{ route('pref', $prefs->find($pref)) }}"
                            id="{{ $prefs->find($pref)->name }}"
                            class="dark:text-white hover:underline">
