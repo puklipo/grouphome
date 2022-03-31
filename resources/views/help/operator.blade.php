@@ -5,7 +5,7 @@
 
     <div class="py-6">
 
-        <div class="px-6 lg:px-8">
+        <div class="sm:px-6 lg:px-8">
 
             <x-breadcrumbs-back/>
 
