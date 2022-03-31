@@ -43,7 +43,7 @@
                     <h2 class="text-2xl my-3">
                         <a href="{{ route('pref', $prefs->find($pref)) }}"
                            id="{{ $prefs->find($pref)->name }}"
-                           class="dark:text-white hover:underline">
+                           class="text-gray-500 dark:text-white hover:underline tracking-widest">
                             {{ $prefs->find($pref)->name }}
                         </a>
 
