@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.216.4",
+            "version": "3.217.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "fd16bb2ecc4e1a47b145163d0bd7744c4578656d"
+                "reference": "a8cca383b13fe6cde479a4745b4d3dfe893fdc69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fd16bb2ecc4e1a47b145163d0bd7744c4578656d",
-                "reference": "fd16bb2ecc4e1a47b145163d0bd7744c4578656d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a8cca383b13fe6cde479a4745b4d3dfe893fdc69",
+                "reference": "a8cca383b13fe6cde479a4745b4d3dfe893fdc69",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.217.0"
             },
-            "time": "2022-03-29T18:29:23+00:00"
+            "time": "2022-03-30T18:18:30+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1869,16 +1869,16 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v2.7.0",
+            "version": "v2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "45e16bfc79baa6708bd7a799694afea09234c37e"
+                "reference": "2c3c9c57053da665a45bb02060367144ac7588a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/45e16bfc79baa6708bd7a799694afea09234c37e",
-                "reference": "45e16bfc79baa6708bd7a799694afea09234c37e",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/2c3c9c57053da665a45bb02060367144ac7588a6",
+                "reference": "2c3c9c57053da665a45bb02060367144ac7588a6",
                 "shasum": ""
             },
             "require": {
@@ -1931,7 +1931,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2022-03-29T14:57:24+00:00"
+            "time": "2022-03-30T14:56:45+00:00"
         },
         {
             "name": "laravel/octane",
