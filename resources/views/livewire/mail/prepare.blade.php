@@ -1,4 +1,4 @@
-<div class="w-full sm:max-w-xl mt-6 px-6 py-4 bg-white dark:bg-black shadow-md overflow-hidden sm:rounded-lg"
+<div class="w-full sm:max-w-xl mt-6 px-6 py-4 bg-white dark:bg-gray-900 shadow-md overflow-hidden sm:rounded-lg"
 >
     @if(session()->missing('mail_success'))
 
