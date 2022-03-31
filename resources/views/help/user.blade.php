@@ -3,15 +3,19 @@
         {{ __('利用者向けの使い方') }}
     </x-slot>
 
+    <x-slot name="header">
+        <h1 class="font-semibold text-xl leading-tight">
+            {{ __('利用者向けの使い方') }}
+        </h1>
+    </x-slot>
+
     <div class="py-6">
 
         <div class="sm:px-6 lg:px-8">
 
             <x-breadcrumbs-back/>
 
-            <h1 class="text-4xl my-10 px-3">{{ __('利用者向けの使い方') }}</h1>
-
-            <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none px-3">
+            <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none p-3">
 
                 <h2>グループホーム（共同生活援助）とは</h2>
                 <p>障害福祉サービスのひとつ。多少の支援があれば自立して生活できる人のための住居サービス。</p>
