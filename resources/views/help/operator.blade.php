@@ -3,11 +3,19 @@
         {{ __('グループホーム事業者向けの使い方') }}
     </x-slot>
 
-    <div class="py-6">
-        <div class="px-6 lg:px-8">
-            <h1 class="text-4xl my-10">{{ __('グループホーム事業者向けの使い方') }}</h1>
+    <x-slot name="header">
+        <h1 class="font-semibold text-xl leading-tight">
+            {{ __('グループホーム事業者向けの使い方') }}
+        </h1>
+    </x-slot>
 
-            <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none">
+    <div class="py-6">
+
+        <div class="sm:px-6 lg:px-8">
+
+            <x-breadcrumbs-back/>
+
+            <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none p-3">
 
                 <h2>事業者向け有料サービス</h2>
                 <div>事業者向けのグループホームの詳細情報を入力する機能は有料で提供しています。事前に運営会社まで<a href="{{ route('contact') }}">連絡</a>してください。</div>

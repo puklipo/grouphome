@@ -11,7 +11,7 @@
 
     <div class="py-3">
         <div class="sm:px-6 lg:px-8">
-            <ul class="flex flex-row space-x-2">
+            <ul class="flex flex-row space-x-2 px-3">
                 <li>
                     <a href="{{ route('help.user') }}"
                        class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用者向け使い方') }}</a>
@@ -27,7 +27,7 @@
                 @can('admin')
                     <li>
                         <a href="{{ route('admin.contacts') }}"
-                           class="font-bold text-red-500 hover:underline">{{ __('お問い合わせ一覧') }}</a>
+                           class="font-bold text-red-500 hover:underline"><x-icon.lock class="inline"></x-icon.lock>{{ __('お問い合わせ一覧') }}</a>
                     </li>
                 @endcan
             </ul>

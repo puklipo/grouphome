@@ -4,8 +4,8 @@
     </x-slot>
 
     <x-slot name="header">
-        <h2 class="font-semibold text-xl leading-tight">
-            {{ __('管理者メニュー') }}
+        <h2 class="text-red-500 font-semibold text-xl leading-tight">
+            <x-icon.lock class="inline"></x-icon.lock>{{ __('管理者メニュー') }}
         </h2>
     </x-slot>
 

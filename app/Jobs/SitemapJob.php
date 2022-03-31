@@ -3,6 +3,7 @@
 namespace App\Jobs;
 
 use App\Models\Home;
+use App\Models\Pref;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldBeUnique;
 use Illuminate\Contracts\Queue\ShouldQueue;
@@ -41,6 +42,12 @@ class SitemapJob implements ShouldQueue
                           ->add(Url::create(route('help.user')))
                           ->add(Url::create(route('help.operator')))
                           ->add(Url::create(route('license')));
+
+        Pref::oldest('id')->lazy()->each(function (Pref $pref) use ($sitemap) {
+            $sitemap->add(
+                Url::create(route('pref', $pref))
+            );
+        });
 
         Home::latest('updated_at')->lazy()->each(function (Home $home) use ($sitemap) {
             $sitemap->add(

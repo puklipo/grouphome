@@ -4,8 +4,8 @@
     </x-slot>
 
     <x-slot name="header">
-        <h2 class="font-semibold text-xl leading-tight">
-            {{ __('事業者申請') }}
+        <h2 class="text-red-500 font-semibold text-xl leading-tight">
+            <x-icon.lock class="inline"></x-icon.lock>{{ __('事業者申請') }}
         </h2>
     </x-slot>
 

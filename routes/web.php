@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactPreviewController;
 use App\Http\Controllers\Admin\OperatorHomeController;
 use App\Http\Controllers\Admin\OperatorRequestController;
 use App\Http\Controllers\AreaIndexController;
@@ -62,6 +63,10 @@ Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->g
              Route::delete('/{user}/{home}', 'destroy')->name('destroy');
          });
 });
+
+Route::get('contact/preview/{contact}', ContactPreviewController::class)
+     ->name('contact.preview')
+     ->middleware('signed');
 
 Route::get('sitemap', SitemapController::class)->name('sitemap');
 

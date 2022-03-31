@@ -16,9 +16,16 @@
             <x-breadcrumbs-back/>
 
             @includeIf('map')
+            @pushOnce('scripts')
+            <script>
+                document.addEventListener('svgmap.click', function(event) {
+                    location.href = event.target.id.replace('-', '/')
+                }, false)
+            </script>
+            @endPushOnce
 
-            <div class="p-3 bg-indigo-50 dark:bg-black sm:hidden print:hidden">
-                @include('search.simple')
+            <div class="p-3 sm:hidden print:hidden">
+                @includeIf('mobile-menu')
             </div>
 
             <livewire:home-index></livewire:home-index>
