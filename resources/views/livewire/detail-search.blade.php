@@ -1,5 +1,5 @@
 <div>
-    <div class="border-4 border-gray-500 p-3 m-3">
+    <div class="border-0 border-gray-500 p-3 m-3">
         <h2 class="text-4xl font-bold my-3">詳細検索</h2>
 
         <x-search.help>検索条件を変更するとすぐに表示が変わります。</x-search.help>
