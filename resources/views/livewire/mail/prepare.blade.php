@@ -5,8 +5,8 @@
         <x-jet-validation-errors class="mb-4"/>
 
         <form wire:submit.prevent="sendmail">
-            <p class="mb-2 text-lg text-red-500 dark:text-gray-300">
-                メールアドレスの入力ミスを防ぐため、最初にあなたのメールアドレスを入力してください。問い合わせフォームはメールで送られます。</p>
+            <p class="mb-2 text-lg text-red-500">
+                メールアドレスの入力ミスを防ぐため、最初にあなたのメールアドレスを入力してください。問い合わせフォームはメールで届きます。</p>
 
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Email') }}"/>

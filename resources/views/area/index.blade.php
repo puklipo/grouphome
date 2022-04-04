@@ -43,7 +43,7 @@
                     <h2 class="text-2xl my-3">
                         <a href="{{ route('pref', $prefs->find($pref)) }}"
                            id="{{ $prefs->find($pref)->name }}"
-                           class="dark:text-white hover:underline">
+                           class="text-gray-500 dark:text-white hover:underline tracking-widest">
                             {{ $prefs->find($pref)->name }}
                         </a>
 
@@ -54,7 +54,7 @@
 
                     <ul class="ml-6 list-disc">
                         @foreach($homes->sortByDesc('area_count') as $home)
-                            <li>
+                            <li class="text-gray-300">
                                 <a href="{{ route('pref', [$home->pref, $home->area]) }}"
                                    class="text-xl text-indigo-500 dark:text-white hover:underline">
                                     {{ $home->area }} [{{ $home->area_count }}]
