@@ -42,15 +42,15 @@ Route::get('area', AreaIndexController::class)->name('area.index');
 
 Route::view(uri: 'history', view: 'history')->name('history');
 
-Route::middleware(['auth:sanctum', 'verified'])
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])
      ->get('/dashboard', DashboardController::class)
      ->name('dashboard');
 
-Route::prefix('operator')->middleware(['auth:sanctum', 'verified'])->group(function () {
+Route::prefix('operator')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::post('request/{home}', RequestController::class)->name('operator.request');
 });
 
-Route::prefix('admin')->middleware(['auth:sanctum', 'verified', 'can:admin'])->group(function () {
+Route::prefix('admin')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'can:admin'])->group(function () {
     Route::view(uri: '/', view: 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
     Route::view('contacts', 'admin.contacts')->name('admin.contacts');
