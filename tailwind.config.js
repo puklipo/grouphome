@@ -16,6 +16,7 @@ module.exports = {
             },
             colors: {
                 indigo: colors.blue,
+                gray: colors.slate,
             }
         },
     },
