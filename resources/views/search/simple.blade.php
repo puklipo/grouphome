@@ -40,6 +40,6 @@
 
     <button type="submit"
             class="inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-md text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition min-w-max w-full mt-3"
-            title="検索">検索
+            title="検索"><x-icon.search class="inline stroke-1"></x-icon.search>検索
     </button>
 </form>
