@@ -12,7 +12,7 @@
     </x-box-header>
 
     <x-box class="p-3 flex flex-wrap">
-        <x-rounded-tag>
+        <x-rounded-tag :enabled="true">
             @if($home->level > 0)
                 区分 {{ $home->level }} 以上
             @else

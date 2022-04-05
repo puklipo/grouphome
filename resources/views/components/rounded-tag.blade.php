@@ -1,4 +1,4 @@
-@props(['enabled' => true])
+@props(['enabled' => false])
 
 @if($enabled)
     <span {{ $attributes->class(['text-md bg-indigo-500 dark:bg-gray-700 ring-1 ring-indigo-500 dark:ring-gray-700 text-white rounded-full px-3 py-1 m-1 print:text-indigo-500 print:bg-white print:font-bold']) }} title="{{ $slot }}">{{ $slot }}</span>
