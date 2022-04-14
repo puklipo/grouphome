@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47acdee03606c6da2aad60cae322cd3a",
+    "content-hash": "85620e0d10bb00e8e5772f8d6a45219e",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4409,47 +4409,6 @@
             "time": "2021-12-04T23:24:31+00:00"
         },
         {
-            "name": "pop-culture-studio/laravel-vapor-gzip",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
-                "reference": "bf492e6df70a13f40a16ba2dcf2513ff29f14fa2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/bf492e6df70a13f40a16ba2dcf2513ff29f14fa2",
-                "reference": "bf492e6df70a13f40a16ba2dcf2513ff29f14fa2",
-                "shasum": ""
-            },
-            "require": {
-                "ext-zlib": "*",
-                "illuminate/http": "^9.0",
-                "php": "^8.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PopCultureStudio\\Vapor\\Middleware\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Gzip Response middleware for Laravel Vapor",
-            "keywords": [
-                "gzip",
-                "laravel",
-                "vapor"
-            ],
-            "support": {
-                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/main",
-                "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues"
-            },
-            "time": "2022-04-14T03:33:47+00:00"
-        },
-        {
             "name": "pragmarx/google2fa",
             "version": "8.0.0",
             "source": {
@@ -4942,6 +4901,47 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.11.2"
             },
             "time": "2022-02-28T15:28:54+00:00"
+        },
+        {
+            "name": "puklipo/laravel-vapor-gzip",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
+                "reference": "45850e50b0fb16156372da212c3995d114db7b12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/45850e50b0fb16156372da212c3995d114db7b12",
+                "reference": "45850e50b0fb16156372da212c3995d114db7b12",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zlib": "*",
+                "illuminate/http": "^9.0",
+                "php": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Puklipo\\Vapor\\Middleware\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Gzip Response middleware for Laravel Vapor",
+            "keywords": [
+                "gzip",
+                "laravel",
+                "vapor"
+            ],
+            "support": {
+                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/main",
+                "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues"
+            },
+            "time": "2022-04-14T05:21:32+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -11772,7 +11772,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "pop-culture-studio/laravel-vapor-gzip": 20
+        "puklipo/laravel-vapor-gzip": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
