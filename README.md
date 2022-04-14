@@ -5,7 +5,7 @@
 https://grouphome.guide/
 
 ## 元データ
-WAMのオープンデータCSVファイルが基本情報。[CSV](./storage/wam.csv)からインポート。  
+WAMのオープンデータCSVファイルが基本情報。[CSV](./resources/csv/wam.csv)からインポート。  
 変更方法はダウンロードしたCSVファイルを`wam.csv`という名前にしてそのまま上書き。  
 https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/
 
@@ -25,7 +25,7 @@ WAMのCSVファイルは半年ごとの更新。新規グループホームは`w
 【グループホームのURL：省略可】
 ```
 
-[CSV](./storage/wam.csv)を編集。一番下にでも1行追加。  
+[CSV](./resources/csv/wam.csv)を編集。一番下にでも1行追加。  
 「都道府県コード又は市区町村コード」は都道府県＋なんでもいいので3桁の数字。北海道なら`01000`。後ろの3文字を除いた`01`だけが使われる。
 
 ```csv
