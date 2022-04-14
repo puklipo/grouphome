@@ -32,7 +32,7 @@ class ImportJob implements ShouldQueue
         HeadingRowFormatter::default('none');
 
         try {
-            app(WamImport::class)->import(base_path('storage/wam.csv'));
+            app(WamImport::class)->import(resource_path('csv/wam.csv'));
         } catch (\Exception $e) {
             logger()->error($e->getMessage());
         }

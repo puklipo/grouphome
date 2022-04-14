@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2249a314b343e7a9feac0cbfa9904032",
+    "content-hash": "47acdee03606c6da2aad60cae322cd3a",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4407,6 +4407,47 @@
                 }
             ],
             "time": "2021-12-04T23:24:31+00:00"
+        },
+        {
+            "name": "pop-culture-studio/laravel-vapor-gzip",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
+                "reference": "bf492e6df70a13f40a16ba2dcf2513ff29f14fa2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/bf492e6df70a13f40a16ba2dcf2513ff29f14fa2",
+                "reference": "bf492e6df70a13f40a16ba2dcf2513ff29f14fa2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zlib": "*",
+                "illuminate/http": "^9.0",
+                "php": "^8.0"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PopCultureStudio\\Vapor\\Middleware\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Gzip Response middleware for Laravel Vapor",
+            "keywords": [
+                "gzip",
+                "laravel",
+                "vapor"
+            ],
+            "support": {
+                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/main",
+                "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues"
+            },
+            "time": "2022-04-14T03:33:47+00:00"
         },
         {
             "name": "pragmarx/google2fa",
@@ -11730,7 +11771,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "pop-culture-studio/laravel-vapor-gzip": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
