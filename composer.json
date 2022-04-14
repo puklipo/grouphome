@@ -19,7 +19,7 @@
         "laravel/vapor-ui": "^1.4",
         "livewire/livewire": "^2.5",
         "maatwebsite/excel": "^3.1",
-        "puklipo/laravel-vapor-gzip": "dev-main",
+        "puklipo/laravel-vapor-gzip": "^1.0",
         "revolution/laravel-line-sdk": "^2.0",
         "revolution/laravel-str-mixins": "^2.1",
         "spatie/laravel-sitemap": "^6.1"
@@ -81,11 +81,5 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "repositories": {
-        "puklipo/laravel-vapor-gzip": {
-            "type": "vcs",
-            "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip"
-        }
-    }
+    "prefer-stable": true
 }
