@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47acdee03606c6da2aad60cae322cd3a",
+    "content-hash": "08cc8018bd2f5b96228b6c780932fdbd",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.219.3",
+            "version": "3.219.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2bbafacd922391077b9dcf40d57fc33ad9759e33"
+                "reference": "2bbbf5f1ff0764441372fc9e312e6b463da0043e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2bbafacd922391077b9dcf40d57fc33ad9759e33",
-                "reference": "2bbafacd922391077b9dcf40d57fc33ad9759e33",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2bbbf5f1ff0764441372fc9e312e6b463da0043e",
+                "reference": "2bbbf5f1ff0764441372fc9e312e6b463da0043e",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.219.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.219.4"
             },
-            "time": "2022-04-13T18:15:40+00:00"
+            "time": "2022-04-14T18:14:31+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2663,16 +2663,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.0.16",
+            "version": "3.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "dea729954c596bdb6cdaecba6f73df9f3e2c4255"
+                "reference": "29eb78cac0be0c22237c5e0f6f98234d97037d79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/dea729954c596bdb6cdaecba6f73df9f3e2c4255",
-                "reference": "dea729954c596bdb6cdaecba6f73df9f3e2c4255",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/29eb78cac0be0c22237c5e0f6f98234d97037d79",
+                "reference": "29eb78cac0be0c22237c5e0f6f98234d97037d79",
                 "shasum": ""
             },
             "require": {
@@ -2733,7 +2733,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.0.16"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.0.17"
             },
             "funding": [
                 {
@@ -2749,7 +2749,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-11T13:32:22+00:00"
+            "time": "2022-04-14T14:57:13+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -4409,47 +4409,6 @@
             "time": "2021-12-04T23:24:31+00:00"
         },
         {
-            "name": "pop-culture-studio/laravel-vapor-gzip",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
-                "reference": "bf492e6df70a13f40a16ba2dcf2513ff29f14fa2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/bf492e6df70a13f40a16ba2dcf2513ff29f14fa2",
-                "reference": "bf492e6df70a13f40a16ba2dcf2513ff29f14fa2",
-                "shasum": ""
-            },
-            "require": {
-                "ext-zlib": "*",
-                "illuminate/http": "^9.0",
-                "php": "^8.0"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PopCultureStudio\\Vapor\\Middleware\\": "src/"
-                }
-            },
-            "license": [
-                "MIT"
-            ],
-            "description": "Gzip Response middleware for Laravel Vapor",
-            "keywords": [
-                "gzip",
-                "laravel",
-                "vapor"
-            ],
-            "support": {
-                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/main",
-                "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues"
-            },
-            "time": "2022-04-14T03:33:47+00:00"
-        },
-        {
             "name": "pragmarx/google2fa",
             "version": "8.0.0",
             "source": {
@@ -4942,6 +4901,53 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.11.2"
             },
             "time": "2022-02-28T15:28:54+00:00"
+        },
+        {
+            "name": "puklipo/laravel-vapor-gzip",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
+                "reference": "e88db4a4f2134ebece226211e3b5e00af53a1fb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/e88db4a4f2134ebece226211e3b5e00af53a1fb2",
+                "reference": "e88db4a4f2134ebece226211e3b5e00af53a1fb2",
+                "shasum": ""
+            },
+            "require": {
+                "ext-zlib": "*",
+                "illuminate/http": "^8.0||^9.0",
+                "php": "^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Puklipo\\Vapor\\Middleware\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PCS",
+                    "email": "pcs.engineer.team@gmail.com"
+                }
+            ],
+            "description": "Gzip Response middleware for Laravel Vapor",
+            "keywords": [
+                "gzip",
+                "laravel",
+                "vapor"
+            ],
+            "support": {
+                "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues",
+                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/1.0.2"
+            },
+            "time": "2022-04-15T02:26:20+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -11630,16 +11636,16 @@
         },
         {
             "name": "spatie/laravel-ignition",
-            "version": "1.2.1",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ignition.git",
-                "reference": "9ad1d32acf8c855d711964bc19092b0bc9792273"
+                "reference": "924d1ae878874ad0bb49f63b69a9af759a34ee78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/9ad1d32acf8c855d711964bc19092b0bc9792273",
-                "reference": "9ad1d32acf8c855d711964bc19092b0bc9792273",
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/924d1ae878874ad0bb49f63b69a9af759a34ee78",
+                "reference": "924d1ae878874ad0bb49f63b69a9af759a34ee78",
                 "shasum": ""
             },
             "require": {
@@ -11716,7 +11722,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-13T08:06:05+00:00"
+            "time": "2022-04-14T18:04:51+00:00"
         },
         {
             "name": "theseer/tokenizer",
@@ -11771,14 +11777,11 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "pop-culture-studio/laravel-vapor-gzip": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.1",
-        "ext-zlib": "*"
+        "php": "^8.1"
     },
     "platform-dev": [],
     "platform-overrides": {
