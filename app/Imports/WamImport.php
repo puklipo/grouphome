@@ -43,7 +43,7 @@ class WamImport implements
 
         $pref = Pref::find($pref_id);
 
-        if (! $pref->exists) {
+        if ($pref->doesntExist()) {
             return;
         }
 
