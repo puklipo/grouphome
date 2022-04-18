@@ -1,16 +1,17 @@
-<nav x-data="{ open: false }" class="bg-white dark:bg-black border-b border-gray-100" aria-labelledby="primary navigation">
+<nav x-data="{ open: false }" class="bg-white dark:bg-black border-b border-gray-100"
+     aria-labelledby="primary navigation">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
                 <!-- Logo -->
-            {{--                <div class="flex-shrink-0 flex items-center">--}}
-            {{--                    <a href="{{ route('dashboard') }}">--}}
-            {{--                        <x-jet-application-mark class="block h-9 w-auto"/>--}}
-            {{--                    </a>--}}
-            {{--                </div>--}}
+                {{--                <div class="flex-shrink-0 flex items-center">--}}
+                {{--                    <a href="{{ route('dashboard') }}">--}}
+                {{--                        <x-jet-application-mark class="block h-9 w-auto"/>--}}
+                {{--                    </a>--}}
+                {{--                </div>--}}
 
-            <!-- Navigation Links -->
+                <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-2 sm:flex">
                     <x-jet-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')">
                         {{ __('ホーム') }}
@@ -27,10 +28,10 @@
                     <x-jet-nav-link href="{{ route('help.user') }}" :active="request()->routeIs('help.user')">
                         {{ __('ヘルプ') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
-                        {{ __('お問い合わせ') }}
-                    </x-jet-nav-link>
                     @auth
+                        <x-jet-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                            {{ __('お問い合わせ') }}
+                        </x-jet-nav-link>
                         <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                             {{ __('ダッシュボード') }}
                         </x-jet-nav-link>
@@ -98,9 +99,9 @@
                                 </x-slot>
                             </x-jet-dropdown>
                         </div>
-                @endif
+                    @endif
 
-                <!-- Settings Dropdown -->
+                    <!-- Settings Dropdown -->
                     <div class="ml-3 relative">
                         <x-jet-dropdown align="right" width="48">
                             <x-slot name="trigger">
@@ -159,9 +160,9 @@
                         </x-jet-dropdown>
                     </div>
                 </div>
-        @endauth
+            @endauth
 
-        <!-- Hamburger -->
+            <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
                 <button @click="open = ! open"
                         class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition">
@@ -183,7 +184,8 @@
             <x-jet-responsive-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')">
                 {{ __('ホーム') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('detail-search') }}" :active="request()->routeIs('detail-search')">
+            <x-jet-responsive-nav-link href="{{ route('detail-search') }}"
+                                       :active="request()->routeIs('detail-search')">
                 {{ __('詳細検索') }}
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
@@ -195,10 +197,10 @@
             <x-jet-responsive-nav-link href="{{ route('help.user') }}" :active="request()->routeIs('help.user')">
                 {{ __('ヘルプ') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
-                {{ __('お問い合わせ') }}
-            </x-jet-responsive-nav-link>
             @auth
+                <x-jet-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                    {{ __('お問い合わせ') }}
+                </x-jet-responsive-nav-link>
                 <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                     {{ __('ダッシュボード') }}
                 </x-jet-responsive-nav-link>
@@ -214,8 +216,8 @@
             @endcan
         </div>
 
-    @auth
-        <!-- Responsive Settings Options -->
+        @auth
+            <!-- Responsive Settings Options -->
             <div class="pt-4 pb-1 border-t border-gray-200">
                 <div class="flex items-center px-4">
                     @if (Laravel\Jetstream\Jetstream::managesProfilePhotos())
@@ -245,7 +247,7 @@
                         </x-jet-responsive-nav-link>
                     @endif
 
-                <!-- Authentication -->
+                    <!-- Authentication -->
                     <form method="POST" action="{{ route('logout') }}" x-data>
                         @csrf
 
