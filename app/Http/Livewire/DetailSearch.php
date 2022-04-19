@@ -82,10 +82,14 @@ class DetailSearch extends Component
         return view('livewire.detail-search')->with([
             'homes' => Home::query()
                            ->with(['pref', 'type', 'photo', 'cost'])
-                           ->when(filled($this->pref_id),
-                               fn (Builder $query) => $query->where('pref_id', $this->pref_id))
-                           ->when(filled($this->area),
-                               fn (Builder $query) => $query->where('area', $this->area))
+                           ->when(
+                               filled($this->pref_id),
+                               fn (Builder $query) => $query->where('pref_id', $this->pref_id)
+                           )
+                           ->when(
+                               filled($this->area),
+                               fn (Builder $query) => $query->where('area', $this->area)
+                           )
                            ->where($this->levels(...))
                            ->where($this->types(...))
                            ->where($this->facility(...))
