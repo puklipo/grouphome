@@ -49,13 +49,16 @@ class HomeIndex extends Component
 
         return view('livewire.home-index')->with([
             'homes' => $query->with(['pref', 'type', 'photo', 'cost'])
-                             ->addTotalCost()
-                             ->when(filled($this->area), fn (Builder $query) => $query->where('area', $this->area))
+                             ->when(
+                                 filled($this->area),
+                                 fn (Builder $query) => $query->where('area', $this->area)
+                             )
                              ->keywordSearch($this->q)
                              ->sortBy($this->sort)
                              ->levelSearch($this->level)
                              ->typeSearch($this->type)
                              ->vacancySearch($this->vacancy)
+                             ->addTotalCost()
                              ->paginate()
                              ->withQueryString()
                              ->onEachSide(1),
