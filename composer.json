@@ -61,7 +61,8 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "sail:models": "./vendor/bin/sail art ide-helper:models -N"
     },
     "extra": {
         "laravel": {
