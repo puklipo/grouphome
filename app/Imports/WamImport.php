@@ -4,6 +4,7 @@ namespace App\Imports;
 
 use App\Imports\Concerns\WithKana;
 use App\Models\Pref;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\OnEachRow;
@@ -47,9 +48,15 @@ class WamImport implements
             return;
         }
 
+        $id = (int) $row['事業所番号'];
+
+        if (Arr::exists(config('deleted'), $id)) {
+            return;
+        }
+
         //事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
         $pref->homes()->updateOrCreate([
-            'id' => $row['事業所番号'],
+            'id' => $id,
         ], [
             'name' => $this->kana($row['事業所の名称']),
             'company' => $this->kana($row['法人の名称']),
