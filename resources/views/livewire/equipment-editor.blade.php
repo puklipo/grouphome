@@ -13,7 +13,7 @@
 
     <x-box class="p-3 flex flex-wrap">
         @foreach(config('equipment') as $key => $name)
-            <x-rounded-tag :enabled="$home->equipment->$key">{{ $name }}</x-rounded-tag>
+            <x-rounded-tag :enabled="$home->equipment->$key" :icon="$key">{{ $name }}</x-rounded-tag>
         @endforeach
     </x-box>
 
