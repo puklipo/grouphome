@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.222.11",
+            "version": "3.222.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "458d322b7f913a54dfc10dd25d3fbb35bb3f7502"
+                "reference": "8503d393b3ebef20241931b1abc20cb2af494cb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/458d322b7f913a54dfc10dd25d3fbb35bb3f7502",
-                "reference": "458d322b7f913a54dfc10dd25d3fbb35bb3f7502",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8503d393b3ebef20241931b1abc20cb2af494cb2",
+                "reference": "8503d393b3ebef20241931b1abc20cb2af494cb2",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.222.11"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.222.12"
             },
-            "time": "2022-05-12T18:17:33+00:00"
+            "time": "2022-05-13T18:15:34+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1869,16 +1869,16 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v2.8.0",
+            "version": "v2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "4aafe1f26dba30dff8dcb1420f0fb534ba3c7271"
+                "reference": "50ca355fa7cff5a851bbc0fa6addaa0010493c8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/4aafe1f26dba30dff8dcb1420f0fb534ba3c7271",
-                "reference": "4aafe1f26dba30dff8dcb1420f0fb534ba3c7271",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/50ca355fa7cff5a851bbc0fa6addaa0010493c8d",
+                "reference": "50ca355fa7cff5a851bbc0fa6addaa0010493c8d",
                 "shasum": ""
             },
             "require": {
@@ -1931,7 +1931,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2022-05-10T14:20:57+00:00"
+            "time": "2022-05-13T14:06:46+00:00"
         },
         {
             "name": "laravel/octane",
@@ -2271,16 +2271,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.37.0",
+            "version": "v1.38.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "94e79542de5e7e0957e767fbd346521349009efa"
+                "reference": "6c32c56f1e12f3a05f1b214b61bb2b3f35056408"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/94e79542de5e7e0957e767fbd346521349009efa",
-                "reference": "94e79542de5e7e0957e767fbd346521349009efa",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/6c32c56f1e12f3a05f1b214b61bb2b3f35056408",
+                "reference": "6c32c56f1e12f3a05f1b214b61bb2b3f35056408",
                 "shasum": ""
             },
             "require": {
@@ -2333,9 +2333,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.37.0"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.38.0"
             },
-            "time": "2022-05-06T13:41:02+00:00"
+            "time": "2022-05-13T08:31:22+00:00"
         },
         {
             "name": "laravel/vapor-core",
