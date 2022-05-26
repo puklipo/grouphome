@@ -15,7 +15,7 @@
 
             <nav class="m-6">
                 <ul>
-                    <li><a href="#2022_05" class="text-indigo-500 underline">2022年5月</a></li>
+                    <li><a href="#2022_05" class="text-indigo-500 hover:underline">2022年5月</a></li>
                 </ul>
             </nav>
 
