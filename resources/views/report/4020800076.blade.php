@@ -11,7 +11,7 @@
 
     <div class="py-6">
         <div class="px-3 sm:px-6 lg:px-8">
-            <x-breadcrumbs-back/>
+            <a href="{{ route('home.show', $report) }}" class="text-indigo-500 dark:text-white hover:underline">戻る</a>
 
             <nav class="m-6">
                 <ul>
