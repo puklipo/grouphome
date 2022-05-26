@@ -15,7 +15,7 @@ class ReportController extends Controller
      */
     public function __invoke(Request $request, int $report)
     {
-        abort_unless(file_exists(resource_path('views/report/'.$report.'.blade.php')),404);
+        abort_unless(file_exists(resource_path('views/report/'.$report.'.blade.php')), 404);
 
         return view('report.'.$report)->with(compact('report'));
     }
