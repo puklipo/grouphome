@@ -26,6 +26,11 @@
                 </div>
             </article>
 
+            <div class="mt-6">
+                <a href="{{ route('home.show', $report) }}"
+                   class="text-indigo-500 dark:text-white hover:underline">戻る</a>
+            </div>
+
         </div>
     </div>
 </x-main-layout>
