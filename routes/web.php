@@ -10,6 +10,7 @@ use App\Http\Controllers\Mail\PrepareController;
 use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefController;
+use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
@@ -67,6 +68,10 @@ Route::prefix('admin')->middleware(['auth:sanctum', config('jetstream.auth_sessi
 Route::get('contact/preview/{contact}', ContactPreviewController::class)
      ->name('contact.preview')
      ->middleware('signed');
+
+Route::get('report/{report}', ReportController::class)
+    ->name('report')
+    ->whereNumber('report');
 
 Route::get('sitemap', SitemapController::class)->name('sitemap');
 
