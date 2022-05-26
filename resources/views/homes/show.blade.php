@@ -69,6 +69,12 @@
                             <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
                         @endisset
 
+                        @if(file_exists(resource_path('views/report/'.$home->id.'.blade.php')))
+                            <a href="{{ route('report', $home->id)}}" class="text-indigo-500 dark:text-white hover:underline">
+                                {{ __('体験レポート') }}
+                            </a>
+                        @endif
+
                     </div>
                 </x-box>
 

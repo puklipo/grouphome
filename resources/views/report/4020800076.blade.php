@@ -11,6 +11,20 @@
 
     <div class="py-6">
         <div class="px-3 sm:px-6 lg:px-8">
+            <x-breadcrumbs-back/>
+
+            <nav class="m-6">
+                <ul>
+                    <li><a href="#2022_05" class="text-indigo-500 underline">2022年5月</a></li>
+                </ul>
+            </nav>
+
+            <article id="2022_05" class="ring-4 ring-indigo-500">
+                <h3 class="text-2xl bg-indigo-500 text-white p-3">2022年5月</h3>
+                <div class="p-6 prose prose-indigo">
+                    test
+                </div>
+            </article>
 
         </div>
     </div>

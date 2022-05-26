@@ -17,6 +17,6 @@ class ReportController extends Controller
     {
         abort_unless(file_exists(resource_path('views/report/'.$report.'.blade.php')),404);
 
-        return view('report.'.$report);
+        return view('report.'.$report)->with(compact('report'));
     }
 }
