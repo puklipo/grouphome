@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.228.1",
+            "version": "3.228.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "53b7f43945b19bb0700c75d4c5f130055096e817"
+                "reference": "4dad57c95c7ff1dfcea29a7877ce64720b3318c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/53b7f43945b19bb0700c75d4c5f130055096e817",
-                "reference": "53b7f43945b19bb0700c75d4c5f130055096e817",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4dad57c95c7ff1dfcea29a7877ce64720b3318c3",
+                "reference": "4dad57c95c7ff1dfcea29a7877ce64720b3318c3",
                 "shasum": ""
             },
             "require": {
@@ -75,7 +75,7 @@
                 "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-simplexml": "*",
-                "guzzlehttp/guzzle": "^6.5.7 || ^7.4.4",
+                "guzzlehttp/guzzle": "^6.5.8 || ^7.4.5",
                 "guzzlehttp/promises": "^1.4.0",
                 "guzzlehttp/psr7": "^1.8.5 || ^2.3",
                 "mtdowling/jmespath.php": "^2.6",
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.228.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.228.3"
             },
-            "time": "2022-06-22T18:16:48+00:00"
+            "time": "2022-06-24T20:24:09+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1935,16 +1935,16 @@
         },
         {
             "name": "laravel/octane",
-            "version": "v1.2.12",
+            "version": "v1.2.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/octane.git",
-                "reference": "0e360cfef791ae31cf22092aaf09004f863a7f7f"
+                "reference": "4cc7c1a10630d3ff7988d7d1dd735021665ec753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/octane/zipball/0e360cfef791ae31cf22092aaf09004f863a7f7f",
-                "reference": "0e360cfef791ae31cf22092aaf09004f863a7f7f",
+                "url": "https://api.github.com/repos/laravel/octane/zipball/4cc7c1a10630d3ff7988d7d1dd735021665ec753",
+                "reference": "4cc7c1a10630d3ff7988d7d1dd735021665ec753",
                 "shasum": ""
             },
             "require": {
@@ -2006,7 +2006,7 @@
                 "issues": "https://github.com/laravel/octane/issues",
                 "source": "https://github.com/laravel/octane"
             },
-            "time": "2022-05-31T12:32:48+00:00"
+            "time": "2022-06-23T13:22:37+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -2271,16 +2271,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.39.0",
+            "version": "v1.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "f1e33625d25ded9428dec238933bd330f3c52ac3"
+                "reference": "d6342089379a27c7efca84738f93631fb9c302c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/f1e33625d25ded9428dec238933bd330f3c52ac3",
-                "reference": "f1e33625d25ded9428dec238933bd330f3c52ac3",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/d6342089379a27c7efca84738f93631fb9c302c5",
+                "reference": "d6342089379a27c7efca84738f93631fb9c302c5",
                 "shasum": ""
             },
             "require": {
@@ -2333,9 +2333,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.39.0"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.40.0"
             },
-            "time": "2022-05-23T08:25:55+00:00"
+            "time": "2022-06-23T14:05:36+00:00"
         },
         {
             "name": "laravel/vapor-core",
