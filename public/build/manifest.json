@@ -1,0 +1,17 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app.33f82a1e.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/map.js": {
+    "file": "assets/map.02418160.js",
+    "src": "resources/js/map.js",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.3813e430.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  }
+}
