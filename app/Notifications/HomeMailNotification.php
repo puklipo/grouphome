@@ -49,7 +49,7 @@ class HomeMailNotification extends Notification implements ShouldQueue
     {
         return (new MailMessage)
             ->subject('【'.$this->home->name.'】'.$this->name.__('さんからのお問い合わせ'))
-            ->from($this->email, $this->name)
+            ->from(config('mail.from.address'), config('mail.from.name'))
             ->greeting('【'.$this->subject.'】'.$this->name.__('さんからのお問い合わせ'))
             ->line($this->body)
             ->line(__('【メール】').$this->email.' '.__('【電話番号】').$this->tel)
