@@ -52,7 +52,9 @@ class HomeMailNotification extends Notification implements ShouldQueue
             ->from(config('mail.from.address'), config('mail.from.name'))
             ->greeting('【'.$this->subject.'】'.$this->name.__('さんからのお問い合わせ'))
             ->line($this->body)
-            ->line(__('【メール】').$this->email.' '.__('【電話番号】').$this->tel)
+            ->line(__('【名前】').$this->name)
+            ->line(__('【メール】').$this->email)
+            ->line(__('【電話番号】').$this->tel)
             ->salutation(__('このメールに返信はできないのでお問い合わせへの対応は新規メールを送信してください。'));
     }
 
