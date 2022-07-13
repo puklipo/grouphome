@@ -99,6 +99,10 @@ return [
         'to' => env('CONTACT_MAIL', env('MAIL_FROM_ADDRESS', 'hello@example.com')),
     ],
 
+    'admin' => [
+        'to' => env('ADMIN_MAIL', env('MAIL_FROM_ADDRESS', 'hello@example.com')),
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings

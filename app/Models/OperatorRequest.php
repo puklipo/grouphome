@@ -22,7 +22,7 @@ class OperatorRequest extends Model
     protected static function booted()
     {
         static::created(function ($request) {
-            Notification::route('mail', config('mail.contact.to'))
+            Notification::route('mail', config('mail.admin.to'))
                         ->notify(new OperatorRequestCreated($request));
         });
     }
