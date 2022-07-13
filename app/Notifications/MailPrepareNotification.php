@@ -46,10 +46,10 @@ class MailPrepareNotification extends Notification implements ShouldQueue
     {
         return (new MailMessage)
             ->subject($this->home->name.'への問い合わせフォーム')
-            ->line($this->home->name.'への問い合わせは以下のフォームを使用してください。')
+            ->greeting($this->home->name.'への問い合わせは以下のフォームを使用してください。')
             ->action('問い合わせフォーム', URL::temporarySignedRoute('home.mail.form', now()->addDay(),
                 ['home' => $this->home, 'mail' => $this->email]))
-            ->line('フォームは今から24時間のみ有効です。');
+            ->salutation('フォームは今から24時間のみ有効です。');
     }
 
     /**
