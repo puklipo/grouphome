@@ -6,6 +6,8 @@
             {{ $slot }}</span>
 @else
     <span {{ $attributes->class(['text-md bg-white dark:bg-gray-900 border-2 border-gray-500 dark:border-gray-700 border-dashed text-gray-500 rounded-full px-3 py-1 m-1 opacity-90  inline-flex']) }} title="{{ $slot }}"  aria-hidden="true">
-        @isset($icon)<img src="{{ asset('svg/'.$icon.'.svg') }}" class="w-6 h-6 fill-gray-500" alt="{{ $slot }}">@endisset
+{{--        @isset($icon)--}}
+{{--            <img src="{{ asset('svg/'.$icon.'.svg') }}" class="w-6 h-6 fill-gray-500" alt="{{ $slot }}">--}}
+{{--        @endisset--}}
         <del class="no-underline print:opacity-90">{{ $slot }}</del></span>
 @endif
