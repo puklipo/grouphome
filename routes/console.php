@@ -22,3 +22,9 @@ Artisan::command('inspire', function () {
 Artisan::command('sitemap', function () {
     SitemapJob::dispatch();
 })->purpose('Create sitemap');
+
+Artisan::command('csv:convert', function () {
+    $csv = file_get_contents(resource_path('csv/wam_sjis.csv'));
+    $csv = mb_convert_encoding($csv, 'UTF-8', 'Shift-JIS');
+    file_put_contents(resource_path('csv/wam.csv'), $csv);
+})->purpose('元のCSVがShift-JISだった場合にUTF-8に変換');
