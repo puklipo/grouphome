@@ -25,6 +25,6 @@ Artisan::command('sitemap', function () {
 
 Artisan::command('csv:convert', function () {
     $csv = file_get_contents(resource_path('csv/wam_sjis.csv'));
-    $csv = mb_convert_encoding($csv, 'UTF-8', 'Shift-JIS');
-    file_put_contents(resource_path('csv/wam.csv'), $csv);
+    $csv = mb_convert_encoding($csv, 'UTF-8', 'SJIS');
+    file_put_contents(resource_path('csv/wam_utf8.csv'), $csv);
 })->purpose('元のCSVがShift-JISだった場合にUTF-8に変換');
