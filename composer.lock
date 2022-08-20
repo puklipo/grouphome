@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.233.5",
+            "version": "3.233.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "69e83cc7947f545fa6e3b20d97403d750b72066f"
+                "reference": "cd9019a38cee8cabfd42dc7692e54106c93c1e6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/69e83cc7947f545fa6e3b20d97403d750b72066f",
-                "reference": "69e83cc7947f545fa6e3b20d97403d750b72066f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cd9019a38cee8cabfd42dc7692e54106c93c1e6a",
+                "reference": "cd9019a38cee8cabfd42dc7692e54106c93c1e6a",
                 "shasum": ""
             },
             "require": {
@@ -144,9 +144,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.233.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.233.6"
             },
-            "time": "2022-08-18T18:15:50+00:00"
+            "time": "2022-08-19T18:16:02+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -3023,29 +3023,30 @@
         },
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "7.5.0",
+            "version": "7.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "441408e5f4273c733e4559691f5dfe48f072c38f"
+                "reference": "6508bca23cb9b65180d1a310edb75b8216f882f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/441408e5f4273c733e4559691f5dfe48f072c38f",
-                "reference": "441408e5f4273c733e4559691f5dfe48f072c38f",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/6508bca23cb9b65180d1a310edb75b8216f882f6",
+                "reference": "6508bca23cb9b65180d1a310edb75b8216f882f6",
                 "shasum": ""
             },
             "require": {
                 "ext-curl": "*",
                 "ext-json": "*",
                 "ext-sockets": "*",
-                "php": ">=5.6"
+                "php": ">=7.2"
             },
             "require-dev": {
                 "orchestra/testbench": "*",
-                "phpmd/phpmd": "~2.9",
-                "phpunit/phpunit": "^4.8.36||^5||^6||^7",
-                "squizlabs/php_codesniffer": "~3.5"
+                "phpmd/phpmd": "~2.10",
+                "phpstan/phpstan": "^1.8",
+                "phpunit/phpunit": "^7||^8||^9",
+                "squizlabs/php_codesniffer": "~3.6"
             },
             "type": "library",
             "extra": {
@@ -3076,7 +3077,7 @@
                 {
                     "name": "Satoru Yoshihara",
                     "email": "vaduz0@gmail.com",
-                    "role": "Maintainer"
+                    "role": "Retired"
                 },
                 {
                     "name": "Satoshi Shibuya",
@@ -3098,9 +3099,9 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/7.5.0"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/7.6.0"
             },
-            "time": "2022-05-17T14:19:40+00:00"
+            "time": "2022-08-19T06:13:01+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -5532,16 +5533,16 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "3.57.1",
+            "version": "3.57.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
-                "reference": "f430a81b1b8e07f089046984ae0f53c9161b1477"
+                "reference": "7125719979b7de1257bbf699ff1d3bff3125b228"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/browsershot/zipball/f430a81b1b8e07f089046984ae0f53c9161b1477",
-                "reference": "f430a81b1b8e07f089046984ae0f53c9161b1477",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/7125719979b7de1257bbf699ff1d3bff3125b228",
+                "reference": "7125719979b7de1257bbf699ff1d3bff3125b228",
                 "shasum": ""
             },
             "require": {
@@ -5586,7 +5587,7 @@
                 "webpage"
             ],
             "support": {
-                "source": "https://github.com/spatie/browsershot/tree/3.57.1"
+                "source": "https://github.com/spatie/browsershot/tree/3.57.2"
             },
             "funding": [
                 {
@@ -5594,7 +5595,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-03T11:26:45+00:00"
+            "time": "2022-08-19T16:43:07+00:00"
         },
         {
             "name": "spatie/crawler",
