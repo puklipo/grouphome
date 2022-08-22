@@ -23,7 +23,7 @@ class Kernel extends ConsoleKernel
         $schedule->job(SitemapJob::class)->dailyAt('04:00');
 
         $schedule->command(ImportCommand::class)->monthly();
-        $schedule->command(DeleteCommand::class)->daily();
+        $schedule->command(DeleteCommand::class)->dailyAt('02:00');
     }
 
     /**
