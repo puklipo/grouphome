@@ -16,7 +16,7 @@ class ArtisanImportCommandTest extends TestCase
 
         $this->seed();
 
-        $this->artisan('import')
+        $this->artisan('gh:import')
              ->assertSuccessful();
 
         $this->assertDatabaseCount('prefs', 47);
