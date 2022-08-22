@@ -12,7 +12,7 @@ class ImportCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'import';
+    protected $signature = 'gh:import';
 
     /**
      * The console command description.

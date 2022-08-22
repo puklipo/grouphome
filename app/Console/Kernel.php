@@ -2,6 +2,7 @@
 
 namespace App\Console;
 
+use App\Console\Commands\DeleteCommand;
 use App\Console\Commands\ImportCommand;
 use App\Jobs\SitemapJob;
 use Illuminate\Console\Scheduling\Schedule;
@@ -22,6 +23,7 @@ class Kernel extends ConsoleKernel
         $schedule->job(SitemapJob::class)->dailyAt('04:00');
 
         $schedule->command(ImportCommand::class)->monthly();
+        $schedule->command(DeleteCommand::class)->daily();
     }
 
     /**

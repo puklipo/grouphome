@@ -38,7 +38,7 @@ WAMのCSVファイルは半年ごとの更新。新規グループホームは`w
 "01000","","","法人の名称","","","","","","","","","グループホームの名称","","0100000000","北海道〇〇","番地以降","グループホームの電話番号","","グループホームのURL",0,0,"","","","",,,
 ```
 
-デプロイ後本番環境でインポート。VaporならCommandsで`php artisan import`を実行。
+デプロイ後本番環境でインポート。VaporならCommandsで`php artisan gh:import`を実行。
 
 ## サーバー
 - AWS
@@ -67,7 +67,7 @@ cp .env.example .env
 ./vendor/bin/sail art key:generate
 
 ./vendor/bin/sail art migrate:fresh --seed
-./vendor/bin/sail art import
+./vendor/bin/sail art gh:import
 ```
 
 ## LICENSE
