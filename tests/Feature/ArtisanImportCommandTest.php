@@ -22,4 +22,14 @@ class ArtisanImportCommandTest extends TestCase
         $this->assertDatabaseCount('prefs', 47);
         $this->assertDatabaseCount('types', 4);
     }
+
+    public function test_delete()
+    {
+        Bus::fake();
+
+        $this->seed();
+
+        $this->artisan('gh:delete')
+             ->assertSuccessful();
+    }
 }
