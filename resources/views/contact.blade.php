@@ -27,12 +27,15 @@
                 @can('admin')
                     <li>
                         <a href="{{ route('admin.contacts') }}"
-                           class="font-bold text-red-500 hover:underline"><x-icon.lock class="inline"></x-icon.lock>{{ __('お問い合わせ一覧') }}</a>
+                           class="font-bold text-red-500 hover:underline">
+                            <x-icon.lock class="inline"></x-icon.lock>{{ __('お問い合わせ一覧') }}</a>
                     </li>
                 @endcan
             </ul>
 
-{{--            <div class="m-3 text-lg text-red-500 font-bold">ここは当サイトへの問い合わせ用フォームです。グループホームへの問い合わせは各グループホームのページから電話かメールで問い合わせてください。グループホームが当サイトに登録してないとメールで問い合わせは使えないので公式サイトがあればそちらから問い合わせてください。</div>--}}
+            <div class="m-3 text-lg text-red-500 font-bold">
+                ここはグループホーム事業者から当サイトへの問い合わせ用フォームです。グループホームへの問い合わせは各グループホームのページから電話かメールで問い合わせてください。グループホームが当サイトに登録してないとメールで問い合わせは使えないので公式サイトがあればそちらから問い合わせてください。
+            </div>
 
             <livewire:contact-form/>
         </div>
