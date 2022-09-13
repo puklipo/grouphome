@@ -20,6 +20,7 @@
                     Googleマップで検索
                 </a>
             </div>
+            <div class="text-sm text-gray-500">住所を基にマップを表示しているので正しくない場合もあります。</div>
         @endif
     </x-box>
 </div>
