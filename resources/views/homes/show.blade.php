@@ -31,6 +31,7 @@
             <x-breadcrumbs-back/>
 
             <div class="m-3">
+                @includeIf('homes.cta')
 
                 @include('homes.header')
 
@@ -99,8 +100,6 @@
                 @include('homes.map')
 
                 @include('homes.related')
-
-                @includeIf('homes.cta')
 
                 @include('homes.operator')
 
