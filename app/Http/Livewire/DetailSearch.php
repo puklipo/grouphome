@@ -42,6 +42,8 @@ class DetailSearch extends Component
 
     public function mount()
     {
+        cache()->increment('detail-search-count');
+
         $this->levels = collect(range(start: 0, end: 6))
             ->mapWithKeys(fn ($level) => [$level => true])
             ->toArray();
@@ -79,8 +81,6 @@ class DetailSearch extends Component
 
     public function render()
     {
-        cache()->increment('detail-search-count');
-
         return view('livewire.detail-search')->with([
             'homes' => Home::query()
                            ->with(['pref', 'type', 'photo', 'cost'])
