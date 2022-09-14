@@ -22,7 +22,7 @@
                     <li class="p-3">
                         <a href="{{ route('operator-home.index') }}"
                            class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
-                            {{ __('事業者管理') }}
+                            {{ __('事業者管理') }} [{{ \App\Models\User::count() }}]
                         </a>
                         <span class="text-gray-500 ml-3">事業者とグループホームの紐付けを解除。</span>
                     </li>
