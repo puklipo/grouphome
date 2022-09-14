@@ -31,7 +31,7 @@
         </div>
 
         <div class="mb-3">
-            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">食費(30日分)</div>
+            <div class="border-b text-gray-500 dark:text-gray-200 text-sm">食費</div>
             <div class="text-lg">{{ $home->cost->food }}円</div>
         </div>
 
