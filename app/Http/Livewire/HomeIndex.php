@@ -17,7 +17,8 @@ class HomeIndex extends Component
     public ?string $area = null;
 
     public ?string $q = null;
-    public ?string $sort = null;
+    /** @var string|null 並べ替え */
+    public ?string $sort = 'updated';
     public ?int $level = null;
     public ?int $type = null;
     public ?int $vacancy = null;
