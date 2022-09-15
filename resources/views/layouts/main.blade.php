@@ -25,7 +25,9 @@
 
     @stack('scripts')
 
-    @includeIf('layouts.ga')
+    @production
+        @includeIf('layouts.ga')
+    @endproduction
 </head>
 
 <body>

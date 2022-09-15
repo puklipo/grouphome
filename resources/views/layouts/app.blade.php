@@ -15,7 +15,9 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        @includeIf('layouts.ga')
+        @production
+            @includeIf('layouts.ga')
+        @endproduction
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />

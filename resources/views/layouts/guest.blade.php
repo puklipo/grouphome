@@ -13,7 +13,9 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-        @includeIf('layouts.ga')
+        @production
+            @includeIf('layouts.ga')
+        @endproduction
 
         {!! ReCaptcha::htmlScriptTagJsApi() !!}
     </head>
