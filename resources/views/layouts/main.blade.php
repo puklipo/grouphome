@@ -25,6 +25,7 @@
 
     @stack('scripts')
 
+    @includeIf('layouts.ga')
 </head>
 
 <body>
