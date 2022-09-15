@@ -26,14 +26,6 @@
 
             <x-breadcrumbs-back/>
 
-            @can('admin')
-                <div class="ml-6">
-                    <span class="font-bold text-red-500">
-                        <x-icon.lock class="inline"></x-icon.lock>{{ cache('detail-search-count') }}
-                    </span>
-                </div>
-            @endcan
-
             <livewire:detail-search/>
         </div>
     </div>

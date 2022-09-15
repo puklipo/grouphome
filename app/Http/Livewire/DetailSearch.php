@@ -42,10 +42,6 @@ class DetailSearch extends Component
 
     public function mount()
     {
-        cache()->add('detail-search-count', 0, now()->addDay());
-
-        cache()->increment('detail-search-count');
-
         $this->levels = collect(range(start: 0, end: 6))
             ->mapWithKeys(fn ($level) => [$level => true])
             ->toArray();
