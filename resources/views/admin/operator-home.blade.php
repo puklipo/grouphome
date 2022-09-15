@@ -21,9 +21,10 @@
 
                             <ul class="ml-10">
                                 @foreach($user->homes as $home)
-                                    <li class="p-3 flex justify-start">
+                                    <li class="p-3 flex justify-between">
+                                        <a href="{{ route('home.show', $home) }}" class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                         {{ $home->name }}
-
+                                        </a>
                                         <form action="{{ route('operator-home.destroy',[$user, $home]) }}"
                                               method="post"
                                               class="flex justify-start align-text-bottom">
@@ -31,7 +32,7 @@
                                             @method('DELETE')
 
                                             <x-jet-checkbox name="confirm" value="1" class="ml-3 checked:text-red-500"/>
-                                            <x-jet-label for="confirm" value="確認" class="leading-tight"/>
+                                            <x-jet-label for="confirm" value="解除確認" class="leading-tight"/>
 
                                             <x-jet-danger-button type="submit" class="ml-3">
                                                 {{ __('解除') }}
