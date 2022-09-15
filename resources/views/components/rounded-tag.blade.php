@@ -9,5 +9,5 @@
 {{--        @isset($icon)--}}
 {{--            <img src="{{ asset('svg/'.$icon.'.svg') }}" class="w-6 h-6 fill-gray-500" alt="{{ $slot }}">--}}
 {{--        @endisset--}}
-        <del class="no-underline print:opacity-90">{{ $slot }}</del></span>
+        <del class="no-underline print:line-through print:opacity-90">{{ $slot }}</del></span>
 @endif
