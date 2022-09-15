@@ -18,7 +18,7 @@
             <div class="prose dark:prose-invert prose-indigo prose-a:text-indigo-500 max-w-none p-3">
 
                 <h2>事業者向け有料サービス</h2>
-                <div>事業者向けのグループホームの詳細情報を入力する機能は有料で提供しています。事前に運営会社まで<a href="{{ route('contact') }}">連絡</a>してください。</div>
+                <div>事業者向けのグループホームの詳細情報を入力する機能や問い合わせを受け取る機能は有料で提供しています。事前に運営会社まで<a href="{{ route('contact') }}">連絡</a>してください。</div>
 
                 <div class="text-red-500 font-bold">現在は試験運用中なのでここから登録して無料で詳細情報を入力できます。有料化後は有料で継続か停止か選択可能です。</div>
 
