@@ -43,10 +43,10 @@
                             {{ $home->name }}
                         </h1>
 
-                        <div class="text-md my-3">{{ $home->address }}</div>
+                        <div class="text-md my-3"><span class="font-bold mr-3">住所</span>{{ $home->address }}</div>
 
-                        <div class="text-md my-3">{{ $home->company }}</div>
-                        <div class="text-md my-3">{{ $home->tel }}</div>
+                        <div class="text-md my-3"><span class="font-bold mr-3">運営会社</span>{{ $home->company }}</div>
+                        <div class="text-md my-3"><span class="font-bold mr-3">電話番号</span>{{ $home->tel }}</div>
 
                         @isset($home->url)
                             <div class="text-md my-3">
@@ -67,7 +67,7 @@
                         @endisset
 
                         @isset($home->released_at)
-                            <div class="text-md my-3">指定年月日 {{ $home->released_at->toDateString() }}</div>
+                            <div class="text-md my-3"><span class="font-bold mr-3">指定年月日</span>{{ $home->released_at->toDateString() }}</div>
                         @endisset
 
                         @if(file_exists(resource_path('views/report/'.$home->id.'.blade.php')))
