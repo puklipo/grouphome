@@ -22,7 +22,7 @@
                 </div>
             @endisset
 
-            <table class="table-auto">
+            <table class="table-auto border-separate border-spacing-x-2">
                 <tr>
                     <th>月額費用</th>
                     <td>
