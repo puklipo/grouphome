@@ -22,10 +22,10 @@
                 </div>
             @endisset
 
-            <table class="table-auto border-separate border-spacing-x-2">
+            <table class="table-auto border-collapse border-spacing-x-2">
                 <tr>
-                    <th>月額費用</th>
-                    <td>
+                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">月額費用</th>
+                    <td class="pl-3">
                         @if($home->cost->total > 0)
                             <span class="text-red-500 font-extrabold">
                             {{ $home->cost->total }}円
@@ -39,8 +39,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>対象区分</th>
-                    <td>
+                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">対象区分</th>
+                    <td class="pl-3">
                         @if($home->level > 0)
                             区分{{ $home->level }}以上
                         @else
@@ -49,8 +49,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <th>類型</th>
-                    <td>{{ $home->type->type ?? '不明' }}</td>
+                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">類型</th>
+                    <td class="pl-3">{{ $home->type->type ?? '不明' }}</td>
                 </tr>
             </table>
         </div>
