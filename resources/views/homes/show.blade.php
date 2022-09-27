@@ -43,38 +43,70 @@
                             {{ $home->name }}
                         </h1>
 
-                        <div class="text-md my-3"><span class="font-bold mr-3">住所</span>{{ $home->address }}</div>
+                        <table class="table-auto border-collapse border-spacing-x-2">
+                            <tr>
+                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">住所</th>
+                                <td class="pl-3">
+                                    {{ $home->address }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">運営会社</th>
+                                <td class="pl-3">
+                                    {{ $home->company }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">電話番号</th>
+                                <td class="pl-3">
+                                    {{ $home->tel }}
+                                </td>
+                            </tr>
+                            @isset($home->url)
+                                <tr>
+                                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">URL</th>
+                                    <td class="pl-3">
+                                        <a href="{{ $home->url }}" target="_blank"
+                                           class="text-indigo-500 dark:text-white font-bold hover:underline">
+                                            {{ Str::limit($home->url) }}
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endisset
 
-                        <div class="text-md my-3"><span class="font-bold mr-3">運営会社</span>{{ $home->company }}</div>
-                        <div class="text-md my-3"><span class="font-bold mr-3">電話番号</span>{{ $home->tel }}</div>
+                            @isset($home->wam)
+                                <tr>
+                                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">URL</th>
+                                    <td class="pl-3">
+                                        <a href="{{ $home->wam }}" target="_blank"
+                                           class="text-indigo-500 dark:text-white font-bold hover:underline">
+                                            {{ Str::limit($home->wam) }}
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endisset
 
-                        @isset($home->url)
-                            <div class="text-md my-3">
-                                <a href="{{ $home->url }}" target="_blank"
-                                   class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                    {{ Str::limit($home->url) }}
-                                </a>
-                            </div>
-                        @endisset
+                            @isset($home->released_at)
+                                <tr>
+                                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">指定年月日</th>
+                                    <td class="pl-3">
+                                        {{ $home->released_at->toDateString() }}
+                                    </td>
+                                </tr>
+                            @endisset
 
-                        @isset($home->wam)
-                            <div class="text-md my-3">
-                                <a href="{{ $home->wam }}" target="_blank"
-                                   class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                    {{ Str::limit($home->wam) }}
-                                </a>
-                            </div>
-                        @endisset
-
-                        @isset($home->released_at)
-                            <div class="text-md my-3"><span class="font-bold mr-3">指定年月日</span>{{ $home->released_at->toDateString() }}</div>
-                        @endisset
-
-                        @if(file_exists(resource_path('views/report/'.$home->id.'.blade.php')))
-                            <a href="{{ route('report', $home->id)}}" class="text-indigo-500 dark:text-white hover:underline">
-                                {{ __('体験レポート') }}
-                            </a>
-                        @endif
+                            @if(file_exists(resource_path('views/report/'.$home->id.'.blade.php')))
+                                <tr>
+                                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">レポート</th>
+                                    <td class="pl-3">
+                                        <a href="{{ route('report', $home->id)}}"
+                                           class="text-indigo-500 dark:text-white hover:underline">
+                                            {{ __('体験レポート') }}
+                                        </a>
+                                    </td>
+                                </tr>
+                            @endif
+                        </table>
 
                     </div>
                 </x-box>
