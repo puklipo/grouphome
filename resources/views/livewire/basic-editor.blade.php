@@ -19,7 +19,7 @@
 
                 <x-jet-label for="map" value="{{ __('Googleマップ') }}"/>
                 <x-textarea name="map" rows="2" wire:model.defer="home.map"></x-textarea>
-                <div class="text-sm text-gray-500 dark:text-white">埋め込み用のHTML。</div>
+                <div class="text-sm text-gray-500 dark:text-white">埋め込み用のHTML。（管理事業者でも自由にhtml入力可能にはできないので管理者専用）</div>
 
                 <x-jet-button class="mt-3">
                     {{ __('更新') }}
