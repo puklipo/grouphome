@@ -31,4 +31,22 @@ class OperatorTest extends TestCase
 
         $response->assertRedirect();
     }
+
+    public function test_request_ok()
+    {
+        $this->seed();
+
+        $user = User::factory()->create();
+
+        $home = Home::factory()->create();
+
+        $response = $this->actingAs($user)->post(route('operator.request', $home));
+
+        $this->assertDatabaseHas('operator_requests', [
+            'home_id' => $home->id,
+            'user_id' => $user->id,
+        ]);
+
+        $response->assertRedirect();
+    }
 }
