@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Jobs\ImportJob;
 use Illuminate\Console\Command;
+use Illuminate\Support\Benchmark;
 
 class ImportCommand extends Command
 {
@@ -40,11 +41,9 @@ class ImportCommand extends Command
     {
         cache()->forget('side.prefs');
 
-        $time = hrtime(true);
+        $time = Benchmark::measure(fn () => ImportJob::dispatch());
 
-        ImportJob::dispatch();
-
-        $this->info(hrtime(true) - $time);
+        $this->info($time);
 
         return 0;
     }
