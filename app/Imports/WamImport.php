@@ -50,7 +50,7 @@ class WamImport implements
 
         $id = (int) $row['事業所番号'];
 
-        if (Arr::exists(config('deleted'), $id)) {
+        if (in_array($id, config('deleted'), true)) {
             return;
         }
 
