@@ -4,6 +4,7 @@ namespace App\Notifications;
 
 use App\Models\User;
 use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
@@ -20,7 +21,7 @@ class UserRegisteredNotification extends Notification implements ShouldQueue
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(protected Authenticatable $user)
     {
         //
     }
@@ -49,8 +50,9 @@ class UserRegisteredNotification extends Notification implements ShouldQueue
     public function toMail($notifiable)
     {
         return (new MailMessage)
-            ->subject(__('【新規ユーザー登録】'))
-            ->line(__('ユーザー登録がありました。'));
+            ->subject(__('【新規ユーザー登録】'.$this->user->name ?? ''))
+            ->greeting($this->user->name ?? '')
+            ->line(__('新規ユーザーが登録しました。'));
     }
 
     /**

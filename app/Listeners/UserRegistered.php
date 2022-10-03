@@ -3,6 +3,7 @@
 namespace App\Listeners;
 
 use App\Notifications\UserRegisteredNotification;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Support\Facades\Notification;
@@ -22,13 +23,13 @@ class UserRegistered
     /**
      * Handle the event.
      *
-     * @param  object  $event
+     * @param  Registered  $event
      * @return void
      */
-    public function handle($event)
+    public function handle(Registered $event)
     {
         Notification::route('mail', config('mail.admin.to'))
                     ->route('line-notify', config('line.notify.personal_access_token'))
-                    ->notify(new UserRegisteredNotification());
+                    ->notify(new UserRegisteredNotification($event->user));
     }
 }
