@@ -51,7 +51,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">運営会社</th>
+                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">運営法人</th>
                                 <td class="pl-3">
                                     {{ $home->company }}
                                 </td>
