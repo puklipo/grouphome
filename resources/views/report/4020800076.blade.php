@@ -19,9 +19,9 @@
                 </ul>
             </nav>
 
-            <article id="2022_05" class="ring-2 ring-indigo-500">
-                <h3 class="text-xl bg-indigo-500 text-white px-6 py-3">2022年5月</h3>
-                <div class="p-6 prose prose-indigo max-w-none">
+            <article id="2022_05" class="ring-2 ring-indigo-500 dark:ring-gray-800">
+                <h3 class="text-xl bg-indigo-500 text-white dark:bg-gray-800 dark:text-white px-6 py-3">2022年5月</h3>
+                <div class="p-6 prose prose-indigo dark:prose-invert max-w-none">
                     <p>体験から何ヶ月も経ってから書いてるけどせっかくなのでレポートを残す。</p>
 
                     <h4>立地</h4>
