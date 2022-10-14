@@ -24,11 +24,11 @@ class HomeIndex extends Component
     public ?int $vacancy = null;
 
     protected $queryString = [
-        'q',//キーワード
-        'sort',//並べ替え
-        'level',//対象区分
-        'type',//類型
-        'vacancy',//空室
+        'q', //キーワード
+        'sort', //並べ替え
+        'level', //対象区分
+        'type', //類型
+        'vacancy', //空室
     ];
 
     public function mount(Request $request)
