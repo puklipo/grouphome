@@ -29,9 +29,9 @@
                         {{ __('ヘルプ') }}
                     </x-jet-nav-link>
                     @auth
-                        <x-jet-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
-                            {{ __('お問い合わせ') }}
-                        </x-jet-nav-link>
+{{--                        <x-jet-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">--}}
+{{--                            {{ __('お問い合わせ') }}--}}
+{{--                        </x-jet-nav-link>--}}
                         <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                             {{ __('ダッシュボード') }}
                         </x-jet-nav-link>
