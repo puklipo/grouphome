@@ -36,7 +36,7 @@
         <div class="flex flex-col sm:flex-row max-w-full mx-auto">
             @include('side')
 
-            <main>
+            <main class="flex-grow">
                 <x-jet-banner />
 
                 @livewire('navigation-menu')
