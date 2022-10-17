@@ -21,11 +21,11 @@
                 {{--                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('土地マッチング') }}</a>--}}
             </div>
 
-            <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
-                <h2 class="text-4xl p-3">管理グループホーム一覧 [{{ $homes->count() }}]</h2>
+            <div class="bg-white dark:bg-black overflow-hidden mx-2 sm:mx-0 sm:rounded-lg border border-gray-200">
+                <h2 class="text-xl p-3 bg-gray-100 dark:bg-gray-900">管理グループホーム一覧 [{{ $homes->count() }}]</h2>
                 <ul>
                     @foreach($homes as $home)
-                        <li class="p-3 flex justify-between">
+                        <li class="p-3 flex justify-between border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
                             <a href="{{ route('home.show', $home) }}"
                                class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                 {{ $home->name }}
