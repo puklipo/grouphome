@@ -43,7 +43,7 @@ WAMのCSVファイルは半年ごとの更新。新規グループホームは`w
 ## サーバー
 - AWS
 - Laravel Vapor https://vapor.laravel.com/
-- ドメイン：お名前に移管予定。
+- ドメイン：お名前に移管。
 
 ## 引継ぎ用
 LINE NotifyやGoogle reCAPTCHAのキーは引継ぎ時には取得し直し。
