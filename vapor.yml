@@ -1,6 +1,6 @@
 id: 26895
 name: grouphome
-asset-domain: assets.grouphome.guide
+#asset-domain: assets.grouphome.guide
 environments:
     production:
         memory: 1024
