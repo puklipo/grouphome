@@ -2,7 +2,7 @@
     "private": true,
     "name": "laravel",
     "scripts": {
-        "dev": "vite",
+        "dev": "vite --host=localhost",
         "build": "vite build"
     },
     "devDependencies": {
