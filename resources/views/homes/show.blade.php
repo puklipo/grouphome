@@ -68,7 +68,7 @@
                                     <td class="pl-3">
                                         <a href="{{ $home->url }}" target="_blank"
                                            class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                            {{ Str::limit($home->url) }}
+                                            {{ Str::limit($home->url, 50) }}
                                         </a>
                                     </td>
                                 </tr>
