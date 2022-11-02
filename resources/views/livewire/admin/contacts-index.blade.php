@@ -5,7 +5,7 @@
 
         <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg p-3 mb-3">
 
-            <table class="table-auto">
+            <table class="table-auto w-full">
                 <tr>
                     <th>日時</th>
                     <td>{{ $contact->created_at }}</td>
@@ -21,7 +21,7 @@
                 </tr>
                 <tr>
                     <th>本文</th>
-                    <td>{!! nl2br(e($contact->body)) !!}</td>
+                    <td class="p-1 bg-gray-50">{!! nl2br(e($contact->body)) !!}</td>
                 </tr>
                 <tr>
                     <th></th>
