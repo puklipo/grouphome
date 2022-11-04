@@ -39,11 +39,15 @@ class ImportCommand extends Command
      */
     public function handle()
     {
+        $this->info('import start...');
+
         cache()->forget('side.prefs');
 
         $time = Benchmark::measure(fn () => ImportJob::dispatch());
 
         $this->info($time);
+
+        $this->info('import end...');
 
         return 0;
     }
