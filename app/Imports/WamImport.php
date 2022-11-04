@@ -39,8 +39,8 @@ class WamImport implements
 
     public function onRow(Row $row)
     {
-        //都道府県コード(1-47)+3桁の市区町村コードの形式。後ろ3文字を削除して都道府県コードを得る。
-        $pref_id = (int) Str::substr($row['都道府県コード又は市区町村コード'], 0, -3);
+        //都道府県コード(01-47)+3桁の市区町村コードの形式。最初の2文字から都道府県コードを得る。
+        $pref_id = (int) Str::substr($row['都道府県コード又は市区町村コード'], 0, 2);
 
         $pref = Pref::find($pref_id);
 
