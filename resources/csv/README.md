@@ -2,6 +2,12 @@
 WAMのオープンデータ、「共同生活援助」をダウンロード。  
 https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/
 
+## 更新作業
+1. 古いwam.csvの名前を変更。wam.csv→wam_YYYY_MM.csv
+2. 新しいcsvの名前をwam.csvにして入れ替え。
+3. ↓の修正を行う。
+4. 開発環境でインポートして問題なければ本番環境でもインポート。
+
 ## WAM側が修正されるまでの一時的な対応
 CSVの更新後、残っていたら対応。
 
