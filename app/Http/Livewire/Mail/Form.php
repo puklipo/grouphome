@@ -3,6 +3,8 @@
 namespace App\Http\Livewire\Mail;
 
 use App\Models\Home;
+use App\Notifications\ContactNotification;
+use App\Notifications\HomeMailCreatedNotification;
 use App\Notifications\HomeMailNotification;
 use Illuminate\Support\Facades\Notification;
 use Livewire\Component;
@@ -18,10 +20,10 @@ class Form extends Component
     public string $body = '';
 
     public array $rules = [
-        'name'    => 'required',
-        'email'   => ['required', 'email'],
+        'name' => 'required',
+        'email' => ['required', 'email'],
         'subject' => 'required',
-        'body'    => 'required',
+        'body' => 'required',
     ];
 
     public function sendmail()
@@ -39,6 +41,9 @@ class Form extends Component
                 body: $this->body
             )
         );
+
+        Notification::route('line-notify', config('line.notify.personal_access_token'))
+                    ->notify(new HomeMailCreatedNotification($this->home));
 
         session()->flash('mail_success', true);
     }
