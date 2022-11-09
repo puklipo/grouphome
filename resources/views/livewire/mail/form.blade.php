@@ -25,7 +25,8 @@
 
             <x-select name="subject" wire:model.lazy="subject">
                 <option value="見学">見学</option>
-                <option value="空き状況">空き状況</option>
+                <option value="質問">質問</option>
+                <option value="空き状況の確認">空き状況の確認</option>
                 <option value="その他">その他</option>
             </x-select>
             </div>
