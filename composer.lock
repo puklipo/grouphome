@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.245.0",
+            "version": "3.245.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "8a561bf0eddee0b905153332cfcc899801d3722b"
+                "reference": "abe53c3bcf351ffe1d8fa8784f1bf1dfbf35b5ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8a561bf0eddee0b905153332cfcc899801d3722b",
-                "reference": "8a561bf0eddee0b905153332cfcc899801d3722b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/abe53c3bcf351ffe1d8fa8784f1bf1dfbf35b5ab",
+                "reference": "abe53c3bcf351ffe1d8fa8784f1bf1dfbf35b5ab",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.245.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.245.1"
             },
-            "time": "2022-11-16T19:26:45+00:00"
+            "time": "2022-11-17T19:21:17+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2299,16 +2299,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.45.0",
+            "version": "v1.46.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "ac6be7dde5d574795d9b4dec98ddb5c65b9d9e64"
+                "reference": "370ec07680bf5d11122c24c7a8c9a3fcbbfcbd13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/ac6be7dde5d574795d9b4dec98ddb5c65b9d9e64",
-                "reference": "ac6be7dde5d574795d9b4dec98ddb5c65b9d9e64",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/370ec07680bf5d11122c24c7a8c9a3fcbbfcbd13",
+                "reference": "370ec07680bf5d11122c24c7a8c9a3fcbbfcbd13",
                 "shasum": ""
             },
             "require": {
@@ -2361,9 +2361,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.45.0"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.46.0"
             },
-            "time": "2022-10-11T13:45:36+00:00"
+            "time": "2022-11-17T12:53:41+00:00"
         },
         {
             "name": "laravel/vapor-core",
@@ -8979,16 +8979,16 @@
         },
         {
             "name": "composer/pcre",
-            "version": "3.0.2",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/pcre.git",
-                "reference": "4482b6409ca6bfc2af043a5711cd21ac3e7a8dfb"
+                "reference": "4bff79ddd77851fe3cdd11616ed3f92841ba5bd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/pcre/zipball/4482b6409ca6bfc2af043a5711cd21ac3e7a8dfb",
-                "reference": "4482b6409ca6bfc2af043a5711cd21ac3e7a8dfb",
+                "url": "https://api.github.com/repos/composer/pcre/zipball/4bff79ddd77851fe3cdd11616ed3f92841ba5bd2",
+                "reference": "4bff79ddd77851fe3cdd11616ed3f92841ba5bd2",
                 "shasum": ""
             },
             "require": {
@@ -9030,7 +9030,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/pcre/issues",
-                "source": "https://github.com/composer/pcre/tree/3.0.2"
+                "source": "https://github.com/composer/pcre/tree/3.1.0"
             },
             "funding": [
                 {
@@ -9046,7 +9046,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-03T20:24:16+00:00"
+            "time": "2022-11-17T09:50:14+00:00"
         },
         {
             "name": "doctrine/cache",
