@@ -13,6 +13,8 @@
         <div class="px-3 sm:px-6 lg:px-8">
             <a href="{{ route('home.show', $report) }}" class="text-indigo-500 dark:text-white hover:underline">戻る</a>
 
+            @includeIf('report.mail')
+
             <nav class="m-6">
                 <ul>
                     <li><a href="#2022_05" class="text-indigo-500 hover:underline">2022年5月</a></li>
