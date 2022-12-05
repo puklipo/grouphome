@@ -1,5 +1,5 @@
 <ul>
-    <li><a href="{{ route('area.index') }}" class="font-bold text-indigo-500 dark:text-white hover:underline">自治体一覧</a></li>
+    <li><a href="{{ route('area.index') }}" class="font-bold text-lg text-indigo-500 dark:text-white hover:underline">自治体一覧</a></li>
 
     @foreach($prefs as $pref)
         <li>
