@@ -64,8 +64,11 @@
         <small class="text-sm">
             Copyright&copy; <a href="https://pcs-miraizu.com/"
                                class="font-bold text-indigo-500 dark:text-white hover:underline"
-                               target="_blank" rel="noopener">ポップカルチャースタジオ未来図</a>
-            All Rights Reserved.
+                               target="_blank">ポップカルチャースタジオ未来図</a>
+            All Rights Reserved. /
+            <a href="https://pcs-works.vercel.app/"
+               class="font-bold text-indigo-500 dark:text-white hover:underline"
+               target="_blank">PCS開発チーム</a>
         </small>
     </footer>
 </aside>
