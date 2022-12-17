@@ -54,18 +54,11 @@ LINE NotifyやGoogle reCAPTCHAのキーは引継ぎ時には取得し直し。
 ```shell
 git clone ...
 
-docker run --rm \
-    -u "$(id -u):$(id -g)" \
-    -v $(pwd):/var/www/html \
-    -w /var/www/html \
-    laravelsail/php81-composer:latest \
-    composer install --ignore-platform-reqs
+composer install
+cp .env.example .env
+php artisan key:generate
 
 ./vendor/bin/sail up -d
-
-cp .env.example .env
-./vendor/bin/sail art key:generate
-
 ./vendor/bin/sail art migrate:fresh --seed
 ./vendor/bin/sail art gh:import
 ```
