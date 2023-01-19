@@ -16,6 +16,7 @@ use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 /**
  * @property Point $location
+ *
  * @method static SpatialBuilder query()
  */
 class Home extends Model
