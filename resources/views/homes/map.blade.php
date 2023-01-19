@@ -10,7 +10,7 @@
             {!! $home->map !!}
         @else
             <iframe
-                src="https://maps.google.co.jp/maps?output=embed&q={{ rawurlencode($home->address) }}&z=16&t=h"
+                src="https://maps.google.co.jp/maps?output=embed&q={{ empty($home->location) ? rawurlencode($home->address) : rawurlencode($home->location->latitude.','.$home->location->longitude) }}&z=16&t=h"
                 class="w-full h-96 border-0" allowfullscreen="" loading="lazy"></iframe>
 
             <div>
@@ -20,7 +20,7 @@
                     Googleマップで検索
                 </a>
             </div>
-            <div class="text-sm text-gray-500">住所を基にマップを表示しているので正しくない場合もあります。</div>
+            <div class="text-sm text-gray-500">緯度経度情報や住所を基にマップを表示しているので正しくない場合もあります。</div>
         @endif
     </x-box>
 </div>

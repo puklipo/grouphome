@@ -8,6 +8,7 @@ use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Http\Request;
 use Livewire\Component;
 use Livewire\WithPagination;
+use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class HomeIndex extends Component
 {

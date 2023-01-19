@@ -10,10 +10,18 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Str;
+use MatanYadaev\EloquentSpatial\Objects\Point;
+use MatanYadaev\EloquentSpatial\SpatialBuilder;
+use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
+/**
+ * @property Point $location
+ * @method static SpatialBuilder query()
+ */
 class Home extends Model
 {
     use HasFactory;
+    use HasSpatial;
 
     /**
      * The number of models to return for pagination.
@@ -24,6 +32,7 @@ class Home extends Model
 
     protected $casts = [
         'released_at' => 'date:Y-m-d',
+        'location' => Point::class,
     ];
 
     public $incrementing = false;
@@ -37,6 +46,7 @@ class Home extends Model
         'address',
         'area',
         'map',
+        'location',
         'url',
         'wam',
         'level',

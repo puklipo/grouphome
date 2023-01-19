@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class HomeFactory extends Factory
 {
@@ -20,6 +21,7 @@ class HomeFactory extends Factory
             'company' => $this->faker->company,
             'tel'     => $this->faker->phoneNumber,
             'address' => $this->faker->address,
+            'location' => null,
         ];
     }
 }

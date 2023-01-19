@@ -16,6 +16,7 @@ use Maatwebsite\Excel\Concerns\WithHeadingRow;
 use Maatwebsite\Excel\Concerns\WithValidation;
 use Maatwebsite\Excel\Row;
 use Maatwebsite\Excel\Validators\Failure;
+use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class WamImport implements
     OnEachRow,
@@ -64,6 +65,7 @@ class WamImport implements
             'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
             'area' => $this->kana(Str::remove($pref->name, $row['事業所住所（市区町村）'])),
             'url' => $row['事業所URL'],
+            'location' => new Point((float) $row['事業所緯度'], (float) $row['事業所経度']),
         ]);
     }
 

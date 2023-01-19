@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c8f8dcd5f869f854e69fb17e9938c0c0",
+    "content-hash": "b0840912a00d71098016a59c3644e3f2",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -3665,6 +3665,67 @@
             "time": "2022-08-18T16:18:26+00:00"
         },
         {
+            "name": "matanyadaev/laravel-eloquent-spatial",
+            "version": "2.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MatanYadaev/laravel-eloquent-spatial.git",
+                "reference": "b00b225c48796d9810a69e7e4da47f206f30f332"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/b00b225c48796d9810a69e7e4da47f206f30f332",
+                "reference": "b00b225c48796d9810a69e7e4da47f206f30f332",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-pdo": "*",
+                "laravel/framework": "^8.0|^9.0",
+                "phayes/geophp": "^1.2",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^3.4",
+                "friendsofphp/php-cs-fixer": "^3.0",
+                "jubeki/laravel-code-style": "^1.0",
+                "nunomaduro/larastan": "^1.0|^2.0",
+                "orchestra/testbench": "^6.23|^7.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MatanYadaev\\EloquentSpatial\\EloquentSpatialServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MatanYadaev\\EloquentSpatial\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matan Yadaev",
+                    "email": "matan.yed@gmail.com"
+                }
+            ],
+            "description": "Spatial library for Laravel",
+            "homepage": "https://github.com/matanyadaev/laravel-eloquent-spatial",
+            "support": {
+                "issues": "https://github.com/MatanYadaev/laravel-eloquent-spatial/issues",
+                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/2.9.0"
+            },
+            "time": "2023-01-09T14:46:16+00:00"
+        },
+        {
             "name": "mobiledetect/mobiledetectlib",
             "version": "2.8.41",
             "source": {
@@ -4527,6 +4588,46 @@
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
             "time": "2022-06-14T06:56:20+00:00"
+        },
+        {
+            "name": "phayes/geophp",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phayes/geoPHP.git",
+                "reference": "015404e85b602e0df1f91441f8db0f9e98f7e567"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phayes/geoPHP/zipball/015404e85b602e0df1f91441f8db0f9e98f7e567",
+                "reference": "015404e85b602e0df1f91441f8db0f9e98f7e567",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "geoPHP.inc"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2 or New-BSD"
+            ],
+            "authors": [
+                {
+                    "name": "Patrick Hayes"
+                }
+            ],
+            "description": "GeoPHP is a open-source native PHP library for doing geometry operations. It is written entirely in PHP and can therefore run on shared hosts. It can read and write a wide variety of formats: WKT (including EWKT), WKB (including EWKB), GeoJSON, KML, GPX, GeoRSS). It works with all Simple-Feature geometries (Point, LineString, Polygon, GeometryCollection etc.) and can be used to get centroids, bounding-boxes, area, and a wide variety of other useful information.",
+            "homepage": "https://github.com/phayes/geoPHP",
+            "support": {
+                "issues": "https://github.com/phayes/geoPHP/issues",
+                "source": "https://github.com/phayes/geoPHP/tree/master"
+            },
+            "time": "2014-12-02T06:11:22+00:00"
         },
         {
             "name": "php-http/message-factory",
