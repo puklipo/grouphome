@@ -32,13 +32,13 @@
                 <tr>
                     <th class="bg-indigo-100 dark:bg-gray-800 p-2">月額費用</th>
                     <td class="pl-3">
-                        @if($home->cost->total > 0)
+                        @if($home->cost?->total > 0)
                             <span class="text-red-500 font-extrabold">
                             {{ $home->cost->total }}円
                             </span>
                             (家賃補助後
                             <span class="text-red-500 font-extrabold">
-                                {{ $home->cost->total - $home->cost->support }}円</span>)
+                                {{ $home->cost?->total - $home->cost->support }}円</span>)
                         @else
                             不明
                         @endif
@@ -56,7 +56,7 @@
                 </tr>
                 <tr>
                     <th class="bg-indigo-100 dark:bg-gray-800 p-2">類型</th>
-                    <td class="pl-3">{{ $home->type->type ?? '不明' }}</td>
+                    <td class="pl-3">{{ $home->type?->type ?? '不明' }}</td>
                 </tr>
             </table>
         </div>
