@@ -19,6 +19,9 @@
                     <x-jet-nav-link href="{{ route('detail-search') }}" :active="request()->routeIs('detail-search')">
                         {{ __('詳細検索') }}
                     </x-jet-nav-link>
+                    <x-jet-nav-link href="{{ route('location') }}" :active="request()->routeIs('location')">
+                        {{ __('現在地から探す') }}
+                    </x-jet-nav-link>
                     <x-jet-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
                         {{ __('履歴') }}
                     </x-jet-nav-link>
@@ -187,6 +190,9 @@
             <x-jet-responsive-nav-link href="{{ route('detail-search') }}"
                                        :active="request()->routeIs('detail-search')">
                 {{ __('詳細検索') }}
+            </x-jet-responsive-nav-link>
+            <x-jet-responsive-nav-link href="{{ route('location') }}" :active="request()->routeIs('location')">
+                {{ __('現在地から探す') }}
             </x-jet-responsive-nav-link>
             <x-jet-responsive-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
                 {{ __('履歴') }}
