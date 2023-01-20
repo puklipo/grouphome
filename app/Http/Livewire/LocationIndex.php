@@ -17,8 +17,6 @@ class LocationIndex extends Component
 
     public function load(float $latitude, float $longitude)
     {
-        info(self::class, [$latitude, $longitude]);
-
         $point = new Point($latitude, $longitude, (int) config('grouphome.geo.srid'));
 
         $this->homes = rescue(
