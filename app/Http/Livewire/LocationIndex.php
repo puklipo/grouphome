@@ -20,7 +20,6 @@ class LocationIndex extends Component
         info(self::class, [$latitude, $longitude]);
 
         $this->homes = Home::query()
-                            ->with(['pref', 'type', 'photo', 'cost'])
                             ->whereNotNull('location')
                             ->withDistanceSphere('location', new Point($latitude, $longitude))
                             ->orderByDistanceSphere('location', new Point($latitude, $longitude))

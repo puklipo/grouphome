@@ -55,6 +55,8 @@ class Home extends Model
         'released_at',
     ];
 
+    public $with = ['pref', 'type', 'photo', 'cost'];
+
     public function pref(): BelongsTo
     {
         return $this->belongsTo(Pref::class);
