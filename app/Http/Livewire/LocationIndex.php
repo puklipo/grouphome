@@ -28,6 +28,7 @@ class LocationIndex extends Component
         } else {
             $homes = Home::query()
                          ->with(['pref', 'type', 'photo', 'cost'])
+                         ->whereNotNull('location')
                          ->withDistanceSphere('location', new Point($this->latitude, $this->longitude))
                          ->orderByDistanceSphere('location', new Point($this->latitude, $this->longitude))
                          ->limit(50)
