@@ -41,7 +41,7 @@ Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 
 Route::get('area', AreaIndexController::class)->name('area.index');
 
-Route::view('location','location.location')->name('location');
+Route::view('location', 'location.location')->name('location');
 
 Route::view(uri: 'history', view: 'history')->name('history');
 
