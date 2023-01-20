@@ -6,11 +6,11 @@
         @include('homes.cover')
 
         <div class="p-3">
-            @isset($home->distance)
+            @if(filled($home->distance))
                 <div class="mb-3">
                     現在地から約{{ round($home->distance) }}メートル
                 </div>
-            @endisset
+            @endif
 
             <a href="{{ route('home.show', $home) }}">
                 <h2 class="inline-flex text-5xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all hover:text-indigo-600 dark:hover:text-white dark:hover:underline">
