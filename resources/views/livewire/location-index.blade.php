@@ -1,15 +1,13 @@
 <div
     x-data
-    x-init="
-    if ('geolocation' in navigator) {
+    x-init="if ('geolocation' in navigator) {
                 navigator.geolocation.getCurrentPosition((position) => {
                     $wire.set('latitude', position.coords.latitude)
                     $wire.set('longitude', position.coords.longitude)
                     $wire.set('geo', true)
                 })
+                $wire.set('loading', false)
             }
-
-            $wire.set('loading', false)
             ">
 
     @forelse($homes as $home)
