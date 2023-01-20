@@ -20,11 +20,12 @@ class LocationIndex extends Component
         info(self::class, [$latitude, $longitude]);
 
         $this->homes = Home::query()
-                            ->whereNotNull('location')
-                            ->withDistanceSphere('location', new Point($latitude, $longitude))
-                            ->orderByDistanceSphere('location', new Point($latitude, $longitude))
-                            ->limit(50)
-                            ->get();
+                           ->with(['cost'])
+                           ->whereNotNull('location')
+                           ->withDistanceSphere('location', new Point($latitude, $longitude))
+                           ->orderByDistanceSphere('location', new Point($latitude, $longitude))
+                           ->limit(50)
+                           ->get();
     }
 
     public function render()

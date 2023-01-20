@@ -54,6 +54,7 @@ class HomeIndex extends Component
                                  filled($this->area),
                                  fn (Builder $query) => $query->where('area', $this->area)
                              )
+                             ->with(['cost'])
                              ->keywordSearch($this->q)
                              ->sortBy($this->sort)
                              ->levelSearch($this->level)

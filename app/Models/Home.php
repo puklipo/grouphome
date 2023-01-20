@@ -55,7 +55,7 @@ class Home extends Model
         'released_at',
     ];
 
-    public $with = ['pref', 'type', 'photo', 'cost'];
+    protected $with = ['pref', 'type', 'photo'];
 
     public function pref(): BelongsTo
     {
