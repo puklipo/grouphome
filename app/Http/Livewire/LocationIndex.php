@@ -19,13 +19,16 @@ class LocationIndex extends Component
     {
         info(self::class, [$latitude, $longitude]);
 
-        $this->homes = Home::query()
-                           ->with(['cost'])
-                           ->whereNotNull('location')
-                           ->withDistanceSphere('location', new Point($latitude, $longitude))
-                           ->orderByDistanceSphere('location', new Point($latitude, $longitude))
-                           ->limit(50)
-                           ->get();
+        $this->homes = rescue(
+            callback: fn () => Home::query()
+                                   ->with(['cost'])
+                                   ->whereNotNull('location')
+                                   ->withDistanceSphere('location', new Point($latitude, $longitude))
+                                   ->orderByDistanceSphere('location', new Point($latitude, $longitude))
+                                   ->limit(50)
+                                   ->get(),
+            rescue: []
+        );
     }
 
     public function render()
