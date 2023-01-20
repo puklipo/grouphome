@@ -17,6 +17,8 @@ class LocationIndex extends Component
 
     public function load(float $latitude, float $longitude)
     {
+        info(self::class, [$latitude, $longitude]);
+
         $this->homes = Home::query()
                             ->with(['pref', 'type', 'photo', 'cost'])
                             ->whereNotNull('location')
