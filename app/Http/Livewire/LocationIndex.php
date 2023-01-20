@@ -19,12 +19,14 @@ class LocationIndex extends Component
     {
         info(self::class, [$latitude, $longitude]);
 
+        $point = new Point($latitude, $longitude, (int) config('grouphome.geo.srid'));
+
         $this->homes = rescue(
             callback: fn () => Home::query()
                                    ->with(['cost'])
                                    ->whereNotNull('location')
-                                   ->withDistanceSphere('location', new Point($latitude, $longitude))
-                                   ->orderByDistanceSphere('location', new Point($latitude, $longitude))
+                                   ->withDistanceSphere('location', $point)
+                                   ->orderByDistanceSphere('location', $point)
                                    ->limit(50)
                                    ->get(),
             rescue: []
