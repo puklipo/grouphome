@@ -2,23 +2,16 @@
     x-data
     x-init="if ('geolocation' in navigator) {
                 navigator.geolocation.getCurrentPosition((position) => {
-                    $wire.set('latitude', position.coords.latitude, true)
-                    $wire.set('longitude', position.coords.longitude,true)
-                    $wire.set('geo', true)
-                })
-                $wire.set('loading', false)
+                    $wire.load(position.coords.latitude, position.coords.longitude)
+                }, () => $wire.set('geo', false))
             }
             ">
 
     @forelse($homes as $home)
         @include('homes.index-item')
     @empty
-        @unless($loading)
-            <div class="p-3 font-bold">見つかりませんでした。</div>
-
-            @unless($geo)
-                <div class="p-3 font-bold text-red-500">ブラウザで位置情報へのアクセスを許可してください。</div>
-            @endunless
+        @unless($geo)
+            <div class="p-3 font-bold text-red-500">ブラウザで位置情報へのアクセスを許可してください。</div>
         @endunless
     @endforelse
 
