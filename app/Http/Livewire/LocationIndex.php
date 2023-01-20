@@ -8,33 +8,26 @@ use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class LocationIndex extends Component
 {
-    public float $latitude = 0;
-    public float $longitude = 0;
+    protected mixed $homes = [];
 
     /**
      * @var bool 位置情報が有効
      */
-    public bool $geo = false;
+    public bool $geo = true;
 
-    /**
-     * @var bool ロード中
-     */
-    public bool $loading = true;
+    public function load(float $latitude, float $longitude)
+    {
+        $this->homes = Home::query()
+                            ->with(['pref', 'type', 'photo', 'cost'])
+                            ->whereNotNull('location')
+                            ->withDistanceSphere('location', new Point($latitude, $longitude))
+                            ->orderByDistanceSphere('location', new Point($latitude, $longitude))
+                            ->limit(50)
+                            ->get();
+    }
 
     public function render()
     {
-        if ($this->loading || ! $this->geo) {
-            $homes = [];
-        } else {
-            $homes = Home::query()
-                         ->with(['pref', 'type', 'photo', 'cost'])
-                         ->whereNotNull('location')
-                         ->withDistanceSphere('location', new Point($this->latitude, $this->longitude))
-                         ->orderByDistanceSphere('location', new Point($this->latitude, $this->longitude))
-                         ->limit(50)
-                         ->get();
-        }
-
-        return view('livewire.location-index')->with(compact('homes'));
+        return view('livewire.location-index')->with(['homes' => $this->homes]);
     }
 }
