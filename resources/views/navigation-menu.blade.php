@@ -25,12 +25,12 @@
                     <x-jet-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
                         {{ __('履歴') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')">
-                        {{ __('自治体一覧') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('help.user') }}" :active="request()->routeIs('help.user')">
-                        {{ __('ヘルプ') }}
-                    </x-jet-nav-link>
+{{--                    <x-jet-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')">--}}
+{{--                        {{ __('自治体一覧') }}--}}
+{{--                    </x-jet-nav-link>--}}
+{{--                    <x-jet-nav-link href="{{ route('help.user') }}" :active="request()->routeIs('help.user')">--}}
+{{--                        {{ __('ヘルプ') }}--}}
+{{--                    </x-jet-nav-link>--}}
                     @auth
 {{--                        <x-jet-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">--}}
 {{--                            {{ __('お問い合わせ') }}--}}
