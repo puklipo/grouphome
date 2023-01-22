@@ -29,8 +29,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY,Geometry::GEOMETRY);
-        DB::connection()->registerDoctrineType(Geometry::class, Geometry::GEOMETRY,Geometry::GEOMETRY);
+        DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY, Geometry::GEOMETRY);
+        DB::connection()->registerDoctrineType(Geometry::class, Geometry::GEOMETRY, Geometry::GEOMETRY);
 
         Model::preventLazyLoading(! $this->app->isProduction());
 

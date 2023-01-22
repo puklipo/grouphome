@@ -2,8 +2,8 @@
 
 namespace App\Doctrine;
 
-use Doctrine\DBAL\Types\Type;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
+use Doctrine\DBAL\Types\Type;
 
 class Geometry extends Type
 {
