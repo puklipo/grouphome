@@ -20,7 +20,6 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
-        DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY,Geometry::GEOMETRY);
     }
 
     /**
@@ -30,6 +29,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY,Geometry::GEOMETRY);
+
         Model::preventLazyLoading(! $this->app->isProduction());
 
         View::composer('side', SideComposer::class);
