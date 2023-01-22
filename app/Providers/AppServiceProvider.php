@@ -2,9 +2,11 @@
 
 namespace App\Providers;
 
+use App\Doctrine\Geometry;
 use App\View\Composers\SearchComposer;
 use App\View\Composers\SideComposer;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 
@@ -18,6 +20,7 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         //
+        DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY,Geometry::GEOMETRY);
     }
 
     /**

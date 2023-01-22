@@ -16,8 +16,8 @@ use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 /**
  * @property Point $location
- *
  * @method static SpatialBuilder query()
+ * @mixin IdeHelperHome
  */
 class Home extends Model
 {

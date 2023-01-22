@@ -65,7 +65,7 @@
         ],
         "sail:up": [
             "./vendor/bin/sail up -d",
-            "./vendor/bin/sail art ide-helper:models -N"
+            "./vendor/bin/sail art ide-helper:models -M"
         ],
         "sail:down": "./vendor/bin/sail down"
     },
