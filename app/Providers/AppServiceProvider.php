@@ -30,8 +30,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         // laravel-eloquent-spatialにはGeometryだけ足りないので追加
-        DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY, Geometry::GEOMETRY);
-        DB::connection()->registerDoctrineType(Geometry::class, Geometry::GEOMETRY, Geometry::GEOMETRY);
+        if (DB::connection()->isDoctrineAvailable()) {
+            DB::registerDoctrineType(Geometry::class, Geometry::GEOMETRY, Geometry::GEOMETRY);
+            DB::connection()->registerDoctrineType(Geometry::class, Geometry::GEOMETRY, Geometry::GEOMETRY);
+        }
 
         Model::preventLazyLoading(! $this->app->isProduction());
 
