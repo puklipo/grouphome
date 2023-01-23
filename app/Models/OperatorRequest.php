@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Notifications\OperatorRequestCreated;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Facades\Notification;
 
 /**
@@ -22,7 +23,7 @@ class OperatorRequest extends Model
     /**
      * @return void
      */
-    protected static function booted()
+    protected static function booted(): void
     {
         static::created(function ($request) {
             Notification::route('mail', config('mail.admin.to'))
@@ -30,12 +31,12 @@ class OperatorRequest extends Model
         });
     }
 
-    public function user()
+    public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
     }
 
-    public function home()
+    public function home(): BelongsTo
     {
         return $this->belongsTo(Home::class);
     }

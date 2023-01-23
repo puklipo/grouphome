@@ -17,7 +17,7 @@ class Contact extends Model
     /**
      * @return void
      */
-    protected static function booted()
+    protected static function booted(): void
     {
         static::created(function ($contact) {
             Notification::route('mail', config('mail.contact.to'))

@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @mixin IdeHelperPhoto
@@ -12,10 +13,9 @@ class Photo extends Model
 {
     use HasFactory;
 
-    protected $guarded = ['id'];
     protected $touches = ['home'];
 
-    public function home()
+    public function home(): BelongsTo
     {
         return $this->belongsTo(Home::class);
     }

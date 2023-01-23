@@ -24,6 +24,8 @@ class PhotoEditor extends Component
 
     public function mount()
     {
+        abort_if($this->column === 'id', 500);
+
         $this->home->photo()->firstOrCreate();
     }
 
@@ -39,7 +41,7 @@ class PhotoEditor extends Component
 
         $path = $this->photo->storePublicly('photos/'.$this->home->id);
 
-        $this->home->photo->fill([
+        $this->home->photo->forceFill([
             $this->column => $path,
         ])->save();
 
@@ -53,7 +55,7 @@ class PhotoEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        $this->home->photo->fill([
+        $this->home->photo->forceFill([
             $this->column => null,
         ])->save();
 
