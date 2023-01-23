@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\User;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
 
@@ -12,7 +13,7 @@ class VaporUiServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         $this->gate();
     }
@@ -24,10 +25,10 @@ class VaporUiServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function gate()
+    protected function gate(): void
     {
-        Gate::define('viewVaporUI', function ($user = null) {
-            return in_array(optional($user)->id, [
+        Gate::define('viewVaporUI', function (User $user) {
+            return in_array($user->id, [
                 1,
             ]);
         });
@@ -38,7 +39,7 @@ class VaporUiServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         //
     }
