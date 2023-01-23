@@ -32,7 +32,7 @@ class SitemapJob implements ShouldQueue
      *
      * @return void
      */
-    public function handle()
+    public function handle(): void
     {
         $sitemap = Sitemap::create()
                           ->add(Url::create('/'))

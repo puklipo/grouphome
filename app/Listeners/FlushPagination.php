@@ -22,10 +22,10 @@ class FlushPagination
     /**
      * Handle the event.
      *
-     * @param  object  $event
+     * @param  mixed  $event
      * @return void
      */
-    public function handle($event)
+    public function handle(mixed $event): void
     {
         Paginator::useTailwind();
         PaginationState::resolveUsing($event->sandbox);

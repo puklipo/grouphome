@@ -26,7 +26,7 @@ class UserRegistered
      * @param  Registered  $event
      * @return void
      */
-    public function handle(Registered $event)
+    public function handle(Registered $event): void
     {
         Notification::route('mail', config('mail.admin.to'))
                     ->route('line-notify', config('line.notify.personal_access_token'))
