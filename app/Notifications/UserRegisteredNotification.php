@@ -32,7 +32,7 @@ class UserRegisteredNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via(mixed $notifiable): array
     {
         return collect(['mail'])
             ->when(
@@ -47,7 +47,7 @@ class UserRegisteredNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return MailMessage
      */
-    public function toMail($notifiable)
+    public function toMail(mixed $notifiable): MailMessage
     {
         return (new MailMessage)
             ->subject(__('【新規ユーザー登録】'.$this->user->name ?? ''))
@@ -59,7 +59,7 @@ class UserRegisteredNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return LineNotifyMessage
      */
-    public function toLineNotify($notifiable)
+    public function toLineNotify(mixed $notifiable): LineNotifyMessage
     {
         return LineNotifyMessage::create('新規ユーザー登録。現在のユーザー数：'.User::count());
     }
@@ -70,7 +70,7 @@ class UserRegisteredNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable)
+    public function toArray(mixed $notifiable): array
     {
         return [
             //

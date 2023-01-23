@@ -7,7 +7,7 @@ use Illuminate\View\View;
 
 class SearchComposer
 {
-    public function compose(View $view)
+    public function compose(View $view): void
     {
         $types = cache()->remember('search.types', now()->addDay(), fn () => Type::all());
 

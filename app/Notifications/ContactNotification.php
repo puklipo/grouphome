@@ -33,7 +33,7 @@ class ContactNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via(mixed $notifiable): array
     {
         return collect(['mail'])
             ->when(
@@ -48,7 +48,7 @@ class ContactNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return MailMessage
      */
-    public function toMail($notifiable)
+    public function toMail(mixed $notifiable): MailMessage
     {
         return (new MailMessage)
             ->subject('【'.config('app.name').'】お問い合わせ')
@@ -64,7 +64,7 @@ class ContactNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return LineNotifyMessage
      */
-    public function toLineNotify($notifiable)
+    public function toLineNotify(mixed $notifiable): LineNotifyMessage
     {
         return LineNotifyMessage::create('問い合わせがありました。'.PHP_EOL.
             URL::temporarySignedRoute('contact.preview', now()->addDay(), $this->contact));
@@ -76,7 +76,7 @@ class ContactNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return array
      */
-    public function toArray($notifiable)
+    public function toArray(mixed $notifiable): array
     {
         return [
             //

@@ -31,7 +31,7 @@ class HomeMailCreatedNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return array
      */
-    public function via($notifiable)
+    public function via(mixed $notifiable): array
     {
         return collect()
             ->when(
@@ -46,7 +46,7 @@ class HomeMailCreatedNotification extends Notification implements ShouldQueue
      * @param  mixed  $notifiable
      * @return LineNotifyMessage
      */
-    public function toLineNotify($notifiable)
+    public function toLineNotify(mixed $notifiable): LineNotifyMessage
     {
         return LineNotifyMessage::create($this->home->name.'への問い合わせが送信されました。');
     }
