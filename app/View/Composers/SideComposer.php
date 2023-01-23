@@ -7,7 +7,7 @@ use Illuminate\View\View;
 
 class SideComposer
 {
-    public function compose(View $view)
+    public function compose(View $view): void
     {
         $prefs = cache()->remember(
             'side.prefs',
