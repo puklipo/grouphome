@@ -11,13 +11,12 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Str;
 use MatanYadaev\EloquentSpatial\Objects\Point;
-use MatanYadaev\EloquentSpatial\SpatialBuilder;
 use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 /**
- * @property Point $location
+ * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
  *
- * @method static SpatialBuilder query()
+ * @method static \MatanYadaev\EloquentSpatial\SpatialBuilder query()
  * @mixin IdeHelperHome
  */
 class Home extends Model

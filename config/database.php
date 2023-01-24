@@ -144,4 +144,12 @@ return [
 
     ],
 
+    /**
+     * laravel-eloquent-spatialにはGeometryだけ足りないので追加.
+     */
+    'dbal' => [
+        'types' => [
+            'geometry' => \App\Doctrine\Geometry::class,
+        ],
+    ],
 ];
