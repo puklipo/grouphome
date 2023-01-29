@@ -5972,27 +5972,27 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "13b85b259b45743df7c24875278839af391d756d"
+                "reference": "205b836fd73b8938c464e7caaa234674b7611847"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/13b85b259b45743df7c24875278839af391d756d",
-                "reference": "13b85b259b45743df7c24875278839af391d756d",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/205b836fd73b8938c464e7caaa234674b7611847",
+                "reference": "205b836fd73b8938c464e7caaa234674b7611847",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "illuminate/support": "^9.0",
+                "illuminate/support": "^9.0||^10.0",
                 "laravel/socialite": "^5.0",
                 "linecorp/line-bot-sdk": "^7.0",
                 "php": "^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^7.0",
+                "orchestra/testbench": "^7.0||^8.0",
                 "phpunit/phpunit": "^9.5"
             },
             "type": "library",
@@ -6030,31 +6030,31 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.0.2"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.1.0"
             },
-            "time": "2022-11-25T00:24:59+00:00"
+            "time": "2023-01-28T02:28:51+00:00"
         },
         {
             "name": "revolution/laravel-str-mixins",
-            "version": "2.2.1",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-str-mixins.git",
-                "reference": "dd5a52c8aa05bc704c5421a6036e2fb5b02c5937"
+                "reference": "b89d4b08aa0916876e71048458efa66b66ee4ba7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-str-mixins/zipball/dd5a52c8aa05bc704c5421a6036e2fb5b02c5937",
-                "reference": "dd5a52c8aa05bc704c5421a6036e2fb5b02c5937",
+                "url": "https://api.github.com/repos/kawax/laravel-str-mixins/zipball/b89d4b08aa0916876e71048458efa66b66ee4ba7",
+                "reference": "b89d4b08aa0916876e71048458efa66b66ee4ba7",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "illuminate/support": "^8.0||^9.0",
-                "php": "^7.4||^8.0"
+                "illuminate/support": "^9.0||^10.0",
+                "php": "^8.0"
             },
             "require-dev": {
-                "orchestra/testbench": "^6.0||^7.0"
+                "orchestra/testbench": "^7.0||^8.0"
             },
             "type": "library",
             "extra": {
@@ -6087,9 +6087,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-str-mixins/issues",
-                "source": "https://github.com/kawax/laravel-str-mixins/tree/2.2.1"
+                "source": "https://github.com/kawax/laravel-str-mixins/tree/2.3.0"
             },
-            "time": "2022-01-14T07:21:45+00:00"
+            "time": "2023-01-28T08:49:04+00:00"
         },
         {
             "name": "riverline/multipart-parser",
