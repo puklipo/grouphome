@@ -53,6 +53,8 @@ class HomePolicy
      */
     public function update(User $user, Home $home)
     {
+        $user->loadMissing('homes');
+
         return $user->homes->contains($home);
     }
 

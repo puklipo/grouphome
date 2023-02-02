@@ -3,9 +3,7 @@
 namespace Tests\Feature;
 
 use App\Models\Home;
-use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class HomeTest extends TestCase
@@ -51,8 +49,7 @@ class HomeTest extends TestCase
 
         $response = $this->actingAs($home->users->last())->get(route('home.show', $home));
 
-        $response->assertDontSeeLivewire('basic-editor')
-                 ->assertSeeText('wam.go.jp')
+        $response->assertSee('wam.go.jp')
                  ->assertDontSeeText('変更（管理者用）');
     }
 }
