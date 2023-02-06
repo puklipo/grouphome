@@ -38,7 +38,7 @@ class HomeTest extends TestCase
         $response = $this->actingAs($home->users->first())->get(route('home.show', $home));
 
         $response->assertSeeText('変更（管理者用）')
-                 ->assertSeeLivewire('basic-editor');
+                 ->assertSeeLivewire('home.basic-editor');
     }
 
     public function test_home_operator()
