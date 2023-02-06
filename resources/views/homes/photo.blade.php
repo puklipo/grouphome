@@ -16,7 +16,7 @@
 
     <x-box class="flex flex-wrap">
         @foreach(config('photo') as $column => $name)
-            <livewire:photo-editor :home="$home" :origin="$home->photo->$column ?? ''" :column="$column" :name="$name"/>
+            <livewire:home.photo-editor :home="$home" :origin="$home->photo->$column ?? ''" :column="$column" :name="$name"/>
         @endforeach
     </x-box>
 </div>

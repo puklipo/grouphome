@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -47,6 +47,6 @@ class CostEditor extends Component
 
     public function render()
     {
-        return view('livewire.cost-editor');
+        return view('livewire.home.cost-editor');
     }
 }

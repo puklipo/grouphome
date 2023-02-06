@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -37,6 +37,6 @@ class VacancyEditor extends Component
 
     public function render()
     {
-        return view('livewire.vacancy-editor');
+        return view('livewire.home.vacancy-editor');
     }
 }

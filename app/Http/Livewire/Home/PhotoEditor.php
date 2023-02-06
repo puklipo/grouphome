@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -68,6 +68,6 @@ class PhotoEditor extends Component
 
     public function render()
     {
-        return view('livewire.photo-editor');
+        return view('livewire.home.photo-editor');
     }
 }

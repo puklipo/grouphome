@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -39,6 +39,6 @@ class EquipmentEditor extends Component
 
     public function render()
     {
-        return view('livewire.equipment-editor');
+        return view('livewire.home.equipment-editor');
     }
 }

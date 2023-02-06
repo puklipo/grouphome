@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -60,6 +60,6 @@ class ConditionEditor extends Component
 
     public function render()
     {
-        return view('livewire.condition-editor');
+        return view('livewire.home.condition-editor');
     }
 }

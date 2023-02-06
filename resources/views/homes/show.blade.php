@@ -111,21 +111,21 @@
                     </div>
                 </x-box>
 
-                <livewire:basic-editor :home="$home"></livewire:basic-editor>
+                <livewire:home.basic-editor :home="$home"></livewire:home.basic-editor>
 
-                <livewire:introduction-editor :home="$home"></livewire:introduction-editor>
+                <livewire:home.introduction-editor :home="$home"></livewire:home.introduction-editor>
 
-                <livewire:vacancy-editor :home="$home"></livewire:vacancy-editor>
+                <livewire:home.vacancy-editor :home="$home"></livewire:home.vacancy-editor>
 
-                <livewire:condition-editor :home="$home"></livewire:condition-editor>
+                <livewire:home.condition-editor :home="$home"></livewire:home.condition-editor>
 
-                <livewire:cost-editor :home="$home"></livewire:cost-editor>
+                <livewire:home.cost-editor :home="$home"></livewire:home.cost-editor>
 
-                <livewire:facility-editor :home="$home"></livewire:facility-editor>
+                <livewire:home.facility-editor :home="$home"></livewire:home.facility-editor>
 
-                <livewire:equipment-editor :home="$home"></livewire:equipment-editor>
+                <livewire:home.equipment-editor :home="$home"></livewire:home.equipment-editor>
 
-                <livewire:houserule-editor :home="$home"></livewire:houserule-editor>
+                <livewire:home.houserule-editor :home="$home"></livewire:home.houserule-editor>
 
                 @include('homes.photo')
 
