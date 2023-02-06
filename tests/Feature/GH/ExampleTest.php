@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\GH;
 
 use App\Actions\History;
 use App\Http\Livewire\ContactForm;

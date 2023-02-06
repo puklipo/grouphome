@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Tests\Feature\GH;
 
 use App\Models\Home;
 use Illuminate\Foundation\Testing\RefreshDatabase;
