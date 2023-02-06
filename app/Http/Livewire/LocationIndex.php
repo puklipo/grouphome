@@ -15,7 +15,7 @@ class LocationIndex extends Component
      */
     public bool $geo = true;
 
-    public function load(float $latitude, float $longitude)
+    public function load(float $latitude, float $longitude): void
     {
         $point = new Point($latitude, $longitude, (int) config('grouphome.geo.srid'));
 
