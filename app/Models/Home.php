@@ -14,8 +14,8 @@ use MatanYadaev\EloquentSpatial\Objects\Point;
 use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 /**
- * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
  * @method static \MatanYadaev\EloquentSpatial\SpatialBuilder query()
+ * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
  * @mixin IdeHelperHome
  */
 class Home extends Model
