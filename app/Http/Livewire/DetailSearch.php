@@ -23,8 +23,8 @@ class DetailSearch extends Component
     public ?string $q = null;
     /** @var string|null 並べ替え */
     public ?string $sort = 'updated';
-    /** @var int|string|null 空室 */
-    public int|string|null $vacancy = null;
+    /** @var string|null 空室 */
+    public ?string $vacancy = null;
 
     /** @var array<int, bool> 対象区分 */
     public array $levels = [];

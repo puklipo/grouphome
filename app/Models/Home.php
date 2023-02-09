@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use Illuminate\Contracts\Database\Query\Builder;
+use App\Models\Concerns\HomeScope;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +15,6 @@ use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 /**
  * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
- *
  * @method static \MatanYadaev\EloquentSpatial\SpatialBuilder query()
  * @mixin IdeHelperHome
  */
@@ -23,6 +22,7 @@ class Home extends Model
 {
     use HasFactory;
     use HasSpatial;
+    use HomeScope;
 
     /**
      * The number of models to return for pagination.
@@ -100,80 +100,6 @@ class Home extends Model
     public function cost(): HasOne
     {
         return $this->hasOne(Cost::class)->withDefault();
-    }
-
-    public function scopeAddTotalCost(Builder $query): Builder
-    {
-        return $query->addSelect([
-            'total' => Cost::select('total')
-                           ->whereColumn('home_id', 'homes.id')
-                           ->where('total', '>', 0),
-        ]);
-    }
-
-    public function scopeKeywordSearch(Builder $query, ?string $search): Builder
-    {
-        return $query->when($search, function (Builder $query, $search) {
-            $query->where(function (Builder $query) use ($search) {
-                $query->where('name', 'like', "%$search%")
-                      ->orWhere('address', 'like', "%$search%")
-                      ->orWhere('company', 'like', "%$search%")
-                      ->orWhere('introduction', 'like', "%$search%")
-                      ->orWhere('houserule', 'like', "%$search%")
-                      ->orWhere('url', 'like', "%$search%")
-                      ->orWhere('wam', 'like', "%$search%")
-                      ->orWhere('id', $search);
-            });
-        });
-    }
-
-    public function scopeSortBy(Builder $query, ?string $sort): Builder
-    {
-        return match ($sort) {
-            'updated' => $query->latest('updated_at'),
-            'low' => $query->whereHas('cost', function (Builder $query) {
-                $query->where('total', '>', 0);
-            })->oldest('total'),
-            'high' => $query->whereHas('cost', function (Builder $query) {
-                $query->where('total', '>', 0);
-            }
-            )->latest('total'),
-            'address' => $query->oldest('address'),
-            'release' => $query->latest('released_at'),
-            'name' => $query->oldest('name'),
-            'pref' => $query->oldest('pref_id'),
-            'id' => $query->latest('id'),
-            default => $query->latest()
-        };
-    }
-
-    public function scopeLevelSearch(Builder $query, ?string $level): Builder
-    {
-        return $query->when(filled($level), function (Builder $query, $b) use ($level) {
-            $query->where('level', $level);
-        });
-    }
-
-    public function scopeTypeSearch(Builder $query, ?string $type): Builder
-    {
-        return $query->when(filled($type), function (Builder $query, $b) use ($type) {
-            $query->where(function (Builder $query) use ($type) {
-                $query->whereHas('type', function (Builder $query) use ($type) {
-                    $query->where('id', $type);
-                });
-            });
-        });
-    }
-
-    public function scopeVacancySearch(Builder $query, ?string $vacancy): Builder
-    {
-        return $query->when(filled($vacancy), function (Builder $query, $b) use ($vacancy) {
-            $query->where(function (Builder $query) use ($vacancy) {
-                $query->whereHas('vacancy', function (Builder $query) use ($vacancy) {
-                    $query->where('filled', $vacancy);
-                });
-            });
-        });
     }
 
     protected function description(): Attribute
