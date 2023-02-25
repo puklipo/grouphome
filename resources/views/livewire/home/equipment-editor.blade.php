@@ -23,13 +23,13 @@
                 変更
             </x-slot>
             @foreach(config('equipment') as $key => $name)
-                <x-jet-label for="equipment_{{ $key }}" class="mr-3 cursor-pointer">
-                    <x-jet-checkbox name="equipment_{{ $key }}"
+                <x-label for="equipment_{{ $key }}" class="mr-3 cursor-pointer">
+                    <x-checkbox name="equipment_{{ $key }}"
                                     id="equipment_{{ $key }}"
                                     class="checked:text-red-500"
                                     wire:model="home.equipment.{{ $key }}"/>
                     {{ $name }}
-                </x-jet-label>
+                </x-label>
             @endforeach
         </x-box-edit>
     @endcanany

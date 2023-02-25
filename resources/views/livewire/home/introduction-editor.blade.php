@@ -17,15 +17,15 @@
                 変更
             </x-slot>
             <form wire:submit.prevent="save">
-                <x-jet-label for="introduction" value="{{ __('紹介') }}"/>
+                <x-label for="introduction" value="{{ __('紹介') }}"/>
 
                 <x-textarea name="introduction" wire:model.defer="home.introduction"></x-textarea>
 
                 <div class="text-sm text-gray-500 dark:text-white">グループホームの基本的な紹介文を入力してください。</div>
 
-                <x-jet-button class="mt-3">
+                <x-button class="mt-3">
                     {{ __('更新') }}
-                </x-jet-button>
+                </x-button>
             </form>
         </x-box-edit>
     @endcanany

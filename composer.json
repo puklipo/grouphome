@@ -10,7 +10,7 @@
         "doctrine/dbal": "^3.6",
         "guzzlehttp/guzzle": "^7.5",
         "laravel/framework": "^10.0",
-        "laravel/jetstream": "^2.4",
+        "laravel/jetstream": "^v3.0.1",
         "laravel/octane": "^1.4",
         "laravel/sanctum": "^3.2",
         "laravel/tinker": "^2.8",

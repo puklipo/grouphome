@@ -2,23 +2,23 @@
      wire:init="onReady">
     @if(session()->missing('mail_success'))
 
-        <x-jet-validation-errors class="mb-4"/>
+        <x-validation-errors class="mb-4"/>
 
         <form wire:submit.prevent="sendmail">
             <div>
-                <x-jet-label for="name" value="{{ __('お名前') }}"/>
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" wire:model.lazy="name" required
+                <x-label for="name" value="{{ __('お名前') }}"/>
+                <x-input id="name" class="block mt-1 w-full" type="text" name="name" wire:model.lazy="name" required
                              autocomplete="name"/>
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}"/>
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.lazy="email"
+                <x-label for="email" value="{{ __('Email') }}"/>
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.lazy="email"
                              required autocomplete="email"/>
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="message" value="{{ __('メッセージ') }}"/>
+                <x-label for="message" value="{{ __('メッセージ') }}"/>
 
                 <textarea name="body"
                           wire:model.lazy="body"
@@ -28,9 +28,9 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <x-jet-button class="ml-4">
+                <x-button class="ml-4">
                     {{ __('送信') }}
-                </x-jet-button>
+                </x-button>
             </div>
         </form>
 

@@ -17,10 +17,10 @@
             @foreach($users as $user)
                 <div
                     class="md:grid md:grid-cols-3 md:gap-6 mt-3 p-3 bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg">
-                    <x-jet-section-title>
+                    <x-section-title>
                         <x-slot name="title">{{ $user->name }}</x-slot>
                         <x-slot name="description">{{ $user->email }}</x-slot>
-                    </x-jet-section-title>
+                    </x-section-title>
 
                     <div class="md:col-span-2">
                         <ul class="p-1 sm:rounded-md">
@@ -36,12 +36,12 @@
                                         @csrf
                                         @method('DELETE')
 
-                                        <x-jet-checkbox name="confirm" value="1" class="ml-3 checked:text-red-500"/>
-                                        <x-jet-label for="confirm" value="解除確認" class="leading-tight"/>
+                                        <x-checkbox name="confirm" value="1" class="ml-3 checked:text-red-500"/>
+                                        <x-label for="confirm" value="解除確認" class="leading-tight"/>
 
-                                        <x-jet-danger-button type="submit" class="ml-3">
+                                        <x-danger-button type="submit" class="ml-3">
                                             {{ __('解除') }}
-                                        </x-jet-danger-button>
+                                        </x-danger-button>
                                     </form>
                                 </li>
                             @endforeach

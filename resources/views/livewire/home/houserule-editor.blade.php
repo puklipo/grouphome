@@ -17,14 +17,14 @@
                 変更
             </x-slot>
             <form wire:submit.prevent="save">
-                <x-jet-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
+                <x-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
                 <x-textarea name="houserule" wire:model.defer="home.houserule"></x-textarea>
 
                 <div class="text-sm text-gray-500 dark:text-white">「日中は必ず外出」や門限など入居者向けの細かいルールを入力してください。</div>
 
-                <x-jet-button class="mt-3">
+                <x-button class="mt-3">
                     {{ __('更新') }}
-                </x-jet-button>
+                </x-button>
             </form>
         </x-box-edit>
     @endcanany
