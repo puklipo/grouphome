@@ -1,27 +1,27 @@
 <div class="w-full sm:max-w-xl mt-6 px-6 py-4 bg-white dark:bg-gray-900 shadow-md overflow-hidden sm:rounded-lg">
     @if(session()->missing('mail_success'))
 
-        <x-jet-validation-errors class="mb-4"/>
+        <x-validation-errors class="mb-4"/>
 
         <form wire:submit.prevent="sendmail">
             <div>
-                <x-jet-label for="name" value="{{ __('お名前') }}"/>
-                <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" wire:model.lazy="name" required autofocus autocomplete="name"/>
+                <x-label for="name" value="{{ __('お名前') }}"/>
+                <x-input id="name" class="block mt-1 w-full" type="text" name="name" wire:model.lazy="name" required autofocus autocomplete="name"/>
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="email" value="{{ __('Email') }}"/>
-                <x-jet-input id="email" class="block mt-1 w-full disabled:text-gray-500" type="email" name="email" wire:model.lazy="email"
+                <x-label for="email" value="{{ __('Email') }}"/>
+                <x-input id="email" class="block mt-1 w-full disabled:text-gray-500" type="email" name="email" wire:model.lazy="email"
                              required disabled/>
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="tel" value="{{ __('電話番号（省略可）') }}"/>
-                <x-jet-input id="tel" class="block mt-1 w-full" type="text" name="tel" wire:model.lazy="tel"/>
+                <x-label for="tel" value="{{ __('電話番号（省略可）') }}"/>
+                <x-input id="tel" class="block mt-1 w-full" type="text" name="tel" wire:model.lazy="tel"/>
             </div>
 
             <div class="mt-4">
-            <x-jet-label for="subject" value="{{ __('ご用件') }}"/>
+            <x-label for="subject" value="{{ __('ご用件') }}"/>
 
             <x-select name="subject" wire:model.lazy="subject">
                 <option value="見学">見学</option>
@@ -32,7 +32,7 @@
             </div>
 
             <div class="mt-4">
-                <x-jet-label for="body" value="{{ __('お問い合わせ内容') }}"/>
+                <x-label for="body" value="{{ __('お問い合わせ内容') }}"/>
 
                 <textarea name="body"
                           wire:model.lazy="body"
@@ -42,9 +42,9 @@
             </div>
 
             <div class="flex items-center justify-end mt-4">
-                <x-jet-button class="ml-4">
+                <x-button class="ml-4">
                     {{ __('送信') }}
-                </x-jet-button>
+                </x-button>
             </div>
         </form>
 

@@ -37,7 +37,7 @@
             @include('side')
 
             <main class="flex-grow">
-                <x-jet-banner />
+                <x-banner />
 
                 @livewire('navigation-menu')
 

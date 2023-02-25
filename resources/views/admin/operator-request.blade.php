@@ -32,17 +32,17 @@
                             <form action="{{ route('operator-requests.update', $request) }}" method="post">
                                 @csrf
                                 @method('PUT')
-                                <x-jet-button class="ml-4">
+                                <x-button class="ml-4">
                                     {{ __('承認') }}
-                                </x-jet-button>
+                                </x-button>
                             </form>
 
                             <form action="{{ route('operator-requests.destroy', $request) }}" method="post">
                                 @csrf
                                 @method('DELETE')
-                                <x-jet-danger-button type="submit" class="ml-4">
+                                <x-danger-button type="submit" class="ml-4">
                                     {{ __('却下') }}
-                                </x-jet-danger-button>
+                                </x-danger-button>
                             </form>
 
                         </li>

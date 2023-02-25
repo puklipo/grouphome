@@ -1,16 +1,16 @@
 <form action="{{ request()->routeIs(['pref', 'pref.area']) ? url()->current() : route('index') }}"
       method="get">
-    <x-jet-label for="search" value="{{ __('検索') }}" class="hidden"/>
-    <x-jet-input name="q" type="search" class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
+    <x-label for="search" value="{{ __('検索') }}" class="hidden"/>
+    <x-input name="q" type="search" class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
                  value="{{ request('q') }}"
                  placeholder="{{ request()->routeIs(['pref', 'pref.area']) ? (request()->area ?? request()->pref->name).'から検索' : 'キーワード検索' }}"
     />
 
-    <x-jet-label for="sort" value="{{ __('並べ替え') }}" class="mt-3 dark:text-white"/>
+    <x-label for="sort" value="{{ __('並べ替え') }}" class="mt-3 dark:text-white"/>
 
     @includeIf('search.sort')
 
-    <x-jet-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
+    <x-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
 
     <x-select name="level">
         <option value="" @selected(request()->missing('level'))>指定しない</option>
@@ -20,7 +20,7 @@
         @endforeach
     </x-select>
 
-    <x-jet-label for="type" value="{{ __('サービス類型') }}" class="mt-3 dark:text-white"/>
+    <x-label for="type" value="{{ __('サービス類型') }}" class="mt-3 dark:text-white"/>
 
     <x-select name="type">
         <option value="" @selected(request()->missing('type'))>指定しない</option>
@@ -30,7 +30,7 @@
     </x-select>
 
 
-    <x-jet-label for="vacancy" value="{{ __('空室') }}" class="mt-3 dark:text-white"/>
+    <x-label for="vacancy" value="{{ __('空室') }}" class="mt-3 dark:text-white"/>
 
     <x-select name="vacancy">
         <option value="" @selected(request()->missing('vacancy'))>指定しない</option>

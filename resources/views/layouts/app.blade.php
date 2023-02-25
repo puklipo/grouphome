@@ -20,7 +20,7 @@
         @endproduction
     </head>
     <body class="font-sans antialiased">
-        <x-jet-banner />
+        <x-banner />
 
         <div class="min-h-screen bg-gray-100 dark:bg-black">
             @livewire('navigation-menu')

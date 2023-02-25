@@ -12,9 +12,9 @@
             @else
                 <form action="{{ route('operator.request', $home) }}" method="post">
                     @csrf
-                    <x-jet-button class="text-lg">
+                    <x-button class="text-lg">
                         管理事業者として申請
-                    </x-jet-button>
+                    </x-button>
                 </form>
                 <div class="pt-3">承認後に管理できるようになります。</div>
             @endcan

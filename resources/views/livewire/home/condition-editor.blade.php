@@ -33,7 +33,7 @@
                 変更
             </x-slot>
             <div class="mb-6">
-                <x-jet-label for="level" value="{{ __('対象区分の下限') }}" class="mt-3"/>
+                <x-label for="level" value="{{ __('対象区分の下限') }}" class="mt-3"/>
 
                 <select name="level"
                         wire:model="home.level"
@@ -46,7 +46,7 @@
             </div>
 
             <div class="mb-6">
-                <x-jet-label for="type_id" value="{{ __('サービス類型') }}" class="mt-3"/>
+                <x-label for="type_id" value="{{ __('サービス類型') }}" class="mt-3"/>
 
                 <select name="type_id"
                         wire:model="home.type_id"
@@ -62,13 +62,13 @@
             <div class="flex flex-wrap">
 
                 @foreach(config('condition') as $key => $name)
-                    <x-jet-label for="condition_{{ $key }}" class="mr-3 cursor-pointer">
-                        <x-jet-checkbox name="condition_{{ $key }}"
+                    <x-label for="condition_{{ $key }}" class="mr-3 cursor-pointer">
+                        <x-checkbox name="condition_{{ $key }}"
                                         id="condition_{{ $key }}"
                                         class="checked:text-red-500"
                                         wire:model="home.condition.{{ $key }}"/>
                         {{ $name }}
-                    </x-jet-label>
+                    </x-label>
                 @endforeach
             </div>
         </x-box-edit>
