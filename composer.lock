@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.261.5",
+            "version": "3.261.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1fb31e97fa4da90935a87e321c07662a5827ee2d"
+                "reference": "63b03ec821473861af58439f1a35173e904d0f8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1fb31e97fa4da90935a87e321c07662a5827ee2d",
-                "reference": "1fb31e97fa4da90935a87e321c07662a5827ee2d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/63b03ec821473861af58439f1a35173e904d0f8c",
+                "reference": "63b03ec821473861af58439f1a35173e904d0f8c",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.261.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.261.6"
             },
-            "time": "2023-03-06T19:20:40+00:00"
+            "time": "2023-03-07T19:21:12+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2212,16 +2212,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.2.0",
+            "version": "v10.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "3799f7f3118d57dc5d3dfaabde69a912fff65a7e"
+                "reference": "46ecbcaf621384c74b870de42c239dbbe89fd339"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/3799f7f3118d57dc5d3dfaabde69a912fff65a7e",
-                "reference": "3799f7f3118d57dc5d3dfaabde69a912fff65a7e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/46ecbcaf621384c74b870de42c239dbbe89fd339",
+                "reference": "46ecbcaf621384c74b870de42c239dbbe89fd339",
                 "shasum": ""
             },
             "require": {
@@ -2408,7 +2408,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-03-02T14:55:50+00:00"
+            "time": "2023-03-07T15:08:22+00:00"
         },
         {
             "name": "laravel/jetstream",
@@ -2484,16 +2484,16 @@
         },
         {
             "name": "laravel/octane",
-            "version": "v1.4.3",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/octane.git",
-                "reference": "c9aaf232c0700ba41e2ef14423b1153258e4cbcb"
+                "reference": "62f73af45086049beeea02eb5ccf93de30ddbc1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/octane/zipball/c9aaf232c0700ba41e2ef14423b1153258e4cbcb",
-                "reference": "c9aaf232c0700ba41e2ef14423b1153258e4cbcb",
+                "url": "https://api.github.com/repos/laravel/octane/zipball/62f73af45086049beeea02eb5ccf93de30ddbc1e",
+                "reference": "62f73af45086049beeea02eb5ccf93de30ddbc1e",
                 "shasum": ""
             },
             "require": {
@@ -2561,7 +2561,7 @@
                 "issues": "https://github.com/laravel/octane/issues",
                 "source": "https://github.com/laravel/octane"
             },
-            "time": "2023-03-01T20:00:17+00:00"
+            "time": "2023-03-04T23:30:05+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -5806,16 +5806,16 @@
         },
         {
             "name": "puklipo/laravel-vapor-gzip",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
-                "reference": "954f44ec03bc9e5bdf05e4633abbed578c6f49e5"
+                "reference": "f1a9b0ecfd1b11123a82a0a5dca45649b1c6b4de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/954f44ec03bc9e5bdf05e4633abbed578c6f49e5",
-                "reference": "954f44ec03bc9e5bdf05e4633abbed578c6f49e5",
+                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/f1a9b0ecfd1b11123a82a0a5dca45649b1c6b4de",
+                "reference": "f1a9b0ecfd1b11123a82a0a5dca45649b1c6b4de",
                 "shasum": ""
             },
             "require": {
@@ -5847,9 +5847,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues",
-                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/1.1.0"
+                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/1.1.1"
             },
-            "time": "2023-01-30T04:19:15+00:00"
+            "time": "2023-03-08T01:36:47+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -10016,16 +10016,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.21.1",
+            "version": "v1.21.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "fd8d04bc546457b504aa2b3c2d541840551f836f"
+                "reference": "19d6fe167e2389b41fe1b4ee52293d1eaf8a43fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/fd8d04bc546457b504aa2b3c2d541840551f836f",
-                "reference": "fd8d04bc546457b504aa2b3c2d541840551f836f",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/19d6fe167e2389b41fe1b4ee52293d1eaf8a43fc",
+                "reference": "19d6fe167e2389b41fe1b4ee52293d1eaf8a43fc",
                 "shasum": ""
             },
             "require": {
@@ -10077,7 +10077,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2023-03-01T23:07:57+00:00"
+            "time": "2023-03-06T14:23:15+00:00"
         },
         {
             "name": "mockery/mockery",
