@@ -20,9 +20,9 @@ class ContactFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->name,
-            'email' => $this->faker->email,
-            'body' => $this->faker->text,
+            'name' => fake()->name(),
+            'email' => fake()->email(),
+            'body' => fake()->text(),
         ];
     }
 }
