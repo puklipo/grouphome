@@ -2,11 +2,13 @@
 
 namespace Database\Factories;
 
+use App\Models\Home;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class HomeFactory extends Factory
 {
+    protected $model = Home::class;
+
     /**
      * Define the model's default state.
      *
