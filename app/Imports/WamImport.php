@@ -5,6 +5,7 @@ namespace App\Imports;
 use App\Imports\Concerns\WithKana;
 use App\Models\Pref;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\OnEachRow;
@@ -55,18 +56,30 @@ class WamImport implements
             return;
         }
 
-        //事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
-        $pref->homes()->updateOrCreate([
-            'id' => $id,
-        ], [
+        $data = collect([
             'name' => $this->kana($row['事業所の名称']),
             'company' => $this->kana($row['法人の名称']),
             'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
             'area' => $this->kana(Str::remove($pref->name, $row['事業所住所（市区町村）'])),
             'url' => $row['事業所URL'],
-            'location' => new Point((float) $row['事業所緯度'], (float) $row['事業所経度'], (int) config('grouphome.geo.srid')),
         ]);
+
+        //SQLiteはGeometry非対応なのでテスト時は除く
+        if (! app()->runningUnitTests()) {
+            $point = new Point(
+                latitude: (float) $row['事業所緯度'],
+                longitude: (float) $row['事業所経度'],
+                srid: (int) config('grouphome.geo.srid')
+            );
+
+            $data->put('location', $point);
+        }
+
+        //事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
+        $pref->homes()->updateOrCreate([
+            'id' => $id,
+        ], $data->toArray());
     }
 
     public function batchSize(): int
