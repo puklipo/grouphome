@@ -12,7 +12,7 @@ class HomeFactory extends Factory
      *
      * @return array
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'id'      => $this->faker->numberBetween(100000),

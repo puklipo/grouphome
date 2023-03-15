@@ -6,7 +6,7 @@
         @include('homes.cover')
 
         <div class="p-3">
-            @if(filled($home->distance))
+            @if(isset($home->distance) && filled($home->distance))
                 <div class="mb-3">
                     現在地から約{{ round($home->distance) }}メートル
                 </div>
