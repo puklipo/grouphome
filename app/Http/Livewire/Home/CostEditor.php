@@ -3,8 +3,10 @@
 namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\View\View;
 use Livewire\Component;
 
 class CostEditor extends Component
@@ -20,12 +22,12 @@ class CostEditor extends Component
             ->toArray();
     }
 
-    public function mount()
+    public function mount(): void
     {
         $this->home->cost()->firstOrCreate();
     }
 
-    public function calcTotal()
+    public function calcTotal(): void
     {
         $this->fill([
             'home.cost.total' => $this->home->cost->rent
@@ -36,7 +38,10 @@ class CostEditor extends Component
         ]);
     }
 
-    public function save()
+    /**
+     * @throws AuthorizationException
+     */
+    public function save(): void
     {
         if (Gate::denies('admin')) {
             $this->authorize('update', $this->home);
@@ -45,7 +50,7 @@ class CostEditor extends Component
         $this->home->cost->save();
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.home.cost-editor');
     }

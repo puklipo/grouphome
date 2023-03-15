@@ -3,8 +3,10 @@
 namespace App\Http\Livewire\Home;
 
 use App\Models\Home;
+use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\View\View;
 use Livewire\Component;
 
 /**
@@ -23,12 +25,15 @@ class FacilityEditor extends Component
             ->toArray();
     }
 
-    public function mount()
+    public function mount(): void
     {
         $this->home->facility()->firstOrCreate();
     }
 
-    public function updated($value, $name)
+    /**
+     * @throws AuthorizationException
+     */
+    public function updated($value, $name): void
     {
         if (Gate::denies('admin')) {
             $this->authorize('update', $this->home);
@@ -37,7 +42,7 @@ class FacilityEditor extends Component
         $this->home->facility->save();
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.home.facility-editor');
     }
