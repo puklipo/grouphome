@@ -3,10 +3,10 @@
 namespace App\Http\Livewire\Mail;
 
 use App\Models\Home;
-use App\Notifications\ContactNotification;
 use App\Notifications\HomeMailCreatedNotification;
 use App\Notifications\HomeMailNotification;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\View\View;
 use Livewire\Component;
 
 class Form extends Component
@@ -26,7 +26,7 @@ class Form extends Component
         'body' => 'required',
     ];
 
-    public function sendmail()
+    public function sendmail(): void
     {
         $this->validate();
 
@@ -48,7 +48,7 @@ class Form extends Component
         session()->flash('mail_success', true);
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.mail.form');
     }

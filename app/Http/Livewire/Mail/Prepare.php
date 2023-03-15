@@ -3,9 +3,9 @@
 namespace App\Http\Livewire\Mail;
 
 use App\Models\Home;
-use App\Notifications\ContactNotification;
 use App\Notifications\MailPrepareNotification;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\View\View;
 use Livewire\Component;
 
 class Prepare extends Component
@@ -18,7 +18,7 @@ class Prepare extends Component
         'email' => ['required', 'email'],
     ];
 
-    public function sendmail()
+    public function sendmail(): void
     {
         $this->validate();
 
@@ -28,7 +28,7 @@ class Prepare extends Component
         session()->flash('mail_success', true);
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.mail.prepare');
     }
