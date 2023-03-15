@@ -2,10 +2,11 @@
 
 namespace GH;
 
-use App\Models\Home;
+use App\Models\Contact;
 use App\Models\User;
 use App\Notifications\ContactNotification;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Routing\Middleware\ValidateSignature;
 use Illuminate\Support\Facades\Notification;
 use Livewire\Livewire;
 use Tests\TestCase;
@@ -44,5 +45,33 @@ class ContactTest extends TestCase
             'email' => $user->email,
             'body' => 'test',
         ]);
+    }
+
+    public function test_admin_contacts_index()
+    {
+        $user = User::factory()->create();
+
+        Contact::factory(30)->create();
+
+        Livewire::actingAs($user)
+                ->test('admin.contacts-index')
+                ->set('page', 2)
+                ->assertDispatchedBrowserEvent('page-updated', ['page' => 2]);
+
+        $response = $this->actingAs($user)->get(route('admin.contacts'));
+
+        $response->assertSuccessful()
+                 ->assertSeeLivewire('admin.contacts-index');
+    }
+
+    public function test_contacts_preview()
+    {
+        $contact = Contact::factory()->create()->first();
+
+        $response = $this->withoutMiddleware(ValidateSignature::class)
+                         ->get(route('contact.preview', $contact));
+
+        $response->assertSuccessful()
+                 ->assertSeeText($contact->name);
     }
 }
