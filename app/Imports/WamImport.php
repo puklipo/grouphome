@@ -56,14 +56,14 @@ class WamImport implements
             return;
         }
 
-        $data = collect([
+        $data = [
             'name' => $this->kana($row['事業所の名称']),
             'company' => $this->kana($row['法人の名称']),
             'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),
             'area' => $this->kana(Str::remove($pref->name, $row['事業所住所（市区町村）'])),
             'url' => $row['事業所URL'],
-        ]);
+        ];
 
         //SQLiteはGeometry非対応なのでテスト時は除く
         if (! app()->runningUnitTests()) {
@@ -73,13 +73,13 @@ class WamImport implements
                 srid: (int) config('grouphome.geo.srid')
             );
 
-            $data->put('location', $point);
+            $data['location'] = $point;
         }
 
         //事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
         $pref->homes()->updateOrCreate([
             'id' => $id,
-        ], $data->toArray());
+        ], $data);
     }
 
     public function batchSize(): int
