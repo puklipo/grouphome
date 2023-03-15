@@ -48,4 +48,39 @@ class OperatorTest extends TestCase
 
         $response->assertRedirect();
     }
+
+    public function test_admin_operator_home()
+    {
+        $this->seed();
+
+        $admin = User::factory(2)
+                     ->hasHomes(2)
+                     ->create()
+                     ->first();
+
+        $response = $this->actingAs($admin)->get(route('operator-home.index'));
+
+        $response->assertSeeText($admin->name);
+    }
+
+    public function test_admin_operator_home_destroy()
+    {
+        $this->seed();
+
+        $admin = User::factory()->create();
+
+        $ope = User::factory()
+                   ->hasHomes(2)
+                   ->create();
+
+        $response = $this->actingAs($admin)->delete(route('operator-home.destroy', [
+            'user' => $ope,
+            'home' => $ope->homes()->first(),
+            'confirm' => 1,
+        ]));
+
+        $response->assertRedirect();
+
+        $this->assertSame(1, $ope->homes->count());
+    }
 }
