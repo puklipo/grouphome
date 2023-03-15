@@ -16,11 +16,7 @@ class ContactTest extends TestCase
 
     public function test_show_contact_form()
     {
-        $this->seed();
-
-        $user = User::factory()->create();
-
-        Livewire::actingAs($user)
+        Livewire::actingAs($user = User::factory()->create())
                 ->test('contact-form')
                 ->call('onReady')
                 ->assertSet('name', $user->name)
@@ -33,13 +29,9 @@ class ContactTest extends TestCase
 
     public function test_sendmail()
     {
-        $this->seed();
-
         Notification::fake();
 
-        $user = User::factory()->create();
-
-        Livewire::actingAs($user)
+        Livewire::actingAs($user = User::factory()->create())
                 ->test('contact-form')
                 ->call('onReady')
                 ->set('body', 'test')
