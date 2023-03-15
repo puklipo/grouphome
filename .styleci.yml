@@ -1,6 +1,7 @@
 preset: laravel
 disabled:
   - no_unused_imports
+  - laravel_phpdoc_separation
 finder:
   not-name:
     - index.php
