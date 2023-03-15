@@ -15,7 +15,7 @@ class OperatorHomeController extends Controller
     {
         $users = User::with('homes')
                      ->latest()
-                     ->paginate(1);
+                     ->paginate();
 
         return view('admin.operator-home')->with(compact('users'));
     }
