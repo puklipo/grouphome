@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class ReportController extends Controller
 {
@@ -13,7 +14,7 @@ class ReportController extends Controller
      * @param  int  $report
      * @return mixed
      */
-    public function __invoke(Request $request, int $report)
+    public function __invoke(Request $request, int $report): View
     {
         abort_unless(file_exists(resource_path('views/report/'.$report.'.blade.php')), 404);
 

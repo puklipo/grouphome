@@ -5,11 +5,13 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Home;
 use App\Models\User;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class OperatorHomeController extends Controller
 {
-    public function index()
+    public function index(): View
     {
         $users = User::with('homes')
                      ->latest()
@@ -18,7 +20,7 @@ class OperatorHomeController extends Controller
         return view('admin.operator-home')->with(compact('users'));
     }
 
-    public function destroy(Request $request, User $user, Home $home)
+    public function destroy(Request $request, User $user, Home $home): RedirectResponse
     {
         $request->validate([
             'confirm' => ['required', 'accepted'],

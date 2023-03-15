@@ -5,11 +5,12 @@ namespace App\Http\Controllers\Operator;
 use App\Http\Controllers\Controller;
 use App\Models\Home;
 use App\Models\OperatorRequest;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class RequestController extends Controller
 {
-    public function __invoke(Request $request, Home $home)
+    public function __invoke(Request $request, Home $home): RedirectResponse
     {
         if ($request->user()->homes->contains($home)) {
             return back();

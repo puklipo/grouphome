@@ -5,10 +5,11 @@ namespace App\Http\Controllers;
 use App\Models\Home;
 use App\Models\Pref;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 
 class AreaIndexController extends Controller
 {
-    public function __invoke(Request $request)
+    public function __invoke(Request $request): View
     {
         $prefs = Pref::oldest('id')->get();
 

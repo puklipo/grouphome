@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Actions\History;
 use App\Models\Home;
+use Illuminate\Http\RedirectResponse;
+use Illuminate\View\View;
 
 class HomeController extends Controller
 {
@@ -17,7 +19,7 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function index()
+    public function index(): RedirectResponse
     {
         return to_route('index');
     }
@@ -28,7 +30,7 @@ class HomeController extends Controller
      * @param  \App\Models\Home  $home
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
-    public function show(Home $home)
+    public function show(Home $home): View
     {
         app(History::class)->add($home);
 
