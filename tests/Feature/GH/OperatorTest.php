@@ -3,6 +3,7 @@
 namespace Tests\Feature\GH;
 
 use App\Models\Home;
+use App\Models\OperatorRequest;
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -82,5 +83,72 @@ class OperatorTest extends TestCase
         $response->assertRedirect();
 
         $this->assertSame(1, $ope->homes->count());
+    }
+
+    public function test_admin_operator_request_index()
+    {
+        $this->seed();
+
+        $admin = User::factory()->create();
+        $ope = User::factory()->create();
+        $home = Home::factory()->create();
+
+        OperatorRequest::create([
+            'user_id' => $ope->id,
+            'home_id' => $home->id,
+        ]);
+
+        $response = $this->actingAs($admin)->get(route('operator-requests.index'));
+
+        $response->assertSeeText($ope->name)
+                 ->assertSeeText($home->name);
+    }
+
+    public function test_admin_operator_request_update()
+    {
+        $this->seed();
+
+        $admin = User::factory()->create();
+        $ope = User::factory()->create();
+        $home = Home::factory()->create();
+
+        $req = OperatorRequest::create([
+            'user_id' => $ope->id,
+            'home_id' => $home->id,
+        ]);
+
+        $this->assertSame(0, $ope->homes()->count());
+
+        $response = $this->actingAs($admin)
+                         ->put(route('operator-requests.update', $req));
+
+        $this->assertModelMissing($req);
+
+        $this->assertSame(1, $ope->homes()->count());
+
+        $response->assertRedirect();
+    }
+
+    public function test_admin_operator_request_destroy()
+    {
+        $this->seed();
+
+        $admin = User::factory()->create();
+        $ope = User::factory()->create();
+        $home = Home::factory()->create();
+
+        $req = OperatorRequest::create([
+            'user_id' => $ope->id,
+            'home_id' => $home->id,
+        ]);
+
+        $response = $this->actingAs($admin)
+                         ->delete(route('operator-requests.destroy', $req));
+
+        $this->assertModelMissing($req);
+
+        $this->assertSame(0, $ope->homes()->count());
+
+        $response->assertRedirect();
     }
 }
