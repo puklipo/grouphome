@@ -6,6 +6,7 @@ use App\Models\Home;
 use App\Models\Pref;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
 use MatanYadaev\EloquentSpatial\Objects\Point;
@@ -32,20 +33,20 @@ class HomeIndex extends Component
         'vacancy', //空室
     ];
 
-    public function mount(Request $request)
+    public function mount(Request $request): void
     {
         foreach ($this->queryString as $query) {
             $this->$query = $request->input($query);
         }
     }
 
-    public function updatedPage($page)
+    public function updatedPage($page): void
     {
         //ページが変わった時に一番上にスクロール。
         $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
     }
 
-    public function render()
+    public function render(): View
     {
         $query = is_null($this->pref) ? Home::query() : $this->pref->homes();
 

@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use App\Models\Home;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Support\Arr;
+use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -40,7 +41,7 @@ class DetailSearch extends Component
         'sort' => ['except' => 'updated'],
     ];
 
-    public function mount()
+    public function mount(): void
     {
         $this->levels = collect(range(start: 0, end: 6))
             ->mapWithKeys(fn ($level) => [$level => true])
@@ -59,7 +60,7 @@ class DetailSearch extends Component
             ->toArray();
     }
 
-    public function updatedPrefId($pref_id)
+    public function updatedPrefId($pref_id): void
     {
         $this->reset('area');
 
@@ -72,12 +73,12 @@ class DetailSearch extends Component
                            ->toArray();
     }
 
-    public function updatedPage($page)
+    public function updatedPage($page): void
     {
         $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.detail-search')->with([
             'homes' => Home::query()

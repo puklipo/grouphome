@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\View\View;
 use Livewire\Component;
 
 /**
@@ -21,13 +22,13 @@ class ContactForm extends Component
         'body'  => 'required',
     ];
 
-    public function onReady(Request $request)
+    public function onReady(Request $request): void
     {
         $this->name = $request->user()->name ?? '';
         $this->email = $request->user()->email ?? '';
     }
 
-    public function sendmail()
+    public function sendmail(): void
     {
         $this->validate();
 
@@ -42,7 +43,7 @@ class ContactForm extends Component
         session()->flash('mail_success', true);
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.contact-form');
     }

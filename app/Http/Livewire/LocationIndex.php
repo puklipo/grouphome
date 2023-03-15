@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Home;
+use Illuminate\View\View;
 use Livewire\Component;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 
@@ -31,7 +32,7 @@ class LocationIndex extends Component
         );
     }
 
-    public function render()
+    public function render(): View
     {
         return view('livewire.location-index')->with(['homes' => $this->homes]);
     }
