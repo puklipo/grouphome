@@ -37,7 +37,7 @@ class ImportCommand extends Command
      *
      * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         $this->info('import start...');
 
