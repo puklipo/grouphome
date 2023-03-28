@@ -18,7 +18,10 @@ class CostEditor extends Component
     protected function rules(): array
     {
         return collect(config('cost'))
-            ->mapWithKeys(fn ($item, $key) => ['home.cost.'.$key => 'nullable'])
+            ->mapWithKeys(fn (
+                $item,
+                $key,
+            ): array => ['home.cost.'.$key => $key === 'message' ? 'nullable' : 'nullable|numeric|integer|min:0'])
             ->toArray();
     }
 
@@ -46,6 +49,8 @@ class CostEditor extends Component
         if (Gate::denies('admin')) {
             $this->authorize('update', $this->home);
         }
+
+        $this->validate();
 
         $this->home->cost->save();
     }

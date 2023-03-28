@@ -68,7 +68,7 @@
                 変更
             </x-slot>
             <form wire:submit.prevent="save">
-                <div class="mb-3">数字はすべて半角で入力してください。</div>
+                <div class="mb-3">数字はすべて0以上の数値・半角で入力してください。</div>
 
                 <x-label for="rent" value="{{ __('家賃') }}"/>
                 <x-input type="number" name="rent" wire:model.defer="home.cost.rent"></x-input>
@@ -93,6 +93,8 @@
 
                 <x-label for="support" value="{{ __('家賃補助') }}"/>
                 <x-input type="number" name="support" wire:model.defer="home.cost.support"></x-input>
+                <x-input-error for="home.cost.support" />
+
                 <div class="text-sm text-gray-500 dark:text-white mb-3">特定障害者特別給付費の1万円以外にも自治体独自の補助が利用できる場合は合計して入力。
                 </div>
 
