@@ -21,7 +21,16 @@ class CostEditor extends Component
             ->mapWithKeys(fn (
                 $item,
                 $key,
-            ): array => ['home.cost.'.$key => $key === 'message' ? 'nullable' : 'nullable|numeric|integer|min:0'])
+            ) => ['home.cost.'.$key => $key === 'message' ? 'nullable' : 'required|numeric|integer|min:0'])
+            ->put('home.cost.total', 'required|numeric|integer|min:0')
+            ->toArray();
+    }
+
+    protected function validationAttributes(): array
+    {
+        return collect(config('cost'))
+            ->mapWithKeys(fn ($item, $key) => ['home.cost.'.$key => $item])
+            ->put('home.cost.total', '費用合計')
             ->toArray();
     }
 
