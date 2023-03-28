@@ -117,7 +117,7 @@
                 <x-input type="number" name="total" wire:model.defer="home.cost.total"></x-input>
                 <x-input-error for="home.cost.total"/>
                 <div class="text-sm text-gray-500 dark:text-white mb-3">
-                    月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力。
+                    月額費用の目安。家賃補助は含めない。光熱費を実費精算する場合でも平均的な費用で計算してすべての合計を入力してください。
                     <x-button wire:click="calcTotal">{{ __('他の項目から合計を自動計算') }}</x-button>
                 </div>
 
