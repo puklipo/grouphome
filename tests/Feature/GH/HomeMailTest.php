@@ -15,7 +15,7 @@ class HomeMailTest extends TestCase
 {
     use RefreshDatabase;
 
-    protected $seed = true;
+    protected bool $seed = true;
 
     public function test_home_mail_prepare()
     {
@@ -56,8 +56,8 @@ class HomeMailTest extends TestCase
         $home = Home::factory()->create();
 
         Livewire::test('mail.prepare', ['home' => $home])
-            ->set('email', 'test@localhost')
-            ->call('sendmail');
+                ->set('email', 'test@localhost')
+                ->call('sendmail');
 
         Notification::assertSentOnDemand(MailPrepareNotification::class);
     }
