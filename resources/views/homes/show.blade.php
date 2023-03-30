@@ -68,7 +68,7 @@
                                     <td class="pl-3">
                                         <a href="{{ $home->url }}" target="_blank"
                                            class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                            {{ Str::limit($home->url, 50) }}
+                                            {{ Str::truncate($home->url, 50) }}
                                         </a>
                                     </td>
                                 </tr>
@@ -80,7 +80,7 @@
                                     <td class="pl-3">
                                         <a href="{{ $home->wam }}" target="_blank"
                                            class="text-indigo-500 dark:text-white font-bold hover:underline">
-                                            {{ Str::limit($home->wam, 50) }}
+                                            {{ Str::truncate($home->wam, 50) }}
                                         </a>
                                     </td>
                                 </tr>
