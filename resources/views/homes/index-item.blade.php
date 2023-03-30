@@ -23,7 +23,7 @@
                 <div class="my-1">
                     <a href="{{ $home->url }}" target="_blank"
                        class="text-indigo-500 dark:text-white font-bold hover:underline">
-                        {{ Str::limit($home->url) }}
+                        {{ Str::truncate($home->url) }}
                     </a>
                 </div>
             @endisset
