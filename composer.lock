@@ -9958,16 +9958,16 @@
         },
         {
             "name": "dragon-code/support",
-            "version": "v6.11.0",
+            "version": "v6.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TheDragonCode/support.git",
-                "reference": "09474e53245988b8b77d3a0506979526e8e7f291"
+                "reference": "0560de8ae9b2641a1c8f27ebc1d602ea425153c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TheDragonCode/support/zipball/09474e53245988b8b77d3a0506979526e8e7f291",
-                "reference": "09474e53245988b8b77d3a0506979526e8e7f291",
+                "url": "https://api.github.com/repos/TheDragonCode/support/zipball/0560de8ae9b2641a1c8f27ebc1d602ea425153c3",
+                "reference": "0560de8ae9b2641a1c8f27ebc1d602ea425153c3",
                 "shasum": ""
             },
             "require": {
@@ -10057,7 +10057,7 @@
                     "type": "yoomoney"
                 }
             ],
-            "time": "2023-02-19T11:30:03+00:00"
+            "time": "2023-04-01T12:41:34+00:00"
         },
         {
             "name": "fakerphp/faker",
