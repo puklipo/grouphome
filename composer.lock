@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.263.1",
+            "version": "3.263.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "1f1ca8866e54aabdcde2aba177196ec2f12ee8a2"
+                "reference": "5516a7edae70fff66223b2fd320c20b3b17ced56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1f1ca8866e54aabdcde2aba177196ec2f12ee8a2",
-                "reference": "1f1ca8866e54aabdcde2aba177196ec2f12ee8a2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5516a7edae70fff66223b2fd320c20b3b17ced56",
+                "reference": "5516a7edae70fff66223b2fd320c20b3b17ced56",
                 "shasum": ""
             },
             "require": {
@@ -150,9 +150,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.263.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.263.2"
             },
-            "time": "2023-03-31T18:21:25+00:00"
+            "time": "2023-04-03T18:19:25+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -10319,16 +10319,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "v2.3.2",
+            "version": "v2.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "f4809fcc171ed93d4bbf851136e8e6a2a3d2d552"
+                "reference": "866473306491d9b84d37dfbb80193ce8099368ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/f4809fcc171ed93d4bbf851136e8e6a2a3d2d552",
-                "reference": "f4809fcc171ed93d4bbf851136e8e6a2a3d2d552",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/866473306491d9b84d37dfbb80193ce8099368ad",
+                "reference": "866473306491d9b84d37dfbb80193ce8099368ad",
                 "shasum": ""
             },
             "require": {
@@ -10382,7 +10382,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/v2.3.2"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/v2.3.3"
             },
             "funding": [
                 {
@@ -10390,7 +10390,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-03-03T08:05:19+00:00"
+            "time": "2023-04-03T16:25:20+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -10467,16 +10467,16 @@
         },
         {
             "name": "laravel-lang/http-statuses",
-            "version": "v3.3.0",
+            "version": "v3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/http-statuses.git",
-                "reference": "fd2ac7ccf49b0caf2e3d7889775528c92c747ab4"
+                "reference": "5d9770879bf279dfe10b4f50e370c615be65541a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/fd2ac7ccf49b0caf2e3d7889775528c92c747ab4",
-                "reference": "fd2ac7ccf49b0caf2e3d7889775528c92c747ab4",
+                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/5d9770879bf279dfe10b4f50e370c615be65541a",
+                "reference": "5d9770879bf279dfe10b4f50e370c615be65541a",
                 "shasum": ""
             },
             "require": {
@@ -10531,7 +10531,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/http-statuses/issues",
-                "source": "https://github.com/Laravel-Lang/http-statuses/tree/v3.3.0"
+                "source": "https://github.com/Laravel-Lang/http-statuses/tree/v3.3.1"
             },
             "funding": [
                 {
@@ -10539,20 +10539,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-02-19T18:46:06+00:00"
+            "time": "2023-04-03T16:25:01+00:00"
         },
         {
             "name": "laravel-lang/lang",
-            "version": "12.19.2",
+            "version": "12.19.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "68554447439dfd56193eccb9fd3bbc2bb520cc6a"
+                "reference": "6319a00e2c736470121701a40a7326710241a437"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/68554447439dfd56193eccb9fd3bbc2bb520cc6a",
-                "reference": "68554447439dfd56193eccb9fd3bbc2bb520cc6a",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/6319a00e2c736470121701a40a7326710241a437",
+                "reference": "6319a00e2c736470121701a40a7326710241a437",
                 "shasum": ""
             },
             "require": {
@@ -10605,7 +10605,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-02T17:15:27+00:00"
+            "time": "2023-04-03T14:11:56+00:00"
         },
         {
             "name": "laravel-lang/publisher",
