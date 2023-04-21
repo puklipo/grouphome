@@ -8,6 +8,16 @@ https://www.wam.go.jp/content/wamnet/pcpub/top/sfkopendata/
 3. ↓の修正を行う。
 4. 開発環境でインポートして問題なければ本番環境でもインポート。
 
+開発環境
+```bash
+sail art gh:import
+```
+
+本番環境ではVaporのプロジェクトページのCommandsから実行。
+```bash
+php artisan gh:import
+```
+
 ## WAM側が修正されるまでの一時的な対応
 CSVの更新後、残っていたら対応。
 
