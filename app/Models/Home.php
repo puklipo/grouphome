@@ -106,10 +106,10 @@ class Home extends Model
     {
         return Attribute::make(
             get: fn ($value) => Str::of($this->introduction ?? $this->address)
-                                   ->replace(PHP_EOL, ' ')
-                                   ->limit(200)
-                                   ->trim()
-                                   ->value()
+                ->replace(PHP_EOL, ' ')
+                ->limit(200)
+                ->trim()
+                ->value()
         );
     }
 }
