@@ -66,7 +66,7 @@
                                class="font-bold text-indigo-500 dark:text-white hover:underline"
                                target="_blank">ポップカルチャースタジオ未来図</a>
             All Rights Reserved. /
-            <a href="https://pcs-works.vercel.app/"
+            <a href="https://puklipo.com/"
                class="font-bold text-indigo-500 dark:text-white hover:underline"
                target="_blank">PCS開発チーム</a>
         </small>
