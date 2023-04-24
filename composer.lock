@@ -10535,16 +10535,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "12.21.1",
+            "version": "12.21.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "d984be751718c8b4d57a5f5579c411b2bef3b61f"
+                "reference": "e2f0879b609970ff6f4eb20e280940d7d44a14f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/d984be751718c8b4d57a5f5579c411b2bef3b61f",
-                "reference": "d984be751718c8b4d57a5f5579c411b2bef3b61f",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/e2f0879b609970ff6f4eb20e280940d7d44a14f7",
+                "reference": "e2f0879b609970ff6f4eb20e280940d7d44a14f7",
                 "shasum": ""
             },
             "require": {
@@ -10597,7 +10597,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-18T07:40:44+00:00"
+            "time": "2023-04-23T13:15:23+00:00"
         },
         {
             "name": "laravel-lang/publisher",
@@ -11222,16 +11222,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.20.1",
+            "version": "1.20.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "57f6787f0bb6431905a18aa7caea25dcd2bd59e0"
+                "reference": "90490bd8fd8530a272043c4950c180b6d0cf5f81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/57f6787f0bb6431905a18aa7caea25dcd2bd59e0",
-                "reference": "57f6787f0bb6431905a18aa7caea25dcd2bd59e0",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/90490bd8fd8530a272043c4950c180b6d0cf5f81",
+                "reference": "90490bd8fd8530a272043c4950c180b6d0cf5f81",
                 "shasum": ""
             },
             "require": {
@@ -11261,9 +11261,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.1"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.2"
             },
-            "time": "2023-04-22T09:05:52+00:00"
+            "time": "2023-04-22T12:59:35+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
