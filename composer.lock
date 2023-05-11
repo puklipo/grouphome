@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.269.9",
+            "version": "3.269.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "18aec5f307bd95588ff5d1fa970eac5b0075a977"
+                "reference": "8b571e9caf4f6f984d95149f4be73275ff86bb55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/18aec5f307bd95588ff5d1fa970eac5b0075a977",
-                "reference": "18aec5f307bd95588ff5d1fa970eac5b0075a977",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8b571e9caf4f6f984d95149f4be73275ff86bb55",
+                "reference": "8b571e9caf4f6f984d95149f4be73275ff86bb55",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.269.9"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.269.10"
             },
-            "time": "2023-05-09T18:20:58+00:00"
+            "time": "2023-05-10T18:20:01+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2827,16 +2827,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.55.3",
+            "version": "v1.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "562c28004f8609e728e2b5d1e85e46d2df006d2d"
+                "reference": "9a28dc6fb37902fe423edbfd936cd683a22a86fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/562c28004f8609e728e2b5d1e85e46d2df006d2d",
-                "reference": "562c28004f8609e728e2b5d1e85e46d2df006d2d",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/9a28dc6fb37902fe423edbfd936cd683a22a86fd",
+                "reference": "9a28dc6fb37902fe423edbfd936cd683a22a86fd",
                 "shasum": ""
             },
             "require": {
@@ -2890,22 +2890,22 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.55.3"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.56.0"
             },
-            "time": "2023-04-17T14:07:59+00:00"
+            "time": "2023-05-10T10:06:04+00:00"
         },
         {
             "name": "laravel/vapor-core",
-            "version": "v2.30.0",
+            "version": "v2.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-core.git",
-                "reference": "83fe61ad0b0f93ed5fcc115a63eff667de718840"
+                "reference": "4f8b57db2ed99dc5f87584c9a641ef6542c8c882"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/83fe61ad0b0f93ed5fcc115a63eff667de718840",
-                "reference": "83fe61ad0b0f93ed5fcc115a63eff667de718840",
+                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/4f8b57db2ed99dc5f87584c9a641ef6542c8c882",
+                "reference": "4f8b57db2ed99dc5f87584c9a641ef6542c8c882",
                 "shasum": ""
             },
             "require": {
@@ -2941,6 +2941,9 @@
                 }
             },
             "autoload": {
+                "files": [
+                    "src/debug.php"
+                ],
                 "psr-4": {
                     "Laravel\\Vapor\\": "src"
                 }
@@ -2962,9 +2965,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-core/tree/v2.30.0"
+                "source": "https://github.com/laravel/vapor-core/tree/v2.31.0"
             },
-            "time": "2023-04-25T08:47:32+00:00"
+            "time": "2023-05-10T10:11:27+00:00"
         },
         {
             "name": "laravel/vapor-ui",
