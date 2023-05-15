@@ -1,6 +1,7 @@
 {
     "private": true,
     "name": "laravel",
+    "type": "module",
     "scripts": {
         "dev": "vite --host=localhost",
         "build": "vite build"
