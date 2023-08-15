@@ -10498,16 +10498,16 @@
         },
         {
             "name": "laravel-lang/http-statuses",
-            "version": "v3.4.0",
+            "version": "v3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/http-statuses.git",
-                "reference": "ef9ea174c3207d282891187038728cc88bdb2922"
+                "reference": "58a8d202a26a629489f6df885053229f5d2104eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/ef9ea174c3207d282891187038728cc88bdb2922",
-                "reference": "ef9ea174c3207d282891187038728cc88bdb2922",
+                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/58a8d202a26a629489f6df885053229f5d2104eb",
+                "reference": "58a8d202a26a629489f6df885053229f5d2104eb",
                 "shasum": ""
             },
             "require": {
@@ -10562,7 +10562,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/http-statuses/issues",
-                "source": "https://github.com/Laravel-Lang/http-statuses/tree/v3.4.0"
+                "source": "https://github.com/Laravel-Lang/http-statuses/tree/v3.4.1"
             },
             "funding": [
                 {
@@ -10570,7 +10570,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-08-09T09:12:36+00:00"
+            "time": "2023-08-14T21:05:46+00:00"
         },
         {
             "name": "laravel-lang/lang",
@@ -11906,16 +11906,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "5.0.0",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "72f01e6586e0caf6af81297897bd112eb7e9627c"
+                "reference": "2db5010a484d53ebf536087a70b4a5423c102372"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/72f01e6586e0caf6af81297897bd112eb7e9627c",
-                "reference": "72f01e6586e0caf6af81297897bd112eb7e9627c",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2db5010a484d53ebf536087a70b4a5423c102372",
+                "reference": "2db5010a484d53ebf536087a70b4a5423c102372",
                 "shasum": ""
             },
             "require": {
@@ -11926,7 +11926,7 @@
                 "sebastian/exporter": "^5.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^10.0"
+                "phpunit/phpunit": "^10.3"
             },
             "type": "library",
             "extra": {
@@ -11970,7 +11970,8 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/comparator/issues",
-                "source": "https://github.com/sebastianbergmann/comparator/tree/5.0.0"
+                "security": "https://github.com/sebastianbergmann/comparator/security/policy",
+                "source": "https://github.com/sebastianbergmann/comparator/tree/5.0.1"
             },
             "funding": [
                 {
@@ -11978,7 +11979,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-02-03T07:07:16+00:00"
+            "time": "2023-08-14T13:18:12+00:00"
         },
         {
             "name": "sebastian/complexity",
