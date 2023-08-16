@@ -9,20 +9,24 @@ use Illuminate\Http\Request;
 use Illuminate\View\View;
 use Livewire\Component;
 use Livewire\WithPagination;
-use MatanYadaev\EloquentSpatial\Objects\Point;
 
 class HomeIndex extends Component
 {
     use WithPagination;
 
     public ?Pref $pref = null;
+
     public ?string $area = null;
 
     public ?string $q = null;
+
     /** @var string|null 並べ替え */
     public ?string $sort = null;
+
     public ?int $level = null;
+
     public ?int $type = null;
+
     public ?int $vacancy = null;
 
     protected $queryString = [
@@ -52,16 +56,16 @@ class HomeIndex extends Component
 
         return view('livewire.home-index')->with([
             'homes' => $query->when(filled($this->area), fn (Builder $query) => $query->where('area', $this->area))
-                             ->with(['cost'])
-                             ->keywordSearch($this->q)
-                             ->sortBy($this->sort)
-                             ->levelSearch($this->level)
-                             ->typeSearch($this->type)
-                             ->vacancySearch($this->vacancy)
-                             ->addTotalCost()
-                             ->paginate()
-                             ->withQueryString()
-                             ->onEachSide(1),
+                ->with(['cost'])
+                ->keywordSearch($this->q)
+                ->sortBy($this->sort)
+                ->levelSearch($this->level)
+                ->typeSearch($this->type)
+                ->vacancySearch($this->vacancy)
+                ->addTotalCost()
+                ->paginate()
+                ->withQueryString()
+                ->onEachSide(1),
         ]);
     }
 }

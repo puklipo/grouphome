@@ -23,7 +23,7 @@ class Prepare extends Component
         $this->validate();
 
         Notification::route('mail', $this->email)
-                    ->notify(new MailPrepareNotification($this->home, $this->email));
+            ->notify(new MailPrepareNotification($this->home, $this->email));
 
         session()->flash('mail_success', true);
     }

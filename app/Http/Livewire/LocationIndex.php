@@ -22,12 +22,12 @@ class LocationIndex extends Component
 
         $this->homes = rescue(
             callback: fn () => Home::query()
-                                   ->with(['cost'])
-                                   ->whereNotNull('location')
-                                   ->withDistanceSphere('location', $point)
-                                   ->orderByDistanceSphere('location', $point)
-                                   ->limit(50)
-                                   ->get(),
+                ->with(['cost'])
+                ->whereNotNull('location')
+                ->withDistanceSphere('location', $point)
+                ->orderByDistanceSphere('location', $point)
+                ->limit(50)
+                ->get(),
             rescue: []
         );
     }

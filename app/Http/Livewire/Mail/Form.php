@@ -14,9 +14,13 @@ class Form extends Component
     public Home $home;
 
     public string $name = '';
+
     public string $email = '';
+
     public string $tel = '';
+
     public string $subject = '見学';
+
     public string $body = '';
 
     public array $rules = [
@@ -43,7 +47,7 @@ class Form extends Component
         );
 
         Notification::route('line-notify', config('line.notify.personal_access_token'))
-                    ->notify(new HomeMailCreatedNotification($this->home));
+            ->notify(new HomeMailCreatedNotification($this->home));
 
         session()->flash('mail_success', true);
     }

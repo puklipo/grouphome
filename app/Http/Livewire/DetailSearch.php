@@ -17,22 +17,29 @@ class DetailSearch extends Component
     use WithPagination;
 
     public ?string $pref_id = null;
+
     public string $area = '';
+
     public ?array $areas = null;
 
     /** @var string|null キーワード */
     public ?string $q = null;
+
     /** @var string|null 並べ替え */
     public ?string $sort = 'updated';
+
     /** @var string|null 空室 */
     public ?string $vacancy = null;
 
     /** @var array<int, bool> 対象区分 */
     public array $levels = [];
+
     /** @var array<int, bool> サービス類型 */
     public array $types = [];
+
     /** @var array<string, bool> 共有設備 */
     public array $facilities = [];
+
     /** @var array<string, bool> 居室設備 */
     public array $equipments = [];
 
@@ -65,12 +72,12 @@ class DetailSearch extends Component
         $this->reset('area');
 
         $this->areas = Home::where('pref_id', $pref_id)
-                           ->whereNotNull('area')
-                           ->orderBy('area')
-                           ->distinct()
-                           ->get('area')
-                           ->pluck('area')
-                           ->toArray();
+            ->whereNotNull('area')
+            ->orderBy('area')
+            ->distinct()
+            ->get('area')
+            ->pluck('area')
+            ->toArray();
     }
 
     public function updatedPage($page): void
@@ -82,36 +89,33 @@ class DetailSearch extends Component
     {
         return view('livewire.detail-search')->with([
             'homes' => Home::query()
-                           ->with(['cost'])
-                           ->when(
-                               filled($this->pref_id),
-                               fn (Builder $query) => $query->where('pref_id', $this->pref_id)
-                           )
-                           ->when(
-                               filled($this->area),
-                               fn (Builder $query) => $query->where('area', $this->area)
-                           )
-                           ->where($this->levels(...))
-                           ->where($this->types(...))
-                           ->where($this->facility(...))
-                           ->where($this->equipment(...))
-                           ->keywordSearch($this->q)
-                           ->vacancySearch($this->vacancy)
-                           ->addTotalCost()
-                           ->sortBy($this->sort)
-                           ->paginate()
-                           ->withQueryString()
-                           ->onEachSide(1),
+                ->with(['cost'])
+                ->when(
+                    filled($this->pref_id),
+                    fn (Builder $query) => $query->where('pref_id', $this->pref_id)
+                )
+                ->when(
+                    filled($this->area),
+                    fn (Builder $query) => $query->where('area', $this->area)
+                )
+                ->where($this->levels(...))
+                ->where($this->types(...))
+                ->where($this->facility(...))
+                ->where($this->equipment(...))
+                ->keywordSearch($this->q)
+                ->vacancySearch($this->vacancy)
+                ->addTotalCost()
+                ->sortBy($this->sort)
+                ->paginate()
+                ->withQueryString()
+                ->onEachSide(1),
         ]);
     }
 
     /**
      * 対象区分.
-     *
-     * @param  Builder  $query
-     * @return void
      */
-    public function levels(Builder $query)
+    public function levels(Builder $query): void
     {
         foreach ($this->levels as $level => $enable) {
             if ($enable) {
@@ -122,11 +126,8 @@ class DetailSearch extends Component
 
     /**
      * サービス類型.
-     *
-     * @param  Builder  $query
-     * @return void
      */
-    public function types(Builder $query)
+    public function types(Builder $query): void
     {
         foreach ($this->types as $type => $enable) {
             if (! $enable) {
@@ -143,11 +144,8 @@ class DetailSearch extends Component
 
     /**
      * 共有設備.
-     *
-     * @param  Builder  $query
-     * @return void
      */
-    public function facility(Builder $query)
+    public function facility(Builder $query): void
     {
         foreach ($this->facilities as $facility => $enable) {
             if ($enable && Arr::exists(config('facility'), $facility)) {
@@ -158,11 +156,8 @@ class DetailSearch extends Component
 
     /**
      * 居室設備.
-     *
-     * @param  Builder  $query
-     * @return void
      */
-    public function equipment(Builder $query)
+    public function equipment(Builder $query): void
     {
         foreach ($this->equipments as $equipment => $enable) {
             if ($enable && Arr::exists(config('equipment'), $equipment)) {

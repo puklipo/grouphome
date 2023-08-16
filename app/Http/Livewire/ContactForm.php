@@ -13,13 +13,15 @@ use Livewire\Component;
 class ContactForm extends Component
 {
     public string $name = '';
+
     public string $email = '';
+
     public string $body = '';
 
     public array $rules = [
-        'name'  => 'required',
+        'name' => 'required',
         'email' => ['required', 'email'],
-        'body'  => 'required',
+        'body' => 'required',
     ];
 
     public function onReady(Request $request): void
@@ -33,9 +35,9 @@ class ContactForm extends Component
         $this->validate();
 
         Contact::forceCreate([
-            'name'  => $this->name,
+            'name' => $this->name,
             'email' => $this->email,
-            'body'  => trim($this->body),
+            'body' => trim($this->body),
         ]);
 
         $this->reset();
