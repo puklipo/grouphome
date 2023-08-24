@@ -28,14 +28,14 @@ use Illuminate\Support\Facades\Route;
 Route::view(uri: '/', view: 'home')->name('index');
 
 Route::resource('home', HomeController::class)
-     ->only(['index', 'show']);
+    ->only(['index', 'show']);
 
 Route::get('home/{home}/prepare', PrepareController::class)
-     ->name('home.mail.prepare');
+    ->name('home.mail.prepare');
 
 Route::get('home/{home}/mail', FormController::class)
-     ->name('home.mail.form')
-     ->middleware('signed');
+    ->name('home.mail.form')
+    ->middleware('signed');
 
 Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 
@@ -46,8 +46,8 @@ Route::view('location', 'location.location')->name('location');
 Route::view(uri: 'history', view: 'history')->name('history');
 
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])
-     ->get('/dashboard', DashboardController::class)
-     ->name('dashboard');
+    ->get('/dashboard', DashboardController::class)
+    ->name('dashboard');
 
 Route::prefix('operator')->middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])->group(function () {
     Route::post('request/{home}', RequestController::class)->name('operator.request');
@@ -59,17 +59,17 @@ Route::prefix('admin')->middleware(['auth:sanctum', config('jetstream.auth_sessi
     Route::view('contacts', 'admin.contacts')->name('admin.contacts');
 
     Route::controller(OperatorHomeController::class)
-         ->prefix('operator-home')
-         ->as('operator-home.')
-         ->group(function () {
-             Route::get('/', 'index')->name('index');
-             Route::delete('/{user}/{home}', 'destroy')->name('destroy');
-         });
+        ->prefix('operator-home')
+        ->as('operator-home.')
+        ->group(function () {
+            Route::get('/', 'index')->name('index');
+            Route::delete('/{user}/{home}', 'destroy')->name('destroy');
+        });
 });
 
 Route::get('contact/preview/{contact}', ContactPreviewController::class)
-     ->name('contact.preview')
-     ->middleware('signed');
+    ->name('contact.preview')
+    ->middleware('signed');
 
 Route::get('report/{report}', ReportController::class)
     ->name('report')
