@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\name;
+
+name('help.user');
+?>
+
 <x-main-layout>
     <x-slot name="title">
         {{ __('利用者向けの使い方') }}

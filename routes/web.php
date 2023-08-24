@@ -41,10 +41,6 @@ Route::get('pref/{pref}/{area?}', PrefController::class)->name('pref');
 
 Route::get('area', AreaIndexController::class)->name('area.index');
 
-Route::view('location', 'location.location')->name('location');
-
-Route::view(uri: 'history', view: 'history')->name('history');
-
 Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified'])
     ->get('/dashboard', DashboardController::class)
     ->name('dashboard');
@@ -77,9 +73,4 @@ Route::get('report/{report}', ReportController::class)
 
 Route::get('sitemap', SitemapController::class)->name('sitemap');
 
-Route::view(uri: 'contact', view: 'contact')->name('contact');
-Route::view(uri: 'license', view: 'license')->name('license');
-Route::view(uri: 'help/operator', view: 'help.operator')->name('help.operator');
-Route::view(uri: 'help/user', view: 'help.user')->name('help.user');
 Route::view(uri: 'matching', view: 'matching.matching')->name('matching');
-Route::view(uri: 'search', view: 'search')->name('detail-search');

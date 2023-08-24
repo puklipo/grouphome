@@ -20,14 +20,11 @@ class OperatorRequest extends Model
         'user_id',
     ];
 
-    /**
-     * @return void
-     */
     protected static function booted(): void
     {
         static::created(function ($request) {
             Notification::route('mail', config('mail.admin.to'))
-                        ->notify(new OperatorRequestCreated($request));
+                ->notify(new OperatorRequestCreated($request));
         });
     }
 

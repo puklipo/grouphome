@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\name;
+
+name('help.operator');
+?>
+
 <x-main-layout>
     <x-slot name="title">
         {{ __('グループホーム事業者向けの使い方') }}
