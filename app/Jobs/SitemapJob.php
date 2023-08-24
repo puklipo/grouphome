@@ -28,19 +28,17 @@ class SitemapJob implements ShouldQueue
 
     /**
      * Execute the job.
-     *
-     * @return void
      */
     public function handle(): void
     {
         $sitemap = Sitemap::create()
-                          ->add(Url::create('/'))
-                          ->add(Url::create(route('area.index')))
-                          ->add(Url::create(route('detail-search')))
-                          ->add(Url::create(route('matching')))
-                          ->add(Url::create(route('help.user')))
-                          ->add(Url::create(route('help.operator')))
-                          ->add(Url::create(route('license')));
+            ->add(Url::create('/'))
+            ->add(Url::create(route('area.index')))
+            ->add(Url::create(route('detail-search')))
+            ->add(Url::create(route('matching')))
+            ->add(Url::create(route('help.user')))
+            ->add(Url::create(route('help.operator')))
+            ->add(Url::create(route('license')));
 
         Pref::oldest('id')->lazy()->each(fn (Pref $pref) => $sitemap->add(
             Url::create(route('pref', $pref))
@@ -48,7 +46,7 @@ class SitemapJob implements ShouldQueue
 
         Home::latest('updated_at')->lazy()->each(fn (Home $home) => $sitemap->add(
             Url::create(route('home.show', $home))
-               ->setLastModificationDate($home->updated_at)
+                ->setLastModificationDate($home->updated_at)
         ));
 
         $sitemap->writeToDisk('s3', 'sitemap.xml');

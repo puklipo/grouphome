@@ -86,9 +86,7 @@ trait HomeScope
     }
 
     /**
-     * 空室で検索.
-     *
-     * @param  string|null  $vacancy 指定しない"", 空室あり"0", 満室"1"
+     * 空室で検索。指定しない"", 空室あり"0", 満室"1".
      */
     public function scopeVacancySearch(Builder $query, ?string $vacancy): Builder
     {
