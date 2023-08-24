@@ -14,8 +14,8 @@ trait HomeScope
     {
         return $query->addSelect([
             'total' => Cost::select('total')
-                           ->whereColumn('home_id', 'homes.id')
-                           ->where('total', '>', 0),
+                ->whereColumn('home_id', 'homes.id')
+                ->where('total', '>', 0),
         ]);
     }
 
@@ -27,13 +27,13 @@ trait HomeScope
         return $query->when($search, function (Builder $query, $search) {
             $query->where(function (Builder $query) use ($search) {
                 $query->where('name', 'like', "%$search%")
-                      ->orWhere('address', 'like', "%$search%")
-                      ->orWhere('company', 'like', "%$search%")
-                      ->orWhere('introduction', 'like', "%$search%")
-                      ->orWhere('houserule', 'like', "%$search%")
-                      ->orWhere('url', 'like', "%$search%")
-                      ->orWhere('wam', 'like', "%$search%")
-                      ->orWhere('id', $search);
+                    ->orWhere('address', 'like', "%$search%")
+                    ->orWhere('company', 'like', "%$search%")
+                    ->orWhere('introduction', 'like', "%$search%")
+                    ->orWhere('houserule', 'like', "%$search%")
+                    ->orWhere('url', 'like', "%$search%")
+                    ->orWhere('wam', 'like', "%$search%")
+                    ->orWhere('id', $search);
             });
         });
     }
@@ -88,7 +88,7 @@ trait HomeScope
     /**
      * 空室で検索.
      *
-     * @param  string|null  $vacancy  指定しない"", 空室あり"0", 満室"1"
+     * @param  string|null  $vacancy 指定しない"", 空室あり"0", 満室"1"
      */
     public function scopeVacancySearch(Builder $query, ?string $vacancy): Builder
     {

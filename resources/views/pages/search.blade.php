@@ -1,22 +1,28 @@
+<?php
+use function Laravel\Folio\name;
+
+name('detail-search');
+?>
+
 <x-main-layout>
     <x-slot name="title">
-        {{ __('履歴') }}
+        {{ __('詳細検索') }}
     </x-slot>
 
     <x-slot name="header">
         <h1 class="font-semibold text-xl leading-tight">
-            {{ __('履歴') }} [{{ collect(session('history', []))->count() }}]
+            {{ __('詳細検索') }}
         </h1>
     </x-slot>
 
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
-                {{ __('履歴') }} | {{ config('app.name') }}
+                {{ __('詳細検索') }}
             </x-slot>
 
             <x-slot name="description">
-                {{ config('app.name') }}
+                {{ __('詳細検索') }}
             </x-slot>
         </x-ogp>
     </x-slot>
@@ -26,8 +32,7 @@
 
             <x-breadcrumbs-back/>
 
-            <livewire:history-list/>
-
+            <livewire:detail-search/>
         </div>
     </div>
 </x-main-layout>

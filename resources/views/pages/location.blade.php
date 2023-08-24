@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\name;
+
+name('location');
+?>
+
 <x-main-layout>
     <x-slot name="title">
         {{ __('現在地から探す') }}

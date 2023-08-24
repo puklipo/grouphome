@@ -75,7 +75,7 @@ class DetailSearch extends Component
             ->whereNotNull('area')
             ->orderBy('area')
             ->distinct()
-            ->get('area')
+            ->get()
             ->pluck('area')
             ->toArray();
     }

@@ -1,22 +1,28 @@
+<?php
+use function Laravel\Folio\name;
+
+name('history');
+?>
+
 <x-main-layout>
     <x-slot name="title">
-        {{ __('詳細検索') }}
+        {{ __('履歴') }}
     </x-slot>
 
     <x-slot name="header">
         <h1 class="font-semibold text-xl leading-tight">
-            {{ __('詳細検索') }}
+            {{ __('履歴') }} [{{ collect(session('history', []))->count() }}]
         </h1>
     </x-slot>
 
     <x-slot name="ogp">
         <x-ogp>
             <x-slot name="title">
-                {{ __('詳細検索') }}
+                {{ __('履歴') }} | {{ config('app.name') }}
             </x-slot>
 
             <x-slot name="description">
-                {{ __('詳細検索') }}
+                {{ config('app.name') }}
             </x-slot>
         </x-ogp>
     </x-slot>
@@ -26,7 +32,8 @@
 
             <x-breadcrumbs-back/>
 
-            <livewire:detail-search/>
+            <livewire:history-list/>
+
         </div>
     </div>
 </x-main-layout>

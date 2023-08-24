@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\name;
+
+name('license');
+?>
+
 <x-main-layout>
     <x-slot name="title">
         {{ __('利用規約・ライセンス') }}

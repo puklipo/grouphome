@@ -1,3 +1,9 @@
+<?php
+use function Laravel\Folio\name;
+
+name('contact');
+?>
+
 <x-main-layout>
     <x-slot name="title">
         {{ __('お問い合わせ') }}
