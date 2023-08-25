@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.279.5",
+            "version": "3.279.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5cd1276c49effad408928e19a44a7d188cb9dedf"
+                "reference": "e83376ac8e88ed99c3d75d1309a2cb1148d31fd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5cd1276c49effad408928e19a44a7d188cb9dedf",
-                "reference": "5cd1276c49effad408928e19a44a7d188cb9dedf",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e83376ac8e88ed99c3d75d1309a2cb1148d31fd9",
+                "reference": "e83376ac8e88ed99c3d75d1309a2cb1148d31fd9",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.279.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.279.6"
             },
-            "time": "2023-08-23T18:34:06+00:00"
+            "time": "2023-08-24T18:07:59+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2472,16 +2472,16 @@
         },
         {
             "name": "laravel/jetstream",
-            "version": "v3.3.2",
+            "version": "v3.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "009e5e90636159e9da7f12ccada0c1b5b9ca8ee9"
+                "reference": "6660ede858e1a964134732bb41dff9fd08450d0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/009e5e90636159e9da7f12ccada0c1b5b9ca8ee9",
-                "reference": "009e5e90636159e9da7f12ccada0c1b5b9ca8ee9",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/6660ede858e1a964134732bb41dff9fd08450d0e",
+                "reference": "6660ede858e1a964134732bb41dff9fd08450d0e",
                 "shasum": ""
             },
             "require": {
@@ -2537,7 +2537,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2023-08-21T13:08:00+00:00"
+            "time": "2023-08-23T13:50:02+00:00"
         },
         {
             "name": "laravel/octane",
@@ -10687,16 +10687,16 @@
         },
         {
             "name": "laravel-lang/http-statuses",
-            "version": "v3.4.3",
+            "version": "v3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/http-statuses.git",
-                "reference": "0bd05c814ac28e826bb243b4ab5e1a12fd58e0ce"
+                "reference": "a040c261c10f68980e865c9900b76c32fd6f0275"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/0bd05c814ac28e826bb243b4ab5e1a12fd58e0ce",
-                "reference": "0bd05c814ac28e826bb243b4ab5e1a12fd58e0ce",
+                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/a040c261c10f68980e865c9900b76c32fd6f0275",
+                "reference": "a040c261c10f68980e865c9900b76c32fd6f0275",
                 "shasum": ""
             },
             "require": {
@@ -10751,7 +10751,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/http-statuses/issues",
-                "source": "https://github.com/Laravel-Lang/http-statuses/tree/v3.4.3"
+                "source": "https://github.com/Laravel-Lang/http-statuses/tree/v3.4.4"
             },
             "funding": [
                 {
@@ -10759,7 +10759,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-08-22T01:18:47+00:00"
+            "time": "2023-08-24T01:17:58+00:00"
         },
         {
             "name": "laravel-lang/lang",
