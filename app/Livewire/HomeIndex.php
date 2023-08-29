@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Home;
 use App\Models\Pref;
 use Illuminate\Contracts\Database\Query\Builder;
-use Illuminate\Http\Request;
 use Illuminate\View\View;
+use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -18,36 +18,30 @@ class HomeIndex extends Component
 
     public ?string $area = null;
 
+    /** @var string|null キーワード */
+    #[Url]
     public ?string $q = null;
 
     /** @var string|null 並べ替え */
+    #[Url]
     public ?string $sort = null;
 
+    /** @var int|null 対象区分 */
+    #[Url]
     public ?int $level = null;
 
+    /** @var int|null 類型 */
+    #[Url]
     public ?int $type = null;
 
+    /** @var int|null 空室 */
+    #[Url]
     public ?int $vacancy = null;
-
-    protected $queryString = [
-        'q', //キーワード
-        'sort', //並べ替え
-        'level', //対象区分
-        'type', //類型
-        'vacancy', //空室
-    ];
-
-    public function mount(Request $request): void
-    {
-        foreach ($this->queryString as $query) {
-            $this->$query = $request->input($query);
-        }
-    }
 
     public function updatedPage($page): void
     {
         //ページが変わった時に一番上にスクロール。
-        $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
+        $this->dispatch('page-updated', page: $page);
     }
 
     public function render(): View

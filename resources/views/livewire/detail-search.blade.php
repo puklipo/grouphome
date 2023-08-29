@@ -8,7 +8,7 @@
 
         <x-input name="q" type="search"
                      class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
-                     wire:model.lazy="q"
+                     wire:model.blur="q"
                      placeholder="{{ 'キーワード検索' }}"
         />
 
@@ -20,7 +20,7 @@
                     <x-checkbox name="level_{{ $index }}"
                                     id="level_{{ $index }}"
                                     class="checked:text-indigo-500"
-                                    wire:model="levels.{{ $index }}"/>
+                                    wire:model.live="levels.{{ $index }}"/>
                     区分{{ $index === 0 ? 'なし' : $index }}以上
                 </x-label>
             </div>
@@ -34,7 +34,7 @@
                     <x-checkbox name="type_{{ $index }}"
                                     id="type_{{ $index }}"
                                     class="checked:text-indigo-500"
-                                    wire:model="types.{{ $index }}"/>
+                                    wire:model.live="types.{{ $index }}"/>
                     {{ Arr::get(config('type'), $index-1, '不明') }}
                 </x-label>
             </div>
@@ -48,7 +48,7 @@
                     <x-checkbox name="facility_{{ $index }}"
                                     id="facility_{{ $index }}"
                                     class="checked:text-indigo-500"
-                                    wire:model="facilities.{{ $index }}"/>
+                                    wire:model.live="facilities.{{ $index }}"/>
                     {{ config('facility.'.$index) }}
                 </x-label>
             </div>
@@ -62,7 +62,7 @@
                     <x-checkbox name="equipment_{{ $index }}"
                                     id="equipment_{{ $index }}"
                                     class="checked:text-indigo-500"
-                                    wire:model="equipments.{{ $index }}"/>
+                                    wire:model.live="equipments.{{ $index }}"/>
                     {{ config('equipment.'.$index) }}
                 </x-label>
             </div>
@@ -70,7 +70,7 @@
 
         <x-search.title>{{ __('空室') }}</x-search.title>
 
-        <x-select name="vacancy" wire:model="vacancy">
+        <x-select name="vacancy" wire:model.live="vacancy">
             <option value="">指定しない</option>
             <option value="0">{{ __('空室あり') }}</option>
             <option value="1">{{ __('満室') }}</option>
@@ -78,7 +78,7 @@
 
         <x-search.title>{{ __('都道府県') }}</x-search.title>
 
-        <x-select name="pref_id" wire:model="pref_id">
+        <x-select name="pref_id" wire:model.live="pref_id">
             <option value="">指定しない</option>
             @foreach(\App\Models\Pref::oldest('id')->get() as $pre)
                 <option value="{{ $pre->id }}">{{ $pre->name }}</option>
@@ -86,7 +86,7 @@
         </x-select>
 
         @if(count($areas ?? []) > 0)
-            <x-select name="area" wire:model="area">
+            <x-select name="area" wire:model.live="area">
                 <option value="">指定しない</option>
                 @foreach($areas as $area_name)
                     <option value="{{ $area_name }}">{{ $area_name }}</option>
@@ -96,7 +96,7 @@
 
         <x-search.title>{{ __('並べ替え') }}</x-search.title>
 
-        <x-select name="sort" wire:model="sort">
+        <x-select name="sort" wire:model.live="sort">
             <option value="">なし</option>
             <option value="updated">更新が新しい順</option>
             <option value="low">費用が安い順</option>

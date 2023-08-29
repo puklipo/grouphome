@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Home;
+namespace App\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Auth\Access\AuthorizationException;
@@ -9,23 +9,21 @@ use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
 use Livewire\Component;
 
-/**
- * 空室情報.
- */
-class VacancyEditor extends Component
+class IntroductionEditor extends Component
 {
     use AuthorizesRequests;
 
     public Home $home;
 
     protected array $rules = [
-        'home.vacancy.filled' => 'boolean',
-        'home.vacancy.message' => 'string|nullable',
+        'home.introduction' => 'string|nullable',
     ];
 
-    public function mount(): void
+    public function updated($name, $value): void
     {
-        $this->home->vacancy()->firstOrCreate();
+        if ($name === 'home.introduction' && blank($value)) {
+            $this->fill(['home.introduction' => null]);
+        }
     }
 
     /**
@@ -37,11 +35,11 @@ class VacancyEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        $this->home->vacancy->save();
+        $this->home->save();
     }
 
     public function render(): View
     {
-        return view('livewire.home.vacancy-editor');
+        return view('livewire.home.introduction-editor');
     }
 }

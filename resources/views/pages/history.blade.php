@@ -32,7 +32,7 @@ name('history');
 
             <x-breadcrumbs-back/>
 
-            <livewire:history-list/>
+            <livewire:history-list lazy/>
 
         </div>
     </div>

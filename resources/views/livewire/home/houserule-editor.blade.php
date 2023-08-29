@@ -16,9 +16,9 @@
             <x-slot name="title">
                 変更
             </x-slot>
-            <form wire:submit.prevent="save">
+            <form wire:submit="save">
                 <x-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
-                <x-textarea name="houserule" wire:model.defer="home.houserule"></x-textarea>
+                <x-textarea name="houserule" id="houserule" wire:model="home.houserule"></x-textarea>
 
                 <div class="text-sm text-gray-500 dark:text-white">「日中は必ず外出」や門限など入居者向けの細かいルールを入力してください。</div>
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Admin;
+namespace App\Livewire\Admin;
 
 use App\Models\Contact;
 use Illuminate\View\View;
@@ -17,7 +17,7 @@ class ContactsIndex extends Component
     public function updatedPage($page): void
     {
         //ページが変わった時に一番上にスクロール。
-        $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
+        $this->dispatch('page-updated', page: $page);
     }
 
     public function render(): View

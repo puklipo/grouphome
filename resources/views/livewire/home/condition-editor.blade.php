@@ -33,10 +33,11 @@
                 変更
             </x-slot>
             <div class="mb-6">
-                <x-label for="level" value="{{ __('対象区分の下限') }}" class="mt-3"/>
+                <x-label for="level_min" value="{{ __('対象区分の下限') }}" class="mt-3"/>
 
                 <select name="level"
-                        wire:model="home.level"
+                        id="level_min"
+                        wire:model.live="level"
                         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm flex-auto dark:bg-gray-800">
                     <option value="0">区分なし以上</option>
                     @foreach(range(1, 6) as $level)
@@ -49,7 +50,8 @@
                 <x-label for="type_id" value="{{ __('サービス類型') }}" class="mt-3"/>
 
                 <select name="type_id"
-                        wire:model="home.type_id"
+                        id="type_id"
+                        wire:model.live="type_id"
                         class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm flex-auto dark:bg-gray-800">
                     <option value="">不明</option>
 
@@ -66,7 +68,7 @@
                         <x-checkbox name="condition_{{ $key }}"
                                         id="condition_{{ $key }}"
                                         class="checked:text-red-500"
-                                        wire:model="home.condition.{{ $key }}"/>
+                                        wire:model.live="condition.{{ $key }}"/>
                         {{ $name }}
                     </x-label>
                 @endforeach

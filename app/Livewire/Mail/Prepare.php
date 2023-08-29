@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Mail;
+namespace App\Livewire\Mail;
 
 use App\Models\Home;
 use App\Notifications\MailPrepareNotification;

@@ -16,10 +16,10 @@
             <x-slot name="title">
                 変更
             </x-slot>
-            <form wire:submit.prevent="save">
+            <form wire:submit="save">
                 <x-label for="introduction" value="{{ __('紹介') }}"/>
 
-                <x-textarea name="introduction" wire:model.defer="home.introduction"></x-textarea>
+                <x-textarea name="introduction" id="introduction" wire:model="home.introduction"></x-textarea>
 
                 <div class="text-sm text-gray-500 dark:text-white">グループホームの基本的な紹介文を入力してください。</div>
 

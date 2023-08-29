@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Models\Home;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Support\Arr;
 use Illuminate\View\View;
+use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
 
@@ -23,9 +24,11 @@ class DetailSearch extends Component
     public ?array $areas = null;
 
     /** @var string|null キーワード */
+    #[Url]
     public ?string $q = null;
 
     /** @var string|null 並べ替え */
+    #[Url]
     public ?string $sort = 'updated';
 
     /** @var string|null 空室 */
@@ -42,11 +45,6 @@ class DetailSearch extends Component
 
     /** @var array<string, bool> 居室設備 */
     public array $equipments = [];
-
-    protected $queryString = [
-        'q',
-        'sort' => ['except' => 'updated'],
-    ];
 
     public function mount(): void
     {
@@ -82,7 +80,7 @@ class DetailSearch extends Component
 
     public function updatedPage($page): void
     {
-        $this->dispatchBrowserEvent('page-updated', ['page' => $page]);
+        $this->dispatch('page-updated', page: $page);
     }
 
     public function render(): View

@@ -3,8 +3,8 @@
 namespace Tests\Feature\GH;
 
 use App\Actions\History;
-use App\Http\Livewire\ContactForm;
-use App\Http\Livewire\HistoryList;
+use App\Livewire\ContactForm;
+use App\Livewire\HistoryList;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Home;
+namespace App\Livewire\Home;
 
 use App\Models\Home;
 use Illuminate\Auth\Access\AuthorizationException;

@@ -1,7 +1,8 @@
 <?php
 
-namespace App\Http\Livewire\Home;
+namespace App\Livewire\Home;
 
+use App\Livewire\Forms\FacilityForm;
 use App\Models\Home;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -10,24 +11,21 @@ use Illuminate\View\View;
 use Livewire\Component;
 
 /**
- * 居室設備.
+ * 共有設備.
  */
-class EquipmentEditor extends Component
+class FacilityEditor extends Component
 {
     use AuthorizesRequests;
 
     public Home $home;
 
-    protected function rules(): array
-    {
-        return collect(config('equipment'))
-            ->mapWithKeys(fn ($item, $key) => ['home.equipment.'.$key => 'boolean'])
-            ->toArray();
-    }
+    public FacilityForm $facility;
 
     public function mount(): void
     {
-        $this->home->equipment()->firstOrCreate();
+        $this->home->facility()->firstOrCreate();
+
+        $this->facility->setForm($this->home->facility);
     }
 
     /**
@@ -39,11 +37,12 @@ class EquipmentEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        $this->home->equipment->save();
+        $this->facility->save();
+        $this->home->refresh();
     }
 
     public function render(): View
     {
-        return view('livewire.home.equipment-editor');
+        return view('livewire.home.facility-editor');
     }
 }

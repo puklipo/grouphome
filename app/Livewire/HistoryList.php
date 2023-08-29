@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace App\Livewire;
 
 use App\Actions\History;
 use Illuminate\View\View;
@@ -8,17 +8,15 @@ use Livewire\Component;
 
 class HistoryList extends Component
 {
-    public bool $ready = false;
-
-    public function ready(): void
+    public function placeholder(): View
     {
-        $this->ready = true;
+        return view('livewire.history-loading');
     }
 
     public function render(): View
     {
         return view('livewire.history-list', [
-            'homes' => $this->ready ? app(History::class)->get() : [],
+            'homes' => app(History::class)->get(),
         ]);
     }
 }
