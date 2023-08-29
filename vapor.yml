@@ -31,6 +31,7 @@ environments:
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.2:al2-arm'
+        warm: 5
         database: grouphome
         storage: staging-pcs-grouphome
         queue-timeout: 300
