@@ -27,7 +27,7 @@
                     <x-checkbox name="facility_{{ $key }}"
                                     id="facility_{{ $key }}"
                                     class="checked:text-red-500"
-                                    wire:model="home.facility.{{ $key }}"/>
+                                    wire:model.live="facility.{{ $key }}"/>
                     {{ $name }}
                 </x-label>
             @endforeach

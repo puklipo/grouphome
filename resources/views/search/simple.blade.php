@@ -1,7 +1,7 @@
 <form action="{{ request()->routeIs(['pref', 'pref.area']) ? url()->current() : route('index') }}"
       method="get">
     <x-label for="search" value="{{ __('検索') }}" class="hidden"/>
-    <x-input name="q" type="search" class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
+    <x-input name="q" id="search" type="search" class="block max-w-full text-black bg-white dark:bg-gray-800 dark:text-white"
                  value="{{ request('q') }}"
                  placeholder="{{ request()->routeIs(['pref', 'pref.area']) ? (request()->area ?? request()->pref->name).'から検索' : 'キーワード検索' }}"
     />
@@ -12,7 +12,7 @@
 
     <x-label for="level" value="{{ __('対象区分') }}" class="mt-3 dark:text-white"/>
 
-    <x-select name="level">
+    <x-select name="level" id="level">
         <option value="" @selected(request()->missing('level'))>指定しない</option>
         <option value="0" @selected(request('level') === '0')>区分なし</option>
         @foreach(range(1, 6) as $level)
@@ -22,7 +22,7 @@
 
     <x-label for="type" value="{{ __('サービス類型') }}" class="mt-3 dark:text-white"/>
 
-    <x-select name="type">
+    <x-select name="type" id="type">
         <option value="" @selected(request()->missing('type'))>指定しない</option>
         @foreach($types as $type)
             <option value="{{ $type->id }}" @selected(request('type') == $type->id)>{{ $type->type }}</option>
@@ -32,7 +32,7 @@
 
     <x-label for="vacancy" value="{{ __('空室') }}" class="mt-3 dark:text-white"/>
 
-    <x-select name="vacancy">
+    <x-select name="vacancy" id="vacancy">
         <option value="" @selected(request()->missing('vacancy'))>指定しない</option>
         <option value="0" @selected(request('vacancy') === '0')>{{ __('空室あり') }}</option>
         <option value="1" @selected(request('vacancy') === '1')>{{ __('満室') }}</option>

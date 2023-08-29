@@ -14,15 +14,12 @@ class Contact extends Model
 {
     use HasFactory;
 
-    /**
-     * @return void
-     */
     protected static function booted(): void
     {
         static::created(function ($contact) {
             Notification::route('mail', config('mail.contact.to'))
-                        ->route('line-notify', config('line.notify.personal_access_token'))
-                        ->notify(new ContactNotification($contact));
+                ->route('line-notify', config('line.notify.personal_access_token'))
+                ->notify(new ContactNotification($contact));
         });
     }
 }

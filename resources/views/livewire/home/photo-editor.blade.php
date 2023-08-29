@@ -8,7 +8,7 @@
             </div>
         </div>
     </a>
-    <x-modal wire:model="showModal">
+    <x-modal wire:model.live="showModal">
         <div class="p-3">
             <h3 class="text-black text-center">{{ $name }}</h3>
 
@@ -21,9 +21,9 @@
     @canany(['update', 'admin'], $home)
         <div class="mt-0">
             <div class="border-2 border-red-500 p-3">
-                <form wire:submit.prevent="save">
+                <form wire:submit="save">
                     <div>
-                        <x-input type="file" id="photo" wire:model="photo"/>
+                        <x-input type="file" id="photo" wire:model.live="photo"/>
                         <x-input-error for="photo" class="mt-2"/>
                     </div>
 

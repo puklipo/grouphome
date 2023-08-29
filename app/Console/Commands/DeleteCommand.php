@@ -23,10 +23,8 @@ class DeleteCommand extends Command
 
     /**
      * Execute the console command.
-     *
-     * @return int
      */
-    public function handle()
+    public function handle(): int
     {
         foreach (config('deleted') as $id) {
             $home = Home::find($id);

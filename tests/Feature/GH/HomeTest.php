@@ -19,7 +19,7 @@ class HomeTest extends TestCase
         $response = $this->get(route('home.show', $home));
 
         $response->assertOk()
-                 ->assertDontSeeText('変更（管理者用）');
+            ->assertDontSeeText('変更（管理者用）');
     }
 
     public function test_home_redirect()
@@ -38,7 +38,7 @@ class HomeTest extends TestCase
         $response = $this->actingAs($home->users->first())->get(route('home.show', $home));
 
         $response->assertSeeText('変更（管理者用）')
-                 ->assertSeeLivewire('home.basic-editor');
+            ->assertSeeLivewire('home.basic-editor');
     }
 
     public function test_home_operator()
@@ -50,6 +50,6 @@ class HomeTest extends TestCase
         $response = $this->actingAs($home->users->last())->get(route('home.show', $home));
 
         $response->assertSee('wam.go.jp')
-                 ->assertDontSeeText('変更（管理者用）');
+            ->assertDontSeeText('変更（管理者用）');
     }
 }

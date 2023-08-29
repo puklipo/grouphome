@@ -24,17 +24,17 @@
             <x-slot name="title">
                 変更
             </x-slot>
-            <form wire:submit.prevent="save">
+            <form wire:submit="save">
                 <x-label for="vacancy_filled" class="mb-3 cursor-pointer">
                     <x-checkbox name="vacancy_filled"
                                     id="vacancy_filled"
                                     class="checked:text-red-500"
-                                    wire:model.defer="home.vacancy.filled"/>
+                                    wire:model="vacancy.filled"/>
                     {{ __('満室') }}
                 </x-label>
 
                 <x-label for="vacancy_message" value="{{ __('メッセージ') }}"/>
-                <x-textarea name="vacancy_message" rows="2" wire:model.defer="home.vacancy.message"></x-textarea>
+                <x-textarea name="vacancy_message" id="vacancy_message" rows="2" wire:model="vacancy.message"></x-textarea>
                 <x-input-error for="vacancy_message" class="mt-3"/>
 
                 <x-button class="mt-3">

@@ -17,7 +17,7 @@ class ArtisanImportCommandTest extends TestCase
         $this->seed();
 
         $this->artisan('gh:import')
-             ->assertSuccessful();
+            ->assertSuccessful();
 
         $this->assertDatabaseCount('prefs', 47);
         $this->assertDatabaseCount('types', 4);
@@ -30,6 +30,6 @@ class ArtisanImportCommandTest extends TestCase
         $this->seed();
 
         $this->artisan('gh:delete')
-             ->assertSuccessful();
+            ->assertSuccessful();
     }
 }

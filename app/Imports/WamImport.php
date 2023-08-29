@@ -4,8 +4,6 @@ namespace App\Imports;
 
 use App\Imports\Concerns\WithKana;
 use App\Models\Pref;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\OnEachRow;
@@ -19,14 +17,7 @@ use Maatwebsite\Excel\Row;
 use Maatwebsite\Excel\Validators\Failure;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 
-class WamImport implements
-    OnEachRow,
-    WithHeadingRow,
-    WithBatchInserts,
-    WithChunkReading,
-    SkipsEmptyRows,
-    WithValidation,
-    SkipsOnFailure
+class WamImport implements OnEachRow, WithHeadingRow, WithBatchInserts, WithChunkReading, SkipsEmptyRows, WithValidation, SkipsOnFailure
 {
     use Importable;
     use WithKana;
@@ -39,10 +30,10 @@ class WamImport implements
         ];
     }
 
-    public function onRow(Row $row)
+    public function onRow(Row $row): void
     {
         //都道府県コード(01-47)+3桁の市区町村コードの形式。最初の2文字から都道府県コードを得る。
-        $pref_id = (int) Str::substr($row['都道府県コード又は市区町村コード'], 0, 2);
+        $pref_id = (int) Str::substr(string: $row['都道府県コード又は市区町村コード'], start: 0, length: 2);
 
         $pref = Pref::find($pref_id);
 

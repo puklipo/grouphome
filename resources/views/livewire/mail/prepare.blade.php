@@ -4,13 +4,13 @@
 
         <x-validation-errors class="mb-4"/>
 
-        <form wire:submit.prevent="sendmail">
+        <form wire:submit="sendmail">
             <p class="mb-2 text-lg text-red-500">
                 メールアドレスの入力ミスを防ぐため、最初にあなたのメールアドレスを入力してください。問い合わせフォームはメールで届きます。</p>
 
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}"/>
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.lazy="email"
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.blur="email"
                              required autofocus autocomplete="email"/>
             </div>
 

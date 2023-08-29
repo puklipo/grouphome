@@ -18,10 +18,10 @@ class ContactTest extends TestCase
     public function test_show_contact_form()
     {
         Livewire::actingAs($user = User::factory()->create())
-                ->test('contact-form')
-                ->call('onReady')
-                ->assertSet('name', $user->name)
-                ->assertSet('email', $user->email);
+            ->test('contact-form')
+            ->call('onReady')
+            ->assertSet('name', $user->name)
+            ->assertSet('email', $user->email);
 
         $response = $this->get(route('contact'));
 
@@ -33,10 +33,10 @@ class ContactTest extends TestCase
         Notification::fake();
 
         Livewire::actingAs($user = User::factory()->create())
-                ->test('contact-form')
-                ->call('onReady')
-                ->set('body', 'test')
-                ->call('sendmail');
+            ->test('contact-form')
+            ->call('onReady')
+            ->set('body', 'test')
+            ->call('sendmail');
 
         Notification::assertSentOnDemand(ContactNotification::class);
 
@@ -54,14 +54,14 @@ class ContactTest extends TestCase
         Contact::factory(30)->create();
 
         Livewire::actingAs($user)
-                ->test('admin.contacts-index')
-                ->set('page', 2)
-                ->assertDispatchedBrowserEvent('page-updated', ['page' => 2]);
+            ->test('admin.contacts-index')
+            ->call('setPage', 2)
+            ->assertDispatched('page-updated', page: 2);
 
         $response = $this->actingAs($user)->get(route('admin.contacts'));
 
         $response->assertSuccessful()
-                 ->assertSeeLivewire('admin.contacts-index');
+            ->assertSeeLivewire('admin.contacts-index');
     }
 
     public function test_contacts_preview()
@@ -69,9 +69,9 @@ class ContactTest extends TestCase
         $contact = Contact::factory()->create()->first();
 
         $response = $this->withoutMiddleware(ValidateSignature::class)
-                         ->get(route('contact.preview', $contact));
+            ->get(route('contact.preview', $contact));
 
         $response->assertSuccessful()
-                 ->assertSeeText($contact->name);
+            ->assertSeeText($contact->name);
     }
 }
