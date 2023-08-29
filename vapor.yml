@@ -11,9 +11,9 @@ environments:
         database: grouphome
         storage: pcs-grouphome
         queue-timeout: 300
-        octane: true
-        octane-database-session-persist: true
-        octane-database-session-ttl: 10
+        #octane: true
+        #octane-database-session-persist: true
+        #octane-database-session-ttl: 10
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan vapor-ui:publish --ansi'
