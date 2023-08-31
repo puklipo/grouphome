@@ -1,4 +1,4 @@
-<div class="m-3">
+<div class="m-3" wire:key="{{ $home->id }}">
     @include('homes.header')
 
     <x-box>

@@ -3,7 +3,7 @@
 
     @forelse($contacts as $contact)
 
-        <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg p-3 mb-3">
+        <div class="bg-white dark:bg-gray-900 overflow-hidden shadow-md sm:rounded-lg p-3 mb-3" wire:key="{{ $contact->id }}">
 
             <table class="table-auto w-full">
                 <tr>
