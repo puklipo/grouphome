@@ -51,10 +51,10 @@ class Home extends Model
         'map',
         'location',
         'url',
-        'wam',
-        'level',
-        'type_id',
-        'released_at',
+        //'wam',
+        //'level',
+        //'type_id',
+        //'released_at',
     ];
 
     protected $with = ['pref', 'type', 'photo'];

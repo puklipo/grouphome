@@ -61,7 +61,7 @@ class ConditionEditor extends Component
             $this->fill(['type_id' => null]);
         }
 
-        $this->home->fill([
+        $this->home->forceFill([
             'level' => $this->level,
             'type_id' => $this->type_id,
         ])->save();
