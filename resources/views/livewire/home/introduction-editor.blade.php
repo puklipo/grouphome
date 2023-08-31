@@ -6,8 +6,8 @@
     </x-box-header>
 
     <x-box class="p-3">
-        @if(filled($home->introduction))
-            <div class="text-lg">{!! nl2br(e($home->introduction)) !!}</div>
+        @if(filled($introduction))
+            <div class="text-lg">{!! nl2br(e($introduction)) !!}</div>
         @endif
     </x-box>
 
@@ -19,7 +19,7 @@
             <form wire:submit="save">
                 <x-label for="introduction" value="{{ __('紹介') }}"/>
 
-                <x-textarea name="introduction" id="introduction" wire:model="home.introduction"></x-textarea>
+                <x-textarea name="introduction" id="introduction" wire:model="introduction"></x-textarea>
 
                 <div class="text-sm text-gray-500 dark:text-white">グループホームの基本的な紹介文を入力してください。</div>
 

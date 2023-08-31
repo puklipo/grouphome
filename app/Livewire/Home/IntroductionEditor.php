@@ -7,6 +7,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 class IntroductionEditor extends Component
@@ -15,14 +16,18 @@ class IntroductionEditor extends Component
 
     public Home $home;
 
-    protected array $rules = [
-        'home.introduction' => 'string|nullable',
-    ];
+    #[Rule('string|nullable')]
+    public ?string $introduction;
+
+    public function mount(): void
+    {
+        $this->introduction = $this->home->introduction;
+    }
 
     public function updated($name, $value): void
     {
-        if ($name === 'home.introduction' && blank($value)) {
-            $this->fill(['home.introduction' => null]);
+        if ($name === 'introduction' && blank($value)) {
+            $this->fill(['introduction' => null]);
         }
     }
 
@@ -35,7 +40,9 @@ class IntroductionEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        $this->home->save();
+        $this->home->forceFill([
+            'introduction' => $this->introduction,
+        ])->save();
     }
 
     public function render(): View
