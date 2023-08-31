@@ -6,8 +6,8 @@
     </x-box-header>
 
     <x-box class="p-3">
-        @if(filled($home->houserule))
-            <div class="text-md">{!! nl2br(e($home->houserule)) !!}</div>
+        @if(filled($houserule))
+            <div class="text-md">{!! nl2br(e($houserule)) !!}</div>
         @endif
     </x-box>
 
@@ -18,7 +18,7 @@
             </x-slot>
             <form wire:submit="save">
                 <x-label for="houserule" value="{{ __('入居者向けのルール') }}"/>
-                <x-textarea name="houserule" id="houserule" wire:model="home.houserule"></x-textarea>
+                <x-textarea name="houserule" id="houserule" wire:model="houserule"></x-textarea>
 
                 <div class="text-sm text-gray-500 dark:text-white">「日中は必ず外出」や門限など入居者向けの細かいルールを入力してください。</div>
 

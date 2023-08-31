@@ -7,6 +7,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 class HouseruleEditor extends Component
@@ -15,14 +16,18 @@ class HouseruleEditor extends Component
 
     public Home $home;
 
-    protected array $rules = [
-        'home.houserule' => 'string|nullable',
-    ];
+    #[Rule('string|nullable')]
+    public ?string $houserule;
+
+    public function mount(): void
+    {
+        $this->houserule = $this->home->houserule;
+    }
 
     public function updated($name, $value): void
     {
-        if ($name === 'home.houserule' && blank($value)) {
-            $this->fill(['home.houserule' => null]);
+        if ($name === 'houserule' && blank($value)) {
+            $this->fill(['houserule' => null]);
         }
     }
 
@@ -35,7 +40,9 @@ class HouseruleEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        $this->home->save();
+        $this->home->forceFill([
+            'houserule' => $this->houserule,
+        ])->save();
     }
 
     public function render(): View
