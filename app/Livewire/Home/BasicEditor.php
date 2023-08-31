@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Home;
 
+use App\Livewire\Forms\BasicForm;
 use App\Models\Home;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -17,17 +18,17 @@ class BasicEditor extends Component
 
     public Home $home;
 
-    protected function rules(): array
+    public BasicForm $form;
+
+    public function mount(): void
     {
-        return collect(config('basic'))
-            ->mapWithKeys(fn ($item, $key) => ['home.'.$key => 'nullable'])
-            ->toArray();
+        $this->form->setForm($this->home);
     }
 
     public function updated($name, $value): void
     {
         if (blank($value)) {
-            $this->fill([$name => null]);
+            $this->form->$name = null;
         }
     }
 
@@ -38,7 +39,7 @@ class BasicEditor extends Component
     {
         $this->authorize('admin');
 
-        $this->home->save();
+        $this->form->save();
     }
 
     public function render(): View
