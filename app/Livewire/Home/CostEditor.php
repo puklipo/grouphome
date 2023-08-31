@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Home;
 
+use App\Livewire\Forms\CostForm;
 use App\Models\Home;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -15,39 +16,18 @@ class CostEditor extends Component
 
     public Home $home;
 
-    protected function rules(): array
-    {
-        return collect(config('cost'))
-            ->mapWithKeys(fn (
-                $item,
-                $key,
-            ) => ['home.cost.'.$key => $key === 'message' ? 'nullable' : 'required|numeric|integer|min:0'])
-            ->put('home.cost.total', 'required|numeric|integer|min:0')
-            ->toArray();
-    }
-
-    protected function validationAttributes(): array
-    {
-        return collect(config('cost'))
-            ->mapWithKeys(fn ($item, $key) => ['home.cost.'.$key => $item])
-            ->put('home.cost.total', '費用合計')
-            ->toArray();
-    }
+    public CostForm $cost;
 
     public function mount(): void
     {
         $this->home->cost()->firstOrCreate();
+
+        $this->cost->setForm($this->home->cost);
     }
 
     public function calcTotal(): void
     {
-        $this->fill([
-            'home.cost.total' => $this->home->cost->rent
-                + $this->home->cost->food
-                + $this->home->cost->utilities
-                + $this->home->cost->daily
-                + $this->home->cost->etc,
-        ]);
+        $this->cost->calcTotal();
     }
 
     /**
@@ -59,9 +39,8 @@ class CostEditor extends Component
             $this->authorize('update', $this->home);
         }
 
-        $this->validate();
-
-        $this->home->cost->save();
+        $this->cost->save();
+        $this->home->refresh();
     }
 
     public function render(): View
