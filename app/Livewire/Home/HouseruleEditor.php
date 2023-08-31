@@ -40,6 +40,8 @@ class HouseruleEditor extends Component
             $this->authorize('update', $this->home);
         }
 
+        $this->validate();
+
         $this->home->forceFill([
             'houserule' => $this->houserule,
         ])->save();

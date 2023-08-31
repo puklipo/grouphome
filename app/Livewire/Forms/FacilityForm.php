@@ -75,6 +75,8 @@ class FacilityForm extends Form
 
     public function save(): void
     {
+        $this->validate();
+
         $this->facility
             ->forceFill($this->except(['facility']))
             ->save();

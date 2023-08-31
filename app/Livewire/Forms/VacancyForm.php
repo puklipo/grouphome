@@ -25,6 +25,8 @@ class VacancyForm extends Form
 
     public function save(): void
     {
+        $this->validate();
+
         $this->vacancy
             ->forceFill($this->except(['vacancy']))
             ->save();

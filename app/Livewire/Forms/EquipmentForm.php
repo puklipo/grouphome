@@ -60,6 +60,8 @@ class EquipmentForm extends Form
 
     public function save(): void
     {
+        $this->validate();
+
         $this->equipment
             ->forceFill($this->except(['equipment']))
             ->save();

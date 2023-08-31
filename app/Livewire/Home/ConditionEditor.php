@@ -24,10 +24,10 @@ class ConditionEditor extends Component
     public ConditionForm $condition;
 
     #[Rule('integer|numeric|between:0,6')]
-    public int $level;
+    public int $level = 0;
 
     #[Rule('nullable|integer|numeric|between:1,4')]
-    public ?int $type_id;
+    public ?int $type_id = null;
 
     public function mount(): void
     {
@@ -60,6 +60,8 @@ class ConditionEditor extends Component
         if ($name === 'type_id' && blank($value)) {
             $this->fill(['type_id' => null]);
         }
+
+        $this->validate();
 
         $this->home->forceFill([
             'level' => $this->level,

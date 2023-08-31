@@ -30,6 +30,8 @@ class BasicForm extends Form
 
     public function save(): void
     {
+        $this->validate();
+
         $this->home
             ->forceFill($this->except(['home']))
             ->save();

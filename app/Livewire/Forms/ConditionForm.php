@@ -33,6 +33,8 @@ class ConditionForm extends Form
 
     public function save(): void
     {
+        $this->validate();
+
         $this->condition
             ->forceFill($this->except(['condition']))
             ->save();

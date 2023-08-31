@@ -40,6 +40,8 @@ class IntroductionEditor extends Component
             $this->authorize('update', $this->home);
         }
 
+        $this->validate();
+
         $this->home->forceFill([
             'introduction' => $this->introduction,
         ])->save();
