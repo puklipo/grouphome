@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ee210d690b599a9595063e67c187b9bb",
+    "content-hash": "19da613dfc1c5c987ecfcba30b6ac575",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -2047,20 +2047,20 @@
         },
         {
             "name": "laminas/laminas-diactoros",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-diactoros.git",
-                "reference": "860660e0774719660699e2b851071555c7b7d45c"
+                "reference": "aca73646e658dce3f079f6b8648c651e193e331e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/860660e0774719660699e2b851071555c7b7d45c",
-                "reference": "860660e0774719660699e2b851071555c7b7d45c",
+                "url": "https://api.github.com/repos/laminas/laminas-diactoros/zipball/aca73646e658dce3f079f6b8648c651e193e331e",
+                "reference": "aca73646e658dce3f079f6b8648c651e193e331e",
                 "shasum": ""
             },
             "require": {
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0",
+                "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
                 "psr/http-factory": "^1.0.2",
                 "psr/http-message": "^1.1 || ^2.0"
             },
@@ -2128,7 +2128,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2023-08-01T12:40:44+00:00"
+            "time": "2023-09-03T13:11:37+00:00"
         },
         {
             "name": "laravel/folio",
@@ -3747,30 +3747,31 @@
         },
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "7.6.1",
+            "version": "9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "e141f29cd7b9f27615d11f69e329f2b83ed70654"
+                "reference": "cd24dfa88c2872b6b5603ed3415189f87dd9a913"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/e141f29cd7b9f27615d11f69e329f2b83ed70654",
-                "reference": "e141f29cd7b9f27615d11f69e329f2b83ed70654",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/cd24dfa88c2872b6b5603ed3415189f87dd9a913",
+                "reference": "cd24dfa88c2872b6b5603ed3415189f87dd9a913",
                 "shasum": ""
             },
             "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "ext-sockets": "*",
-                "php": ">=7.2"
+                "guzzlehttp/guzzle": "^7.3",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
+                "php": ">=8.1"
             },
             "require-dev": {
+                "guzzlehttp/guzzle": "^7.3",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
                 "orchestra/testbench": "*",
                 "phpmd/phpmd": "2.13.0",
-                "phpstan/phpstan": "1.8.9",
-                "phpunit/phpunit": "^7||^8||^9",
-                "squizlabs/php_codesniffer": "3.7.1"
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^10.2",
+                "squizlabs/php_codesniffer": "3.7.2"
             },
             "type": "library",
             "extra": {
@@ -3779,13 +3780,27 @@
                         "LINE\\Laravel\\LINEBotServiceProvider"
                     ],
                     "aliases": {
-                        "LINEBot": "LINE\\Laravel\\Facade\\LINEBot"
+                        "LINEChannelAccessTokenApi": "LINE\\Laravel\\Facades\\LINEChannelAccessTokenApi",
+                        "LINEInsightApi": "LINE\\Laravel\\Facades\\LINEInsightApi",
+                        "LINELiffApi": "LINE\\Laravel\\Facades\\LINELiffApi",
+                        "LINEManageAudienceApi": "LINE\\Laravel\\Facades\\LINEManageAudienceApi",
+                        "LINEManageAudienceBlobApi": "LINE\\Laravel\\Facades\\LINEManageAudienceBlobApi",
+                        "LINEMessagingApi": "LINE\\Laravel\\Facades\\LINEMessagingApi",
+                        "LINEMessagingBlobApi": "LINE\\Laravel\\Facades\\LINEMessagingBlobApi"
                     }
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "LINE\\": "src/"
+                    "LINE\\Parser\\": "src/parser/lib/",
+                    "LINE\\Laravel\\": "src/laravel/lib/",
+                    "LINE\\Webhook\\": "src/webhook/lib/",
+                    "LINE\\Constants\\": "src/constants/",
+                    "LINE\\Clients\\Liff\\": "src/clients/liff/lib/",
+                    "LINE\\Clients\\Insight\\": "src/clients/insight/lib/",
+                    "LINE\\Clients\\MessagingApi\\": "src/clients/messaging-api/lib/",
+                    "LINE\\Clients\\ManageAudience\\": "src/clients/manage-audience/lib/",
+                    "LINE\\Clients\\ChannelAccessToken\\": "src/clients/channel-access-token/lib/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3823,9 +3838,9 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/7.6.1"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/9.1.0"
             },
-            "time": "2022-10-17T08:29:38+00:00"
+            "time": "2023-08-23T08:30:26+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -6190,23 +6205,23 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "2.2.5",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "10593a5c29ab6328001d72c111822bc6f0e76e18"
+                "reference": "0f4b067cd39bd5407fde8a4d721f2a5e14d77cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/10593a5c29ab6328001d72c111822bc6f0e76e18",
-                "reference": "10593a5c29ab6328001d72c111822bc6f0e76e18",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/0f4b067cd39bd5407fde8a4d721f2a5e14d77cbe",
+                "reference": "0f4b067cd39bd5407fde8a4d721f2a5e14d77cbe",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "illuminate/support": "^9.0||^10.0",
                 "laravel/socialite": "^5.0",
-                "linecorp/line-bot-sdk": "^7.0",
+                "linecorp/line-bot-sdk": "^9.0",
                 "php": "^8.0"
             },
             "require-dev": {
@@ -6248,9 +6263,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/2.2.5"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.1.0"
             },
-            "time": "2023-04-06T01:25:59+00:00"
+            "time": "2023-08-03T01:09:38+00:00"
         },
         {
             "name": "revolution/laravel-str-mixins",
@@ -13361,5 +13376,5 @@
     "platform-overrides": {
         "ext-sockets": "1.0.0"
     },
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.3.0"
 }

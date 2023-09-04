@@ -8,6 +8,7 @@ use App\Notifications\HomeMailNotification;
 use App\Notifications\MailPrepareNotification;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Notification;
+use Illuminate\Support\Facades\URL;
 use Livewire\Livewire;
 use Tests\TestCase;
 
@@ -24,7 +25,7 @@ class HomeMailTest extends TestCase
         $response = $this->get(route('home.mail.prepare', $home));
 
         $response->assertOk()
-                 ->assertSeeLivewire('mail.prepare');
+            ->assertSeeLivewire('mail.prepare');
     }
 
     public function test_home_mail_prepare_redirect()
@@ -34,19 +35,21 @@ class HomeMailTest extends TestCase
         $response = $this->get(route('home.mail.prepare', $home));
 
         $response->assertRedirect()
-                 ->assertDontSeeLivewire('mail.prepare');
+            ->assertDontSeeLivewire('mail.prepare');
     }
 
     public function test_home_mail_form()
     {
         $home = Home::factory()->hasUsers(1)->create();
 
-        $response = $this->withoutMiddleware()
-                         ->get(route('home.mail.form', ['home' => $home, 'mail' => 'test@example.com']));
+        $email = 'test@example.com';
+        $url = URL::temporarySignedRoute('home.mail.form', now()->addDay(), ['home' => $home, 'mail' => $email]);
+
+        $response = $this->get($url);
 
         $response->assertOk()
-                 ->assertViewHas('mail', 'test@example.com')
-                 ->assertSeeLivewire('mail.form');
+            ->assertViewHas('mail', $email)
+            ->assertSeeLivewire('mail.form');
     }
 
     public function test_home_mail_prepare_sendmail()
@@ -56,8 +59,8 @@ class HomeMailTest extends TestCase
         $home = Home::factory()->create();
 
         Livewire::test('mail.prepare', ['home' => $home])
-                ->set('email', 'test@localhost')
-                ->call('sendmail');
+            ->set('email', 'test@localhost')
+            ->call('sendmail');
 
         Notification::assertSentOnDemand(MailPrepareNotification::class);
     }
@@ -69,11 +72,11 @@ class HomeMailTest extends TestCase
         $home = Home::factory()->hasUsers(1)->create();
 
         Livewire::test('mail.form', ['home' => $home, 'email' => 'test@localhost'])
-                ->set('name', 'test')
-                ->set('tel', 'test')
-                ->set('subject', 'test')
-                ->set('body', 'test')
-                ->call('sendmail');
+            ->set('name', 'test')
+            ->set('tel', 'test')
+            ->set('subject', 'test')
+            ->set('body', 'test')
+            ->call('sendmail');
 
         Notification::assertSentTo($home->users, HomeMailNotification::class);
         Notification::assertSentOnDemand(HomeMailCreatedNotification::class);

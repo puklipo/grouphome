@@ -7,28 +7,26 @@ use App\Notifications\HomeMailCreatedNotification;
 use App\Notifications\HomeMailNotification;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\View\View;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 class Form extends Component
 {
     public Home $home;
 
+    #[Rule('required')]
     public string $name = '';
 
+    #[Rule(['required', 'email'])]
     public string $email = '';
 
     public string $tel = '';
 
+    #[Rule('required')]
     public string $subject = '見学';
 
+    #[Rule('required')]
     public string $body = '';
-
-    public array $rules = [
-        'name' => 'required',
-        'email' => ['required', 'email'],
-        'subject' => 'required',
-        'body' => 'required',
-    ];
 
     public function sendmail(): void
     {
