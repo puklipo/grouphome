@@ -31,8 +31,8 @@ name('contact');
                 @endcan
             </ul>
 
-            <div class="m-3 text-lg text-red-500 font-bold">
-                ここはグループホーム事業者から当サイトへの問い合わせ用フォームです。
+            <div class="m-3 text-lg font-bold">
+                ここはグループホーム事業者から当サイトへの問い合わせ用フォームです。閉鎖済みグループホームの連絡などはここから受け付けています。
             </div>
 
             <livewire:contact-form/>
