@@ -5,7 +5,7 @@ namespace App\Livewire;
 use App\Models\Home;
 use Illuminate\Contracts\Database\Query\Builder;
 use Illuminate\Support\Arr;
-use Illuminate\View\View;
+use Livewire\Attributes\Computed;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -70,12 +70,12 @@ class DetailSearch extends Component
         $this->reset('area');
 
         $this->areas = Home::where('pref_id', $pref_id)
-            ->whereNotNull('area')
-            ->orderBy('area')
-            ->distinct()
-            ->get()
-            ->pluck('area')
-            ->toArray();
+                           ->whereNotNull('area')
+                           ->orderBy('area')
+                           ->distinct()
+                           ->get()
+                           ->pluck('area')
+                           ->toArray();
     }
 
     public function updatedPage($page): void
@@ -83,31 +83,30 @@ class DetailSearch extends Component
         $this->dispatch('page-updated', page: $page);
     }
 
-    public function render(): View
+    #[Computed]
+    public function homes()
     {
-        return view('livewire.detail-search')->with([
-            'homes' => Home::query()
-                ->with(['cost'])
-                ->when(
-                    filled($this->pref_id),
-                    fn (Builder $query) => $query->where('pref_id', $this->pref_id)
-                )
-                ->when(
-                    filled($this->area),
-                    fn (Builder $query) => $query->where('area', $this->area)
-                )
-                ->where($this->levels(...))
-                ->where($this->types(...))
-                ->where($this->facility(...))
-                ->where($this->equipment(...))
-                ->keywordSearch($this->q)
-                ->vacancySearch($this->vacancy)
-                ->addTotalCost()
-                ->sortBy($this->sort)
-                ->paginate()
-                ->withQueryString()
-                ->onEachSide(1),
-        ]);
+        return Home::query()
+                   ->with(['cost'])
+                   ->when(
+                       filled($this->pref_id),
+                       fn (Builder $query) => $query->where('pref_id', $this->pref_id)
+                   )
+                   ->when(
+                       filled($this->area),
+                       fn (Builder $query) => $query->where('area', $this->area)
+                   )
+                   ->where($this->levels(...))
+                   ->where($this->types(...))
+                   ->where($this->facility(...))
+                   ->where($this->equipment(...))
+                   ->keywordSearch($this->q)
+                   ->vacancySearch($this->vacancy)
+                   ->addTotalCost()
+                   ->sortBy($this->sort)
+                   ->paginate()
+                   ->withQueryString()
+                   ->onEachSide(1);
     }
 
     /**

@@ -3,7 +3,7 @@
 namespace App\Livewire;
 
 use App\Models\Home;
-use Illuminate\View\View;
+use Livewire\Attributes\Computed;
 use Livewire\Component;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 
@@ -16,24 +16,35 @@ class LocationIndex extends Component
      */
     public bool $geo = true;
 
+    protected float $latitude;
+    protected float $longitude;
+
     public function load(float $latitude, float $longitude): void
     {
-        $point = new Point($latitude, $longitude, (int) config('grouphome.geo.srid'));
+        $this->latitude = $latitude;
+        $this->longitude = $longitude;
 
-        $this->homes = rescue(
-            callback: fn () => Home::query()
-                ->with(['cost'])
-                ->whereNotNull('location')
-                ->withDistanceSphere('location', $point)
-                ->orderByDistanceSphere('location', $point)
-                ->limit(50)
-                ->get(),
-            rescue: []
-        );
+        unset($this->homes);
     }
 
-    public function render(): View
+    #[Computed]
+    public function homes()
     {
-        return view('livewire.location-index')->with(['homes' => $this->homes]);
+        if (empty($this->latitude)) {
+            return [];
+        }
+
+        $point = new Point($this->latitude, $this->longitude, (int) config('grouphome.geo.srid'));
+
+        return rescue(
+            callback: fn () => Home::query()
+                                   ->with(['cost'])
+                                   ->whereNotNull('location')
+                                   ->withDistanceSphere('location', $point)
+                                   ->orderByDistanceSphere('location', $point)
+                                   ->limit(50)
+                                   ->get(),
+            rescue: []
+        );
     }
 }

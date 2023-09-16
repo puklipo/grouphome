@@ -7,7 +7,7 @@
             }
             ">
 
-    @forelse($homes as $home)
+    @forelse($this->homes as $home)
         @include('homes.index-item')
     @empty
         <div class="p-3 font-bold">表示中...しばらく待っても表示されないときはブラウザを再読み込みしてください。</div>

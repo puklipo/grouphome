@@ -5,7 +5,7 @@ namespace App\Livewire;
 use App\Models\Home;
 use App\Models\Pref;
 use Illuminate\Contracts\Database\Query\Builder;
-use Illuminate\View\View;
+use Livewire\Attributes\Computed;
 use Livewire\Attributes\Url;
 use Livewire\Component;
 use Livewire\WithPagination;
@@ -44,22 +44,21 @@ class HomeIndex extends Component
         $this->dispatch('page-updated', page: $page);
     }
 
-    public function render(): View
+    #[Computed]
+    public function homes()
     {
         $query = is_null($this->pref) ? Home::query() : $this->pref->homes();
 
-        return view('livewire.home-index')->with([
-            'homes' => $query->when(filled($this->area), fn (Builder $query) => $query->where('area', $this->area))
-                ->with(['cost'])
-                ->keywordSearch($this->q)
-                ->sortBy($this->sort)
-                ->levelSearch($this->level)
-                ->typeSearch($this->type)
-                ->vacancySearch($this->vacancy)
-                ->addTotalCost()
-                ->paginate()
-                ->withQueryString()
-                ->onEachSide(1),
-        ]);
+        return $query->when(filled($this->area), fn (Builder $query) => $query->where('area', $this->area))
+                     ->with(['cost'])
+                     ->keywordSearch($this->q)
+                     ->sortBy($this->sort)
+                     ->levelSearch($this->level)
+                     ->typeSearch($this->type)
+                     ->vacancySearch($this->vacancy)
+                     ->addTotalCost()
+                     ->paginate()
+                     ->withQueryString()
+                     ->onEachSide(1);
     }
 }

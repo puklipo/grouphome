@@ -4,7 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
-use Illuminate\View\View;
+use Livewire\Attributes\Rule;
 use Livewire\Component;
 
 /**
@@ -12,17 +12,14 @@ use Livewire\Component;
  */
 class ContactForm extends Component
 {
+    #[Rule('required')]
     public string $name = '';
 
+    #[Rule('required', 'email')]
     public string $email = '';
 
+    #[Rule('required')]
     public string $body = '';
-
-    public array $rules = [
-        'name' => 'required',
-        'email' => ['required', 'email'],
-        'body' => 'required',
-    ];
 
     public function onReady(Request $request): void
     {
@@ -43,10 +40,5 @@ class ContactForm extends Component
         $this->reset();
 
         session()->flash('mail_success', true);
-    }
-
-    public function render(): View
-    {
-        return view('livewire.contact-form');
     }
 }
