@@ -2937,16 +2937,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.59.1",
+            "version": "v1.60.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "dfde3ad406717dd352386e92f11459160614c46b"
+                "reference": "012b8beae5f258aba75422896110cdfbb160bc25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/dfde3ad406717dd352386e92f11459160614c46b",
-                "reference": "dfde3ad406717dd352386e92f11459160614c46b",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/012b8beae5f258aba75422896110cdfbb160bc25",
+                "reference": "012b8beae5f258aba75422896110cdfbb160bc25",
                 "shasum": ""
             },
             "require": {
@@ -3000,9 +3000,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.59.1"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.60.0"
             },
-            "time": "2023-08-10T09:35:52+00:00"
+            "time": "2023-09-21T14:19:36+00:00"
         },
         {
             "name": "laravel/vapor-core",
