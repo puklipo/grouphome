@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.282.1",
+            "version": "3.282.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "59b84106b3870da3a1a862047fc61108dccb37b9"
+                "reference": "b9b4013f68f1bd5f219f9784c1b2a47da02c1261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/59b84106b3870da3a1a862047fc61108dccb37b9",
-                "reference": "59b84106b3870da3a1a862047fc61108dccb37b9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b9b4013f68f1bd5f219f9784c1b2a47da02c1261",
+                "reference": "b9b4013f68f1bd5f219f9784c1b2a47da02c1261",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.282.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.282.2"
             },
-            "time": "2023-10-02T18:07:55+00:00"
+            "time": "2023-10-03T18:07:23+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2268,16 +2268,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v10.25.2",
+            "version": "v10.26.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6014dd456b414b305fb0b408404efdcec18e64bc"
+                "reference": "6e5440f7c518f26b4495e5d7e4796ec239e26df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6014dd456b414b305fb0b408404efdcec18e64bc",
-                "reference": "6014dd456b414b305fb0b408404efdcec18e64bc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/6e5440f7c518f26b4495e5d7e4796ec239e26df9",
+                "reference": "6e5440f7c518f26b4495e5d7e4796ec239e26df9",
                 "shasum": ""
             },
             "require": {
@@ -2464,20 +2464,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-09-28T14:08:59+00:00"
+            "time": "2023-10-03T14:24:20+00:00"
         },
         {
             "name": "laravel/jetstream",
-            "version": "v4.0.2",
+            "version": "v4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "793b3d8cc43063d878e3d08df04a9e831763a466"
+                "reference": "722f641393af7a41563a777607369dba648abc0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/793b3d8cc43063d878e3d08df04a9e831763a466",
-                "reference": "793b3d8cc43063d878e3d08df04a9e831763a466",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/722f641393af7a41563a777607369dba648abc0e",
+                "reference": "722f641393af7a41563a777607369dba648abc0e",
                 "shasum": ""
             },
             "require": {
@@ -2533,7 +2533,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2023-09-19T14:01:29+00:00"
+            "time": "2023-10-02T00:37:02+00:00"
         },
         {
             "name": "laravel/octane",
@@ -2624,16 +2624,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.1.10",
+            "version": "v0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "37ed55f6950d921a87d5beeab16d03f8de26b060"
+                "reference": "cce65a90e64712909ea1adc033e1d88de8455ffd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/37ed55f6950d921a87d5beeab16d03f8de26b060",
-                "reference": "37ed55f6950d921a87d5beeab16d03f8de26b060",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/cce65a90e64712909ea1adc033e1d88de8455ffd",
+                "reference": "cce65a90e64712909ea1adc033e1d88de8455ffd",
                 "shasum": ""
             },
             "require": {
@@ -2675,9 +2675,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.1.10"
+                "source": "https://github.com/laravel/prompts/tree/v0.1.11"
             },
-            "time": "2023-09-29T07:26:07+00:00"
+            "time": "2023-10-03T01:07:35+00:00"
         },
         {
             "name": "laravel/sanctum",
@@ -3015,16 +3015,16 @@
         },
         {
             "name": "laravel/vapor-core",
-            "version": "v2.33.1",
+            "version": "v2.33.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-core.git",
-                "reference": "51d116c15d4f8a07b0d55b44622d68e4b5075743"
+                "reference": "de2ddb6c279b8e51e9ef9cea3e0f7fda829740b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/51d116c15d4f8a07b0d55b44622d68e4b5075743",
-                "reference": "51d116c15d4f8a07b0d55b44622d68e4b5075743",
+                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/de2ddb6c279b8e51e9ef9cea3e0f7fda829740b2",
+                "reference": "de2ddb6c279b8e51e9ef9cea3e0f7fda829740b2",
                 "shasum": ""
             },
             "require": {
@@ -3058,7 +3058,10 @@
                 "laravel": {
                     "providers": [
                         "Laravel\\Vapor\\VaporServiceProvider"
-                    ]
+                    ],
+                    "aliases": {
+                        "Vapor": "Laravel\\Vapor\\Vapor"
+                    }
                 }
             },
             "autoload": {
@@ -3086,9 +3089,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-core/tree/v2.33.1"
+                "source": "https://github.com/laravel/vapor-core/tree/v2.33.2"
             },
-            "time": "2023-09-07T14:14:16+00:00"
+            "time": "2023-09-29T13:37:32+00:00"
         },
         {
             "name": "laravel/vapor-ui",
