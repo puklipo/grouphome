@@ -10,7 +10,8 @@ environments:
         domain: grouphome.guide
         database: grouphome
         storage: pcs-grouphome
-        queue-timeout: 300
+        queue-timeout: 600
+        queue-memory: 2048
         #octane: true
         #octane-database-session-persist: true
         #octane-database-session-ttl: 10
@@ -34,7 +35,8 @@ environments:
         warm: 5
         database: grouphome
         storage: staging-pcs-grouphome
-        queue-timeout: 300
+        queue-timeout: 600
+        queue-memory: 2048
         #octane: true
         #octane-database-session-persist: true
         #octane-database-session-ttl: 10
