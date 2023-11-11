@@ -20,6 +20,10 @@
     </div>
 
     <div class="my-6">
+        <a href="https://chat.openai.com/g/g-el7BC3G3U-zhang-hai-zhe-gurupuhomugaido" target="_blank">GPTs</a>
+    </div>
+
+    <div class="my-6">
         @includeIf('side.prefs')
     </div>
 
