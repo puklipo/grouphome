@@ -20,7 +20,8 @@
     </div>
 
     <div class="my-6">
-        <a href="https://chat.openai.com/g/g-el7BC3G3U-zhang-hai-zhe-gurupuhomugaido" target="_blank">GPTs</a>
+        <a href="https://chat.openai.com/g/g-el7BC3G3U-zhang-hai-zhe-gurupuhomugaido"
+           class="font-bold text-indigo-500 dark:text-white hover:underline" target="_blank">GPTs</a>
     </div>
 
     <div class="my-6">
