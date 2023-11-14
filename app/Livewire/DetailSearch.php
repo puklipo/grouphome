@@ -70,12 +70,12 @@ class DetailSearch extends Component
         $this->reset('area');
 
         $this->areas = Home::where('pref_id', $pref_id)
-                           ->whereNotNull('area')
-                           ->orderBy('area')
-                           ->distinct()
-                           ->get()
-                           ->pluck('area')
-                           ->toArray();
+            ->whereNotNull('area')
+            ->orderBy('area')
+            ->get()
+            ->pluck('area')
+            ->unique()
+            ->toArray();
     }
 
     public function updatedPage($page): void
@@ -87,26 +87,26 @@ class DetailSearch extends Component
     public function homes()
     {
         return Home::query()
-                   ->with(['cost'])
-                   ->when(
-                       filled($this->pref_id),
-                       fn (Builder $query) => $query->where('pref_id', $this->pref_id)
-                   )
-                   ->when(
-                       filled($this->area),
-                       fn (Builder $query) => $query->where('area', $this->area)
-                   )
-                   ->where($this->levels(...))
-                   ->where($this->types(...))
-                   ->where($this->facility(...))
-                   ->where($this->equipment(...))
-                   ->keywordSearch($this->q)
-                   ->vacancySearch($this->vacancy)
-                   ->addTotalCost()
-                   ->sortBy($this->sort)
-                   ->paginate()
-                   ->withQueryString()
-                   ->onEachSide(1);
+            ->with(['cost'])
+            ->when(
+                filled($this->pref_id),
+                fn (Builder $query) => $query->where('pref_id', $this->pref_id)
+            )
+            ->when(
+                filled($this->area),
+                fn (Builder $query) => $query->where('area', $this->area)
+            )
+            ->where($this->levels(...))
+            ->where($this->types(...))
+            ->where($this->facility(...))
+            ->where($this->equipment(...))
+            ->keywordSearch($this->q)
+            ->vacancySearch($this->vacancy)
+            ->addTotalCost()
+            ->sortBy($this->sort)
+            ->paginate()
+            ->withQueryString()
+            ->onEachSide(1);
     }
 
     /**
