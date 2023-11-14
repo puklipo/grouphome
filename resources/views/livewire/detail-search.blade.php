@@ -80,8 +80,12 @@
 
         <x-select name="pref_id" wire:model.live="pref_id">
             <option value="">指定しない</option>
+            <hr>
             @foreach(\App\Models\Pref::oldest('id')->get() as $pre)
                 <option value="{{ $pre->id }}">{{ $pre->name }}</option>
+                @if(in_array($pre->id, [1, 7, 14, 23, 30, 35, 39]))
+                    <hr>
+                @endif
             @endforeach
         </x-select>
 
