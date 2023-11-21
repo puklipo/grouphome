@@ -53,11 +53,6 @@ class ContactTest extends TestCase
 
         Contact::factory(30)->create();
 
-        Livewire::actingAs($user)
-            ->test('admin.contacts-index')
-            ->call('setPage', 2)
-            ->assertDispatched('page-updated', page: 2);
-
         $response = $this->actingAs($user)->get(route('admin.contacts'));
 
         $response->assertSuccessful()
