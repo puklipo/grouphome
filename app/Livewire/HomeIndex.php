@@ -38,27 +38,21 @@ class HomeIndex extends Component
     #[Url]
     public ?int $vacancy = null;
 
-    public function updatedPage($page): void
-    {
-        //ページが変わった時に一番上にスクロール。
-        $this->dispatch('page-updated', page: $page);
-    }
-
     #[Computed]
     public function homes()
     {
         $query = is_null($this->pref) ? Home::query() : $this->pref->homes();
 
         return $query->when(filled($this->area), fn (Builder $query) => $query->where('area', $this->area))
-                     ->with(['cost'])
-                     ->keywordSearch($this->q)
-                     ->sortBy($this->sort)
-                     ->levelSearch($this->level)
-                     ->typeSearch($this->type)
-                     ->vacancySearch($this->vacancy)
-                     ->addTotalCost()
-                     ->paginate()
-                     ->withQueryString()
-                     ->onEachSide(1);
+            ->with(['cost'])
+            ->keywordSearch($this->q)
+            ->sortBy($this->sort)
+            ->levelSearch($this->level)
+            ->typeSearch($this->type)
+            ->vacancySearch($this->vacancy)
+            ->addTotalCost()
+            ->paginate()
+            ->withQueryString()
+            ->onEachSide(1);
     }
 }

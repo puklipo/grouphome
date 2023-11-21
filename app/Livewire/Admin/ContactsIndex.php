@@ -14,12 +14,6 @@ class ContactsIndex extends Component
 {
     use WithPagination;
 
-    public function updatedPage($page): void
-    {
-        //ページが変わった時に一番上にスクロール。
-        $this->dispatch('page-updated', page: $page);
-    }
-
     public function render(): View
     {
         return view('livewire.admin.contacts-index')->with([

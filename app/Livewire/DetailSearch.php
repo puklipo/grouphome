@@ -78,11 +78,6 @@ class DetailSearch extends Component
             ->toArray();
     }
 
-    public function updatedPage($page): void
-    {
-        $this->dispatch('page-updated', page: $page);
-    }
-
     #[Computed]
     public function homes()
     {

@@ -1,4 +1,4 @@
-<div x-data @page-updated.window="$el.scrollIntoView({behavior: 'smooth'})">
+<div>
     <div class="py-3">お問い合わせメールの記録用。メールが届いてない時（もしくはメールを見られない人）はここで確認。</div>
 
     @forelse($contacts as $contact)
