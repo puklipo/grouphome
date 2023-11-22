@@ -27,13 +27,10 @@ class HomeMailCreatedNotification extends Notification implements ShouldQueue
 
     /**
      * Get the notification's delivery channels.
-     *
-     * @param  mixed  $notifiable
-     * @return array
      */
     public function via(mixed $notifiable): array
     {
-        return collect()
+        return collect(['database'])
             ->when(
                 filled(config('line.notify.personal_access_token')),
                 fn (Collection $collection) => $collection->push(LineNotifyChannel::class)
@@ -42,9 +39,6 @@ class HomeMailCreatedNotification extends Notification implements ShouldQueue
 
     /**
      * 動作確認用。例えば大量のメールが送信された時に気付けるように。問い合わせの内容はどこにも記録しない。
-     *
-     * @param  mixed  $notifiable
-     * @return LineNotifyMessage
      */
     public function toLineNotify(mixed $notifiable): LineNotifyMessage
     {
