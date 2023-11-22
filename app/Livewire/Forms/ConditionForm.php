@@ -3,23 +3,23 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Condition;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class ConditionForm extends Form
 {
     public Condition $condition;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $trial = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $man = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $woman = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $mix = false;
 
     public function setForm(Condition $condition): void

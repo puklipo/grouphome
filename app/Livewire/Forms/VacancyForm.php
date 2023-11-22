@@ -3,17 +3,17 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Vacancy;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class VacancyForm extends Form
 {
     public Vacancy $vacancy;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $filled = false;
 
-    #[Rule('string|nullable')]
+    #[Validate('string|nullable')]
     public ?string $message = null;
 
     public function setForm(Vacancy $vacancy): void

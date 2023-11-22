@@ -7,7 +7,7 @@ use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\View\View;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Component;
 
 class HouseruleEditor extends Component
@@ -16,7 +16,7 @@ class HouseruleEditor extends Component
 
     public Home $home;
 
-    #[Rule('string|nullable')]
+    #[Validate('string|nullable')]
     public ?string $houserule;
 
     public function mount(): void

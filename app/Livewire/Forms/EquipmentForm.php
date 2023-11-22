@@ -3,50 +3,50 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Equipment;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class EquipmentForm extends Form
 {
     public Equipment $equipment;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $closet = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $aircon = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $kitchen = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $toilet = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $bath = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $shower = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $bed = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $tv = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $wash = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $internet = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $internet_free = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $wifi = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $furniture = false;
 
     public function setForm(Equipment $equipment): void

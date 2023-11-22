@@ -3,65 +3,65 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Facility;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class FacilityForm extends Form
 {
     public Facility $facility;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $aircon = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $kitchen = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $toilet = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $bath = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $shower = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $wash = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $tv = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $dining = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $living = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $delivery_box = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $internet = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $internet_free = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $wifi = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $pet = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $barrier_free = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $car = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $apartment = false;
 
-    #[Rule('boolean')]
+    #[Validate('boolean')]
     public bool $house = false;
 
     public function setForm(Facility $facility): void

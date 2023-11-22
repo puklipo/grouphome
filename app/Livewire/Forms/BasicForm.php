@@ -3,20 +3,20 @@
 namespace App\Livewire\Forms;
 
 use App\Models\Home;
-use Livewire\Attributes\Rule;
+use Livewire\Attributes\Validate;
 use Livewire\Form;
 
 class BasicForm extends Form
 {
     public Home $home;
 
-    #[Rule('string|nullable')]
+    #[Validate('string|nullable')]
     public ?string $released_at;
 
-    #[Rule('string|nullable')]
+    #[Validate('string|nullable')]
     public ?string $wam;
 
-    #[Rule('string|nullable')]
+    #[Validate('string|nullable')]
     public ?string $map;
 
     public function setForm(Home $home): void
