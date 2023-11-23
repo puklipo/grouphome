@@ -1,4 +1,4 @@
-<div>
+<div id="home">
     @isset($pref)
         <h1 class="p-3 font-semibold text-2xl leading-tight">
             {{ $pref->name . $area }} [{{ $this->homes->total() }}]
@@ -6,7 +6,7 @@
     @endisset
 
     <div class="p-3">
-        {{ $this->homes->links() }}
+        {{ $this->homes->links(data: ['scrollTo' => '#home']) }}
     </div>
 
     @forelse($this->homes as $home)
@@ -16,6 +16,6 @@
     @endforelse
 
     <div class="p-3">
-        {{ $this->homes->links() }}
+        {{ $this->homes->links(data: ['scrollTo' => '#home']) }}
     </div>
 </div>
