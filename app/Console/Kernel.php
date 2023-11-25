@@ -20,7 +20,7 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
 
-        $schedule->job(SitemapJob::class)->dailyAt('04:00');
+        $schedule->job(SitemapJob::class)->monthlyOn(2);
 
         $schedule->command(ImportCommand::class)->monthly();
         $schedule->command(DeleteCommand::class)->dailyAt('02:00');
