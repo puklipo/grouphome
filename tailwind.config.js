@@ -14,7 +14,7 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['"M PLUS 2"', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 indigo: colors.blue,
