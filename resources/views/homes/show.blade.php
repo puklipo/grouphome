@@ -58,8 +58,14 @@
                             </tr>
                             <tr>
                                 <th class="bg-indigo-100 dark:bg-gray-800 p-2">電話番号</th>
-                                <td class="pl-3">
+                                <td class="pl-3" title="電話番号が間違ってる場合は問い合わせフォームから連絡してください">
                                     {{ $home->tel }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">事業所番号</th>
+                                <td class="pl-3" title="当サイト内では同じ事業所番号のグループホームはひとつしか表示されません">
+                                    {{ $home->id }}
                                 </td>
                             </tr>
                             @isset($home->url)
