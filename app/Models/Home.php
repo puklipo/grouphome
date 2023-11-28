@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Casts\Telephone;
 use App\Models\Concerns\HomeScope;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -15,7 +16,9 @@ use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 
 /**
  * @method static \MatanYadaev\EloquentSpatial\SpatialBuilder query()
+ *
  * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
+ *
  * @mixin IdeHelperHome
  */
 class Home extends Model
@@ -34,6 +37,7 @@ class Home extends Model
     protected $casts = [
         'released_at' => 'date:Y-m-d',
         'location' => Point::class,
+        'tel' => Telephone::class,
     ];
 
     public $incrementing = false;
