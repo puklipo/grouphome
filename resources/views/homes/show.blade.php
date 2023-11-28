@@ -39,7 +39,7 @@
                     @include('homes.cover')
 
                     <div class="p-3">
-                        <h1 class="text-7xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all">
+                        <h1 class="text-7xl pb-3 text-indigo-500 dark:text-white font-extrabold tracking-widest break-all">
                             {{ $home->name }}
                         </h1>
 
