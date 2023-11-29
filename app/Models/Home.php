@@ -4,6 +4,7 @@ namespace App\Models;
 
 use App\Casts\Telephone;
 use App\Models\Concerns\HomeScope;
+use App\Support\IndexNow;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -13,6 +14,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Str;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
+
+use function Illuminate\Events\queueable;
 
 /**
  * @method static \MatanYadaev\EloquentSpatial\SpatialBuilder query()
@@ -56,6 +59,17 @@ class Home extends Model
     ];
 
     protected $with = ['pref', 'type', 'photo'];
+
+    protected static function booted(): void
+    {
+        static::created(queueable(function (Home $home) {
+            IndexNow::submit(route('home.show', $home));
+        }));
+
+        static::updated(queueable(function (Home $home) {
+            IndexNow::submit(route('home.show', $home));
+        }));
+    }
 
     public function pref(): BelongsTo
     {

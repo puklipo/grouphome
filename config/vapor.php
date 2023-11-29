@@ -42,6 +42,7 @@ return [
     'serve_assets' => [
         //
         'ads.txt',
+        '3a5f84047ead4af789bd1d1e52fd0ef7.txt',
     ],
 
 ];
