@@ -66,9 +66,9 @@ class Home extends Model
             IndexNow::submit(route('home.show', $home));
         }));
 
-        static::updated(queueable(function (Home $home) {
+        static::updated(function (Home $home) {
             IndexNow::submit(route('home.show', $home));
-        }));
+        });
     }
 
     public function pref(): BelongsTo
