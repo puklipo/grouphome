@@ -6,19 +6,17 @@ use Illuminate\Support\Facades\Http;
 
 class IndexNow
 {
-    public static function submit(string $url): void
+    public static function submit(string $url): int
     {
         if (! app()->isProduction()) {
-            return;
+            return 0;
         }
-
-        info('IndexNow: '.$url);
 
         $response = Http::get(config('indexnow.search_engine'), [
             'url' => $url,
             'key' => config('indexnow.key'),
         ]);
 
-        info('IndexNow Response: '.$response->status());
+        return $response->status();
     }
 }

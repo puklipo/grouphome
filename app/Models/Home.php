@@ -63,11 +63,11 @@ class Home extends Model
     protected static function booted(): void
     {
         static::created(queueable(function (Home $home) {
-            IndexNow::submit(route('home.show', $home));
+            info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
         }));
 
         static::updated(function (Home $home) {
-            IndexNow::submit(route('home.show', $home));
+            info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
         });
     }
 
