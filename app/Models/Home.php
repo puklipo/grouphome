@@ -65,11 +65,7 @@ class Home extends Model
     {
         static::created(queueable(function (Home $home) {
             info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
-        }));
-
-        //        static::updated(queueable(function (Home $home) {
-        //            info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
-        //        }));
+        })->delay(now()->addMinutes(10)));
     }
 
     public function pref(): BelongsTo
