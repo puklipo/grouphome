@@ -14,7 +14,12 @@
 
             <a href="{{ route('home.show', $home) }}">
                 <h2 class="inline-flex text-5xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all hover:text-indigo-600 dark:hover:text-white dark:hover:underline">
-                    {{ $home->name }}
+                    <ruby>
+                        {{ $home->name ?? '' }}
+                        <rp>(</rp>
+                        <rt class="text-xs text-gray-500">{{ $home->name_kana }}</rt>
+                        <rp>)</rp>
+                    </ruby>
                 </h2>
             </a>
             <div class="my-1">{{ $home->address }}</div>

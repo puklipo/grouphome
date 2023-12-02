@@ -49,6 +49,7 @@ class WamImport implements OnEachRow, WithHeadingRow, WithBatchInserts, WithChun
 
         $data = [
             'name' => $this->kana($row['事業所の名称']),
+            'name_kana' => $this->kana($row['事業所の名称_かな']),
             'company' => $this->kana($row['法人の名称']),
             'tel' => $this->kana($row['事業所電話番号']),
             'address' => $this->kana($row['事業所住所（市区町村）'].$row['事業所住所（番地以降）']),

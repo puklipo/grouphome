@@ -40,7 +40,12 @@
 
                     <div class="p-3">
                         <h1 class="text-7xl pb-3 text-indigo-500 dark:text-white font-extrabold tracking-widest break-all">
-                            {{ $home->name }}
+                            <ruby>
+                                {{ $home->name ?? '' }}
+                                <rp>(</rp>
+                                <rt class="text-xs text-gray-500">{{ $home->name_kana }}</rt>
+                                <rp>)</rp>
+                            </ruby>
                         </h1>
 
                         <table class="table-auto border-collapse border-spacing-x-2">
