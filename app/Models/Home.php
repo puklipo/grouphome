@@ -67,9 +67,9 @@ class Home extends Model
             info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
         }));
 
-        static::updated(queueable(function (Home $home) {
-            info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
-        }));
+        //        static::updated(queueable(function (Home $home) {
+        //            info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
+        //        }));
     }
 
     public function pref(): BelongsTo
