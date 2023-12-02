@@ -58,13 +58,18 @@
                             </tr>
                             <tr>
                                 <th class="bg-indigo-100 dark:bg-gray-800 p-2">電話番号</th>
-                                <td class="pl-3" title="電話番号が間違ってる場合は問い合わせフォームから連絡してください">
-                                    {{ $home->tel }}
+                                <td class="pl-3">
+                                    @if($home->users()->exists())
+                                        {{ $home->tel }}
+                                    @else
+                                        <span class="text-gray-400 text-xs">間違いが多いので事業者が登録するまで表示されません。公式サイトやWAM NETを検索してください。</span>
+                                    @endif
                                 </td>
                             </tr>
                             <tr>
                                 <th class="bg-indigo-100 dark:bg-gray-800 p-2">事業所番号</th>
-                                <td class="pl-3" title="当サイト内では同じ事業所番号のグループホームはひとつしか表示されません">
+                                <td class="pl-3"
+                                    title="当サイト内では同じ事業所番号のグループホームはひとつしか表示されません">
                                     {{ $home->id }}
                                 </td>
                             </tr>
@@ -100,6 +105,18 @@
                                     </td>
                                 </tr>
                             @endisset
+
+                            <tr>
+                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">WAM</th>
+                                <td class="pl-3">
+                                    <a href="https://www.google.com/search?q={{ rawurlencode($home->name.' site:www.wam.go.jp/sfkohyoout/') }}"
+                                       class="text-indigo-500 dark:text-white font-bold hover:underline"
+                                       target="_blank">Google検索</a>
+                                    <a href="https://www.bing.com/search?q={{ rawurlencode($home->name.' site:www.wam.go.jp/sfkohyoout/') }}"
+                                       class="text-indigo-500 dark:text-white font-bold hover:underline"
+                                       target="_blank">Bing検索</a>
+                                </td>
+                            </tr>
 
                             @if(file_exists(resource_path('views/report/'.$home->id.'.blade.php')))
                                 <tr>
