@@ -16,7 +16,7 @@
             <div>
                 <a href="https://www.google.com/maps/search/{{ rawurlencode($home->address.' '.$home->name) }}"
                    target="_blank"
-                   class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
+                   class="text-xl text-indigo-500 dark:text-white font-bold hover:underline" rel="nofollow">
                     Googleマップで検索
                 </a>
             </div>
