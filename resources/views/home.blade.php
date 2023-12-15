@@ -15,7 +15,7 @@
         <div class="sm:px-6 lg:px-8">
             <x-breadcrumbs-back/>
 
-            <div x-data @svgmap-click.dot="Livewire.navigate($event.target.id.replace('-', '/'))">
+            <div x-data @svgmap-click.dot="location.href = $event.target.id.replace('-', '/')">
                 @includeIf('map')
             </div>
 
