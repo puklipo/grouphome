@@ -29,7 +29,9 @@
 
                 <div id="index">
 
-                    @includeIf('map')
+                    <div x-data @svgmap-click.dot="location.hash = $event.target.getAttribute('data-name')">
+                        @includeIf('map')
+                    </div>
 
                     @foreach($prefs as $pref)
                         <a href="#{{ $pref->name }}"
@@ -43,7 +45,7 @@
                     <h2 class="text-2xl my-3">
                         <a href="{{ route('pref', $prefs->find($pref)) }}"
                            id="{{ $prefs->find($pref)->name }}"
-                           class="text-gray-500 dark:text-white hover:underline tracking-widest">
+                           class="text-gray-500 dark:text-white hover:underline tracking-widest" wire:navigate>
                             {{ $prefs->find($pref)->name }}
                         </a>
 
@@ -56,7 +58,7 @@
                         @foreach($homes->sortByDesc('area_count') as $home)
                             <li class="text-gray-300">
                                 <a href="{{ route('pref', [$home->pref, $home->area]) }}"
-                                   class="text-xl text-indigo-500 dark:text-white hover:underline">
+                                   class="text-xl text-indigo-500 dark:text-white hover:underline" wire:navigate>
                                     {{ $home->area }} [{{ $home->area_count }}]
                                 </a>
                             </li>
@@ -67,13 +69,5 @@
 
         </div>
     </div>
-
-    @pushOnce('scripts')
-    <script>
-        document.addEventListener('svgmap.click', function (event) {
-            location.hash = event.target.getAttribute('data-name')
-        }, false)
-    </script>
-    @endPushOnce
 
 </x-main-layout>

@@ -13,16 +13,16 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-2 sm:flex">
-                    <x-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')">
+                    <x-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')" wire:navigate>
                         {{ __('ホーム') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('detail-search') }}" :active="request()->routeIs('detail-search')">
+                    <x-nav-link href="{{ route('detail-search') }}" :active="request()->routeIs('detail-search')" wire:navigate>
                         {{ __('詳細検索') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('location') }}" :active="request()->routeIs('location')">
+                    <x-nav-link href="{{ route('location') }}" :active="request()->routeIs('location')" wire:navigate>
                         {{ __('現在地から探す') }}
                     </x-nav-link>
-                    <x-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
+                    <x-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')" wire:navigate>
                         {{ __('履歴') }}
                     </x-nav-link>
 {{--                    <x-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')">--}}
@@ -35,11 +35,11 @@
 {{--                        <x-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">--}}
 {{--                            {{ __('お問い合わせ') }}--}}
 {{--                        </x-nav-link>--}}
-                        <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                        <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" wire:navigate>
                             {{ __('ダッシュボード') }}
                         </x-nav-link>
                     @else
-                        <x-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
+                        <x-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')" wire:navigate>
                             {{ __('事業者ログイン') }}
                         </x-nav-link>
                     @endauth
@@ -138,12 +138,12 @@
                                     {{ __('Manage Account') }}
                                 </div>
 
-                                <x-dropdown-link href="{{ route('profile.show') }}">
+                                <x-dropdown-link href="{{ route('profile.show') }}" wire:navigate>
                                     {{ __('Profile') }}
                                 </x-dropdown-link>
 
                                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
-                                    <x-dropdown-link href="{{ route('api-tokens.index') }}">
+                                    <x-dropdown-link href="{{ route('api-tokens.index') }}" wire:navigate>
                                         {{ __('API Tokens') }}
                                     </x-dropdown-link>
                                 @endif
@@ -184,39 +184,39 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')">
+            <x-responsive-nav-link href="{{ route('index') }}" :active="request()->routeIs('index')" wire:navigate>
                 {{ __('ホーム') }}
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('detail-search') }}"
-                                       :active="request()->routeIs('detail-search')">
+                                       :active="request()->routeIs('detail-search')" wire:navigate>
                 {{ __('詳細検索') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('location') }}" :active="request()->routeIs('location')">
+            <x-responsive-nav-link href="{{ route('location') }}" :active="request()->routeIs('location')" wire:navigate>
                 {{ __('現在地から探す') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')">
+            <x-responsive-nav-link href="{{ route('history') }}" :active="request()->routeIs('history')" wire:navigate>
                 {{ __('履歴') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')">
+            <x-responsive-nav-link href="{{ route('area.index') }}" :active="request()->routeIs('area.index')" wire:navigate>
                 {{ __('自治体一覧') }}
             </x-responsive-nav-link>
-            <x-responsive-nav-link href="{{ route('help.user') }}" :active="request()->routeIs('help.user')">
+            <x-responsive-nav-link href="{{ route('help.user') }}" :active="request()->routeIs('help.user')" wire:navigate>
                 {{ __('ヘルプ') }}
             </x-responsive-nav-link>
             @auth
-                <x-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')">
+                <x-responsive-nav-link href="{{ route('contact') }}" :active="request()->routeIs('contact')" wire:navigate>
                     {{ __('お問い合わせ') }}
                 </x-responsive-nav-link>
-                <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                <x-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" wire:navigate>
                     {{ __('ダッシュボード') }}
                 </x-responsive-nav-link>
             @else
-                <x-responsive-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')">
+                <x-responsive-nav-link href="{{ route('login') }}" :active="request()->routeIs('login')" wire:navigate>
                     {{ __('事業者ログイン') }}
                 </x-responsive-nav-link>
             @endauth
             @can('admin')
-                <x-responsive-nav-link href="{{ route('admin') }}" :active="request()->routeIs('admin')">
+                <x-responsive-nav-link href="{{ route('admin') }}" :active="request()->routeIs('admin')" wire:navigate>
                     {{ __('管理画面') }}
                 </x-responsive-nav-link>
             @endcan

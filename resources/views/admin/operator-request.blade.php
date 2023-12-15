@@ -17,7 +17,7 @@
                     @forelse($requests as $request)
                         <li class="p-3 flex justify-start">
                             <a href="{{ route('home.show', $request->home) }}"
-                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
+                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline" wire:navigate>
                                 {{ $request->home->name }}
                             </a>
 

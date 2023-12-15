@@ -1,7 +1,7 @@
 <aside
     class="w-full sm:w-64 flex-none sm:min-h-screen sm:order-first order-last p-5 sm:border-r bg-indigo-50 dark:bg-black dark:text-white print:hidden">
     <div class="font-semibold text-xl text-gray-800 leading-tight mb-5 dark:text-white">
-        <a href="{{ url('/') }}">
+        <a href="{{ url('/') }}" wire:navigate>
             {{ config('app.name', 'Laravel') }}
         </a>
     </div>
@@ -9,7 +9,7 @@
     @can('admin')
         <div class="my-3">
             <a href="{{ route('admin') }}"
-               class="font-bold text-red-500 hover:underline">
+               class="font-bold text-red-500 hover:underline" wire:navigate>
                 <x-icon.lock class="inline"></x-icon.lock>{{ __('管理画面') }}
             </a>
         </div>
@@ -31,29 +31,25 @@
         <ul class="space-y-1">
             <li>
                 <a href="{{ route('help.user') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用者向け使い方') }}</a>
+                   class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('利用者向け使い方') }}</a>
             </li>
             @guest()
                 <li>
                     <a href="{{ route('login') }}"
-                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者用ログイン') }}</a>
+                       class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('事業者用ログイン') }}</a>
                 </li>
             @endguest
             <li>
                 <a href="{{ route('help.operator') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+                   class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('事業者向け使い方') }}</a>
             </li>
             <li>
                 <a href="{{ route('contact') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
-            </li>
-            <li>
-                <a href="{{ route('matching') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('土地マッチング') }}</a>
+                   class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('お問い合わせ') }}</a>
             </li>
             <li>
                 <a href="{{ route('license') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
+                   class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('利用規約・ライセンス') }}</a>
             </li>
             <li>
                 <a href="https://chat.openai.com/g/g-el7BC3G3U-zhang-hai-zhe-gurupuhomugaido"

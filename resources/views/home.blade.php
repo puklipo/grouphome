@@ -15,14 +15,9 @@
         <div class="sm:px-6 lg:px-8">
             <x-breadcrumbs-back/>
 
-            @includeIf('map')
-            @pushOnce('scripts')
-            <script>
-                document.addEventListener('svgmap.click', function(event) {
-                    location.href = event.target.id.replace('-', '/')
-                }, false)
-            </script>
-            @endPushOnce
+            <div x-data @svgmap-click.dot="Livewire.navigate($event.target.id.replace('-', '/'))">
+                @includeIf('map')
+            </div>
 
             <div class="p-3 sm:hidden print:hidden">
                 @includeIf('mobile-menu')

@@ -20,12 +20,12 @@ name('contact');
             <ul class="flex flex-row space-x-2 px-3">
                 <li>
                     <a href="{{ route('help.operator') }}"
-                       class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
+                       class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('事業者向け使い方') }}</a>
                 </li>
                 @can('admin')
                     <li>
                         <a href="{{ route('admin.contacts') }}"
-                           class="font-bold text-red-500 hover:underline">
+                           class="font-bold text-red-500 hover:underline" wire:navigate>
                             <x-icon.lock class="inline"></x-icon.lock>{{ __('お問い合わせ一覧') }}</a>
                     </li>
                 @endcan

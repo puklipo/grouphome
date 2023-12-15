@@ -122,18 +122,6 @@
                                        target="_blank" rel="nofollow">Bing検索</a>
                                 </td>
                             </tr>
-
-                            @if(file_exists(resource_path('views/report/'.$home->id.'.blade.php')))
-                                <tr>
-                                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">レポート</th>
-                                    <td class="pl-3">
-                                        <a href="{{ route('report', $home->id)}}"
-                                           class="text-indigo-500 dark:text-white hover:underline">
-                                            {{ __('体験レポート') }}
-                                        </a>
-                                    </td>
-                                </tr>
-                            @endif
                         </table>
 
                     </div>

@@ -67,10 +67,4 @@ Route::get('contact/preview/{contact}', ContactPreviewController::class)
     ->name('contact.preview')
     ->middleware('signed');
 
-Route::get('report/{report}', ReportController::class)
-    ->name('report')
-    ->whereNumber('report');
-
 Route::get('sitemap', SitemapController::class)->name('sitemap');
-
-Route::view(uri: 'matching', view: 'matching.matching')->name('matching');
