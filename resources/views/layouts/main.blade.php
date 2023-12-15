@@ -31,8 +31,10 @@
         @includeIf('layouts.ga')
 
         @cannot('admin')
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5908240238435723"
+            @script
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5908240238435723"
      crossorigin="anonymous"></script>
+            @endscript
         @endcannot
     @endproduction
 </head>
