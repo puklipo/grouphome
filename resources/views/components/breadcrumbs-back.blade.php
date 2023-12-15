@@ -1,1 +1,1 @@
-<div class="p-3"><a href="{{ route('index') }}" class="text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ config('app.name') }}</a> &gt; <a href="{{ url()->previous() }}" class="text-indigo-500 dark:text-white hover:underline" wire:navigate>戻る</a></div>
+<div class="p-3"><a href="{{ route('index') }}" class="text-indigo-500 dark:text-white hover:underline">{{ config('app.name') }}</a> &gt; <a href="{{ url()->previous() }}" class="text-indigo-500 dark:text-white hover:underline">戻る</a></div>

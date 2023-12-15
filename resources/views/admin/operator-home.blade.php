@@ -27,7 +27,7 @@
                             @foreach($user->homes as $home)
                                 <li class="p-3 flex justify-between">
                                     <a href="{{ route('home.show', $home) }}"
-                                       class="text-xl text-indigo-500 dark:text-white font-bold hover:underline" wire:navigate>
+                                       class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                         {{ $home->name }}
                                     </a>
                                     <form action="{{ route('operator-home.destroy',[$user, $home]) }}"

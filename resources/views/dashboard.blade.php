@@ -14,9 +14,9 @@
 
             <div class="mb-3 space-x-2">
                 <a href="{{ route('help.operator') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('事業者向け使い方') }}</a>
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
                 <a href="{{ route('contact') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline" wire:navigate>{{ __('お問い合わせ') }}</a>
+                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
                 {{--                <a href="{{ route('matching') }}"--}}
                 {{--                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('土地マッチング') }}</a>--}}
             </div>
@@ -27,7 +27,7 @@
                     @foreach($homes as $home)
                         <li class="p-3 flex justify-between border-t border-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800">
                             <a href="{{ route('home.show', $home) }}"
-                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline" wire:navigate>
+                               class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                                 {{ $home->name }}
                             </a>
                             <span class="text-md text-gray-500 ml-6">{{ Str::limit($home->address, 50) }}</span>

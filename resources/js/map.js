@@ -2,7 +2,7 @@
 
 import 'svg-japan/dist/svg-japan.min'
 
-document.addEventListener( 'livewire:navigated', () => {
+document.addEventListener( 'DOMContentLoaded', () => {
     svgJapan({
         element: '#map',
         type: 'deform',
