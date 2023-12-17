@@ -10522,21 +10522,21 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.0.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "630be1f2ee8fe8f8767f01a184ef2ac032ac525a"
+                "reference": "f6c890364785c5846e070f8b212aa302766e037f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/630be1f2ee8fe8f8767f01a184ef2ac032ac525a",
-                "reference": "630be1f2ee8fe8f8767f01a184ef2ac032ac525a",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/f6c890364785c5846e070f8b212aa302766e037f",
+                "reference": "f6c890364785c5846e070f8b212aa302766e037f",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^15.0",
+                "laravel-lang/publisher": "^14.0 || ^15.0 || ^16.0",
                 "php": "^8.1"
             },
             "require-dev": {
@@ -10583,33 +10583,33 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.0.0"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.1.1"
             },
-            "time": "2023-12-14T20:30:16+00:00"
+            "time": "2023-12-16T23:11:40+00:00"
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.6.1",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "5e8ab3534be162c7fc2171cb2ef56c9eb41f975f"
+                "reference": "a171cd492d29c4aa385bdd7e0f5785d9032e9067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/5e8ab3534be162c7fc2171cb2ef56c9eb41f975f",
-                "reference": "5e8ab3534be162c7fc2171cb2ef56c9eb41f975f",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/a171cd492d29c4aa385bdd7e0f5785d9032e9067",
+                "reference": "a171cd492d29c4aa385bdd7e0f5785d9032e9067",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^14.0 || ^15.0",
+                "laravel-lang/publisher": "^14.0 || ^15.0 || ^16.0",
                 "php": "^8.1"
             },
             "require-dev": {
                 "laravel-lang/status-generator": "^1.19 || ^2.0",
                 "phpunit/phpunit": "^10.0",
-                "symfony/var-dumper": "^6.0"
+                "symfony/var-dumper": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -10652,9 +10652,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.6.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.7.0"
             },
-            "time": "2023-12-14T08:30:48+00:00"
+            "time": "2023-12-16T16:42:51+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -10744,30 +10744,27 @@
         },
         {
             "name": "laravel-lang/http-statuses",
-            "version": "3.6.3",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/http-statuses.git",
-                "reference": "439ff024d4199da0facbc7948d623a235bfc10f7"
+                "reference": "4f2c0e3adb49df365b31558916c76155bb9a4b15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/439ff024d4199da0facbc7948d623a235bfc10f7",
-                "reference": "439ff024d4199da0facbc7948d623a235bfc10f7",
+                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/4f2c0e3adb49df365b31558916c76155bb9a4b15",
+                "reference": "4f2c0e3adb49df365b31558916c76155bb9a4b15",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^14.1 || ^15.0",
+                "laravel-lang/publisher": "^14.1 || ^15.0 || ^16.0",
                 "php": "^8.1"
-            },
-            "conflict": {
-                "laravel-lang/publisher": "<14.0"
             },
             "require-dev": {
                 "laravel-lang/status-generator": "^1.19 || ^2.0",
                 "phpunit/phpunit": "^10.0",
-                "symfony/var-dumper": "^6.0"
+                "symfony/var-dumper": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -10808,33 +10805,33 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/http-statuses/issues",
-                "source": "https://github.com/Laravel-Lang/http-statuses/tree/3.6.3"
+                "source": "https://github.com/Laravel-Lang/http-statuses/tree/3.7.0"
             },
-            "time": "2023-12-01T11:29:46+00:00"
+            "time": "2023-12-16T16:53:47+00:00"
         },
         {
             "name": "laravel-lang/lang",
-            "version": "13.11.0",
+            "version": "13.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "979db1554ad5708e5d4fc8a48d6312fbd6cfa03e"
+                "reference": "25a5a07b635f0694cb34a37b58cfb78d0f4ee19e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/979db1554ad5708e5d4fc8a48d6312fbd6cfa03e",
-                "reference": "979db1554ad5708e5d4fc8a48d6312fbd6cfa03e",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/25a5a07b635f0694cb34a37b58cfb78d0f4ee19e",
+                "reference": "25a5a07b635f0694cb34a37b58cfb78d0f4ee19e",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^14.0 || ^15.0",
+                "laravel-lang/publisher": "^14.0 || ^15.0 || ^16.0",
                 "php": "^8.1"
             },
             "require-dev": {
                 "laravel-lang/status-generator": "^1.19 || ^2.0",
                 "phpunit/phpunit": "^10.0",
-                "symfony/var-dumper": "^6.0"
+                "symfony/var-dumper": "^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
@@ -10870,7 +10867,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2023-12-08T08:04:30+00:00"
+            "time": "2023-12-16T17:26:12+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
@@ -11895,16 +11892,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.24.4",
+            "version": "1.24.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "6bd0c26f3786cd9b7c359675cb789e35a8e07496"
+                "reference": "fedf211ff14ec8381c9bf5714e33a7a552dd1acc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6bd0c26f3786cd9b7c359675cb789e35a8e07496",
-                "reference": "6bd0c26f3786cd9b7c359675cb789e35a8e07496",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
+                "reference": "fedf211ff14ec8381c9bf5714e33a7a552dd1acc",
                 "shasum": ""
             },
             "require": {
@@ -11936,9 +11933,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.4"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.24.5"
             },
-            "time": "2023-11-26T18:29:22+00:00"
+            "time": "2023-12-16T09:33:33+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
