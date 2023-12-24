@@ -10529,16 +10529,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "74d1b37893d0d4af5093351149ae8b14c8fe432a"
+                "reference": "1d10553addc50b4e7a7e77b8cbdaef48434ab92a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/74d1b37893d0d4af5093351149ae8b14c8fe432a",
-                "reference": "74d1b37893d0d4af5093351149ae8b14c8fe432a",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/1d10553addc50b4e7a7e77b8cbdaef48434ab92a",
+                "reference": "1d10553addc50b4e7a7e77b8cbdaef48434ab92a",
                 "shasum": ""
             },
             "require": {
@@ -10590,9 +10590,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.2.0"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.2.1"
             },
-            "time": "2023-12-22T06:48:43+00:00"
+            "time": "2023-12-23T16:59:45+00:00"
         },
         {
             "name": "laravel-lang/attributes",
