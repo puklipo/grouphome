@@ -11,6 +11,9 @@
     <meta name="description" content="{{ $description }}">
     @endisset
 
+    @if(request()->routeIs('home.show'))<link rel="canonical" href="{{ url()->current() }}">
+    @endif
+
     @isset($ogp)
     {{ $ogp }}
     @endisset
