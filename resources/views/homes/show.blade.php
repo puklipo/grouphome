@@ -83,7 +83,7 @@
                                     <th class="bg-indigo-100 dark:bg-gray-800 p-2">URL</th>
                                     <td class="pl-3">
                                         <a href="{{ $home->url }}" target="_blank"
-                                           class="text-indigo-500 dark:text-white font-bold hover:underline" rel="nofollow">
+                                           class="text-indigo-500 dark:text-white hover:underline" rel="nofollow">
                                             {{ Str::truncate($home->url, 50) }}
                                         </a>
                                     </td>
@@ -95,7 +95,7 @@
                                     <th class="bg-indigo-100 dark:bg-gray-800 p-2">URL</th>
                                     <td class="pl-3">
                                         <a href="{{ $home->wam }}" target="_blank"
-                                           class="text-indigo-500 dark:text-white font-bold hover:underline" rel="nofollow">
+                                           class="text-indigo-500 dark:text-white hover:underline" rel="nofollow">
                                             {{ Str::truncate($home->wam, 50) }}
                                         </a>
                                     </td>
@@ -115,10 +115,10 @@
                                 <th class="bg-indigo-100 dark:bg-gray-800 p-2">WAM</th>
                                 <td class="pl-3">
                                     <a href="https://www.google.com/search?q={{ rawurlencode($home->name.' site:www.wam.go.jp/sfkohyoout/') }}"
-                                       class="text-indigo-500 dark:text-white font-bold hover:underline"
+                                       class="text-indigo-500 dark:text-white hover:underline"
                                        target="_blank" rel="nofollow">Google検索</a>
                                     <a href="https://www.bing.com/search?q={{ rawurlencode($home->name.' site:www.wam.go.jp/sfkohyoout/') }}"
-                                       class="text-indigo-500 dark:text-white font-bold hover:underline"
+                                       class="text-indigo-500 dark:text-white hover:underline"
                                        target="_blank" rel="nofollow">Bing検索</a>
                                 </td>
                             </tr>
