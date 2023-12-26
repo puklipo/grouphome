@@ -17,11 +17,11 @@ class HomeFactory extends Factory
     public function definition(): array
     {
         return [
-            'id'      => $this->faker->numberBetween(100000),
+            'id' => $this->faker->numberBetween(100000),
             'pref_id' => $this->faker->numberBetween(1, 47),
-            'name'    => $this->faker->name,
+            'name' => $this->faker->name,
             'company' => $this->faker->company,
-            'tel'     => $this->faker->phoneNumber,
+            'tel' => $this->faker->phoneNumber,
             'address' => $this->faker->address,
             'location' => null,
         ];
