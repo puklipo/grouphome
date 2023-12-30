@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.295.3",
+            "version": "3.295.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3346f60c6c5075453f90f703693f764dad76a3a8"
+                "reference": "2372661db989fe4229abd95f4434b37252076d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3346f60c6c5075453f90f703693f764dad76a3a8",
-                "reference": "3346f60c6c5075453f90f703693f764dad76a3a8",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2372661db989fe4229abd95f4434b37252076d58",
+                "reference": "2372661db989fe4229abd95f4434b37252076d58",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.4"
             },
-            "time": "2023-12-28T19:32:33+00:00"
+            "time": "2023-12-29T19:07:49+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -10878,16 +10878,16 @@
         },
         {
             "name": "laravel-lang/locale-list",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/locale-list.git",
-                "reference": "ae1160643f9d6bdf37fdc32eb53660d49c4a8efe"
+                "reference": "87fb1a871058c47e63e0399395ea010ded6e8bb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/locale-list/zipball/ae1160643f9d6bdf37fdc32eb53660d49c4a8efe",
-                "reference": "ae1160643f9d6bdf37fdc32eb53660d49c4a8efe",
+                "url": "https://api.github.com/repos/Laravel-Lang/locale-list/zipball/87fb1a871058c47e63e0399395ea010ded6e8bb2",
+                "reference": "87fb1a871058c47e63e0399395ea010ded6e8bb2",
                 "shasum": ""
             },
             "require": {
@@ -10907,7 +10907,8 @@
             "authors": [
                 {
                     "name": "Andrey Helldar",
-                    "email": "helldar@dragon-code.pro"
+                    "email": "helldar@dragon-code.pro",
+                    "homepage": "https://dragon-code.pro"
                 },
                 {
                     "name": "Laravel-Lang Team",
@@ -10930,7 +10931,7 @@
                 "issues": "https://github.com/Laravel-Lang/locale-list/issues",
                 "source": "https://github.com/Laravel-Lang/locale-list"
             },
-            "time": "2023-11-19T21:17:29+00:00"
+            "time": "2023-12-29T22:55:57+00:00"
         },
         {
             "name": "laravel-lang/locales",
@@ -11003,16 +11004,16 @@
         },
         {
             "name": "laravel-lang/native-country-names",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/native-country-names.git",
-                "reference": "b1e860069f362fe991259e6e9fae3bd8603e7f72"
+                "reference": "cea0d0fbb8aeb9c8b426c05796034295c3d1cabb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/native-country-names/zipball/b1e860069f362fe991259e6e9fae3bd8603e7f72",
-                "reference": "b1e860069f362fe991259e6e9fae3bd8603e7f72",
+                "url": "https://api.github.com/repos/Laravel-Lang/native-country-names/zipball/cea0d0fbb8aeb9c8b426c05796034295c3d1cabb",
+                "reference": "cea0d0fbb8aeb9c8b426c05796034295c3d1cabb",
                 "shasum": ""
             },
             "require": {
@@ -11023,12 +11024,12 @@
             },
             "require-dev": {
                 "illuminate/support": "^10.0",
-                "laravel-lang/locale-list": "^1.1",
+                "laravel-lang/locale-list": "^1.2",
                 "pestphp/pest": "^2.24.3",
                 "punic/punic": "^3.8",
-                "symfony/console": "^6.3",
-                "symfony/process": "^6.3",
-                "symfony/var-dumper": "^6.3",
+                "symfony/console": "^6.3 || ^7.0",
+                "symfony/process": "^6.3 || ^7.0",
+                "symfony/var-dumper": "^6.3 || ^7.0",
                 "vlucas/phpdotenv": "^5.6"
             },
             "type": "library",
@@ -11071,20 +11072,20 @@
                 "issues": "https://github.com/Laravel-Lang/native-country-names/issues",
                 "source": "https://github.com/Laravel-Lang/native-country-names"
             },
-            "time": "2023-11-20T18:34:07+00:00"
+            "time": "2023-12-29T23:38:20+00:00"
         },
         {
             "name": "laravel-lang/native-currency-names",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/native-currency-names.git",
-                "reference": "b34be98174a00ac454f3bd2185157e3244c5c1eb"
+                "reference": "21662cd9f31edf1817439344d5c4519b627679b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/native-currency-names/zipball/b34be98174a00ac454f3bd2185157e3244c5c1eb",
-                "reference": "b34be98174a00ac454f3bd2185157e3244c5c1eb",
+                "url": "https://api.github.com/repos/Laravel-Lang/native-currency-names/zipball/21662cd9f31edf1817439344d5c4519b627679b5",
+                "reference": "21662cd9f31edf1817439344d5c4519b627679b5",
                 "shasum": ""
             },
             "require": {
@@ -11095,12 +11096,12 @@
             },
             "require-dev": {
                 "illuminate/support": "^10.0",
-                "laravel-lang/locale-list": "^1.1",
+                "laravel-lang/locale-list": "^1.2",
                 "pestphp/pest": "^2.24.3",
                 "punic/punic": "^3.8",
-                "symfony/console": "^6.3",
-                "symfony/process": "^6.3",
-                "symfony/var-dumper": "^6.3",
+                "symfony/console": "^6.3 || ^7.0",
+                "symfony/process": "^6.3 || ^7.0",
+                "symfony/var-dumper": "^6.3 || ^7.0",
                 "vlucas/phpdotenv": "^5.6"
             },
             "type": "library",
@@ -11140,7 +11141,7 @@
                 "issues": "https://github.com/Laravel-Lang/native-currency-names/issues",
                 "source": "https://github.com/Laravel-Lang/native-currency-names"
             },
-            "time": "2023-11-20T16:58:53+00:00"
+            "time": "2023-12-29T23:30:58+00:00"
         },
         {
             "name": "laravel-lang/native-locale-names",
