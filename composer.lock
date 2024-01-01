@@ -10529,16 +10529,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.3.0",
+            "version": "1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "7d6d53cc5c9b02f454c18aaf63a659e063ba4dbf"
+                "reference": "aca74d135e543fd44137b683d3bf156c9b696bb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/7d6d53cc5c9b02f454c18aaf63a659e063ba4dbf",
-                "reference": "7d6d53cc5c9b02f454c18aaf63a659e063ba4dbf",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/aca74d135e543fd44137b683d3bf156c9b696bb5",
+                "reference": "aca74d135e543fd44137b683d3bf156c9b696bb5",
                 "shasum": ""
             },
             "require": {
@@ -10590,22 +10590,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.3.0"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.3.1"
             },
-            "time": "2023-12-30T09:31:54+00:00"
+            "time": "2023-12-31T01:29:17+00:00"
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.8.0",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "2e93ff2a901a967d4ef0690e00c8e178c322aa6e"
+                "reference": "e85a26f09b4b54f24a8c84baf44c40a7c8214008"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/2e93ff2a901a967d4ef0690e00c8e178c322aa6e",
-                "reference": "2e93ff2a901a967d4ef0690e00c8e178c322aa6e",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/e85a26f09b4b54f24a8c84baf44c40a7c8214008",
+                "reference": "e85a26f09b4b54f24a8c84baf44c40a7c8214008",
                 "shasum": ""
             },
             "require": {
@@ -10659,9 +10659,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.8.0"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.8.1"
             },
-            "time": "2023-12-30T09:32:05+00:00"
+            "time": "2023-12-31T00:42:12+00:00"
         },
         {
             "name": "laravel-lang/common",
