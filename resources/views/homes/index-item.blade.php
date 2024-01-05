@@ -13,7 +13,7 @@
             @endif
 
             <a href="{{ route('home.show', $home) }}">
-                <h2 class="inline-flex text-5xl text-indigo-500 dark:text-white font-extrabold tracking-widest break-all hover:text-indigo-600 dark:hover:text-white dark:hover:underline">
+                <h2 class="inline-flex text-5xl text-indigo-500 dark:text-white font-extrabold tracking-widest hover:text-indigo-600 dark:hover:text-white dark:hover:underline">
                     <ruby>
                         {{ $home->name ?? '' }}
                         <rp>(</rp>
@@ -22,18 +22,12 @@
                     </ruby>
                 </h2>
             </a>
-            <div class="my-1">{{ $home->address }}</div>
 
-            @isset($home->url)
-                <div class="my-1">
-                    <a href="{{ $home->url }}" target="_blank"
-                       class="text-indigo-500 dark:text-white font-bold hover:underline" rel="nofollow">
-                        {{ Str::truncate($home->url) }}
-                    </a>
-                </div>
-            @endisset
-
-            <table class="table-auto border-collapse border-spacing-x-2">
+            <table class="mt-3 table-auto border-collapse border-spacing-x-2">
+                <tr>
+                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">住所</th>
+                    <td class="pl-3">{{ $home->address }}</td>
+                </tr>
                 <tr>
                     <th class="bg-indigo-100 dark:bg-gray-800 p-2">月額費用</th>
                     <td class="pl-3">
@@ -63,6 +57,19 @@
                     <th class="bg-indigo-100 dark:bg-gray-800 p-2">類型</th>
                     <td class="pl-3">{{ $home->type?->type ?? '不明' }}</td>
                 </tr>
+                @isset($home->url)
+                    <tr>
+                        <th class="bg-indigo-100 dark:bg-gray-800 p-2">URL</th>
+                        <td class="pl-3">
+                            <a href="{{ $home->url }}"
+                               target="_blank"
+                               class="text-indigo-500 dark:text-white hover:underline"
+                               rel="nofollow">
+                                {{ Str::truncate($home->url) }}
+                            </a>
+                        </td>
+                    </tr>
+                @endisset
             </table>
         </div>
     </x-box>
