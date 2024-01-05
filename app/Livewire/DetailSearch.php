@@ -99,9 +99,8 @@ class DetailSearch extends Component
             ->vacancySearch($this->vacancy)
             ->addTotalCost()
             ->sortBy($this->sort)
-            ->paginate()
-            ->withQueryString()
-            ->onEachSide(1);
+            ->simplePaginate()
+            ->withQueryString();
     }
 
     /**

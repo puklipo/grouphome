@@ -51,8 +51,7 @@ class HomeIndex extends Component
             ->typeSearch($this->type)
             ->vacancySearch($this->vacancy)
             ->addTotalCost()
-            ->paginate()
-            ->withQueryString()
-            ->onEachSide(1);
+            ->simplePaginate()
+            ->withQueryString();
     }
 }

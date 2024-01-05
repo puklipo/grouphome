@@ -17,6 +17,7 @@ class LocationIndex extends Component
     public bool $geo = true;
 
     protected float $latitude;
+
     protected float $longitude;
 
     public function load(float $latitude, float $longitude): void
@@ -38,12 +39,12 @@ class LocationIndex extends Component
 
         return rescue(
             callback: fn () => Home::query()
-                                   ->with(['cost'])
-                                   ->whereNotNull('location')
-                                   ->withDistanceSphere('location', $point)
-                                   ->orderByDistanceSphere('location', $point)
-                                   ->limit(50)
-                                   ->get(),
+                ->with(['cost'])
+                ->whereNotNull('location')
+                ->withDistanceSphere('location', $point)
+                ->orderByDistanceSphere('location', $point)
+                ->limit(50)
+                ->get(),
             rescue: []
         );
     }
