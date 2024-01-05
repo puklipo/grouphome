@@ -1,7 +1,7 @@
 <div id="home">
     @isset($pref)
         <h1 class="p-3 font-semibold text-2xl leading-tight">
-            {{ $pref->name . $area }} [{{ $this->homes->total() }}]
+            {{ $pref->name . $area }}
         </h1>
     @endisset
 
