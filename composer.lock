@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.295.6",
+            "version": "3.295.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9b0b2daf46d5e6a4600575917cea0764e4dbb6b5"
+                "reference": "e3ba36c6e52dce373064fbb1741547828235425f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9b0b2daf46d5e6a4600575917cea0764e4dbb6b5",
-                "reference": "9b0b2daf46d5e6a4600575917cea0764e4dbb6b5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e3ba36c6e52dce373064fbb1741547828235425f",
+                "reference": "e3ba36c6e52dce373064fbb1741547828235425f",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.7"
             },
-            "time": "2024-01-04T19:43:02+00:00"
+            "time": "2024-01-05T19:10:48+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -4216,16 +4216,16 @@
         },
         {
             "name": "matanyadaev/laravel-eloquent-spatial",
-            "version": "3.2.1",
+            "version": "3.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MatanYadaev/laravel-eloquent-spatial.git",
-                "reference": "279edf99de8a6aad9d7265247c10a496b101e001"
+                "reference": "1dc6ce646bde4e5cdbc07f61d69e1fe7786f1b0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/279edf99de8a6aad9d7265247c10a496b101e001",
-                "reference": "279edf99de8a6aad9d7265247c10a496b101e001",
+                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/1dc6ce646bde4e5cdbc07f61d69e1fe7786f1b0a",
+                "reference": "1dc6ce646bde4e5cdbc07f61d69e1fe7786f1b0a",
                 "shasum": ""
             },
             "require": {
@@ -4271,9 +4271,9 @@
             "homepage": "https://github.com/matanyadaev/laravel-eloquent-spatial",
             "support": {
                 "issues": "https://github.com/MatanYadaev/laravel-eloquent-spatial/issues",
-                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/3.2.1"
+                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/3.2.2"
             },
-            "time": "2023-12-28T21:30:12+00:00"
+            "time": "2024-01-05T07:50:54+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
