@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.295.8",
+            "version": "3.295.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "dc23d1d1e2e0413a3707d5dd90d8c43cb6c7521b"
+                "reference": "8a2710fe85f453ac2face59779e923bbe5b71385"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/dc23d1d1e2e0413a3707d5dd90d8c43cb6c7521b",
-                "reference": "dc23d1d1e2e0413a3707d5dd90d8c43cb6c7521b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8a2710fe85f453ac2face59779e923bbe5b71385",
+                "reference": "8a2710fe85f453ac2face59779e923bbe5b71385",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.295.9"
             },
-            "time": "2024-01-08T19:04:58+00:00"
+            "time": "2024-01-10T19:07:38+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2893,16 +2893,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.61.0",
+            "version": "v1.62.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "7cdf6de6b76a5e23a89e7a815269be6331998574"
+                "reference": "c049627a5effe57cc32add0f9118cb54382b7982"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/7cdf6de6b76a5e23a89e7a815269be6331998574",
-                "reference": "7cdf6de6b76a5e23a89e7a815269be6331998574",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/c049627a5effe57cc32add0f9118cb54382b7982",
+                "reference": "c049627a5effe57cc32add0f9118cb54382b7982",
                 "shasum": ""
             },
             "require": {
@@ -2956,9 +2956,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.61.0"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.62.0"
             },
-            "time": "2023-12-06T08:29:44+00:00"
+            "time": "2024-01-10T08:27:37+00:00"
         },
         {
             "name": "laravel/vapor-core",
@@ -4274,16 +4274,16 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "4.8.04",
+            "version": "4.8.05",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "b73a5bdbcec74a6d33389cc8fe3a5af5d0965d01"
+                "reference": "b7a8cdd70955ea6162269939914ba97fe36a154a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/b73a5bdbcec74a6d33389cc8fe3a5af5d0965d01",
-                "reference": "b73a5bdbcec74a6d33389cc8fe3a5af5d0965d01",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/b7a8cdd70955ea6162269939914ba97fe36a154a",
+                "reference": "b7a8cdd70955ea6162269939914ba97fe36a154a",
                 "shasum": ""
             },
             "require": {
@@ -4326,7 +4326,7 @@
             ],
             "support": {
                 "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
-                "source": "https://github.com/serbanghita/Mobile-Detect/tree/4.8.04"
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/4.8.05"
             },
             "funding": [
                 {
@@ -4334,7 +4334,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-28T16:04:34+00:00"
+            "time": "2024-01-10T22:04:41+00:00"
         },
         {
             "name": "monolog/monolog",
