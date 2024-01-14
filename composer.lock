@@ -2893,16 +2893,16 @@
         },
         {
             "name": "laravel/vapor-cli",
-            "version": "v1.62.0",
+            "version": "v1.62.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-cli.git",
-                "reference": "c049627a5effe57cc32add0f9118cb54382b7982"
+                "reference": "6d96a8fda11f933118fe3e3275147bc17348a298"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/c049627a5effe57cc32add0f9118cb54382b7982",
-                "reference": "c049627a5effe57cc32add0f9118cb54382b7982",
+                "url": "https://api.github.com/repos/laravel/vapor-cli/zipball/6d96a8fda11f933118fe3e3275147bc17348a298",
+                "reference": "6d96a8fda11f933118fe3e3275147bc17348a298",
                 "shasum": ""
             },
             "require": {
@@ -2956,9 +2956,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-cli/tree/v1.62.0"
+                "source": "https://github.com/laravel/vapor-cli/tree/v1.62.1"
             },
-            "time": "2024-01-10T08:27:37+00:00"
+            "time": "2024-01-13T18:42:22+00:00"
         },
         {
             "name": "laravel/vapor-core",
@@ -10587,16 +10587,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.9.1",
+            "version": "2.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "f846e8cd2079082725b4f2066fe5595aeea10183"
+                "reference": "871cc7aec0aba1e676235605c322903bedc85167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/f846e8cd2079082725b4f2066fe5595aeea10183",
-                "reference": "f846e8cd2079082725b4f2066fe5595aeea10183",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/871cc7aec0aba1e676235605c322903bedc85167",
+                "reference": "871cc7aec0aba1e676235605c322903bedc85167",
                 "shasum": ""
             },
             "require": {
@@ -10650,9 +10650,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.9.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.9.2"
             },
-            "time": "2024-01-02T09:45:55+00:00"
+            "time": "2024-01-13T14:39:47+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -12259,16 +12259,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.5",
+            "version": "10.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "ed21115d505b4b4f7dc7b5651464e19a2c7f7856"
+                "reference": "ab9a20b623b235165d24faa9d1da925cb54939c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ed21115d505b4b4f7dc7b5651464e19a2c7f7856",
-                "reference": "ed21115d505b4b4f7dc7b5651464e19a2c7f7856",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/ab9a20b623b235165d24faa9d1da925cb54939c0",
+                "reference": "ab9a20b623b235165d24faa9d1da925cb54939c0",
                 "shasum": ""
             },
             "require": {
@@ -12340,7 +12340,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.5"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.6"
             },
             "funding": [
                 {
@@ -12356,7 +12356,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-27T15:13:52+00:00"
+            "time": "2024-01-13T12:49:56+00:00"
         },
         {
             "name": "sebastian/cli-parser",
