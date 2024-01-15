@@ -5,3 +5,5 @@ disabled:
 finder:
   not-name:
     - index.php
+  exclude:
+    - "lang"
