@@ -10,7 +10,6 @@ use App\Http\Controllers\Mail\PrepareController;
 use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefController;
-use App\Http\Controllers\ReportController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
 
