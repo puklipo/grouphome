@@ -9,6 +9,7 @@ use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\HtmlString;
 use Revolution\Line\Notifications\LineNotifyChannel;
 use Revolution\Line\Notifications\LineNotifyMessage;
 
@@ -54,9 +55,9 @@ class ContactNotification extends Notification implements ShouldQueue
             ->subject('【'.config('app.name').'】お問い合わせ')
             ->from(config('mail.from.address'), config('mail.from.name'))
             ->greeting(__('名前：').$this->contact->name)
-            ->line($this->contact->body)
+            ->line([$this->contact->body])
             ->action(__('問い合わせを確認'), route('admin.contacts'))
-            ->line($this->contact->email)
+            ->line('メール：'.$this->contact->email)
             ->salutation(__('このメールに返信はできないので問い合わせへの対応は新規メールを送信してください。'));
     }
 
