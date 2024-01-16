@@ -956,16 +956,16 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.8",
+            "version": "2.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff"
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
-                "reference": "f9301a5b2fb1216b2b08f02ba04dc45423db6bff",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/2930cd5ef353871c821d5c43ed030d39ac8cfe65",
+                "reference": "2930cd5ef353871c821d5c43ed030d39ac8cfe65",
                 "shasum": ""
             },
             "require": {
@@ -1027,7 +1027,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.8"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.9"
             },
             "funding": [
                 {
@@ -1043,7 +1043,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-16T13:40:37+00:00"
+            "time": "2024-01-15T18:05:13+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -10857,16 +10857,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "14.2.2",
+            "version": "14.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "86a7eca3e9d68bef9ce474e0a892afdc1e718c64"
+                "reference": "91902b62fa61ad65e4450683f70dfeb3aed01381"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/86a7eca3e9d68bef9ce474e0a892afdc1e718c64",
-                "reference": "86a7eca3e9d68bef9ce474e0a892afdc1e718c64",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/91902b62fa61ad65e4450683f70dfeb3aed01381",
+                "reference": "91902b62fa61ad65e4450683f70dfeb3aed01381",
                 "shasum": ""
             },
             "require": {
@@ -10913,7 +10913,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-01-13T02:09:36+00:00"
+            "time": "2024-01-15T12:48:27+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
@@ -13772,5 +13772,5 @@
     "platform-overrides": {
         "ext-sockets": "1.0.0"
     },
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }
