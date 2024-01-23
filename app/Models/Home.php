@@ -18,10 +18,7 @@ use MatanYadaev\EloquentSpatial\Traits\HasSpatial;
 use function Illuminate\Events\queueable;
 
 /**
- * @method static \MatanYadaev\EloquentSpatial\SpatialBuilder query()
- *
  * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
- *
  * @mixin IdeHelperHome
  */
 class Home extends Model
