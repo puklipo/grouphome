@@ -61,16 +61,14 @@
                                     {{ $home->company }}
                                 </td>
                             </tr>
-                            <tr>
-                                <th class="bg-indigo-100 dark:bg-gray-800 p-2">電話番号</th>
-                                <td class="pl-3">
-                                    @if($home->users()->exists())
+                            @if($home->users()->exists())
+                                <tr>
+                                    <th class="bg-indigo-100 dark:bg-gray-800 p-2">電話番号</th>
+                                    <td class="pl-3">
                                         {{ $home->tel }}
-                                    @else
-                                        <span class="text-gray-400 text-xs">間違いが多いので事業者が登録するまで表示されません。公式サイトやWAM NETを検索してください。</span>
-                                    @endif
-                                </td>
-                            </tr>
+                                    </td>
+                                </tr>
+                            @endif
                             <tr>
                                 <th class="bg-indigo-100 dark:bg-gray-800 p-2">事業所番号</th>
                                 <td class="pl-3"
