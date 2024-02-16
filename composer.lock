@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.298.10",
+            "version": "3.299.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "99af8830cb0662e3edaebe1a976d1cc833a86091"
+                "reference": "76d1165568d949b430a87eaa42f6dbc4b6705b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/99af8830cb0662e3edaebe1a976d1cc833a86091",
-                "reference": "99af8830cb0662e3edaebe1a976d1cc833a86091",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/76d1165568d949b430a87eaa42f6dbc4b6705b6f",
+                "reference": "76d1165568d949b430a87eaa42f6dbc4b6705b6f",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.298.10"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.299.0"
             },
-            "time": "2024-02-14T19:05:54+00:00"
+            "time": "2024-02-15T19:08:34+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -5909,22 +5909,22 @@
         },
         {
             "name": "puklipo/laravel-vapor-gzip",
-            "version": "1.1.2",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pop-culture-studio/laravel-vapor-gzip.git",
-                "reference": "51ff7ccd7e6e2bdd457100f05450513f6f1ae02c"
+                "reference": "ca46815da6c2a9c43d62808556200c954f3ce5b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/51ff7ccd7e6e2bdd457100f05450513f6f1ae02c",
-                "reference": "51ff7ccd7e6e2bdd457100f05450513f6f1ae02c",
+                "url": "https://api.github.com/repos/pop-culture-studio/laravel-vapor-gzip/zipball/ca46815da6c2a9c43d62808556200c954f3ce5b5",
+                "reference": "ca46815da6c2a9c43d62808556200c954f3ce5b5",
                 "shasum": ""
             },
             "require": {
                 "ext-zlib": "*",
-                "illuminate/http": "^8.0||^9.0||^10.0",
-                "php": "^8.0"
+                "illuminate/http": "^10.0||^11.0",
+                "php": "^8.1"
             },
             "type": "library",
             "autoload": {
@@ -5950,9 +5950,9 @@
             ],
             "support": {
                 "issues": "https://github.com/pop-culture-studio/laravel-vapor-gzip/issues",
-                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/1.1.2"
+                "source": "https://github.com/pop-culture-studio/laravel-vapor-gzip/tree/1.2.0"
             },
-            "time": "2023-11-25T01:41:29+00:00"
+            "time": "2024-02-15T02:05:59+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -9704,16 +9704,16 @@
         },
         {
             "name": "barryvdh/laravel-ide-helper",
-            "version": "v2.15.0",
+            "version": "v2.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-ide-helper.git",
-                "reference": "dca3ebe81ea385632651791cb8b3db42153c380c"
+                "reference": "77831852bb7bc54f287246d32eb91274eaf87f8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/dca3ebe81ea385632651791cb8b3db42153c380c",
-                "reference": "dca3ebe81ea385632651791cb8b3db42153c380c",
+                "url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/zipball/77831852bb7bc54f287246d32eb91274eaf87f8b",
+                "reference": "77831852bb7bc54f287246d32eb91274eaf87f8b",
                 "shasum": ""
             },
             "require": {
@@ -9782,7 +9782,7 @@
             ],
             "support": {
                 "issues": "https://github.com/barryvdh/laravel-ide-helper/issues",
-                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v2.15.0"
+                "source": "https://github.com/barryvdh/laravel-ide-helper/tree/v2.15.1"
             },
             "funding": [
                 {
@@ -9794,7 +9794,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-14T11:19:26+00:00"
+            "time": "2024-02-15T14:23:20+00:00"
         },
         {
             "name": "barryvdh/reflection-docblock",
@@ -10491,16 +10491,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.4.5",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "8085c1c3fb571ed82cb52945fd4efb5f5ab76bc4"
+                "reference": "3b71749230a5bcbb0b7d1466ec5c75c5af5f1ea1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/8085c1c3fb571ed82cb52945fd4efb5f5ab76bc4",
-                "reference": "8085c1c3fb571ed82cb52945fd4efb5f5ab76bc4",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/3b71749230a5bcbb0b7d1466ec5c75c5af5f1ea1",
+                "reference": "3b71749230a5bcbb0b7d1466ec5c75c5af5f1ea1",
                 "shasum": ""
             },
             "require": {
@@ -10552,9 +10552,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.4.5"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.5.1"
             },
-            "time": "2024-02-09T01:17:10+00:00"
+            "time": "2024-02-15T22:44:13+00:00"
         },
         {
             "name": "laravel-lang/attributes",
@@ -10828,16 +10828,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "14.2.9",
+            "version": "14.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "8a69448df6b6cd12bd2ef4878689acbc6bbf94f0"
+                "reference": "70b0a0894d54c5cc113e0b028d7db5151b543879"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/8a69448df6b6cd12bd2ef4878689acbc6bbf94f0",
-                "reference": "8a69448df6b6cd12bd2ef4878689acbc6bbf94f0",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/70b0a0894d54c5cc113e0b028d7db5151b543879",
+                "reference": "70b0a0894d54c5cc113e0b028d7db5151b543879",
                 "shasum": ""
             },
             "require": {
@@ -10884,7 +10884,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-02-05T01:58:49+00:00"
+            "time": "2024-02-15T06:25:30+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
