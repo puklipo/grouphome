@@ -4215,16 +4215,16 @@
         },
         {
             "name": "matanyadaev/laravel-eloquent-spatial",
-            "version": "4.0.0",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MatanYadaev/laravel-eloquent-spatial.git",
-                "reference": "3b1e2d5306e0187f9d3d2f12eb390b40f6b712a1"
+                "reference": "920c897fb529bca8cd78f5ee080527614424db62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/3b1e2d5306e0187f9d3d2f12eb390b40f6b712a1",
-                "reference": "3b1e2d5306e0187f9d3d2f12eb390b40f6b712a1",
+                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/920c897fb529bca8cd78f5ee080527614424db62",
+                "reference": "920c897fb529bca8cd78f5ee080527614424db62",
                 "shasum": ""
             },
             "require": {
@@ -4270,9 +4270,9 @@
             "homepage": "https://github.com/matanyadaev/laravel-eloquent-spatial",
             "support": {
                 "issues": "https://github.com/MatanYadaev/laravel-eloquent-spatial/issues",
-                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/4.0.0"
+                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/4.1.0"
             },
-            "time": "2024-01-18T13:41:56+00:00"
+            "time": "2024-02-24T12:09:35+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
