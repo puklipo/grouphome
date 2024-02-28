@@ -17,7 +17,6 @@ environments:
         #octane-database-session-ttl: 10
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
-            - 'php artisan vapor-ui:publish --ansi'
             - 'php artisan event:cache'
             - 'php artisan config:cache'
             - 'php artisan route:cache'
@@ -43,7 +42,6 @@ environments:
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
-            - 'php artisan vapor-ui:publish --ansi'
             - 'npm ci && npm run build && rm -rf node_modules'
         deploy:
             - 'php artisan migrate --force'
