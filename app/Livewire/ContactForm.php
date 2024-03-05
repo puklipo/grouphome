@@ -16,6 +16,8 @@ class ContactForm extends Component
     #[Validate('required')]
     public string $name = '';
 
+    public string $email = '';
+
     #[Validate('required')]
     public string $body = '';
 
