@@ -4,6 +4,7 @@ namespace App\Livewire;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -15,11 +16,18 @@ class ContactForm extends Component
     #[Validate('required')]
     public string $name = '';
 
-    #[Validate('required', 'email')]
-    public string $email = '';
-
     #[Validate('required')]
     public string $body = '';
+
+    public function rules(): array
+    {
+        return [
+            'email' => [
+                'required', 'string', 'lowercase', 'email', 'max:255',
+                Rule::notIn(config('spam')),
+            ],
+        ];
+    }
 
     public function onReady(Request $request): void
     {
