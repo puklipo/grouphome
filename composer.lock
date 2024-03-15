@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.300.17",
+            "version": "3.301.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ddd93079be1646e7db727d078f4c5beee1ddb052"
+                "reference": "a0173e793f244eeedd0a47d40437a3bb9d8f05b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ddd93079be1646e7db727d078f4c5beee1ddb052",
-                "reference": "ddd93079be1646e7db727d078f4c5beee1ddb052",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a0173e793f244eeedd0a47d40437a3bb9d8f05b8",
+                "reference": "a0173e793f244eeedd0a47d40437a3bb9d8f05b8",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.300.17"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.0"
             },
-            "time": "2024-03-13T18:08:32+00:00"
+            "time": "2024-03-14T18:09:12+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -3740,16 +3740,16 @@
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.4.8",
+            "version": "v3.4.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "0335b8f022ac535fc3cf29fd8a8fcb275353a470"
+                "reference": "c65b3f0798ab2c9338213ede3588c3cdf4e6fcc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/0335b8f022ac535fc3cf29fd8a8fcb275353a470",
-                "reference": "0335b8f022ac535fc3cf29fd8a8fcb275353a470",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/c65b3f0798ab2c9338213ede3588c3cdf4e6fcc0",
+                "reference": "c65b3f0798ab2c9338213ede3588c3cdf4e6fcc0",
                 "shasum": ""
             },
             "require": {
@@ -3803,7 +3803,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.4.8"
+                "source": "https://github.com/livewire/livewire/tree/v3.4.9"
             },
             "funding": [
                 {
@@ -3811,7 +3811,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-08T13:01:50+00:00"
+            "time": "2024-03-14T14:03:32+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -10769,16 +10769,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "14.5.0",
+            "version": "14.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "b0b0881e351c56af7f4c5efd20e153de58cc95f9"
+                "reference": "6f351074e472b71b65246b44e81e2cc386ec6575"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/b0b0881e351c56af7f4c5efd20e153de58cc95f9",
-                "reference": "b0b0881e351c56af7f4c5efd20e153de58cc95f9",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/6f351074e472b71b65246b44e81e2cc386ec6575",
+                "reference": "6f351074e472b71b65246b44e81e2cc386ec6575",
                 "shasum": ""
             },
             "require": {
@@ -10825,7 +10825,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-03-13T10:24:35+00:00"
+            "time": "2024-03-14T08:34:50+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
