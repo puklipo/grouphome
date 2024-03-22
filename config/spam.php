@@ -9,4 +9,5 @@ return [
     'project.act@pitpa.jp',
     'yoshida@yagish.jp',
     'contact@nakayoshigc.com',
+    't.kakudo@kanbu.jp',
 ];
