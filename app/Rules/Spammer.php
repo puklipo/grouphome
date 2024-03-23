@@ -17,7 +17,8 @@ class Spammer implements ValidationRule
     public function validate(string $attribute, mixed $value, Closure $fail): void
     {
         $spam = collect(config('spam'))
-            ->map(fn ($mail) => Str::afterLast($mail, '@'));
+            ->map(fn ($mail) => Str::afterLast($mail, '@'))
+            ->unique();
 
         $domain = Str::afterLast($value, '@');
 
