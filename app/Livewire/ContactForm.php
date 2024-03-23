@@ -3,8 +3,8 @@
 namespace App\Livewire;
 
 use App\Models\Contact;
+use App\Rules\Spammer;
 use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 
@@ -26,7 +26,7 @@ class ContactForm extends Component
         return [
             'email' => [
                 'required', 'string', 'lowercase', 'email', 'max:255',
-                Rule::notIn(config('spam')),
+                new Spammer(),
             ],
         ];
     }
