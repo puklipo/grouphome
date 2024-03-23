@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.301.5",
+            "version": "3.301.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "434f13d3bdb0230bfb247cf77a7ecfaa8b83aa97"
+                "reference": "18c0ebd71d3071304f1ea02aa9af75f95863177a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/434f13d3bdb0230bfb247cf77a7ecfaa8b83aa97",
-                "reference": "434f13d3bdb0230bfb247cf77a7ecfaa8b83aa97",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/18c0ebd71d3071304f1ea02aa9af75f95863177a",
+                "reference": "18c0ebd71d3071304f1ea02aa9af75f95863177a",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.6"
             },
-            "time": "2024-03-21T18:06:56+00:00"
+            "time": "2024-03-22T18:05:21+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -10567,16 +10567,16 @@
         },
         {
             "name": "laravel-lang/common",
-            "version": "6.1.2",
+            "version": "6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/common.git",
-                "reference": "82a6cbe20ad30b98b258461d12612b0987f9b30c"
+                "reference": "6dd7ec4beae3c9fa046ced5cef020d2f8a353ea5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/common/zipball/82a6cbe20ad30b98b258461d12612b0987f9b30c",
-                "reference": "82a6cbe20ad30b98b258461d12612b0987f9b30c",
+                "url": "https://api.github.com/repos/Laravel-Lang/common/zipball/6dd7ec4beae3c9fa046ced5cef020d2f8a353ea5",
+                "reference": "6dd7ec4beae3c9fa046ced5cef020d2f8a353ea5",
                 "shasum": ""
             },
             "require": {
@@ -10584,7 +10584,7 @@
                 "laravel-lang/attributes": "^2.7",
                 "laravel-lang/http-statuses": "^3.7",
                 "laravel-lang/json-fallback": "^2.0",
-                "laravel-lang/lang": "^13.12 || ^14.0",
+                "laravel-lang/lang": "^13.12 || ^14.0 || ^15.0",
                 "laravel-lang/locales": "^2.3",
                 "laravel-lang/publisher": "^16.0",
                 "php": "^8.1"
@@ -10646,7 +10646,7 @@
                 "issues": "https://github.com/Laravel-Lang/common/issues",
                 "source": "https://github.com/Laravel-Lang/common"
             },
-            "time": "2024-03-13T10:17:41+00:00"
+            "time": "2024-03-22T18:25:34+00:00"
         },
         {
             "name": "laravel-lang/http-statuses",
@@ -10768,27 +10768,27 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "14.6.0",
+            "version": "15.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "eb3e2cc02c5e498063adb3be090e629c1c13ab65"
+                "reference": "14e745a460d1c2100bf71c988e977af51e58d0e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/eb3e2cc02c5e498063adb3be090e629c1c13ab65",
-                "reference": "eb3e2cc02c5e498063adb3be090e629c1c13ab65",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/14e745a460d1c2100bf71c988e977af51e58d0e2",
+                "reference": "14e745a460d1c2100bf71c988e977af51e58d0e2",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
-                "laravel-lang/publisher": "^14.0 || ^15.0 || ^16.0",
-                "php": "^8.1"
+                "laravel-lang/publisher": "^16.0",
+                "php": "^8.2"
             },
             "require-dev": {
-                "laravel-lang/status-generator": "^1.19 || ^2.0",
+                "laravel-lang/status-generator": "^2.10.2",
                 "phpunit/phpunit": "^10.0",
-                "symfony/var-dumper": "^6.0 || ^7.0"
+                "symfony/var-dumper": "^7.0"
             },
             "type": "library",
             "extra": {
@@ -10824,7 +10824,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-03-19T02:58:45+00:00"
+            "time": "2024-03-22T18:16:09+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
@@ -12225,16 +12225,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.14",
+            "version": "10.5.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "4cf8824bab39c2dd57b57b9f6332f7135e2a3a49"
+                "reference": "86376e05e8745ed81d88232ff92fee868247b07b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/4cf8824bab39c2dd57b57b9f6332f7135e2a3a49",
-                "reference": "4cf8824bab39c2dd57b57b9f6332f7135e2a3a49",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/86376e05e8745ed81d88232ff92fee868247b07b",
+                "reference": "86376e05e8745ed81d88232ff92fee868247b07b",
                 "shasum": ""
             },
             "require": {
@@ -12306,7 +12306,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.14"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.15"
             },
             "funding": [
                 {
@@ -12322,7 +12322,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-21T07:31:09+00:00"
+            "time": "2024-03-22T04:17:47+00:00"
         },
         {
             "name": "sebastian/cli-parser",
