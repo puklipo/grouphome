@@ -10431,16 +10431,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.5.4",
+            "version": "1.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "d0bb626a18cb561d39d7f264fc7e74da12244f16"
+                "reference": "20f4a1da2e059ae6c3c4e84140df874888009fee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/d0bb626a18cb561d39d7f264fc7e74da12244f16",
-                "reference": "d0bb626a18cb561d39d7f264fc7e74da12244f16",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/20f4a1da2e059ae6c3c4e84140df874888009fee",
+                "reference": "20f4a1da2e059ae6c3c4e84140df874888009fee",
                 "shasum": ""
             },
             "require": {
@@ -10492,9 +10492,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.5.4"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.5.5"
             },
-            "time": "2024-03-16T11:46:10+00:00"
+            "time": "2024-03-23T11:24:55+00:00"
         },
         {
             "name": "laravel-lang/attributes",
@@ -10768,16 +10768,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.0.0",
+            "version": "15.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "14e745a460d1c2100bf71c988e977af51e58d0e2"
+                "reference": "d3c1d09e0fc9d5f69a5b787721d1bc5e9449f48f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/14e745a460d1c2100bf71c988e977af51e58d0e2",
-                "reference": "14e745a460d1c2100bf71c988e977af51e58d0e2",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/d3c1d09e0fc9d5f69a5b787721d1bc5e9449f48f",
+                "reference": "d3c1d09e0fc9d5f69a5b787721d1bc5e9449f48f",
                 "shasum": ""
             },
             "require": {
@@ -10786,7 +10786,7 @@
                 "php": "^8.2"
             },
             "require-dev": {
-                "laravel-lang/status-generator": "^2.10.2",
+                "laravel-lang/status-generator": "^2.11",
                 "phpunit/phpunit": "^10.0",
                 "symfony/var-dumper": "^7.0"
             },
@@ -10824,7 +10824,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-03-22T18:16:09+00:00"
+            "time": "2024-03-23T11:53:48+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
@@ -12696,16 +12696,16 @@
         },
         {
             "name": "sebastian/environment",
-            "version": "6.0.1",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "43c751b41d74f96cbbd4e07b7aec9675651e2951"
+                "reference": "8074dbcd93529b357029f5cc5058fd3e43666984"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/43c751b41d74f96cbbd4e07b7aec9675651e2951",
-                "reference": "43c751b41d74f96cbbd4e07b7aec9675651e2951",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/8074dbcd93529b357029f5cc5058fd3e43666984",
+                "reference": "8074dbcd93529b357029f5cc5058fd3e43666984",
                 "shasum": ""
             },
             "require": {
@@ -12720,7 +12720,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "6.0-dev"
+                    "dev-main": "6.1-dev"
                 }
             },
             "autoload": {
@@ -12748,7 +12748,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/environment/issues",
                 "security": "https://github.com/sebastianbergmann/environment/security/policy",
-                "source": "https://github.com/sebastianbergmann/environment/tree/6.0.1"
+                "source": "https://github.com/sebastianbergmann/environment/tree/6.1.0"
             },
             "funding": [
                 {
@@ -12756,7 +12756,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-04-11T05:39:26+00:00"
+            "time": "2024-03-23T08:47:14+00:00"
         },
         {
             "name": "sebastian/exporter",
