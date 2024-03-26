@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.301.6",
+            "version": "3.301.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "18c0ebd71d3071304f1ea02aa9af75f95863177a"
+                "reference": "2fd8cae93e87326f2263c420fa9031ad8903a2f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/18c0ebd71d3071304f1ea02aa9af75f95863177a",
-                "reference": "18c0ebd71d3071304f1ea02aa9af75f95863177a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2fd8cae93e87326f2263c420fa9031ad8903a2f2",
+                "reference": "2fd8cae93e87326f2263c420fa9031ad8903a2f2",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.301.7"
             },
-            "time": "2024-03-22T18:05:21+00:00"
+            "time": "2024-03-25T18:14:28+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -3231,16 +3231,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.25.1",
+            "version": "3.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "abbd664eb4381102c559d358420989f835208f18"
+                "reference": "072735c56cc0da00e10716dd90d5a7f7b40b36be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/abbd664eb4381102c559d358420989f835208f18",
-                "reference": "abbd664eb4381102c559d358420989f835208f18",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/072735c56cc0da00e10716dd90d5a7f7b40b36be",
+                "reference": "072735c56cc0da00e10716dd90d5a7f7b40b36be",
                 "shasum": ""
             },
             "require": {
@@ -3305,7 +3305,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.25.1"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.26.0"
             },
             "funding": [
                 {
@@ -3317,20 +3317,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-16T12:53:19+00:00"
+            "time": "2024-03-25T11:49:53+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "3.25.1",
+            "version": "3.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "6a5be0e6d6a93574e80805c9cc108a4b63c824d8"
+                "reference": "885d0a758c71ae3cd6c503544573a1fdb8dc754f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/6a5be0e6d6a93574e80805c9cc108a4b63c824d8",
-                "reference": "6a5be0e6d6a93574e80805c9cc108a4b63c824d8",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/885d0a758c71ae3cd6c503544573a1fdb8dc754f",
+                "reference": "885d0a758c71ae3cd6c503544573a1fdb8dc754f",
                 "shasum": ""
             },
             "require": {
@@ -3370,7 +3370,7 @@
                 "storage"
             ],
             "support": {
-                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/3.25.1"
+                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/3.26.0"
             },
             "funding": [
                 {
@@ -3382,7 +3382,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-15T19:58:44+00:00"
+            "time": "2024-03-24T21:11:18+00:00"
         },
         {
             "name": "league/flysystem-local",
@@ -10768,16 +10768,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.1.1",
+            "version": "15.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "d534c38ed5219ecf779ae1985bfc5b552d54c7d1"
+                "reference": "d4305a7ba8decd2355c2f3e3d856a45d506f4cca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/d534c38ed5219ecf779ae1985bfc5b552d54c7d1",
-                "reference": "d534c38ed5219ecf779ae1985bfc5b552d54c7d1",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/d4305a7ba8decd2355c2f3e3d856a45d506f4cca",
+                "reference": "d4305a7ba8decd2355c2f3e3d856a45d506f4cca",
                 "shasum": ""
             },
             "require": {
@@ -10824,7 +10824,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-03-24T13:25:28+00:00"
+            "time": "2024-03-25T08:24:42+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
