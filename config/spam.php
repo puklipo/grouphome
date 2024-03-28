@@ -10,4 +10,5 @@ return [
     '@yagish.jp',
     '@nakayoshigc.com',
     '@kanbu.jp',
+    '@boboconsulting.com',
 ];
