@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.303.0",
+            "version": "3.303.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "34ace61fdffcea032826b0aac61ff3135b24b727"
+                "reference": "e695623e9f6f278bed69172fddb932de3705030f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/34ace61fdffcea032826b0aac61ff3135b24b727",
-                "reference": "34ace61fdffcea032826b0aac61ff3135b24b727",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e695623e9f6f278bed69172fddb932de3705030f",
+                "reference": "e695623e9f6f278bed69172fddb932de3705030f",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.303.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.303.1"
             },
-            "time": "2024-04-01T18:48:47+00:00"
+            "time": "2024-04-02T18:09:38+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -2490,16 +2490,16 @@
         },
         {
             "name": "laravel/octane",
-            "version": "v2.3.6",
+            "version": "v2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/octane.git",
-                "reference": "a7877303e61ffe4aa58c4f77774bb92457d9af02"
+                "reference": "4890de0c6a79bd163a52b99b91c727cf0020cc2c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/octane/zipball/a7877303e61ffe4aa58c4f77774bb92457d9af02",
-                "reference": "a7877303e61ffe4aa58c4f77774bb92457d9af02",
+                "url": "https://api.github.com/repos/laravel/octane/zipball/4890de0c6a79bd163a52b99b91c727cf0020cc2c",
+                "reference": "4890de0c6a79bd163a52b99b91c727cf0020cc2c",
                 "shasum": ""
             },
             "require": {
@@ -2575,7 +2575,7 @@
                 "issues": "https://github.com/laravel/octane/issues",
                 "source": "https://github.com/laravel/octane"
             },
-            "time": "2024-03-26T13:30:26+00:00"
+            "time": "2024-04-01T13:36:49+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -3645,16 +3645,16 @@
         },
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "9.7.0",
+            "version": "9.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "a56b11adc87d564a89b9865fe38c63892588e3d7"
+                "reference": "ecc54b7581dd2e4cb6ce8ef608a6f3bea30df3b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/a56b11adc87d564a89b9865fe38c63892588e3d7",
-                "reference": "a56b11adc87d564a89b9865fe38c63892588e3d7",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/ecc54b7581dd2e4cb6ce8ef608a6f3bea30df3b0",
+                "reference": "ecc54b7581dd2e4cb6ce8ef608a6f3bea30df3b0",
                 "shasum": ""
             },
             "require": {
@@ -3669,7 +3669,7 @@
                 "phpmd/phpmd": "2.15.0",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.2",
-                "squizlabs/php_codesniffer": "3.8.1"
+                "squizlabs/php_codesniffer": "3.9.1"
             },
             "type": "library",
             "extra": {
@@ -3736,22 +3736,22 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/9.7.0"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/9.7.1"
             },
-            "time": "2024-02-06T05:58:12+00:00"
+            "time": "2024-04-02T01:19:33+00:00"
         },
         {
             "name": "livewire/livewire",
-            "version": "v3.4.9",
+            "version": "v3.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/livewire/livewire.git",
-                "reference": "c65b3f0798ab2c9338213ede3588c3cdf4e6fcc0"
+                "reference": "6f90e2d7f8e80a97a7406c22a0fbc61ca1256ed9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/livewire/livewire/zipball/c65b3f0798ab2c9338213ede3588c3cdf4e6fcc0",
-                "reference": "c65b3f0798ab2c9338213ede3588c3cdf4e6fcc0",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/6f90e2d7f8e80a97a7406c22a0fbc61ca1256ed9",
+                "reference": "6f90e2d7f8e80a97a7406c22a0fbc61ca1256ed9",
                 "shasum": ""
             },
             "require": {
@@ -3761,6 +3761,7 @@
                 "illuminate/validation": "^10.0|^11.0",
                 "league/mime-type-detection": "^1.9",
                 "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
                 "symfony/http-kernel": "^6.2|^7.0"
             },
             "require-dev": {
@@ -3768,8 +3769,8 @@
                 "laravel/framework": "^10.0|^11.0",
                 "laravel/prompts": "^0.1.6",
                 "mockery/mockery": "^1.3.1",
-                "orchestra/testbench": "8.20.0|^9.0",
-                "orchestra/testbench-dusk": "8.20.0|^9.0",
+                "orchestra/testbench": "^8.21.0|^9.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1",
                 "phpunit/phpunit": "^10.4",
                 "psy/psysh": "^0.11.22|^0.12"
             },
@@ -3805,7 +3806,7 @@
             "description": "A front-end framework for Laravel.",
             "support": {
                 "issues": "https://github.com/livewire/livewire/issues",
-                "source": "https://github.com/livewire/livewire/tree/v3.4.9"
+                "source": "https://github.com/livewire/livewire/tree/v3.4.10"
             },
             "funding": [
                 {
@@ -3813,7 +3814,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-14T14:03:32+00:00"
+            "time": "2024-04-02T14:22:50+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -4153,16 +4154,16 @@
         },
         {
             "name": "matanyadaev/laravel-eloquent-spatial",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/MatanYadaev/laravel-eloquent-spatial.git",
-                "reference": "e840f42700f4d296cd973770ae96d82537cb8f21"
+                "reference": "2ede87454c843644ebb7ac27f0231bbcddd28023"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/e840f42700f4d296cd973770ae96d82537cb8f21",
-                "reference": "e840f42700f4d296cd973770ae96d82537cb8f21",
+                "url": "https://api.github.com/repos/MatanYadaev/laravel-eloquent-spatial/zipball/2ede87454c843644ebb7ac27f0231bbcddd28023",
+                "reference": "2ede87454c843644ebb7ac27f0231bbcddd28023",
                 "shasum": ""
             },
             "require": {
@@ -4207,9 +4208,9 @@
             "homepage": "https://github.com/matanyadaev/laravel-eloquent-spatial",
             "support": {
                 "issues": "https://github.com/MatanYadaev/laravel-eloquent-spatial/issues",
-                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/4.2.0"
+                "source": "https://github.com/MatanYadaev/laravel-eloquent-spatial/tree/4.2.1"
             },
-            "time": "2024-03-13T23:32:28+00:00"
+            "time": "2024-04-02T18:42:41+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -5767,16 +5768,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.2",
+            "version": "v0.12.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "9185c66c2165bbf4d71de78a69dccf4974f9538d"
+                "reference": "b6b6cce7d3ee8fbf31843edce5e8f5a72eff4a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/9185c66c2165bbf4d71de78a69dccf4974f9538d",
-                "reference": "9185c66c2165bbf4d71de78a69dccf4974f9538d",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/b6b6cce7d3ee8fbf31843edce5e8f5a72eff4a73",
+                "reference": "b6b6cce7d3ee8fbf31843edce5e8f5a72eff4a73",
                 "shasum": ""
             },
             "require": {
@@ -5840,9 +5841,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.2"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.3"
             },
-            "time": "2024-03-17T01:53:00+00:00"
+            "time": "2024-04-02T15:57:53+00:00"
         },
         {
             "name": "puklipo/laravel-vapor-gzip",
@@ -11264,16 +11265,16 @@
         },
         {
             "name": "laravel/pint",
-            "version": "v1.15.0",
+            "version": "v1.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/pint.git",
-                "reference": "c52de679b3ac01207016c179d7ce173e4be128c4"
+                "reference": "5f288b5e79938cc72f5c298d384e639de87507c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/pint/zipball/c52de679b3ac01207016c179d7ce173e4be128c4",
-                "reference": "c52de679b3ac01207016c179d7ce173e4be128c4",
+                "url": "https://api.github.com/repos/laravel/pint/zipball/5f288b5e79938cc72f5c298d384e639de87507c6",
+                "reference": "5f288b5e79938cc72f5c298d384e639de87507c6",
                 "shasum": ""
             },
             "require": {
@@ -11284,13 +11285,13 @@
                 "php": "^8.1.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.49.0",
-                "illuminate/view": "^10.43.0",
-                "larastan/larastan": "^2.8.1",
+                "friendsofphp/php-cs-fixer": "^3.52.1",
+                "illuminate/view": "^10.48.4",
+                "larastan/larastan": "^2.9.2",
                 "laravel-zero/framework": "^10.3.0",
-                "mockery/mockery": "^1.6.7",
+                "mockery/mockery": "^1.6.11",
                 "nunomaduro/termwind": "^1.15.1",
-                "pestphp/pest": "^2.33.6"
+                "pestphp/pest": "^2.34.5"
             },
             "bin": [
                 "builds/pint"
@@ -11326,7 +11327,7 @@
                 "issues": "https://github.com/laravel/pint/issues",
                 "source": "https://github.com/laravel/pint"
             },
-            "time": "2024-03-26T16:40:24+00:00"
+            "time": "2024-04-02T14:28:47+00:00"
         },
         {
             "name": "laravel/sail",
@@ -13459,16 +13460,16 @@
         },
         {
             "name": "spatie/laravel-ignition",
-            "version": "2.5.0",
+            "version": "2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-ignition.git",
-                "reference": "e23f4e8ce6644dc3d68b9d8a0aed3beaca0d6ada"
+                "reference": "0c864b3cbd66ce67a2096c5f743e07ce8f1d6ab9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/e23f4e8ce6644dc3d68b9d8a0aed3beaca0d6ada",
-                "reference": "e23f4e8ce6644dc3d68b9d8a0aed3beaca0d6ada",
+                "url": "https://api.github.com/repos/spatie/laravel-ignition/zipball/0c864b3cbd66ce67a2096c5f743e07ce8f1d6ab9",
+                "reference": "0c864b3cbd66ce67a2096c5f743e07ce8f1d6ab9",
                 "shasum": ""
             },
             "require": {
@@ -13547,7 +13548,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-29T14:14:55+00:00"
+            "time": "2024-04-02T06:30:22+00:00"
         },
         {
             "name": "symfony/polyfill-php81",
