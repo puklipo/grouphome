@@ -2,13 +2,14 @@
 
 //迷惑メール送信元はブロック
 return [
-    '@e.entrenet.jp',
-    '@allegretto.co.jp',
-    '@intermind.jp',
-    '@propolife.co.jp',
-    '@pitpa.jp',
-    '@yagish.jp',
-    '@nakayoshigc.com',
-    '@kanbu.jp',
-    '@boboconsulting.com',
+    '*@e.entrenet.jp',
+    '*@allegretto.co.jp',
+    '*@intermind.jp',
+    '*@propolife.co.jp',
+    '*@pitpa.jp',
+    '*@yagish.jp',
+    '*@nakayoshigc.com',
+    '*@kanbu.jp',
+    '*@boboconsulting.com',
+    'd.yamashita.nextlevel@gmail.com',
 ];
