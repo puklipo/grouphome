@@ -19,6 +19,7 @@ use function Illuminate\Events\queueable;
 
 /**
  * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
+ *
  * @mixin IdeHelperHome
  */
 class Home extends Model
@@ -33,12 +34,6 @@ class Home extends Model
      * @var int
      */
     protected $perPage = 20;
-
-    protected $casts = [
-        'released_at' => 'date:Y-m-d',
-        'location' => Point::class,
-        'tel' => Telephone::class,
-    ];
 
     public $incrementing = false;
 
@@ -57,6 +52,15 @@ class Home extends Model
     ];
 
     protected $with = ['pref', 'type', 'photo'];
+
+    protected function casts(): array
+    {
+        return [
+            'released_at' => 'date:Y-m-d',
+            'location' => Point::class,
+            'tel' => Telephone::class,
+        ];
+    }
 
     protected static function booted(): void
     {

@@ -25,16 +25,16 @@ trait HomeScope
     public function scopeKeywordSearch(Builder $query, ?string $search): Builder
     {
         return $query->when($search, function (Builder $query, $search) {
-            $query->where(function (Builder $query) use ($search) {
-                $query->where('name', 'like', "%$search%")
-                    ->orWhere('address', 'like', "%$search%")
-                    ->orWhere('company', 'like', "%$search%")
-                    ->orWhere('introduction', 'like', "%$search%")
-                    ->orWhere('houserule', 'like', "%$search%")
-                    ->orWhere('url', 'like', "%$search%")
-                    ->orWhere('wam', 'like', "%$search%")
-                    ->orWhere('id', $search);
-            });
+            $query->whereAny([
+                'name',
+                'address',
+                'company',
+                'introduction',
+                'houserule',
+                'url',
+                'wam',
+                'id',
+            ], 'like', "%$search%");
         });
     }
 

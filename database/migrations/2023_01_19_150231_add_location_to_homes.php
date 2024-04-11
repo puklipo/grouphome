@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('homes', function (Blueprint $table) {
-            $table->geometry('location')->after('map')->nullable()->comment('緯度経度');
+            $table->geometry('location', subtype: 'point')->after('map')->nullable()->comment('緯度経度');
         });
     }
 
