@@ -17,7 +17,7 @@ use Maatwebsite\Excel\Row;
 use Maatwebsite\Excel\Validators\Failure;
 use MatanYadaev\EloquentSpatial\Objects\Point;
 
-class WamImport implements OnEachRow, WithHeadingRow, WithBatchInserts, WithChunkReading, SkipsEmptyRows, WithValidation, SkipsOnFailure
+class WamImport implements OnEachRow, SkipsEmptyRows, SkipsOnFailure, WithBatchInserts, WithChunkReading, WithHeadingRow, WithValidation
 {
     use Importable;
     use WithKana;
