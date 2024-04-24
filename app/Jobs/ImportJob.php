@@ -8,7 +8,6 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Queue\SerializesModels;
-use Maatwebsite\Excel\Imports\HeadingRowFormatter;
 
 class ImportJob implements ShouldQueue
 {
@@ -24,13 +23,9 @@ class ImportJob implements ShouldQueue
 
     /**
      * Execute the job.
-     *
-     * @return void
      */
     public function handle(): void
     {
-        HeadingRowFormatter::default('none');
-
         try {
             app(WamImport::class)->import(resource_path('csv/wam.csv'));
         } catch (\Exception $e) {
