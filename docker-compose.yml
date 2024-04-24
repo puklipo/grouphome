@@ -24,6 +24,15 @@ services:
         depends_on:
             - mysql
             - redis
+            - queue
+    queue:
+        image: sail-8.3/app
+        command: php artisan queue:listen
+        networks:
+            - sail
+        depends_on:
+            - mysql
+            - redis
     mysql:
         image: 'mysql/mysql-server:8.0'
         ports:
