@@ -27,6 +27,11 @@ services:
             - queue
     queue:
         image: sail-8.3/app
+        environment:
+            WWWUSER: '${WWWUSER}'
+            LARAVEL_SAIL: 1
+        volumes:
+            - '.:/var/www/html'
         command: php artisan queue:listen
         networks:
             - sail
