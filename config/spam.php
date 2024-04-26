@@ -13,4 +13,5 @@ return [
     '*@boboconsulting.com',
     'd.yamashita.nextlevel@gmail.com',
     'info@alpha-jinzai.com',
+    'info@legal-information.biz',
 ];
