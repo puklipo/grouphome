@@ -65,7 +65,7 @@ class Home extends Model
     protected static function booted(): void
     {
         static::created(queueable(function (Home $home) {
-            info('IndexNow: '.IndexNow::submit(route('home.show', $home)));
+            IndexNow::submit(route('home.show', $home));
         })->delay(now()->addMinutes(10)));
     }
 
@@ -118,10 +118,10 @@ class Home extends Model
     {
         return Attribute::make(
             get: fn ($value) => Str::of($this->introduction ?? $this->address)
-                ->replace(PHP_EOL, ' ')
-                ->limit(200)
-                ->trim()
-                ->value()
+                                   ->replace(PHP_EOL, ' ')
+                                   ->limit(200)
+                                   ->trim()
+                                   ->value()
         );
     }
 }
