@@ -12,11 +12,9 @@ class IndexNow
             return 0;
         }
 
-        $response = Http::get(config('indexnow.search_engine'), [
+        return Http::get(config('indexnow.search_engine'), [
             'url' => $url,
             'key' => config('indexnow.key'),
-        ]);
-
-        return $response->status();
+        ])->status();
     }
 }
