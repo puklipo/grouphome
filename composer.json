@@ -10,7 +10,6 @@
         "laravel/folio": "^1.0",
         "laravel/framework": "^11.0",
         "laravel/jetstream": "^5.0",
-        "laravel/octane": "^2.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.8",
         "laravel/vapor-cli": "^1.54",
