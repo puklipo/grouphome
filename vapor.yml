@@ -12,9 +12,6 @@ environments:
         storage: pcs-grouphome
         queue-timeout: 600
         queue-memory: 2048
-        #octane: true
-        #octane-database-session-persist: true
-        #octane-database-session-ttl: 10
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
@@ -35,9 +32,6 @@ environments:
         storage: staging-pcs-grouphome
         queue-timeout: 600
         queue-memory: 2048
-        #octane: true
-        #octane-database-session-persist: true
-        #octane-database-session-ttl: 10
         build:
             - 'COMPOSER_MIRROR_PATH_REPOS=1 composer install --no-dev'
             - 'php artisan event:cache'
