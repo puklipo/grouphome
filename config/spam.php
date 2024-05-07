@@ -14,4 +14,5 @@ return [
     'd.yamashita.nextlevel@gmail.com',
     'info@alpha-jinzai.com',
     'info@legal-information.biz',
+    'info@n-kenwa.or.jp',
 ];
