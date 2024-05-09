@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.306.1",
+            "version": "3.306.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "99e13a3647edffba9110948acc85052e3169e46a"
+                "reference": "0de11adba8f174a76346c9dbb175c2030ff5c8f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/99e13a3647edffba9110948acc85052e3169e46a",
-                "reference": "99e13a3647edffba9110948acc85052e3169e46a",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0de11adba8f174a76346c9dbb175c2030ff5c8f2",
+                "reference": "0de11adba8f174a76346c9dbb175c2030ff5c8f2",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.306.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.306.2"
             },
-            "time": "2024-05-07T18:11:42+00:00"
+            "time": "2024-05-08T18:07:54+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -4375,16 +4375,16 @@
         },
         {
             "name": "paragonie/constant_time_encoding",
-            "version": "v2.6.3",
+            "version": "v2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/constant_time_encoding.git",
-                "reference": "58c3f47f650c94ec05a151692652a868995d2938"
+                "reference": "52a0d99e69f56b9ec27ace92ba56897fe6993105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/58c3f47f650c94ec05a151692652a868995d2938",
-                "reference": "58c3f47f650c94ec05a151692652a868995d2938",
+                "url": "https://api.github.com/repos/paragonie/constant_time_encoding/zipball/52a0d99e69f56b9ec27ace92ba56897fe6993105",
+                "reference": "52a0d99e69f56b9ec27ace92ba56897fe6993105",
                 "shasum": ""
             },
             "require": {
@@ -4438,7 +4438,7 @@
                 "issues": "https://github.com/paragonie/constant_time_encoding/issues",
                 "source": "https://github.com/paragonie/constant_time_encoding"
             },
-            "time": "2022-06-14T06:56:20+00:00"
+            "time": "2024-05-08T12:18:48+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -9882,16 +9882,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.8.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "dc4f19aa5c6898854a214257cc1927d2f18bcd91"
+                "reference": "363e07c87d9d78470e27534c4b7593f41388f711"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/dc4f19aa5c6898854a214257cc1927d2f18bcd91",
-                "reference": "dc4f19aa5c6898854a214257cc1927d2f18bcd91",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/363e07c87d9d78470e27534c4b7593f41388f711",
+                "reference": "363e07c87d9d78470e27534c4b7593f41388f711",
                 "shasum": ""
             },
             "require": {
@@ -9943,9 +9943,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.0"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.1"
             },
-            "time": "2024-05-05T17:50:13+00:00"
+            "time": "2024-05-06T08:48:33+00:00"
         },
         {
             "name": "laravel-lang/attributes",
