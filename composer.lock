@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.306.4",
+            "version": "3.306.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f50ff987dbe6d3e60d68794970422eae71ffb525"
+                "reference": "07fa90825034bf64ab3fdddc1e1f1ca2fa33d6c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f50ff987dbe6d3e60d68794970422eae71ffb525",
-                "reference": "f50ff987dbe6d3e60d68794970422eae71ffb525",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/07fa90825034bf64ab3fdddc1e1f1ca2fa33d6c2",
+                "reference": "07fa90825034bf64ab3fdddc1e1f1ca2fa33d6c2",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.306.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.306.5"
             },
-            "time": "2024-05-10T18:23:57+00:00"
+            "time": "2024-05-13T18:04:50+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -10101,16 +10101,16 @@
         },
         {
             "name": "laravel-lang/http-statuses",
-            "version": "3.8.2",
+            "version": "3.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/http-statuses.git",
-                "reference": "b408ea74292df2e4fbec2be93858a3e697189b29"
+                "reference": "2f19b67fcdb2134804b0b8ee399f5abab4720d9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/b408ea74292df2e4fbec2be93858a3e697189b29",
-                "reference": "b408ea74292df2e4fbec2be93858a3e697189b29",
+                "url": "https://api.github.com/repos/Laravel-Lang/http-statuses/zipball/2f19b67fcdb2134804b0b8ee399f5abab4720d9a",
+                "reference": "2f19b67fcdb2134804b0b8ee399f5abab4720d9a",
                 "shasum": ""
             },
             "require": {
@@ -10162,9 +10162,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/http-statuses/issues",
-                "source": "https://github.com/Laravel-Lang/http-statuses/tree/3.8.2"
+                "source": "https://github.com/Laravel-Lang/http-statuses/tree/3.8.3"
             },
-            "time": "2024-03-11T01:33:17+00:00"
+            "time": "2024-04-22T14:47:25+00:00"
         },
         {
             "name": "laravel-lang/json-fallback",
