@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.306.5",
+            "version": "3.306.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "07fa90825034bf64ab3fdddc1e1f1ca2fa33d6c2"
+                "reference": "79a618bb5624e52f31de7083a26d1749050aa5a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/07fa90825034bf64ab3fdddc1e1f1ca2fa33d6c2",
-                "reference": "07fa90825034bf64ab3fdddc1e1f1ca2fa33d6c2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/79a618bb5624e52f31de7083a26d1749050aa5a0",
+                "reference": "79a618bb5624e52f31de7083a26d1749050aa5a0",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.306.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.306.6"
             },
-            "time": "2024-05-13T18:04:50+00:00"
+            "time": "2024-05-14T18:05:44+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -9882,16 +9882,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.8.1",
+            "version": "1.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "363e07c87d9d78470e27534c4b7593f41388f711"
+                "reference": "aed921f3991d2c84f9e575ed80534c068db9602b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/363e07c87d9d78470e27534c4b7593f41388f711",
-                "reference": "363e07c87d9d78470e27534c4b7593f41388f711",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/aed921f3991d2c84f9e575ed80534c068db9602b",
+                "reference": "aed921f3991d2c84f9e575ed80534c068db9602b",
                 "shasum": ""
             },
             "require": {
@@ -9943,22 +9943,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.1"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.2"
             },
-            "time": "2024-05-06T08:48:33+00:00"
+            "time": "2024-05-14T06:56:27+00:00"
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.10.4",
+            "version": "2.10.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "e008f24e75fd52f2e4748ebb16c184bd40eb19e9"
+                "reference": "01d92b752802062c533efc2e49d608702a8644f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/e008f24e75fd52f2e4748ebb16c184bd40eb19e9",
-                "reference": "e008f24e75fd52f2e4748ebb16c184bd40eb19e9",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/01d92b752802062c533efc2e49d608702a8644f4",
+                "reference": "01d92b752802062c533efc2e49d608702a8644f4",
                 "shasum": ""
             },
             "require": {
@@ -10012,9 +10012,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.10.4"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.10.5"
             },
-            "time": "2024-05-06T07:00:28+00:00"
+            "time": "2024-05-13T15:52:47+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -10219,16 +10219,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.3.0",
+            "version": "15.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "84b14c6c70daee9c5f18c3f5058a8e4e71c836ba"
+                "reference": "71a42b41268cf9e45803d00c79ff08cde252baee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/84b14c6c70daee9c5f18c3f5058a8e4e71c836ba",
-                "reference": "84b14c6c70daee9c5f18c3f5058a8e4e71c836ba",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/71a42b41268cf9e45803d00c79ff08cde252baee",
+                "reference": "71a42b41268cf9e45803d00c79ff08cde252baee",
                 "shasum": ""
             },
             "require": {
@@ -10278,7 +10278,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-05-11T11:14:57+00:00"
+            "time": "2024-05-13T15:53:27+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
