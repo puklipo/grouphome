@@ -15,4 +15,5 @@ return [
     'info@alpha-jinzai.com',
     'info@legal-information.biz',
     'info@n-kenwa.or.jp',
+    'sales.a@if-emafia.net',
 ];
