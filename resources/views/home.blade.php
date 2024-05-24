@@ -15,9 +15,17 @@
         <div class="sm:px-6 lg:px-8">
             <x-breadcrumbs-back/>
 
-            <div x-data @svgmap-click.dot="location.href = $event.target.id.replace('-', '/')">
+            <div>
                 @includeIf('map')
             </div>
+
+            @pushOnce('scripts')
+                <script>
+                    document.addEventListener('svgmap.click', function(event) {
+                        location.href = event.target.id.replace('-', '/')
+                    }, false)
+                </script>
+            @endPushOnce
 
             <div class="p-3 sm:hidden print:hidden">
                 @includeIf('mobile-menu')
