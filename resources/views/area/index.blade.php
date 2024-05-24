@@ -29,9 +29,17 @@
 
                 <div id="index">
 
-                    <div x-data @svgmap-click.dot="location.hash = $event.target.getAttribute('data-name')">
+                    <div>
                         @includeIf('map')
                     </div>
+
+                    @pushOnce('scripts')
+                        <script>
+                            document.addEventListener('svgmap.click', function (event) {
+                                location.hash = event.target.getAttribute('data-name')
+                            }, false)
+                        </script>
+                    @endPushOnce
 
                     @foreach($prefs as $pref)
                         <a href="#{{ $pref->name }}"
