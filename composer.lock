@@ -10075,16 +10075,16 @@
         },
         {
             "name": "laravel-lang/config",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/config.git",
-                "reference": "9deb92b5e15f41f29f5ce7cfc53e67ae472a4665"
+                "reference": "ae72f829b55bc2c14e195b6d0a38331b304d7f5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/9deb92b5e15f41f29f5ce7cfc53e67ae472a4665",
-                "reference": "9deb92b5e15f41f29f5ce7cfc53e67ae472a4665",
+                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/ae72f829b55bc2c14e195b6d0a38331b304d7f5f",
+                "reference": "ae72f829b55bc2c14e195b6d0a38331b304d7f5f",
                 "shasum": ""
             },
             "require": {
@@ -10143,9 +10143,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/config/issues",
-                "source": "https://github.com/Laravel-Lang/config/tree/1.0.3"
+                "source": "https://github.com/Laravel-Lang/config/tree/1.1.0"
             },
-            "time": "2024-06-04T10:22:13+00:00"
+            "time": "2024-06-09T00:55:31+00:00"
         },
         {
             "name": "laravel-lang/http-statuses",
