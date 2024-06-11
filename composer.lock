@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.311.2",
+            "version": "3.312.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "731cd73062909594c5f7443413c4c4c40ed1c25c"
+                "reference": "53b233072f707d2abfd62b0df4bc2dc27caf3274"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/731cd73062909594c5f7443413c4c4c40ed1c25c",
-                "reference": "731cd73062909594c5f7443413c4c4c40ed1c25c",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/53b233072f707d2abfd62b0df4bc2dc27caf3274",
+                "reference": "53b233072f707d2abfd62b0df4bc2dc27caf3274",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.311.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.312.0"
             },
-            "time": "2024-06-07T18:05:33+00:00"
+            "time": "2024-06-10T18:04:10+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -9161,16 +9161,16 @@
         },
         {
             "name": "composer/class-map-generator",
-            "version": "1.3.2",
+            "version": "1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/class-map-generator.git",
-                "reference": "acd227952154850d0bb7d65caa4f9edf9cd806a7"
+                "reference": "61804f9973685ec7bead0fb7fe022825e3cd418e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/acd227952154850d0bb7d65caa4f9edf9cd806a7",
-                "reference": "acd227952154850d0bb7d65caa4f9edf9cd806a7",
+                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/61804f9973685ec7bead0fb7fe022825e3cd418e",
+                "reference": "61804f9973685ec7bead0fb7fe022825e3cd418e",
                 "shasum": ""
             },
             "require": {
@@ -9214,7 +9214,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/class-map-generator/issues",
-                "source": "https://github.com/composer/class-map-generator/tree/1.3.2"
+                "source": "https://github.com/composer/class-map-generator/tree/1.3.3"
             },
             "funding": [
                 {
@@ -9230,7 +9230,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-31T19:45:56+00:00"
+            "time": "2024-06-10T11:53:54+00:00"
         },
         {
             "name": "composer/pcre",
@@ -10076,16 +10076,16 @@
         },
         {
             "name": "laravel-lang/config",
-            "version": "1.1.1",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/config.git",
-                "reference": "902928dd9010b3dcccd0c35477e5aaf721beb49e"
+                "reference": "7c21c7a95b4d200806e339373135ff4b79684f09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/902928dd9010b3dcccd0c35477e5aaf721beb49e",
-                "reference": "902928dd9010b3dcccd0c35477e5aaf721beb49e",
+                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/7c21c7a95b4d200806e339373135ff4b79684f09",
+                "reference": "7c21c7a95b4d200806e339373135ff4b79684f09",
                 "shasum": ""
             },
             "require": {
@@ -10144,9 +10144,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/config/issues",
-                "source": "https://github.com/Laravel-Lang/config/tree/1.1.1"
+                "source": "https://github.com/Laravel-Lang/config/tree/1.2.0"
             },
-            "time": "2024-06-09T15:20:01+00:00"
+            "time": "2024-06-10T23:58:47+00:00"
         },
         {
             "name": "laravel-lang/http-statuses",
@@ -10766,16 +10766,16 @@
         },
         {
             "name": "laravel-lang/routes",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/routes.git",
-                "reference": "82f77b4c9e15d8136448f99519ee1c0351d4c58c"
+                "reference": "0598d5acd4a408cef1e9fa82ce2d087fea8571a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/routes/zipball/82f77b4c9e15d8136448f99519ee1c0351d4c58c",
-                "reference": "82f77b4c9e15d8136448f99519ee1c0351d4c58c",
+                "url": "https://api.github.com/repos/Laravel-Lang/routes/zipball/0598d5acd4a408cef1e9fa82ce2d087fea8571a2",
+                "reference": "0598d5acd4a408cef1e9fa82ce2d087fea8571a2",
                 "shasum": ""
             },
             "require": {
@@ -10828,7 +10828,7 @@
                 "issues": "https://github.com/Laravel-Lang/routes/issues",
                 "source": "https://github.com/Laravel-Lang/routes"
             },
-            "time": "2024-06-09T19:08:12+00:00"
+            "time": "2024-06-10T23:44:14+00:00"
         },
         {
             "name": "laravel/pint",
