@@ -27,9 +27,4 @@ class HomeCreateForm extends Component
 
         $this->redirectRoute('home.show', $home);
     }
-
-    public function render()
-    {
-        return view('livewire.admin.home-create-form');
-    }
 }
