@@ -18,7 +18,7 @@ class Spammer implements ValidationRule
         collect(config('spam'))
             ->each(function ($mail) use ($value, $fail) {
                 if (Str::is($mail, $value)) {
-                    info('Spam: '.$value);
+                    logger()->warning('Spam: '.$value);
 
                     $fail('');
 
