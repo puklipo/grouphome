@@ -11,6 +11,7 @@ use App\Http\Controllers\Operator\DashboardController;
 use App\Http\Controllers\Operator\RequestController;
 use App\Http\Controllers\PrefController;
 use App\Http\Controllers\SitemapController;
+use App\Livewire\Admin\HomeCreateForm;
 use Illuminate\Support\Facades\Route;
 
 Route::view(uri: '/', view: 'home')->name('index');
@@ -41,6 +42,7 @@ Route::prefix('admin')->middleware(['auth:sanctum', config('jetstream.auth_sessi
     Route::view(uri: '/', view: 'admin.index')->name('admin');
     Route::resource('operator-requests', OperatorRequestController::class);
     Route::view('contacts', 'admin.contacts')->name('admin.contacts');
+    Route::get('home-create', HomeCreateForm::class)->name('admin.home-create');
 
     Route::controller(OperatorHomeController::class)
         ->prefix('operator-home')

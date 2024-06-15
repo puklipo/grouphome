@@ -27,6 +27,13 @@
                         <span class="text-gray-500 ml-3">事業者とグループホームの紐付けを解除。</span>
                     </li>
                     <li class="p-3">
+                        <a href="{{ route('admin.home-create') }}"
+                           class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
+                            {{ __('グループホームを一時的に追加') }}
+                        </a>
+                        <span class="text-gray-500 ml-3">WAM NETに登録される前に一時的に追加する。WAM登録後は上書きされる。</span>
+                    </li>
+                    <li class="p-3">
                         <a href="{{ route('admin.contacts') }}"
                            class="text-xl text-indigo-500 dark:text-white font-bold hover:underline">
                             {{ __('お問い合わせ一覧') }} [{{ \App\Models\Contact::count() }}]
