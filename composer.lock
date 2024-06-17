@@ -10076,16 +10076,16 @@
         },
         {
             "name": "laravel-lang/config",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/config.git",
-                "reference": "944e073a245f67315d524943faff04f03ac4a9b3"
+                "reference": "401350e36337338c20cefb0854473d55dc15364d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/944e073a245f67315d524943faff04f03ac4a9b3",
-                "reference": "944e073a245f67315d524943faff04f03ac4a9b3",
+                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/401350e36337338c20cefb0854473d55dc15364d",
+                "reference": "401350e36337338c20cefb0854473d55dc15364d",
                 "shasum": ""
             },
             "require": {
@@ -10144,9 +10144,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/config/issues",
-                "source": "https://github.com/Laravel-Lang/config/tree/1.4.2"
+                "source": "https://github.com/Laravel-Lang/config/tree/1.5.0"
             },
-            "time": "2024-06-12T12:25:22+00:00"
+            "time": "2024-06-17T00:10:27+00:00"
         },
         {
             "name": "laravel-lang/http-statuses",
