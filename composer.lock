@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.315.0",
+            "version": "3.315.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a7f6026f00771025c32548dac321541face0dedc"
+                "reference": "13871330833e167d098240dab74b8b069b9b07e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a7f6026f00771025c32548dac321541face0dedc",
-                "reference": "a7f6026f00771025c32548dac321541face0dedc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/13871330833e167d098240dab74b8b069b9b07e3",
+                "reference": "13871330833e167d098240dab74b8b069b9b07e3",
                 "shasum": ""
             },
             "require": {
@@ -151,9 +151,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.315.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.315.1"
             },
-            "time": "2024-06-26T18:08:22+00:00"
+            "time": "2024-06-27T18:03:53+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -278,6 +278,7 @@
                 "issues": "https://github.com/biscolab/laravel-recaptcha/issues",
                 "source": "https://github.com/biscolab/laravel-recaptcha/tree/v6.1.0"
             },
+            "abandoned": true,
             "time": "2024-03-27T11:06:21+00:00"
         },
         {
@@ -1769,16 +1770,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v11.12.0",
+            "version": "v11.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "9a6d9cea83cfa6b9e8eda05c89741d0411d8ebe8"
+                "reference": "92deaa4f037ff100e36809443811301819a8cf84"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/9a6d9cea83cfa6b9e8eda05c89741d0411d8ebe8",
-                "reference": "9a6d9cea83cfa6b9e8eda05c89741d0411d8ebe8",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/92deaa4f037ff100e36809443811301819a8cf84",
+                "reference": "92deaa4f037ff100e36809443811301819a8cf84",
                 "shasum": ""
             },
             "require": {
@@ -1970,7 +1971,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-06-25T19:33:56+00:00"
+            "time": "2024-06-27T09:04:50+00:00"
         },
         {
             "name": "laravel/jetstream",
@@ -10075,16 +10076,16 @@
         },
         {
             "name": "laravel-lang/config",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/config.git",
-                "reference": "ecec07c362dc432d4d11cfe3b6d797666d976849"
+                "reference": "65d5b15c09258d9c86cbe40f8a4c74148256cafd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/ecec07c362dc432d4d11cfe3b6d797666d976849",
-                "reference": "ecec07c362dc432d4d11cfe3b6d797666d976849",
+                "url": "https://api.github.com/repos/Laravel-Lang/config/zipball/65d5b15c09258d9c86cbe40f8a4c74148256cafd",
+                "reference": "65d5b15c09258d9c86cbe40f8a4c74148256cafd",
                 "shasum": ""
             },
             "require": {
@@ -10143,9 +10144,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/config/issues",
-                "source": "https://github.com/Laravel-Lang/config/tree/1.6.0"
+                "source": "https://github.com/Laravel-Lang/config/tree/1.7.0"
             },
-            "time": "2024-06-20T12:09:31+00:00"
+            "time": "2024-06-27T20:42:54+00:00"
         },
         {
             "name": "laravel-lang/http-statuses",
