@@ -6,7 +6,7 @@
 
         <x-validation-errors class="mb-4"/>
 
-        <form method="POST" action="{{ route('register') }}" id="{{ getFormId() }}">
+        <form method="POST" action="{{ route('register') }}">
             @csrf
 
             <div>
@@ -56,9 +56,7 @@
                     {{ __('Already registered?') }}
                 </a>
 
-                <x-button class="ml-4 g-recaptcha"
-                              data-callback="biscolabLaravelReCaptcha"
-                              data-sitekey="{{ config('recaptcha.api_site_key') }}">
+                <x-button class="ml-4">
                     {{ __('Register') }}
                 </x-button>
             </div>
