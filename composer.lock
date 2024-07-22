@@ -2946,16 +2946,16 @@
         },
         {
             "name": "linecorp/line-bot-sdk",
-            "version": "9.9.0",
+            "version": "9.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/line/line-bot-sdk-php.git",
-                "reference": "3278acee0b895481fa7ca1605db4496078ff0b2a"
+                "reference": "4e5d4bd4d6644761dfc78132a4ce116d0063e76a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/3278acee0b895481fa7ca1605db4496078ff0b2a",
-                "reference": "3278acee0b895481fa7ca1605db4496078ff0b2a",
+                "url": "https://api.github.com/repos/line/line-bot-sdk-php/zipball/4e5d4bd4d6644761dfc78132a4ce116d0063e76a",
+                "reference": "4e5d4bd4d6644761dfc78132a4ce116d0063e76a",
                 "shasum": ""
             },
             "require": {
@@ -2970,7 +2970,7 @@
                 "phpmd/phpmd": "2.15.0",
                 "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^10.2",
-                "squizlabs/php_codesniffer": "3.9.1"
+                "squizlabs/php_codesniffer": "3.10.2"
             },
             "type": "library",
             "extra": {
@@ -3037,9 +3037,9 @@
             ],
             "support": {
                 "issues": "https://github.com/line/line-bot-sdk-php/issues",
-                "source": "https://github.com/line/line-bot-sdk-php/tree/9.9.0"
+                "source": "https://github.com/line/line-bot-sdk-php/tree/9.9.1"
             },
-            "time": "2024-04-17T08:41:37+00:00"
+            "time": "2024-07-22T01:17:47+00:00"
         },
         {
             "name": "livewire/livewire",
