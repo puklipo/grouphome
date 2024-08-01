@@ -16,4 +16,5 @@ return [
     'info@legal-information.biz',
     'info@n-kenwa.or.jp',
     'sales.a@if-emafia.net',
+    'tama.hira@mamayoro.com',
 ];
