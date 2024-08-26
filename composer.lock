@@ -5544,16 +5544,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "3.2.2",
+            "version": "3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "3c5aead01628fe8c0b9651fb2da7ab8b442d07c8"
+                "reference": "6608b96fd369554f22f5fbee14035ea5e8298a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/3c5aead01628fe8c0b9651fb2da7ab8b442d07c8",
-                "reference": "3c5aead01628fe8c0b9651fb2da7ab8b442d07c8",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/6608b96fd369554f22f5fbee14035ea5e8298a73",
+                "reference": "6608b96fd369554f22f5fbee14035ea5e8298a73",
                 "shasum": ""
             },
             "require": {
@@ -5601,9 +5601,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.2.2"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.2.3"
             },
-            "time": "2024-05-29T01:20:02+00:00"
+            "time": "2024-08-25T02:32:15+00:00"
         },
         {
             "name": "revolution/laravel-str-mixins",
