@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.321.11",
+            "version": "3.321.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "bbd357d246350ffcd0dd8df30951d2d46c5ddadb"
+                "reference": "ccb1871998fb05ec1075468a743afba51a36e2c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bbd357d246350ffcd0dd8df30951d2d46c5ddadb",
-                "reference": "bbd357d246350ffcd0dd8df30951d2d46c5ddadb",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ccb1871998fb05ec1075468a743afba51a36e2c4",
+                "reference": "ccb1871998fb05ec1075468a743afba51a36e2c4",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.11"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.321.12"
             },
-            "time": "2024-09-13T18:05:10+00:00"
+            "time": "2024-09-16T18:15:56+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -4621,16 +4621,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.41",
+            "version": "3.0.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "621c73f7dcb310b61de34d1da4c4204e8ace6ceb"
+                "reference": "db92f1b1987b12b13f248fe76c3a52cadb67bb98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/621c73f7dcb310b61de34d1da4c4204e8ace6ceb",
-                "reference": "621c73f7dcb310b61de34d1da4c4204e8ace6ceb",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/db92f1b1987b12b13f248fe76c3a52cadb67bb98",
+                "reference": "db92f1b1987b12b13f248fe76c3a52cadb67bb98",
                 "shasum": ""
             },
             "require": {
@@ -4711,7 +4711,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.41"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.42"
             },
             "funding": [
                 {
@@ -4727,7 +4727,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-08-12T00:13:54+00:00"
+            "time": "2024-09-16T03:06:04+00:00"
         },
         {
             "name": "pragmarx/google2fa",
@@ -5546,16 +5546,16 @@
         },
         {
             "name": "revolution/laravel-line-sdk",
-            "version": "3.2.3",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kawax/laravel-line-sdk.git",
-                "reference": "6608b96fd369554f22f5fbee14035ea5e8298a73"
+                "reference": "e749c26414b1911ec00df41b9f9b595780c25e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/6608b96fd369554f22f5fbee14035ea5e8298a73",
-                "reference": "6608b96fd369554f22f5fbee14035ea5e8298a73",
+                "url": "https://api.github.com/repos/kawax/laravel-line-sdk/zipball/e749c26414b1911ec00df41b9f9b595780c25e13",
+                "reference": "e749c26414b1911ec00df41b9f9b595780c25e13",
                 "shasum": ""
             },
             "require": {
@@ -5603,9 +5603,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kawax/laravel-line-sdk/issues",
-                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.2.3"
+                "source": "https://github.com/kawax/laravel-line-sdk/tree/3.2.4"
             },
-            "time": "2024-08-25T02:32:15+00:00"
+            "time": "2024-09-16T08:44:34+00:00"
         },
         {
             "name": "revolution/laravel-str-mixins",
