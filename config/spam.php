@@ -18,4 +18,5 @@ return [
     'sales.a@if-emafia.net',
     'tama.hira@mamayoro.com',
     'yulianbaobao1@gmail.com',
+    'info@crow-pass.com',
 ];
