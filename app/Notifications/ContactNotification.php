@@ -32,11 +32,7 @@ class ContactNotification extends Notification implements ShouldQueue
      */
     public function via(mixed $notifiable): array
     {
-        return collect(['mail'])
-            ->when(
-                filled(config('line.notify.personal_access_token')),
-                fn (Collection $collection) => $collection->push(LineNotifyChannel::class)
-            )->toArray();
+        return ['mail'];
     }
 
     /**
