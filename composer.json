@@ -17,7 +17,6 @@
         "maatwebsite/excel": "^3.1",
         "matanyadaev/laravel-eloquent-spatial": "^4.0",
         "puklipo/laravel-vapor-gzip": "^1.1",
-        "revolution/laravel-line-sdk": "^3.1.0",
         "revolution/laravel-str-mixins": "^2.3",
         "spatie/laravel-sitemap": "^7.2"
     },

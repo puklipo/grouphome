@@ -11,7 +11,7 @@ https://grouphome.guide/
 
 ## 引継ぎ用
 LINE NotifyやGoogle reCAPTCHAのキーは引継ぎ時には取得し直し。
-- https://notify-bot.line.me/ja/
+
 - https://www.google.com/recaptcha/
 
 ## 開発

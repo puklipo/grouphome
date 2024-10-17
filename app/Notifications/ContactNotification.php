@@ -7,10 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\URL;
-use Revolution\Line\Notifications\LineNotifyChannel;
-use Revolution\Line\Notifications\LineNotifyMessage;
 
 class ContactNotification extends Notification implements ShouldQueue
 {
@@ -49,12 +46,6 @@ class ContactNotification extends Notification implements ShouldQueue
             ->action(__('問い合わせを確認'), route('admin.contacts'))
             ->line('メール：'.$this->contact->email)
             ->salutation(__('このメールに返信はできないので問い合わせへの対応は新規メールを送信してください。'));
-    }
-
-    public function toLineNotify(mixed $notifiable): LineNotifyMessage
-    {
-        return LineNotifyMessage::create('問い合わせがありました。'.PHP_EOL.
-            URL::temporarySignedRoute('contact.preview', now()->addDay(), $this->contact));
     }
 
     /**

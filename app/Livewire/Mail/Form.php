@@ -44,7 +44,7 @@ class Form extends Component
             )
         );
 
-        Notification::route('line-notify', config('line.notify.personal_access_token'))
+        Notification::route('mail', config('mail.admin.to'))
             ->notify(new HomeMailCreatedNotification($this->home));
 
         session()->flash('mail_success', true);

@@ -5,10 +5,8 @@ namespace App\Notifications;
 use App\Models\Home;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Notifications\Messages\MailMessage;
 use Illuminate\Notifications\Notification;
-use Illuminate\Support\Collection;
-use Revolution\Line\Notifications\LineNotifyChannel;
-use Revolution\Line\Notifications\LineNotifyMessage;
 
 class HomeMailCreatedNotification extends Notification implements ShouldQueue
 {
@@ -30,18 +28,17 @@ class HomeMailCreatedNotification extends Notification implements ShouldQueue
      */
     public function via(mixed $notifiable): array
     {
-        return collect(['database'])
-            ->when(
-                filled(config('line.notify.personal_access_token')),
-                fn (Collection $collection) => $collection->push(LineNotifyChannel::class)
-            )->toArray();
+        return ['mail'];
     }
 
     /**
      * 動作確認用。例えば大量のメールが送信された時に気付けるように。問い合わせの内容はどこにも記録しない。
      */
-    public function toLineNotify(mixed $notifiable): LineNotifyMessage
+    public function toMail(mixed $notifiable): MailMessage
     {
-        return LineNotifyMessage::create($this->home->name.'への問い合わせが送信されました。');
+        return (new MailMessage)
+            ->subject(__('【問い合わせ送信】'))
+            ->greeting('問い合わせ送信')
+            ->line($this->home->name.'への問い合わせが送信されました。');
     }
 }
