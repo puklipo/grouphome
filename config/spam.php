@@ -14,9 +14,9 @@ return [
     'info@alpha-jinzai.com',
     'info@legal-information.biz',
     'info@n-kenwa.or.jp',
-    'sales.a@if-emafia.net',
-    'tama.hira@mamayoro.com',
+    '*@if-emafia.net',
+    '*@mamayoro.com',
     'yulianbaobao1@gmail.com',
     'info@crow-pass.com',
-    'y.asai@m-sangyo.com',
+    '*@m-sangyo.com',
 ];
