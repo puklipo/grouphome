@@ -1,6 +1,5 @@
 <?php
 
-//迷惑メール送信元はブロック
 return [
     '*@e.entrenet.jp',
     '*@allegretto.co.jp',
@@ -19,4 +18,5 @@ return [
     'tama.hira@mamayoro.com',
     'yulianbaobao1@gmail.com',
     'info@crow-pass.com',
+    'y.asai@m-sangyo.com',
 ];
