@@ -19,4 +19,5 @@ return [
     'yulianbaobao1@gmail.com',
     'info@crow-pass.com',
     '*@m-sangyo.com',
+    'hr-cs@dym.jp',
 ];
