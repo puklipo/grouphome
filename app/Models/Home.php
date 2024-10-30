@@ -19,7 +19,6 @@ use function Illuminate\Events\queueable;
 
 /**
  * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
- *
  * @mixin IdeHelperHome
  */
 class Home extends Model

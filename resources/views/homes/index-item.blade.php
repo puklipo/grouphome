@@ -65,7 +65,7 @@
                                target="_blank"
                                class="text-indigo-500 dark:text-white hover:underline"
                                rel="nofollow">
-                                {{ Str::truncate($home->url) }}
+                                {{ Str::truncate($home->url, 50) }}
                             </a>
                         </td>
                     </tr>
