@@ -39,7 +39,8 @@ class WamImport implements OnEachRow, ShouldQueue, SkipsEmptyRows, SkipsOnFailur
 
         $pref = Pref::find($pref_id);
 
-        if ($pref->doesntExist()) {
+        if (empty($pref) || $pref->doesntExist()) {
+            info('import', $row->toArray());
             return;
         }
 
