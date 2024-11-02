@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.325.1",
+            "version": "3.325.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5ac57c98062f1c45d094c2baa94a7e557989465f"
+                "reference": "9e354a5e0cd1d563ec85245e3000e98e16a44fce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ac57c98062f1c45d094c2baa94a7e557989465f",
-                "reference": "5ac57c98062f1c45d094c2baa94a7e557989465f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e354a5e0cd1d563ec85245e3000e98e16a44fce",
+                "reference": "9e354a5e0cd1d563ec85245e3000e98e16a44fce",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.2"
             },
-            "time": "2024-10-31T18:15:14+00:00"
+            "time": "2024-11-01T18:08:38+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -849,20 +849,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.17.0",
+            "version": "v4.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c"
+                "reference": "cb56001e54359df7ae76dc522d08845dc741621b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/bbc513d79acf6691fa9cf10f192c90dd2957f18c",
-                "reference": "bbc513d79acf6691fa9cf10f192c90dd2957f18c",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/cb56001e54359df7ae76dc522d08845dc741621b",
+                "reference": "cb56001e54359df7ae76dc522d08845dc741621b",
                 "shasum": ""
             },
             "require": {
-                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~5.6.0 || ~7.0.0 || ~7.1.0 || ~7.2.0 || ~7.3.0 || ~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "require-dev": {
                 "cerdic/css-tidy": "^1.7 || ^2.0",
@@ -904,9 +904,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.17.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.18.0"
             },
-            "time": "2023-11-17T15:01:25+00:00"
+            "time": "2024-11-01T03:51:45+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -9609,16 +9609,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.8.1",
+            "version": "15.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "361a2b1bbf8078811e4cf2ea52c4e132d6a6f162"
+                "reference": "66ec02476ac4dca9d562160819823e5e66907d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/361a2b1bbf8078811e4cf2ea52c4e132d6a6f162",
-                "reference": "361a2b1bbf8078811e4cf2ea52c4e132d6a6f162",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/66ec02476ac4dca9d562160819823e5e66907d86",
+                "reference": "66ec02476ac4dca9d562160819823e5e66907d86",
                 "shasum": ""
             },
             "require": {
@@ -9668,7 +9668,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-10-02T14:08:06+00:00"
+            "time": "2024-11-01T09:45:36+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
