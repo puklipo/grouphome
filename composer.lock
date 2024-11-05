@@ -9196,16 +9196,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.8.7",
+            "version": "1.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "f982195c759d58f1b755919f4acb4b34c5e0e175"
+                "reference": "64d2b6221db930e374b0c3dd2017f8ecca1bc93b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/f982195c759d58f1b755919f4acb4b34c5e0e175",
-                "reference": "f982195c759d58f1b755919f4acb4b34c5e0e175",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/64d2b6221db930e374b0c3dd2017f8ecca1bc93b",
+                "reference": "64d2b6221db930e374b0c3dd2017f8ecca1bc93b",
                 "shasum": ""
             },
             "require": {
@@ -9257,9 +9257,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.7"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.8"
             },
-            "time": "2024-11-03T20:09:38+00:00"
+            "time": "2024-11-04T19:29:17+00:00"
         },
         {
             "name": "laravel-lang/attributes",
