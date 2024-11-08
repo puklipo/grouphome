@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.325.3",
+            "version": "3.325.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "de0b289c7260fb19301ffa2eb724de2076daad74"
+                "reference": "86372984539f25485718059f997a4ea12c05ba0a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/de0b289c7260fb19301ffa2eb724de2076daad74",
-                "reference": "de0b289c7260fb19301ffa2eb724de2076daad74",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/86372984539f25485718059f997a4ea12c05ba0a",
+                "reference": "86372984539f25485718059f997a4ea12c05ba0a",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.325.4"
             },
-            "time": "2024-11-06T19:05:22+00:00"
+            "time": "2024-11-07T19:25:01+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -3446,16 +3446,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.8.1",
+            "version": "3.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9"
+                "reference": "e1268cdbc486d97ce23fef2c666dc3c6b6de9947"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/10ac0aa86b8062219ce21e8189123d611ca3ecd9",
-                "reference": "10ac0aa86b8062219ce21e8189123d611ca3ecd9",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/e1268cdbc486d97ce23fef2c666dc3c6b6de9947",
+                "reference": "e1268cdbc486d97ce23fef2c666dc3c6b6de9947",
                 "shasum": ""
             },
             "require": {
@@ -3548,7 +3548,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-03T16:02:24+00:00"
+            "time": "2024-11-07T17:46:48+00:00"
         },
         {
             "name": "nette/schema",
@@ -9609,16 +9609,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.9.2",
+            "version": "15.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "88dbca09821a7e49edf5a1a53160a2ec21ceb389"
+                "reference": "48f7e2401929b15f0beff9a78e168e9596beea0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/88dbca09821a7e49edf5a1a53160a2ec21ceb389",
-                "reference": "88dbca09821a7e49edf5a1a53160a2ec21ceb389",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/48f7e2401929b15f0beff9a78e168e9596beea0b",
+                "reference": "48f7e2401929b15f0beff9a78e168e9596beea0b",
                 "shasum": ""
             },
             "require": {
@@ -9668,7 +9668,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-11-03T10:29:41+00:00"
+            "time": "2024-11-04T11:47:57+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
