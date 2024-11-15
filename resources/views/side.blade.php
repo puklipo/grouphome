@@ -43,18 +43,18 @@
                 <a href="{{ route('help.operator') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('事業者向け使い方') }}</a>
             </li>
-            <li>
-                <a href="{{ route('contact') }}"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>
-            </li>
+{{--            <li>--}}
+{{--                <a href="{{ route('contact') }}"--}}
+{{--                   class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('お問い合わせ') }}</a>--}}
+{{--            </li>--}}
             <li>
                 <a href="{{ route('license') }}"
                    class="font-bold text-indigo-500 dark:text-white hover:underline">{{ __('利用規約・ライセンス') }}</a>
             </li>
-            <li>
-                <a href="https://chat.openai.com/g/g-el7BC3G3U-zhang-hai-zhe-gurupuhomugaido"
-                   class="font-bold text-indigo-500 dark:text-white hover:underline inline-flex" target="_blank">GPTs<x-icon.arrow-top-right-on-square class="ml-1" /></a>
-            </li>
+{{--            <li>--}}
+{{--                <a href="https://chat.openai.com/g/g-el7BC3G3U-zhang-hai-zhe-gurupuhomugaido"--}}
+{{--                   class="font-bold text-indigo-500 dark:text-white hover:underline inline-flex" target="_blank">GPTs<x-icon.arrow-top-right-on-square class="ml-1" /></a>--}}
+{{--            </li>--}}
             <li>
                 <a href="https://service.grouphome.guide/"
                    class="font-bold text-indigo-500 dark:text-white hover:underline inline-flex" target="_blank">障害福祉サービスガイド<x-icon.arrow-top-right-on-square class="ml-1" /></a>
