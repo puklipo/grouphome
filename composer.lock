@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.334.2",
+            "version": "3.334.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b19afc076bb1cc2617bdef76efd41587596109e7"
+                "reference": "6576a9fcfc6ae7c76aed3c6fa4c3864060f72d04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b19afc076bb1cc2617bdef76efd41587596109e7",
-                "reference": "b19afc076bb1cc2617bdef76efd41587596109e7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6576a9fcfc6ae7c76aed3c6fa4c3864060f72d04",
+                "reference": "6576a9fcfc6ae7c76aed3c6fa4c3864060f72d04",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.334.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.334.3"
             },
-            "time": "2024-12-09T19:30:23+00:00"
+            "time": "2024-12-10T19:41:55+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1577,16 +1577,16 @@
         },
         {
             "name": "laravel/fortify",
-            "version": "v1.25.0",
+            "version": "v1.25.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/fortify.git",
-                "reference": "047e84ea8afe217061f1afa7cf8c6410c9d6a480"
+                "reference": "5022e7c01385fd6edcef91c12b19071f8f20d6d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/fortify/zipball/047e84ea8afe217061f1afa7cf8c6410c9d6a480",
-                "reference": "047e84ea8afe217061f1afa7cf8c6410c9d6a480",
+                "url": "https://api.github.com/repos/laravel/fortify/zipball/5022e7c01385fd6edcef91c12b19071f8f20d6d8",
+                "reference": "5022e7c01385fd6edcef91c12b19071f8f20d6d8",
                 "shasum": ""
             },
             "require": {
@@ -1638,20 +1638,20 @@
                 "issues": "https://github.com/laravel/fortify/issues",
                 "source": "https://github.com/laravel/fortify"
             },
-            "time": "2024-11-21T20:06:18+00:00"
+            "time": "2024-11-27T14:51:15+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v11.34.2",
+            "version": "v11.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "865da6d73dd353f07a7bcbd778c55966a620121f"
+                "reference": "f1a7aaa3c1235b7a95ccaa58db90e0cd9d8c3fcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/865da6d73dd353f07a7bcbd778c55966a620121f",
-                "reference": "865da6d73dd353f07a7bcbd778c55966a620121f",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/f1a7aaa3c1235b7a95ccaa58db90e0cd9d8c3fcc",
+                "reference": "f1a7aaa3c1235b7a95ccaa58db90e0cd9d8c3fcc",
                 "shasum": ""
             },
             "require": {
@@ -1675,6 +1675,7 @@
                 "league/commonmark": "^2.2.1",
                 "league/flysystem": "^3.25.1",
                 "league/flysystem-local": "^3.25.1",
+                "league/uri": "^7.5.1",
                 "monolog/monolog": "^3.0",
                 "nesbot/carbon": "^2.72.2|^3.4",
                 "nunomaduro/termwind": "^2.0",
@@ -1758,9 +1759,9 @@
                 "league/flysystem-read-only": "^3.25.1",
                 "league/flysystem-sftp-v3": "^3.25.1",
                 "mockery/mockery": "^1.6.10",
-                "nyholm/psr7": "^1.2",
                 "orchestra/testbench-core": "^9.6",
                 "pda/pheanstalk": "^5.0.6",
+                "php-http/discovery": "^1.15",
                 "phpstan/phpstan": "^1.11.5",
                 "phpunit/phpunit": "^10.5.35|^11.3.6",
                 "predis/predis": "^2.3",
@@ -1792,8 +1793,8 @@
                 "league/flysystem-read-only": "Required to use read-only disks (^3.25.1)",
                 "league/flysystem-sftp-v3": "Required to use the Flysystem SFTP driver (^3.25.1).",
                 "mockery/mockery": "Required to use mocking (^1.6).",
-                "nyholm/psr7": "Required to use PSR-7 bridging features (^1.2).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (^5.0).",
+                "php-http/discovery": "Required to use PSR-7 bridging features (^1.15).",
                 "phpunit/phpunit": "Required to use assertions and run tests (^10.5|^11.0).",
                 "predis/predis": "Required to use the predis connector (^2.3).",
                 "psr/http-message": "Required to allow Storage::put to accept a StreamInterface (^1.0).",
@@ -1814,6 +1815,7 @@
             },
             "autoload": {
                 "files": [
+                    "src/Illuminate/Collections/functions.php",
                     "src/Illuminate/Collections/helpers.php",
                     "src/Illuminate/Events/functions.php",
                     "src/Illuminate/Filesystem/functions.php",
@@ -1851,20 +1853,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2024-11-27T15:43:57+00:00"
+            "time": "2024-12-10T16:09:29+00:00"
         },
         {
             "name": "laravel/jetstream",
-            "version": "v5.3.3",
+            "version": "v5.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/jetstream.git",
-                "reference": "16859ea11a0bbce631c19d95ca0e172322e52e30"
+                "reference": "d8d4d83a64d1035b05030e2e97230524b1fa8177"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/jetstream/zipball/16859ea11a0bbce631c19d95ca0e172322e52e30",
-                "reference": "16859ea11a0bbce631c19d95ca0e172322e52e30",
+                "url": "https://api.github.com/repos/laravel/jetstream/zipball/d8d4d83a64d1035b05030e2e97230524b1fa8177",
+                "reference": "d8d4d83a64d1035b05030e2e97230524b1fa8177",
                 "shasum": ""
             },
             "require": {
@@ -1872,7 +1874,7 @@
                 "illuminate/console": "^11.0",
                 "illuminate/support": "^11.0",
                 "laravel/fortify": "^1.20",
-                "mobiledetect/mobiledetectlib": "^4.8",
+                "mobiledetect/mobiledetectlib": "^4.8.08",
                 "php": "^8.2.0",
                 "symfony/console": "^7.0"
             },
@@ -1918,7 +1920,7 @@
                 "issues": "https://github.com/laravel/jetstream/issues",
                 "source": "https://github.com/laravel/jetstream"
             },
-            "time": "2024-11-13T13:59:38+00:00"
+            "time": "2024-12-10T15:11:20+00:00"
         },
         {
             "name": "laravel/prompts",
@@ -1981,16 +1983,16 @@
         },
         {
             "name": "laravel/sanctum",
-            "version": "v4.0.5",
+            "version": "v4.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "fe361b9a63407a228f884eb78d7217f680b50140"
+                "reference": "9e069e36d90b1e1f41886efa0fe9800a6b354694"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/fe361b9a63407a228f884eb78d7217f680b50140",
-                "reference": "fe361b9a63407a228f884eb78d7217f680b50140",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/9e069e36d90b1e1f41886efa0fe9800a6b354694",
+                "reference": "9e069e36d90b1e1f41886efa0fe9800a6b354694",
                 "shasum": ""
             },
             "require": {
@@ -2041,7 +2043,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2024-11-26T14:36:23+00:00"
+            "time": "2024-11-26T21:18:33+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -2241,16 +2243,16 @@
         },
         {
             "name": "laravel/vapor-core",
-            "version": "v2.37.2",
+            "version": "v2.37.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/vapor-core.git",
-                "reference": "6c892e200d8a91c3930b70135567de764716f7f9"
+                "reference": "43cc2104a844e0ca2821e344ba1c7881100b88c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/6c892e200d8a91c3930b70135567de764716f7f9",
-                "reference": "6c892e200d8a91c3930b70135567de764716f7f9",
+                "url": "https://api.github.com/repos/laravel/vapor-core/zipball/43cc2104a844e0ca2821e344ba1c7881100b88c1",
+                "reference": "43cc2104a844e0ca2821e344ba1c7881100b88c1",
                 "shasum": ""
             },
             "require": {
@@ -2315,9 +2317,9 @@
                 "vapor"
             ],
             "support": {
-                "source": "https://github.com/laravel/vapor-core/tree/v2.37.2"
+                "source": "https://github.com/laravel/vapor-core/tree/v2.37.8"
             },
-            "time": "2024-11-06T08:27:07+00:00"
+            "time": "2024-12-06T19:11:27+00:00"
         },
         {
             "name": "league/commonmark",
@@ -2750,6 +2752,180 @@
                 }
             ],
             "time": "2024-09-21T08:32:55+00:00"
+        },
+        {
+            "name": "league/uri",
+            "version": "7.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri.git",
+                "reference": "81fb5145d2644324614cc532b28efd0215bda430"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/81fb5145d2644324614cc532b28efd0215bda430",
+                "reference": "81fb5145d2644324614cc532b28efd0215bda430",
+                "shasum": ""
+            },
+            "require": {
+                "league/uri-interfaces": "^7.5",
+                "php": "^8.1"
+            },
+            "conflict": {
+                "league/uri-schemes": "^1.0"
+            },
+            "suggest": {
+                "ext-bcmath": "to improve IPV4 host parsing",
+                "ext-fileinfo": "to create Data URI from file contennts",
+                "ext-gmp": "to improve IPV4 host parsing",
+                "ext-intl": "to handle IDN host with the best performance",
+                "jeremykendall/php-domain-parser": "to resolve Public Suffix and Top Level Domain",
+                "league/uri-components": "Needed to easily manipulate URI objects components",
+                "php-64bit": "to improve IPV4 host parsing",
+                "symfony/polyfill-intl-idn": "to handle IDN host via the Symfony polyfill if ext-intl is not present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "URI manipulation library",
+            "homepage": "https://uri.thephpleague.com",
+            "keywords": [
+                "data-uri",
+                "file-uri",
+                "ftp",
+                "hostname",
+                "http",
+                "https",
+                "middleware",
+                "parse_str",
+                "parse_url",
+                "psr-7",
+                "query-string",
+                "querystring",
+                "rfc3986",
+                "rfc3987",
+                "rfc6570",
+                "uri",
+                "uri-template",
+                "url",
+                "ws"
+            ],
+            "support": {
+                "docs": "https://uri.thephpleague.com",
+                "forum": "https://thephpleague.slack.com",
+                "issues": "https://github.com/thephpleague/uri-src/issues",
+                "source": "https://github.com/thephpleague/uri/tree/7.5.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-08T08:40:02+00:00"
+        },
+        {
+            "name": "league/uri-interfaces",
+            "version": "7.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-interfaces.git",
+                "reference": "08cfc6c4f3d811584fb09c37e2849e6a7f9b0742"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/08cfc6c4f3d811584fb09c37e2849e6a7f9b0742",
+                "reference": "08cfc6c4f3d811584fb09c37e2849e6a7f9b0742",
+                "shasum": ""
+            },
+            "require": {
+                "ext-filter": "*",
+                "php": "^8.1",
+                "psr/http-factory": "^1",
+                "psr/http-message": "^1.1 || ^2.0"
+            },
+            "suggest": {
+                "ext-bcmath": "to improve IPV4 host parsing",
+                "ext-gmp": "to improve IPV4 host parsing",
+                "ext-intl": "to handle IDN host with the best performance",
+                "php-64bit": "to improve IPV4 host parsing",
+                "symfony/polyfill-intl-idn": "to handle IDN host via the Symfony polyfill if ext-intl is not present"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "Common interfaces and classes for URI representation and interaction",
+            "homepage": "https://uri.thephpleague.com",
+            "keywords": [
+                "data-uri",
+                "file-uri",
+                "ftp",
+                "hostname",
+                "http",
+                "https",
+                "parse_str",
+                "parse_url",
+                "psr-7",
+                "query-string",
+                "querystring",
+                "rfc3986",
+                "rfc3987",
+                "rfc6570",
+                "uri",
+                "url",
+                "ws"
+            ],
+            "support": {
+                "docs": "https://uri.thephpleague.com",
+                "forum": "https://thephpleague.slack.com",
+                "issues": "https://github.com/thephpleague/uri-src/issues",
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/nyamsprod",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-08T08:18:47+00:00"
         },
         {
             "name": "livewire/livewire",
@@ -3221,21 +3397,22 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "4.8.07",
+            "version": "4.8.09",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "b555b54200fc0416d1fdd43bc61fb40aec7dd493"
+                "reference": "a06fe2e546a06bb8c2639d6823d5250b2efb3209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/b555b54200fc0416d1fdd43bc61fb40aec7dd493",
-                "reference": "b555b54200fc0416d1fdd43bc61fb40aec7dd493",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/a06fe2e546a06bb8c2639d6823d5250b2efb3209",
+                "reference": "a06fe2e546a06bb8c2639d6823d5250b2efb3209",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0",
-                "psr/simple-cache": "^2 || ^3"
+                "psr/cache": "^3.0",
+                "psr/simple-cache": "^3"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^v3.65.0",
@@ -3273,7 +3450,7 @@
             ],
             "support": {
                 "issues": "https://github.com/serbanghita/Mobile-Detect/issues",
-                "source": "https://github.com/serbanghita/Mobile-Detect/tree/4.8.07"
+                "source": "https://github.com/serbanghita/Mobile-Detect/tree/4.8.09"
             },
             "funding": [
                 {
@@ -3281,7 +3458,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-09T22:06:06+00:00"
+            "time": "2024-12-10T15:32:06+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4323,6 +4500,55 @@
             "time": "2024-09-05T11:56:40+00:00"
         },
         {
+            "name": "psr/cache",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "reference": "aa5030cfa5405eccfdcb1083ce040c2cb8d253bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/cache/tree/3.0.0"
+            },
+            "time": "2021-02-03T23:26:27+00:00"
+        },
+        {
             "name": "psr/clock",
             "version": "1.0.0",
             "source": {
@@ -4736,16 +4962,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.12.6",
+            "version": "v0.12.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "3b5ea0efaa791cd1c65ecc493aec3e2aa55ff57c"
+                "reference": "d73fa3c74918ef4522bb8a3bf9cab39161c4b57c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/3b5ea0efaa791cd1c65ecc493aec3e2aa55ff57c",
-                "reference": "3b5ea0efaa791cd1c65ecc493aec3e2aa55ff57c",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/d73fa3c74918ef4522bb8a3bf9cab39161c4b57c",
+                "reference": "d73fa3c74918ef4522bb8a3bf9cab39161c4b57c",
                 "shasum": ""
             },
             "require": {
@@ -4809,9 +5035,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.12.6"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.12.7"
             },
-            "time": "2024-12-07T20:08:52+00:00"
+            "time": "2024-12-10T01:58:33+00:00"
         },
         {
             "name": "puklipo/laravel-vapor-gzip",
@@ -6787,8 +7013,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -6953,8 +7179,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "autoload": {
@@ -9206,16 +9432,16 @@
         },
         {
             "name": "laravel-lang/actions",
-            "version": "1.8.8",
+            "version": "1.8.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/actions.git",
-                "reference": "64d2b6221db930e374b0c3dd2017f8ecca1bc93b"
+                "reference": "3c31470bed4c28a5d8cfd062f59c0bf1bae12147"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/64d2b6221db930e374b0c3dd2017f8ecca1bc93b",
-                "reference": "64d2b6221db930e374b0c3dd2017f8ecca1bc93b",
+                "url": "https://api.github.com/repos/Laravel-Lang/actions/zipball/3c31470bed4c28a5d8cfd062f59c0bf1bae12147",
+                "reference": "3c31470bed4c28a5d8cfd062f59c0bf1bae12147",
                 "shasum": ""
             },
             "require": {
@@ -9267,22 +9493,22 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/actions/issues",
-                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.8"
+                "source": "https://github.com/Laravel-Lang/actions/tree/1.8.9"
             },
-            "time": "2024-11-04T19:29:17+00:00"
+            "time": "2024-12-10T14:48:08+00:00"
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.11.1",
+            "version": "2.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "b60817d0361ec2fe29f100f76cc9bd0c13a36ec9"
+                "reference": "0e22b2a56004b53599d4162cb84ff9ec41e915c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/b60817d0361ec2fe29f100f76cc9bd0c13a36ec9",
-                "reference": "b60817d0361ec2fe29f100f76cc9bd0c13a36ec9",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/0e22b2a56004b53599d4162cb84ff9ec41e915c3",
+                "reference": "0e22b2a56004b53599d4162cb84ff9ec41e915c3",
                 "shasum": ""
             },
             "require": {
@@ -9336,9 +9562,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.11.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.11.2"
             },
-            "time": "2024-10-02T14:07:29+00:00"
+            "time": "2024-12-10T14:47:32+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -9619,16 +9845,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.9.6",
+            "version": "15.9.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "671dc13aaa78bed9237ef1ee73303e0039fed709"
+                "reference": "b2e8692eeee90f2a43c9d9497507a8fbebf94d25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/671dc13aaa78bed9237ef1ee73303e0039fed709",
-                "reference": "671dc13aaa78bed9237ef1ee73303e0039fed709",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/b2e8692eeee90f2a43c9d9497507a8fbebf94d25",
+                "reference": "b2e8692eeee90f2a43c9d9497507a8fbebf94d25",
                 "shasum": ""
             },
             "require": {
@@ -9678,7 +9904,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-12-02T14:31:02+00:00"
+            "time": "2024-12-10T12:17:29+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
