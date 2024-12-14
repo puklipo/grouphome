@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.334.5",
+            "version": "3.334.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "3b4fa2180f5c6307c2d3c577392d3702d1f78eaf"
+                "reference": "2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3b4fa2180f5c6307c2d3c577392d3702d1f78eaf",
-                "reference": "3b4fa2180f5c6307c2d3c577392d3702d1f78eaf",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7",
+                "reference": "2b0be3aded849d3b7bb0b53ea3295c7cecdeeee7",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.334.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.334.6"
             },
-            "time": "2024-12-12T19:25:15+00:00"
+            "time": "2024-12-13T19:18:29+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -5427,16 +5427,16 @@
         },
         {
             "name": "spatie/browsershot",
-            "version": "5.0.1",
+            "version": "5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/browsershot.git",
-                "reference": "fae8396641b961f62bd756920b14f01a4391296e"
+                "reference": "8a1e3476a9c07b72ace4d4747bac7c58dbc1c066"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/browsershot/zipball/fae8396641b961f62bd756920b14f01a4391296e",
-                "reference": "fae8396641b961f62bd756920b14f01a4391296e",
+                "url": "https://api.github.com/repos/spatie/browsershot/zipball/8a1e3476a9c07b72ace4d4747bac7c58dbc1c066",
+                "reference": "8a1e3476a9c07b72ace4d4747bac7c58dbc1c066",
                 "shasum": ""
             },
             "require": {
@@ -5483,7 +5483,7 @@
                 "webpage"
             ],
             "support": {
-                "source": "https://github.com/spatie/browsershot/tree/5.0.1"
+                "source": "https://github.com/spatie/browsershot/tree/5.0.2"
             },
             "funding": [
                 {
@@ -5491,7 +5491,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-11T09:02:57+00:00"
+            "time": "2024-12-13T16:10:26+00:00"
         },
         {
             "name": "spatie/crawler",
