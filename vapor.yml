@@ -5,7 +5,7 @@ environments:
     production:
         memory: 1024
         cli-memory: 512
-        runtime: 'php-8.3:al2-arm'
+        runtime: 'php-8.4:al2-arm'
         warm: 5
         domain: grouphome.guide
         database: grouphome
@@ -24,7 +24,7 @@ environments:
     staging:
         memory: 1024
         cli-memory: 512
-        runtime: 'php-8.3:al2-arm'
+        runtime: 'php-8.4:al2-arm'
         warm: 5
         database: grouphome
         storage: staging-pcs-grouphome
