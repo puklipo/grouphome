@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.336.0",
+            "version": "3.336.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5a62003bf183e32da038056a4b9077c27224e034"
+                "reference": "954bfdfc048840ca34afe2a2e1cbcff6681989c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5a62003bf183e32da038056a4b9077c27224e034",
-                "reference": "5a62003bf183e32da038056a4b9077c27224e034",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/954bfdfc048840ca34afe2a2e1cbcff6681989c4",
+                "reference": "954bfdfc048840ca34afe2a2e1cbcff6681989c4",
                 "shasum": ""
             },
             "require": {
@@ -154,9 +154,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.336.2"
             },
-            "time": "2024-12-18T19:04:32+00:00"
+            "time": "2024-12-20T19:05:10+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -3672,10 +3672,6 @@
             ],
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "3.x-dev",
-                    "dev-2.x": "2.x-dev"
-                },
                 "laravel": {
                     "providers": [
                         "Carbon\\Laravel\\ServiceProvider"
@@ -3685,6 +3681,10 @@
                     "includes": [
                         "extension.neon"
                     ]
+                },
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev",
+                    "dev-master": "3.x-dev"
                 }
             },
             "autoload": {
@@ -8828,13 +8828,13 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.x-dev"
-                },
                 "phpstan": {
                     "includes": [
                         "extension.neon"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -9845,16 +9845,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.9.7",
+            "version": "15.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "b2e8692eeee90f2a43c9d9497507a8fbebf94d25"
+                "reference": "b29ea07e056818a0de2a641c63c7cb9993e73099"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/b2e8692eeee90f2a43c9d9497507a8fbebf94d25",
-                "reference": "b2e8692eeee90f2a43c9d9497507a8fbebf94d25",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/b29ea07e056818a0de2a641c63c7cb9993e73099",
+                "reference": "b29ea07e056818a0de2a641c63c7cb9993e73099",
                 "shasum": ""
             },
             "require": {
@@ -9904,7 +9904,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2024-12-10T12:17:29+00:00"
+            "time": "2024-12-20T08:49:57+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
