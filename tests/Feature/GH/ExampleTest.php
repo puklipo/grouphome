@@ -5,6 +5,7 @@ namespace Tests\Feature\GH;
 use App\Actions\History;
 use App\Livewire\ContactForm;
 use App\Livewire\HistoryList;
+use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -45,7 +46,8 @@ class ExampleTest extends TestCase
 
     public function test_contact()
     {
-        $response = $this->get(route('contact'));
+        $response = $this->actingAs(User::factory()->create())
+                         ->get(route('contact'));
 
         $response->assertStatus(200)
                  ->assertSeeLivewire(ContactForm::class);
