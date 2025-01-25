@@ -1,7 +1,8 @@
 <?php
-use function Laravel\Folio\name;
+use function Laravel\Folio\{name, middleware};
 
 name('contact');
+middleware(['auth']);
 ?>
 
 <x-main-layout>
