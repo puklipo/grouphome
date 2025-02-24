@@ -10076,16 +10076,16 @@
         },
         {
             "name": "laravel-lang/moonshine",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/moonshine.git",
-                "reference": "3fff17d1d5999f1964e522609db82463423e9e25"
+                "reference": "573e1568d1e7819ed5799dcac367080accdb7ee9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/moonshine/zipball/3fff17d1d5999f1964e522609db82463423e9e25",
-                "reference": "3fff17d1d5999f1964e522609db82463423e9e25",
+                "url": "https://api.github.com/repos/Laravel-Lang/moonshine/zipball/573e1568d1e7819ed5799dcac367080accdb7ee9",
+                "reference": "573e1568d1e7819ed5799dcac367080accdb7ee9",
                 "shasum": ""
             },
             "require": {
@@ -10138,9 +10138,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/moonshine/issues",
-                "source": "https://github.com/Laravel-Lang/moonshine/tree/1.1.0"
+                "source": "https://github.com/Laravel-Lang/moonshine/tree/1.1.1"
             },
-            "time": "2025-02-17T10:31:11+00:00"
+            "time": "2025-02-23T18:22:17+00:00"
         },
         {
             "name": "laravel-lang/native-country-names",
