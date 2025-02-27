@@ -38,7 +38,7 @@
                 <select name="level"
                         id="level_min"
                         wire:model.live="level"
-                        class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm flex-auto dark:bg-gray-800">
+                        class="border-gray-300 focus:border-indigo-300 focus:ring-3 focus:ring-indigo-200/5 rounded-md shadow-xs flex-auto dark:bg-gray-800">
                     <option value="0">区分なし以上</option>
                     @foreach(range(1, 6) as $level)
                         <option value="{{ $level }}">区分{{ $level }}以上</option>
@@ -52,7 +52,7 @@
                 <select name="type_id"
                         id="type_id"
                         wire:model.live="type_id"
-                        class="border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm flex-auto dark:bg-gray-800">
+                        class="border-gray-300 focus:border-indigo-300 focus:ring-3 focus:ring-indigo-200/5 rounded-md shadow-xs flex-auto dark:bg-gray-800">
                     <option value="">不明</option>
 
                     @foreach(\App\Models\Type::all() as $type)

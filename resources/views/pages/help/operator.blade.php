@@ -44,7 +44,7 @@ name('help.operator');
                     <li>管理するグループホームを検索。</li>
                     <li>
                         グループホームのページの一番下に「管理事業者として申請」ボタンがあるので申請。
-                        <img src="{{ asset('images/help/ope1.png') }}" class="w-auto sm:w-1/2 shadow rounded-md"
+                        <img src="{{ asset('images/help/ope1.png') }}" class="w-auto sm:w-1/2 shadow-sm rounded-md"
                              alt="申請ボタン">
                     </li>
                     <li>承認後管理できるようになりますのでしばらくお待ちください。</li>
@@ -60,7 +60,7 @@ name('help.operator');
                 <h2>ダッシュボード</h2>
                 <ol>
                     <li>管理事業者として承認されたグループホームはダッシュボードの管理グループホーム一覧に表示されます。
-                        <img src="{{ asset('images/help/ope2.png') }}" class="w-auto sm:w-1/2 shadow rounded-md"
+                        <img src="{{ asset('images/help/ope2.png') }}" class="w-auto sm:w-1/2 shadow-sm rounded-md"
                              alt="ダッシュボード">
                     </li>
                 </ol>
@@ -124,7 +124,7 @@ name('help.operator');
                     </li>
                     <li>基本的な住所や電話番号が間違ってる場合はWAM側で変更してください。</li>
                     <li>「メールで問い合わせる」が表示されていない場合は他者は登録していません。当サイトスタッフが公式サイトなどの公開情報を基に入力しています。事業者として申請すれば変更できます。<img
-                            src="{{ asset('images/help/mail1.png') }}" class="w-auto sm:w-1/2 shadow rounded-md"
+                            src="{{ asset('images/help/mail1.png') }}" class="w-auto sm:w-1/2 shadow-sm rounded-md"
                             alt="問い合わせる"></li>
 
                 </ul>

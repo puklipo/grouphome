@@ -7,13 +7,13 @@
         <form wire:submit="sendmail">
             <div>
                 <x-label for="name" value="{{ __('お名前') }}"/>
-                <x-input id="name" class="block mt-1 w-full" type="text" name="name" wire:model.blur="name" required
+                <x-input id="name" class="block mt-1 w-full" type="text" name="name" wire:model.blur-sm="name" required
                              autocomplete="name"/>
             </div>
 
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}"/>
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.blur="email"
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.blur-sm="email"
                              required autocomplete="email"/>
             </div>
 
@@ -22,7 +22,7 @@
 
                 <textarea name="body"
                           wire:model.blur="body"
-                          class="w-full h-32 bg-white text-black border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
+                          class="w-full h-32 bg-white text-black border-gray-300 focus:border-indigo-300 focus:ring-3 focus:ring-indigo-200/5 rounded-md shadow-xs"
                           required @auth() autofocus @endauth
                 ></textarea>
             </div>

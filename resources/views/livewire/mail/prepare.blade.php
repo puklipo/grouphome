@@ -10,7 +10,7 @@
 
             <div class="mt-4">
                 <x-label for="email" value="{{ __('Email') }}"/>
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.blur="email"
+                <x-input id="email" class="block mt-1 w-full" type="email" name="email" wire:model.blur-sm="email"
                              required autofocus autocomplete="email"/>
             </div>
 
