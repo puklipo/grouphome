@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.342.0",
+            "version": "3.342.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5b8c837ab0c9754ab3408bd9afe6f0c67516b1fd"
+                "reference": "8a4ba50aa12ce509d0e598a7fd65d6b9309c39dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5b8c837ab0c9754ab3408bd9afe6f0c67516b1fd",
-                "reference": "5b8c837ab0c9754ab3408bd9afe6f0c67516b1fd",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/8a4ba50aa12ce509d0e598a7fd65d6b9309c39dd",
+                "reference": "8a4ba50aa12ce509d0e598a7fd65d6b9309c39dd",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.1"
             },
-            "time": "2025-03-05T19:20:14+00:00"
+            "time": "2025-03-06T19:17:36+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -10052,16 +10052,16 @@
         },
         {
             "name": "laravel-lang/moonshine",
-            "version": "1.3.4",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/moonshine.git",
-                "reference": "e5a638a51f0ea8186f07bd8b715803563e5d55c6"
+                "reference": "54e1d0bb23945ce772a12ea9bf55c3dfe56984ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/moonshine/zipball/e5a638a51f0ea8186f07bd8b715803563e5d55c6",
-                "reference": "e5a638a51f0ea8186f07bd8b715803563e5d55c6",
+                "url": "https://api.github.com/repos/Laravel-Lang/moonshine/zipball/54e1d0bb23945ce772a12ea9bf55c3dfe56984ca",
+                "reference": "54e1d0bb23945ce772a12ea9bf55c3dfe56984ca",
                 "shasum": ""
             },
             "require": {
@@ -10114,9 +10114,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/moonshine/issues",
-                "source": "https://github.com/Laravel-Lang/moonshine/tree/1.3.4"
+                "source": "https://github.com/Laravel-Lang/moonshine/tree/1.3.5"
             },
-            "time": "2025-03-04T16:05:45+00:00"
+            "time": "2025-03-06T15:18:50+00:00"
         },
         {
             "name": "laravel-lang/native-country-names",
@@ -10502,16 +10502,16 @@
         },
         {
             "name": "laravel-lang/starter-kits",
-            "version": "1.2.1",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/starter-kits.git",
-                "reference": "ce00bf886eb2e1d9aa01d22b0ec8cb5ab2a5d645"
+                "reference": "179ed12bdaff7f723e9dd8cf9bae8d8ce1dcd391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/ce00bf886eb2e1d9aa01d22b0ec8cb5ab2a5d645",
-                "reference": "ce00bf886eb2e1d9aa01d22b0ec8cb5ab2a5d645",
+                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/179ed12bdaff7f723e9dd8cf9bae8d8ce1dcd391",
+                "reference": "179ed12bdaff7f723e9dd8cf9bae8d8ce1dcd391",
                 "shasum": ""
             },
             "require": {
@@ -10563,9 +10563,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/starter-kits/issues",
-                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.2.1"
+                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.0"
             },
-            "time": "2025-03-05T13:07:03+00:00"
+            "time": "2025-03-06T11:53:02+00:00"
         },
         {
             "name": "laravel/pint",
