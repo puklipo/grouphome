@@ -9427,16 +9427,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.13.1",
+            "version": "2.13.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "394329d99eaa990626c194c5eb39648e881ecc35"
+                "reference": "53654b68591ad2dc42f845a5472eec09eb3f1a4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/394329d99eaa990626c194c5eb39648e881ecc35",
-                "reference": "394329d99eaa990626c194c5eb39648e881ecc35",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/53654b68591ad2dc42f845a5472eec09eb3f1a4a",
+                "reference": "53654b68591ad2dc42f845a5472eec09eb3f1a4a",
                 "shasum": ""
             },
             "require": {
@@ -9490,9 +9490,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.13.1"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.13.2"
             },
-            "time": "2025-03-04T07:28:17+00:00"
+            "time": "2025-03-08T11:08:38+00:00"
         },
         {
             "name": "laravel-lang/common",
