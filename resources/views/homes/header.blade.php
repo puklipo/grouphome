@@ -1,6 +1,6 @@
 <x-box-header class="mt-3 mb-0">
     <x-slot name="left">
-        <a href="{{ route('pref', $home->pref) }}" class="dark:hover:text-gray-300">
+        <a href="{{ route('pref', ['pref' => $home->pref]) }}" class="dark:hover:text-gray-300">
             {{ $home->pref->name }}
         </a>
     </x-slot>

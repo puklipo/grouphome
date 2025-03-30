@@ -13,7 +13,7 @@ class PrefTest extends TestCase
     {
         $this->seed();
 
-        $response = $this->get(route('pref', 1));
+        $response = $this->get(route('pref', ['pref' => 1]));
 
         $response->assertStatus(200);
     }

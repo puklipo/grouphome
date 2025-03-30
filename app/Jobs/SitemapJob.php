@@ -41,7 +41,7 @@ class SitemapJob implements ShouldQueue
             ->add(Url::create(route('license')));
 
         Pref::oldest('id')->lazy()->each(fn (Pref $pref) => $sitemap->add(
-            Url::create(route('pref', $pref))
+            Url::create(route('pref', ['pref' => $pref]))
         ));
 
         Home::latest('updated_at')->lazy()->each(fn (Home $home) => $sitemap->add(
