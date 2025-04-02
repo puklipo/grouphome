@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.342.17",
+            "version": "3.342.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "110ca44672e59ec3255c693e9e761001f2706b53"
+                "reference": "e6c81bf323b082f8fe2b76d8d41e2614806d5892"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/110ca44672e59ec3255c693e9e761001f2706b53",
-                "reference": "110ca44672e59ec3255c693e9e761001f2706b53",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e6c81bf323b082f8fe2b76d8d41e2614806d5892",
+                "reference": "e6c81bf323b082f8fe2b76d8d41e2614806d5892",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.17"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.342.18"
             },
-            "time": "2025-03-31T18:16:40+00:00"
+            "time": "2025-04-01T18:15:02+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -1720,16 +1720,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v12.4.1",
+            "version": "v12.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "cdefd852ecb459a65392cd6ccb578c92a15b8e2b"
+                "reference": "0ab4791b2c5f405f8728e4481265599803564c02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/cdefd852ecb459a65392cd6ccb578c92a15b8e2b",
-                "reference": "cdefd852ecb459a65392cd6ccb578c92a15b8e2b",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/0ab4791b2c5f405f8728e4481265599803564c02",
+                "reference": "0ab4791b2c5f405f8728e4481265599803564c02",
                 "shasum": ""
             },
             "require": {
@@ -1931,7 +1931,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-03-30T16:27:26+00:00"
+            "time": "2025-04-01T14:40:42+00:00"
         },
         {
             "name": "laravel/jetstream",
@@ -9776,16 +9776,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.19.8",
+            "version": "15.19.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "b90d1ded1ced50e9b425b05363d80099dbcecdbc"
+                "reference": "07c6b81c522433c7269f56e83660a10dcb84ba2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/b90d1ded1ced50e9b425b05363d80099dbcecdbc",
-                "reference": "b90d1ded1ced50e9b425b05363d80099dbcecdbc",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/07c6b81c522433c7269f56e83660a10dcb84ba2d",
+                "reference": "07c6b81c522433c7269f56e83660a10dcb84ba2d",
                 "shasum": ""
             },
             "require": {
@@ -9835,7 +9835,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2025-03-22T12:18:57+00:00"
+            "time": "2025-03-28T15:47:23+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
@@ -10502,16 +10502,16 @@
         },
         {
             "name": "laravel-lang/starter-kits",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/starter-kits.git",
-                "reference": "e6ebd7a566cf33a33b3bb3b80187fb1cafe22680"
+                "reference": "7e0df57daac24e9444c853e24b1d4aa549a2e169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/e6ebd7a566cf33a33b3bb3b80187fb1cafe22680",
-                "reference": "e6ebd7a566cf33a33b3bb3b80187fb1cafe22680",
+                "url": "https://api.github.com/repos/Laravel-Lang/starter-kits/zipball/7e0df57daac24e9444c853e24b1d4aa549a2e169",
+                "reference": "7e0df57daac24e9444c853e24b1d4aa549a2e169",
                 "shasum": ""
             },
             "require": {
@@ -10563,9 +10563,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/starter-kits/issues",
-                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.5"
+                "source": "https://github.com/Laravel-Lang/starter-kits/tree/1.3.6"
             },
-            "time": "2025-03-18T20:07:17+00:00"
+            "time": "2025-03-28T15:44:47+00:00"
         },
         {
             "name": "laravel/pint",
