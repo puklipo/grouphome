@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.343.21",
+            "version": "3.343.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "4bee288751c58598625ea2e8f30258404dd98757"
+                "reference": "174cc187df3bde52c21e9c00a4e99610a08732a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4bee288751c58598625ea2e8f30258404dd98757",
-                "reference": "4bee288751c58598625ea2e8f30258404dd98757",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/174cc187df3bde52c21e9c00a4e99610a08732a3",
+                "reference": "174cc187df3bde52c21e9c00a4e99610a08732a3",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.21"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.343.22"
             },
-            "time": "2025-05-29T18:11:11+00:00"
+            "time": "2025-05-30T18:11:02+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -5383,12 +5383,12 @@
             "version": "2.7.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kawax/laravel-str-mixins.git",
+                "url": "https://github.com/invokable/laravel-str-mixins.git",
                 "reference": "1e2a22f2d91e942396ee5390a5b3bd39950c419f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kawax/laravel-str-mixins/zipball/1e2a22f2d91e942396ee5390a5b3bd39950c419f",
+                "url": "https://api.github.com/repos/invokable/laravel-str-mixins/zipball/1e2a22f2d91e942396ee5390a5b3bd39950c419f",
                 "reference": "1e2a22f2d91e942396ee5390a5b3bd39950c419f",
                 "shasum": ""
             },
@@ -5430,9 +5430,14 @@
                 "str"
             ],
             "support": {
-                "issues": "https://github.com/kawax/laravel-str-mixins/issues",
-                "source": "https://github.com/kawax/laravel-str-mixins/tree/2.7.0"
+                "source": "https://github.com/invokable/laravel-str-mixins/tree/2.7.0"
             },
+            "funding": [
+                {
+                    "url": "https://github.com/invokable",
+                    "type": "github"
+                }
+            ],
             "time": "2025-02-18T03:41:34+00:00"
         },
         {
