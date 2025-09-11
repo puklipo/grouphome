@@ -62,16 +62,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.356.13",
+            "version": "3.356.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b"
+                "reference": "ee8e1516b950e33c617ac17d6352ec5421253cff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
-                "reference": "ec28d17cc940a4f996638050ab95dcc2a07f1a6b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ee8e1516b950e33c617ac17d6352ec5421253cff",
+                "reference": "ee8e1516b950e33c617ac17d6352ec5421253cff",
                 "shasum": ""
             },
             "require": {
@@ -153,9 +153,9 @@
             "support": {
                 "forum": "https://github.com/aws/aws-sdk-php/discussions",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.13"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.356.15"
             },
-            "time": "2025-09-08T18:37:19+00:00"
+            "time": "2025-09-10T18:05:36+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -9681,16 +9681,16 @@
         },
         {
             "name": "laravel-lang/attributes",
-            "version": "2.13.5",
+            "version": "2.13.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/attributes.git",
-                "reference": "0f7a0c195cbd4eb000b14dc3fd233dacd23a10f7"
+                "reference": "2b86d41fa05e0ee9ca710c544951567ad91e0484"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/0f7a0c195cbd4eb000b14dc3fd233dacd23a10f7",
-                "reference": "0f7a0c195cbd4eb000b14dc3fd233dacd23a10f7",
+                "url": "https://api.github.com/repos/Laravel-Lang/attributes/zipball/2b86d41fa05e0ee9ca710c544951567ad91e0484",
+                "reference": "2b86d41fa05e0ee9ca710c544951567ad91e0484",
                 "shasum": ""
             },
             "require": {
@@ -9744,9 +9744,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Laravel-Lang/attributes/issues",
-                "source": "https://github.com/Laravel-Lang/attributes/tree/2.13.5"
+                "source": "https://github.com/Laravel-Lang/attributes/tree/2.13.6"
             },
-            "time": "2025-06-23T09:39:20+00:00"
+            "time": "2025-09-10T20:38:31+00:00"
         },
         {
             "name": "laravel-lang/common",
@@ -10030,16 +10030,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "15.24.3",
+            "version": "15.24.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "f98079c7c31f969cd9898cbe436dfaba6f150356"
+                "reference": "495096372a2c45a69f9a2759973495c9d013367f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/f98079c7c31f969cd9898cbe436dfaba6f150356",
-                "reference": "f98079c7c31f969cd9898cbe436dfaba6f150356",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/495096372a2c45a69f9a2759973495c9d013367f",
+                "reference": "495096372a2c45a69f9a2759973495c9d013367f",
                 "shasum": ""
             },
             "require": {
@@ -10090,7 +10090,7 @@
                 "issues": "https://github.com/Laravel-Lang/lang/issues",
                 "source": "https://github.com/Laravel-Lang/lang"
             },
-            "time": "2025-09-08T23:06:50+00:00"
+            "time": "2025-09-10T20:41:54+00:00"
         },
         {
             "name": "laravel-lang/locale-list",
