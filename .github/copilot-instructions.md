@@ -17,7 +17,7 @@ This application is a Laravel application and its main Laravel ecosystems packag
 - livewire/livewire (LIVEWIRE) - v3
 - laravel/pint (PINT) - v1
 - laravel/sail (SAIL) - v1
-- phpunit/phpunit (PHPUNIT) - v11
+- phpunit/phpunit (PHPUNIT) - v12
 - tailwindcss (TAILWINDCSS) - v4
 
 
