@@ -1,6 +1,6 @@
 <?php
 
-namespace GH;
+namespace Tests\Feature\GH;
 
 use App\Models\Contact;
 use App\Models\User;

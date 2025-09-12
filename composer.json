@@ -23,9 +23,10 @@
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.0",
         "fakerphp/faker": "^1.9.1",
-        "laravel/pint": "^1.0",
         "itsgoingd/clockwork": "^5.1",
         "laravel-lang/common": "^6.1",
+        "laravel/boost": "^1.1",
+        "laravel/pint": "^1.0",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^8.0",
