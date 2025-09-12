@@ -1,18 +1,11 @@
 # グループホームガイド
 
-[![deploy](https://github.com/pop-culture-studio/grouphome/actions/workflows/deploy.yml/badge.svg)](https://github.com/pop-culture-studio/grouphome/actions/workflows/deploy.yml)
-
 https://grouphome.guide/
 
 ## サーバー
 - AWS
 - Laravel Vapor https://vapor.laravel.com/
 - ドメイン：お名前に移管。
-
-## 引継ぎ用
-LINE NotifyやGoogle reCAPTCHAのキーは引継ぎ時には取得し直し。
-
-- https://www.google.com/recaptcha/
 
 ## 開発
 ```shell
@@ -32,4 +25,3 @@ npm run build
 
 ## LICENSE
 AGPL  
-Copyright (c) ポップカルチャースタジオ未来図
