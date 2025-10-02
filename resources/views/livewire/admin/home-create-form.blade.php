@@ -35,12 +35,12 @@
         </div>
 
         <div>
-            <x-label for="area" value="{{ __('住所（自治体まで）') }}"/>
+            <x-label for="area" value="{{ __('住所（自治体のみ）') }}"/>
             <x-input id="area" class="block mt-1 w-full" type="text" name="area" wire:model="form.area" required/>
         </div>
 
         <div>
-            <x-label for="address" value="{{ __('住所（番地）') }}"/>
+            <x-label for="address" value="{{ __('住所（番地まで全部）') }}"/>
             <x-input id="address" class="block mt-1 w-full" type="text" name="address" wire:model="form.address" required/>
         </div>
 
