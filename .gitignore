@@ -25,3 +25,5 @@ yarn-error.log
 _ide_helper.php
 _ide_helper_models.php
 /mysql_backup
+/.junie
+.mcp.json
