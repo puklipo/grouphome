@@ -19,7 +19,15 @@
 
                 <x-label for="map" value="{{ __('Googleマップ') }}"/>
                 <x-textarea name="map" id="map" rows="2" wire:model="form.map"></x-textarea>
-                <div class="text-sm text-gray-500 dark:text-white">埋め込み用のHTML。（管理事業者でも自由にhtml入力可能にはできないので管理者専用）</div>
+                <div class="text-sm text-gray-500 dark:text-white mb-3">埋め込み用のHTML。（管理事業者でも自由にhtml入力可能にはできないので管理者専用）</div>
+
+                <x-label for="area" value="{{ __('住所（自治体のみ）') }}"/>
+                <x-input type="text" name="area" id="area" wire:model="form.area" class="w-full"></x-input>
+                <div class="text-sm text-gray-500 dark:text-white mb-3">市区町村までの住所。</div>
+
+                <x-label for="address" value="{{ __('住所（番地まで全部）') }}"/>
+                <x-input type="text" name="address" id="address" wire:model="form.address" class="w-full"></x-input>
+                <div class="text-sm text-gray-500 dark:text-white mb-3">番地まで含めた完全な住所。</div>
 
                 <x-button class="mt-3">
                     {{ __('更新') }}

@@ -19,6 +19,12 @@ class BasicForm extends Form
     #[Validate('string|nullable')]
     public ?string $map;
 
+    #[Validate('string|nullable')]
+    public ?string $area;
+
+    #[Validate('string|nullable')]
+    public ?string $address;
+
     public function setForm(Home $home): void
     {
         $this->home = $home;
@@ -26,6 +32,8 @@ class BasicForm extends Form
         $this->released_at = $home->released_at?->toDateString();
         $this->wam = $home->wam;
         $this->map = $home->map;
+        $this->area = $home->area;
+        $this->address = $home->address;
     }
 
     public function save(): void
