@@ -44,13 +44,13 @@ class AdminHomeForm extends Form
     public ?string $tel = null;
 
     /**
-     * @var string 住所（自治体まで）
+     * @var string 住所（自治体のみ）
      */
     #[Validate('required')]
     public string $area = '';
 
     /**
-     * @var string 住所（番地）
+     * @var string 住所（番地まで全部）
      */
     #[Validate('required')]
     public string $address = '';
