@@ -16,8 +16,6 @@ class HomeController extends Controller
 
     /**
      * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\RedirectResponse
      */
     public function index(): RedirectResponse
     {
@@ -27,7 +25,6 @@ class HomeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Home  $home
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function show(Home $home): View

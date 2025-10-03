@@ -17,8 +17,8 @@ class OperatorTest extends TestCase
         $this->seed();
 
         $user = User::factory()
-                    ->hasHomes(10)
-                    ->create();
+            ->hasHomes(10)
+            ->create();
 
         $response = $this->actingAs($user)->get(route('dashboard'));
 
@@ -55,9 +55,9 @@ class OperatorTest extends TestCase
         $this->seed();
 
         $admin = User::factory(2)
-                     ->hasHomes(2)
-                     ->create()
-                     ->first();
+            ->hasHomes(2)
+            ->create()
+            ->first();
 
         $response = $this->actingAs($admin)->get(route('operator-home.index'));
 
@@ -71,8 +71,8 @@ class OperatorTest extends TestCase
         $admin = User::factory()->create();
 
         $ope = User::factory()
-                   ->hasHomes(2)
-                   ->create();
+            ->hasHomes(2)
+            ->create();
 
         $response = $this->actingAs($admin)->delete(route('operator-home.destroy', [
             'user' => $ope,
@@ -101,7 +101,7 @@ class OperatorTest extends TestCase
         $response = $this->actingAs($admin)->get(route('operator-requests.index'));
 
         $response->assertSeeText($ope->name)
-                 ->assertSeeText($home->name);
+            ->assertSeeText($home->name);
     }
 
     public function test_admin_operator_request_update()
@@ -120,7 +120,7 @@ class OperatorTest extends TestCase
         $this->assertSame(0, $ope->homes()->count());
 
         $response = $this->actingAs($admin)
-                         ->put(route('operator-requests.update', $req));
+            ->put(route('operator-requests.update', $req));
 
         $this->assertModelMissing($req);
 
@@ -143,7 +143,7 @@ class OperatorTest extends TestCase
         ]);
 
         $response = $this->actingAs($admin)
-                         ->delete(route('operator-requests.destroy', $req));
+            ->delete(route('operator-requests.destroy', $req));
 
         $this->assertModelMissing($req);
 

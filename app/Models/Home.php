@@ -19,6 +19,7 @@ use function Illuminate\Events\queueable;
 
 /**
  * @property \MatanYadaev\EloquentSpatial\Objects\Point $location
+ *
  * @mixin IdeHelperHome
  */
 class Home extends Model
@@ -117,10 +118,10 @@ class Home extends Model
     {
         return Attribute::make(
             get: fn ($value) => Str::of($this->introduction ?? $this->address)
-                                   ->replace(PHP_EOL, ' ')
-                                   ->limit(200)
-                                   ->trim()
-                                   ->value()
+                ->replace(PHP_EOL, ' ')
+                ->limit(200)
+                ->trim()
+                ->value()
         );
     }
 }

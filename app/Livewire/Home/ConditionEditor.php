@@ -56,7 +56,7 @@ class ConditionEditor extends Component
             return;
         }
 
-        //類型を「不明」に設定する時はここでnullに。$valueが''なのでDBでエラー。
+        // 類型を「不明」に設定する時はここでnullに。$valueが''なのでDBでエラー。
         if ($name === 'type_id' && blank($value)) {
             $this->fill(['type_id' => null]);
         }
@@ -68,7 +68,7 @@ class ConditionEditor extends Component
             'type_id' => $this->type_id,
         ])->save();
 
-        //refreshしないとすぐに反映されない。
+        // refreshしないとすぐに反映されない。
         $this->home->refresh();
     }
 

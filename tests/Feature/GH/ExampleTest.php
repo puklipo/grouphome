@@ -41,15 +41,15 @@ class ExampleTest extends TestCase
         $response = $this->get(route('history'));
 
         $response->assertStatus(200)
-                 ->assertSeeLivewire(HistoryList::class);
+            ->assertSeeLivewire(HistoryList::class);
     }
 
     public function test_contact()
     {
         $response = $this->actingAs(User::factory()->create())
-                         ->get(route('contact'));
+            ->get(route('contact'));
 
         $response->assertStatus(200)
-                 ->assertSeeLivewire(ContactForm::class);
+            ->assertSeeLivewire(ContactForm::class);
     }
 }

@@ -26,7 +26,7 @@ class ContactForm extends Component
         return [
             'email' => [
                 'required', 'string', 'lowercase', 'email', 'max:255',
-                new Spammer(),
+                new Spammer,
             ],
         ];
     }

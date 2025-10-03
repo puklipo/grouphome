@@ -1,6 +1,6 @@
 <?php
 
-//写真
+// 写真
 return [
     'cover' => 'カバー',
     'building' => '建物外観',

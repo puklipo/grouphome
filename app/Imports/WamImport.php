@@ -35,7 +35,7 @@ class WamImport implements OnEachRow, ShouldQueue, SkipsEmptyRows, SkipsOnFailur
 
     public function onRow(Row $row): void
     {
-        //都道府県コード(01-47)+3桁の市区町村コードの形式。最初の2文字から都道府県コードを得る。
+        // 都道府県コード(01-47)+3桁の市区町村コードの形式。最初の2文字から都道府県コードを得る。
         $pref_id = (int) Str::take(string: $row['都道府県コード又は市区町村コード'], limit: 2);
 
         $pref = Pref::find($pref_id);
@@ -56,7 +56,7 @@ class WamImport implements OnEachRow, ShouldQueue, SkipsEmptyRows, SkipsOnFailur
             'url' => $row['事業所URL'],
         ];
 
-        //SQLiteはGeometry非対応なのでテスト時は除く
+        // SQLiteはGeometry非対応なのでテスト時は除く
         if (! app()->runningUnitTests()) {
             $point = new Point(
                 latitude: (float) $row['事業所緯度'],
@@ -67,7 +67,7 @@ class WamImport implements OnEachRow, ShouldQueue, SkipsEmptyRows, SkipsOnFailur
             $data['location'] = $point;
         }
 
-        //事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
+        // 事業所番号が重複してることがそれなりに多い。最後にインポートしたデータが残る。更新時は一旦別のデータに変更された後最後のデータに戻るのでupdated_atだけが更新されたように見える。
         $pref->homes()->updateOrCreate([
             'id' => $id,
         ], $data);

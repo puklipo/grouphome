@@ -11,9 +11,6 @@ class PrefController extends Controller
     /**
      * Handle the incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  Pref  $pref
-     * @param  string|null  $area
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
     public function __invoke(Request $request, Pref $pref, ?string $area = null): View

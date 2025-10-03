@@ -37,7 +37,7 @@ class ImportTest extends TestCase
 
         HeadingRowFormatter::default('none');
 
-        $i = new WamImport();
+        $i = new WamImport;
         $i->import(__DIR__.'/../../fixture/test.csv');
 
         $this->assertDatabaseCount('homes', 2);

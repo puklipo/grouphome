@@ -18,10 +18,15 @@ class PhotoEditor extends Component
     use WithFileUploads;
 
     public Home $home;
+
     public string $origin = '';
+
     public null|UploadedFile|string $photo = null;
+
     public string $column;
+
     public string $name;
+
     public bool $showModal = false;
 
     public function mount(): void
