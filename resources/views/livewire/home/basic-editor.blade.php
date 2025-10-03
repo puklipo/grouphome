@@ -11,9 +11,9 @@
                              wire:model="form.released_at"></x-input>
                 <div class="text-sm text-gray-500 dark:text-white mb-3">指定年月日。</div>
 
-                <x-label for="area" value="{{ __('住所（自治体のみ）') }}"/>
+                <x-label for="area" value="{{ __('自治体') }}"/>
                 <x-input type="text" name="area" id="area" wire:model="form.area" class="w-full"></x-input>
-                <div class="text-sm text-gray-500 dark:text-white mb-3">市区町村までの住所。</div>
+                <div class="text-sm text-gray-500 dark:text-white mb-3">自治体のみを入力。</div>
 
                 <x-label for="address" value="{{ __('住所（番地まで全部）') }}"/>
                 <x-input type="text" name="address" id="address" wire:model="form.address" class="w-full"></x-input>
